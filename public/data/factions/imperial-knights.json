@@ -165,7 +165,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -344,7 +345,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 acastus autocannons"
     },
     {
      "text": "This model’s Acastus ironstorm missile pod can be replaced with 1 helios defence missiles.",
@@ -353,7 +355,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "acastus ironstorm missile pod"
     }
    ],
    "chapter": "",
@@ -493,7 +496,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "questoris heavy stubber"
     }
    ],
    "chapter": "",
@@ -681,7 +685,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "volkite veuglaire"
     },
     {
      "text": "This model’s graviton pulsar can be replaced with one of the following;<ul style=\"list-style-type:circle\"><li>1 siege claw and 1 rad cleanser</li><li>1 lightning lock</li><li>1 conversion beam cannon</li><li>1 volkite veuglaire</li></ul>",
@@ -690,7 +695,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "graviton pulsar"
     }
    ],
    "chapter": "",
@@ -841,7 +847,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "questoris heavy stubber"
     }
    ],
    "chapter": "",
@@ -1158,7 +1165,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1342,7 +1350,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1493,7 +1502,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1644,7 +1654,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1840,7 +1851,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 shieldbreaker missile launchers and twin siegebreaker cannon"
     }
    ],
    "chapter": "",
@@ -2071,7 +2083,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "meltagun"
     },
     {
      "text": "This model’s thermal cannon can be replaced with:<ul style=\"list-style-type:circle\"><li>1 rapid-fire battle cannon and 1 Questoris heavy stubber</li></ul>",
@@ -2080,7 +2093,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "thermal cannon"
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li><b></b><br></ul>",
@@ -2089,7 +2103,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2483,7 +2498,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "chastiser gatling cannon"
     },
     {
      "text": "This model’s frag bombard can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 bellatus reaper chainsword*</li><li>1 thundershock spear*</li></ul>",
@@ -2492,7 +2508,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "frag bombard"
     },
     {
      "text": "* A model cannot be equipped with more than one bellatus reaper chainsword or more than one thundershock spear.",
@@ -2500,7 +2517,8 @@
      "type": "wargear",
      "limit": {
       "kind": "note"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2731,7 +2749,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "meltagun"
     },
     {
      "text": "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
@@ -2740,7 +2759,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "reaper chainsword"
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
@@ -2749,7 +2769,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2968,7 +2989,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "meltagun"
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
@@ -2977,7 +2999,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3208,7 +3231,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "meltagun"
     },
     {
      "text": "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
@@ -3217,7 +3241,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "reaper chainsword"
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
@@ -3226,7 +3251,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3479,7 +3505,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "questoris multi-laser"
     },
     {
      "text": "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
@@ -3488,7 +3515,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "reaper chainsword"
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
@@ -3497,7 +3525,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3682,7 +3711,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 shieldbreaker missile launchers and twin siegebreaker cannon"
     }
    ],
    "chapter": "",
@@ -3924,7 +3954,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "meltagun"
     },
     {
      "text": "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
@@ -3933,7 +3964,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "reaper chainsword"
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
@@ -3942,7 +3974,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4138,7 +4171,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "reaper chainsword"
     }
    ],
    "chapter": "",
@@ -4334,7 +4368,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "reaper chainsword"
     }
    ],
    "chapter": "",
@@ -4742,7 +4777,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "The Skitarii Ranger Alpha’s galvanic rifle can be replaced with 1 Mechanicus pistol.",
@@ -4751,7 +4787,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "galvanic rifle"
     },
     {
      "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 arc rifle.",
@@ -4760,7 +4797,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "galvanic rifle"
     },
     {
      "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 plasma caliver.",
@@ -4769,7 +4807,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "galvanic rifle"
     },
     {
      "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 transuranic arquebus.",
@@ -4778,7 +4817,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "galvanic rifle"
     },
     {
      "text": "1 Skitarii Ranger equipped with a galvanic rifle can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
@@ -4787,7 +4827,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "* That model’s galvanic rifle cannot be replaced.",
@@ -4795,7 +4836,8 @@
      "type": "wargear",
      "limit": {
       "kind": "note"
-     }
+     },
+     "base": "galvanic rifle cannot be"
     }
    ],
    "chapter": "",
@@ -4993,7 +5035,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "The Skitarii Vanguard Alpha’s radium carbine can be replaced with 1 Mechanicus pistol.",
@@ -5002,7 +5045,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "radium carbine"
     },
     {
      "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 arc rifle.",
@@ -5011,7 +5055,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "radium carbine"
     },
     {
      "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 plasma caliver.",
@@ -5020,7 +5065,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "radium carbine"
     },
     {
      "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 transuranic arquebus.",
@@ -5029,7 +5075,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "radium carbine"
     },
     {
      "text": "1 Skitarii Vanguard equipped with a radium carbine can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
@@ -5038,7 +5085,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "* That model’s radium carbine cannot be replaced.",
@@ -5046,7 +5094,8 @@
      "type": "wargear",
      "limit": {
       "kind": "note"
-     }
+     },
+     "base": "radium carbine cannot be"
     }
    ],
    "chapter": "",
@@ -5217,7 +5266,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "macrostubber"
     },
     {
      "text": "This model’s volkite blaster can be replaced with 1 eradication ray.",
@@ -5226,7 +5276,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "volkite blaster"
     }
    ],
    "chapter": "",
@@ -5363,7 +5414,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "magnarail lance"
     }
    ],
    "chapter": "",

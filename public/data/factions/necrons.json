@@ -140,7 +140,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "gauss cannon"
     }
    ],
    "chapter": "",
@@ -269,7 +270,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -393,7 +395,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -661,7 +664,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "gauss scalpel"
     },
     {
      "text": "1 model’s gauss scalpel or tesla caster can be replaced with 1 atomiser beam and 1 nanoscarab projector.",
@@ -670,7 +674,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "gauss scalpel or tesla caster"
     },
     {
      "text": "1 model’s gauss scalpel or tesla caster can be replaced with 1 accelerator mandible.",
@@ -679,7 +684,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "gauss scalpel or tesla caster"
     }
    ],
    "chapter": "",
@@ -1024,7 +1030,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Any number of models can each be equipped with 1 fabricator claw array.",
@@ -1032,7 +1039,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Any number of models can each be equipped with 1 gloom prism.",
@@ -1040,7 +1048,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1167,7 +1176,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin gauss reaper"
     }
    ],
    "chapter": "",
@@ -1288,7 +1298,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1409,7 +1420,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1566,7 +1578,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Any number of models can each have their vicious claws replaced with whip coils.",
@@ -1574,7 +1587,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "vicious claws"
     }
    ],
    "chapter": "",
@@ -1738,7 +1752,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "gauss cannon"
     },
     {
      "text": "This model’s staff of light can be replaced with 1 Overlord’s blade.",
@@ -1747,7 +1762,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "staff of light"
     },
     {
      "text": "This model can be equipped with 1 resurrection orb.",
@@ -1756,7 +1772,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3743,7 +3760,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "gauss blaster"
     }
    ],
    "chapter": "",
@@ -4182,7 +4200,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "gauss destructor"
     }
    ],
    "chapter": "",
@@ -4330,7 +4349,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "staff of light"
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 nanoscarab amulet</li><li>1 resurrection orb</li></ul>",
@@ -4339,7 +4359,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4480,7 +4501,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "staff of light"
     },
     {
      "text": "This model can be equipped with 1 resurrection orb.",
@@ -4489,7 +4511,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4611,7 +4634,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "warscythe"
     }
    ],
    "chapter": "",
@@ -4765,7 +4789,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "4 gauss flux arcs"
     }
    ],
    "chapter": "",
@@ -4893,7 +4918,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "gauss flayer"
     }
    ],
    "chapter": "",
@@ -5624,7 +5650,8 @@
      "limit": {
       "kind": "per_n",
       "n": 3
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -5895,7 +5922,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "tachyon arrow and overlord’s blade"
     },
     {
      "text": "If this model is not equipped with a tachyon arrow, it can be equipped with 1 resurrection orb.",
@@ -5904,7 +5932,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -6482,7 +6511,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "gauss exterminator"
     }
    ],
    "chapter": "",
@@ -6647,7 +6677,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 singularity generators"
     }
    ],
    "chapter": "",
@@ -6776,7 +6807,8 @@
      "limit": {
       "kind": "per_n",
       "n": 3
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -7178,7 +7210,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 tesla cannons"
     }
    ],
    "chapter": "",
@@ -7694,7 +7727,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "twin gauss blaster"
     },
     {
      "text": "Any number of models can each be equipped with 1 shieldvanes.",
@@ -7702,7 +7736,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Any number of models can each be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 nebuloscope</li><li>1 shadowloom</li></ul>",
@@ -7710,7 +7745,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -7838,7 +7874,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -8228,7 +8265,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "rod of covenant"
     }
    ],
    "chapter": "",
@@ -8392,7 +8430,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "heat ray"
     }
    ],
    "chapter": "",

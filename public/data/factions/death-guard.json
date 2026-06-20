@@ -458,7 +458,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": ""
     },
     {
      "text": "For every 5 models in this unit, 1 Blightlord Terminator’s combi-bolter and bubotic blade can be replaced with 1 flail of corruption.",
@@ -467,7 +468,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "combi-bolter and bubotic blade"
     },
     {
      "text": "For every 5 models in this unit, 1 Blightlord Terminator’s combi-bolter can be replaced with 1 blight launcher.",
@@ -476,7 +478,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "combi-bolter"
     },
     {
      "text": "For every 5 models in this unit, 1 Blightlord Terminator's combi-bolter can be replaced with 1 reaper autocannon.",
@@ -485,7 +488,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "combi-bolter"
     },
     {
      "text": "For every 5 models in this unit, 1 Blightlord Terminator's combi-bolter can be replaced with 1 plague spewer.",
@@ -494,7 +498,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "combi-bolter"
     },
     {
      "text": "If this unit contains only 3 models, 1 Blightlord Terminator’s combi-bolter and bubotic blade can be replaced with 1 plague spewer and 1 close combat weapon.",
@@ -502,7 +507,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "combi-bolter and bubotic blade"
     }
    ],
    "chapter": "",
@@ -691,7 +697,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -700,7 +707,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -872,7 +880,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 havoc launcher.",
@@ -881,7 +890,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1108,7 +1118,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "bolt pistol"
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
@@ -1117,7 +1128,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "astartes chainsword"
     },
     {
      "text": "This model’s bolt pistol and Astartes chainsword can be replaced with 1 paired accursed weapons.",
@@ -1126,7 +1138,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "bolt pistol and astartes chainsword"
     }
    ],
    "chapter": "",
@@ -1309,7 +1322,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 combi-bolter</li></ul>",
@@ -1318,7 +1332,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 havoc launcher.",
@@ -1327,7 +1342,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1510,7 +1526,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter</li><li>1 combi-weapon</li></ul>",
@@ -1519,7 +1536,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 havoc launcher.",
@@ -1528,7 +1546,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1677,7 +1696,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 havoc launcher or can replace 1 combi-bolter with 1 havoc launcher.",
@@ -1686,7 +1706,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1969,7 +1990,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "thunderhawk heavy cannon"
     },
     {
      "text": "This model’s Thunderhawk cluster bombs can be replaced with 1 hellstrike missile battery",
@@ -1978,7 +2000,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "thunderhawk cluster bombs"
     }
    ],
    "chapter": "",
@@ -2441,7 +2464,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "plague bolt pistol"
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plague fist</li><li>1 plague-encrusted exalted weapon</li></ul>",
@@ -2450,7 +2474,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "astartes chainsword"
     },
     {
      "text": "This model’s plague bolt pistol and Astartes chainsword can be replaced with 1 twin lighting claws.",
@@ -2459,7 +2484,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "plague bolt pistol and astartes chainsword"
     }
    ],
    "chapter": "",
@@ -2634,7 +2660,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "plague combi-bolter"
     },
     {
      "text": "This model’s plague-encrusted exalted weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainfist</li><li>1 plague fist</li></ul>",
@@ -2643,7 +2670,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "plague-encrusted exalted weapon"
     },
     {
      "text": "This model’s plague combi-bolter and plague-encrusted exalted weapon can be replaced with 1 twin lighting claws.",
@@ -2652,7 +2680,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "plague combi-bolter and plague-encrusted exalted weapon"
     }
    ],
    "chapter": "",
@@ -2816,7 +2845,8 @@
      "limit": {
       "kind": "per_n",
       "n": 10
-     }
+     },
+     "base": "cultist firearm"
     },
     {
      "text": "For every 10 models in the unit, 1 Death Guard Cultist’s Cultist firearm can be replaced with 1 heavy stubber.",
@@ -2825,7 +2855,8 @@
      "limit": {
       "kind": "per_n",
       "n": 10
-     }
+     },
+     "base": "cultist firearm"
     },
     {
      "text": "For every 10 models in the unit, 1 Death Guard Cultist’s Cultist firearm can be replaced with 1 grenade launcher.",
@@ -2834,7 +2865,8 @@
      "limit": {
       "kind": "per_n",
       "n": 10
-     }
+     },
+     "base": "cultist firearm"
     }
    ],
    "chapter": "",
@@ -2955,7 +2987,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3164,7 +3197,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "plague combi-bolter"
     },
     {
      "text": "This model’s force weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainfist</li><li>1 plague fist</li><li>1 plague-encrusted exalted weapon</li></ul>",
@@ -3173,7 +3207,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "force weapon"
     },
     {
      "text": "This model’s plague combi-bolter and force weapon can be replaced with 1 twin lighting claws.",
@@ -3182,7 +3217,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "plague combi-bolter and force weapon"
     }
    ],
    "chapter": "",
@@ -3349,7 +3385,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "The Deathshroud Champion can be equipped with 1 icon of despair.",
@@ -3358,7 +3395,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3604,7 +3642,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "hades battle cannon"
     },
     {
      "text": " This model’s excruciator cannons can be replaced with 2 magma cutters",
@@ -3613,7 +3652,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "excruciator cannons"
     },
     {
      "text": "This model’s heavy baleflamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
@@ -3622,7 +3662,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "heavy baleflamer"
     },
     {
      "text": " This model’s heavy missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
@@ -3631,7 +3672,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "heavy missile launcher"
     },
     {
      "text": "Equip Heavy reaper autocannon",
@@ -3639,7 +3681,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Equip Hades lascannon",
@@ -3647,7 +3690,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3899,7 +3943,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "anvilus autocannon battery"
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer.",
@@ -3908,7 +3953,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin heavy bolter"
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 aiolos missile launcher</li><li>1 boreas air defence missiles</li></ul>",
@@ -3917,7 +3963,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4150,7 +4197,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 quad lascannons"
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer",
@@ -4159,7 +4207,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin heavy bolter"
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -4168,7 +4217,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4468,7 +4518,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 quad lascannons"
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer.",
@@ -4477,7 +4528,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin heavy bolter"
     },
     {
      "text": "This model can be equipped with 1 havoc launcher.",
@@ -4486,7 +4538,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -4495,7 +4548,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4695,7 +4749,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 twin hellstrike missile launchers"
     },
     {
      "text": "This model’s 2 twin autocannons can be replaced with 2 quad heavy bolters.",
@@ -4704,7 +4759,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 twin autocannons"
     }
    ],
    "chapter": "",
@@ -4842,7 +4898,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "fleshmower"
     }
    ],
    "chapter": "",
@@ -5211,7 +5268,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -5409,7 +5467,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "plague flail"
     },
     {
      "text": "This model’s bilesword can be replaced with 1 doomsday bell.",
@@ -5418,7 +5477,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "bilesword"
     }
    ],
    "chapter": "",
@@ -5553,7 +5613,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -5802,7 +5863,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "multi-melta"
     },
     {
      "text": "1 of this model’s Helbrute fists can be replaced with 1 missile launcher",
@@ -5811,7 +5873,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "helbrute fists"
     },
     {
      "text": "1 of this model’s Helbrute fists can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Helbrute hammer</li><li>1 power scourge</li></ul>",
@@ -5820,7 +5883,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "helbrute fists"
     },
     {
      "text": "For each Helbrute fist this model is equipped with, it can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter*</li><li>1 heavy flamer*</li></ul>",
@@ -5829,7 +5893,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "* That Helbrute fist cannot then be replaced.",
@@ -5837,7 +5902,8 @@
      "type": "wargear",
      "limit": {
       "kind": "note"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -5991,7 +6057,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 twin autocannons"
     }
    ],
    "chapter": "",
@@ -6156,7 +6223,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "autocannon"
     }
    ],
    "chapter": "",
@@ -6566,7 +6634,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "kratos battle cannon"
     },
     {
      "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 autocannons</li><li>2 lascannons</li><li>2 volkite calivers</li></ul>",
@@ -6575,7 +6644,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "heavy bolters"
     },
     {
      "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy flamers</li><li>2 lascannons</li><li>2 volkite culverins </li></ul>",
@@ -6584,7 +6654,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "heavy bolters"
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 havoc launcher</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 twin boltgun</li></ul>",
@@ -6593,7 +6664,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 hunter killer missile    ",
@@ -6602,7 +6674,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -6808,7 +6881,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 twin volkite culverins"
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -6817,7 +6891,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -6826,7 +6901,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -7050,7 +7126,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -7059,7 +7136,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -7068,7 +7146,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 explorator augury web.",
@@ -7077,7 +7156,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -7335,7 +7415,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "grav-flux bombards"
     },
     {
      "text": "This model’s 2 heavy flamers can be replaced with 2 twin volkite calivers.",
@@ -7344,7 +7425,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 heavy flamers"
     },
     {
      "text": "This model can be equipped with 3 hunter-killer missiles.",
@@ -7353,7 +7435,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -8062,7 +8145,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 heavy flamers"
     },
     {
      "text": "This model’s 2 lascannons can be replaced with on of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li><li>2 volkite culverins</li></ul>",
@@ -8071,7 +8155,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 lascannons"
     }
    ],
    "chapter": "",
@@ -8465,7 +8550,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -8999,7 +9085,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 Plague Drone that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
@@ -9008,7 +9095,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -9283,7 +9371,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "boltgun"
     },
     {
      "text": "The Plague Champion’s plague knives can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bubotic weapons</li><li>1 power fist</li></ul>",
@@ -9292,7 +9381,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "plague knives"
     },
     {
      "text": "For every 5 models in this unit, 1 Plague Marine’s boltgun can be replaced with 1 blight launcher.",
@@ -9301,7 +9391,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "boltgun"
     },
     {
      "text": "For every 5 models in this unit, 1 Plague Marine’s boltgun can be replaced with 1 plague spewer.",
@@ -9310,7 +9401,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "boltgun"
     },
     {
      "text": "For every 5 models in this unit, 1 Plague Marine’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 meltagun</li><li>1 plague belcher</li><li>1 plasma gun</li></ul>",
@@ -9319,7 +9411,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "boltgun"
     },
     {
      "text": "For every 5 models in this unit, up to 2 Plague Marines can each have their boltgun replaced with 1 bubotic weapons.",
@@ -9328,7 +9421,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "boltgun"
     },
     {
      "text": "For every 5 models in this unit, up to 2 Plague Marines can each have their boltgun replaced with 1 heavy plague weapon.",
@@ -9337,7 +9431,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "boltgun"
     },
     {
      "text": "One Plague Marine equipped with a boltgun can be equipped with 1 icon of despair. This model’s boltgun cannot be replaced.",
@@ -9346,7 +9441,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "boltgun cannot be"
     }
    ],
    "chapter": "",
@@ -9581,7 +9677,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 Plaguebearer that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
@@ -9590,7 +9687,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -9761,7 +9859,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 entropy cannons"
     },
     {
      "text": "This model’s heavy slugger can be replaced with 1 rothail volley gun.",
@@ -9770,7 +9869,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "heavy slugger"
     }
    ],
    "chapter": "",
@@ -10060,7 +10160,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "quad heavy bolter"
     }
    ],
    "chapter": "",
@@ -10404,7 +10505,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "heavy plasma cannons"
     },
     {
      "text": "Each of this model’s combi-bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 graviton blaster</li><li>1 heavy flamer</li><li>1 plasma blaster</li></ul>",
@@ -10413,7 +10515,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "combi-bolters"
     },
     {
      "text": "This model can be equipped with 1 cyclone missile launcher. ",
@@ -10422,7 +10525,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -10746,7 +10850,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -10755,7 +10860,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -10764,7 +10870,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -10949,7 +11056,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -10958,7 +11066,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -10967,7 +11076,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -11152,7 +11262,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -11161,7 +11272,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -11170,7 +11282,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -11374,7 +11487,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -11611,7 +11725,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "bolt pistol"
     }
    ],
    "chapter": "",
@@ -11833,7 +11948,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 quad lascannons"
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer",
@@ -11842,7 +11958,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin heavy bolter"
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -11851,7 +11968,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -12086,7 +12204,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin heavy bolter"
     },
     {
      "text": "This model’s 2 twin hellstrike missile launchers can be replaced with 2 twin lascannons",
@@ -12095,7 +12214,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 twin hellstrike missile launchers"
     }
    ],
    "chapter": "",
@@ -12400,7 +12520,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 combi-bolters"
     }
    ],
    "chapter": "",
@@ -12589,7 +12710,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -12598,7 +12720,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -12881,7 +13004,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -12890,7 +13014,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -13049,7 +13174,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",

@@ -356,7 +356,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "infernus heavy bolter"
     },
     {
      "text": "For every 5 models in the unit, up to 1 model’s heavy thunder hammer can be replaced with 1 power weapon and 1 Astartes shield.",
@@ -365,7 +366,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "heavy thunder hammer"
     },
     {
      "text": "For every 5 models in the unit, up to 1 model’s stalker bolt rifle can be replaced with 1 plasma incinerator.",
@@ -374,7 +376,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "stalker bolt rifle"
     },
     {
      "text": "For every 5 models in the unit, up to 1 model’s Deathwatch marksman bolt carbine can be replaced with 1 combat knife.",
@@ -383,7 +386,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "deathwatch marksman bolt carbine"
     }
    ],
    "chapter": "",
@@ -713,7 +717,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin assault cannon"
     },
     {
      "text": "This model’s 2 Blackstar rocket launchers can be replaced with 2 stormstrike missile launchers.",
@@ -722,7 +727,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 blackstar rocket launchers"
     },
     {
      "text": "This model can be equipped with 1 hurricane bolter.",
@@ -731,7 +737,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 auspex array</li><li>1 infernum halo-launcher</li></ul>",
@@ -740,7 +747,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1022,7 +1030,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1272,7 +1281,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "boltgun"
     },
     {
      "text": "One Legionnaire’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer</li><li>1 multi-melta</li></ul>",
@@ -1280,7 +1290,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "boltgun"
     },
     {
      "text": "One Legionnaire’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
@@ -1288,7 +1299,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "boltgun"
     }
    ],
    "chapter": "",
@@ -1536,7 +1548,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "boltgun and power weapon"
     },
     {
      "text": "For every 5 models in this unit, up to 2 models can each have their boltgun and power weapon replaced with 1 Deathwatch thunder hammer.",
@@ -1545,7 +1558,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "boltgun and power weapon"
     },
     {
      "text": "For every 5 models in this unit, 1 model can have their boltgun and power weapon replaced with 1 stalker-pattern boltgun and 1 close combat weapon.",
@@ -1554,7 +1568,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "boltgun and power weapon"
     },
     {
      "text": "For every 5 models in this unit, up to 2 models can each have their boltgun and power weapon replaced with 1 Deathwatch shotgun and 1 close combat weapon.",
@@ -1563,7 +1578,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "boltgun and power weapon"
     },
     {
      "text": "For every 5 models in this unit, 1 model can have its boltgun and power weapon replaced with 1 frag cannon and 1 close combat weapon.",
@@ -1572,7 +1588,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": ""
     },
     {
      "text": "For every 5 models in this unit, 1 model can have its boltgun and power weapon replaced with 1 infernus heavy bolter and 1 close combat weapon.",
@@ -1581,7 +1598,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": ""
     },
     {
      "text": "One model's boltgun and power weapon can be replaced with 1 Black Shield blades.",
@@ -1589,7 +1607,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "boltgun and power weapon"
     },
     {
      "text": "The Watch Sergeant’s power weapon can be replaced with 1 xenophase blade.",
@@ -1598,7 +1617,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "power weapon"
     },
     {
      "text": "The Watch Sergeant's boltgun can be replaced with 1 combi-weapon.",
@@ -1607,7 +1627,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "boltgun"
     }
    ],
    "chapter": "",
@@ -1865,7 +1886,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "storm bolter"
     },
     {
      "text": "Any number of models can each have their power fist and storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 storm bolter and 1 power weapon</li><li>1 storm bolter and 1 chainfist</li><li>1 twin lightning claws</li><li>1 thunder hammer and 1 storm shield</li></ul>",
@@ -1873,7 +1895,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "power fist and storm bolter"
     }
    ],
    "chapter": "",
@@ -2230,7 +2253,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "arbites combat shotgun"
     },
     {
      "text": "1 Exaction Vigilant that is equipped with an Arbites combat shotgun can be equipped with 1 excruciator maul.*",
@@ -2239,7 +2263,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 other Exaction Vigilant that is equipped with an Arbites combat shotgun can be equipped with 1 Arbites medi-kit.*",
@@ -2248,7 +2273,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 other Exaction Vigilant that is equipped with an Arbites combat shotgun can be equipped with 1 soulguilt scanner.*",
@@ -2257,7 +2283,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "The Proctor-Exactant can be equipped with 1 nuncio aquila.",
@@ -2266,7 +2293,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "* That model’s Arbites combat shotgun cannot be replaced.",
@@ -2274,7 +2302,8 @@
      "type": "wargear",
      "limit": {
       "kind": "note"
-     }
+     },
+     "base": "arbites combat shotgun cannot be"
     }
    ],
    "chapter": "",
@@ -2555,7 +2584,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "bolt rifle"
     },
     {
      "text": "1 model equipped with a bolt rifle can replace its close combat weapon with one of the following:<ul style=\"list-style-type:circle\"><li>1 Astartes chainsword</li><li>1 Long Vigil melee weapon</li></ul>",
@@ -2564,7 +2594,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "For every 5 models in this unit, 1 model’s bolt rifle can be replaced with 1 Long Vigil ranged weapon.",
@@ -2573,7 +2604,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "bolt rifle"
     },
     {
      "text": "Any number of Kill Team Intercessors with plasma incinerators can each have their bolt pistol replaced with 1 plasma pistol.",
@@ -2581,7 +2613,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "bolt pistol"
     }
    ],
    "chapter": "",
@@ -2757,7 +2790,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "storm bolter"
     },
     {
      "text": "1 Grey Knights Terminator equipped with a storm bolter can be equipped with 1 Ancient’s banner.*",
@@ -2766,7 +2800,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 Grey Knights Terminator can have its storm bolter replaced with 1 narthecium.*",
@@ -2775,7 +2810,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "* You cannot select both of these options for the same model.",
@@ -2783,7 +2819,8 @@
      "type": "wargear",
      "limit": {
       "kind": "note"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3048,7 +3085,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 Navis Armsman’s Navis las-volley can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 meltagun</li><li>1 plasma gun</li></ul>",
@@ -3057,7 +3095,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "navis las-volley"
     },
     {
      "text": "1 Navis Armsman's Navis shotgun can be replaced with 1 autopistol and 1 power weapon.",
@@ -3066,7 +3105,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "navis shotgun"
     },
     {
      "text": "1 Navis Armsman’s Navis shotgun can be replaced with 1 autopistol and 1 chainfist.",
@@ -3075,7 +3115,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "navis shotgun"
     },
     {
      "text": "1 Navis Armsman can be equipped with 1 demolition charge.",
@@ -3084,7 +3125,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3226,7 +3268,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3501,7 +3544,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 model equipped with a melta rifle can have its melta rifle replaced with 1 multi-melta.",
@@ -3510,7 +3554,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "Any number of models equipped with flamestorm gauntlets can each have their flamestorm gauntlets replaced with 1 auto boltstorm gauntlets and 1 fragstorm grenade launcher.",
@@ -3518,7 +3563,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "flamestorm gauntlets"
     },
     {
      "text": "Any number of models equipped with assault bolters can each have their assault bolters replaced with 1 plasma exterminators.",
@@ -3526,7 +3572,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "assault bolters"
     }
    ],
    "chapter": "",
@@ -3697,7 +3744,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "bolt pistol"
     },
     {
      "text": "This model’s blessed wardings can be replaced with 1 psychic gifts and 1 Psychic Shock Wave.",
@@ -3706,7 +3754,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "blessed wardings"
     },
     {
      "text": "If this model is equipped with 1 psychic gifts, its Inquisitorial melee weapon can be replaced with 1 force weapon.",
@@ -3715,7 +3764,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4136,7 +4186,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4459,7 +4510,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "storm bolter"
     },
     {
      "text": "This model’s blessed wardings can be replaced with 1 psychic gifts and 1 psychic shock wave.",
@@ -4468,7 +4520,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "blessed wardings"
     },
     {
      "text": "If this model is equipped with 1 psychic gifts, its Inquisitorial melee weapon can be replaced with 1 force weapon.",
@@ -4477,7 +4530,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "If this model is equipped with 1 psychic gifts, its storm bolter can be replaced with 1 psycannon.",
@@ -4486,7 +4540,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4612,7 +4667,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4766,7 +4822,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4932,7 +4989,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -5157,7 +5215,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "For every 5 Inquisitorial Agents in this unit, 1 Inquisitorial Agent can be equipped with 1 plasma pistol.**",
@@ -5165,7 +5224,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "For every 5 Inquisitorial Agents in this unit, 1 Inquisitorial Agent can be equipped with 1 eviscerator.**",
@@ -5173,7 +5233,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "For every 5 Inquisitorial Agents in this unit, 1 Inquisitorial Agent can be equipped with 1 mystic stave.**",
@@ -5181,7 +5242,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Any number of Gun Servitors can each have their heavy bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 multi-melta</li><li>1 plasma cannon</li></ul>",
@@ -5189,7 +5251,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "heavy bolter"
     },
     {
      "text": "<i>**The some model cannot be equipped with more than one of these wargear options.</i>",
@@ -5197,7 +5260,8 @@
      "type": "wargear",
      "limit": {
       "kind": "note"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -5398,7 +5462,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "heavy bolter"
     },
     {
      "text": "This model’s multi-laser can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Heavy bolter*</li><li>1 Heavy flamer*</li></ul>",
@@ -5407,7 +5472,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "multi-laser"
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy stubber</li><li>1 storm bolter</li></ul>",
@@ -5416,7 +5482,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -5425,7 +5492,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "<i>This weapon cannot be replaced.</i>",
@@ -5433,7 +5501,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -5564,7 +5633,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -5703,7 +5773,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -6024,7 +6095,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Vael Donatus is equipped with: boltgun; bolt pistol; close combat weapon.",
@@ -6032,7 +6104,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Zameon Gydrael is equipped with: Long Vigil ranged weapon; Long Vigil melee weapon.",
@@ -6040,7 +6113,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Rodricus Grytt is equipped with: frag cannon; bolt pistol; close combat weapon.",
@@ -6048,7 +6122,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Antor Delassio is equipped with: Long Vigil ranged weapon; Long Vigil melee weapon, jump pack.",
@@ -6056,7 +6131,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Edryc Setorax is equipped with: twin lightning claws, jump pack.",
@@ -6064,7 +6140,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Jensus Natorian is equipped with: psychic Cleanse; bolt pistol; force weapon; psychic hood.",
@@ -6072,7 +6149,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Drenn Redblade is equipped with: Long Vigil melee weapon; boltgun.",
@@ -6080,7 +6158,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Garran Branatar is equipped with: heavy flamer; Long Vigil ranged weapon; power fist.",
@@ -6088,7 +6167,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Ennox Sorrlock is equipped with: Long Vigil ranged weapon; close combat weapon.",
@@ -6096,7 +6176,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Jetek Suberei is equipped with: Deathwatch twin boltgun; Long Vigil melee weapon.",
@@ -6104,7 +6185,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -6250,7 +6332,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "zealot’s vindictor"
     }
    ],
    "chapter": "",
@@ -6494,7 +6577,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -6889,7 +6973,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "For every 5 models in this unit, up to 2 models can replace their boltgun and Long Vigil melee weapon with 1 Deathwatch thunder hammer.",
@@ -6898,7 +6983,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": ""
     },
     {
      "text": "For every 5 models in the unit, up to 2 models can replace their boltgun and Long Vigil melee weapon with one of the following:<ul style=\"list-style-type:circle\"><li>1 frag cannon</li><li>1 Infernus heavy bolter</li></ul>",
@@ -6907,7 +6993,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": ""
     },
     {
      "text": "Any number of Kill Team Biker models can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 Long Vigil melee weapon</li></ul>",
@@ -6915,7 +7002,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "For every 5 models in this unit, up to 2 models  can replace their boltgun and Long Vigil melee weapon with 1 Deathwatch thunder hammer.",
@@ -6924,7 +7012,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": ""
     },
     {
      "text": "Up to 3 models can each have their storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 assault cannon</li><li>1 heavy flamer</li><li>1 plasma cannon</li><li>1 cyclone missile launcher and 1 storm bolter (this model’s storm bolter cannot be replaced)</li></ul>",
@@ -6933,7 +7022,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "storm bolter"
     },
     {
      "text": "Any number of Kill Team Terminator models can replace their power fist and storm bolter with one of the following:<ul style=\"list-style-type:circle\"><li>1 storm bolter and 1 power weapon</li><li>1 storm bolter and 1 chainfist</li><li>1 twin lightning claws</li><li>1 Terminator thunder hammer and 1 storm shield</li></ul>",
@@ -6941,7 +7031,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -7373,7 +7464,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 Missionary model equipped with 1 plasma gun can be equipped with 1 holy fire (this model’s plasma gun cannot be replaced).",
@@ -7382,7 +7474,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "plasma gun cannot be"
     },
     {
      "text": "1 Sanctifier model can have its 1 Sanctifier melee weapon replaced with 1 Ministorum hand flamer and 1 close combat weapon.",
@@ -7391,7 +7484,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 Sanctifier model can have its 1 Sanctifier melee weapon replaced with 1 close combat weapon and 1 simulacrum imperialis.",
@@ -7400,7 +7494,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -7571,7 +7666,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "immolation flamers"
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -7580,7 +7676,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -7875,7 +7972,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "boltgun"
     },
     {
      "text": "The Sister Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
@@ -7884,7 +7982,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 Battle Sister’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li></ul>",
@@ -7893,7 +7992,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "boltgun"
     },
     {
      "text": "1 Battle Sister’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 heavy bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li><li>1 Ministorum heavy flamer</li><li>1 multi-melta</li></ul>",
@@ -7902,7 +8002,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "boltgun"
     },
     {
      "text": "1 Battle Sister equipped with 1 boltgun can be equipped with 1 simulacrum imperialis (that model’s boltgun cannot be replaced).",
@@ -7911,7 +8012,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "boltgun cannot be"
     }
    ],
    "chapter": "",
@@ -8191,7 +8293,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "One model equipped with a marksman bolt carbine can be equipped with 1 Infiltrator comms array.*",
@@ -8199,7 +8302,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "One model can replace its bolt sniper rifle with 1 bolt carbine.",
@@ -8207,7 +8311,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Any number of models can each replace their bolt sniper rifle with 1 las fusil.",
@@ -8215,7 +8320,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Any number of models can each replace their combat knife with 1 bolt carbine and 1 close combat weapon.",
@@ -8223,7 +8329,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "<i>* These options cannot be taken on the same model.</i>",
@@ -8231,7 +8338,8 @@
      "type": "wargear",
      "limit": {
       "kind": "note"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -8363,7 +8471,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -8486,7 +8595,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -8660,7 +8770,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "Any number of Veteran Biker models can each be equipped with 1 Long Vigil melee weapon.",
@@ -8668,7 +8779,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -8867,7 +8979,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "arbites combat shotgun"
     },
     {
      "text": "The Proctor-Vigilant can be equipped with 1 nuncio aquila.",
@@ -8876,7 +8989,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",

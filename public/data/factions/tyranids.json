@@ -117,7 +117,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -672,7 +673,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "carnifex extra scything talons"
     },
     {
      "text": "Any number of models can each have their Carnifex scything talons replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 deathspitters with slimer maggots</li><li>1 devourers with brainleech worms</li><li>1 Carnifex crushing claws</li></ul>",
@@ -680,7 +682,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "carnifex scything talons"
     },
     {
      "text": "Any number of models can each be equipped with 1 bio-plasma.",
@@ -688,7 +691,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Any number of models can each be equipped with 1 spine banks.",
@@ -696,7 +700,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -926,7 +931,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1419,7 +1425,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin stranglethorn cannon"
     }
    ],
    "chapter": "",
@@ -1552,7 +1559,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1830,7 +1838,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2120,7 +2129,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "shockcannon"
     }
    ],
    "chapter": "",
@@ -2281,7 +2291,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "monstrous bonesword and lash whip"
     },
     {
      "text": "This model’s monstrous scything talons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy venom cannon*</li><li>1 stranglethorn cannon*</li></ul>",
@@ -2290,7 +2301,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "monstrous scything talons"
     },
     {
      "text": "*This model cannot be equipped with both a stranglethorn cannon and a heavy venom cannon. This model cannot be equipped with more than 1 heavy venom cannon, and it cannot be equipped with more than 1 stranglethorn cannon.",
@@ -2298,7 +2310,8 @@
      "type": "wargear",
      "limit": {
       "kind": "note"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2796,7 +2809,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3508,7 +3522,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4431,7 +4446,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4563,7 +4579,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4790,7 +4807,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4906,7 +4924,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -5302,7 +5321,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "fleshborer"
     },
     {
      "text": "All models in this unit can each have their fleshborer replaced with 1 Termagant spinefists.",
@@ -5310,7 +5330,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "fleshborer"
     },
     {
      "text": "For every 10 models in this unit, 1 model’s ranged weapon can be replaced with 1 shardlauncher",
@@ -5319,7 +5340,8 @@
      "limit": {
       "kind": "per_n",
       "n": 10
-     }
+     },
+     "base": "ranged weapon"
     },
     {
      "text": "For every 10 models in this unit, 1 model’s ranged weapon can be replaced with 1 spike rifle.",
@@ -5328,7 +5350,8 @@
      "limit": {
       "kind": "per_n",
       "n": 10
-     }
+     },
+     "base": "ranged weapon"
     },
     {
      "text": "For every 10 models in this unit, 1 model’s ranged weapon can be replaced with 1 strangleweb",
@@ -5337,7 +5360,8 @@
      "limit": {
       "kind": "per_n",
       "n": 10
-     }
+     },
+     "base": "ranged weapon"
     }
    ],
    "chapter": "",
@@ -5490,7 +5514,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "massive scything talons"
     }
    ],
    "chapter": "",
@@ -5621,7 +5646,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -6110,7 +6136,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -6384,7 +6411,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "devourer"
     },
     {
      "text": "For every 3 models in this unit, 1 model’s devourer can be replaced with 1 barbed strangler.",
@@ -6393,7 +6421,8 @@
      "limit": {
       "kind": "per_n",
       "n": 3
-     }
+     },
+     "base": "devourer"
     },
     {
      "text": "For every 3 models in this unit, 1 model’s devourer can be replaced with 1 venom cannon.",
@@ -6402,7 +6431,8 @@
      "limit": {
       "kind": "per_n",
       "n": 3
-     }
+     },
+     "base": "devourer"
     }
    ],
    "chapter": "",
@@ -6673,7 +6703,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "fleshborer hive"
     },
     {
      "text": "Equip Rupture cannon",
@@ -6681,7 +6712,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -6809,7 +6841,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "scything talons and rending claws"
     }
    ],
    "chapter": "",
@@ -7198,7 +7231,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "monstrous bonesword and lash whip"
     }
    ],
    "chapter": "",
@@ -7324,7 +7358,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",

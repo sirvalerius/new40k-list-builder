@@ -141,7 +141,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "command uplink"
     }
    ],
    "chapter": "",
@@ -300,7 +301,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "command uplink"
     }
    ],
    "chapter": "",
@@ -444,7 +446,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "command uplink"
     }
    ],
    "chapter": "",
@@ -1087,7 +1090,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1235,7 +1239,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1410,7 +1415,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "twin cognis autocannon"
     }
    ],
    "chapter": "",
@@ -1613,7 +1619,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "twin kastelan fist"
     },
     {
      "text": "Any number of models can each have their incendine combustor replaced with 1 heavy phosphor blaster.",
@@ -1621,7 +1628,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "incendine combustor"
     }
    ],
    "chapter": "",
@@ -1763,7 +1771,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "heavy arc rifle"
     },
     {
      "text": "Any number of models can each have their arc claw replaced with 1 hydraulic claw.",
@@ -1771,7 +1780,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "arc claw"
     }
    ],
    "chapter": "",
@@ -1935,7 +1945,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "heavy grav-cannon"
     },
     {
      "text": "Any number of models can each have their phosphor blaster replaced with 1 cognis flamer.",
@@ -1943,7 +1954,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "phosphor blaster"
     }
    ],
    "chapter": "",
@@ -2142,7 +2154,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "eradication beamer"
     },
     {
      "text": "This model can be equipped with 1 additional cognis heavy stubber.",
@@ -2151,7 +2164,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 broad spectrum data-tether.",
@@ -2160,7 +2174,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2633,7 +2648,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "arc lance"
     },
     {
      "text": "The Hoplite Alpha can be equipped with 1 Alpha close combat weapon.",
@@ -2642,7 +2658,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 Secutarii Hoplite can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether</li><li>1 omnispex</li></ul>",
@@ -2651,7 +2668,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2824,7 +2842,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "arc lance"
     },
     {
      "text": "The Peltast Alpha can be equipped with 1 Alpha close combat weapon.",
@@ -2833,7 +2852,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 Secutarii Peltast can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether</li><li>1 omnispex</li></ul>",
@@ -2842,7 +2862,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2985,7 +3006,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3149,7 +3171,8 @@
      "limit": {
       "kind": "per_n",
       "n": 3
-     }
+     },
+     "base": "2 phosphor pistols"
     }
    ],
    "chapter": "",
@@ -3348,7 +3371,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "Up to 3 Combat Servitor models can each have their 1 phosphor blaster replaced with 1 incendine igniter.",
@@ -3356,7 +3380,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "1 phosphor blaster"
     }
    ],
    "chapter": "",
@@ -3516,7 +3541,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "servitor’s servo-arm"
     }
    ],
    "chapter": "",
@@ -3692,7 +3718,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "stubcarbine and power weapon"
     }
    ],
    "chapter": "",
@@ -3846,7 +3873,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "transonic razor and chordclaw"
     },
     {
      "text": "The Sicarian Ruststalker Princeps’ transonic razor and chordclaw can be replaced with 1 transonic blades and chordclaw.",
@@ -3855,7 +3883,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4170,7 +4199,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "The Skitarii Ranger Alpha’s galvanic rifle can be replaced with 1 Mechanicus pistol.",
@@ -4179,7 +4209,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "galvanic rifle"
     },
     {
      "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 arc rifle.",
@@ -4188,7 +4219,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "galvanic rifle"
     },
     {
      "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 plasma caliver.",
@@ -4197,7 +4229,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "galvanic rifle"
     },
     {
      "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 transuranic arquebus.",
@@ -4206,7 +4239,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "galvanic rifle"
     },
     {
      "text": "1 Skitarii Ranger equipped with a galvanic rifle can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
@@ -4215,7 +4249,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "* That model’s galvanic rifle cannot be replaced.",
@@ -4223,7 +4258,8 @@
      "type": "wargear",
      "limit": {
       "kind": "note"
-     }
+     },
+     "base": "galvanic rifle cannot be"
     }
    ],
    "chapter": "",
@@ -4420,7 +4456,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "The Skitarii Vanguard Alpha’s radium carbine can be replaced with 1 Mechanicus pistol.",
@@ -4429,7 +4466,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "radium carbine"
     },
     {
      "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 arc rifle.",
@@ -4438,7 +4476,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "radium carbine"
     },
     {
      "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 plasma caliver.",
@@ -4447,7 +4486,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "radium carbine"
     },
     {
      "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 transuranic arquebus.",
@@ -4456,7 +4496,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "radium carbine"
     },
     {
      "text": "1 Skitarii Vanguard equipped with a radium carbine can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
@@ -4465,7 +4506,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "* That model’s radium carbine cannot be replaced.",
@@ -4473,7 +4515,8 @@
      "type": "wargear",
      "limit": {
       "kind": "note"
-     }
+     },
+     "base": "radium carbine cannot be"
     }
    ],
    "chapter": "",
@@ -4630,7 +4673,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "belleros energy cannon"
     }
    ],
    "chapter": "",
@@ -5192,7 +5236,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "radium jezzail"
     }
    ],
    "chapter": "",
@@ -5362,7 +5407,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "macrostubber"
     },
     {
      "text": "This model’s volkite blaster can be replaced with 1 eradication ray.",
@@ -5371,7 +5417,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "volkite blaster"
     }
    ],
    "chapter": "",
@@ -5637,7 +5684,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "magnarail lance"
     }
    ],
    "chapter": "",
@@ -5907,7 +5955,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 combi-bolters"
     }
    ],
    "chapter": "",
@@ -6197,7 +6246,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",

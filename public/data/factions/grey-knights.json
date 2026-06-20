@@ -169,7 +169,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "storm bolter"
     }
    ],
    "chapter": "",
@@ -300,7 +301,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -699,7 +701,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1071,7 +1074,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "storm bolter"
     },
     {
      "text": "1 Terminator can have its storm bolter replaced with 1 Apothecary’s narthecium.",
@@ -1080,7 +1084,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 Terminator’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 Ancient’s banner</li><li>1 psilencer and 1 Ancient’s banner</li><li>1 psycannon and 1 Ancient’s banner</li><li>1 storm bolter and 1 Ancient’s banner*</li></ul>",
@@ -1089,7 +1094,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "storm bolter"
     },
     {
      "text": "* That model’s storm bolter cannot be replaced.",
@@ -1097,7 +1103,8 @@
      "type": "wargear",
      "limit": {
       "kind": "note"
-     }
+     },
+     "base": "storm bolter cannot be"
     }
    ],
    "chapter": "",
@@ -1393,7 +1400,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "storm bolter"
     }
    ],
    "chapter": "",
@@ -1633,7 +1641,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "dreadfists"
     },
     {
      "text": "This model can be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 gatling psilencer</li><li>1 heavy incinerator</li><li>1 heavy psycannon</li><li>1 sublimator</li></ul>",
@@ -1642,7 +1651,8 @@
      "limit": {
       "kind": "slots",
       "slots": 2
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 fragstorm grenade launcher.",
@@ -1651,7 +1661,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "Equip Heavy psycannon",
@@ -1659,7 +1670,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2043,7 +2055,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "assault cannon"
     },
     {
      "text": "This model’s assault cannon, storm bolter and Dreadnought combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy psycannon, 1 storm bolter and 1 Nemesis doomglaive</li><li>1 heavy psycannon, 1 incinerator and 1 Nemesis doomglaive</li></ul>",
@@ -2052,7 +2065,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "assault cannon, storm bolter and dreadnought combat weapon"
     },
     {
      "text": "This model’s storm bolter and Dreadnought combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 missile launcher and 1 armoured feet</li><li>1 heavy flamer and 1 Dreadnought combat weapon</li></ul>",
@@ -2061,7 +2075,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "storm bolter and dreadnought combat weapon"
     }
    ],
    "chapter": "",
@@ -2248,7 +2263,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -2257,7 +2273,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 multi-melta</li><li>1 twin assault cannon</li><li>1 twin lascannon</li><li>1 twin psycannon</li></ul>",
@@ -2266,7 +2283,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin heavy bolter"
     }
    ],
    "chapter": "",
@@ -2445,7 +2463,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "thunderhawk cluster bombs"
     },
     {
      "text": "This model’s Thunderhawk heavy cannon can be replaced with 1 turbo-laser destructor.",
@@ -2454,7 +2473,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "thunderhawk heavy cannon"
     }
    ],
    "chapter": "",
@@ -2642,7 +2662,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "storm bolter and nemesis force weapon"
     }
    ],
    "chapter": "",
@@ -2791,7 +2812,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2963,7 +2985,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
@@ -2972,7 +2995,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -2981,7 +3005,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3155,7 +3180,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
@@ -3164,7 +3190,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -3173,7 +3200,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3347,7 +3375,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
@@ -3356,7 +3385,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -3365,7 +3395,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3553,7 +3584,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "dreadfists"
     },
     {
      "text": "This model can be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 gatling psilencer</li><li>1 heavy incinerator</li><li>1 heavy psycannon</li></ul>",
@@ -3562,7 +3594,8 @@
      "limit": {
       "kind": "slots",
       "slots": 2
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3786,7 +3819,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "storm bolter"
     },
     {
      "text": "1 Paladin can have its storm bolter replaced with 1 Apothecary’s narthecium.",
@@ -3795,7 +3829,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "1 Paladin’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 Ancient’s banner</li><li>1 psilencer and 1 Ancient’s banner</li><li>1 psycannon and 1 Ancient’s banner</li><li>1 storm bolter and 1 Ancient’s banner*</li></ul>",
@@ -3804,7 +3839,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "storm bolter"
     },
     {
      "text": "* That model’s storm bolter cannot be replaced.",
@@ -3812,7 +3848,8 @@
      "type": "wargear",
      "limit": {
       "kind": "note"
-     }
+     },
+     "base": "storm bolter cannot be"
     }
    ],
    "chapter": "",
@@ -3998,7 +4035,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "storm bolter and nemesis force weapon"
     }
    ],
    "chapter": "",
@@ -4196,7 +4234,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "storm bolter and nemesis force weapon"
     }
    ],
    "chapter": "",
@@ -4350,7 +4389,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -4359,7 +4399,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin lascannon.",
@@ -4368,7 +4409,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin heavy bolter"
     }
    ],
    "chapter": "",
@@ -4505,7 +4547,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 additional storm bolter.",
@@ -4514,7 +4557,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4673,7 +4717,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "servitor’s servo-arm"
     }
    ],
    "chapter": "",
@@ -4859,7 +4904,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "las-talon"
     },
     {
      "text": "This model’s skyhammer missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 typhoon missile launcher</li></ul>",
@@ -4868,7 +4914,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "skyhammer missile launcher"
     }
    ],
    "chapter": "",
@@ -5096,7 +5143,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model’s twin assault cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy plasma cannon</li><li>1 twin lascannon</li></ul>",
@@ -5105,7 +5153,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin assault cannon"
     },
     {
      "text": "This model’s typhoon missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 twin multi-melta</li></ul>",
@@ -5114,7 +5163,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "typhoon missile launcher"
     }
    ],
    "chapter": "",
@@ -5287,7 +5337,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "skyhammer missile launcher"
     }
    ],
    "chapter": "",
@@ -5465,7 +5516,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": "storm bolter and nemesis force weapon"
     }
    ],
    "chapter": "",
@@ -5655,7 +5707,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "assault cannon"
     },
     {
      "text": "This model’s storm bolter can be replaced with 1 heavy flamer.",
@@ -5664,7 +5717,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "storm bolter"
     }
    ],
    "chapter": "",

@@ -305,11 +305,30 @@ function WeaponOptionsEditor({
     onChange(next);
   };
   const total = chosen.reduce((s, c) => s + intOf(c.cost) * c.qty, 0);
+
+  // Base weapons auto-scale: pool = max models that carry the base; remaining = pool - replacements.
+  const basePool = new Map<string, number>();
+  const baseUsed = new Map<string, number>();
+  for (const o of options) {
+    if (!o.base) continue;
+    basePool.set(o.base, Math.max(basePool.get(o.base) ?? 0, optionMax(o.limit, modelCount) ?? 0));
+    baseUsed.set(o.base, (baseUsed.get(o.base) ?? 0) + qtyOf(o.text));
+  }
+
   return (
     <details style={{ marginTop: 8 }}>
       <summary className="muted small">
         Weapon options ({options.length}){total > 0 ? ` · +${total} pts` : ''}
       </summary>
+      {basePool.size > 0 && (
+        <div className="muted tiny" style={{ marginTop: 6 }}>
+          {[...basePool.keys()].map((b) => (
+            <div key={b}>
+              base · {b}: <b>{Math.max(0, (basePool.get(b) ?? 0) - (baseUsed.get(b) ?? 0))}</b> left
+            </div>
+          ))}
+        </div>
+      )}
       <ul className="col" style={{ gap: 8, marginTop: 6, listStyle: 'none', padding: 0 }}>
         {options.map((o, i) => {
           // Constraint notes ("* no duplicates", "** max 3 ranged") are shown, not editable.
@@ -320,7 +339,12 @@ function WeaponOptionsEditor({
               </li>
             );
           }
-          const max = optionMax(o.limit, modelCount);
+          const rawMax = optionMax(o.limit, modelCount);
+          // share the base-weapon pool across sibling options replacing the same base
+          const max =
+            o.base && rawMax != null
+              ? Math.min(rawMax, (basePool.get(o.base) ?? rawMax) - ((baseUsed.get(o.base) ?? 0) - qtyOf(o.text)))
+              : rawMax;
           const q = Math.min(qtyOf(o.text), max ?? Infinity);
           const limLabel =
             o.limit?.kind === 'per_n'

@@ -98,6 +98,7 @@ export interface WeaponOption {
   cost: number;
   type: 'wargear' | 'model';
   limit?: OptionLimit;
+  base?: string;   // base weapon this option replaces (auto-scales as replacements are taken)
 }
 export interface ChosenWargear { name: string; cost: number; qty: number; }
 export interface Enhancement { name: string; cost: string; description: string; is_upgrade: boolean; }

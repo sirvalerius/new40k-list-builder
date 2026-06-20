@@ -137,7 +137,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -357,7 +358,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with:<ul style=\"list-style-type:circle\"><li>1 lobba</li></ul>",
@@ -366,7 +368,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with up to 4 big shootas.",
@@ -375,7 +378,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model’s tracks and wheels can be replaced with 1 deff rolla.",
@@ -384,7 +388,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "tracks and wheels"
     },
     {
      "text": "This model can be equipped with any of the following:<ul style=\"list-style-type:circle\"><li>1 ’ard case</li><li>1 grabbin’ klaw</li><li>1 wreckin’ ball</li></ul>",
@@ -393,7 +398,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -565,7 +571,8 @@
      "limit": {
       "kind": "per_n",
       "n": 10
-     }
+     },
+     "base": "slugga and choppa"
     }
    ],
    "chapter": "",
@@ -846,7 +853,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1003,7 +1011,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "kannon"
     }
    ],
    "chapter": "",
@@ -1150,7 +1159,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "kustom mega-blasta"
     },
     {
      "text": "This model’s power klaw can be replaced with 1 drilla.",
@@ -1159,7 +1169,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "power klaw"
     }
    ],
    "chapter": "",
@@ -1341,7 +1352,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "kustom-mega blasta"
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 tellyport blasta</li><li>1 kustom force field</li></ul>",
@@ -1350,7 +1362,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 grot oiler.",
@@ -1359,7 +1372,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1601,7 +1615,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "slugga"
     },
     {
      "text": "This model’s choppa can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 kombi-weapon</li><li>1 kustom mega-blasta</li><li>1 kustom mega-slugga</li><li>1 rokkit launcha</li><li>1 big choppa</li><li>1 killsaw</li><li>1 power klaw</li></ul>",
@@ -1610,7 +1625,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "choppa"
     }
    ],
    "chapter": "",
@@ -1741,7 +1757,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -1879,7 +1896,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2045,7 +2063,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2191,7 +2210,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2702,7 +2722,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -2921,7 +2942,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "big choppa"
     },
     {
      "text": "The Boss Nob’s big choppa and slugga can be replaced with 1 kombi-weapon and 1 close combat weapon.",
@@ -2930,7 +2952,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "big choppa and slugga"
     },
     {
      "text": "Any number of Boyz can each have their slugga and choppa replaced with 1 shoota and 1 close combat weapon.",
@@ -2938,7 +2961,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "slugga and choppa"
     },
     {
      "text": "For every 10 models in this unit, 1 Boy’s choppa and slugga can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 big shoota and 1 close combat weapon</li><li>1 rokkit launcha and 1 close combat weapon</li></ul>",
@@ -2947,7 +2971,8 @@
      "limit": {
       "kind": "per_n",
       "n": 10
-     }
+     },
+     "base": "choppa and slugga"
     }
    ],
    "chapter": "",
@@ -3113,7 +3138,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "smash hammer"
     },
     {
      "text": "One Breaka Boy’s smash hammer can be replaced with 1 knucklebustas.",
@@ -3121,7 +3147,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "smash hammer"
     },
     {
      "text": "One Breaka Boy’s smash hammer can be replaced with 1 tankhammer.",
@@ -3129,7 +3156,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "smash hammer"
     }
    ],
    "chapter": "",
@@ -3290,7 +3318,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "big shoota"
     }
    ],
    "chapter": "",
@@ -3430,7 +3459,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -3623,7 +3653,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model’s big shoota can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 kustom mega-blasta</li><li>1 rokkit launcha</li><li>1 skorcha</li></ul>",
@@ -3632,7 +3663,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "big shoota"
     },
     {
      "text": "This model’s 2 deffguns can be replaced with 2 rattler kannons.",
@@ -3641,7 +3673,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "2 deffguns"
     }
    ],
    "chapter": "",
@@ -3765,7 +3798,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4002,7 +4036,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4177,7 +4212,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "big shootas can each be"
     },
     {
      "text": "This model’s dread klaws can each be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 big shoota</li><li>1 kustom-mega blasta</li><li>1 rokkit launcha</li><li>1 skorcha</li></ul>",
@@ -4186,7 +4222,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "dread klaws can each be"
     }
    ],
    "chapter": "",
@@ -4389,7 +4426,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "Each of this model’s zzap guns can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 lobba</li><li>1 kannon</li></ul>",
@@ -4398,7 +4436,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "zzap guns"
     },
     {
      "text": "This model’s kannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 lobba</li><li>1 zzap gun</li></ul>",
@@ -4407,7 +4446,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "kannon"
     },
     {
      "text": "Each of this model’s twin big shootas can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 skorcha</li><li>1 rokkit launcha</li></ul>",
@@ -4416,7 +4456,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin big shootas"
     }
    ],
    "chapter": "",
@@ -4704,7 +4745,8 @@
      "limit": {
       "kind": "per_n",
       "n": 3
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -4865,7 +4907,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "twin big shoota"
     },
     {
      "text": "Any number of models can each be equipped with 1 killsaw.",
@@ -4873,7 +4916,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -5025,7 +5069,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -5165,7 +5210,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -5336,7 +5382,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -5918,7 +5965,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -6090,7 +6138,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin big shoota"
     },
     {
      "text": "This model’s twin grotzooka can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin big shoota</li><li>1 twin kustom mega-blasta</li><li>1 twin rokkit launcha</li><li>1 twin skorcha</li></ul>",
@@ -6099,7 +6148,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin grotzooka"
     }
    ],
    "chapter": "",
@@ -6267,7 +6317,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "big shoota"
     },
     {
      "text": "For every four models in this unit, one model can be equipped with one of the following in addition to any other weapons:<ul style=\"list-style-type:circle\"><li>1 Grot tank shoota</li><li>1 grotzooka</li><li>1 kustom mega-blasta</li><li>1 rokkit launcha</li><li>1 skorcha</li></ul>",
@@ -6275,7 +6326,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -6575,7 +6627,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -6719,7 +6772,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -6887,7 +6941,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin big shoota</li><li>2 rokkit launchas</li><li>1 skorcha</li></ul>",
@@ -6896,7 +6951,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -7208,7 +7264,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "bursta kannon"
     }
    ],
    "chapter": "",
@@ -7381,7 +7438,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "kan shoota"
     }
    ],
    "chapter": "",
@@ -7618,7 +7676,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "choppa"
     },
     {
      "text": "Up to 2 Kommandos can each have their slugga and choppa replaced with 1 speshul Kommando shoota and 1 close combat weapon.",
@@ -7626,7 +7685,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "slugga and choppa"
     },
     {
      "text": "1 Kommando’s slugga and choppa can be replaced with 1 breacha ram.",
@@ -7635,7 +7695,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "slugga and choppa"
     },
     {
      "text": "1 Kommando’s slugga and choppa can be replaced with 1 burna and 1 close combat weapon.",
@@ -7644,7 +7705,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "slugga and choppa"
     },
     {
      "text": "1 Kommando’s slugga and choppa can be replaced with 1 rokkit launcha and 1 close combat weapon.",
@@ -7653,7 +7715,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "slugga and choppa"
     },
     {
      "text": "This unit can be equipped with 1 bomb squig.",
@@ -7661,7 +7724,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "This unit can be equipped with 1 distraction grot.",
@@ -7669,7 +7733,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -7969,7 +8034,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "tracks and wheels"
     },
     {
      "text": "This model can be equipped with 1 grabbin’ klaw.",
@@ -7978,7 +8044,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 wreckin’ ball.",
@@ -7987,7 +8054,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 big shoota</li><li>2 big shootas</li><li>1 big shoota and 1 rokkit launcha</li><li>1 rokkit launcha</li><li>2 rokkit launchas</li></ul>",
@@ -7996,7 +8064,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -8162,7 +8231,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "big shoota"
     }
    ],
    "chapter": "",
@@ -8302,7 +8372,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -8458,7 +8529,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "killkannon"
     },
     {
      "text": "This model’s dread rippa klaw can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dread killsaw</li><li>1 killkannon</li></ul>",
@@ -8467,7 +8539,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "dread rippa klaw"
     }
    ],
    "chapter": "",
@@ -8666,7 +8739,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "kustom shoota and power klaw"
     }
    ],
    "chapter": "",
@@ -8925,7 +8999,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "wrench"
     }
    ],
    "chapter": "",
@@ -9135,7 +9210,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "smasha gun"
     }
    ],
    "chapter": "",
@@ -9280,7 +9356,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "killkannon"
     },
     {
      "text": "This model’s dread rippa klaw can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dread killsaw</li><li>1 killkannon</li></ul>",
@@ -9289,7 +9366,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "dread rippa klaw"
     }
    ],
    "chapter": "",
@@ -9405,7 +9483,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -9821,7 +9900,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -9996,7 +10076,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "big choppa"
     },
     {
      "text": "Any number of models can each have their slugga and big choppa replaced with 1 kombi-weapon and 1 close combat weapon.",
@@ -10004,7 +10085,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "slugga and big choppa"
     },
     {
      "text": "For every 5 models in this unit, this unit can be equipped with 1 ammo runt.",
@@ -10013,7 +10095,8 @@
      "limit": {
       "kind": "per_n",
       "n": 5
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -10196,7 +10279,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "Any number of models can each have their choppa replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 big choppa</li><li>1 killsaw</li><li>1 power klaw</li><li>1 power stabba</li><li>1 slugga</li></ul>",
@@ -10204,7 +10288,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "choppa"
     }
    ],
    "chapter": "",
@@ -10328,7 +10413,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -10456,7 +10542,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -10601,7 +10688,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "power klaw"
     }
    ],
    "chapter": "",
@@ -10960,7 +11048,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -11104,7 +11193,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -11292,7 +11382,8 @@
      "limit": {
       "kind": "per_n",
       "n": 3
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -11629,7 +11720,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "choppa"
     }
    ],
    "chapter": "",
@@ -11800,7 +11892,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "rokkit pistols"
     },
     {
      "text": "One Tankbusta can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 pulsa rokkit</li><li>1 additional rokkit launcha</li></ul>",
@@ -11808,7 +11901,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -11942,7 +12036,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -12077,7 +12172,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -12253,7 +12349,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": ""
     },
     {
      "text": "The Boss Nob on Warbike can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 slugga</li><li>1 big choppa</li><li>1 power klaw</li></ul>",
@@ -12262,7 +12359,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -12419,7 +12517,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "big choppa"
     },
     {
      "text": "This model can be equipped with 1 attack squig.",
@@ -12428,7 +12527,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
@@ -12686,7 +12786,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "killsaw"
     }
    ],
    "chapter": "",
@@ -12820,7 +12921,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "twin big shoota"
     }
    ],
    "chapter": "",
@@ -12954,7 +13056,8 @@
      "type": "wargear",
      "limit": {
       "kind": "all"
-     }
+     },
+     "base": "twin big shoota"
     }
    ],
    "chapter": "",
@@ -13114,7 +13217,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": "twin wazbom mega-kannon"
     },
     {
      "text": "This model can be equipped with 1 blastajet force field.",
@@ -13123,7 +13227,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     },
     {
      "text": "This model can be equipped with 1 twin supa-shoota.",
@@ -13132,7 +13237,8 @@
      "limit": {
       "kind": "fixed",
       "max": 1
-     }
+     },
+     "base": ""
     }
    ],
    "chapter": "",
