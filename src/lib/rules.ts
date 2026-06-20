@@ -76,6 +76,13 @@ export function validateList(
     }
   }
 
+  // --- units gated to a specific detachment (e.g. daemon legions) ---
+  const chosenNames = new Set(chosen.map((d) => d.name));
+  for (const u of list.units) {
+    if (u.requiresDetachment && !chosenNames.has(u.requiresDetachment))
+      v.push({ level: 'error', code: 'REQ_DET', message: `${u.name}: richiede la detachment "${u.requiresDetachment}".` });
+  }
+
   // --- unit counts (Rule of Three) ---
   const counts = new Map<string, { n: number; battleline: boolean; name: string }>();
   for (const u of list.units) {

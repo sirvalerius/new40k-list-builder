@@ -58,6 +58,15 @@ export function Roster({
     () => new Map(fd.datasheets.map((d) => [d.id, d])),
     [fd],
   );
+  const chosenDetNames = useMemo(
+    () =>
+      new Set(
+        fd.detachments
+          .filter((d) => list.detachmentIds.includes(d.id))
+          .map((d) => d.name),
+      ),
+    [fd, list.detachmentIds],
+  );
 
   // Filter datasheets by the selected sub-faction (Chapter): hide other Chapters'
   // units, and apply Chapter exclusions (Black Templars cannot take PSYKERs).
@@ -153,6 +162,9 @@ export function Roster({
                   {u.isBattleline && <span className="badge">Battleline</span>}
                   {u.isEpicHero && <span className="badge">Epic Hero</span>}
                   {u.isAlly && <span className="badge ally">Ally</span>}
+                  {u.requiresDetachment && !chosenDetNames.has(u.requiresDetachment) && (
+                    <span className="badge bad">needs {u.requiresDetachment}</span>
+                  )}
                 </div>
               </div>
             </div>

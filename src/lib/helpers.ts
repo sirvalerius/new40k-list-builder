@@ -93,6 +93,7 @@ export function buildListUnit(
     pointsLabel: tier.description,
     variantKey: tier.variant ?? tier.description,
     modelCount: modelCount ?? tier.models ?? undefined,
+    requiresDetachment: ds.requires_detachment || undefined,
     isEpicHero: ds.is_epic_hero,
     isBattleline: ds.is_battleline,
     isCharacter: ds.is_character,

@@ -74,6 +74,7 @@ export interface Datasheet {
   faction_keywords: string[];
   can_lead: string[];
   chapter?: string;            // SM sub-faction this datasheet belongs to ('' = generic)
+  requires_detachment?: string;// unit only legal if this detachment is taken ('' = none)
   is_character: boolean;
   is_battleline: boolean;
   is_epic_hero: boolean;
@@ -139,6 +140,7 @@ export interface ListUnit {
   isBattleline: boolean;
   isCharacter: boolean;
   isAlly: boolean;             // counts against ally cap
+  requiresDetachment?: string; // unit needs this detachment selected to be legal
   enhancementName?: string;    // attached enhancement
   enhancementCost?: number;
   wargearCosts?: ChosenWargear[];  // paid wargear options chosen (qty x cost adds to unit cost)
