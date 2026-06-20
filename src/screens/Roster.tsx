@@ -288,21 +288,32 @@ function WeaponOptionsEditor({
                 )}
                 {limLabel ? <span className="muted tiny"> · {limLabel}</span> : ''}
               </div>
-              <button
-                className="ghost stepper sm"
-                disabled={q <= 0}
-                onClick={() => setQty(o, q - 1)}
-              >
-                −
-              </button>
-              <b style={{ minWidth: 20, textAlign: 'center' }}>{q}</b>
-              <button
-                className="ghost stepper sm"
-                disabled={max != null && q >= max}
-                onClick={() => setQty(o, Math.min(q + 1, max ?? Infinity))}
-              >
-                ＋
-              </button>
+              {max === 1 ? (
+                <input
+                  type="checkbox"
+                  className="opt-check"
+                  checked={q === 1}
+                  onChange={(e) => setQty(o, e.target.checked ? 1 : 0)}
+                />
+              ) : (
+                <>
+                  <button
+                    className="ghost stepper sm"
+                    disabled={q <= 0}
+                    onClick={() => setQty(o, q - 1)}
+                  >
+                    −
+                  </button>
+                  <b style={{ minWidth: 20, textAlign: 'center' }}>{q}</b>
+                  <button
+                    className="ghost stepper sm"
+                    disabled={max != null && q >= max}
+                    onClick={() => setQty(o, Math.min(q + 1, max ?? Infinity))}
+                  >
+                    ＋
+                  </button>
+                </>
+              )}
             </li>
           );
         })}

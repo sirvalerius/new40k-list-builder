@@ -109,6 +109,10 @@ export function validateList(
   let nonUpgradeChoices = 0;
   for (const u of list.units) {
     if (!u.enhancementName) continue;
+    if (u.isEpicHero) {
+      v.push({ level: 'error', code: 'ENH_EPIC', message: `${u.name}: gli Epic Hero non possono avere enhancement.` });
+      continue;
+    }
     const det = chosen.flatMap((d) => d.enhancements).find((e) => e.name === u.enhancementName);
     if (det?.is_upgrade && !u.isCharacter) {
       upgradeNames.set(u.enhancementName, (upgradeNames.get(u.enhancementName) ?? 0) + 1);

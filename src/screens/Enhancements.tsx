@@ -34,7 +34,7 @@ export function Enhancements({
     );
   }
 
-  const eligible = list.units.filter((u) => u.isCharacter);
+  const eligible = list.units.filter((u) => u.isCharacter && !u.isEpicHero);
 
   return (
     <div>
@@ -59,14 +59,18 @@ export function Enhancements({
       )}
 
       {list.units.map((u) => {
-        const canBear = u.isCharacter; // upgrade-on-non-character handled by engine; surfaced below
+        // Epic Heroes can never take Enhancements. Characters take standard enhancements;
+        // non-Character units can only take "(Upgrade)" enhancements.
+        const offer = u.isEpicHero
+          ? []
+          : available.filter((e) => (u.isCharacter ? !e.is_upgrade : e.is_upgrade));
         return (
           <div className="card" key={u.uid}>
             <div className="row">
               <div style={{ flex: 1 }}>
                 <div style={{ fontWeight: 600 }}>{u.name}</div>
                 <div className="muted small">
-                  {u.isCharacter ? 'Character' : 'Non-character'}
+                  {u.isEpicHero ? 'Epic Hero — no enhancements' : u.isCharacter ? 'Character' : 'Non-character'}
                   {u.enhancementName
                     ? ` · ${u.enhancementName} (+${u.enhancementCost})`
                     : ''}
@@ -79,26 +83,26 @@ export function Enhancements({
               )}
             </div>
 
-            <div className="mt">
-              <select
-                value={u.enhancementName ?? ''}
-                onChange={(e) => {
-                  const enh = available.find((x) => x.name === e.target.value);
-                  if (enh) onAssign(u.uid, enh);
-                  else onClear(u.uid);
-                }}
-              >
-                <option value="">— No enhancement —</option>
-                {available
-                  .filter((e) => canBear || e.is_upgrade)
-                  .map((e) => (
+            {!u.isEpicHero && (
+              <div className="mt">
+                <select
+                  value={u.enhancementName ?? ''}
+                  onChange={(e) => {
+                    const enh = available.find((x) => x.name === e.target.value);
+                    if (enh) onAssign(u.uid, enh);
+                    else onClear(u.uid);
+                  }}
+                >
+                  <option value="">— No enhancement —</option>
+                  {offer.map((e) => (
                     <option key={e.name} value={e.name}>
                       {e.is_upgrade ? '(Upgrade) ' : ''}
                       {e.name} (+{intOf(e.cost)})
                     </option>
                   ))}
-              </select>
-            </div>
+                </select>
+              </div>
+            )}
 
             {u.enhancementName &&
               (() => {
