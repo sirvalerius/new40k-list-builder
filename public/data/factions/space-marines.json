@@ -55583,10 +55583,11 @@
      "description": "<b>WHEN:</b> Your Movement phase.<br><br><b>TARGET:</b> One ADEPTUS ASTARTES TERMINATOR, BLADEGUARD VETERAN SQUAD, STERNGUARD VETERAN SQUAD or VANGUARD VETERAN SQUAD unit from your army within range of an objective marker you control.<br><br><b>EFFECT:</b> That objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn."
     }
    ],
-   "dp_cost": 0,
-   "force_disposition": "",
+   "dp_cost": 2,
+   "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001004",
@@ -55665,7 +55666,8 @@
    "dp_cost": 3,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000793",
@@ -55744,7 +55746,8 @@
    "dp_cost": 2,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001147",
@@ -55823,7 +55826,8 @@
    "dp_cost": 3,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001130",
@@ -55896,7 +55900,8 @@
    "dp_cost": 2,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000808",
@@ -55975,7 +55980,8 @@
    "dp_cost": 3,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001120",
@@ -56054,7 +56060,8 @@
    "dp_cost": 3,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000905",
@@ -56109,7 +56116,8 @@
    "dp_cost": 0,
    "force_disposition": "",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": true
   },
   {
    "id": "000001146",
@@ -56188,7 +56196,8 @@
    "dp_cost": 3,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001008",
@@ -56267,7 +56276,8 @@
    "dp_cost": 1,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001091",
@@ -56346,7 +56356,8 @@
    "dp_cost": 2,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000836",
@@ -56425,7 +56436,8 @@
    "dp_cost": 2,
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900060",
@@ -56474,7 +56486,8 @@
    "dp_cost": 1,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": "Your army can include DARK ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter."
+   "restriction": "Your army can include DARK ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+   "boarding_actions": false
   },
   {
    "id": "000900061",
@@ -56523,7 +56536,8 @@
    "dp_cost": 1,
    "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
-   "restriction": "Your army can include DARK ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter."
+   "restriction": "Your army can include DARK ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+   "boarding_actions": false
   },
   {
    "id": "000001103",
@@ -56602,7 +56616,8 @@
    "dp_cost": 2,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900058",
@@ -56651,7 +56666,8 @@
    "dp_cost": 1,
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
-   "restriction": "Your army can include BLOOD ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter."
+   "restriction": "Your army can include BLOOD ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+   "boarding_actions": false
   },
   {
    "id": "000000795",
@@ -56730,7 +56746,8 @@
    "dp_cost": 2,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001086",
@@ -56809,7 +56826,8 @@
    "dp_cost": 2,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900007",
@@ -56858,7 +56876,8 @@
    "dp_cost": 1,
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000750",
@@ -56937,7 +56956,8 @@
    "dp_cost": 3,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001093",
@@ -57016,7 +57036,8 @@
    "dp_cost": 2,
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001118",
@@ -57103,7 +57124,8 @@
    "dp_cost": 2,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001148",
@@ -57182,7 +57204,8 @@
    "dp_cost": 2,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000835",
@@ -57261,7 +57284,8 @@
    "dp_cost": 2,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900062",
@@ -57310,7 +57334,8 @@
    "dp_cost": 1,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": "Your army can include DARK ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter."
+   "restriction": "Your army can include DARK ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+   "boarding_actions": false
   },
   {
    "id": "000000794",
@@ -57389,7 +57414,8 @@
    "dp_cost": 2,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900057",
@@ -57438,7 +57464,8 @@
    "dp_cost": 1,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "GRACE",
-   "restriction": "Your army can include BLOOD ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter."
+   "restriction": "Your army can include BLOOD ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+   "boarding_actions": false
   },
   {
    "id": "000900063",
@@ -57487,7 +57514,8 @@
    "dp_cost": 1,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": "Your army can include SPACE WOLVES units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter."
+   "restriction": "Your army can include SPACE WOLVES units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+   "boarding_actions": false
   },
   {
    "id": "000000758",
@@ -57566,7 +57594,8 @@
    "dp_cost": 3,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000994",
@@ -57645,7 +57674,8 @@
    "dp_cost": 1,
    "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000981",
@@ -57724,7 +57754,8 @@
    "dp_cost": 2,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900009",
@@ -57773,7 +57804,8 @@
    "dp_cost": 1,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": "Your army can include BLACK TEMPLARS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter."
+   "restriction": "Your army can include BLACK TEMPLARS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+   "boarding_actions": false
   },
   {
    "id": "000001131",
@@ -57852,7 +57884,8 @@
    "dp_cost": 2,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000906",
@@ -57907,7 +57940,8 @@
    "dp_cost": 0,
    "force_disposition": "",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": true
   },
   {
    "id": "000001123",
@@ -57986,7 +58020,8 @@
    "dp_cost": 3,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001132",
@@ -58065,7 +58100,8 @@
    "dp_cost": 2,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001070",
@@ -58144,7 +58180,8 @@
    "dp_cost": 2,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001069",
@@ -58223,7 +58260,8 @@
    "dp_cost": 2,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001126",
@@ -58310,7 +58348,8 @@
    "dp_cost": 2,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001068",
@@ -58389,7 +58428,8 @@
    "dp_cost": 2,
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001104",
@@ -58476,7 +58516,8 @@
    "dp_cost": 2,
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001139",
@@ -58531,7 +58572,8 @@
    "dp_cost": 0,
    "force_disposition": "",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": true
   },
   {
    "id": "000001119",
@@ -58618,7 +58660,8 @@
    "dp_cost": 2,
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000796",
@@ -58697,7 +58740,8 @@
    "dp_cost": 2,
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900008",
@@ -58746,7 +58790,8 @@
    "dp_cost": 1,
    "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000907",
@@ -58801,7 +58846,8 @@
    "dp_cost": 0,
    "force_disposition": "",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": true
   },
   {
    "id": "000000901",
@@ -58880,7 +58926,8 @@
    "dp_cost": 2,
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900010",
@@ -58904,7 +58951,8 @@
    "dp_cost": 1,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": "Your army can include BLACK TEMPLARS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter."
+   "restriction": "Your army can include BLACK TEMPLARS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+   "boarding_actions": false
   },
   {
    "id": "000000900",
@@ -58983,7 +59031,8 @@
    "dp_cost": 2,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000834",
@@ -59062,7 +59111,8 @@
    "dp_cost": 2,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000797",
@@ -59141,7 +59191,8 @@
    "dp_cost": 2,
    "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900064",
@@ -59190,7 +59241,8 @@
    "dp_cost": 1,
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
-   "restriction": "Your army can include SPACE WOLVES units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter."
+   "restriction": "Your army can include SPACE WOLVES units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+   "boarding_actions": false
   },
   {
    "id": "000001092",
@@ -59269,7 +59321,8 @@
    "dp_cost": 2,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900059",
@@ -59318,7 +59371,8 @@
    "dp_cost": 1,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "DOOMED",
-   "restriction": "Your army can include BLOOD ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter."
+   "restriction": "Your army can include BLOOD ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+   "boarding_actions": false
   },
   {
    "id": "000001059",
@@ -59397,7 +59451,8 @@
    "dp_cost": 3,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001006",
@@ -59476,7 +59531,8 @@
    "dp_cost": 1,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   }
  ]
 }

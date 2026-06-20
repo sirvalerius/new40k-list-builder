@@ -27,7 +27,9 @@ export function DetachmentPicker({
         <div className="empty">This faction has no detachments in the data.</div>
       )}
 
-      {detachments.map((d) => {
+      {detachments
+        .filter((d) => !d.boarding_actions)
+        .map((d) => {
         const selected = list.detachmentIds.includes(d.id);
         const wouldExceed = !selected && dpUsed + (d.dp_cost || 0) > dpBudget;
         return (

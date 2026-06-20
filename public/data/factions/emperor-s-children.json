@@ -3806,10 +3806,11 @@
      "description": "<b>WHEN:</b> Fight phase.<br><br><b>TARGET:</b> One Slaanesh Beasts, Slaanesh Infantry or SLAANESH Mounted unit from your army that has not been selected to fight this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit makes a Pile-in or Consolidation move, it can move up to 6\" instead of up to 3\". When doing so, it does not need to end that move closer to the closest enemy model, provided it ends that move as close as possible to the closest enemy unit."
     }
    ],
-   "dp_cost": 0,
-   "force_disposition": "",
+   "dp_cost": 2,
+   "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001037",
@@ -3885,10 +3886,11 @@
      "description": "<b>WHEN:</b> Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Emperor’s Children unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1."
     }
    ],
-   "dp_cost": 0,
-   "force_disposition": "",
+   "dp_cost": 3,
+   "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001125",
@@ -3968,10 +3970,11 @@
      "description": "<b>WHEN:</b> Your Movement phase or your Charge phase.<br><br><b>TARGET:</b> One Emperor’s Children Daemon unit from your army that has not been selected to move or charge this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time your unit makes a Normal, Advance or Charge move, it can move horizontally through terrain features."
     }
    ],
-   "dp_cost": 0,
-   "force_disposition": "",
+   "dp_cost": 2,
+   "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900001",
@@ -4017,10 +4020,11 @@
      "description": "WHEN: End of your opponent’s Fight phase. TARGET: One friendly unengaged EMPEROR’S CHILDREN TERMINATOR unit. EFFECT: Place your unit in strategic reserves."
     }
    ],
-   "dp_cost": 0,
-   "force_disposition": "",
+   "dp_cost": 1,
+   "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900002",
@@ -4066,10 +4070,11 @@
      "description": "WHEN: Your Shooting phase, when a friendly EMPEROR’S CHILDREN BATTLELINE unit is selected to shoot. TARGET: That EMPEROR’S CHILDREN BATTLELINE unit. EFFECT: Those ranged attacks do not prevent your unit from being hidden."
     }
    ],
-   "dp_cost": 0,
-   "force_disposition": "",
+   "dp_cost": 1,
+   "force_disposition": "DISRUPTION",
    "exclusive_tag": "HOST",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001033",
@@ -4145,10 +4150,11 @@
      "description": "<b>WHEN:</b> Your opponent’s Movement phase, just after an enemy unit ends a Normal, Advance or Fall Back move.<br><br><b>TARGET:</b> One Emperor’s Children unit from your army (excluding Beasts and Vehicles) that is within 8\" of the enemy unit that just ended that move.<br><br><b>EFFECT:</b> Your unit can make a Normal move of up to 6\"."
     }
    ],
-   "dp_cost": 0,
-   "force_disposition": "",
+   "dp_cost": 2,
+   "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001034",
@@ -4224,10 +4230,11 @@
      "description": "<b>WHEN:</b> Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Emperor’s Children unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play."
     }
    ],
-   "dp_cost": 0,
-   "force_disposition": "",
+   "dp_cost": 2,
+   "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001035",
@@ -4303,10 +4310,11 @@
      "description": "<b>WHEN:</b> Your opponent’s Shooting phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Emperor’s Children Transport from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> One Emperor’s Children unit embarked within your <span class=\"kwb\">TRANSPORT</span> can disembark. When doing so, models in that unit can be set up anywhere on the battlefield wholly within 6\" of that <span class=\"kwb\">TRANSPORT</span> and not within Engagement Range of one or more enemy units."
     }
    ],
-   "dp_cost": 0,
-   "force_disposition": "",
+   "dp_cost": 2,
+   "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001038",
@@ -4382,10 +4390,11 @@
      "description": "<b>WHEN:</b> Your opponent’s Shooting phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Emperor’s Children Character unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> After the attacking unit has shot, your unit can make a Surge move. To do so, roll one D6: each model in your unit can move a distance in inches up to the result, but your unit must end that move as close as possible to the closest enemy unit. When doing so, those models can be moved within Engagement Range of that enemy unit. If your unit is not your army’s Favoured Champions, you can re-roll the dice to determine the distance of its Surge move."
     }
    ],
-   "dp_cost": 0,
-   "force_disposition": "",
+   "dp_cost": 2,
+   "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900003",
@@ -4431,10 +4440,11 @@
      "description": "WHEN: Your opponent’s Movement phase, when an enemy unit that was engaged with a friendly FLAWLESS BLADES unit ends a Fall Back move, if that FLAWLESS BLADES unit is unengaged. TARGET: That FLAWLESS BLADES unit. EFFECT: Your unit can make a Normal move of up to D3+3\"."
     }
    ],
-   "dp_cost": 0,
-   "force_disposition": "",
+   "dp_cost": 1,
+   "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000001154",
@@ -4489,7 +4499,8 @@
    "dp_cost": 0,
    "force_disposition": "",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": true
   }
  ]
 }

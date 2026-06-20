@@ -24426,90 +24426,8 @@
    "dp_cost": 2,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
-  },
-  {
-   "id": "000000888",
-   "name": "Brood Brother Auxilia",
-   "legend": "",
-   "rules": [
-    {
-     "name": "Integrated Tactics",
-     "description": "Each time an ASTRA MILITARUm unit from your army (see below) is selected to shoot, you can select one enemy unit within 18\" of and visible to that unit. If you do, until the end of the phase, models in that <span class=\"kwb\">ASTRA</span> <span class=\"kwb\">MILITARUM</span> unit can only target that enemy unit (and only if it is an eligible target) and that enemy unit is caught in overlapping fire. While an enemy unit is caught in overlapping fire, each time a <span class=\"kwb\">GENESTEALER</span> <span class=\"kwb\">CULTS</span> model from your army targets that enemy unit with a ranged attack, add 1 to the Hit roll. "
-    },
-    {
-     "name": "BROOD BROTHERS",
-     "description": "You can include ASTRA MILITARUm units in your army, even though they do not have the <span class=\"kwb\">GENESTEALER</span> <span class=\"kwb\">CULTS</span> Faction keyword. The combined points cost of such units you can include in your army is:<br><ul><li>Incursion: Up to 500 pts</li><li>Strike Force: Up to 1000 pts</li><li>Onslaught: Up to 1500 pts</li></ul>A <span class=\"kwb\">GENESTEALER</span> <span class=\"kwb\">CULTS</span> model must be your <span class=\"kwb\">WARLORD</span>, and <span class=\"kwb\">ASTRA</span> <span class=\"kwb\">MILITARUM</span> models from your army lose the Voice of Command ability if they have it. You cannot include units with any of the following keywords in your army using this rule: <span class=\"kwb\">AIRCRAFT</span>; <span class=\"kwb\">COMMISSAR</span>; <span class=\"kwb\">EPIC</span> <span class=\"kwb\">HERO</span>; <span class=\"kwb\">MILITARUM</span> <span class=\"kwb\">TEMPESTUS</span>; <span class=\"kwb\">OGRYN</span>; <span class=\"kwb\">RATLING</span>; <span class=\"kwb\">TECH-PRIEST</span> <span class=\"kwb\">ENGINSEER</span>; <span class=\"kwb\">MINISTORUM</span> <span class=\"kwb\">PRIEST</span>."
-    }
-   ],
-   "enhancements": [
-    {
-     "name": "Martial Espionage",
-     "cost": "25",
-     "description": "GENESTEALER CULTS INFANTRy model only. Once per turn, when a friendly ASTRA MILITARUm INFANTRy or ASTRA MILITARUm MOUNTED unit within 9\" of the bearer is selected to shoot, the bearer can use this Enhancement. If it does, until the end of the phase, improve the Armour Penetration characteristic of ranged weapons equipped by models in that unit by 1.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Adaptive Reprisal",
-     "cost": "15",
-     "description": "<span class=\"kwb\">GENESTEALER</span> <span class=\"kwb\">CULTS</span> <span class=\"kwb\">INFANTRY</span> model only. Once per turn, you can target a friendly <span class=\"kwb\">GENESTEALER</span> <span class=\"kwb\">CULTS</span> unit within 9\" of the bearer with the Heroic Intervention Stratagem for 0CP.",
-     "is_upgrade": false
-    },
-    {
-     "name": "The Hero Returned",
-     "cost": "20",
-     "description": "<span class=\"kwb\">GENESTEALER</span> <span class=\"kwb\">CULTS</span> <span class=\"kwb\">INFANTRY</span> model only. Improve the Leadership and Objective Control characteristics of models in the bearer’s unit by 1.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Firepoint Commander",
-     "cost": "10",
-     "description": "<span class=\"kwb\">GENESTEALER</span> <span class=\"kwb\">CULTS</span> <span class=\"kwb\">INFANTRY</span> model only. Each time you target the bearer’s unit with the Fire Overwatch Stratagem, while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+.",
-     "is_upgrade": false
-    }
-   ],
-   "stratagems": [
-    {
-     "name": "SYMBIOTIC DESTRUCTION",
-     "cp_cost": "1",
-     "type": "Brood Brother Auxilia – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One Astra Militarum and one <span class=\"kwb\">GENESTEALER</span> <span class=\"kwb\">CULTS</span> unit from your army that have not been selected to shoot this phase.<br><br><b>EFFECT:</b> Select one enemy unit that is visible to both of those selected units and within range of at least one ranged weapon from each of those units. Until the end of the phase, models in those units can only make attacks that target that enemy unit (and only if it is an eligible target). When doing so, each time such a model makes an attack, re-roll a Wound roll of 1."
-    },
-    {
-     "name": "A DARK NETWORK",
-     "cp_cost": "1",
-     "type": "Brood Brother Auxilia – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Reinforcements step of your opponent’s Movement phase, just after an enemy unit is set up on the battlefield from Reserves.<br><br><b>TARGET:</b> One Astra Militarum or <span class=\"kwb\">GENESTEALER</span> <span class=\"kwb\">CULTS</span> unit from your army (excluding Monsters and Vehicles) within 12\" of that enemy unit.<br><br><b>EFFECT:</b> Your unit can make a Normal move of up to 6\"."
-    },
-    {
-     "name": "ACCEPTABLE LOSSES",
-     "cp_cost": "2",
-     "type": "Brood Brother Auxilia – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One Astra Militarum unit from your army.<br><br><b>EFFECT:</b> Select one enemy unit within Engagement Range of one or more <span class=\"kwb\">GENESTEALER</span> <span class=\"kwb\">CULTS</span> units from your army. Until the end of the phase, your unit can make ranged attacks that target that enemy unit. If it does, after it has resolved those attacks, roll one D6 for each of those <span class=\"kwb\">GENESTEALER</span> <span class=\"kwb\">CULTS</span> units: on a 5+, the unit being rolled for suffers D3+1 mortal wounds."
-    },
-    {
-     "name": "SUPPRESS AND OVERWHELM",
-     "cp_cost": "1",
-     "type": "Brood Brother Auxilia – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase, just after an Astra Militarum unit from your army has shot.<br><br><b>TARGET:</b> That <span class=\"kwb\">ASTRA</span> <span class=\"kwb\">MILITARUM</span> unit.<br><br><b>EFFECT:</b> Select one enemy unit hit by one or more of those attacks. Until the end of the turn, that enemy unit cannot be targeted with the Fire Overwatch Stratagem and each time a <span class=\"kwb\">GENESTEALER</span> <span class=\"kwb\">CULTS</span> unit from your army selects that enemy unit as a target of a charge, you can re-roll the Charge roll."
-    },
-    {
-     "name": "REGIMENTAL REINFORCEMENTS",
-     "cp_cost": "1",
-     "type": "Brood Brother Auxilia – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your opponent’s Shooting phase or the Fight phase, just after an Astra Militarum Infantry Regiment unit from your army (excluding Artillery and Character units) is destroyed.<br><br><b>TARGET:</b> That <span class=\"kwb\">INFANTRY</span> unit. You can use this Stratagem on that unit even though it was just destroyed.<br><br><b>EFFECT:</b> Roll one D6: on a 3+, place one Cult Ambush marker anywhere on the battlefield that is more than 9\" horizontally away from all enemy units (if this is not possible, no marker is placed) and add a new unit to your army identical to your destroyed unit, in Cult Ambush, at its Starting Strength, with all of its wounds remaining and any <span class=\"kwb2 bluefont\">[ONE SHOT]</span> weapons those models are equipped with considered as not having been shot.<br><br><b>RESTRICTIONS:</b> You can only use this Stratagem once per battle."
-    },
-    {
-     "name": "IN THE SHADOW OF IRON",
-     "cp_cost": "1",
-     "type": "Brood Brother Auxilia – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Any phase, just after an enemy unit ends a move within 9” of one or more of your Cult Ambush markers.<br><br><b>TARGET:</b> One Astra Militarum Vehicle unit from your army.<br><br><b>EFFECT:</b> Select one of those Cult Ambush markers. You can set up that Cult Ambush marker anywhere on the battlefield that is more than 9\" horizontally away from all enemy units and wholly within 6\" of your unit."
-    }
-   ],
-   "dp_cost": 0,
-   "force_disposition": "",
-   "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900065",
@@ -24585,10 +24503,11 @@
      "description": "Strategic Ploy. WHEN: Reinforcements step of your opponent's Movement phase, just after an enemy unit is set up from Reserves. TARGET: One ASTRA MILITARUM or GENESTEALER CULTS unit (excluding MONSTERS/VEHICLES) within 12\". EFFECT: Your unit can make a Normal move of up to 6\"."
     }
    ],
-   "dp_cost": 0,
-   "force_disposition": "",
+   "dp_cost": 2,
+   "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000939",
@@ -24643,7 +24562,8 @@
    "dp_cost": 0,
    "force_disposition": "",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": true
   },
   {
    "id": "000001002",
@@ -24722,7 +24642,8 @@
    "dp_cost": 2,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000940",
@@ -24777,7 +24698,8 @@
    "dp_cost": 0,
    "force_disposition": "",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": true
   },
   {
    "id": "000900054",
@@ -24826,7 +24748,8 @@
    "dp_cost": 1,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000884",
@@ -24905,7 +24828,8 @@
    "dp_cost": 3,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000941",
@@ -24960,7 +24884,8 @@
    "dp_cost": 0,
    "force_disposition": "",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": true
   },
   {
    "id": "000000887",
@@ -25039,7 +24964,8 @@
    "dp_cost": 2,
    "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900055",
@@ -25088,7 +25014,8 @@
    "dp_cost": 1,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "PURESTRAIN",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000000885",
@@ -25167,7 +25094,8 @@
    "dp_cost": 2,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   },
   {
    "id": "000900056",
@@ -25216,7 +25144,8 @@
    "dp_cost": 1,
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "HOSTS",
-   "restriction": ""
+   "restriction": "",
+   "boarding_actions": false
   }
  ]
 }

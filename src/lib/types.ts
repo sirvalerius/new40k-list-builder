@@ -110,6 +110,7 @@ export interface Detachment {
   force_disposition: string;
   exclusive_tag: string;       // e.g. HOST, WAR DOGS ('' if none)
   restriction: string;
+  boarding_actions?: boolean;  // Boarding Actions mode detachment (no DP; excluded from matched play)
   rules: DetachmentRule[];
   enhancements: Enhancement[];
   stratagems: Stratagem[];
