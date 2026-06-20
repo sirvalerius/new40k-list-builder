@@ -316,3 +316,14 @@ h3 { font-size: 0.98rem; }
   margin: 30px auto;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* Model-count stepper buttons (roster add modal) */
+.stepper {
+  width: 44px;
+  height: 44px;
+  font-size: 22px;
+  line-height: 1;
+  padding: 0;
+  border-radius: 10px;
+}
+.stepper:disabled { opacity: 0.4; }

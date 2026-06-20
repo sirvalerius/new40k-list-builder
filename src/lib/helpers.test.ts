@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { reconcileTiers, tierForPick, buildListUnit, datasheetMap } from './helpers';
+import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap } from './helpers';
 import type { Datasheet, FactionData, PointsOption } from './types';
 
 function ds(partial: Partial<Datasheet>): Datasheet {
@@ -10,28 +10,38 @@ function ds(partial: Partial<Datasheet>): Datasheet {
     is_dedicated_transport: false, has_order_tiers: false, ...partial,
   };
 }
-const opt = (description: string, cost: string, variant: string, lo: number | null, hi: number | null): PointsOption =>
-  ({ description, cost, variant, tier_min: lo, tier_max: hi });
+const opt = (description: string, cost: string, variant: string, lo: number | null, hi: number | null, models: number | null): PointsOption =>
+  ({ description, cost, variant, tier_min: lo, tier_max: hi, models });
 
-// Defiler-style: one variant, escalates 1st -> 2nd+
+// Defiler-style: one variant (1 model), escalates 1st -> 2nd+
 const defiler = ds({
-  id: 'def', name: 'Defiler', has_order_tiers: true,
-  points: [opt('1 model (1st unit)', '290', '1 model', 1, 1), opt('1 model (2nd+ unit)', '320', '1 model', 2, null)],
+  id: 'def', name: 'Defiler', has_order_tiers: true, countable: false, model_min: 1, model_max: 1,
+  points: [opt('1 model (1st unit)', '290', '1 model', 1, 1, 1), opt('1 model (2nd+ unit)', '320', '1 model', 2, null, 1)],
 });
-// Genestealers-style: two variants (5/10 models), each with 1st-2nd vs 3rd+
+// Genestealers-style: brackets 5/10 models, each with 1st-2nd vs 3rd+ pick-order tiers
 const gs = ds({
-  id: 'gs', name: 'Genestealers', has_order_tiers: true,
+  id: 'gs', name: 'Genestealers', has_order_tiers: true, countable: true, model_min: 5, model_max: 10,
   points: [
-    opt('5 models (1st-2nd unit)', '75', '5 models', 1, 2),
-    opt('10 models (1st-2nd unit)', '140', '10 models', 1, 2),
-    opt('5 models (3rd+ unit)', '85', '5 models', 3, null),
-    opt('10 models (3rd+ unit)', '150', '10 models', 3, null),
+    opt('5 models (1st-2nd unit)', '75', '5 models', 1, 2, 5),
+    opt('10 models (1st-2nd unit)', '140', '10 models', 1, 2, 10),
+    opt('5 models (3rd+ unit)', '85', '5 models', 3, null, 5),
+    opt('10 models (3rd+ unit)', '150', '10 models', 3, null, 10),
   ],
 });
-const flat = ds({ id: 'flat', name: 'Flat', points: [opt('1 model', '100', '1 model', null, null)] });
+// Termagants-style: brackets 10/20, no pick-order tiers
+const termagants = ds({
+  id: 'tg', name: 'Termagants', has_order_tiers: false, countable: true, model_min: 10, model_max: 20,
+  points: [opt('10 models', '60', '10 models', null, null, 10), opt('20 models', '110', '20 models', null, null, 20)],
+});
+const flat = ds({ id: 'flat', name: 'Flat', points: [opt('1 model', '100', '1 model', null, null, 1)] });
 
-const map = datasheetMap({ datasheets: [defiler, gs, flat] } as unknown as FactionData);
+const map = datasheetMap({ datasheets: [defiler, gs, flat, termagants] } as unknown as FactionData);
 const mk = (d: Datasheet, variant: string) => ({ ...buildListUnit(d, d.points.find((p) => (p.variant ?? p.description) === variant)!), uid: Math.random().toString(36) });
+const mkCount = (d: Datasheet, count: number) => {
+  const variant = bracketForCount(d, count);
+  const tier = d.points.find((p) => (p.variant ?? p.description) === variant)!;
+  return { ...buildListUnit(d, tier, count), uid: Math.random().toString(36) };
+};
 
 describe('tierForPick', () => {
   it('Defiler: 1st pick = 290, 2nd = 320, 3rd = 320', () => {
@@ -65,5 +75,34 @@ describe('reconcileTiers', () => {
   it('leaves non-tiered datasheets untouched', () => {
     const units = [mk(flat, '1 model'), mk(flat, '1 model')];
     expect(reconcileTiers(units, map).map((u) => u.pointsCost)).toEqual([100, 100]);
+  });
+});
+
+describe('bracketForCount (price at the smallest bracket that contains the count)', () => {
+  it('Genestealers 5-10: 5->5, 6->10, 7->10, 10->10', () => {
+    expect(bracketForCount(gs, 5)).toBe('5 models');
+    expect(bracketForCount(gs, 6)).toBe('10 models');
+    expect(bracketForCount(gs, 7)).toBe('10 models');
+    expect(bracketForCount(gs, 10)).toBe('10 models');
+  });
+  it('Termagants 10-20: 10->10, 11->20, 14->20, 20->20', () => {
+    expect(bracketForCount(termagants, 10)).toBe('10 models');
+    expect(bracketForCount(termagants, 11)).toBe('20 models');
+    expect(bracketForCount(termagants, 14)).toBe('20 models');
+    expect(bracketForCount(termagants, 20)).toBe('20 models');
+  });
+});
+
+describe('reconcileTiers by model count (countable units)', () => {
+  it('7 Genestealers -> 10 bracket (140), 5 -> 75', () => {
+    expect(reconcileTiers([mkCount(gs, 7)], map)[0].pointsCost).toBe(140);
+    expect(reconcileTiers([mkCount(gs, 5)], map)[0].pointsCost).toBe(75);
+  });
+  it('three 7-model Genestealers escalate: 140,140,150 (3rd is 3rd+ tier)', () => {
+    const units = [mkCount(gs, 7), mkCount(gs, 7), mkCount(gs, 7)];
+    expect(reconcileTiers(units, map).map((u) => u.pointsCost)).toEqual([140, 140, 150]);
+  });
+  it('14 Termagants -> 20 bracket (110)', () => {
+    expect(reconcileTiers([mkCount(termagants, 14)], map)[0].pointsCost).toBe(110);
   });
 });

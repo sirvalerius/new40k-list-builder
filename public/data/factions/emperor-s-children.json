@@ -137,14 +137,16 @@
      "cost": "220",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 2
+     "tier_max": 2,
+     "models": 1
     },
     {
      "description": "1 model (3rd+ unit)",
      "cost": "240",
      "variant": "1 model",
      "tier_min": 3,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -164,7 +166,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": true
+   "has_order_tiers": true,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004093",
@@ -276,7 +281,8 @@
      "cost": "80",
      "variant": "1 model",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -297,7 +303,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": true,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004090",
@@ -367,7 +376,8 @@
      "cost": "70",
      "variant": "2 models",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 2
     }
    ],
    "keywords": [
@@ -384,7 +394,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 2,
+   "model_max": 2,
+   "countable": false
   },
   {
    "id": "000004081",
@@ -538,7 +551,8 @@
      "cost": "145",
      "variant": "5 models",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 5
     }
    ],
    "keywords": [
@@ -556,7 +570,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 5,
+   "model_max": 5,
+   "countable": false
   },
   {
    "id": "000004086",
@@ -660,14 +677,16 @@
      "cost": "170",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 1
+     "tier_max": 1,
+     "models": 1
     },
     {
      "description": "1 model (2nd+ unit)",
      "cost": "185",
      "variant": "1 model",
      "tier_min": 2,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -686,7 +705,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": true
+   "has_order_tiers": true,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004087",
@@ -790,14 +812,16 @@
      "cost": "205",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 1
+     "tier_max": 1,
+     "models": 1
     },
     {
      "description": "1 model (2nd+ unit)",
      "cost": "235",
      "variant": "1 model",
      "tier_min": 2,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -817,7 +841,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": true
+   "has_order_tiers": true,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004095",
@@ -909,7 +936,8 @@
      "cost": "90",
      "variant": "10 models",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 10
     }
    ],
    "keywords": [
@@ -929,7 +957,10 @@
    "is_battleline": true,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 10,
+   "model_max": 10,
+   "countable": false
   },
   {
    "id": "000004208",
@@ -1131,14 +1162,16 @@
      "cost": "290",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 1
+     "tier_max": 1,
+     "models": 1
     },
     {
      "description": "1 model (2nd+ unit)",
      "cost": "320",
      "variant": "1 model",
      "tier_min": 2,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -1157,7 +1190,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": true
+   "has_order_tiers": true,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004096",
@@ -1228,14 +1264,16 @@
      "cost": "90",
      "variant": "3 models",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 3
     },
     {
      "description": "6 models",
      "cost": "180",
      "variant": "6 models",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 6
     }
    ],
    "keywords": [
@@ -1254,7 +1292,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 3,
+   "model_max": 6,
+   "countable": true
   },
   {
    "id": "000004089",
@@ -1329,14 +1370,16 @@
      "cost": "95",
      "variant": "3 models",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 3
     },
     {
      "description": "6 models",
      "cost": "190",
      "variant": "6 models",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 6
     }
    ],
    "keywords": [
@@ -1354,7 +1397,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 3,
+   "model_max": 6,
+   "countable": true
   },
   {
    "id": "000004077",
@@ -1499,7 +1545,8 @@
      "cost": "350",
      "variant": "1 model",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -1521,7 +1568,10 @@
    "is_battleline": false,
    "is_epic_hero": true,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004092",
@@ -1621,7 +1671,8 @@
      "cost": "175",
      "variant": "1 model",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -1640,7 +1691,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004080",
@@ -1776,14 +1830,16 @@
      "cost": "85",
      "variant": "5 models",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 5
     },
     {
      "description": "10 models",
      "cost": "160",
      "variant": "10 models",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 10
     }
    ],
    "keywords": [
@@ -1802,7 +1858,10 @@
    "is_battleline": true,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 5,
+   "model_max": 10,
+   "countable": true
   },
   {
    "id": "000004097",
@@ -1947,14 +2006,16 @@
      "cost": "255",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 2
+     "tier_max": 2,
+     "models": 1
     },
     {
      "description": "1 model (3rd+ unit)",
      "cost": "270",
      "variant": "1 model",
      "tier_min": 3,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -1975,7 +2036,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": true
+   "has_order_tiers": true,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004078",
@@ -2148,14 +2212,16 @@
      "cost": "80",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 2
+     "tier_max": 2,
+     "models": 1
     },
     {
      "description": "1 model (3rd+ unit)",
      "cost": "90",
      "variant": "1 model",
      "tier_min": 3,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -2174,7 +2240,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": true
+   "has_order_tiers": true,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004084",
@@ -2274,7 +2343,8 @@
      "cost": "70",
      "variant": "1 model",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -2293,7 +2363,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004083",
@@ -2392,7 +2465,8 @@
      "cost": "130",
      "variant": "1 model",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -2411,7 +2485,10 @@
    "is_battleline": false,
    "is_epic_hero": true,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004091",
@@ -2505,14 +2582,16 @@
      "cost": "130",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 2
+     "tier_max": 2,
+     "models": 1
     },
     {
      "description": "1 model (3rd+ unit)",
      "cost": "140",
      "variant": "1 model",
      "tier_min": 3,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -2531,7 +2610,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": true
+   "has_order_tiers": true,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004088",
@@ -2654,14 +2736,16 @@
      "cost": "145",
      "variant": "6 models",
      "tier_min": 1,
-     "tier_max": 2
+     "tier_max": 2,
+     "models": 6
     },
     {
      "description": "6 models (3rd+ unit)",
      "cost": "160",
      "variant": "6 models",
      "tier_min": 3,
-     "tier_max": null
+     "tier_max": null,
+     "models": 6
     }
    ],
    "keywords": [
@@ -2678,7 +2762,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": true
+   "has_order_tiers": true,
+   "model_min": 6,
+   "model_max": 6,
+   "countable": false
   },
   {
    "id": "000004098",
@@ -2781,14 +2868,16 @@
      "cost": "80",
      "variant": "5 models",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 5
     },
     {
      "description": "10 models",
      "cost": "155",
      "variant": "10 models",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 10
     }
    ],
    "keywords": [
@@ -2807,7 +2896,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 5,
+   "model_max": 10,
+   "countable": true
   },
   {
    "id": "000004094",
@@ -2933,7 +3025,8 @@
      "cost": "340",
      "variant": "1 model",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -2955,7 +3048,10 @@
    "is_battleline": false,
    "is_epic_hero": true,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004085",
@@ -3064,7 +3160,8 @@
      "cost": "60",
      "variant": "1 model",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 1
     }
    ],
    "keywords": [
@@ -3084,7 +3181,10 @@
    "is_battleline": false,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false
   },
   {
    "id": "000004079",
@@ -3266,14 +3366,16 @@
      "cost": "80",
      "variant": "5 models",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 5
     },
     {
      "description": "10 models",
      "cost": "160",
      "variant": "10 models",
      "tier_min": null,
-     "tier_max": null
+     "tier_max": null,
+     "models": 10
     }
    ],
    "keywords": [
@@ -3292,7 +3394,10 @@
    "is_battleline": true,
    "is_epic_hero": false,
    "is_dedicated_transport": false,
-   "has_order_tiers": false
+   "has_order_tiers": false,
+   "model_min": 5,
+   "model_max": 10,
+   "countable": true
   }
  ],
  "detachments": [

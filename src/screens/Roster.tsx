@@ -8,7 +8,7 @@ import type {
 } from '../lib/types';
 import { DatasheetCard } from '../components/DatasheetCard';
 import { Modal } from '../components/Modal';
-import { copiesOf, intOf, tierForPick, unitVariants } from '../lib/helpers';
+import { bracketForCount, copiesOf, intOf, tierForPick, unitVariants } from '../lib/helpers';
 
 const ROLE_ORDER = [
   'Epic Hero',
@@ -29,7 +29,7 @@ export function Roster({
   list: ArmyList;
   fd: FactionData;
   battleSize: BattleSize;
-  onAdd: (ds: Datasheet, tier: PointsOption) => void;
+  onAdd: (ds: Datasheet, tier: PointsOption, modelCount?: number) => void;
   onRemove: (uid: string) => void;
   onSetWarlord: (uid: string) => void;
 }) {
@@ -202,8 +202,8 @@ export function Roster({
           unitLimit={unitLimit}
           blLimit={blLimit}
           onClose={() => setAdding(null)}
-          onConfirm={(tier) => {
-            onAdd(adding, tier);
+          onConfirm={(tier, mc) => {
+            onAdd(adding, tier, mc);
             setAdding(null);
           }}
         />
@@ -225,21 +225,32 @@ function AddUnitModal({
   unitLimit: number;
   blLimit: number;
   onClose: () => void;
-  onConfirm: (tier: PointsOption) => void;
+  onConfirm: (tier: PointsOption, modelCount?: number) => void;
 }) {
-  // Offer distinct model-count variants; the pick-order tier (2nd+/3rd+) is applied
-  // automatically based on how many copies are already in the list.
-  const tiers = unitVariants(ds);
-  const [sel, setSel] = useState(0);
-
   const have = copiesOf(list, ds.id);
   const nextPick = have + 1; // this unit will be the Nth copy
-  const selVariant = tiers[sel]?.variant ?? tiers[sel]?.description ?? '';
-  const resolvedCost = intOf((tierForPick(ds, selVariant, nextPick) ?? tiers[sel])?.cost);
   const lim = ds.is_battleline ? blLimit : unitLimit;
   const atLimit = lim > 0 && have >= lim;
   const heroBlocked = ds.is_epic_hero && have >= 1;
   const blocked = atLimit || heroBlocked;
+
+  // Countable units: choose the model count; price = smallest bracket that contains it.
+  const countable = !!ds.countable && ds.model_min != null && ds.model_max != null;
+  const lo = ds.model_min ?? 1;
+  const hi = ds.model_max ?? 1;
+  const [count, setCount] = useState(lo);
+
+  // Non-countable units: pick a points variant (usually just one).
+  const variants = unitVariants(ds);
+  const [sel, setSel] = useState(0);
+
+  const chosenVariant = countable
+    ? bracketForCount(ds, count)
+    : variants[sel]?.variant ?? variants[sel]?.description ?? '';
+  const opt =
+    tierForPick(ds, chosenVariant, nextPick) ??
+    (countable ? ds.points[0] : variants[sel]) ?? { description: 'Default', cost: '0' };
+  const resolvedCost = intOf(opt.cost);
 
   return (
     <Modal
@@ -254,7 +265,7 @@ function AddUnitModal({
           <button
             className="primary"
             disabled={blocked}
-            onClick={() => onConfirm(tiers[sel])}
+            onClick={() => onConfirm(opt, countable ? count : opt.models ?? undefined)}
           >
             {blocked ? 'At limit' : `Add — ${resolvedCost} pts`}
           </button>
@@ -273,27 +284,65 @@ function AddUnitModal({
           </div>
         </div>
       )}
-      <h3 className="muted">{ds.has_order_tiers ? 'Unit size' : 'Points option'}</h3>
-      <div className="col" style={{ gap: 6 }}>
-        {tiers.map((t, i) => {
-          const vKey = t.variant ?? t.description;
-          const opt = tierForPick(ds, vKey, nextPick) ?? t;
-          return (
+
+      {countable ? (
+        <>
+          <h3 className="muted">Number of models ({lo}–{hi})</h3>
+          <div className="row" style={{ gap: 12, alignItems: 'center' }}>
             <button
-              key={i}
-              className={`pill-pts ${sel === i ? 'sel' : ''}`}
-              onClick={() => setSel(i)}
+              className="ghost stepper"
+              disabled={count <= lo}
+              onClick={() => setCount((c) => Math.max(lo, c - 1))}
             >
-              <b>{intOf(opt.cost)} pts</b> — {ds.has_order_tiers ? vKey : t.description}
+              −
             </button>
-          );
-        })}
-      </div>
-      {ds.has_order_tiers && (
-        <div className="muted tiny mt">
-          Costo automatico per il {nextPick}º esemplare (sale per 2º+/3º+). Si ricalcola se aggiungi o rimuovi copie.
-        </div>
+            <b style={{ fontSize: 22, minWidth: 36, textAlign: 'center' }}>{count}</b>
+            <button
+              className="ghost stepper"
+              disabled={count >= hi}
+              onClick={() => setCount((c) => Math.min(hi, c + 1))}
+            >
+              ＋
+            </button>
+            <div className="spacer" />
+            <div className="muted tiny" style={{ textAlign: 'right' }}>
+              bracket: {chosenVariant}
+              <br />
+              {resolvedCost} pts
+            </div>
+          </div>
+          <div className="muted tiny mt">
+            Prezzo allo scaglione minimo che contiene {count} modelli
+            {ds.has_order_tiers ? ` · ${nextPick}º esemplare (sale per 2º+/3º+)` : ''}.
+            Si ricalcola se aggiungi o rimuovi copie.
+          </div>
+        </>
+      ) : (
+        <>
+          <h3 className="muted">Points option</h3>
+          <div className="col" style={{ gap: 6 }}>
+            {variants.map((t, i) => {
+              const vKey = t.variant ?? t.description;
+              const o = tierForPick(ds, vKey, nextPick) ?? t;
+              return (
+                <button
+                  key={i}
+                  className={`pill-pts ${sel === i ? 'sel' : ''}`}
+                  onClick={() => setSel(i)}
+                >
+                  <b>{intOf(o.cost)} pts</b> — {ds.has_order_tiers ? vKey : t.description}
+                </button>
+              );
+            })}
+          </div>
+          {ds.has_order_tiers && (
+            <div className="muted tiny mt">
+              Costo automatico per il {nextPick}º esemplare (sale per 2º+/3º+).
+            </div>
+          )}
+        </>
       )}
+
       <div className="mt">
         <DatasheetCard ds={ds} />
       </div>

@@ -41,6 +41,7 @@ export function stripHtml(html: string): string {
 export function buildListUnit(
   ds: Datasheet,
   tier: PointsOption,
+  modelCount?: number,
 ): ListUnit {
   return {
     uid: uid(),
@@ -49,6 +50,7 @@ export function buildListUnit(
     pointsCost: intOf(tier.cost),
     pointsLabel: tier.description,
     variantKey: tier.variant ?? tier.description,
+    modelCount: modelCount ?? tier.models ?? undefined,
     isEpicHero: ds.is_epic_hero,
     isBattleline: ds.is_battleline,
     isCharacter: ds.is_character,
@@ -75,6 +77,25 @@ export function unitVariants(ds: Datasheet): PointsOption[] {
 const inTier = (p: PointsOption, idx: number): boolean =>
   (p.tier_min == null || idx >= p.tier_min) && (p.tier_max == null || idx <= p.tier_max);
 
+/** Distinct cost brackets {models, variant}, ascending by model count. */
+function brackets(ds: Datasheet): { models: number; variant: string }[] {
+  const seen = new Map<string, number>();
+  for (const p of ds.points) {
+    const v = p.variant ?? p.description;
+    if (p.models != null && !seen.has(v)) seen.set(v, p.models);
+  }
+  return [...seen.entries()]
+    .map(([variant, models]) => ({ models, variant }))
+    .sort((a, b) => a.models - b.models);
+}
+
+/** Variant of the smallest bracket that can contain `count` models (>= count); else the largest. */
+export function bracketForCount(ds: Datasheet, count: number): string {
+  const bs = brackets(ds);
+  if (!bs.length) return ds.points[0]?.variant ?? ds.points[0]?.description ?? '';
+  return (bs.find((b) => b.models >= count) ?? bs[bs.length - 1]).variant;
+}
+
 /** The points option that applies to the `pick`-th copy of a chosen variant (1-based). */
 export function tierForPick(
   ds: Datasheet,
@@ -100,13 +121,23 @@ export function reconcileTiers(
     const ds = dsMap.get(u.datasheetId);
     const idx = (order.get(u.datasheetId) ?? 0) + 1;
     order.set(u.datasheetId, idx);
-    if (!ds || !ds.has_order_tiers) return u;
-    const variant = u.variantKey ?? u.pointsLabel;
+    if (!ds) return u;
+    // Resolve the cost bracket: by chosen model count (size range) when countable,
+    // otherwise by the stored variant. Then apply the pick-order tier for this position.
+    const variant =
+      ds.countable && u.modelCount != null
+        ? bracketForCount(ds, u.modelCount)
+        : u.variantKey ?? u.pointsLabel;
     const opts = ds.points.filter((p) => (p.variant ?? p.description) === variant);
-    const match = opts.find((p) => inTier(p, idx)) ?? opts[0];
-    if (!match) return u;
-    if (intOf(match.cost) === intOf(u.pointsCost) && match.description === u.pointsLabel) return u;
-    return { ...u, pointsCost: intOf(match.cost), pointsLabel: match.description };
+    if (!opts.length) return u;
+    const match = (ds.has_order_tiers ? opts.find((p) => inTier(p, idx)) : opts[0]) ?? opts[0];
+    if (
+      intOf(match.cost) === intOf(u.pointsCost) &&
+      match.description === u.pointsLabel &&
+      (u.variantKey ?? '') === variant
+    )
+      return u;
+    return { ...u, pointsCost: intOf(match.cost), pointsLabel: match.description, variantKey: variant };
   });
 }
 

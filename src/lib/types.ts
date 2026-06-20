@@ -56,6 +56,7 @@ export interface PointsOption {
   variant?: string;          // description without the pick-order tier marker (e.g. "5 models")
   tier_min?: number | null;  // first pick this tier applies to (1-based); null = unbounded
   tier_max?: number | null;  // last pick this tier applies to; null = unbounded
+  models?: number | null;    // number of models this bracket represents
 }
 
 export interface Datasheet {
@@ -77,6 +78,9 @@ export interface Datasheet {
   is_epic_hero: boolean;
   is_dedicated_transport: boolean;
   has_order_tiers?: boolean;   // true if points cost escalates by pick order (2nd+/3rd+)
+  model_min?: number | null;   // smallest legal model count (smallest cost bracket)
+  model_max?: number | null;   // largest legal model count (largest cost bracket)
+  countable?: boolean;         // true if the unit has a model-count range (multiple size brackets)
 }
 
 export interface Enhancement { name: string; cost: string; description: string; is_upgrade: boolean; }
@@ -111,7 +115,8 @@ export interface ListUnit {
   name: string;
   pointsCost: number;          // resolved cost (auto-set by pick-order tier when applicable)
   pointsLabel: string;         // resolved option description
-  variantKey?: string;         // chosen model-count variant (e.g. "5 models"); drives auto-tiering
+  variantKey?: string;         // resolved cost bracket variant (e.g. "5 models")
+  modelCount?: number;         // number of models chosen; prices at the smallest bracket >= this
   isEpicHero: boolean;
   isBattleline: boolean;
   isCharacter: boolean;

@@ -103,8 +103,8 @@ export function Builder({
     });
   }
 
-  function addUnit(ds: Datasheet, tier: PointsOption) {
-    update((l) => ({ ...l, units: [...l.units, buildListUnit(ds, tier)] }));
+  function addUnit(ds: Datasheet, tier: PointsOption, modelCount?: number) {
+    update((l) => ({ ...l, units: [...l.units, buildListUnit(ds, tier, modelCount)] }));
   }
 
   function addAlly(a: AllyAddition) {
