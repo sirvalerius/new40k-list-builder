@@ -633,27 +633,42 @@
     {
      "text": "The Sister Superior’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 combi-weapon</li><li>1 condemnor boltgun</li><li>1 inferno pistol</li><li>1 Ministorum hand flamer</li><li>1 plasma pistol</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Sister Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Battle Sister’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Battle Sister’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 heavy bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li><li>1 Ministorum heavy flamer</li><li>1 multi-melta</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Battle Sister equipped with 1 boltgun can be equipped with 1 simulacrum imperialis (that model’s boltgun cannot be replaced).",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -869,22 +884,38 @@
     {
      "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 condemnor boltgun</li><li>1 inferno pistol</li><li>1 plasma pistol</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s hallowed chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blessed blade</li><li>1 power weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "If this model is equipped with a hallowed chainsword, it can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 brazier of holy fire</li><li>1 null rod</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "If this model is equipped with a plasma pistol and a power weapon, it can be equipped with:<ul style=\"list-style-type:circle\"><li>1 rod of office</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -1032,7 +1063,11 @@
     {
      "text": "This model’s blessed halberd can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 holy eviscerator</li><li>1 Ministorum hand flamer and 1 power weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -1203,17 +1238,29 @@
     {
      "text": "This model’s Castigator autocannons can be replaced with 1 Castigator battle cannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -1392,32 +1439,50 @@
     {
      "text": "The Celestian Insidiant Superior’s condemnor bolt pistol can be replaced with 1 inferno pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Up to 2 Celestian Insidiants can each have their condemnor bolt pistol replaced with 1 Ministorum hand flamer.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Up to 2 Celestian Insidiants can each have their condemnor bolt pistol and null mace replaced with 1 blessed sword.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "One Celestian Insidiant’s condemnor bolt pistol and null mace can be replaced with 1 virge of admonition.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "One Celestian Insidiant’s condemnor bolt pistol can be replaced with 1 denuncia oratory.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "One Celestian Insidiant equipped with 1 condemnor bolt pistol can be equipped with 1 simulacrum imperialis (that model’s condemnor bolt pistol cannot be replaced).",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -1542,7 +1607,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -1740,17 +1808,26 @@
     {
      "text": "Any number of models can each have their hallowed mace replaced with 1 anointed halberd.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Sacresant Superior’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 inferno pistol</li><li>1 Ministorum hand flamer</li><li>1 plasma pistol</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Sacresant Superior’s hallowed mace can be replaced with 1 spear of the faithful.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -1857,7 +1934,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -2123,7 +2203,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -2615,22 +2698,34 @@
     {
      "text": "The Dominion Superior’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 combi-weapon</li><li>1 condemnor boltgun</li><li>1 inferno pistol</li><li>1 Ministorum hand flamer</li><li>1 plasma pistol</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Dominion Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Up to 4 Dominions can each have their boltgun replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li></ul>",
      "cost": 5,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Dominion equipped with 1 boltgun can be equipped with 1 simulacrum imperialis (that model’s boltgun cannot be replaced).",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -2789,12 +2884,20 @@
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Exorcist missile launcher can be replaced with 1 Exorcist conflagration rockets.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -3204,12 +3307,20 @@
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s immolation flamers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 twin multi-melta</li></ul>",
      "cost": 15,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -3368,7 +3479,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -3631,7 +3745,11 @@
     {
      "text": "This model’s zealot’s vindictor can be replaced with 1 holy pistol and 1 power weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -3809,17 +3927,27 @@
     {
      "text": "1 model can be equipped with 1 anchorite sarcophagus.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "Any number of models can each have their 2 heavy bolters replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter and 1 Mortifier flamer</li><li>2 Mortifier flamers</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of models can each have their twin penitent buzz-blades replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin penitent flails</li><li>1 penitent buzz-blade and 1 penitent flail</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -4115,7 +4243,11 @@
     {
      "text": "This model’s bolt pistol can be replaced with 1 plasma pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -4298,17 +4430,26 @@
     {
      "text": "Any number of models can each have their Paragon storm bolters replaced with 1 Paragon grenade launchers.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of models can each have their Paragon war blade replaced with 1 Paragon war mace.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of models can each have their heavy bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Ministorum heavy flamer</li><li>1 multi-melta</li></ul>",
      "cost": 10,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -4467,7 +4608,10 @@
     {
      "text": "Any number of models can each have their twin penitent buzz-blades replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 penitent buzz-blade and 1 penitent flail</li><li>1 twin penitent flails</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -4762,12 +4906,20 @@
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer</li><li>1 storm bolter</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -5021,17 +5173,26 @@
     {
      "text": "The Retributor Superior’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 combi-weapon</li><li>1 condemnor boltgun</li><li>1 inferno pistol</li><li>1 Ministorum hand flamer</li><li>1 plasma pistol</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Retributor Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Each Retributor’s heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Ministorum heavy flamer</li><li>1 multi-melta</li></ul>",
      "cost": 5,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -5427,22 +5588,35 @@
     {
      "text": "1 Missionary model can have its 1 plasma gun replaced with 1 meltagun.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Missionary model equipped with 1 plasma gun can be equipped with 1 holy fire (this model’s plasma gun cannot be replaced).",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "1 Sanctifier model can have its 1 Sanctifier melee weapon replaced with 1 Ministorum hand flamer and 1 close combat weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Sanctifier model can have its 1 Sanctifier melee weapon replaced with 1 close combat weapon and 1 simulacrum imperialis.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -5647,12 +5821,19 @@
     {
      "text": "For every 5 models in the unit, up to 2 Seraphim can each have their 2 bolt pistols replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 inferno pistols</li><li>2 Ministorum hand flamers</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "The Seraphim Superior’s 2 bolt pistols can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol and 1 chainsword</li><li>1 bolt pistol and 1 plasma pistol</li><li>1 bolt pistol and 1 power weapon</li><li>1 plasma pistol and 1 chainsword</li><li>1 plasma pistol and 1 power weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -5880,27 +6061,42 @@
     {
      "text": "The Novitiate Superior’s bolt pistol and boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol and 1 power weapon</li><li>1 plasma pistol and 1 power weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Sister Novitiate’s autogun can be replaced with 1 sacred banner.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Sister Novitiate’s autogun can be replaced with 1 simulacrum imperialis.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Up to 2 Sisters Novitiate can each have their autogun replaced with 1 Ministorum flamer.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of Sisters Novitiate can each have their autogun and close combat weapon replaced with 1 Novitiate melee weapons.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -6036,7 +6232,11 @@
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -6334,12 +6534,18 @@
     {
      "text": "The Zephyrim Superior can be equipped with 1 sacred banner.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Zephyrim Superior’s bolt pistol can be replaced with 1 plasma pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   }

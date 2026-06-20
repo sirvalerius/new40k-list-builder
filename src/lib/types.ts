@@ -85,7 +85,18 @@ export interface Datasheet {
 }
 
 // A weapon/wargear option line in datasheet order; cost 0 = free, >0 = paid (MFM).
-export interface WeaponOption { text: string; cost: number; type: 'wargear' | 'model'; }
+export interface OptionLimit {
+  kind: 'note' | 'per_n' | 'slots' | 'all' | 'fixed';
+  n?: number;      // per_n: 1 per N models
+  slots?: number;  // slots: up to K per model (Crisis)
+  max?: number;    // fixed: absolute max
+}
+export interface WeaponOption {
+  text: string;
+  cost: number;
+  type: 'wargear' | 'model';
+  limit?: OptionLimit;
+}
 export interface ChosenWargear { name: string; cost: number; qty: number; }
 export interface Enhancement { name: string; cost: string; description: string; is_upgrade: boolean; }
 export interface DetachmentRule { name: string; description: string; }

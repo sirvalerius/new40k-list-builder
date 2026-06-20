@@ -135,7 +135,11 @@
     {
      "text": "This model’s gauss cannon can be replaced with 1 tesla cannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -259,7 +263,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -378,7 +385,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -639,17 +649,28 @@
     {
      "text": "All models in this unit can each have their gauss scalpel replaced with 1 tesla caster.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 model’s gauss scalpel or tesla caster can be replaced with 1 atomiser beam and 1 nanoscarab projector.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "1 model’s gauss scalpel or tesla caster can be replaced with 1 accelerator mandible.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -985,17 +1006,26 @@
     {
      "text": "Any number of models can each be equipped with 2 particle beamers.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of models can each be equipped with 1 fabricator claw array.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of models can each be equipped with 1 gloom prism.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -1116,7 +1146,11 @@
     {
      "text": "1 model’s twin gauss reaper can be replaced with 1 transdimensional isolator.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -1232,7 +1266,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -1348,7 +1385,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -1500,12 +1540,18 @@
     {
      "text": "Any number of models can each be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 particle caster</li><li>1 transdimensional beamer</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of models can each have their vicious claws replaced with whip coils.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -1663,17 +1709,29 @@
     {
      "text": "This model’s gauss cannon can be replaced with 1 tesla cannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s staff of light can be replaced with 1 Overlord’s blade.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 resurrection orb.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -3625,7 +3683,10 @@
     {
      "text": "All models in this unit can each have their gauss blaster replaced with 1 tesla carbine.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -4055,7 +4116,10 @@
     {
      "text": "Any number of models can each have their gauss destructor replaced with 1 enmitic exterminator.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -4197,12 +4261,20 @@
     {
      "text": "This model’s staff of light can be replaced with 1 Lord’s blade.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 nanoscarab amulet</li><li>1 resurrection orb</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -4337,12 +4409,20 @@
     {
      "text": "This model’s staff of light can be replaced with 1 Lord’s blade.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 resurrection orb.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -4459,7 +4539,10 @@
     {
      "text": "All models in this unit can each have their warscythe replaced with 1 hyperphase sword and 1 dispersion shield.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -4607,7 +4690,11 @@
     {
      "text": "This model’s 4 gauss flux arcs can be replaced with 4 death rays.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -4730,7 +4817,10 @@
     {
      "text": "Any number of models can each have their gauss flayer replaced with 1 gauss reaper.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -5445,7 +5535,11 @@
     {
      "text": "For every 3 models in this unit, this unit can have 1 Plasmacyte.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 3
+     }
     }
    ]
   },
@@ -5708,12 +5802,20 @@
     {
      "text": "This model’s tachyon arrow and Overlord’s blade can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 staff of light</li><li>1 voidscythe</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "If this model is not equipped with a tachyon arrow, it can be equipped with 1 resurrection orb.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -6277,7 +6379,11 @@
     {
      "text": "This model’s gauss exterminator can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 focused death ray</li><li>1 heat cannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -6436,7 +6542,11 @@
     {
      "text": "This model’s 2 singularity generators can be replaced with 2 synaptic obliterators and 2 transdimensional projectors.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -6559,7 +6669,11 @@
     {
      "text": "For every 3 models in this unit, this unit can have 1 Plasmacyte.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 3
+     }
     }
    ]
   },
@@ -6951,7 +7065,11 @@
     {
      "text": "This model’s 2 tesla cannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 gauss cannons</li><li>2 particle beamers</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -7458,17 +7576,26 @@
     {
      "text": "Any number of models can each have their twin gauss blaster replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 particle beamer</li><li>1 twin tesla carbine</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of models can each be equipped with 1 shieldvanes.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of models can each be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 nebuloscope</li><li>1 shadowloom</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -7591,7 +7718,10 @@
     {
      "text": "This unit can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 gauss exterminator and 1 twin tesla destructor</li><li>2 gauss exterminators</li><li>2 twin tesla destructors</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -7972,7 +8102,10 @@
     {
      "text": "All models in this unit can each have their rod of covenant replaced with 1 particle caster and 1 voidblade.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -8130,7 +8263,11 @@
     {
      "text": "This model’s heat ray can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 particle shredder</li><li>1 heavy gauss cannon array</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },

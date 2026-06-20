@@ -435,7 +435,11 @@
     {
      "text": "This model’s impaler harpoon and slaughter blade can be replaced with 1 twin slaughter blade.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -614,12 +618,20 @@
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -863,22 +875,35 @@
     {
      "text": "The Biker Champion’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of Chaos Bikers can each have their bolt pistol replaced with 1 Astartes chainsword.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Up to 2 Chaos Bikers can each have their combi-bolter replaced with 1 combi-weapon, or can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 model can be equipped with 1 Chaos icon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -1103,22 +1128,38 @@
     {
      "text": "This model’s plasma destroyer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 conversion beam cannon</li><li>1 infernus cannon</li><li>1 magna-melta cannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li><li>2 lascannons</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 combi-bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -1283,12 +1324,20 @@
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter</li><li>1 combi-weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 havoc launcher.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -1451,12 +1500,20 @@
     {
      "text": "This model’s daemon hammer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 accursed weapon</li><li>1 Astartes chainsword</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s plasma pistol can be replaced with 1 power fist.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -1627,17 +1684,29 @@
     {
      "text": "This model’s combi-bolter can be replaced with 1 combi-weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s exalted weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainfist</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s combi-bolter and exalted weapon can be replaced with 1 paired accursed weapons.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -1845,17 +1914,29 @@
     {
      "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s bolt pistol and Astartes chainsword can be replaced with 1 paired accursed weapons.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -2066,17 +2147,29 @@
     {
      "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s bolt pistol and Astartes chainsword can be replaced with 1 paired accursed weapons.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -2297,17 +2390,29 @@
     {
      "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s bolt pistol and Astartes chainsword can be replaced with 1 paired accursed weapons.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -2528,17 +2633,29 @@
     {
      "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s bolt pistol and Astartes chainsword can be replaced with 1 paired accursed weapons.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -2759,17 +2876,29 @@
     {
      "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s bolt pistol and Astartes chainsword can be replaced with 1 paired accursed weapons.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -2941,17 +3070,29 @@
     {
      "text": "This model's bolt pistol can be replaced with 1 plasma pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s accursed weapon can be replaced with 1 power fist.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model's bolt pistol and accursed weapon can be replaced with 1 twin lightning claws.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -3127,17 +3268,29 @@
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter</li><li>1 combi-weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 Havoc launcher.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -3313,17 +3466,29 @@
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter</li><li>1 combi-weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 Havoc launcher.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -3465,12 +3630,20 @@
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter</li><li>1 combi-weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 havoc launcher or can replace 1 combi-bolter with 1 havoc launcher.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -3569,7 +3742,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -3759,27 +3935,46 @@
     {
      "text": "For every 5 models in this unit, 1 Terminator’s combi-bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer</li><li>1 reaper autocannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "Any number of models can each have their combi-bolter replaced with 1 combi-weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 model’s combi-bolter and accursed weapon can be replaced with 1 paired accursed weapons.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "For every 5 models in this unit, up to 3 models can each have their accursed weapon replaced with 1 power fist.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 model’s accursed weapon can be replaced with 1 chainfist.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     }
    ]
   },
@@ -3950,12 +4145,20 @@
     {
      "text": "This model’s Thunderhawk heavy cannon can be replaced with 1 turbo-laser destructor.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Thunderhawk cluster bombs can be replaced with 1 hellstrike missile battery",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -4108,12 +4311,20 @@
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter</li><li>1 combi-weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 Havoc launcher.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -4319,27 +4530,47 @@
     {
      "text": "For every 5 models in this unit, up to 2 models can each have their bolt pistol replaced with 1 plasma pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "For every 5 models in this unit, up to 2 models can each have their boltgun replaced with 1 combi-weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 model’s boltgun and accursed weapon can be replaced with 1 paired accursed weapons.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 model equipped with a boltgun can have its accursed weapon replaced with 1 power fist. That model’s boltgun cannot be replaced.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "1 model can be equipped with 1 Chaos icon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -4585,7 +4816,10 @@
     {
      "text": "The Cultist Champion’s autopistol can be replaced with 1 bolt pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -4782,27 +5016,45 @@
     {
      "text": "The Cultist Champion’s autopistol can be replaced with 1 bolt pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of models can each have their autogun and close combat weapon replaced with 1 autopistol and 1 brutal assault weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "For every 10 models in this unit, 1 Chaos Cultist’s autogun can be replaced with 1 flamer.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 10
+     }
     },
     {
      "text": "For every 10 models in this unit, 1 Chaos Cultist’s autogun can be replaced with 1 heavy stubber.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 10
+     }
     },
     {
      "text": " For every 10 models in this unit, 1 Chaos Cultist’s autogun can be replaced with 1 grenade launcher.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 10
+     }
     }
    ]
   },
@@ -5446,12 +5698,20 @@
     {
      "text": "Each of this model’s Decimator butcher cannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Decimator conversion beamer</li><li>1 soulburner petard</li><li>1 storm laser</li><li>1 hellflamer and 1 Decimator claw</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "Both of this model’s Decimator butcher cannons can be replaced with 1 twin Decimator claw and 2 hellflamers.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -5690,32 +5950,54 @@
     {
      "text": "This model’s Hades battle cannon can be replaced with 1 ectoplasma destructor.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": " This model’s excruciator cannons can be replaced with 2 magma cutters.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s heavy baleflamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": " This model’s heavy missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "Equip Heavy reaper autocannon",
      "cost": 10,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Equip Hades lascannon",
      "cost": 10,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -5954,17 +6236,29 @@
     {
      "text": "This model’s anvilus autocannon battery can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 arachnus heavy lascannon battery</li><li>1 hellfire plasma carronade</li><li>1 volkite falconet battery</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 aiolos missile launcher</li><li>1 boreas air defence missiles</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -6071,7 +6365,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -6200,7 +6497,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -6580,17 +6880,29 @@
     {
      "text": "This model’s 2 quad lascannons can be replaced with 2 laser destroyers.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -6879,22 +7191,38 @@
     {
      "text": "This model’s 2 quad lascannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li> 2 laser destroyers</li><li>2 quad heavy bolters</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 havoc launcher.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -7080,17 +7408,26 @@
     {
      "text": "The Fellgor Champion’s bolt pistol can be replaced with 1 plasma pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Fellgor Beastman’s close combat weapon can be replaced with 1 great weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Fellgor Beastman’s close combat weapon can be replaced with 1 corrupted stave.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -7278,12 +7615,20 @@
     {
      "text": "This model’s 2 twin hellstrike missile launchers can be replaced with 2 twin lascannons",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s 2 twin autocannons can be replaced with 2 quad heavy bolters.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -7426,12 +7771,20 @@
     {
      "text": "This model’s 2 Hades autocannons can be replaced with 2 ectoplasma cannons.",
      "cost": 5,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Forgefiend jaws can be replaced with 1 ectoplasma cannon and 1 armoured limbs.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -7567,7 +7920,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -7697,7 +8053,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -7850,7 +8209,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -8260,17 +8622,26 @@
     {
      "text": "The Havoc Champion’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 accursed weapon</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Havoc Champion’s flamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 boltgun</li><li>1 meltagun</li><li>1 plasma gun</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of Havocs can each have their Havoc autocannon or Havoc lascannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Havoc autocannon</li><li>1 Havoc heavy bolter</li><li>1 Havoc lascannon</li><li>1 Havoc missile launcher</li><li>1 Havoc reaper chaincannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -8510,17 +8881,29 @@
     {
      "text": "This model’s multi-melta can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Helbrute plasma cannon</li><li>1 twin autocannon</li><li>1 twin heavy bolter</li><li>1 twin lascannon</li><li>1 Helbrute fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Helbrute fist</li><li>1 Helbrute hammer</li><li>1 power scourge</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "For each Helbrute fist this model is equipped with, it can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter</li><li>1 heavy flamer</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -8650,7 +9033,11 @@
     {
      "text": "This model’s Hades autocannon can be replaced with 1 baleflamer.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -8773,7 +9160,11 @@
     {
      "text": "This model’s 2 twin autocannons can be replaced with 2 twin lascannons.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -8907,7 +9298,11 @@
     {
      "text": "This model’s autocannon can be replaced with 1 havoc launcher.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -9353,7 +9748,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -9494,7 +9892,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -9653,22 +10054,37 @@
     {
      "text": "The Khorne Berzerker Champion’s bolt pistol can be replaced with 1 plasma pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 Khorne Berzerker’s bolt pistol can be replaced with 1 plasma pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 Khorne Berzerker’s chainblade can be replaced with 1 Khornate eviscerator.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "1 model can be equipped with 1 icon of Khorne.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -9846,12 +10262,20 @@
     {
      "text": "This model’s gorestorm cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 daemongore cannon</li><li>1 ichor cannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Hades gatling cannon can be replaced with 1 skullhurler.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -10138,27 +10562,47 @@
     {
      "text": "This model’s Kratos battle cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 melta blast-gun</li><li>1 volkite cardanelle</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 autocannons</li><li>2 lascannons</li><li>2 volkite calivers</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy flamers</li><li>2 lascannons</li><li>2 volkite culverins </li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 havoc launcher</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 twin boltgun</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 hunter killer missile    ",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -10306,7 +10750,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -10437,7 +10884,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -10632,17 +11082,29 @@
     {
      "text": "This model’s 2 twin volkite culverins can be replaced with 2 twin multi-melta",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -10855,22 +11317,38 @@
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 multi-melta</li><li>1 twin heavy bolter</li><li>1 twin heavy flamer</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 explorator augury web.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -11185,42 +11663,68 @@
     {
      "text": "The Aspiring Champion’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol*</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 heavy melee weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Aspiring Champion’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol*</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 heavy melee weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 model can be equipped with 1 Chaos icon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "Any number of Legionaries can each have their boltgun replaced with 1 Astartes chainsword.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "One Legionary’s boltgun can be replaced with 1 heavy melee weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "One Legionary’s boltgun can be replaced with 1 balefire tome.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 Legionary’s boltgun can be replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 plasma pistol and 1 Astartes chainsword</li><li>1 flamer</li><li>1 havoc autocannon</li><li>1 heavy bolter</li><li>1 lascannon</li><li>1 meltagun</li><li>1 missile launcher</li><li>1 plasma gun</li><li>1 reaper chaincannon </li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "* Maximum 1 per model.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "note"
+     }
     }
    ]
   },
@@ -11465,17 +11969,29 @@
     {
      "text": "Each of this model’s grav-flux bombards can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 cyclonic melta lance</li><li>1 storm cannon</li><li>1 meltagun and 1 Leviathan siege claw</li><li>1 meltagun and 1 Leviathan siege drill</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s 2 heavy flamers can be replaced with 2 twin volkite calivers.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 3 hunter-killer missiles.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -11643,12 +12159,20 @@
     {
      "text": "This model’s Helstalker autocannon can be replaced with 1 baleflamer.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s techno-virus injector can be replaced with 1 magma cutter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -12311,12 +12835,20 @@
     {
      "text": "This model’s 2 heavy flamers can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li><li>2 volkite culverins</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s 2 lascannons can be replaced with on of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li><li>2 volkite culverins</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -12439,7 +12971,11 @@
     {
      "text": "This model’s lasher tendrils can be replaced with 2 magma cutters.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -12569,7 +13105,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -12686,7 +13225,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -12787,7 +13329,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -12893,7 +13438,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -13207,32 +13755,50 @@
     {
      "text": "The Visionary’s bolt pistol can be replaced with 1 plasma pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Visionary’s Nostraman chainblade can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 accursed weapon</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of Legionaries can each have their boltgun replaced with 1 Astartes chainsword.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "If this unit contains 10 models, one Legionary’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 missile launcher</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "One Legionary’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Up to four Legionaries can each have their boltgun replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 accursed weapon</li><li>1 Nostraman chainglaive</li><li>1 paired accursed weapons</li><li>1 voice eater and 1 Astartes chainsword</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -13487,12 +14053,18 @@
     {
      "text": "The Disharmonist’s sonic blaster can be replaced with 1 screamer pistol and 1 power sword.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Up to 2 Noise Marines can each replace their sonic blaster with 1 blastmaster.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -13895,42 +14467,72 @@
     {
      "text": "The Plague Champion’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma gun</li><li>1 plasma pistol</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Plague Champion’s plague knives can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bubotic weapons</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 Plague Marine’s boltgun can be replaced with 1 blight launcher.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 Plague Marine’s boltgun can be replaced with 1 plague spewer.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 Plague Marine’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 meltagun</li><li>1 plague belcher</li><li>1 plasma gun</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "For every 5 models in this unit, up to 2 Plague Marines can each have their boltgun replaced with 1 bubotic weapons.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "For every 5 models in this unit, up to 2 Plague Marines can each have their boltgun replaced with 1 heavy plague weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "One Plague Marine equipped with a boltgun can be equipped with 1 icon of despair. This model’s boltgun cannot be replaced.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -14055,7 +14657,11 @@
     {
      "text": "1 model can be equipped with 1 Chaos icon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -14227,7 +14833,11 @@
     {
      "text": "This model’s quad heavy bolter can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 graviton cannon</li><li>1 laser destroyer</li><li>1 quad launcher</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -14487,37 +15097,61 @@
     {
      "text": "The Raptor Champion’s bolt pistol can be replaced with 1 plasma pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Raptor Champion’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 accursed weapon</li><li>1 heavy melee weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "For every 5 models in this unit, up to 2 Raptors can each have their bolt pistol replaced with 1 plasma pistol (these models’ Astartes chainswords cannot be replaced).",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "For every 5 models in this unit, up to 2 Raptors can each have their Astartes chainsword replaced with 1 heavy melee weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 Raptor can replace their Astartes chainsword with 1 mutations.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "Up to 2 Raptors can each have their Astartes chainsword replaced with one of the following options (you cannot select the same option more than once):<ul style=\"list-style-type:circle\"><li>1 flamer and 1 close combat weapon</li><li>1 meltagun and 1 close combat weapon</li><li>1 plasma gun and 1 close combat weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "If this unit contains 10 models, up to 2 additional Raptors can each have their Astartes chainsword replaced with one of the following options (you cannot select the same option more than once):<ul style=\"list-style-type:circle\"><li>1 flamer and 1 close combat weapon</li><li>1 meltagun and 1 close combat weapon</li><li>1 plasma gun and 1 close combat weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -14704,12 +15338,19 @@
     {
      "text": "The Red Corsairs Raider Champion’s bolt pistol can be replaced with 1 hand flamer.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "For every 5 models in this unit:<ul style=\"list-style-type:circle\"><li>1 Red Corsairs Raider’s boltgun can be replaced with 1 meltagun</li><li>1 Red Corsairs Raider’s reaver’s blade can be replaced with 1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     }
    ]
   },
@@ -14866,12 +15507,20 @@
     {
      "text": "This model’s power sword can be replaced with 1 power maul.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 plasma pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -15203,17 +15852,29 @@
     {
      "text": "Each of this model’s heavy plasma cannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 conversion beam cannon</li><li>1 kheres-pattern assault cannon</li><li>1 multi-melta</li><li>1 twin autocannon</li><li>1 twin heavy bolter</li><li>1 twin lascannon</li><li>1 twin volkite culverin</li><li>1 Dreadnought chainfist and 1 combi-bolter</li><li>1 Dreadnought combat weapon and 1 combi-bolter</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "Each of this model’s combi-bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 graviton blaster</li><li>1 heavy flamer</li><li>1 plasma blaster</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 cyclone missile launcher. ",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -15388,12 +16049,20 @@
     {
      "text": "This model’s Enforcer pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autogun</li><li>1 lasgun</li><li>1 shotgun</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Enforcer melee weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -15582,7 +16251,10 @@
     {
      "text": "Any numbers of models’ heavy stubbers can each be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autocannon</li><li>1 heavy bolter</li><li>1 lascannon</li><li>1 missile launcher</li><li>1 mortar</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -15708,7 +16380,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -15819,7 +16494,10 @@
     {
      "text": "One model’s Ogryn weapon can be replaced with 1 Ogryn power drill.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -15926,7 +16604,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -16067,7 +16748,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -16272,22 +16956,34 @@
     {
      "text": "The Aspiring Sorcerer’s inferno bolt pistol can be replaced with 1 warpflame pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Rubric Marine’s inferno boltgun can be replaced with 1 soulreaper cannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of Rubric Marines can each have their inferno boltgun replaced with 1 warpflamer.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Rubric Marine can be equipped with 1 icon of flame.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -16462,17 +17158,29 @@
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -16647,17 +17355,29 @@
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -16832,17 +17552,29 @@
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -17033,7 +17765,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -17331,12 +18066,20 @@
     {
      "text": "This model’s combi-bolter can be replaced with 1 combi-weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 Chaos familiar.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -17554,7 +18297,11 @@
     {
      "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -17775,7 +18522,11 @@
     {
      "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -18006,7 +18757,11 @@
     {
      "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -18236,7 +18991,11 @@
     {
      "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -18447,17 +19206,29 @@
     {
      "text": "This model’s 2 quad lascannons can be replaced with 2 laser destroyers.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -18679,12 +19450,20 @@
     {
      "text": "This model’s twin heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin multi-melta</li><li>1 typhoon missile launcher</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s 2 twin hellstrike missile launchers can be replaced with 2 twin lascannons",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -18855,7 +19634,11 @@
     {
      "text": "This model’s 2 combi-bolters can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>2 heavy flamers</li><li>2 twin volkite chargers</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -18998,7 +19781,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -19228,17 +20014,26 @@
     {
      "text": "Up to 3 Traitor Guardsmen can each have their lasgun replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 Cultist grenade launcher</li><li>1 flamer</li><li>1 meltagun</li><li>1 plasma gun</li><li>1 Cultist sniper rifle</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Traitor Sergeant’s close combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Traitor Sergeant’s corrupted pistol can be replaced with 1 boltgun.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -19417,12 +20212,20 @@
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -19797,7 +20600,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -20098,12 +20904,20 @@
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -20251,7 +21065,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   }

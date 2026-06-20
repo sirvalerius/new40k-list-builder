@@ -29,6 +29,27 @@ export const wargearTotal = (u: ListUnit): number =>
 export const unitTotal = (u: ListUnit): number =>
   intOf(u.pointsCost) + intOf(u.enhancementCost) + wargearTotal(u);
 
+/** Max copies of a weapon option allowed for a unit of `modelCount` models.
+ *  per_n = 1 per N (floor); all/slots/fixed per the limit; null = unbounded. */
+export function optionMax(
+  limit: { kind: string; n?: number; slots?: number; max?: number } | undefined,
+  modelCount: number,
+): number | null {
+  if (!limit) return null;
+  switch (limit.kind) {
+    case 'per_n':
+      return limit.n ? Math.floor(modelCount / limit.n) : modelCount;
+    case 'slots':
+      return modelCount * (limit.slots ?? 1); // aggregate per-model slots (Crisis)
+    case 'fixed':
+      return limit.max ?? 1;
+    case 'all':
+      return modelCount;
+    default:
+      return null; // note
+  }
+}
+
 /** Strip the Wahapedia HTML markup (kwb spans, <br>, <b>) down to plain text. */
 export function stripHtml(html: string): string {
   if (!html) return '';

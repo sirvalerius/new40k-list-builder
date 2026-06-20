@@ -164,7 +164,11 @@
     {
      "text": "This model’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator</li><li>1 psilencer</li><li>1 psycannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -290,7 +294,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -679,7 +686,11 @@
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 storm bolter</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -1043,22 +1054,35 @@
     {
      "text": "For every 5 models in this unit, 1 Terminator’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator</li><li>1 psilencer</li><li>1 psycannon</li></ul>",
      "cost": 5,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "1 Terminator can have its storm bolter replaced with 1 Apothecary’s narthecium.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Terminator’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 Ancient’s banner</li><li>1 psilencer and 1 Ancient’s banner</li><li>1 psycannon and 1 Ancient’s banner</li><li>1 storm bolter and 1 Ancient’s banner*</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "* That model’s storm bolter cannot be replaced.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "note"
+     }
     }
    ]
   },
@@ -1346,7 +1370,11 @@
     {
      "text": "This model’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator</li><li>1 psilencer</li><li>1 psycannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -1580,22 +1608,37 @@
     {
      "text": "This model’s dreadfists can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Nemesis daemon greathammer</li><li>1 Nemesis flail</li><li>1 Nemesis greatsword<br><li>1 Nemesis mace</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 gatling psilencer</li><li>1 heavy incinerator</li><li>1 heavy psycannon</li><li>1 sublimator</li></ul>",
      "cost": 15,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     }
     },
     {
      "text": "This model can be equipped with 1 fragstorm grenade launcher.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "Equip Heavy psycannon",
      "cost": 15,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -1971,17 +2014,29 @@
     {
      "text": "This model’s assault cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy plasma cannon</li><li>1 multi-melta</li><li>1 twin lascannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s assault cannon, storm bolter and Dreadnought combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy psycannon, 1 storm bolter and 1 Nemesis doomglaive</li><li>1 heavy psycannon, 1 incinerator and 1 Nemesis doomglaive</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s storm bolter and Dreadnought combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 missile launcher and 1 armoured feet</li><li>1 heavy flamer and 1 Dreadnought combat weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -2162,17 +2217,29 @@
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 multi-melta</li><li>1 twin assault cannon</li><li>1 twin lascannon</li><li>1 twin psycannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -2345,12 +2412,20 @@
     {
      "text": "This model’s Thunderhawk cluster bombs can be replaced with 1 hellstrike missile battery.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Thunderhawk heavy cannon can be replaced with 1 turbo-laser destructor.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -2532,7 +2607,11 @@
     {
      "text": "For every 5 models in this unit, 1 Interceptor’s storm bolter and Nemesis force weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 close combat weapon</li><li>1 psilencer and 1 close combat weapon</li><li>1 psycannon and 1 close combat weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     }
    ]
   },
@@ -2676,7 +2755,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -2842,17 +2924,29 @@
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -3020,17 +3114,29 @@
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -3198,17 +3304,29 @@
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -3390,12 +3508,20 @@
     {
      "text": "This model’s dreadfists can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Nemesis daemon greathammer</li><li>1 Nemesis greatsword</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 gatling psilencer</li><li>1 heavy incinerator</li><li>1 heavy psycannon</li></ul>",
      "cost": 15,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     }
     }
    ]
   },
@@ -3613,22 +3739,35 @@
     {
      "text": "For every 5 models in this unit, up to 2 Paladins can each have their storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator</li><li>1 psilencer</li><li>1 psycannon</li></ul>",
      "cost": 5,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "1 Paladin can have its storm bolter replaced with 1 Apothecary’s narthecium.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Paladin’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 Ancient’s banner</li><li>1 psilencer and 1 Ancient’s banner</li><li>1 psycannon and 1 Ancient’s banner</li><li>1 storm bolter and 1 Ancient’s banner*</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "* That model’s storm bolter cannot be replaced.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "note"
+     }
     }
    ]
   },
@@ -3809,7 +3948,10 @@
     {
      "text": "Up to 4 Purgators can each have their storm bolter and Nemesis force weapon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 close combat weapon</li><li>1 psilencer and 1 close combat weapon</li><li>1 psycannon and 1 close combat weapon</li></ul>",
      "cost": 5,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -4001,7 +4143,11 @@
     {
      "text": "For every 5 models in this unit, up to 2 Purifiers can each have their storm bolter and Nemesis force weapon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 close combat weapon</li><li>1 psilencer and 1 close combat weapon</li><li>1 psycannon and 1 close combat weapon</li></ul>",
      "cost": 5,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     }
    ]
   },
@@ -4149,17 +4295,29 @@
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin lascannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -4290,12 +4448,20 @@
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model can be equipped with 1 additional storm bolter.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -4449,7 +4615,10 @@
     {
      "text": "Up to 2 models can each have their Servitor’s servo-arm replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter and 1 Servitor’s tools</li><li>1 multi-melta and 1 Servitor’s tools</li><li>1 plasma cannon and 1 Servitor’s tools</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -4629,12 +4798,20 @@
     {
      "text": "This model’s las-talon can be replaced with 1 icarus stormcannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s skyhammer missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 typhoon missile launcher</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -4856,17 +5033,29 @@
     {
      "text": "This model can be equipped with 2 hurricane bolters.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s twin assault cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy plasma cannon</li><li>1 twin lascannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s typhoon missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 twin multi-melta</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -5033,7 +5222,11 @@
     {
      "text": "This model’s skyhammer missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 twin lascannon</li><li>1 typhoon missile launcher</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -5205,7 +5398,11 @@
     {
      "text": "For every 5 models in this unit, 1 Grey Knight’s storm bolter and Nemesis force weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 close combat weapon</li><li>1 psilencer and 1 close combat weapon</li><li>1 psycannon and 1 close combat weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     }
    ]
   },
@@ -5389,12 +5586,20 @@
     {
      "text": "This model’s assault cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy plasma cannon</li><li>1 twin lascannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s storm bolter can be replaced with 1 heavy flamer.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   }

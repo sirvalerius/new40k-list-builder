@@ -191,12 +191,20 @@
     {
      "text": "This model’s Reaver gatling blaster can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Reaver laser blaster</li><li>1 Reaver melta cannon</li><li>1 Reaver volcano cannon</li><li>1 Reaver power fist</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Reaver laser blaster can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Reaver gatling blaster</li><li>1 Reaver melta cannon</li><li>1 Reaver volcano cannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -394,17 +402,29 @@
     {
      "text": "This model’s Nemesis quake cannon can be replaced with 1 Nemesis volcano cannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Reaver gatling blaster can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Reaver laser blaster</li><li>1 Reaver melta cannon</li><li>1 Reaver volcano cannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Reaver laser blaster can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Reaver gatling blaster</li><li>1 Reaver melta cannon</li><li>1 Reaver volcano cannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -568,12 +588,20 @@
     {
      "text": "This model’s Warhound plasma blastgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Warhound inferno gun</li><li>1 Warhound turbo-laser destructor</li><li>1 Warhound vulcan mega-bolter</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s Warhound vulcan mega-bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Warhound inferno gun</li><li>1 Warhound plasma blastgun</li><li>1 Warhound turbo-laser destructor</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -815,17 +843,29 @@
     {
      "text": "This model’s 2 apocalypse launchers can be replaced with 2 laser blasters.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s arioch power claw can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 belicosa volcano cannon</li><li>1 macro gatling blaster</li><li>1 mori quake cannon</li><li>1 sunfury plasma annihilator</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s macro gatling blaster can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 arioch power claw</li><li>1 belicosa volcano cannon</li><li>1 mori quake cannon</li><li>1 sunfury plasma annihilator</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   }

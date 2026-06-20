@@ -175,12 +175,20 @@
     {
      "text": "This model's splinter pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol</li><li>1 soul trap</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s huskblade can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 agoniser</li><li>1 master-crafted power weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -372,7 +380,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -592,12 +603,18 @@
     {
      "text": "Any number of models can each have their twin shuriken catapult replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dark lance</li><li>1 dissonance cannon</li><li>1 scatter laser</li><li>1 shuriken cannon</li><li>1 splinter cannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Cloud Dancer Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -874,17 +891,27 @@
     {
      "text": "Any number of models can each have their Corsair firearm replaced with 1 spar-glaive.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 model’s Corsair firearm can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 blaster</li><li>1 dark lance</li><li>1 flamer</li><li>1 fusion gun</li><li>1 shredder</li><li>1 shuriken cannon</li><li>1 splinter cannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "The Corsair Reaver Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -1185,17 +1212,27 @@
     {
      "text": "Any number of models can each have their Corsair firearm replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 shardcarbine</li><li>1 shuriken catapult</li><li>1 spar-glaive</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 model’s Corsair firearm can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 blaster</li><li>1 dark lance</li><li>1 flamer</li><li>1 fusion gun</li><li>1 shredder</li><li>1 shuriken cannon</li><li>1 splinter cannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "The Corsair Skyreaver Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -1404,17 +1441,27 @@
     {
      "text": "The Skyreaver Felarch can replace its shuriken pistol with one of the following:<ul style=\"list-style-type:circle\"><li>1  blast pistol</li><li>1 neuro disruptor</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "For every 5 models in the unit, up to 2 Skyreaver models can each have their shuriken pistol and Corsair blade replaced with one of the following*:<ul style=\"list-style-type:circle\"><li>1 blaster and 1 close combat weapon</li><li>1 flamer and 1 close combat weapon</li><li>1 fusion gun and 1 close combat weapon</li><li>1 shredder and 1 close combat weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "* You cannot select the same option more than once per unit unless it contains 10 models, in which case you cannot select the same weapon more than twice per unit.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "note"
+     }
     }
    ]
   },
@@ -1624,27 +1671,43 @@
     {
      "text": "The Voidreaver Felarch’s shuriken pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 neuro disruptor</li><li>1 shuriken rifle</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Voidreaver Felarch can be equipped with:<ul style=\"list-style-type:circle\"><li>1 mistshield</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of Corsair Voidreavers in this unit can each have their shuriken pistol and power sword replaced with 1 shuriken rifle.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 Corsair Voidreaver’s power sword or shuriken rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "If this unit contains 10 models, 1 Corsair Voidreaver’s shuriken rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 shuriken cannon</li><li>1 wraithcannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -1928,42 +1991,67 @@
     {
      "text": "Any number of Corsair Voidscarred can each have their shuriken pistol and power sword replaced with 1 shuriken rifle.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Voidscarred Felarch’s shuriken pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 neuro disruptor</li><li>1 shuriken rifle</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Voidscarred Felarch can be equipped with 1 mistshield.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "For every 5 models in this unit, 1 Corsair  Voidscarred’s shuriken rifle can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "If this unit contains 10 models, 1 Corsair Voidscarred’s shuriken rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 shuriken cannon</li><li>1 wraithcannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "If this unit contains 10 models, 1 Corsair Voidscarred’s shuriken rifle can be replaced with 1 long rifle. ",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "If this unit contains 10 models, 1 Corsair Voidscarred’s power sword can be  replaced with 1 fusion pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Corsair Voidscarred model equipped with a shuriken pistol and power sword can be equipped with 1 Faolchú.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -2138,7 +2226,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -2281,7 +2372,10 @@
     {
      "text": "Any number of models can each be equipped with 1 spirit vortex.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -2668,7 +2762,10 @@
     {
      "text": "Any number of models can each replace their paired monstrous weapons with 1 monstrous weapon and 1 liquifier gun.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -3063,52 +3160,83 @@
     {
      "text": "The Kabalite Archsybarite’s close combat weapon can be replaced with 1 power weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Kabalite Archsybarite’s splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol</li><li>1 splinter pistol</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Kabalite Archsybarite can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 Kabalite icon</li><li>1 phantasm grenade launcher</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Kabalite Agent's splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Kabalite Agent’s splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dark lance</li><li>1 splinter cannon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Kabalite Agent’s splinter rifle can be replaced with 1 stinger pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Kabalite Agent’s splinter rifle can be replaced with 1 shardcarbine.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Kabalite Agent’s splinter rifle can be replaced with 1 pain sculptors.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Kabalite Agent’s splinter rifle can be replaced with 1 splinter pistol and 1 razorflail.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Kabalite Agent equipped with a splinter rifle can be equipped with 1 stimm-needler. This model’s splinter rifle cannot be replaced.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -3292,17 +3420,26 @@
     {
      "text": "The Helliarch can be equipped with 1 phantasm grenade launcher.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Helliarch’s hellglaive can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 splinter pistol and 1 power weapon.</li><li>1 splinter pistol and 1 stunclaw.</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "If the Helliarch is equipped with 1 splinter pistol, it can be equipped with 1 hellglaive (that model’s hellglaive cannot be replaced).",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -3468,12 +3605,19 @@
     {
      "text": "The Klaivex’s klaive can be replaced with 1 demiklaives.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "For every 5 models in this unit, it can be equipped with 1 Incubi Shrine token.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     }
    ]
   },
@@ -3681,37 +3825,58 @@
     {
      "text": "The Sybarite’s close combat weapon can be replaced with 1 power weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Sybarite can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 Kabalite icon</li><li>1 phantasm grenade launcher</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Sybarite’s splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol</li><li>1 splinter pistol</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Kabalite Warrior’s splinter rifle can be replaced with 1 blaster.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Kabalite Warrior’s splinter rifle can be replaced with 1 dark lance.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Kabalite Warrior’s splinter rifle can be replaced with 1 shredder.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Kabalite Warrior’s splinter rifle can be replaced with 1 splinter cannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -3838,7 +4003,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -4358,7 +4526,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -4524,7 +4695,11 @@
     {
      "text": "This model’s dark lance can be replaced with 1 disintegrator cannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -4667,12 +4842,19 @@
     {
      "text": "Any number of this model’s dark lances can each be replaced with 1 disintegrator cannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "Equip Dark lance",
      "cost": 5,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -4807,7 +4989,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -4998,12 +5183,20 @@
     {
      "text": "This model’s 2 dark lances can be replaced with 2 disintegrator cannons.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s twin splinter rifle can be replaced with 1 splinter cannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -5149,7 +5342,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -5332,12 +5528,20 @@
     {
      "text": "For every 3 models in this unit, 1 model’s splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 heat lance</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 3
+     }
     },
     {
      "text": "For every 3 models in this unit, 1 model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 cluster caltrops</li><li>1 grav-talon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 3
+     }
     }
    ]
   },
@@ -5567,17 +5771,26 @@
     {
      "text": "The Solarite’s shardcarbine can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol and 1 power weapon</li><li>1 splinter pistol and 1 power weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of Scourges can each replace their splinter cannon with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 dark lance</li><li>1 haywire blaster</li><li>1 heat lance</li><li>1 shredder</li></ul>",
      "cost": 5,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Equip Dark lance",
      "cost": 5,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -5763,12 +5976,18 @@
     {
      "text": "The Solarite’s shardcarbine can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol and 1 power weapon</li><li>1 splinter pistol and 1 power weapon</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "1 Scourge’s shardcarbine can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -5923,7 +6142,11 @@
     {
      "text": "This model’s shuriken pistol can be replaced with 1 neuro disruptor.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -6078,12 +6301,18 @@
     {
      "text": "Any number of models can each have their shuriken cannon replaced with 1 Skyweaver haywire cannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of models can each have their star bolas replaced with 1 zephyrglaive.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -6353,7 +6582,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -6810,17 +7042,26 @@
     {
      "text": "Any number of models can each replace their twin splinter cannon with one of the following:<ul style=\"list-style-type:circle\"><li>1 stinger pod</li><li>1 twin haywire blaster</li><li>1 twin heat lance</li></ul>",
      "cost": 5,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of models can each replace one of their macro-scalpels with one of the following:<ul style=\"list-style-type:circle\"><li>1 Talos ichor injector</li><li>1 twin liquifier gun</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Any number of models can each replace one of their macro-scalpels with one of the following:<ul style=\"list-style-type:circle\"><li>1 chain flails</li><li>1 Talos gauntlet</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -6950,7 +7191,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -7140,22 +7384,34 @@
     {
      "text": "Any number of models can each have their Harlequin’s blade replaced with 1 Harlequin’s special weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Lead Player’s Harlequin’s blade can be replaced with 1 power sword.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "If this unit contains 9 or fewer models:<ul style=\"list-style-type:circle\"><li>Up to 2 models can each have their shuriken pistol replaced with 1 neuro disruptor</li><li>Up to 2 models can each have their shuriken pistol replaced with 1 fusion pistol</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "If this unit contains 10 or more models:<ul style=\"list-style-type:circle\"><li>Up to 4 models can each have their shuriken pistol replaced with 1 neuro disruptor</li><li>Up to 4 models can each have their shuriken pistol replaced with 1 fusion pistol</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -7326,12 +7582,20 @@
     {
      "text": "This model’s shuriken pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 fusion pistol</li><li>1 neuro disruptor</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model's Troupe Master's blade can be replaced with 1 Harlequin's special weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -7469,7 +7733,10 @@
     {
      "text": "None",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -7617,7 +7884,11 @@
     {
      "text": "This model’s twin splinter rifle can be replaced with 1 splinter cannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -7775,12 +8046,20 @@
     {
      "text": "This model can be equipped with 1 Voidraven missiles.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     },
     {
      "text": "This model’s 2 void lances can be replaced with 2 dark scythes.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -7937,7 +8216,11 @@
     {
      "text": "This model’s Voidweaver haywire cannon can be replaced with 1 prismatic cannon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     }
     }
    ]
   },
@@ -8123,17 +8406,27 @@
     {
      "text": "For every 5 models in this unit:<ul style=\"list-style-type:circle\"><li>1 model’s twin torturer’s tools can be replaced with 1 hexrifle and 1 torturer’s tool</li><li>1 model’s twin torturer’s tools can be replaced with 1 liquifier gun and 1 torturer’s tool</li><li>1 model’s twin torturer’s tools can be replaced with 1 ossefactor and 1 torturer’s tool</li><li>1 model’s twin torturer’s tools can be replaced with 1 stinger pistol and 1 torturer’s tool</li></ul>",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     }
     },
     {
      "text": "The Acothyst’s twin torturer’s tools can be replaced with 1 power weapon and 1 torturer’s tool.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "If the Acothyst is not equipped with a power weapon, its torturer’s tool can be replaced with 1 power weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   },
@@ -8282,17 +8575,26 @@
     {
      "text": "The Hekatrix’s splinter pistol can be replaced with 1 blast pistol.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "The Hekatrix’s Hekatarii blade can be replaced with 1 power weapon.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     },
     {
      "text": "Up to 3 Wyches can each have their splinter pistol and Hekatarii blade replaced with 1 gladiatorial weapons.",
      "cost": 0,
-     "type": "wargear"
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     }
     }
    ]
   }

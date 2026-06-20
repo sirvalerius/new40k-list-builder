@@ -10,7 +10,16 @@ import type {
 } from '../lib/types';
 import { DatasheetCard } from '../components/DatasheetCard';
 import { Modal } from '../components/Modal';
-import { bracketForCount, copiesOf, intOf, tierForPick, unitTotal, unitVariants } from '../lib/helpers';
+import {
+  bracketForCount,
+  copiesOf,
+  intOf,
+  optionMax,
+  stripHtml,
+  tierForPick,
+  unitTotal,
+  unitVariants,
+} from '../lib/helpers';
 
 const ROLE_ORDER = [
   'Epic Hero',
@@ -124,6 +133,7 @@ export function Roster({
               <WeaponOptionsEditor
                 options={ds.weapon_options!}
                 chosen={u.wargearCosts ?? []}
+                modelCount={u.modelCount ?? ds.model_max ?? 1}
                 onChange={(wc) => onSetWargear(u.uid, wc)}
               />
             )}
@@ -227,10 +237,12 @@ export function Roster({
 function WeaponOptionsEditor({
   options,
   chosen,
+  modelCount,
   onChange,
 }: {
   options: WeaponOption[];
   chosen: ChosenWargear[];
+  modelCount: number;
   onChange: (wc: ChosenWargear[]) => void;
 }) {
   const qtyOf = (text: string) => chosen.find((c) => c.name === text)?.qty ?? 0;
@@ -247,32 +259,50 @@ function WeaponOptionsEditor({
       </summary>
       <ul className="col" style={{ gap: 8, marginTop: 6, listStyle: 'none', padding: 0 }}>
         {options.map((o, i) => {
-          const q = qtyOf(o.text);
+          // Constraint notes ("* no duplicates", "** max 3 ranged") are shown, not editable.
+          if (o.limit?.kind === 'note') {
+            return (
+              <li key={i} className="muted tiny">
+                {stripHtml(o.text)}
+              </li>
+            );
+          }
+          const max = optionMax(o.limit, modelCount);
+          const q = Math.min(qtyOf(o.text), max ?? Infinity);
+          const limLabel =
+            o.limit?.kind === 'per_n'
+              ? `max ${max} (1 / ${o.limit.n})`
+              : o.limit?.kind === 'slots'
+                ? `up to ${o.limit.slots}/model`
+                : max != null
+                  ? `max ${max}`
+                  : '';
           return (
-            <li className="row" key={i} style={{ gap: 8, alignItems: 'center' }}>
+            <li className="row" key={i} style={{ gap: 8, alignItems: 'flex-start' }}>
               <div style={{ flex: 1 }} className="small">
-                {o.text}{' '}
+                {stripHtml(o.text)}{' '}
                 {o.cost > 0 ? (
                   <span className="badge">+{o.cost} pt{o.type === 'model' ? '' : ' each'}</span>
                 ) : (
                   <span className="muted tiny">free</span>
                 )}
+                {limLabel ? <span className="muted tiny"> · {limLabel}</span> : ''}
               </div>
-              {o.cost > 0 && (
-                <>
-                  <button
-                    className="ghost stepper sm"
-                    disabled={q <= 0}
-                    onClick={() => setQty(o, q - 1)}
-                  >
-                    −
-                  </button>
-                  <b style={{ minWidth: 20, textAlign: 'center' }}>{q}</b>
-                  <button className="ghost stepper sm" onClick={() => setQty(o, q + 1)}>
-                    ＋
-                  </button>
-                </>
-              )}
+              <button
+                className="ghost stepper sm"
+                disabled={q <= 0}
+                onClick={() => setQty(o, q - 1)}
+              >
+                −
+              </button>
+              <b style={{ minWidth: 20, textAlign: 'center' }}>{q}</b>
+              <button
+                className="ghost stepper sm"
+                disabled={max != null && q >= max}
+                onClick={() => setQty(o, Math.min(q + 1, max ?? Infinity))}
+              >
+                ＋
+              </button>
             </li>
           );
         })}

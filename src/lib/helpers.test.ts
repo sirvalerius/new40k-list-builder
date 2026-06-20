@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal } from './helpers';
+import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax } from './helpers';
 import type { Datasheet, FactionData, PointsOption } from './types';
 
 function ds(partial: Partial<Datasheet>): Datasheet {
@@ -118,5 +118,26 @@ describe('unitTotal (base + enhancement + paid wargear)', () => {
   });
   it('zero wargear leaves base unchanged', () => {
     expect(unitTotal(mk(flat, '1 model'))).toBe(100);
+  });
+});
+
+describe('optionMax (weapon option limits)', () => {
+  it('per_n = 1 per N models (floor)', () => {
+    expect(optionMax({ kind: 'per_n', n: 10 }, 20)).toBe(2);
+    expect(optionMax({ kind: 'per_n', n: 10 }, 10)).toBe(1);
+    expect(optionMax({ kind: 'per_n', n: 10 }, 9)).toBe(0);
+    expect(optionMax({ kind: 'per_n', n: 5 }, 12)).toBe(2);
+  });
+  it('all = one per model', () => {
+    expect(optionMax({ kind: 'all' }, 6)).toBe(6);
+  });
+  it('slots = modelCount x slots (aggregate per-model)', () => {
+    expect(optionMax({ kind: 'slots', slots: 2 }, 6)).toBe(12);
+    expect(optionMax({ kind: 'slots', slots: 3 }, 3)).toBe(9);
+  });
+  it('fixed and note/undefined', () => {
+    expect(optionMax({ kind: 'fixed', max: 1 }, 10)).toBe(1);
+    expect(optionMax({ kind: 'note' }, 10)).toBeNull();
+    expect(optionMax(undefined, 10)).toBeNull();
   });
 });
