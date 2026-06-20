@@ -73,6 +73,7 @@ export interface Datasheet {
   keywords: string[];
   faction_keywords: string[];
   can_lead: string[];
+  chapter?: string;            // SM sub-faction this datasheet belongs to ('' = generic)
   is_character: boolean;
   is_battleline: boolean;
   is_epic_hero: boolean;
@@ -111,13 +112,14 @@ export interface Detachment {
   exclusive_tag: string;       // e.g. HOST, WAR DOGS ('' if none)
   restriction: string;
   boarding_actions?: boolean;  // Boarding Actions mode detachment (no DP; excluded from matched play)
+  restricted_chapter?: string; // SM Chapter this detachment is bound to ('' = any)
   rules: DetachmentRule[];
   enhancements: Enhancement[];
   stratagems: Stratagem[];
 }
 
 export interface FactionData {
-  faction: { id: string; name: string; super_keywords: string[] };
+  faction: { id: string; name: string; super_keywords: string[]; sub_factions?: string[] };
   last_update: string;
   unit_count: number;
   datasheets: Datasheet[];
@@ -149,6 +151,7 @@ export interface ArmyList {
   name: string;
   factionId: string;
   battleSizeId: string;
+  subFaction?: string;         // chosen Chapter/sub-faction ('' = any)
   detachmentIds: string[];     // chosen detachments (DP budget)
   units: ListUnit[];
   createdAt: number;

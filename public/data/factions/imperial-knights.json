@@ -4,7 +4,8 @@
   "name": "Imperial Knights",
   "super_keywords": [
    "IMPERIUM"
-  ]
+  ],
+  "sub_factions": []
  },
  "last_update": "2026-06-13 12:02:41",
  "unit_count": 28,
@@ -166,7 +167,8 @@
       "kind": "all"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000000860",
@@ -352,7 +354,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000001481",
@@ -490,7 +493,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000002769",
@@ -685,7 +689,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000001482",
@@ -834,7 +839,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000001484",
@@ -987,7 +993,8 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000000861",
@@ -1147,7 +1154,8 @@
       "kind": "all"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000000862",
@@ -1329,7 +1337,8 @@
       "kind": "all"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000000863",
@@ -1478,7 +1487,8 @@
       "kind": "all"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000000864",
@@ -1627,7 +1637,8 @@
       "kind": "all"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000001485",
@@ -1821,7 +1832,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000000859",
@@ -2068,7 +2080,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004149",
@@ -2245,7 +2258,8 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000004213",
@@ -2475,7 +2489,8 @@
       "kind": "note"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000000856",
@@ -2722,7 +2737,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000000858",
@@ -2948,7 +2964,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000000855",
@@ -3195,7 +3212,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000001483",
@@ -3464,7 +3482,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000001486",
@@ -3647,7 +3666,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000000857",
@@ -3905,7 +3925,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000000865",
@@ -4099,7 +4120,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000000866",
@@ -4293,7 +4315,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000002770",
@@ -4382,7 +4405,8 @@
    "model_min": null,
    "model_max": null,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000003841",
@@ -4493,7 +4517,8 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000003842",
@@ -4748,7 +4773,8 @@
       "kind": "note"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000003843",
@@ -4997,7 +5023,8 @@
       "kind": "note"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000003839",
@@ -5175,7 +5202,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000003840",
@@ -5310,7 +5338,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   }
  ],
  "detachments": [
@@ -5362,7 +5391,8 @@
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001145",
@@ -5442,7 +5472,8 @@
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001107",
@@ -5522,7 +5553,8 @@
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000000988",
@@ -5602,7 +5634,8 @@
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001108",
@@ -5686,7 +5719,8 @@
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001109",
@@ -5766,7 +5800,8 @@
    "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000900044",
@@ -5816,7 +5851,8 @@
    "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "ARMIGERS",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001106",
@@ -5896,7 +5932,8 @@
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   }
  ]
 }

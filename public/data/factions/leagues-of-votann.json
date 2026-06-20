@@ -2,7 +2,8 @@
  "faction": {
   "id": "LoV",
   "name": "Leagues of Votann",
-  "super_keywords": []
+  "super_keywords": [],
+  "sub_factions": []
  },
  "last_update": "2026-06-13 12:02:41",
  "unit_count": 22,
@@ -141,7 +142,8 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000004201",
@@ -279,7 +281,8 @@
       "kind": "all"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000002597",
@@ -475,7 +478,8 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000002603",
@@ -644,7 +648,8 @@
       "kind": "all"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004140",
@@ -770,7 +775,8 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000002600",
@@ -948,7 +954,8 @@
       "kind": "note"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004145",
@@ -1084,7 +1091,8 @@
       "kind": "all"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000002595",
@@ -1238,7 +1246,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000002599",
@@ -1455,7 +1464,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000002596",
@@ -1610,7 +1620,8 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000002598",
@@ -1896,7 +1907,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000002604",
@@ -2122,7 +2134,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000002601",
@@ -2363,7 +2376,8 @@
       "kind": "note"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000003710",
@@ -2542,7 +2556,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004143",
@@ -2703,7 +2718,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004144",
@@ -2852,7 +2868,8 @@
       "kind": "all"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004147",
@@ -2999,7 +3016,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004146",
@@ -3165,7 +3183,8 @@
       "kind": "all"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000002594",
@@ -3339,7 +3358,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004141",
@@ -3447,7 +3467,8 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000002602",
@@ -3617,7 +3638,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000002593",
@@ -3733,7 +3755,8 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   }
  ],
  "detachments": [
@@ -3785,7 +3808,8 @@
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001099",
@@ -3865,7 +3889,8 @@
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001098",
@@ -3945,7 +3970,8 @@
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000900031",
@@ -3995,7 +4021,8 @@
    "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001001",
@@ -4075,63 +4102,8 @@
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
-  },
-  {
-   "id": "000000951",
-   "name": "Hearthfire Strike",
-   "legend": "<b>During the most punishing void battles, when the butcher’s bill is spiralling but the promised rewards still justify the cost of conflict, the most expedient plan is often also the most direct. Gathering the might of the Einhyr, the Kin launch a single, thunderous strike to end all enemy resistance.</b>",
-   "rules": [
-    {
-     "name": "Wrought in Wrath",
-     "description": "Add 1 to Advance and Charge rolls made for <span class=\"kwb\">LEAGUES</span> <span class=\"kwb2\">OF</span> <span class=\"kwb\">VOTANN</span> units from your army."
-    }
-   ],
-   "enhancements": [
-    {
-     "name": "Celebrated Folk Hero",
-     "cost": "0",
-     "description": "The first time the bearer is destroyed, each enemy unit on the battlefield gains 1 Judgement token.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Gûlyk’s Stars",
-     "cost": "0",
-     "description": "Each time the bearer ends a Charge move, select one enemy unit within Engagement Range of it and roll one D6: on a 2-4, that enemy unit suffers 1 mortal wound; on a 5+, that enemy unit suffers 2 mortal wounds. If this results in one or more enemy models being destroyed, you can select one closed Hatchway within 6\" of the bearer and open it.",
-     "is_upgrade": false
-    }
-   ],
-   "stratagems": [
-    {
-     "name": "ECONOMY OF AGGRESSION",
-     "cp_cost": "1",
-     "type": "Hearthfire Strike – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One EINHYR HEARTHGUARD unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Select one enemy unit that is visible to your unit and wholly on the opposite side of a Hatchway from it. Until the end of the phase, exo-armour grenade launchers equipped by models in your unit have an Attacks characteristic of 6 and lose the [BLAST] ability while targeting that enemy unit, and attacks made with such weapons that target that enemy unit can be allocated to models that are not visible to the attacking model."
-    },
-    {
-     "name": "GRAVITRONIC PULSE",
-     "cp_cost": "1",
-     "type": "Hearthfire Strike – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your Charge phase, just after a <span class=\"kwb\">LEAGUES</span> <span class=\"kwb2\">OF</span> <span class=\"kwb\">VOTANN</span> unit from your army ends a Charge move.<br><br><b>TARGET:</b> That <span class=\"kwb\">LEAGUES</span> <span class=\"kwb2\">OF</span> <span class=\"kwb\">VOTANN</span> unit.<br><br><b>EFFECT:</b> For each enemy unit within Engagement Range of your unit, until the end of the turn, that unit loses the Fights First ability (if it has it) and, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
-    },
-    {
-     "name": "WEAVEFIELD FLARE",
-     "cp_cost": "1",
-     "type": "Hearthfire Strike – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One <span class=\"kwb\">LEAGUES</span> <span class=\"kwb2\">OF</span> <span class=\"kwb\">VOTANN</span> unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, each time an attack targets your unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of your unit, subtract 1 from the Wound roll."
-    },
-    {
-     "name": "PAN-SPECTRAL VISUALISER",
-     "cp_cost": "1",
-     "type": "Hearthfire Strike – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">LEAGUES</span> <span class=\"kwb2\">OF</span> <span class=\"kwb\">VOTANN</span> unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Until the end of the phase, ranged weapons equipped by models in your unit have the [IGNORES COVER] ability and each time a model in your unit makes an attack with a weapon, you can ignore any or all modifiers to that attack’s or that weapon’s Ballistic Skill characteristic and any or all modifiers to the Hit roll."
-    }
-   ],
-   "dp_cost": 0,
-   "force_disposition": "",
-   "exclusive_tag": "",
-   "restriction": "",
-   "boarding_actions": true
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001100",
@@ -4211,7 +4183,8 @@
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000900032",
@@ -4261,7 +4234,8 @@
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "HEARTHGUARD",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001137",
@@ -4341,7 +4315,8 @@
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001096",
@@ -4421,7 +4396,8 @@
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001097",
@@ -4501,63 +4477,8 @@
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
-  },
-  {
-   "id": "000000950",
-   "name": "Void Salvagers",
-   "legend": "<b>The salvage fleets of the Leagues of Votann secure material resources and recover stolen technologies. Their aggressive salvage operations bring them into conflict with hostile foes. It is fortunate, therefore, that Kin soldiers are well suited to combat in the close confines of space hulks and voidships.</b>",
-   "rules": [
-    {
-     "name": "Stalwart Advance",
-     "description": "In your Shooting phase, each time a LEAGUES OF VOTANN unit from your army has shot, if one or more enemy units were destroyed by those attacks and that <span class=\"kwb\">LEAGUES</span> <span class=\"kwb2\">OF</span> <span class=\"kwb\">VOTANN</span> unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 3\" and can then attempt to operate a Hatchway."
-    }
-   ],
-   "enhancements": [
-    {
-     "name": "Masterful Construction",
-     "cost": "0",
-     "description": "Each time the bearer is selected to shoot or fight, you can select one of the following weapon abilities: [DEVASTATING WOUNDS]; [LETHAL HITS]; [SUSTAINED HITS 1]. Until the end of the phase, weapons equipped by the bearer (excluding Psychic weapons) have that ability.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Obsessive Drive",
-     "cost": "0",
-     "description": "At the start of the first battle round, select one objective marker. While the bearer is on the battlefield, each time a <span class=\"kwb\">LEAGUES</span> <span class=\"kwb2\">OF</span> <span class=\"kwb\">VOTANN</span> unit from your army is selected to shoot or fight, each enemy unit within range of that objective marker is considered to have 1 additional Judgement token while resolving those attacks.",
-     "is_upgrade": false
-    }
-   ],
-   "stratagems": [
-    {
-     "name": "CORRIDOR COVERED",
-     "cp_cost": "1",
-     "type": "Void Salvagers – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your opponent's Movement or Charge phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">LEAGUES</span> <span class=\"kwb2\">OF</span> <span class=\"kwb\">VOTANN</span> unit from your army that has not fired Overwatch this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit makes an attack while firing Overwatch, an unmodified Hit roll of 5+ is required to score a hit, instead of an unmodified 6."
-    },
-    {
-     "name": "JUDGED AND PUNISHED",
-     "cp_cost": "1",
-     "type": "Void Salvagers – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">LEAGUES</span> <span class=\"kwb2\">OF</span> <span class=\"kwb\">VOTANN</span> unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit makes an attack, if the target has 1 or more Judgement tokens, you can re-roll the Hit roll, and if the target has 2 Judgement tokens, you can re-roll the Wound roll as well."
-    },
-    {
-     "name": "POINT-BLANK FIRE",
-     "cp_cost": "1",
-     "type": "Void Salvagers – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One HEARTHKYN WARRIORS unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Until the end of the phase, ranged weapons equipped by models in your unit have the [PISTOL] ability."
-    },
-    {
-     "name": "RELIC CYPHER",
-     "cp_cost": "1",
-     "type": "Void Salvagers – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Command phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">LEAGUES</span> <span class=\"kwb2\">OF</span> <span class=\"kwb\">VOTANN</span> unit from your army.<br><br><b>EFFECT:</b> Select one closed Hatchway on the battlefield and open it.<br><br><b>RESTRICTIONS:</b> You can only use this Stratagem once."
-    }
-   ],
-   "dp_cost": 0,
-   "force_disposition": "",
-   "exclusive_tag": "",
-   "restriction": "",
-   "boarding_actions": true
+   "boarding_actions": false,
+   "restricted_chapter": ""
   }
  ]
 }

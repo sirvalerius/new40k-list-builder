@@ -33,6 +33,7 @@ export function Roster({
   list,
   fd,
   battleSize,
+  subFaction,
   onAdd,
   onRemove,
   onSetWarlord,
@@ -42,6 +43,7 @@ export function Roster({
   list: ArmyList;
   fd: FactionData;
   battleSize: BattleSize;
+  subFaction: string;
   onAdd: (ds: Datasheet, tier: PointsOption, modelCount?: number) => void;
   onRemove: (uid: string) => void;
   onSetWarlord: (uid: string) => void;
@@ -57,6 +59,23 @@ export function Roster({
     [fd],
   );
 
+  // Filter datasheets by the selected sub-faction (Chapter): hide other Chapters'
+  // units, and apply Chapter exclusions (Black Templars cannot take PSYKERs).
+  const visible = useMemo(
+    () =>
+      fd.datasheets.filter((d) => {
+        if (!subFaction) return true;
+        if (d.chapter && d.chapter !== subFaction) return false;
+        if (
+          subFaction === 'Black Templars' &&
+          (d.keywords ?? []).some((k) => k.toUpperCase() === 'PSYKER')
+        )
+          return false;
+        return true;
+      }),
+    [fd, subFaction],
+  );
+
   const sorted = useMemo(() => {
     const score = (d: Datasheet) => {
       if (d.is_epic_hero) return 0;
@@ -64,10 +83,10 @@ export function Roster({
       if (d.is_battleline) return 2;
       return 3;
     };
-    return [...fd.datasheets].sort(
+    return [...visible].sort(
       (a, b) => score(a) - score(b) || a.name.localeCompare(b.name),
     );
-  }, [fd]);
+  }, [visible]);
 
   const filtered = sorted.filter((d) =>
     d.name.toLowerCase().includes(query.toLowerCase().trim()),

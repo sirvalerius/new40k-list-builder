@@ -6,7 +6,8 @@
    "CHAOS",
    "HERETIC ASTARTES",
    "SLAANESH"
-  ]
+  ],
+  "sub_factions": []
  },
  "last_update": "2026-06-13 12:02:41",
  "unit_count": 23,
@@ -189,7 +190,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004093",
@@ -346,7 +348,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004090",
@@ -438,7 +441,8 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000004081",
@@ -659,7 +663,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004086",
@@ -795,7 +800,8 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000004087",
@@ -932,7 +938,8 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000004095",
@@ -1068,7 +1075,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004208",
@@ -1339,7 +1347,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004096",
@@ -1442,7 +1451,8 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000004089",
@@ -1548,7 +1558,8 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000004077",
@@ -1720,7 +1731,8 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000004092",
@@ -1854,7 +1866,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004080",
@@ -2050,7 +2063,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004097",
@@ -2239,7 +2253,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004078",
@@ -2463,7 +2478,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004084",
@@ -2597,7 +2613,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004083",
@@ -2720,7 +2737,8 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000004091",
@@ -2856,7 +2874,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004088",
@@ -3027,7 +3046,8 @@
       "kind": "all"
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004098",
@@ -3181,7 +3201,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   },
   {
    "id": "000004094",
@@ -3334,7 +3355,8 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000004085",
@@ -3468,7 +3490,8 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "weapon_options": []
+   "weapon_options": [],
+   "chapter": ""
   },
   {
    "id": "000004079",
@@ -3728,7 +3751,8 @@
       "max": 1
      }
     }
-   ]
+   ],
+   "chapter": ""
   }
  ],
  "detachments": [
@@ -3810,7 +3834,8 @@
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001037",
@@ -3890,7 +3915,8 @@
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001125",
@@ -3974,7 +4000,8 @@
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000900001",
@@ -4024,7 +4051,8 @@
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000900002",
@@ -4074,7 +4102,8 @@
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "HOST",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001033",
@@ -4154,7 +4183,8 @@
    "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001034",
@@ -4234,7 +4264,8 @@
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001035",
@@ -4314,7 +4345,8 @@
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000001038",
@@ -4394,7 +4426,8 @@
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
+   "boarding_actions": false,
+   "restricted_chapter": ""
   },
   {
    "id": "000900003",
@@ -4444,63 +4477,8 @@
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
-   "boarding_actions": false
-  },
-  {
-   "id": "000001154",
-   "name": "Sublime Strike",
-   "legend": "<p class=\"legend\">When an Emperor’s Children boarding party attacks, its warriors aim to humiliate the enemy by demonstrating their glaring superiority. What need of massed onslaught or brute force have the scions of Fulgrim when a mere handful of their best warriors can seize and destroy the enemy’s command bridge, their enginarium, or whatever vital target will bring swift and total victory? By moving quickly and employing the full gamut of their dark gifts, the warriors of a boarding party take the enemy out of the fight with a single, expertly aimed blow.<p class=\"legend\">",
-   "rules": [
-    {
-     "name": "Dark Radiance",
-     "description": "Each time an <span class=\"kwb\">EMPEROR’S</span> <span class=\"kwb\">CHILDREN</span> unit from your army makes a Normal, Advance or Fall Back move, models in that unit can move through friendly and enemy models."
-    }
-   ],
-   "enhancements": [
-    {
-     "name": "Venom of the Six-fanged Serpent",
-     "cost": "0",
-     "description": "Add 1 to the Strength and Damage characteristics of the bearer’s melee weapons and improve the Armour Penetration characteristic of those weapons by 2.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Daemonshrieker",
-     "cost": "0",
-     "description": "In your Shooting phase, you can select one closed Hatchway within 12\" of and visible to the bearer. If you do, roll one D6: on a 2+, open that Hatchway and, until the end of the battle, that Hatchway cannot be closed.",
-     "is_upgrade": false
-    }
-   ],
-   "stratagems": [
-    {
-     "name": "VYING FOR VICTORY",
-     "cp_cost": "1",
-     "type": "Sublime Strike – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your opponent’s Movement phase, just after an enemy unit ends a Fall Back move.<br><br><b>TARGET:</b> One <span class=\"kwb\">EMPEROR’S</span> <span class=\"kwb\">CHILDREN</span> unit from your army that was within Engagement Range of that enemy unit at the start of the phase.<br><br><b>EFFECT:</b> Your unit can make a Normal move of up to 3\"."
-    },
-    {
-     "name": "EAGER FOR MORE",
-     "cp_cost": "1",
-     "type": "Sublime Strike – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your Movement phase, just after an <span class=\"kwb\">EMPEROR’S</span> <span class=\"kwb\">CHILDREN</span> unit from your army opens a Hatchway.<br><br><b>TARGET:</b> That <span class=\"kwb\">EMPEROR’S</span> <span class=\"kwb\">CHILDREN</span> unit.<br><br><b>EFFECT:</b> Your unit can make a Normal move of up to 3\"."
-    },
-    {
-     "name": "ALLURING GROTESQUERIE",
-     "cp_cost": "1",
-     "type": "Sublime Strike – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Start of the Fight phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">EMPEROR’S</span> <span class=\"kwb\">CHILDREN</span> unit from your army.<br><br><b>EFFECT:</b> Each enemy unit within Engagement Range of your unit must take a Battle-shock test. Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll."
-    },
-    {
-     "name": "CLOYING CORRUPTION",
-     "cp_cost": "1",
-     "type": "Sublime Strike – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Start of your Movement phase.<br><br><b>TARGET:</b> One FLAWLESS BLADES unit from your army.<br><br><b>EFFECT:</b> Select one objective marker you control that your unit is within range of. That objective marker is Secured by your army."
-    }
-   ],
-   "dp_cost": 0,
-   "force_disposition": "",
-   "exclusive_tag": "",
-   "restriction": "",
-   "boarding_actions": true
+   "boarding_actions": false,
+   "restricted_chapter": ""
   }
  ]
 }

@@ -68,6 +68,11 @@ export function Builder({
   }
 
   const detachments = fd?.detachments ?? [];
+  const sub = list.subFaction ?? '';
+  // detachments offered in the picker: hide ones bound to a different Chapter
+  const visibleDetachments = detachments.filter(
+    (d) => !sub || !d.restricted_chapter || d.restricted_chapter === sub,
+  );
 
   const result = useMemo(
     () => validateList(list, rules, detachments),
@@ -138,6 +143,16 @@ export function Builder({
     }));
   }
 
+  function setSubFaction(sub: string) {
+    update((l) => {
+      // drop chosen detachments that are bound to a different Chapter
+      const keep = detachments
+        .filter((d) => !sub || !d.restricted_chapter || d.restricted_chapter === sub)
+        .map((d) => d.id);
+      return { ...l, subFaction: sub, detachmentIds: l.detachmentIds.filter((id) => keep.includes(id)) };
+    });
+  }
+
   function setModelCount(uid: string, count: number) {
     const dsMap = fd ? datasheetMap(fd) : null;
     update((l) => ({
@@ -197,7 +212,24 @@ export function Builder({
     <div>
       <ValidationBanner result={result} />
 
-      <div className="row mb">
+      <div className="row mb" style={{ gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+        {(fd.faction.sub_factions?.length ?? 0) > 0 && (
+          <>
+            <span className="muted small">Chapter:</span>
+            <select
+              value={list.subFaction ?? ''}
+              onChange={(e) => setSubFaction(e.target.value)}
+            >
+              <option value="">Any / Codex</option>
+              {fd.faction.sub_factions!.map((c) => (
+                <option key={c} value={c}>
+                  {c}
+                </option>
+              ))}
+            </select>
+          </>
+        )}
+        <div className="spacer" />
         <button className="ghost small" onClick={exportText}>
           ⤓ Export as text
         </button>
@@ -233,7 +265,7 @@ export function Builder({
       {tab === 'detach' && (
         <DetachmentPicker
           list={list}
-          detachments={detachments}
+          detachments={visibleDetachments}
           dpBudget={intOf(battleSize.detachment_points)}
           onToggle={toggleDetachment}
         />
@@ -243,6 +275,7 @@ export function Builder({
           list={list}
           fd={fd}
           battleSize={battleSize}
+          subFaction={sub}
           onAdd={addUnit}
           onRemove={removeUnit}
           onSetWarlord={setWarlord}

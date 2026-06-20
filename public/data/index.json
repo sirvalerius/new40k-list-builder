@@ -7,8 +7,9 @@
    "super_keywords": [
     "IMPERIUM"
    ],
+   "sub_factions": [],
    "unit_count": 38,
-   "detachment_count": 10
+   "detachment_count": 8
   },
   {
    "id": "AC",
@@ -17,8 +18,9 @@
    "super_keywords": [
     "IMPERIUM"
    ],
+   "sub_factions": [],
    "unit_count": 31,
-   "detachment_count": 11
+   "detachment_count": 9
   },
   {
    "id": "AdM",
@@ -27,8 +29,9 @@
    "super_keywords": [
     "IMPERIUM"
    ],
+   "sub_factions": [],
    "unit_count": 39,
-   "detachment_count": 13
+   "detachment_count": 10
   },
   {
    "id": "TL",
@@ -37,6 +40,7 @@
    "super_keywords": [
     "IMPERIUM"
    ],
+   "sub_factions": [],
    "unit_count": 4,
    "detachment_count": 0
   },
@@ -47,8 +51,9 @@
    "super_keywords": [
     "AELDARI"
    ],
+   "sub_factions": [],
    "unit_count": 97,
-   "detachment_count": 19
+   "detachment_count": 15
   },
   {
    "id": "AM",
@@ -57,8 +62,9 @@
    "super_keywords": [
     "IMPERIUM"
    ],
+   "sub_factions": [],
    "unit_count": 134,
-   "detachment_count": 13
+   "detachment_count": 11
   },
   {
    "id": "CD",
@@ -68,8 +74,9 @@
     "CHAOS",
     "LEGIONES DAEMONICA"
    ],
+   "sub_factions": [],
    "unit_count": 106,
-   "detachment_count": 14
+   "detachment_count": 9
   },
   {
    "id": "QT",
@@ -79,6 +86,7 @@
     "CHAOS",
     "HERETIC ASTARTES"
    ],
+   "sub_factions": [],
    "unit_count": 37,
    "detachment_count": 8
   },
@@ -90,8 +98,9 @@
     "CHAOS",
     "HERETIC ASTARTES"
    ],
+   "sub_factions": [],
    "unit_count": 112,
-   "detachment_count": 20
+   "detachment_count": 17
   },
   {
    "id": "DG",
@@ -102,8 +111,9 @@
     "HERETIC ASTARTES",
     "NURGLE"
    ],
+   "sub_factions": [],
    "unit_count": 71,
-   "detachment_count": 12
+   "detachment_count": 9
   },
   {
    "id": "DRU",
@@ -112,8 +122,9 @@
    "super_keywords": [
     "AELDARI"
    ],
+   "sub_factions": [],
    "unit_count": 47,
-   "detachment_count": 13
+   "detachment_count": 9
   },
   {
    "id": "EC",
@@ -124,8 +135,9 @@
     "HERETIC ASTARTES",
     "SLAANESH"
    ],
+   "sub_factions": [],
    "unit_count": 23,
-   "detachment_count": 11
+   "detachment_count": 10
   },
   {
    "id": "GC",
@@ -134,8 +146,9 @@
    "super_keywords": [
     "TYRANIDS"
    ],
+   "sub_factions": [],
    "unit_count": 139,
-   "detachment_count": 12
+   "detachment_count": 9
   },
   {
    "id": "GK",
@@ -144,8 +157,9 @@
    "super_keywords": [
     "IMPERIUM"
    ],
+   "sub_factions": [],
    "unit_count": 31,
-   "detachment_count": 11
+   "detachment_count": 9
   },
   {
    "id": "AoI",
@@ -155,8 +169,9 @@
     "IMPERIUM",
     "AGENTS OF THE IMPERIUM"
    ],
+   "sub_factions": [],
    "unit_count": 46,
-   "detachment_count": 7
+   "detachment_count": 5
   },
   {
    "id": "QI",
@@ -165,6 +180,7 @@
    "super_keywords": [
     "IMPERIUM"
    ],
+   "sub_factions": [],
    "unit_count": 28,
    "detachment_count": 8
   },
@@ -173,24 +189,27 @@
    "name": "Leagues of Votann",
    "slug": "leagues-of-votann",
    "super_keywords": [],
+   "sub_factions": [],
    "unit_count": 22,
-   "detachment_count": 12
+   "detachment_count": 10
   },
   {
    "id": "NEC",
    "name": "Necrons",
    "slug": "necrons",
    "super_keywords": [],
+   "sub_factions": [],
    "unit_count": 64,
-   "detachment_count": 16
+   "detachment_count": 12
   },
   {
    "id": "ORK",
    "name": "Orks",
    "slug": "orks",
    "super_keywords": [],
+   "sub_factions": [],
    "unit_count": 87,
-   "detachment_count": 14
+   "detachment_count": 12
   },
   {
    "id": "SM",
@@ -200,8 +219,22 @@
     "IMPERIUM",
     "ADEPTUS ASTARTES"
    ],
+   "sub_factions": [
+    "Ultramarines",
+    "Blood Angels",
+    "Dark Angels",
+    "Space Wolves",
+    "Black Templars",
+    "Deathwatch",
+    "Imperial Fists",
+    "Iron Hands",
+    "Salamanders",
+    "Raven Guard",
+    "White Scars",
+    "Blood Ravens"
+   ],
    "unit_count": 298,
-   "detachment_count": 56
+   "detachment_count": 52
   },
   {
    "id": "TS",
@@ -212,24 +245,27 @@
     "HERETIC ASTARTES",
     "TZEENTCH"
    ],
+   "sub_factions": [],
    "unit_count": 60,
-   "detachment_count": 12
+   "detachment_count": 9
   },
   {
    "id": "TYR",
    "name": "Tyranids",
    "slug": "tyranids",
    "super_keywords": [],
+   "sub_factions": [],
    "unit_count": 57,
-   "detachment_count": 14
+   "detachment_count": 10
   },
   {
    "id": "TAU",
    "name": "T’au Empire",
    "slug": "t-au-empire",
    "super_keywords": [],
+   "sub_factions": [],
    "unit_count": 63,
-   "detachment_count": 9
+   "detachment_count": 7
   },
   {
    "id": "WE",
@@ -239,8 +275,9 @@
     "CHAOS",
     "KHORNE"
    ],
+   "sub_factions": [],
    "unit_count": 58,
-   "detachment_count": 10
+   "detachment_count": 8
   }
  ],
  "last_update": "2026-06-20"
