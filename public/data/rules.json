@@ -1,0 +1,400 @@
+{
+ "battle_sizes": [
+  {
+   "id": "1",
+   "name": "Incursion",
+   "points": "1000",
+   "detachment_points": "2",
+   "enhancement_limit": "2",
+   "unit_limit": "2",
+   "battleline_limit": "4",
+   "confirmed": "yes"
+  },
+  {
+   "id": "2",
+   "name": "Strike Force",
+   "points": "2000",
+   "detachment_points": "3",
+   "enhancement_limit": "4",
+   "unit_limit": "3",
+   "battleline_limit": "6",
+   "confirmed": "yes"
+  },
+  {
+   "id": "3",
+   "name": "Onslaught",
+   "points": "3000",
+   "detachment_points": "4",
+   "enhancement_limit": "6",
+   "unit_limit": "4",
+   "battleline_limit": "8",
+   "confirmed": "provisional"
+  }
+ ],
+ "allies": [
+  {
+   "army_faction_id": "DRU",
+   "allied_keyword": "HARLEQUINS",
+   "mechanism": "supra_faction",
+   "gated_by": "none",
+   "cap_incursion": "250",
+   "cap_strike": "500",
+   "cap_onslaught": "750",
+   "notes": "Corsairs and Travelling Players; ANHRATHE also allowed"
+  },
+  {
+   "army_faction_id": "DRU",
+   "allied_keyword": "ANHRATHE",
+   "mechanism": "supra_faction",
+   "gated_by": "none",
+   "cap_incursion": "250",
+   "cap_strike": "500",
+   "cap_onslaught": "750",
+   "notes": "Ynnari/Eldritch Raiders; shared cap with HARLEQUINS"
+  },
+  {
+   "army_faction_id": "AE",
+   "allied_keyword": "HARLEQUINS",
+   "mechanism": "native",
+   "gated_by": "none",
+   "cap_incursion": "",
+   "cap_strike": "",
+   "cap_onslaught": "0",
+   "notes": "Harlequins are part of the Aeldari faction"
+  },
+  {
+   "army_faction_id": "AE",
+   "allied_keyword": "YNNARI",
+   "mechanism": "native",
+   "gated_by": "none",
+   "cap_incursion": "",
+   "cap_strike": "",
+   "cap_onslaught": "0",
+   "notes": "Ynnari/Anhrathe within Aeldari"
+  },
+  {
+   "army_faction_id": "QI",
+   "allied_keyword": "ADEPTUS MECHANICUS",
+   "mechanism": "detachment_gated",
+   "gated_by": "Questor Forgepact",
+   "cap_incursion": "500",
+   "cap_strike": "500",
+   "cap_onslaught": "500",
+   "notes": "Tech-Priest Dominus/Manipulus/Marshal/Rangers/Vanguard; fixed 500 cap"
+  },
+  {
+   "army_faction_id": "QT",
+   "allied_keyword": "DAMNED",
+   "mechanism": "detachment_gated",
+   "gated_by": "Iconoclast Fiefdom",
+   "cap_incursion": "500",
+   "cap_strike": "500",
+   "cap_onslaught": "500",
+   "notes": "Damned units from Codex: Chaos Space Marines; fixed 500 cap"
+  },
+  {
+   "army_faction_id": "GC",
+   "allied_keyword": "ASTRA MILITARUM",
+   "mechanism": "detachment_gated",
+   "gated_by": "Brood Brother Auxilia",
+   "cap_incursion": "500",
+   "cap_strike": "1000",
+   "cap_onslaught": "1500",
+   "notes": "Brood Brothers; GC must be WARLORD; excludes AIRCRAFT/COMMISSAR/EPIC HERO/MILITARUM TEMPESTUS/OGRYN/RATLING/TECH-PRIEST ENGINSEER/MINISTORUM PRIEST; AM lose Voice of Command"
+  },
+  {
+   "army_faction_id": "SM",
+   "allied_keyword": "AGENTS OF THE IMPERIUM",
+   "mechanism": "agents",
+   "gated_by": "Inquisitor pairing",
+   "cap_incursion": "0",
+   "cap_strike": "0",
+   "cap_onslaught": "0",
+   "notes": "Per Inquisitor + retinue pairing; no flat cap; forbidden by some detachments (Deathwatch)"
+  },
+  {
+   "army_faction_id": "AM",
+   "allied_keyword": "AGENTS OF THE IMPERIUM",
+   "mechanism": "agents",
+   "gated_by": "Inquisitor pairing",
+   "cap_incursion": "0",
+   "cap_strike": "0",
+   "cap_onslaught": "0",
+   "notes": "Any IMPERIUM army via Inquisitor pairings"
+  },
+  {
+   "army_faction_id": "AdM",
+   "allied_keyword": "AGENTS OF THE IMPERIUM",
+   "mechanism": "agents",
+   "gated_by": "Inquisitor pairing",
+   "cap_incursion": "0",
+   "cap_strike": "0",
+   "cap_onslaught": "0",
+   "notes": ""
+  },
+  {
+   "army_faction_id": "AS",
+   "allied_keyword": "AGENTS OF THE IMPERIUM",
+   "mechanism": "agents",
+   "gated_by": "Inquisitor pairing",
+   "cap_incursion": "0",
+   "cap_strike": "0",
+   "cap_onslaught": "0",
+   "notes": ""
+  },
+  {
+   "army_faction_id": "AC",
+   "allied_keyword": "AGENTS OF THE IMPERIUM",
+   "mechanism": "agents",
+   "gated_by": "Inquisitor pairing",
+   "cap_incursion": "0",
+   "cap_strike": "0",
+   "cap_onslaught": "0",
+   "notes": ""
+  },
+  {
+   "army_faction_id": "GK",
+   "allied_keyword": "AGENTS OF THE IMPERIUM",
+   "mechanism": "agents",
+   "gated_by": "Inquisitor pairing",
+   "cap_incursion": "0",
+   "cap_strike": "0",
+   "cap_onslaught": "0",
+   "notes": ""
+  },
+  {
+   "army_faction_id": "QI",
+   "allied_keyword": "AGENTS OF THE IMPERIUM",
+   "mechanism": "agents",
+   "gated_by": "Inquisitor pairing",
+   "cap_incursion": "0",
+   "cap_strike": "0",
+   "cap_onslaught": "0",
+   "notes": ""
+  },
+  {
+   "army_faction_id": "CSM",
+   "allied_keyword": "LEGIONES DAEMONICA",
+   "mechanism": "chaos_daemon",
+   "gated_by": "god_match",
+   "cap_incursion": "250",
+   "cap_strike": "500",
+   "cap_onslaught": "750",
+   "notes": "Chaos Daemons allied; match Mark of Chaos god"
+  },
+  {
+   "army_faction_id": "DG",
+   "allied_keyword": "LEGIONES DAEMONICA",
+   "mechanism": "chaos_daemon",
+   "gated_by": "god_match",
+   "cap_incursion": "250",
+   "cap_strike": "500",
+   "cap_onslaught": "750",
+   "notes": "Nurgle daemons"
+  },
+  {
+   "army_faction_id": "WE",
+   "allied_keyword": "LEGIONES DAEMONICA",
+   "mechanism": "chaos_daemon",
+   "gated_by": "god_match",
+   "cap_incursion": "250",
+   "cap_strike": "500",
+   "cap_onslaught": "750",
+   "notes": "Khorne daemons"
+  },
+  {
+   "army_faction_id": "TS",
+   "allied_keyword": "LEGIONES DAEMONICA",
+   "mechanism": "chaos_daemon",
+   "gated_by": "god_match",
+   "cap_incursion": "250",
+   "cap_strike": "500",
+   "cap_onslaught": "750",
+   "notes": "Tzeentch daemons"
+  },
+  {
+   "army_faction_id": "EC",
+   "allied_keyword": "LEGIONES DAEMONICA",
+   "mechanism": "chaos_daemon",
+   "gated_by": "god_match",
+   "cap_incursion": "250",
+   "cap_strike": "500",
+   "cap_onslaught": "750",
+   "notes": "Slaanesh daemons"
+  },
+  {
+   "army_faction_id": "QT",
+   "allied_keyword": "LEGIONES DAEMONICA",
+   "mechanism": "chaos_daemon",
+   "gated_by": "god_match",
+   "cap_incursion": "250",
+   "cap_strike": "500",
+   "cap_onslaught": "750",
+   "notes": "Chaos Daemons allied to Chaos Knights"
+  },
+  {
+   "army_faction_id": "SM",
+   "allied_keyword": "CHAPTER",
+   "mechanism": "chapter_restriction",
+   "gated_by": "one_chapter",
+   "cap_incursion": "",
+   "cap_strike": "",
+   "cap_onslaught": "0",
+   "notes": "Include one Chapter (BA/DA/SW/BT/DW/Ultramarines/Iron Hands/Salamanders/Imperial Fists/Raven Guard/White Scars), not others"
+  }
+ ],
+ "faction_supers": [
+  {
+   "faction_id": "AC",
+   "name": "Adeptus Custodes",
+   "super_keywords": "IMPERIUM",
+   "notes": ""
+  },
+  {
+   "faction_id": "AdM",
+   "name": "Adeptus Mechanicus",
+   "super_keywords": "IMPERIUM",
+   "notes": ""
+  },
+  {
+   "faction_id": "AM",
+   "name": "Astra Militarum",
+   "super_keywords": "IMPERIUM",
+   "notes": ""
+  },
+  {
+   "faction_id": "AoI",
+   "name": "Imperial Agents",
+   "super_keywords": "IMPERIUM,AGENTS OF THE IMPERIUM",
+   "notes": ""
+  },
+  {
+   "faction_id": "AS",
+   "name": "Adepta Sororitas",
+   "super_keywords": "IMPERIUM",
+   "notes": ""
+  },
+  {
+   "faction_id": "GK",
+   "name": "Grey Knights",
+   "super_keywords": "IMPERIUM",
+   "notes": ""
+  },
+  {
+   "faction_id": "QI",
+   "name": "Imperial Knights",
+   "super_keywords": "IMPERIUM",
+   "notes": ""
+  },
+  {
+   "faction_id": "SM",
+   "name": "Space Marines",
+   "super_keywords": "IMPERIUM,ADEPTUS ASTARTES",
+   "notes": "sub-chapters via Chapter keyword"
+  },
+  {
+   "faction_id": "TL",
+   "name": "Adeptus Titanicus",
+   "super_keywords": "IMPERIUM",
+   "notes": "Imperial Titan Legions"
+  },
+  {
+   "faction_id": "CD",
+   "name": "Chaos Daemons",
+   "super_keywords": "CHAOS,LEGIONES DAEMONICA",
+   "notes": ""
+  },
+  {
+   "faction_id": "CSM",
+   "name": "Chaos Space Marines",
+   "super_keywords": "CHAOS,HERETIC ASTARTES",
+   "notes": ""
+  },
+  {
+   "faction_id": "DG",
+   "name": "Death Guard",
+   "super_keywords": "CHAOS,HERETIC ASTARTES,NURGLE",
+   "notes": ""
+  },
+  {
+   "faction_id": "EC",
+   "name": "Emperor's Children",
+   "super_keywords": "CHAOS,HERETIC ASTARTES,SLAANESH",
+   "notes": ""
+  },
+  {
+   "faction_id": "TS",
+   "name": "Thousand Sons",
+   "super_keywords": "CHAOS,HERETIC ASTARTES,TZEENTCH",
+   "notes": ""
+  },
+  {
+   "faction_id": "WE",
+   "name": "World Eaters",
+   "super_keywords": "CHAOS,KHORNE",
+   "notes": ""
+  },
+  {
+   "faction_id": "QT",
+   "name": "Chaos Knights",
+   "super_keywords": "CHAOS,HERETIC ASTARTES",
+   "notes": ""
+  },
+  {
+   "faction_id": "AE",
+   "name": "Aeldari",
+   "super_keywords": "AELDARI",
+   "notes": ""
+  },
+  {
+   "faction_id": "DRU",
+   "name": "Drukhari",
+   "super_keywords": "AELDARI",
+   "notes": "can ally Harlequins/Ynnari"
+  },
+  {
+   "faction_id": "GC",
+   "name": "Genestealer Cults",
+   "super_keywords": "TYRANIDS",
+   "notes": "can ally Astra Militarum Brood Brothers"
+  },
+  {
+   "faction_id": "LoV",
+   "name": "Leagues of Votann",
+   "super_keywords": "",
+   "notes": ""
+  },
+  {
+   "faction_id": "NEC",
+   "name": "Necrons",
+   "super_keywords": "",
+   "notes": ""
+  },
+  {
+   "faction_id": "ORK",
+   "name": "Orks",
+   "super_keywords": "",
+   "notes": ""
+  },
+  {
+   "faction_id": "TAU",
+   "name": "T'au Empire",
+   "super_keywords": "",
+   "notes": ""
+  },
+  {
+   "faction_id": "TYR",
+   "name": "Tyranids",
+   "super_keywords": "",
+   "notes": ""
+  }
+ ],
+ "force_dispositions": [
+  "Take and Hold",
+  "Disruption",
+  "Purge the Foe",
+  "Priority Assets",
+  "Reconnaissance"
+ ],
+ "attribution": "Powered by Wahapedia"
+}

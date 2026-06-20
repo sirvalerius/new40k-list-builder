@@ -1,0 +1,4650 @@
+{
+ "faction": {
+  "id": "AC",
+  "name": "Adeptus Custodes",
+  "super_keywords": [
+   "IMPERIUM"
+  ]
+ },
+ "last_update": "2026-06-13 12:02:41",
+ "unit_count": 31,
+ "datasheets": [
+  {
+   "id": "000001560",
+   "name": "Agamatus Custodians",
+   "role": "Other",
+   "legend": "Agamatus Custodians take Gyrfalcon-pattern jetbikes as their steeds, the machines’ power supporting the heavy armour of their riders and the powerful lastrum bolt cannon or other arcane weaponry. Closing with the enemy, Agamatus Custodians unleash this firepower with precision, before dealing a death blow with their interceptor lances.",
+   "loadout": "<b>Every model is equipped with:</b> lastrum bolt cannon; interceptor lance.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Agamatus Custodians",
+     "M": "12\"",
+     "T": "6",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "4",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "60mm flying base"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Adrathic devastator",
+     "type": "Ranged",
+     "range": "18",
+     "A": "1",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "3",
+     "description": ""
+    },
+    {
+     "name": "Lastrum bolt cannon",
+     "type": "Ranged",
+     "range": "36",
+     "A": "3",
+     "BS_WS": "2",
+     "S": "6",
+     "AP": "-1",
+     "D": "1",
+     "description": "sustained hits 1"
+    },
+    {
+     "name": "Twin las-pulsar",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "9",
+     "AP": "-1",
+     "D": "2",
+     "description": "twin-linked"
+    },
+    {
+     "name": "Interceptor lance",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": "lance"
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Turbo-boost",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time this unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit."
+    },
+    {
+     "name": "Implacable Vanguard",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, in your Shooting phase, after this unit has shot, if it is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\". If it does, until the end of the turn, this unit is not eligible to declare a charge."
+    },
+    {
+     "name": "JETBIKE OUTRIDERS",
+     "type": "Special (правая колонка)",
+     "parameter": "",
+     "description": "If a model from your army with the Leader ability can be attached to a Vertus Praetors unit, it can be attached to this unit instead."
+    }
+   ],
+   "composition": [
+    "3-6 Agamatus Custodians"
+   ],
+   "options": [
+    "Any number of models can each have their lastrum bolt cannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 adrathic devastator</li><li>1 twin las-pulsar</li></ul>"
+   ],
+   "points": [
+    {
+     "description": "3 models",
+     "cost": "225"
+    },
+    {
+     "description": "6 models",
+     "cost": "450"
+    }
+   ],
+   "keywords": [
+    "Mounted",
+    "Fly",
+    "Imperium",
+    "Agamatus Custodians"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000002088",
+   "name": "Aleya",
+   "role": "Characters",
+   "legend": "Aleya is a veteran of her order and is a ferocious and dedicated hunter of witches and sorcerers. Over many years she has developed incredible tactical perception, as well as a deep knowledge of her quarry. She employs these skills to seek out rogue psykers, cutting them down with sweeps of her blade, Somnus.",
+   "loadout": "<b>This model is equipped with:</b> Somnus.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Aleya",
+     "M": "6\"",
+     "T": "3",
+     "Sv": "3+",
+     "inv_sv": "5",
+     "inv_sv_descr": "",
+     "W": "4",
+     "Ld": "6+",
+     "OC": "1",
+     "base_size": "32mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Somnus",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "4",
+     "BS_WS": "2",
+     "S": "6",
+     "AP": "-3",
+     "D": "3",
+     "description": "anti-psyker 5+, devastating wounds"
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "5+",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "6\"",
+     "description": ""
+    },
+    {
+     "name": "Tactical Perception",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "While this model is leading a unit, models in that unit have the Fights First ability."
+    },
+    {
+     "name": "Tenacious Spirit",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll if that unit is below its Starting Strength, and add 1 to the Wound roll as well if that unit is Below Half-strength."
+    },
+    {
+     "name": "Daughter of the Abyss",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "This model has the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds."
+    }
+   ],
+   "composition": [
+    "1 Aleya – <span class=\"kwb\">EPIC</span> <span class=\"kwb\">HERO</span>"
+   ],
+   "options": [],
+   "points": [
+    {
+     "description": "1 model",
+     "cost": "65"
+    }
+   ],
+   "keywords": [
+    "Character",
+    "Infantry",
+    "Epic Hero",
+    "Anathema Psykana",
+    "Imperium",
+    "Aleya"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": true,
+   "is_battleline": false,
+   "is_epic_hero": true,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001453",
+   "name": "Allarus Custodians",
+   "role": "Other",
+   "legend": "Even amongst the Adeptus Custodes, Allarus Custodians are renowned for their deeds. Teleporting into the most dangerous enemy strongholds, they rely upon the indomitable resilience of their Terminator plate to protect them as they hunt down demagogues and generals. Fighting as individual heroes, they swiftly tear the heart from their foe’s defence.",
+   "loadout": "<b>Every model is equipped with:</b> balistus grenade launcher; guardian spear.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Allarus Custodians",
+     "M": "5\"",
+     "T": "7",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "4",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "40mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Balistus grenade launcher",
+     "type": "Ranged",
+     "range": "18",
+     "A": "D6",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "1",
+     "description": "blast"
+    },
+    {
+     "name": "Castellan axe",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "assault"
+    },
+    {
+     "name": "Guardian spear",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "assault"
+    },
+    {
+     "name": "Castellan axe",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "4",
+     "BS_WS": "2",
+     "S": "9",
+     "AP": "-1",
+     "D": "3",
+     "description": ""
+    },
+    {
+     "name": "Guardian spear",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": ""
+    },
+    {
+     "name": "Misericordia",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-2",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Vexilla",
+     "type": "Wargear",
+     "parameter": "",
+     "description": "Add 1 to the Objective Control characteristic of models in the bearer’s unit."
+    },
+    {
+     "name": "Slayers of Tyrants",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time a model in this unit makes an attack that targets a <span class=\"kwb\">CHARACTER</span>, <span class=\"kwb\">MONSTER</span> or <span class=\"kwb\">VEHICLE</span> unit, you can re-roll the Wound roll."
+    },
+    {
+     "name": "From Golden Light",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, at the end of your opponent’s turn, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves."
+    }
+   ],
+   "composition": [
+    "2-6 Allarus Custodians"
+   ],
+   "options": [
+    "Any number of models can each have their guardian spear replaced with 1 castellan axe.",
+    "1 model’s guardian spear can be replaced with 1 vexilla and 1 misericordia."
+   ],
+   "points": [
+    {
+     "description": "2 models",
+     "cost": "110"
+    },
+    {
+     "description": "3 models",
+     "cost": "165"
+    },
+    {
+     "description": "5 models",
+     "cost": "275"
+    },
+    {
+     "description": "6 models",
+     "cost": "330"
+    }
+   ],
+   "keywords": [
+    "Terminator",
+    "Imperium",
+    "Allarus Custodians",
+    "Infantry"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000002524",
+   "name": "Anathema Psykana Rhino",
+   "role": "Dedicated Transports",
+   "legend": "The Rhinos of the Silent Sisterhood are more than just armoured personnel carriers. Many have served the Imperium for hundreds, if not thousands of years. Highly rugged vehicles, their spacious capacity and powerful engines help them to safely carry their deadly cargo of Sisters into the fiercest of battles.",
+   "loadout": "<b>This model is equipped with:</b> storm bolter; armoured tracks.",
+   "transport": "This model has a transport capacity of 12 Anathema Psykana Infantry models.",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Anathema Psykana Rhino",
+     "M": "12\"",
+     "T": "9",
+     "Sv": "3+",
+     "inv_sv": "-",
+     "inv_sv_descr": "",
+     "W": "10",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "Use model"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Hunter-killer missile",
+     "type": "Ranged",
+     "range": "48",
+     "A": "1",
+     "BS_WS": "2",
+     "S": "14",
+     "AP": "-3",
+     "D": "D6",
+     "description": "one shot"
+    },
+    {
+     "name": "Storm bolter",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "3",
+     "S": "4",
+     "AP": "0",
+     "D": "1",
+     "description": "rapid fire 2"
+    },
+    {
+     "name": "Armoured tracks",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "3",
+     "BS_WS": "4",
+     "S": "6",
+     "AP": "0",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "D3",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "2",
+     "description": ""
+    },
+    {
+     "name": "Daughters of the Abyss",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "This model has the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds."
+    },
+    {
+     "name": "Self Repair",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "At the start of your Command phase, this model regains 1 lost wound."
+    },
+    {
+     "name": "One Shot",
+     "type": "Wargear profile",
+     "parameter": "",
+     "description": "The bearer can only shoot with this weapon once per battle."
+    }
+   ],
+   "composition": [
+    "1 Anathema Psykana Rhino"
+   ],
+   "options": [
+    "This model can be equipped with 1 hunter-killer missile."
+   ],
+   "points": [
+    {
+     "description": "1 model",
+     "cost": "75"
+    }
+   ],
+   "keywords": [
+    "Anathema Psykana",
+    "Dedicated Transport",
+    "Imperium",
+    "Smoke",
+    "Transport",
+    "Rhino",
+    "Vehicle"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": true
+  },
+  {
+   "id": "000001558",
+   "name": "Aquilon Custodians",
+   "role": "Other",
+   "legend": "Aquilon Custodians are the heavy assault infantry of the Custodian Guard, each warrior imbued with armour and wargear of ancient provenance and impeccable craftsmanship. Encased within flexible but highly durable Aquilon-pattern Terminator armour, they stride through the most perilous war zones to mete out death.",
+   "loadout": "<b>Every model is equipped with:</b> lastrum storm bolter; solerite power gauntlet.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Aquilon Custodians",
+     "M": "5\"",
+     "T": "7",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "4",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "50mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Infernus firepike",
+     "type": "Ranged",
+     "range": "12",
+     "A": "D6",
+     "BS_WS": "N/A",
+     "S": "6",
+     "AP": "-1",
+     "D": "1",
+     "description": "ignores cover, torrent"
+    },
+    {
+     "name": "Lastrum storm bolter",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-1",
+     "D": "1",
+     "description": "rapid fire 2"
+    },
+    {
+     "name": "Twin adrathic destructor",
+     "type": "Ranged",
+     "range": "18",
+     "A": "1",
+     "BS_WS": "2",
+     "S": "6",
+     "AP": "-2",
+     "D": "3",
+     "description": "twin-linked"
+    },
+    {
+     "name": "Solerite power gauntlet",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "8",
+     "AP": "-2",
+     "D": "2",
+     "description": ""
+    },
+    {
+     "name": "Solerite power talon",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "7",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Heavy Assault Infantry",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time a model in this unit makes a ranged attack that targets the closest eligible target, re-roll a Wound roll of 1."
+    },
+    {
+     "name": "From Golden Light",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, at the end of your opponent’s turn, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves."
+    },
+    {
+     "name": "LIONS OF THE EMPEROR",
+     "type": "Special (правая колонка)",
+     "parameter": "",
+     "description": "If a model from your army with the Leader ability can be attached to an Allarus Custodians unit, it can be attached to this unit instead."
+    }
+   ],
+   "composition": [
+    "3-6 Aquilon Custodians"
+   ],
+   "options": [
+    "Any number of models can each have their lastrum storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 infernus firepike</li><li>1 twin adrathic destructor</li></ul>",
+    "Any number of models can each have their solerite power gauntlet replaced with 1 solerite power talon."
+   ],
+   "points": [
+    {
+     "description": "3 models",
+     "cost": "195"
+    },
+    {
+     "description": "6 models",
+     "cost": "390"
+    }
+   ],
+   "keywords": [
+    "Infantry",
+    "Terminator",
+    "Imperium",
+    "Aquilon Custodians"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001680",
+   "name": "Ares Gunship",
+   "role": "Other",
+   "legend": "The Ares Gunship first earned its reputation on Ancient Terra, and has quashed the Emperor’s enemies on hundreds of worlds since. Most terrifying of the Ares’ offensive capabilities is the arachnus magna- blaze cannon, whose extreme energies can pierce the densest armour, leaving a trail of wrecks and corpses wherever the Ares deploys.",
+   "loadout": "<b>This model is equipped with:</b> 2 arachnus heavy blaze cannons; arachnus magna-blaze cannon; armoured hull.",
+   "transport": "",
+   "damaged": {
+    "w": "1-7",
+    "description": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+   },
+   "stats": [
+    {
+     "name": "Ares Gunship",
+     "M": "20+\"",
+     "T": "12",
+     "Sv": "2+",
+     "inv_sv": "5",
+     "inv_sv_descr": "",
+     "W": "22",
+     "Ld": "6+",
+     "OC": "0",
+     "base_size": "160mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Arachnus heavy blaze cannon",
+     "type": "Ranged",
+     "range": "36",
+     "A": "4",
+     "BS_WS": "2",
+     "S": "12",
+     "AP": "-3",
+     "D": "D6+1",
+     "description": ""
+    },
+    {
+     "name": "Arachnus magna-blaze cannon",
+     "type": "Ranged",
+     "range": "48",
+     "A": "3",
+     "BS_WS": "2",
+     "S": "18",
+     "AP": "-4",
+     "D": "D6+6",
+     "description": ""
+    },
+    {
+     "name": "Armoured hull",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "9",
+     "BS_WS": "4",
+     "S": "9",
+     "AP": "0",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "D6",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Infernus Firebombs",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time this model ends a Normal move, you can select one enemy unit it moved over during that move. Until the end of the turn, models in that unit cannot have the Benefit of Cover. In addition, roll one D6 for each model in that unit: for each 6, that unit suffers 1 mortal wound."
+    }
+   ],
+   "composition": [
+    "1 Ares Gunship"
+   ],
+   "options": [
+    "None"
+   ],
+   "points": [
+    {
+     "description": "1 model (1st unit)",
+     "cost": "580"
+    },
+    {
+     "description": "1 model (2nd+ unit)",
+     "cost": "610"
+    }
+   ],
+   "keywords": [
+    "Vehicle",
+    "Fly",
+    "Aircraft",
+    "Ares Gunship",
+    "Imperium"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000002518",
+   "name": "Blade Champion",
+   "role": "Characters",
+   "legend": "A Blade Champion is a living weapon in the Emperor’s hand. His role is to identify the greatest battlefield threat – be that a mighty leader, a host of killers or a deadly war engine – then to employ his archeotech blades and specialised fighting styles to ensure their swift and absolute destruction.",
+   "loadout": "<b>This model is equipped with:</b> vaultswords.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Blade Champion",
+     "M": "6\"",
+     "T": "6",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "6",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "40mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Vaultswords – Behemor",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "6",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": "precision"
+    },
+    {
+     "name": "Vaultswords – Hurricanus",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "9",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-1",
+     "D": "1",
+     "description": "sustained hits 1"
+    },
+    {
+     "name": "Vaultswords – Victus",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "6",
+     "AP": "-3",
+     "D": "3",
+     "description": "devastating wounds"
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Swift Onslaught",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "While this model is leading a unit, you can re-roll Charge rolls made for that unit"
+    },
+    {
+     "name": "Martial Inspiration",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, in your Charge phase, this model’s unit is eligible to declare a charge in a turn which it Advanced."
+    }
+   ],
+   "composition": [
+    "1 Blade Champion"
+   ],
+   "options": [],
+   "points": [
+    {
+     "description": "1 model (1st unit)",
+     "cost": "110"
+    },
+    {
+     "description": "1 model (2nd+ unit)",
+     "cost": "125"
+    }
+   ],
+   "keywords": [
+    "Blade Champion",
+    "Imperium",
+    "Character",
+    "Infantry"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": true,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001460",
+   "name": "Caladius Grav-tank",
+   "role": "Other",
+   "legend": "The Caladius Grav-tank fuses some of the heaviest firepower in the Custodian Guard arsenal with a highly mobile, resilient chassis. Taking as its principal armament either a twin iliastus accelerator cannon or a twin arachnus heavy blaze cannon, the Caladius excels in a range of battlefield roles, far outmatching more primitive vehicles of its class.",
+   "loadout": "<b>This model is equipped with:</b> twin iliastus accelerator cannon; twin lastrum bolt cannon; armoured hull.",
+   "transport": "",
+   "damaged": {
+    "w": "1-5",
+    "description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+   },
+   "stats": [
+    {
+     "name": "Caladius Grav-tank",
+     "M": "10\"",
+     "T": "11",
+     "Sv": "2+",
+     "inv_sv": "5",
+     "inv_sv_descr": "",
+     "W": "14",
+     "Ld": "6+",
+     "OC": "4",
+     "base_size": "170 x 109mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Twin arachnus heavy blaze cannon",
+     "type": "Ranged",
+     "range": "48",
+     "A": "4",
+     "BS_WS": "2",
+     "S": "12",
+     "AP": "-3",
+     "D": "D6+2",
+     "description": "twin-linked"
+    },
+    {
+     "name": "Twin iliastus accelerator cannon",
+     "type": "Ranged",
+     "range": "48",
+     "A": "4",
+     "BS_WS": "2",
+     "S": "10",
+     "AP": "-1",
+     "D": "3",
+     "description": "rapid fire 4, twin-linked"
+    },
+    {
+     "name": "Twin lastrum bolt cannon",
+     "type": "Ranged",
+     "range": "36",
+     "A": "3",
+     "BS_WS": "2",
+     "S": "6",
+     "AP": "-1",
+     "D": "1",
+     "description": "sustained hits 1"
+    },
+    {
+     "name": "Armoured hull",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "4",
+     "BS_WS": "4",
+     "S": "6",
+     "AP": "0",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "D3",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Advanced Firepower",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time this model makes an attack with its twin iliastus accelerator cannon that targets an enemy unit (excluding <span class=\"kwb\">MONSTERS</span> and <span class=\"kwb\">VEHICLES</span>), that attack has the [LETHAL HITS] ability. Each time this model makes an attack with its twin arachnus heavy blaze cannon that targets an enemy <span class=\"kwb\">MONSTER</span> or <span class=\"kwb\">VEHICLE</span> unit, that attack has the [LETHAL HITS] ability."
+    }
+   ],
+   "composition": [
+    "1 Caladius Grav-tank"
+   ],
+   "options": [
+    "This model’s twin iliastus accelerator cannon can be replaced with 1 twin arachnus heavy blaze cannon."
+   ],
+   "points": [
+    {
+     "description": "1 model (1st-2nd unit)",
+     "cost": "210"
+    },
+    {
+     "description": "1 model (3rd+ unit)",
+     "cost": "225"
+    }
+   ],
+   "keywords": [
+    "Caladius Grav-tank",
+    "Fly",
+    "Imperium",
+    "Vehicle"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001458",
+   "name": "Contemptor-achillus Dreadnought",
+   "role": "Other",
+   "legend": "The Contemptor-Achillus adds still greater refinement to an already celebrated blueprint – the revered Contemptor Dreadnought – arming its occupant with a mighty dreadspear equally capable of searing through foes at range or vanquishing them with a single thrust of its glowing blade.",
+   "loadout": "<b>This model is equipped with:</b> 2 lastrum storm bolters; Achillus dreadspear.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Contemptor-achillus Dreadnought",
+     "M": "6\"",
+     "T": "9",
+     "Sv": "2+",
+     "inv_sv": "5",
+     "inv_sv_descr": "",
+     "W": "10",
+     "Ld": "6+",
+     "OC": "3",
+     "base_size": "60mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Achillus dreadspear",
+     "type": "Ranged",
+     "range": "12",
+     "A": "1",
+     "BS_WS": "2",
+     "S": "9",
+     "AP": "-2",
+     "D": "3",
+     "description": ""
+    },
+    {
+     "name": "Infernus incinerator",
+     "type": "Ranged",
+     "range": "12",
+     "A": "D6",
+     "BS_WS": "N/A",
+     "S": "6",
+     "AP": "-1",
+     "D": "1",
+     "description": "torrent, ignores cover"
+    },
+    {
+     "name": "Lastrum storm bolter",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-1",
+     "D": "1",
+     "description": "rapid fire 2"
+    },
+    {
+     "name": "Twin adrathic destructor",
+     "type": "Ranged",
+     "range": "18",
+     "A": "1",
+     "BS_WS": "2",
+     "S": "6",
+     "AP": "-2",
+     "D": "3",
+     "description": "twin-linked"
+    },
+    {
+     "name": "Achillus dreadspear",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "12",
+     "AP": "-2",
+     "D": "D6+1",
+     "description": "lance"
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "1",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Dread Foe",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time this model is selected to fight, you can select one enemy unit within Engagement Range of it and roll one D6, adding 2 to the result if this model made a Charge move this turn: on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6+, that enemy unit suffers 3 mortal wounds."
+    }
+   ],
+   "composition": [
+    "1 Contemptor-Achillus Dreadnought"
+   ],
+   "options": [
+    "This model’s 2 lastrum storm bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 infernus incinerators</li><li>2 twin adrathic destructors</li><li>1 lastrum storm bolter and 1 infernus incinerator</li><li>1 lastrum storm bolter and 1 twin adrathic destructor</li><li>1 infernus incinerator and 1 twin adrathic destructor</li></ul>"
+   ],
+   "points": [
+    {
+     "description": "1 model (1st-2nd unit)",
+     "cost": "155"
+    },
+    {
+     "description": "1 model (3rd+ unit)",
+     "cost": "170"
+    }
+   ],
+   "keywords": [
+    "Vehicle",
+    "Walker",
+    "Contemptor-Achillus Dreadnought",
+    "Imperium"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001557",
+   "name": "Contemptor-galatus Dreadnought",
+   "role": "Other",
+   "legend": "Like the Sentinel Guard of the ancient Legio Custodes, the Contemptor-Galatus is armed with a power blade and battle shield, albeit of a type greatly superior in size and potency. Coupled with the already resilient Contemptor chassis, this wargear enables the Galatus to stride through the inferno of battle with impunity, slaying elite infantry and crippling vehicles.",
+   "loadout": "<b>This model is equipped with:</b> Galatus warblade.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Contemptor-galatus Dreadnought",
+     "M": "6\"",
+     "T": "9",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "10",
+     "Ld": "6+",
+     "OC": "3",
+     "base_size": "60mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Galatus warblade",
+     "type": "Ranged",
+     "range": "12",
+     "A": "D6",
+     "BS_WS": "N/A",
+     "S": "6",
+     "AP": "-1",
+     "D": "1",
+     "description": "ignores cover, torrent, twin-linked"
+    },
+    {
+     "name": "Galatus warblade",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "8",
+     "BS_WS": "2",
+     "S": "8",
+     "AP": "-2",
+     "D": "3",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "1",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Galatus Shield",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time a melee attack targets this model, subtract 1 from the Wound roll."
+    }
+   ],
+   "composition": [
+    "1 Contemptor-Galatus Dreadnought"
+   ],
+   "options": [
+    "None"
+   ],
+   "points": [
+    {
+     "description": "1 model (1st-2nd unit)",
+     "cost": "165"
+    },
+    {
+     "description": "1 model (3rd+ unit)",
+     "cost": "180"
+    }
+   ],
+   "keywords": [
+    "Imperium",
+    "Contemptor-Galatus Dreadnought",
+    "Vehicle",
+    "Walker"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001461",
+   "name": "Coronus Grav-carrier",
+   "role": "Other",
+   "legend": "Coronus Grav-carriers are the primary tactical transports of the Adeptus Custodes. Their repulsor suspensor technology and flare shielding grants them the speed and survivability to engage or evade myriad threats at will, punishing targets with their potent turret weapons as they speed their elite passengers to the forefront of battle.",
+   "loadout": "<b>This model is equipped with:</b> twin arachnus blaze cannon; twin lastrum bolt cannon; armoured hull.",
+   "transport": "This model has a transport capacity of 8 Adeptus Custodes Infantry models.",
+   "damaged": {
+    "w": "1-5",
+    "description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+   },
+   "stats": [
+    {
+     "name": "Coronus Grav-carrier",
+     "M": "12\"",
+     "T": "12",
+     "Sv": "2+",
+     "inv_sv": "5",
+     "inv_sv_descr": "",
+     "W": "16",
+     "Ld": "6+",
+     "OC": "5",
+     "base_size": "Use model"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Twin arachnus blaze cannon",
+     "type": "Ranged",
+     "range": "24",
+     "A": "8",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-1",
+     "D": "1",
+     "description": "devastating wounds, twin-linked"
+    },
+    {
+     "name": "Twin lastrum bolt cannon",
+     "type": "Ranged",
+     "range": "36",
+     "A": "3",
+     "BS_WS": "2",
+     "S": "6",
+     "AP": "-1",
+     "D": "1",
+     "description": "sustained hits 1"
+    },
+    {
+     "name": "Armoured hull",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "6",
+     "BS_WS": "4",
+     "S": "8",
+     "AP": "0",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "D6",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Fire Support",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly model that disembarked from this <span class=\"kwb\">TRANSPORT</span> this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll."
+    }
+   ],
+   "composition": [
+    "1 Coronus Grav-carrier"
+   ],
+   "options": [
+    "None"
+   ],
+   "points": [
+    {
+     "description": "1 model (1st-2nd unit)",
+     "cost": "180"
+    },
+    {
+     "description": "1 model (3rd+ unit)",
+     "cost": "200"
+    }
+   ],
+   "keywords": [
+    "Vehicle",
+    "Transport",
+    "Fly",
+    "Imperium",
+    "Coronus Grav-carrier"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000000882",
+   "name": "Custodian Guard",
+   "role": "Battleline",
+   "legend": "These warriors form the backbone of the shield companies, and every one is a terrifying force of destruction equal to the strongest of the foe. Whether armed with guardian spear or sentinel blade, their shots are perfectly placed, and every cut, thrust and parry is a masterclass in bladesmanship.",
+   "loadout": "<b>Every model is equipped with:</b> guardian spear.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Custodian Guard",
+     "M": "6\"",
+     "T": "6",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "3",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "40mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Guardian spear",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "assault"
+    },
+    {
+     "name": "Sentinel blade",
+     "type": "Ranged",
+     "range": "12",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "assault, pistol"
+    },
+    {
+     "name": "Guardian spear",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": ""
+    },
+    {
+     "name": "Misericordia",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-2",
+     "D": "1",
+     "description": ""
+    },
+    {
+     "name": "Sentinel blade",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "6",
+     "AP": "-2",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Praesidium Shield",
+     "type": "Wargear",
+     "parameter": "",
+     "description": "Add 1 to the bearer’s Wounds characteristic."
+    },
+    {
+     "name": "Vexilla",
+     "type": "Wargear",
+     "parameter": "",
+     "description": "Add 1 to the Objective Control characteristic of models in the bearer’s unit."
+    },
+    {
+     "name": "Stand Vigil",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time a model in this unit makes an attack, re-roll a Wound roll of 1. While this unit is within range of an objective marker you control, you can re-roll the Wound roll instead."
+    },
+    {
+     "name": "Sentinel Storm",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, in your Shooting phase, after this unit has shot, it can shoot again."
+    }
+   ],
+   "composition": [
+    "4-5 Custodian Guard"
+   ],
+   "options": [
+    "Any number of models can each have their guardian spear replaced with 1 sentinel blade and 1 praesidium shield.",
+    "1 model’s guardian spear can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 vexilla and 1 misericordia</li><li>1 vexilla, 1 misericordia and 1 praesidium shield</li></ul>"
+   ],
+   "points": [
+    {
+     "description": "4 models",
+     "cost": "170"
+    },
+    {
+     "description": "5 models",
+     "cost": "215"
+    },
+    {
+     "description": "4 models",
+     "cost": "180"
+    },
+    {
+     "description": "5 models",
+     "cost": "225"
+    }
+   ],
+   "keywords": [
+    "Imperium",
+    "Infantry",
+    "Battleline",
+    "Custodian Guard"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": true,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001559",
+   "name": "Custodian Guard With Adrasite And Pyrithite Spears",
+   "role": "Other",
+   "legend": "The signature armaments of the Custodian Guard combine deadly power blades and integrated ranged weapons. While guardian spears are the most recognisable of these potent devices, for specialised tasks the bolt weapons they mount can be exchanged for the adrathic destructors of adrasite spears or the melta beams of pyrithite spears.",
+   "loadout": "<b>Every model is equipped with:</b> adrasite spear.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Custodian Guard With Adrasite And Pyrithite Spears",
+     "M": "6\"",
+     "T": "6",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "3",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "40mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Adrasite spear",
+     "type": "Ranged",
+     "range": "18",
+     "A": "1",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-2",
+     "D": "3",
+     "description": ""
+    },
+    {
+     "name": "Pyrithite spear",
+     "type": "Ranged",
+     "range": "12",
+     "A": "1",
+     "BS_WS": "2",
+     "S": "9",
+     "AP": "-4",
+     "D": "D6",
+     "description": "melta 2"
+    },
+    {
+     "name": "Adrasite spear",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": ""
+    },
+    {
+     "name": "Pyrithite spear",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Stand Vigil",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time a model in this unit makes an attack, re-roll a Wound roll of 1. While this unit is within range of an objective marker you control, you can re-roll the Wound roll instead."
+    },
+    {
+     "name": "No Foe Shall Stand",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, at the start of your Shooting phase, this unit can use this ability. If it does, until the end of the phase, ranged weapons equipped by models in this unit have the [LETHAL HITS] and [IGNORES COVER] abilities."
+    },
+    {
+     "name": "CUSTODIAN GUARD",
+     "type": "Special (правая колонка)",
+     "parameter": "",
+     "description": "If an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model from your army with the Leader ability can be attached to a Custodian Guard unit, it can be attached to this unit instead."
+    }
+   ],
+   "composition": [
+    "5 Custodian Guard with Adrasite and Pyrithite Spears"
+   ],
+   "options": [
+    "Any number of models can each have their adrasite spear replaced with 1 pyrithite spear."
+   ],
+   "points": [
+    {
+     "description": "5 models",
+     "cost": "250"
+    },
+    {
+     "description": "5 models",
+     "cost": "260"
+    }
+   ],
+   "keywords": [
+    "Infantry",
+    "Imperium",
+    "Custodian Guard with Adrasite and Pyrithite Spears"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001450",
+   "name": "Custodian Wardens",
+   "role": "Other",
+   "legend": "Veterans with centuries of service, Custodian Wardens are level-headed warriors who have sworn to fight as living fortresses no foe shall breach. With frightening intensity and wills of iron, these warriors cleave their foes in two with immense sweeps that are driven by their prodigious physical strength.",
+   "loadout": "<b>Every model is equipped with:</b> guardian spear.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Custodian Wardens",
+     "M": "6\"",
+     "T": "6",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "3",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "40mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Castellan axe",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "assault"
+    },
+    {
+     "name": "Guardian spear",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "assault"
+    },
+    {
+     "name": "Castellan axe",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "4",
+     "BS_WS": "2",
+     "S": "9",
+     "AP": "-1",
+     "D": "3",
+     "description": ""
+    },
+    {
+     "name": "Guardian spear",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Vexilla",
+     "type": "Wargear",
+     "parameter": "",
+     "description": "Add 1 to the Objective Control characteristic of models in the bearer’s unit."
+    },
+    {
+     "name": "Resolute Will",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "While a <span class=\"kwb\">CHARACTER</span> is leading this unit, each time an attack targets this unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll."
+    },
+    {
+     "name": "Living Fortress",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, at the start of any phase, this unit can use this ability. If it does, until the end of the phase, models in this unit have the Feel No Pain 4+ ability."
+    }
+   ],
+   "composition": [
+    "4-5 Custodian Wardens"
+   ],
+   "options": [
+    "Any number of models can each have their guardian spear replaced with 1 castellan axe.",
+    "1 model can be equipped with 1 vexilla."
+   ],
+   "points": [
+    {
+     "description": "4 models (1st unit)",
+     "cost": "210"
+    },
+    {
+     "description": "5 models (1st unit)",
+     "cost": "260"
+    },
+    {
+     "description": "4 models (2nd+ unit)",
+     "cost": "230"
+    },
+    {
+     "description": "5 models (2nd+ unit)",
+     "cost": "280"
+    }
+   ],
+   "keywords": [
+    "Custodian Wardens",
+    "Imperium",
+    "Infantry"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000002520",
+   "name": "Knight-centura",
+   "role": "Characters",
+   "legend": "Knight-Centuras are the leaders of Sisters of Silence cadres and the guardians of their traditions. They have earned the respect of their Sisters through years of service, impeccable fighting skills, immense power as Nulls and encyclopaedic knowledge of the witch and the sorcerer.",
+   "loadout": "<b>This model is equipped with:</b> executioner greatblade.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Knight-centura",
+     "M": "6\"",
+     "T": "3",
+     "Sv": "3+",
+     "inv_sv": "5",
+     "inv_sv_descr": "",
+     "W": "4",
+     "Ld": "6+",
+     "OC": "1",
+     "base_size": "32mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Master-crafted boltgun",
+     "type": "Ranged",
+     "range": "24",
+     "A": "1",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "0",
+     "D": "2",
+     "description": "rapid fire 1"
+    },
+    {
+     "name": "Witchseeker flamer",
+     "type": "Ranged",
+     "range": "12",
+     "A": "D6",
+     "BS_WS": "N/A",
+     "S": "4",
+     "AP": "0",
+     "D": "1",
+     "description": "ignores cover, torrent"
+    },
+    {
+     "name": "Close combat weapon",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "3",
+     "BS_WS": "2",
+     "S": "3",
+     "AP": "0",
+     "D": "1",
+     "description": ""
+    },
+    {
+     "name": "Executioner greatblade",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "3",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-2",
+     "D": "2",
+     "description": "anti-psyker 5+, devastating wounds"
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "6\"",
+     "description": ""
+    },
+    {
+     "name": "Seeker’s Instincts",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "While this model is leading a unit, add 2\" to the Move characteristic of models in that unit and add 2 to Advance and Charge rolls made for that unit."
+    },
+    {
+     "name": "Daughter of the Abyss",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "This model has the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds."
+    },
+    {
+     "name": "Corner the Quarry",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time an enemy unit (excluding <span class=\"kwb\">MONSTERS</span> and <span class=\"kwb\">VEHICLES</span>) that is within Engagement Range of this model’s unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests."
+    }
+   ],
+   "composition": [
+    "1 Knight-Centura"
+   ],
+   "options": [
+    "This model’s executioner greatblade can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 master-crafted boltgun and 1 close combat weapon</li><li>1 Witchseeker flamer and 1 close combat weapon</li></ul>"
+   ],
+   "points": [
+    {
+     "description": "1 model",
+     "cost": "55"
+    }
+   ],
+   "keywords": [
+    "Imperium",
+    "Knight-Centura",
+    "Anathema Psykana",
+    "Infantry",
+    "Character"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": true,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001564",
+   "name": "Orion Assault Dropship",
+   "role": "Other",
+   "legend": "The heavily armoured Orion is a superlative assault craft designed to weather attacks while it deploys its formidable cargo of Custodian Guard. With bolt and energy weapons blazing, the Orion swiftly clears a landing zone and unleashes its passengers, before soaring skyward to rain death upon any other threats that enter its sights.",
+   "loadout": "<b>This model is equipped with:</b> 2 arachnus heavy blaze cannons; 2 twin lastrum bolt cannons; 2 spiculus heavy bolt launchers; armoured hull.",
+   "transport": "This model has a transport capacity of 12 Adeptus Custodes Infantry models. This model can also transport 1 Venerable Contemptor Dreadnought, 1 Contemptor-Achillus Dreadnought or 1 Contemptor Galatus-Dreadnought; while doing so, its transport capacity is reduced to 6 <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">INFANTRY</span> models.",
+   "damaged": {
+    "w": "1-7",
+    "description": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+   },
+   "stats": [
+    {
+     "name": "Orion Assault Dropship",
+     "M": "20+\"",
+     "T": "12",
+     "Sv": "2+",
+     "inv_sv": "5",
+     "inv_sv_descr": "",
+     "W": "22",
+     "Ld": "6+",
+     "OC": "0",
+     "base_size": "160mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Arachnus heavy blaze cannon",
+     "type": "Ranged",
+     "range": "36",
+     "A": "4",
+     "BS_WS": "2",
+     "S": "12",
+     "AP": "-3",
+     "D": "D6+1",
+     "description": ""
+    },
+    {
+     "name": "Spiculus heavy bolt launcher",
+     "type": "Ranged",
+     "range": "36",
+     "A": "D6+6",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-1",
+     "D": "2",
+     "description": "blast"
+    },
+    {
+     "name": "Twin lastrum bolt cannon",
+     "type": "Ranged",
+     "range": "36",
+     "A": "3",
+     "BS_WS": "2",
+     "S": "6",
+     "AP": "-1",
+     "D": "1",
+     "description": "sustained hits 1"
+    },
+    {
+     "name": "Armoured hull",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "9",
+     "BS_WS": "4",
+     "S": "9",
+     "AP": "0",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "D6",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Assault Dropship",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "If a unit disembarks from this <span class=\"kwb\">TRANSPORT</span> before it moves, until the end of the turn, that unit is eligible to charge in a turn in which it Advanced."
+    }
+   ],
+   "composition": [
+    "1 Orion Assault Dropship"
+   ],
+   "options": [
+    "None"
+   ],
+   "points": [
+    {
+     "description": "1 model (1st unit)",
+     "cost": "690"
+    },
+    {
+     "description": "1 model (2nd+ unit)",
+     "cost": "740"
+    }
+   ],
+   "keywords": [
+    "Imperium",
+    "Fly",
+    "Transport",
+    "Vehicle",
+    "Orion Assault Dropship",
+    "Aircraft"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001562",
+   "name": "Pallas Grav-attack",
+   "role": "Other",
+   "legend": "Designed as a highly manoeuvrable hunter-killer, the Pallas Grav-attack provides the Adeptus Custodes with a rapid strike capacity, using its agility and versatile twin arachnus blaze cannon to inflict devastating hit-and-run assaults on the enemy, or to hunt down fleeing targets that have evaded Custodes ground troops.",
+   "loadout": "<b>This model is equipped with:</b> twin arachnus blaze cannon; armoured hull.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Pallas Grav-attack",
+     "M": "12\"",
+     "T": "8",
+     "Sv": "2+",
+     "inv_sv": "5",
+     "inv_sv_descr": "",
+     "W": "9",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "105 x 70mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Twin arachnus blaze cannon",
+     "type": "Ranged",
+     "range": "24",
+     "A": "8",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-1",
+     "D": "1",
+     "description": "devastating wounds, twin-linked"
+    },
+    {
+     "name": "Armoured hull",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "3",
+     "BS_WS": "4",
+     "S": "6",
+     "AP": "0",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "D3",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Merciless Hunter",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "In your Shooting phase, each time this model makes an attack that targets an enemy unit that is Below Half-strength, add 1 to the Wound roll."
+    }
+   ],
+   "composition": [
+    "1 Pallas Grav-attack"
+   ],
+   "options": [
+    "None"
+   ],
+   "points": [
+    {
+     "description": "1 model",
+     "cost": "100"
+    }
+   ],
+   "keywords": [
+    "Vehicle",
+    "Fly",
+    "Imperium",
+    "Pallas Grav-attack"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000002521",
+   "name": "Prosecutors",
+   "role": "Other",
+   "legend": "Protected from the malevolence of witches by their rare anti-psychic mutation, and shielded from the bullets and blades of the foe by their finely crafted power armour, Prosecutors advance unflinching into the heart of battle. Their bolters thunder ceaselessly, each explosive shell ending another heretic life.",
+   "loadout": "<b>Every model is equipped with:</b> boltgun; close combat weapon.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Prosecutors",
+     "M": "6\"",
+     "T": "3",
+     "Sv": "3+",
+     "inv_sv": "-",
+     "inv_sv_descr": "",
+     "W": "1",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "32mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Boltgun",
+     "type": "Ranged",
+     "range": "24",
+     "A": "1",
+     "BS_WS": "3",
+     "S": "4",
+     "AP": "0",
+     "D": "1",
+     "description": "rapid fire 1"
+    },
+    {
+     "name": "Close combat weapon",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "2",
+     "BS_WS": "3",
+     "S": "3",
+     "AP": "0",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "Daughters of the Abyss",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Models in this unit have the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds."
+    },
+    {
+     "name": "Purity of Execution",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time a model in this unit makes a ranged attack that targets a <span class=\"kwb\">PSYKER</span> unit, that attack has the [PRECISION] and [DEVASTATING WOUNDS] abilities."
+    }
+   ],
+   "composition": [
+    "1 Prosecutor Sister Superior",
+    "3-9 Prosecutors"
+   ],
+   "options": [],
+   "points": [
+    {
+     "description": "4 models",
+     "cost": "45"
+    },
+    {
+     "description": "5 models",
+     "cost": "50"
+    },
+    {
+     "description": "9 models",
+     "cost": "75"
+    },
+    {
+     "description": "10 models",
+     "cost": "85"
+    }
+   ],
+   "keywords": [
+    "Imperium",
+    "Infantry",
+    "Prosecutors",
+    "Anathema Psykana"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001563",
+   "name": "Sagittarum Custodians",
+   "role": "Other",
+   "legend": "In contrast with most warriors of the Adeptus Custodes, the Sagittarum Guard specialise in the slaying of foes at range, laying down fearsome volleys from their adrastus bolt calivers or using the same weapons to obliterate closer threats with pinpoint disintegration beams, switching between firing modes with faultless skill.",
+   "loadout": "<b>Every model is equipped with:</b> adrastus bolt caliver; misericordia.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Sagittarum Custodians",
+     "M": "6\"",
+     "T": "6",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "3",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "40mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Adrastus bolt caliver",
+     "type": "Ranged",
+     "range": "36",
+     "A": "3",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-1",
+     "D": "2",
+     "description": "sustained hits 1"
+    },
+    {
+     "name": "Misericordia",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "4",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-2",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Saturation Volleys",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "In your Shooting phase, after this unit has shot, select one enemy unit (excluding <span class=\"kwb\">MONSTERS</span> and <span class=\"kwb\">VEHICLES</span>) hit by one or more of those attacks. Until the start of your next turn, while this unit is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+    },
+    {
+     "name": "Disintegration Beams",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, at the start of your Shooting phase, this unit can use this ability. If it does, until the end of the phase, ranged weapons equipped by models in this unit have the [DEVASTATING WOUNDS] ability."
+    },
+    {
+     "name": "CUSTODIAN GUARD",
+     "type": "Special (правая колонка)",
+     "parameter": "",
+     "description": "If an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model from your army with the Leader ability can be attached to a Custodian Guard unit, it can be attached to this unit instead."
+    }
+   ],
+   "composition": [
+    "5 Sagittarum Custodians"
+   ],
+   "options": [
+    "None"
+   ],
+   "points": [
+    {
+     "description": "5 models",
+     "cost": "225"
+    }
+   ],
+   "keywords": [
+    "Imperium",
+    "Infantry",
+    "Sagittarum Custodians"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001447",
+   "name": "Shield-captain",
+   "role": "Characters",
+   "legend": "Shield-Captains are among the greatest warriors in the Imperium. No matter which weapons they wield, they display absolute mastery of them. Their tactical and strategic abilities know few peers, and they read the ebb and flow of a war at a glance before directing their forces accordingly.",
+   "loadout": "<b>This model is equipped with:</b> guardian spear.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Shield-captain",
+     "M": "6\"",
+     "T": "6",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "6",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "40mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Castellan axe",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "assault"
+    },
+    {
+     "name": "Guardian spear",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "assault"
+    },
+    {
+     "name": "Pyrithite spear",
+     "type": "Ranged",
+     "range": "12",
+     "A": "1",
+     "BS_WS": "2",
+     "S": "9",
+     "AP": "-4",
+     "D": "D6",
+     "description": "melta 2"
+    },
+    {
+     "name": "Sentinel blade",
+     "type": "Ranged",
+     "range": "12",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "assault, pistol"
+    },
+    {
+     "name": "Castellan axe",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "6",
+     "BS_WS": "2",
+     "S": "9",
+     "AP": "-1",
+     "D": "3",
+     "description": ""
+    },
+    {
+     "name": "Guardian spear",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "7",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": ""
+    },
+    {
+     "name": "Pyrithite spear",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "7",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": ""
+    },
+    {
+     "name": "Sentinel blade",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "7",
+     "BS_WS": "2",
+     "S": "6",
+     "AP": "-2",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Master of the Stances",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, when this models unit is selected to fight, it can use this ability. if it does until that fight is resolved, both Ka’tah Stances are active for that unit, instead of only one."
+    },
+    {
+     "name": "Strategic Mastery",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle round, you can select one model from your army with this ability. That model’s unit can be targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+    },
+    {
+     "name": "Praesidium shield",
+     "type": "Wargear",
+     "parameter": "",
+     "description": "Add 1 to the bearer’s Wounds characteristic."
+    }
+   ],
+   "composition": [
+    "1 Shield-Captain"
+   ],
+   "options": [
+    "This model’s guardian spear can be replaced with one of the following:<br><ul><li>1 castellan axe</li><li>1 sentinel blade</li><li>1 sentinel blade and 1 praesidium shield</li><li>1 pyrithite spear and 1 praesidium shield</li></ul>"
+   ],
+   "points": [
+    {
+     "description": "1 model",
+     "cost": "110"
+    }
+   ],
+   "keywords": [
+    "Infantry",
+    "Character",
+    "Imperium",
+    "Shield-Captain"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": true,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001448",
+   "name": "Shield-captain In Allarus Terminator Armour",
+   "role": "Characters",
+   "legend": "A Shield-Captain is already one of the most formidable combatants and superlative strategists in the Imperium. When clad in a nigh-on impenetrable suit of auramite Terminator armour, they become more powerful still – a walking fortress of Imperial might able to teleport directly into battle in a blaze of golden light.",
+   "loadout": "<b>This model is equipped with:</b> balistus grenade launcher; guardian spear.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Shield-captain In Allarus Terminator Armour",
+     "M": "5\"",
+     "T": "7",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "7",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "40mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Balistus grenade launcher",
+     "type": "Ranged",
+     "range": "18",
+     "A": "D6",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "1",
+     "description": "blast"
+    },
+    {
+     "name": "Castellan axe",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "assault"
+    },
+    {
+     "name": "Guardian spear",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "assault"
+    },
+    {
+     "name": "Castellan axe",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "6",
+     "BS_WS": "2",
+     "S": "9",
+     "AP": "-1",
+     "D": "3",
+     "description": ""
+    },
+    {
+     "name": "Guardian spear",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "7",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Auramite and Adamantine",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, at the start of any phase, this model can use this ability If it does, until the end of the phase, each time an attack is allocated to this model, change the Damage characteristic of that attack to 1."
+    },
+    {
+     "name": "Strategic Mastery",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle round, you can select one model from your army with this ability and target that model’s unit with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+    }
+   ],
+   "composition": [
+    "1 Shield-Captain in Allarus Terminator Armour"
+   ],
+   "options": [
+    "This model’s guardian spear can be replaced with 1 castellan axe."
+   ],
+   "points": [
+    {
+     "description": "1 model",
+     "cost": "130"
+    }
+   ],
+   "keywords": [
+    "Character",
+    "Terminator",
+    "Infantry",
+    "Shield-Captain",
+    "Imperium"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": true,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001449",
+   "name": "Shield-captain On Dawneagle Jetbike",
+   "role": "Characters",
+   "legend": "All Shield-Captains are decisive warriors who suffer no impediment to their mission. Those Shield-Captains swiftest in thought and action soar into battle on Dawneagle jetbikes, plunging into the heart of the foe. Though these warriors appear arrogant, this is far from true – their self-assuredness is matched entirely by their skill.",
+   "loadout": "<b>This model is equipped with:</b> salvo launcher; interceptor lance.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Shield-captain On Dawneagle Jetbike",
+     "M": "12\"",
+     "T": "7",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "8",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "75 x 42mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Vertus hurricane bolter",
+     "type": "Ranged",
+     "range": "18",
+     "A": "3",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "rapid fire 3, twin-linked"
+    },
+    {
+     "name": "Salvo launcher",
+     "type": "Ranged",
+     "range": "24",
+     "A": "1",
+     "BS_WS": "2",
+     "S": "10",
+     "AP": "-3",
+     "D": "D6+1",
+     "description": "twin-linked"
+    },
+    {
+     "name": "Interceptor lance",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "6",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": "lance"
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Sweeping Advance",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, at the end of the Fight phase, if this model’s unit has fought this phase, if it is within Engagement Range of one or more enemy units, it can make a Fall Back move or, if it is not within Engagement Range of one or more enemy units, it can make a Normal move"
+    },
+    {
+     "name": "Strategic Mastery",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle round, you can select one model from your army with this ability and target that model’s unit with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+    }
+   ],
+   "composition": [
+    "1 Shield-Captain on Dawneagle Jetbike"
+   ],
+   "options": [
+    "This model’s salvo launcher can be replaced with 1 Vertus hurricane bolter."
+   ],
+   "points": [
+    {
+     "description": "1 model",
+     "cost": "140"
+    }
+   ],
+   "keywords": [
+    "Imperium",
+    "Character",
+    "Mounted",
+    "Dawneagle Jetbike",
+    "Fly",
+    "Shield-Captain"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": true,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001479",
+   "name": "Telemon Heavy Dreadnought",
+   "role": "Other",
+   "legend": "The honour of interment within a Telemon Heavy Dreadnought falls to the most lauded of Custodians, whose battle prowess is deemed a match for the Telemon’s sheer power. Encased within, such souls fight on alongside their brethren, whether surging forward with righteous fury or repelling assaults with their spiculus bolt launcher.",
+   "loadout": "<b>This model is equipped with:</b> 2 iliastus accelerator culverins; spiculus bolt launcher; armoured feet.",
+   "transport": "",
+   "damaged": {
+    "w": "1-4",
+    "description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+   },
+   "stats": [
+    {
+     "name": "Telemon Heavy Dreadnought",
+     "M": "8\"",
+     "T": "10",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "12",
+     "Ld": "6+",
+     "OC": "4",
+     "base_size": "100mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Arachnus storm cannon",
+     "type": "Ranged",
+     "range": "24",
+     "A": "12",
+     "BS_WS": "2",
+     "S": "6",
+     "AP": "-1",
+     "D": "1",
+     "description": "devastating wounds"
+    },
+    {
+     "name": "Iliastus accelerator culverin",
+     "type": "Ranged",
+     "range": "48",
+     "A": "4",
+     "BS_WS": "2",
+     "S": "9",
+     "AP": "-1",
+     "D": "3",
+     "description": ""
+    },
+    {
+     "name": "Spiculus bolt launcher",
+     "type": "Ranged",
+     "range": "36",
+     "A": "D6+3",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "0",
+     "D": "1",
+     "description": "blast"
+    },
+    {
+     "name": "Twin plasma projector",
+     "type": "Ranged",
+     "range": "12",
+     "A": "D3",
+     "BS_WS": "N/A",
+     "S": "7",
+     "AP": "-2",
+     "D": "1",
+     "description": "torrent, twin-linked"
+    },
+    {
+     "name": "Armoured feet",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "0",
+     "D": "1",
+     "description": ""
+    },
+    {
+     "name": "Telemon caestus",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "12",
+     "AP": "-2",
+     "D": "3",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "D3",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Guardian Eternal",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack."
+    },
+    {
+     "name": "Devoted to Destruction",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "If this model is equipped with 2 Telemon caestus weapons in addition to its armoured feet weapon, add 2 to the Attacks characteristic of those Telemon caestus weapons."
+    }
+   ],
+   "composition": [
+    "1 Telemon Heavy Dreadnought"
+   ],
+   "options": [
+    "This model’s 2 iliastus accelerator culverins can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 arachnus storm cannons</li><li>2 Telemon caestus and 2 twin plasma projectors</li><li>1 iliastus accelerator culverin and 1 arachnus storm cannon</li><li>1 iliastus accelerator culverin, 1 Telemon caestus and 1 twin plasma projector</li><li>1 arachnus storm cannon, 1 Telemon caestus and 1 twin plasma projector</li></ul>"
+   ],
+   "points": [
+    {
+     "description": "1 model (1st unit)",
+     "cost": "225"
+    },
+    {
+     "description": "1 model (2nd+ unit)",
+     "cost": "245"
+    }
+   ],
+   "keywords": [
+    "Walker",
+    "Telemon Heavy Dreadnought",
+    "Imperium",
+    "Vehicle"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001446",
+   "name": "Trajann Valoris",
+   "role": "Characters",
+   "legend": "Trajann Valoris’ warrior prowess approaches that of the Primarchs of old. With the Watcher’s Axe he can bisect the sarcophagus of a Chaos Helbrute in a single swing, or use its built-in bolt weapon – known as Eagle’s Scream – to cut down enemy infantry with salvoes of adamantine-tipped penetrator bolts.",
+   "loadout": "<b>This model is equipped with:</b> Watcher’s Axe.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Trajann Valoris",
+     "M": "6\"",
+     "T": "6",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "7",
+     "Ld": "5+",
+     "OC": "2",
+     "base_size": "40mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Eagle's Scream",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-2",
+     "D": "3",
+     "description": "assault"
+    },
+    {
+     "name": "Watcher’s Axe",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "6",
+     "BS_WS": "2",
+     "S": "10",
+     "AP": "-2",
+     "D": "3",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "5+",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Captain-General",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "While this model is leading a unit, each time a model in this unit makes an attack, you can ignore any or all modifiers to that attack’s Ballistic skill or Weapon skill characteristics and/or all modifiers to the Hit roll"
+    },
+    {
+     "name": "Moment Shackle",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, at the start of the Fight phase, you can select one of the following to take effect until the end of the phase:<br><ul><li>This model’s Watcher’s Axe melee weapon has an Attacks characteristic of 12.</li><li>This model has a 2+ invulnerable save.</li></ul>"
+    },
+    {
+     "name": "SUPREME COMMANDER",
+     "type": "Special (правая колонка)",
+     "parameter": "",
+     "description": "If this model is in your army, it must be your Warlord."
+    }
+   ],
+   "composition": [
+    "1 Trajann Valoris – <span class=\"kwb\">EPIC</span> <span class=\"kwb\">HERO</span>"
+   ],
+   "options": [],
+   "points": [
+    {
+     "description": "1 model",
+     "cost": "135"
+    }
+   ],
+   "keywords": [
+    "Imperium",
+    "Trajann Valoris",
+    "Infantry",
+    "Epic Hero",
+    "Character"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": true,
+   "is_battleline": false,
+   "is_epic_hero": true,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000002519",
+   "name": "Valerian",
+   "role": "Characters",
+   "legend": "A headstrong warrior, Valerian is relatively new to the Custodes, but is already marked for greatness. His urge to bring death to the foes of the Emperor beyond Terra is much valued in these dark times, and countless enemies have fallen to his guardian spear, Gnosis.",
+   "loadout": "<b>This model is equipped with:</b> Gnosis.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Valerian",
+     "M": "6\"",
+     "T": "6",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "6",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "40mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Gnosis",
+     "type": "Ranged",
+     "range": "24",
+     "A": "3",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "assault"
+    },
+    {
+     "name": "Gnosis",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "7",
+     "BS_WS": "2",
+     "S": "8",
+     "AP": "-3",
+     "D": "2",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "6+",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Golden Laurels",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "While this model is leading a unit, each time a melee attack targets that unit, worsen the Armour Penetration characteristic of that attack by 1."
+    },
+    {
+     "name": "Hero of Lion’s Gate",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, after making a Hit roll, Wound roll or saving throw for this model, you can change the result of that roll to an unmodified 6."
+    }
+   ],
+   "composition": [
+    "1 Valerian – <span class=\"kwb\">EPIC</span> <span class=\"kwb\">HERO</span>"
+   ],
+   "options": [],
+   "points": [
+    {
+     "description": "1 model",
+     "cost": "110"
+    }
+   ],
+   "keywords": [
+    "Shield-Captain",
+    "Imperium",
+    "Epic Hero",
+    "Character",
+    "Infantry",
+    "Valerian"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": true,
+   "is_battleline": false,
+   "is_epic_hero": true,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001561",
+   "name": "Venatari Custodians",
+   "role": "Other",
+   "legend": "The role of Venatari Custodian is vaunted as a high honour within the Adeptus Custodes, bestowed upon those with the most aquiline combat senses. These airborne hunting squads make masterful use of their archeotech jump packs to strike from the skies, swooping into the enemy’s midst to deliver swift ruin with their pistols and polearms.",
+   "loadout": "<b>Every model is equipped with:</b> Venatari lance.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Venatari Custodians",
+     "M": "10\"",
+     "T": "6",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "3",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "40mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Kinetic destroyer",
+     "type": "Ranged",
+     "range": "12",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "6",
+     "AP": "-1",
+     "D": "1",
+     "description": "pistol, sustained hits 1"
+    },
+    {
+     "name": "Venatari lance",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "assault"
+    },
+    {
+     "name": "Tarsis buckler",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-2",
+     "D": "1",
+     "description": ""
+    },
+    {
+     "name": "Venatari lance",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": "lance"
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Tarsis Buckler",
+     "type": "Wargear",
+     "parameter": "",
+     "description": "The bearer has a Wounds characteristic of 4."
+    },
+    {
+     "name": "Strike from the Skies",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "This unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
+    },
+    {
+     "name": "Swooping Dive",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+    },
+    {
+     "name": "JUMP PACKS",
+     "type": "Special (правая колонка)",
+     "parameter": "",
+     "description": "This unit cannot embark within a Venerable Land Raider."
+    }
+   ],
+   "composition": [
+    "3-6 Venatari Custodians"
+   ],
+   "options": [
+    "Any number of models can each have their Venatari lance replaced with 1 kinetic destroyer and 1 tarsus buckler."
+   ],
+   "points": [
+    {
+     "description": "3 models",
+     "cost": "160"
+    },
+    {
+     "description": "6 models",
+     "cost": "320"
+    }
+   ],
+   "keywords": [
+    "Infantry",
+    "Fly",
+    "Jump Pack",
+    "Imperium",
+    "Venatari Custodians"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000000883",
+   "name": "Venerable Contemptor Dreadnought",
+   "role": "Other",
+   "legend": "These towering combat walkers are piloted by centuries-old fallen heroes kept alive by irreplaceable technologies. Equipped with weapons that can melt armour and tear apart infantry, Venerable Contemptor Dreadnoughts inflict terrible damage, all while protected by atomantic shields and auto-repair protocols.",
+   "loadout": "<b>This model is equipped with:</b> combi-bolter; multi-melta; Contemptor combat weapon.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Venerable Contemptor Dreadnought",
+     "M": "6\"",
+     "T": "9",
+     "Sv": "2+",
+     "inv_sv": "5",
+     "inv_sv_descr": "",
+     "W": "10",
+     "Ld": "6+",
+     "OC": "3",
+     "base_size": "60mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Combi-bolter",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "0",
+     "D": "1",
+     "description": "rapid fire 2"
+    },
+    {
+     "name": "Kheres-pattern assault cannon",
+     "type": "Ranged",
+     "range": "24",
+     "A": "6",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-1",
+     "D": "1",
+     "description": "devastating wounds"
+    },
+    {
+     "name": "Multi-melta",
+     "type": "Ranged",
+     "range": "18",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "9",
+     "AP": "-4",
+     "D": "D6",
+     "description": "melta 2"
+    },
+    {
+     "name": "Contemptor combat weapon",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "12",
+     "AP": "-2",
+     "D": "3",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "1",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Unyielding Ancient",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "The first time this model is destroyed, remove it from play without resolving its Deadly Demise ability. Then, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with D6 wounds remaining."
+    }
+   ],
+   "composition": [
+    "1 Venerable Contemptor Dreadnought"
+   ],
+   "options": [
+    "This model’s multi-melta can be replaced with 1 Kheres-pattern assault cannon."
+   ],
+   "points": [
+    {
+     "description": "1 model (1st-2nd unit)",
+     "cost": "170"
+    },
+    {
+     "description": "1 model (3rd+ unit)",
+     "cost": "185"
+    }
+   ],
+   "keywords": [
+    "Venerable Contemptor Dreadnought",
+    "Walker",
+    "Vehicle",
+    "Imperium"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000000884",
+   "name": "Venerable Land Raider",
+   "role": "Other",
+   "legend": "Land Raiders are heavily armed, mobile fortresses. Possessed of hyper-durable adamantine armour and a fearsome array of weapons, they and their cargo of Custodian warriors can turn the tide of war in a single salvo, and their machine spirits are so potent they can fight on even if the crew are slain.",
+   "loadout": "<b>This model is equipped with:</b> 2 godhammer lascannons; twin heavy bolter; armoured tracks.",
+   "transport": "This model has a transport capacity of 6 Adeptus Custodes Infantry models.",
+   "damaged": {
+    "w": "1-5",
+    "description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+   },
+   "stats": [
+    {
+     "name": "Venerable Land Raider",
+     "M": "10\"",
+     "T": "12",
+     "Sv": "2+",
+     "inv_sv": "-",
+     "inv_sv_descr": "",
+     "W": "16",
+     "Ld": "6+",
+     "OC": "5",
+     "base_size": "Use model"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Godhammer lascannon",
+     "type": "Ranged",
+     "range": "48",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "12",
+     "AP": "-3",
+     "D": "D6+1",
+     "description": ""
+    },
+    {
+     "name": "Hunter-killer missile",
+     "type": "Ranged",
+     "range": "48",
+     "A": "1",
+     "BS_WS": "2",
+     "S": "14",
+     "AP": "-3",
+     "D": "D6",
+     "description": "one shot"
+    },
+    {
+     "name": "Storm bolter",
+     "type": "Ranged",
+     "range": "24",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "0",
+     "D": "1",
+     "description": "rapid fire 2"
+    },
+    {
+     "name": "Twin heavy bolter",
+     "type": "Ranged",
+     "range": "36",
+     "A": "3",
+     "BS_WS": "2",
+     "S": "5",
+     "AP": "-1",
+     "D": "2",
+     "description": "sustained hits 1, twin-linked"
+    },
+    {
+     "name": "Armoured tracks",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "6",
+     "BS_WS": "4",
+     "S": "8",
+     "AP": "0",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "D6",
+     "description": ""
+    },
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Assault Ramp",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+    },
+    {
+     "name": "One Shot",
+     "type": "Wargear profile",
+     "parameter": "",
+     "description": "The bearer can only shoot with this weapon once per battle."
+    }
+   ],
+   "composition": [
+    "1 Venerable Land Raider"
+   ],
+   "options": [
+    "This model can be equipped with 1 hunter-killer missile.",
+    "This model can be equipped with 1 storm bolter."
+   ],
+   "points": [
+    {
+     "description": "1 model (1st unit)",
+     "cost": "220"
+    },
+    {
+     "description": "1 model (2nd+ unit)",
+     "cost": "240"
+    }
+   ],
+   "keywords": [
+    "Imperium",
+    "Transport",
+    "Smoke",
+    "Venerable Land Raider",
+    "Vehicle"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000001454",
+   "name": "Vertus Praetors",
+   "role": "Other",
+   "legend": "Veteran warriors who have seen battle on a hundred worlds, these Custodians know that the value of speed is in directing their might precisely where and when it is needed most. Master combatants and marksmen both, they can place piercing strikes and deadly salvoes with precision even when travelling at immense speeds.",
+   "loadout": "<b>Every model is equipped with:</b> salvo launcher; interceptor lance.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Vertus Praetors",
+     "M": "12\"",
+     "T": "7",
+     "Sv": "2+",
+     "inv_sv": "4",
+     "inv_sv_descr": "",
+     "W": "5",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "75 x 42mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Salvo launcher",
+     "type": "Ranged",
+     "range": "24",
+     "A": "1",
+     "BS_WS": "2",
+     "S": "10",
+     "AP": "-3",
+     "D": "D6+1",
+     "description": "twin-linked"
+    },
+    {
+     "name": "Vertus hurricane bolter",
+     "type": "Ranged",
+     "range": "18",
+     "A": "3",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-1",
+     "D": "2",
+     "description": "rapid fire 3, twin-linked"
+    },
+    {
+     "name": "Interceptor lance",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": "lance"
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Faction",
+     "parameter": "",
+     "description": ""
+    },
+    {
+     "name": "Turbo-boost",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time this unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit."
+    },
+    {
+     "name": "Quicksilver Execution",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, after this unit ends a Normal Move or Advance move, you can select one enemy unit (excluding <span class=\"kwb\">MONSTER</span> and <span class=\"kwb\">VEHICLE</span> units) that it moved over during that move, then roll one D6 for each model in this unit: for each 2+, that enemy unit suffers 2 mortal wounds."
+    }
+   ],
+   "composition": [
+    "2-3 Vertus Praetors"
+   ],
+   "options": [
+    "Any number of models can each have their salvo launcher replaced with 1 Vertus hurricane bolter."
+   ],
+   "points": [
+    {
+     "description": "2 models",
+     "cost": "145"
+    },
+    {
+     "description": "3 models",
+     "cost": "215"
+    }
+   ],
+   "keywords": [
+    "Vertus Praetors",
+    "Imperium",
+    "Mounted",
+    "Fly"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000002522",
+   "name": "Vigilators",
+   "role": "Other",
+   "legend": "The surest way to bring an end to a witch’s malefic rampage is to strike their head from their body. Such is the doctrine of the Vigilators, who ghost across the battlefield before charging headlong into battle, their double-handed power blades singing a keening song of death.",
+   "loadout": "<b>Every model is equipped with:</b> executioner greatblade.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Vigilators",
+     "M": "6\"",
+     "T": "3",
+     "Sv": "3+",
+     "inv_sv": "-",
+     "inv_sv_descr": "",
+     "W": "1",
+     "Ld": "6+",
+     "OC": "1",
+     "base_size": "32mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Executioner greatblade",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "2",
+     "BS_WS": "3",
+     "S": "5",
+     "AP": "-2",
+     "D": "2",
+     "description": "anti-psyker 5+, devastating wounds"
+    }
+   ],
+   "abilities": [
+    {
+     "name": "Daughters of the Abyss",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Models in this unit have the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds."
+    },
+    {
+     "name": "Deft Parry",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Each time a melee attack targets this unit, subtract 1 from the Hit roll."
+    }
+   ],
+   "composition": [
+    "1 Vigilator Sister Superior",
+    "3-9 Vigilators"
+   ],
+   "options": [],
+   "points": [
+    {
+     "description": "4 models",
+     "cost": "50"
+    },
+    {
+     "description": "5 models",
+     "cost": "55"
+    },
+    {
+     "description": "9 models",
+     "cost": "90"
+    },
+    {
+     "description": "10 models",
+     "cost": "100"
+    }
+   ],
+   "keywords": [
+    "Imperium",
+    "Infantry",
+    "Anathema Psykana",
+    "Vigilators"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  },
+  {
+   "id": "000002523",
+   "name": "Witchseekers",
+   "role": "Other",
+   "legend": "Witchseekers wield sanctified flamers as they hunt witches through tangled corridors and muddy trenchworks alike. Closing with their heretical quarry, they unleash a roaring conflagration to immolate the foe, as well as any pyre.",
+   "loadout": "<b>Every model is equipped with:</b> Witchseeker flamer; close combat weapon.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Witchseekers",
+     "M": "6\"",
+     "T": "3",
+     "Sv": "3+",
+     "inv_sv": "-",
+     "inv_sv_descr": "",
+     "W": "1",
+     "Ld": "6+",
+     "OC": "1",
+     "base_size": "32mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Witchseeker flamer",
+     "type": "Ranged",
+     "range": "12",
+     "A": "D6",
+     "BS_WS": "N/A",
+     "S": "4",
+     "AP": "0",
+     "D": "1",
+     "description": "ignores cover, torrent"
+    },
+    {
+     "name": "Close combat weapon",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "2",
+     "BS_WS": "3",
+     "S": "3",
+     "AP": "0",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "",
+     "type": "Core",
+     "parameter": "6\"",
+     "description": ""
+    },
+    {
+     "name": "Daughters of the Abyss",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Models in this unit have the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds."
+    },
+    {
+     "name": "Sanctified Flames",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. That enemy unit must take a Battle-shock test."
+    }
+   ],
+   "composition": [
+    "1 Witchseeker Sister Superior",
+    "3-9 Witchseekers"
+   ],
+   "options": [
+    "None"
+   ],
+   "points": [
+    {
+     "description": "4 models",
+     "cost": "50"
+    },
+    {
+     "description": "5 models",
+     "cost": "55"
+    },
+    {
+     "description": "9 models",
+     "cost": "90"
+    },
+    {
+     "description": "10 models",
+     "cost": "100"
+    }
+   ],
+   "keywords": [
+    "Imperium",
+    "Witchseekers",
+    "Anathema Psykana",
+    "Infantry"
+   ],
+   "faction_keywords": [
+    "Adeptus Custodes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false
+  }
+ ],
+ "detachments": [
+  {
+   "id": "000000863",
+   "name": "Auric Champions",
+   "legend": "",
+   "rules": [
+    {
+     "name": "Assemblage of Might",
+     "description": "At the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, each time a model in an Adeptus Custodes Character unit from your army makes an attack that targets that enemy unit, add 1 to the Wound roll."
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Blade Imperator",
+     "cost": "25",
+     "description": "Adeptus Custodes model only. Each time the bearer’s unit ends a Charge move, select one enemy unit within Engagement Range of the bearer and roll one D6: on a 4+, that enemy unit suffers D3 mortal wounds. Once per battle, after the bearer s unit ends a Charge move, all enemy units within 6\" of the bearer must take a Battle-shock test.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Inspirational Exemplar",
+     "cost": "10",
+     "description": "Adeptus Custodes model only. The bearer has a Leadership characteristic of 5+. Once per battle, at the start of any phase, you can select one friendly <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit that is Battle-shocked and within 12\" of the bearer; that unit is no longer Battle-shocked.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Martial Philosopher",
+     "cost": "30",
+     "description": "Adeptus Custodes model only. The bearer’s unit is eligible to shoot and/or declare a charge in a turn in which it Fell Back. Once per battle, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of the bearer, if the bearer’s unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\".",
+     "is_upgrade": false
+    },
+    {
+     "name": "Veiled Blade",
+     "cost": "25",
+     "description": "Adeptus Custodes model only. Add 2 to the Attacks characteristic of the bearers melee weapons. Once per battle, at the start of any Command phase, triple the bearer’s Objective Control characteristic until the end of the turn.",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "SLAYER OF CHAMPIONS",
+     "cp_cost": "1",
+     "type": "Auric Champions – Epic Deed Stratagem",
+     "description": "<b>WHEN:</b> Any phase.<br><br><b>TARGET:</b> One Adeptus Custodes Character unit from your army that has just destroyed the unit you selected at the start of your Command phase as the target of your Assemblage of Might ability.<br><br><b>EFFECT:</b> Select one enemy unit on the battlefield Until the start of your next Command phase, each time an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">CHARACTER</span> model from your army makes an attack that target that enemy unit, add 1 to the Wound roll In addition, if the destroyed unit was a <span class=\"kwb\">CHARACTER</span> unit, gain 1CP."
+    },
+    {
+     "name": "THE EMPEROR’S AUSPICE",
+     "cp_cost": "1",
+     "type": "Auric Champions – Epic Deed Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Adeptus Custodes Character unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, <span class=\"kwb\">CHARACTER</span> models in your unit have the Feel No Pain 4+ ability."
+    },
+    {
+     "name": "SUPERHUMAN RESERVES",
+     "cp_cost": "2",
+     "type": "Auric Champions – Epic Deed Stratagem",
+     "description": "<b>WHEN:</b> Any phase, just after an Adeptus Custodes Warlord model from your army has used an ability on its datasheet or from an Enhancement that says it can only be used Once per battle.<br><br><b>TARGET:</b> That Adeptus Custodes Warlord model.<br><br><b>EFFECT:</b> Your model can use its Once per battle’ ability one additional time during this battle (but not in the same phase).<br><br><b>RESTRICTIONS:</b> You cannot use this Stratagem more than once per battle."
+    },
+    {
+     "name": "SHOULDER THE MANTLE",
+     "cp_cost": "1",
+     "type": "Auric Champions – Epic Deed Stratagem",
+     "description": "<b>WHEN:</b> Your Movement phase, before the Reinforcements step.<br><br><b>TARGET:</b> One Adeptus Custodes Character model from your army that is not leading a unit.<br><br><b>EFFECT:</b> Select one friendly unit (excluding Battle-shocked and Attached units) within 2\" horizontally and 5\" vertically of your model that it could lead (as described in the Leader section of its datasheet). Your model attaches to that unit as a Leader. Change that unit’s Starting Strength accordingly."
+    },
+    {
+     "name": "EARNING OF A NAME",
+     "cp_cost": "1",
+     "type": "Auric Champions – Epic Deed Stratagem",
+     "description": "<b>WHEN:</b> Fight phase.<br><br><b>TARGET:</b> Up to two Adeptus Custodes Character units from your army that have not been selected to fight this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time a <span class=\"kwb\">CHARACTER</span> model in either of your units makes an attack that targets a <span class=\"kwb\">MONSTER</span> or <span class=\"kwb\">VEHICLE</span> unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+    },
+    {
+     "name": "VIGIL UNENDING",
+     "cp_cost": "2",
+     "type": "Auric Champions – Epic Deed Stratagem",
+     "description": "<b>WHEN:</b> Fight phase.<br><br><b>TARGET:</b> One Adeptus Custodes Character model from your army that was just destroyed and has not fought this phase. You can use this Stratagem on that unit even though it was just destroyed.<br><br><b>EFFECT:</b> Do not remove your destroyed model from play. The destroyed model can fight after the attacking unit has finished making attacks, and is then removed from play."
+    }
+   ],
+   "dp_cost": 2,
+   "force_disposition": "PRIORITY ASSETS",
+   "exclusive_tag": "",
+   "restriction": ""
+  },
+  {
+   "id": "000000910",
+   "name": "Black Ship Guardians",
+   "legend": "<b>Whether fighting furiously to prevent enemies from boarding one of the sinister Black Ships and freeing its psyker inmates, or sweeping into an enemy vessel or installation to seize and imprison powerful witches, the Sisters of Silence are a force to be reckoned with in void warfare.</b>",
+   "rules": [
+    {
+     "name": "Priority Quarry",
+     "description": "At the start of the first battle round, you can select up to two enemy units to be your army’s quarry, one of which must be your opponents <span class=\"kwb\">WARLORD</span>. Each time an ANATHEMA PSYKANA unit from your army makes an attack that targets one of your army’s quarries, re-roll a Hit roll of 1. Each time an <span class=\"kwb\">ANATHEMA</span> <span class=\"kwb\">PSYKANA</span> unit from your army declares a charge, it can include one or more of your army’s quarries as targets of that charge, even if they are not visible to it."
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "The Vratine Aquila (Aura)",
+     "cost": "0",
+     "description": "ANATHEMA PSYKANA model only. While a friendly <span class=\"kwb\">ANATHEMA</span> <span class=\"kwb\">PSYKANA</span> unit is within 3\" of the bearer, models in that unit have a 4+ invulnerable save.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Sinister Presence (Aura)",
+     "cost": "0",
+     "description": "ANATHEMA PSYKANA model only. While an enemy unit is within 6\" of the bearer (when measuring this distance, Walls and closed Hatchways are ignored), that unit cannot Seize objective markers and, in your opponent’s Command phase, that unit must take a Battle-shock lest. This Enhancement cannot cause a unit to take two Battle-shock tests in the same phase.",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "FOCUSED FEAR",
+     "cp_cost": "1",
+     "type": "Black Ship Guardians – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One ANATHEMA PSYKANA unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1."
+    },
+    {
+     "name": "PUNISHMENT OF THE PROSECUTORS",
+     "cp_cost": "1",
+     "type": "Black Ship Guardians – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One PROSEcUTORS unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Until the end of the phase, improve the Armour Penetration characteristic of ranged weapons equipped by models in your unit by 1. In addition, each time a model in your unit makes a ranged attack, on a Critical Wound, improve the Armour Penetration characteristic of that attack by an additional 1."
+    },
+    {
+     "name": "BLADES OF THE VIGILATORS",
+     "cp_cost": "1",
+     "type": "Black Ship Guardians – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One VIgiLATORS, ALEYA or KNIGHT-CENTURA equipped with an executioner greatblade unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, each time an attack targets your unit, subtract 1 from the Wound roll."
+    },
+    {
+     "name": "CORNERED PREY",
+     "cp_cost": "1",
+     "type": "Black Ship Guardians – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your Movement phase, just after an ANATHEMA PSYKANA unit from your army Falls Back.<br><br><b>TARGET:</b> That <span class=\"kwb\">ANATHEMA</span> <span class=\"kwb\">PSYKANA</span> unit.<br><br><b>EFFECT:</b> Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
+    }
+   ],
+   "dp_cost": 0,
+   "force_disposition": "",
+   "exclusive_tag": "",
+   "restriction": ""
+  },
+  {
+   "id": "000001029",
+   "name": "Lions of the Emperor",
+   "legend": "<p class=\"ShowFluff legend\">Many of the galaxy’s warrior cultures accept the time-honoured truth that there is greater strength in numbers. Not so for the champions of the Adeptus Custodes, the Lions of the Emperor. Each of them is an army unto themselves, a warrior of legend gifted with terrifying strength, armoured in nigh-impenetrable golden plate and possessing limitless resolve. When the greatest Custodians take to the field at once, those auric-armoured champions have no need to pool their resources in order to smite their foes. Relying instead upon their superhuman strength and mastery of martial ka’tahs, they hurl themselves into the midst of the enemy, sweeping aside gunlines, eviscerating rampaging monsters and obliterating enemy war machines with terrifying ease.</p>",
+   "rules": [
+    {
+     "name": "Against All Odds",
+     "description": "Each time a model in an Adeptus Custodes unit from your army (excluding Vehicles) makes an attack, if there are no other friendly units within 6\" of that unit, add 1 to the Hit roll and add 1 to the Wound roll."
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Superior Creation",
+     "cost": "25",
+     "description": "Adeptus Custodes Infantry model only. The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with its full wounds remaining.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Praesidius",
+     "cost": "25",
+     "description": "Adeptus Custodes model only. The bearer has the Lone Operative and Stealth abilities.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Fierce Conqueror",
+     "cost": "15",
+     "description": "Shield-Captain model only. At the start of the Fight phase, until the end of the phase, add 2 to the Attacks characteristic of melee weapons equipped by the bearer for every 5 enemy models within 6\" of the bearer (rounding down).",
+     "is_upgrade": false
+    },
+    {
+     "name": "Admonimortis",
+     "cost": "20",
+     "description": "Shield-Captain model only. Improve the Strength characteristic of melee weapons equipped by the bearer by 3, and improve the Armour Penetration and Damage characteristics of those weapons by 1.",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "PEERLESS WARRIOR",
+     "cp_cost": "1",
+     "type": "Lions of the Emperor – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Fight phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army that has not been selected to fight this phase.<br><br><b>EFFECT:</b> Until the end of the phase, melee weapons equipped by models in your unit have the [PRECISION] ability."
+    },
+    {
+     "name": "SWIFT AS THE EAGLE",
+     "cp_cost": "1",
+     "type": "Lions of the Emperor – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s Shooting phase, just after an enemy unit has shot.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army (excluding <span class=\"kwb\">VEHICLE</span> units) that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Your unit can make a Normal move of up to D6\"."
+    },
+    {
+     "name": "UNLEASH THE LIONS",
+     "cp_cost": "1",
+     "type": "Lions of the Emperor – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your Command phase.<br><br><b>TARGET:</b> One Allarus Custodians or Aquilon Custodians unit from your army that is on the battlefield.<br><br><b>EFFECT:</b> That unit is split into separate units, each containing one model. These new units each have a Starting Strength of 1."
+    },
+    {
+     "name": "DEFIANT TO THE LAST",
+     "cp_cost": "1",
+     "type": "Lions of the Emperor – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6, adding 2 to the result if that model has the <span class=\"kwb\">CHARACTER</span> keyword. On a 4+, do not remove it from play; the destroyed model can fight after the attacking unit has finished making its attacks (when doing so, it is treated as having 1 wound remaining), and is then removed from play."
+    },
+    {
+     "name": "GILDED CHAMPION",
+     "cp_cost": "1",
+     "type": "Lions of the Emperor – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Any phase, just after an Adeptus Custodes Character model from your army has used an ability on its datasheet that states it can only be used ‘once per battle’.<br><br><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">CHARACTER</span> model.<br><br><b>EFFECT:</b> Your model can use that ‘once per battle’ ability one additional time during the battle (but not in the same phase).<br><br><b>RESTRICTIONS:</b> You cannot use this Stratagem on the same <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">CHARACTER</span> model more than once per battle."
+    },
+    {
+     "name": "MANOEUVRE AND FIRE",
+     "cp_cost": "1",
+     "type": "Lions of the Emperor – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your Movement phase, just after an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army Falls Back.<br><br><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br><br><b>EFFECT:</b> Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
+    }
+   ],
+   "dp_cost": 2,
+   "force_disposition": "DISRUPTION",
+   "exclusive_tag": "",
+   "restriction": ""
+  },
+  {
+   "id": "000900045",
+   "name": "Might of the Moritoi",
+   "legend": "Auramite-clad Dreadnoughts stride into the foe and crush them with ancient weaponry.",
+   "rules": [
+    {
+     "name": "March of the Honoured Dead",
+     "description": "Friendly ADEPTUS CUSTODES WALKER units have +2\" M and +1 to Advance rolls and Charge rolls. This detachment has the ARMOURY tag and cannot be taken with another ARMOURY detachment."
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Interred Expertise (Upgrade)",
+     "cost": "25",
+     "description": "ADEPTUS CUSTODES WALKER unit only. This unit's attacks can re-roll Hit rolls of 1 and re-roll Wound rolls of 1.",
+     "is_upgrade": true
+    },
+    {
+     "name": "Auramite Sarcophagus (Upgrade)",
+     "cost": "15",
+     "description": "ADEPTUS CUSTODES WALKER unit only. When you target this unit with the Crushing Impact stratagem, that use is -1 CP.",
+     "is_upgrade": true
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "Flawless Construction",
+     "cp_cost": "1",
+     "type": "",
+     "description": "WHEN: Your opponent's Shooting phase or the Fight phase, when an enemy unit targets a friendly ADEPTUS CUSTODES WALKER unit. TARGET: That unit. EFFECT: Attacks that target your unit with a S greater than your unit's T have -1 to Wound rolls."
+    },
+    {
+     "name": "Unstoppable Advance",
+     "cp_cost": "1",
+     "type": "",
+     "description": "WHEN: Your Movement phase, when a friendly ADEPTUS CUSTODES WALKER unit is selected to move. TARGET: That unit. EFFECT: Your unit has MOBILE."
+    },
+    {
+     "name": "Prioritised Eradication",
+     "cp_cost": "1",
+     "type": "",
+     "description": "WHEN: Your Shooting phase, when a friendly TELEMON HEAVY DREADNOUGHT unit is selected to shoot. TARGET: That unit. EFFECT: Your unit's Arachnus Storm Cannon weapons have [RAPID FIRE 6] and Iliastus Accelerator Culverin weapons have [RAPID FIRE 2]."
+    }
+   ],
+   "dp_cost": 1,
+   "force_disposition": "PURGE THE FOE",
+   "exclusive_tag": "ARMOURY",
+   "restriction": ""
+  },
+  {
+   "id": "000000862",
+   "name": "Null Maiden Vigil",
+   "legend": "",
+   "rules": [
+    {
+     "name": "Creeping Dread (Aura)",
+     "description": "In the Battle-shock step of your opponent’s Command phase, if an enemy unit that is either a <span class=\"kwb\">PSYKER</span> unit or below its Starting Strength is within 12\" of one or more Anathema Psykana models from your army, that enemy unit must take a Battle-shock test. If that unit is Below Half-strength, it must subtract 1 from its Battle-shock test this phase instead.<br><br><b>Designer’s Note:</b> <i>This means that all enemy <span class=\"kwb\">PSYKER</span> units within range of this Aura ability and all enemy units within range of this Aura ability that have lost one or more models must take a Battle-shock test in your opponents Command phase, not just those that are Below Half-strength.</i>"
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Enhanced Voidsheen Cloak",
+     "cost": "10",
+     "description": "Anathema Psykana model only. Each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of that attack. If that attack was made by a <span class=\"kwb\">PSYKER</span> or Battle-shocked model, change the Damage characteristic of that attack to 1 instead.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Huntress’ Eye",
+     "cost": "15",
+     "description": "Anathema Psykana model only. In your Command phase, select one enemy unit within 12\" of the bearer. That unit must take a Battle-shock test.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Oblivion Knight",
+     "cost": "25",
+     "description": "Anathema Psykana model only. While the bearer is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll. If that attack targeted an enemy <span class=\"kwb\">PSYKER</span> unit, add 1 to the Wound roll as well.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Raptor Blade",
+     "cost": "5",
+     "description": "Anathema Psykana model only. Add 1 to the Attacks, Strength and Damage characteristics of the bearers melee weapons. While the bearer is within Engagement Range of one or more enemy <span class=\"kwb\">PSYKER</span> units that are Battle-shocked, add 2 to the Attacks, Strength and Damage characteristics of the bearer’s melee weapons instead.",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "PURGATION SWEEP",
+     "cp_cost": "1",
+     "type": "Null Maiden Vigil – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One Witchseekers unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Until the end of the phase, add 1 to the Attacks characteristic of Torrent weapons equipped by models in your unit. If such a weapon targets a <span class=\"kwb\">PSYKER</span> or Battle-shocked unit this phase, add 2 to its Attacks characteristic instead."
+    },
+    {
+     "name": "ANATHEMA BLADEMASTERY",
+     "cp_cost": "1",
+     "type": "Null Maiden Vigil – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Fight phase.<br><br><b>TARGET:</b> One Vigilators unit from your army that has not been selected to fight this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit makes a melee attack, you can re-roll the Hit roll If the target of that attack is Battle-shocked or a <span class=\"kwb\">PSYKER</span>, you can re-roll the Wound roll as well."
+    },
+    {
+     "name": "WITCH HUNTERS",
+     "cp_cost": "1",
+     "type": "Null Maiden Vigil – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Your Shooting phase or the Fight phase.<br><br><b>TARGET:</b> One Anathema Psykana unit from your army that has not been selected to shoot or fight this phase.<br><br><b>EFFECT:</b> Select either the [LETHAL HITS] or [SUSTAINED HITS 1] ability. Until the end of the phase, weapons equipped by models in your unit have the selected ability, but models in your unit can only target <span class=\"kwb\">PSYKER</span> units with their attacks."
+    },
+    {
+     "name": "PSY-CHAFF VOLLEY",
+     "cp_cost": "1",
+     "type": "Null Maiden Vigil – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One Prosecutors unit from your army that has just shot.<br><br><b>EFFECT:</b> Select one enemy unit hit by one or more of those attacks. Until the start of your next turn, while your unit is on the battlefield, that enemy unit is prosecuted. While a unit is prosecuted, each time an Anathema Psykana model makes an attack against that unit, improve the Armour Penetration characteristic of that attack by 1. While a <span class=\"kwb\">PSYKER</span> or Battle-shocked unit is prosecuted, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+    },
+    {
+     "name": "DESPERATION’S PRICE",
+     "cp_cost": "1",
+     "type": "Null Maiden Vigil – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Any phase, just after an enemy <span class=\"kwb\">PSYKER</span> unit has either finished using a Psychic ability that targets a unit, or finished making Psychic Attacks.<br><br><b>TARGET:</b> One Anathema Psykana unit from your army within 18\" of that enemy <span class=\"kwb\">PSYKER</span> unit.<br><br><b>EFFECT:</b> That enemy <span class=\"kwb\">PSYKER</span> unit must take a Leadership test If the test is passed, that <span class=\"kwb\">PSYKER</span> unit is Battle-shocked; if the test is failed that <span class=\"kwb\">PSYKER</span> unit suffers 3 mortal wounds and is Battle-shocked."
+    },
+    {
+     "name": "PSYCHIC ABOMINATIONS",
+     "cp_cost": "1",
+     "type": "Null Maiden Vigil – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s Shooting phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Anathema Psykana Infantry unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, your unit has the Stealth ability, and Battle-shocked and <span class=\"kwb\">PSYKER</span> models can only select your unit as a target of a ranged attack if they are within 12\"."
+    }
+   ],
+   "dp_cost": 2,
+   "force_disposition": "RECONNAISSANCE",
+   "exclusive_tag": "",
+   "restriction": ""
+  },
+  {
+   "id": "000000765",
+   "name": "Shield Host",
+   "legend": "",
+   "rules": [
+    {
+     "name": "Martial Mastery",
+     "description": "At the start of the battle round, you can select one of the bullet points below. If you do, until the start of the next battle round, that bullet point’s effects apply.<br><ul><li>Each time an Adeptus Custodes model from your army with the Martial Ka’tah ability makes a melee attack, a successful unmodified Hit roll of 5+ scores a Critical Hit.</li><li>Improve the Armour Penetration characteristic of melee weapons equipped by <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> models from your army with the Martial Ka’tah ability by 1.</li></ul>"
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Auric Mantle",
+     "cost": "15",
+     "description": "Shield-Captain or Blade Champion model only. Add 2 to the bearer’s Wounds characteristic.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Castellan’s Mark",
+     "cost": "20",
+     "description": "Shield-Captain model only. After both players have deployed their armies, you can select up to two Adeptus Custodes units from your army (excluding Anathema Psykana units) and redeploy all of those units. When doing so, any of those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+     "is_upgrade": false
+    },
+    {
+     "name": "From the Hall of Armouries",
+     "cost": "25",
+     "description": "Shield-Captain model only. Add 1 to the Strength and Damage characteristics of the bearer’s melee weapons.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Panoptispex",
+     "cost": "5",
+     "description": "Shield-Captain or Blade Champion model only. While the bearer is leading a unit, ranged weapons equipped by models in that unit have the [IGNORES cover] ability.",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "ARCHEOTECH MUNITIONS",
+     "cp_cost": "1",
+     "type": "Shield Host  – Wargear Stratagem",
+     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army (excluding Anathema Psykana units) that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Select either the [LETHAL HITS] or [SUSTAINED HITS 1] ability. Until the end of the phase ranged weapons equipped by models in your unit have the selected ability."
+    },
+    {
+     "name": "ARCANE GENETIC ALCHEMY",
+     "cp_cost": "1",
+     "type": "Shield Host – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Any phase, just after a mortal wound has been allocated to an Adeptus Custodes model from your army(excluding Anathema Psykana models).<br><br><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model’s unit.<br><br><b>EFFECT:</b> Until the end of the phase, models in your unit have the Feel No Pain 4+ ability against mortal wounds."
+    },
+    {
+     "name": "VIGILANCE ETERNAL",
+     "cp_cost": "1",
+     "type": "Shield Host – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your Movement phase.<br><br><b>TARGET:</b> One Adeptus Custodes Battleline unit from your army (excluding Anathema Psykana units) within range of an objective marker you control.<br><br><b>EFFECT:</b> That objective marker remains under your control even if you have no models within range of it, until your opponent controls it at the start or end of any turn."
+    },
+    {
+     "name": "MULTIPOTENTIALITY",
+     "cp_cost": "1",
+     "type": "Shield Host – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your Movement phase.<br><br><b>TARGET:</b> One Adeptus Custodes unit from your army that Fell Back this phase.<br><br><b>EFFECT:</b> Until the end of your turn, that unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
+    },
+    {
+     "name": "UNWAVERING SENTINELS",
+     "cp_cost": "1",
+     "type": "Shield Host – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Adeptus Custodes Infantry unit from your army (excluding Anathema Psykana units) that is within range of an objective marker you control and that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, each time a melee attack targets your unit, subtract 1 from the Hit roll."
+    },
+    {
+     "name": "AVENGE THE FALLEN",
+     "cp_cost": "1",
+     "type": "Shield Host – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Start of the Fight phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army (excluding Anathema Psykana units) that is below its Starting Strength.<br><br><b>EFFECT:</b> Until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit. If your unit is Below Half-strength, until the end of the phase, add 2 to the Attacks characteristic of those melee weapons instead."
+    }
+   ],
+   "dp_cost": 2,
+   "force_disposition": "PURGE THE FOE",
+   "exclusive_tag": "",
+   "restriction": ""
+  },
+  {
+   "id": "000900046",
+   "name": "Silent Hunters",
+   "legend": "Prey recoil from the skin-crawling presence of the Sisterhood's hunters.",
+   "rules": [
+    {
+     "name": "Skin-crawling Disorientation",
+     "description": "When a friendly ANATHEMA PSYKANA unit is selected to make an Advance move, that move does not prevent that unit from being eligible to start an action. Friendly ANATHEMA PSYKANA units have the following ability. Ceaseless Vigilance: In your Shooting phase, this unit can select one visible enemy unit within 12\". That enemy unit is nulled. While a unit is nulled, that unit has +3\" detection range."
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Encircling Hunter",
+     "cost": "15",
+     "description": "ANATHEMA PSYKANA model only. When both players have deployed, you can redeploy up to three friendly ANATHEMA PSYKANA INFANTRY units, and may set them up in Strategic Reserves regardless of how many units are already there.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Psyk-out Grenades (Upgrade)",
+     "cost": "10",
+     "description": "ANATHEMA PSYKANA unit only. This unit has EXPLOSIVES. When you target this unit with the Explosives stratagem, if you select an enemy PSYKER unit, you can re-roll rolls to determine whether that enemy unit suffers a mortal wound.",
+     "is_upgrade": true
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "Deathsong Scythes",
+     "cp_cost": "1",
+     "type": "",
+     "description": "WHEN: Fight phase, when a friendly VIGILATORS unit is selected to fight. TARGET: That unit. EFFECT: Your unit's melee attacks have [LANCE], and melee attacks that target a PSYKER unit have +1 A."
+    },
+    {
+     "name": "Umbral Prosecution",
+     "cp_cost": "1",
+     "type": "",
+     "description": "WHEN: Your Shooting phase, when a friendly PROSECUTORS unit is selected to shoot. TARGET: That unit. EFFECT: Your unit's Boltgun weapons have [RAPID FIRE 2] and +1 AP."
+    },
+    {
+     "name": "Synchronised Inferno",
+     "cp_cost": "1",
+     "type": "",
+     "description": "WHEN: Your Shooting phase, when a friendly WITCHSEEKERS unit is selected to shoot. TARGET: That unit. EFFECT: Your unit's [TORRENT] ranged attacks have [BLAST 1]."
+    }
+   ],
+   "dp_cost": 1,
+   "force_disposition": "RECONNAISSANCE",
+   "exclusive_tag": "",
+   "restriction": ""
+  },
+  {
+   "id": "000000986",
+   "name": "Solar Spearhead",
+   "legend": "<p class=\"ShowFluff legend\">Within the deepest engine vaults of the Imperial Palace, the ancient and mighty vehicles of the Custodians reside. Auramite-clad combat walkers bristling with arcane weapons are roused from stasis, ready to be unleashed upon the galaxy’s battlefields. Venerable Land Raiders as old as the Imperium are awoken by complex rituals and prepared for war. When battle dawns, these dread engines of destruction stride or rumble towards the cowering foe, their guns emitting furious torrents of destruction. Those brave or foolish enough to stand before this armoured spearhead are crushed beneath the tread of auric battle tanks or smashed to a bloody pulp by wrathful interred champions.</p>",
+   "rules": [
+    {
+     "name": "Auric Armour",
+     "description": "<ul><li>While an Adeptus Custodes Vehicle unit from your army is at Starting Strength, unless that unit is an Aircraft or it is Battle-shocked, add 2 to the Objective Control characteristic of models in that unit.</li><li>While an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">VEHICLE</span> unit from your army is below Starting Strength, each time a model in that unit makes an attack, re-roll a Hit roll of 1.</li><li>While an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">VEHICLE</span> unit from your army is Below Half-strength, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.</li></ul><br><span class=\"hi_custom\">MORITOI ANCIENTS</span><br><p class=\"ShowFluff legend2\">The Adeptus Custodes’ honoured fallen are ever eager for battle.</p>Add 2\" to the Move characteristic of models in <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">WALKER</span> units from your army and add 1 to Advance and Charge rolls made for such units.<br><br><span class=\"hi_custom\">KEYWORDS</span><br>In the Muster Armies step, you can select up to 2 <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">WALKER</span> models from your army. The selected units gain the <span class=\"kwb\">CHARACTER</span> keyword.<br><br><b>Designer’s Note:</b> <i>This means that the selected models can be given Enhancements and one of them can be selected as your <span class=\"kwb\">WARLORD</span>.</i>"
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Adamantine Talisman",
+     "cost": "25",
+     "description": "<span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only. Improve the Attacks, Strength and Damage characteristics of melee weapons equipped by the bearer by 1.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Augury Uplink",
+     "cost": "35",
+     "description": "<span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only. The bearer has the Feel No Pain 5+ ability.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Honoured Fallen (Aura)",
+     "cost": "15",
+     "description": "Adeptus Custodes Vehicle model only. While a friendly Adeptus Custodes Infantry or Adeptus Custodes Mounted unit is within 6\" of the bearer, each time a model in that unit makes an attack, re-roll a Hit roll of 1.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Veteran of the Kataphraktoi",
+     "cost": "10",
+     "description": "Adeptus Custodes Infantry or Adeptus Custodes Mounted model only. In your Command phase, select one Adeptus Custodes Vehicle or <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">MOUNTED</span> unit within 6\" of the bearer. Until the start of your next Command phase, that unit is eligible to shoot in a turn in which it Fell Back.",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "FLAWLESS CONSTRUCTION",
+     "cp_cost": "1",
+     "type": "Solar Spearhead – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Adeptus Custodes Vehicle unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, each time an attack targets a model in your unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of your unit, subtract 1 from the Wound roll."
+    },
+    {
+     "name": "EMPEROR’S VENGEANCE",
+     "cp_cost": "1",
+     "type": "Solar Spearhead – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6, adding 1 to the result if your unit has the Walker keyword. On a 4+, do not remove it from play; The destroyed model can fight after the attacking unit has finished making its attacks (when doing so, it is assumed to have 1 wound remaining), and is then removed from play."
+    },
+    {
+     "name": "WRATHFUL ADVANCE",
+     "cp_cost": "1",
+     "type": "Solar Spearhead – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Fight phase, just before an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army Piles In.<br><br><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit makes a Pile-in move, it can move up to D3+3\" instead of up to 3\"."
+    },
+    {
+     "name": "UNSTOPPABLE",
+     "cp_cost": "1",
+     "type": "Solar Spearhead – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your Movement phase or your Charge phase.<br><br><b>TARGET:</b> One Adeptus Custodes Vehicle or Adeptus Custodes Mounted unit from your army.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit makes a move, it can move through terrain features."
+    },
+    {
+     "name": "PUNISHMENT INESCAPABLE",
+     "cp_cost": "1",
+     "type": "Solar Spearhead – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Until the end of the phase, ranged weapons equipped by models in your unit have the [IGNORES COVER] ability, and until the end of the phase, each time a model in your unit makes an attack, you can ignore any or all modifiers to that attack’s Ballistic Skill characteristic and/or any or all modifiers to the Hit roll."
+    },
+    {
+     "name": "RELENTLESS PERSECUTION",
+     "cp_cost": "1",
+     "type": "Solar Spearhead – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your Movement phase, just after an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">VEHICLE</span> unit from your army Advances.<br><br><b>TARGET:</b> That Adeptus Custodes Vehicle unit.<br><br><b>EFFECT:</b> Until the end of the turn, your unit is eligible to shoot in a turn in which it Advanced. If your unit has the Walker keyword, until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Advanced instead."
+    }
+   ],
+   "dp_cost": 2,
+   "force_disposition": "TAKE AND HOLD",
+   "exclusive_tag": "",
+   "restriction": ""
+  },
+  {
+   "id": "000000861",
+   "name": "Talons Of The Emperor",
+   "legend": "",
+   "rules": [
+    {
+     "name": "Revered Companions",
+     "description": "Anathema Psykana units from your army gain the following the ability:<br><br><b>Null Aegis (Aura):</b> While an Adeptus Custodes unit is within 6\" of this unit, models in that unit have the Feel No Pain 5+ ability against Psychic Attacks and mortal wounds.<br><br>All other <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> units from your army gain the following ability:<br><br><b>Deadly Unity (Aura):</b> While an <span class=\"kwb\">ANATHEMA</span> <span class=\"kwb\">PSYKANA</span> unit is within 6\" of this unit, each time a model in that <span class=\"kwb\">ANATHEMA</span> <span class=\"kwb\">PSYKANA</span> unit makes an attack, add 1 to the Hit roll."
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Aegis Projector",
+     "cost": "20",
+     "description": "ADEPTUS Custodes model only. Once per turn, the first time a saving throw is failed for the bearer’s unit, change the Damage characteristic of that attack to 0.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Champion of the Imperium",
+     "cost": "25",
+     "description": "ADEPTUS CUSTODES model only. The range of the bearer’s Null Aegis or Deadly Unity ability is increased to 9\".",
+     "is_upgrade": false
+    },
+    {
+     "name": "Gift of Terran Artifice",
+     "cost": "15",
+     "description": "ADEPTUS CUSTODES model only. Each time the bearer makes a melee attack, add 1 to the Wound roll.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Radiant Mantle",
+     "cost": "30",
+     "description": "ADEPTUS CUSTODES model only. Each time an attack targets the bearer’s unit, if the attacking model is within 12\", subtract 1 from the Hit roll.",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "TALONS INTERLOCKED",
+     "cp_cost": "1",
+     "type": "Talons Of The Emperor – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> Up to two ADEPTUS CUSTODES INFANTRY units from your army, and one enemy unit that is an eligible target for all of those units.<br><br><b>EFFECT:</b> Until the end of the phase, your units can only target that enemy unit, but each time a model in one of your units makes a ranged attack, improve the Strength and Armour Penetration characteristics of that attack by 1.<br><br><b>RESTRICTIONS:</b> You can only select two units if one (and only one) of them is an ANATHEMA PSYKANA unit and both are within 6\" of each other."
+    },
+    {
+     "name": "EMPYRIC SEVERANCE",
+     "cp_cost": "1",
+     "type": "Talons Of The Emperor – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One ADEPTUS CusTODES unit from your army that was selected as the target of one or more of the attacking unit’s attacks, and one friendly ANATHEMA PSYKANA unit within 6\" of that <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br><br><b>EFFECT:</b> Until the end of the phase, your unit has the Feel No Pain 4+ ability against Psychic attacks and mortal wounds."
+    },
+    {
+     "name": "EMPEROR’S EXECUTIONERS",
+     "cp_cost": "2",
+     "type": "Talons Of The Emperor – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Start of the Fight phase.<br><br><b>TARGET:</b> Up to two Adeptus Custodes units from your army.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in one of your units targets an enemy unit that is below its Starting Strength, add 1 to the Wound roll.<br><br><b>RESTRICTIONS:</b> You can only select two units if one (and only one) of them is an Anathema Psykana unit and both are within 6\" of each other."
+    },
+    {
+     "name": "TALONED PINCER",
+     "cp_cost": "1",
+     "type": "Talons Of The Emperor – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s Movement phase, just after an enemy unit ends a Normal, Advance or Fall Back move.<br><br><b>TARGET:</b> Up to two Adeptus Custodes units from your army that are within 9\" of that enemy unit.<br><br><b>EFFECT:</b> Your units can make a Normal move of up to 6\".<br><br><b>RESTRICTIONS:</b> You cannot select units that are within Engagement Range of one or more enemy units. You can only select two units if one (and only one) of them is an Anathema Psykana unit and both are within 6\" of each other."
+    },
+    {
+     "name": "SHIELD OF HONOUR",
+     "cp_cost": "1",
+     "type": "Talons Of The Emperor – Epic Deed Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s Shooting phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Anathema Psykana Infantry unit from your army that was selected as the target of one or more of the attacking unit’s attacks, and one other friendly Adeptus Custodes Infantry unit (excluding <span class=\"kwb\">ANATHEMA</span> <span class=\"kwb\">PSYKANA</span> units) within 6\" of that <span class=\"kwb\">ANATHEMA</span> <span class=\"kwb\">PSYKANA</span> <span class=\"kwb\">INFANTRY</span> unit.<br><br><b>EFFECT:</b> Until the end of the phase, any attack that targets your <span class=\"kwb\">ANATHEMA</span> <span class=\"kwb\">PSYKANA</span> unit must instead target your other <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit (unless it is not an eligible target)."
+    },
+    {
+     "name": "HUNT AS ONE",
+     "cp_cost": "1",
+     "type": "Talons Of The Emperor – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Start of your Movement phase.<br><br><b>TARGET:</b> Up to two ADEPTUS CUSTODES units from your army.<br><br><b>EFFECT:</b> Until the end of the turn, your units are eilgible to shoot and/or declare a charge in a turn in which they Fell Back.<br><br><b>RESTRICTIONS:</b> You can only select two units if one (and only one) of them is an ANATHEMA PSYKANA unit and both are within 6\" of each other."
+    }
+   ],
+   "dp_cost": 3,
+   "force_disposition": "TAKE AND HOLD",
+   "exclusive_tag": "",
+   "restriction": ""
+  },
+  {
+   "id": "000900047",
+   "name": "Tharanatoi Hammerblow",
+   "legend": "Terminator-armoured warriors crush the enemies of the Throne in swift assaults.",
+   "rules": [
+    {
+     "name": "The Hammer Falls",
+     "description": "If a friendly ADEPTUS CUSTODES TERMINATOR unit made an ingress move this turn, that unit can re-roll Charge rolls. This detachment has the LIONS tag and cannot be taken with another LIONS detachment."
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Mnemo-locked Shrine Cipher",
+     "cost": "25",
+     "description": "ADEPTUS CUSTODES TERMINATOR model only. In your first Movement phase, this unit can make an ingress move.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Efficient Aggression",
+     "cost": "25",
+     "description": "ADEPTUS CUSTODES TERMINATOR model only. (Once per turn, per army) In your opponent's Shooting phase, when an enemy unit has shot, if this unit lost a wound as a result of those attacks, this unit can make a surge move of up to D6+1\".",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "Hardened Resolve",
+     "cp_cost": "1",
+     "type": "",
+     "description": "WHEN: Your opponent's Shooting phase or the Fight phase, when an enemy unit targets a friendly ADEPTUS CUSTODES TERMINATOR unit. TARGET: That unit. EFFECT: Your unit has +1 T."
+    },
+    {
+     "name": "Unleash the Lions",
+     "cp_cost": "1",
+     "type": "",
+     "description": "WHEN: Your Command phase. TARGET: One friendly ALLARUS CUSTODIANS/AQUILON CUSTODIANS unit on the battlefield. EFFECT: Your unit is split into separate units, each containing one model, each with a Starting Strength of 1."
+    },
+    {
+     "name": "Electroexorcist Saturation",
+     "cp_cost": "1",
+     "type": "",
+     "description": "WHEN: Your Shooting phase, when a friendly ADEPTUS CUSTODES TERMINATOR unit is selected to shoot. TARGET: That unit. EFFECT: Your unit's Ballistus Grenade Launcher weapons have D3+3 A."
+    }
+   ],
+   "dp_cost": 1,
+   "force_disposition": "PRIORITY ASSETS",
+   "exclusive_tag": "LIONS",
+   "restriction": ""
+  },
+  {
+   "id": "000000909",
+   "name": "Voyagers in Darkness",
+   "legend": "<b>Some shield companies of the Adeptus Custodes set sail into the darkness between the stars, either guided by visions of the Emperor’s will or believing that they can do the most to defend Terra by seeking out and destroying distant threats.</b>",
+   "rules": [
+    {
+     "name": "Overwhelming Magnificence",
+     "description": "While an enemy unit is within Engagement Range of one or more <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> units from your army, subtract 1 from the Objective Control characteristic of models in that enemy unit."
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Voidstrider",
+     "cost": "0",
+     "description": "Add 2\" to the bearer’s Move characteristic.",
+     "is_upgrade": false
+    },
+    {
+     "name": "Mantle of the Emissary",
+     "cost": "0",
+     "description": "The bearer has an Objective Control characteristic of 5.",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "ARTIFICER ROUNDS",
+     "cp_cost": "1",
+     "type": "Voyagers in Darkness – Battle Tactic Stratagem",
+     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Until the end of the phase, ranged weapons equipped by models in your unit (excluding ballistus grenade launchers) have the [SUSTAINED HITS 1] ability while targeting units within 6\"."
+    },
+    {
+     "name": "AURIC STORM",
+     "cp_cost": "1",
+     "type": "Voyagers in Darkness – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your Charge phase, just after an ALLARUS CUSTODIANS unit from your army ends a Charge move.<br><br><b>TARGET:</b> That <span class=\"kwb\">ALLARUS</span> <span class=\"kwb\">CUSTODIANS</span> unit.<br><br><b>EFFECT:</b> Each enemy unit within Engagement Range of your unit must take a Battle-shock test, subtracting 1 from the result."
+    },
+    {
+     "name": "BREACHING BEHEMOTHS",
+     "cp_cost": "1",
+     "type": "Voyagers in Darkness – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your Movement phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army (excluding ANATHEMA PSYKANA units) that has not been selected to move this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time your unit makes a Normal, Advance or Fall Back move, models in your unit can move through other models as if they were not there. In addition, any Desperate Escape tests taken for models in your unit are automatically passed."
+    },
+    {
+     "name": "INESCAPABLE VENGEANCE",
+     "cp_cost": "1",
+     "type": "Voyagers in Darkness – Strategic Ploy Stratagem",
+     "description": "<b>WHEN:</b> Your Movement phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army (excluding ANATHEMA PSYKANA units) that has not been selected to move this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit makes a Pile-in or Consolidation move, it can ignore Walls and other models for the purposes of determining which enemy units are visible to its own."
+    }
+   ],
+   "dp_cost": 0,
+   "force_disposition": "",
+   "exclusive_tag": "",
+   "restriction": ""
+  }
+ ]
+}

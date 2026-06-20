@@ -1,0 +1,151 @@
+import { useCallback, useEffect, useRef, useState } from 'react';
+import type { ArmyList, FactionIndexEntry, Rules } from './lib/types';
+import { loadIndex, loadRules } from './lib/data';
+import { emptyList } from './lib/helpers';
+import { getList, saveList } from './lib/db';
+import { Home } from './screens/Home';
+import { NewListWizard } from './screens/NewListWizard';
+import { Builder } from './screens/Builder';
+
+type View =
+  | { kind: 'home' }
+  | { kind: 'wizard' }
+  | { kind: 'builder'; list: ArmyList };
+
+export default function App() {
+  const [rules, setRules] = useState<Rules | null>(null);
+  const [factions, setFactions] = useState<FactionIndexEntry[] | null>(null);
+  const [view, setView] = useState<View>({ kind: 'home' });
+  const [error, setError] = useState<string | null>(null);
+
+  // Autosave debounce timer.
+  const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    Promise.all([loadRules(), loadIndex()])
+      .then(([r, idx]) => {
+        setRules(r);
+        setFactions(idx.factions);
+      })
+      .catch((e) => setError(String(e)));
+  }, []);
+
+  const factionName = useCallback(
+    (id: string) => factions?.find((f) => f.id === id)?.name ?? id,
+    [factions],
+  );
+
+  const onListChange = useCallback((l: ArmyList) => {
+    if (saveTimer.current) clearTimeout(saveTimer.current);
+    saveTimer.current = setTimeout(() => {
+      saveList(l).catch(() => {});
+    }, 400);
+  }, []);
+
+  async function openList(id: string) {
+    const l = await getList(id);
+    if (l) setView({ kind: 'builder', list: l });
+  }
+
+  function createList(factionId: string, battleSizeId: string, name: string) {
+    const l = emptyList(factionId, battleSizeId, name);
+    saveList(l).catch(() => {});
+    setView({ kind: 'builder', list: l });
+  }
+
+  if (error) {
+    return (
+      <div className="app">
+        <div className="content">
+          <div className="banner bad">Failed to load data: {error}</div>
+        </div>
+      </div>
+    );
+  }
+
+  if (!rules || !factions) {
+    return (
+      <div className="app">
+        <div className="content">
+          <div className="spin" />
+          <div className="center muted">Loading data…</div>
+        </div>
+      </div>
+    );
+  }
+
+  const title =
+    view.kind === 'builder'
+      ? view.list.name
+      : view.kind === 'wizard'
+      ? 'New list'
+      : 'New40k List Builder';
+  const subtitle =
+    view.kind === 'builder'
+      ? `${factionName(view.list.factionId)} · ${
+          rules.battle_sizes.find((b) => b.id === view.list.battleSizeId)?.name ??
+          ''
+        }`
+      : '11th edition · #new40k';
+
+  return (
+    <div className="app">
+      <header className="topbar">
+        {view.kind !== 'home' && (
+          <button
+            className="ghost iconbtn"
+            aria-label="Back"
+            onClick={() => setView({ kind: 'home' })}
+          >
+            ←
+          </button>
+        )}
+        <div className="title">
+          {title}
+          <small>{subtitle}</small>
+        </div>
+      </header>
+
+      <main className="content">
+        {view.kind === 'home' && (
+          <Home
+            rules={rules}
+            factionName={factionName}
+            onNew={() => setView({ kind: 'wizard' })}
+            onOpen={openList}
+          />
+        )}
+        {view.kind === 'wizard' && (
+          <NewListWizard
+            rules={rules}
+            factions={factions}
+            onCreate={createList}
+            onCancel={() => setView({ kind: 'home' })}
+          />
+        )}
+        {view.kind === 'builder' && (
+          <Builder
+            key={view.list.id}
+            initial={view.list}
+            rules={rules}
+            onChange={onListChange}
+          />
+        )}
+
+        {view.kind !== 'builder' && (
+          <footer className="footer">
+            <div>
+              <b>Powered by Wahapedia.</b>
+            </div>
+            <div>
+              Unofficial, fan-made tool. Not affiliated with or endorsed by Games
+              Workshop. Warhammer 40,000 and all associated names are trademarks
+              of Games Workshop Ltd.
+            </div>
+            <div>{rules.attribution}</div>
+          </footer>
+        )}
+      </main>
+    </div>
+  );
+}

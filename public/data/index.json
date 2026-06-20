@@ -1,0 +1,247 @@
+{
+ "factions": [
+  {
+   "id": "AS",
+   "name": "Adepta Sororitas",
+   "slug": "adepta-sororitas",
+   "super_keywords": [
+    "IMPERIUM"
+   ],
+   "unit_count": 38,
+   "detachment_count": 10
+  },
+  {
+   "id": "AC",
+   "name": "Adeptus Custodes",
+   "slug": "adeptus-custodes",
+   "super_keywords": [
+    "IMPERIUM"
+   ],
+   "unit_count": 31,
+   "detachment_count": 11
+  },
+  {
+   "id": "AdM",
+   "name": "Adeptus Mechanicus",
+   "slug": "adeptus-mechanicus",
+   "super_keywords": [
+    "IMPERIUM"
+   ],
+   "unit_count": 39,
+   "detachment_count": 13
+  },
+  {
+   "id": "TL",
+   "name": "Adeptus Titanicus",
+   "slug": "adeptus-titanicus",
+   "super_keywords": [
+    "IMPERIUM"
+   ],
+   "unit_count": 4,
+   "detachment_count": 0
+  },
+  {
+   "id": "AE",
+   "name": "Aeldari",
+   "slug": "aeldari",
+   "super_keywords": [
+    "AELDARI"
+   ],
+   "unit_count": 97,
+   "detachment_count": 19
+  },
+  {
+   "id": "AM",
+   "name": "Astra Militarum",
+   "slug": "astra-militarum",
+   "super_keywords": [
+    "IMPERIUM"
+   ],
+   "unit_count": 134,
+   "detachment_count": 13
+  },
+  {
+   "id": "CD",
+   "name": "Chaos Daemons",
+   "slug": "chaos-daemons",
+   "super_keywords": [
+    "CHAOS",
+    "LEGIONES DAEMONICA"
+   ],
+   "unit_count": 106,
+   "detachment_count": 14
+  },
+  {
+   "id": "QT",
+   "name": "Chaos Knights",
+   "slug": "chaos-knights",
+   "super_keywords": [
+    "CHAOS",
+    "HERETIC ASTARTES"
+   ],
+   "unit_count": 37,
+   "detachment_count": 8
+  },
+  {
+   "id": "CSM",
+   "name": "Chaos Space Marines",
+   "slug": "chaos-space-marines",
+   "super_keywords": [
+    "CHAOS",
+    "HERETIC ASTARTES"
+   ],
+   "unit_count": 112,
+   "detachment_count": 20
+  },
+  {
+   "id": "DG",
+   "name": "Death Guard",
+   "slug": "death-guard",
+   "super_keywords": [
+    "CHAOS",
+    "HERETIC ASTARTES",
+    "NURGLE"
+   ],
+   "unit_count": 71,
+   "detachment_count": 12
+  },
+  {
+   "id": "DRU",
+   "name": "Drukhari",
+   "slug": "drukhari",
+   "super_keywords": [
+    "AELDARI"
+   ],
+   "unit_count": 47,
+   "detachment_count": 13
+  },
+  {
+   "id": "EC",
+   "name": "Emperor’s Children",
+   "slug": "emperor-s-children",
+   "super_keywords": [
+    "CHAOS",
+    "HERETIC ASTARTES",
+    "SLAANESH"
+   ],
+   "unit_count": 23,
+   "detachment_count": 11
+  },
+  {
+   "id": "GC",
+   "name": "Genestealer Cults",
+   "slug": "genestealer-cults",
+   "super_keywords": [
+    "TYRANIDS"
+   ],
+   "unit_count": 139,
+   "detachment_count": 13
+  },
+  {
+   "id": "GK",
+   "name": "Grey Knights",
+   "slug": "grey-knights",
+   "super_keywords": [
+    "IMPERIUM"
+   ],
+   "unit_count": 31,
+   "detachment_count": 11
+  },
+  {
+   "id": "AoI",
+   "name": "Imperial Agents",
+   "slug": "imperial-agents",
+   "super_keywords": [
+    "IMPERIUM",
+    "AGENTS OF THE IMPERIUM"
+   ],
+   "unit_count": 46,
+   "detachment_count": 7
+  },
+  {
+   "id": "QI",
+   "name": "Imperial Knights",
+   "slug": "imperial-knights",
+   "super_keywords": [
+    "IMPERIUM"
+   ],
+   "unit_count": 28,
+   "detachment_count": 8
+  },
+  {
+   "id": "LoV",
+   "name": "Leagues of Votann",
+   "slug": "leagues-of-votann",
+   "super_keywords": [],
+   "unit_count": 22,
+   "detachment_count": 12
+  },
+  {
+   "id": "NEC",
+   "name": "Necrons",
+   "slug": "necrons",
+   "super_keywords": [],
+   "unit_count": 64,
+   "detachment_count": 16
+  },
+  {
+   "id": "ORK",
+   "name": "Orks",
+   "slug": "orks",
+   "super_keywords": [],
+   "unit_count": 87,
+   "detachment_count": 14
+  },
+  {
+   "id": "SM",
+   "name": "Space Marines",
+   "slug": "space-marines",
+   "super_keywords": [
+    "IMPERIUM",
+    "ADEPTUS ASTARTES"
+   ],
+   "unit_count": 298,
+   "detachment_count": 56
+  },
+  {
+   "id": "TS",
+   "name": "Thousand Sons",
+   "slug": "thousand-sons",
+   "super_keywords": [
+    "CHAOS",
+    "HERETIC ASTARTES",
+    "TZEENTCH"
+   ],
+   "unit_count": 60,
+   "detachment_count": 12
+  },
+  {
+   "id": "TYR",
+   "name": "Tyranids",
+   "slug": "tyranids",
+   "super_keywords": [],
+   "unit_count": 57,
+   "detachment_count": 14
+  },
+  {
+   "id": "TAU",
+   "name": "T’au Empire",
+   "slug": "t-au-empire",
+   "super_keywords": [],
+   "unit_count": 63,
+   "detachment_count": 9
+  },
+  {
+   "id": "WE",
+   "name": "World Eaters",
+   "slug": "world-eaters",
+   "super_keywords": [
+    "CHAOS",
+    "KHORNE"
+   ],
+   "unit_count": 58,
+   "detachment_count": 10
+  }
+ ],
+ "last_update": "2026-06-20"
+}
