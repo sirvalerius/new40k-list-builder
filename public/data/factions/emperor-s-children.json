@@ -134,11 +134,17 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "220"
+     "cost": "220",
+     "variant": "1 model",
+     "tier_min": 1,
+     "tier_max": 2
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "240"
+     "cost": "240",
+     "variant": "1 model",
+     "tier_min": 3,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -157,7 +163,8 @@
    "is_character": false,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": true
   },
   {
    "id": "000004093",
@@ -266,7 +273,10 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "80"
+     "cost": "80",
+     "variant": "1 model",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -286,7 +296,8 @@
    "is_character": false,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": true
+   "is_dedicated_transport": true,
+   "has_order_tiers": false
   },
   {
    "id": "000004090",
@@ -353,7 +364,10 @@
    "points": [
     {
      "description": "2 models",
-     "cost": "70"
+     "cost": "70",
+     "variant": "2 models",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -369,7 +383,8 @@
    "is_character": false,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   },
   {
    "id": "000004081",
@@ -520,7 +535,10 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "145"
+     "cost": "145",
+     "variant": "5 models",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -537,7 +555,8 @@
    "is_character": false,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   },
   {
    "id": "000004086",
@@ -638,11 +657,17 @@
    "points": [
     {
      "description": "1 model (1st unit)",
-     "cost": "170"
+     "cost": "170",
+     "variant": "1 model",
+     "tier_min": 1,
+     "tier_max": 1
     },
     {
      "description": "1 model (2nd+ unit)",
-     "cost": "185"
+     "cost": "185",
+     "variant": "1 model",
+     "tier_min": 2,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -660,7 +685,8 @@
    "is_character": true,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": true
   },
   {
    "id": "000004087",
@@ -761,11 +787,17 @@
    "points": [
     {
      "description": "1 model (1st unit)",
-     "cost": "205"
+     "cost": "205",
+     "variant": "1 model",
+     "tier_min": 1,
+     "tier_max": 1
     },
     {
      "description": "1 model (2nd+ unit)",
-     "cost": "235"
+     "cost": "235",
+     "variant": "1 model",
+     "tier_min": 2,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -784,7 +816,8 @@
    "is_character": true,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": true
   },
   {
    "id": "000004095",
@@ -873,7 +906,10 @@
    "points": [
     {
      "description": "10 models",
-     "cost": "90"
+     "cost": "90",
+     "variant": "10 models",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -892,7 +928,8 @@
    "is_character": false,
    "is_battleline": true,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   },
   {
    "id": "000004208",
@@ -1091,11 +1128,17 @@
    "points": [
     {
      "description": "1 model (1st unit)",
-     "cost": "290"
+     "cost": "290",
+     "variant": "1 model",
+     "tier_min": 1,
+     "tier_max": 1
     },
     {
      "description": "1 model (2nd+ unit)",
-     "cost": "320"
+     "cost": "320",
+     "variant": "1 model",
+     "tier_min": 2,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -1113,7 +1156,8 @@
    "is_character": false,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": true
   },
   {
    "id": "000004096",
@@ -1181,11 +1225,17 @@
    "points": [
     {
      "description": "3 models",
-     "cost": "90"
+     "cost": "90",
+     "variant": "3 models",
+     "tier_min": null,
+     "tier_max": null
     },
     {
      "description": "6 models",
-     "cost": "180"
+     "cost": "180",
+     "variant": "6 models",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -1203,7 +1253,8 @@
    "is_character": false,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   },
   {
    "id": "000004089",
@@ -1275,11 +1326,17 @@
    "points": [
     {
      "description": "3 models",
-     "cost": "95"
+     "cost": "95",
+     "variant": "3 models",
+     "tier_min": null,
+     "tier_max": null
     },
     {
      "description": "6 models",
-     "cost": "190"
+     "cost": "190",
+     "variant": "6 models",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -1296,7 +1353,8 @@
    "is_character": false,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   },
   {
    "id": "000004077",
@@ -1438,7 +1496,10 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "350"
+     "cost": "350",
+     "variant": "1 model",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -1459,7 +1520,8 @@
    "is_character": true,
    "is_battleline": false,
    "is_epic_hero": true,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   },
   {
    "id": "000004092",
@@ -1556,7 +1618,10 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "175"
+     "cost": "175",
+     "variant": "1 model",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -1574,7 +1639,8 @@
    "is_character": false,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   },
   {
    "id": "000004080",
@@ -1707,11 +1773,17 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "85"
+     "cost": "85",
+     "variant": "5 models",
+     "tier_min": null,
+     "tier_max": null
     },
     {
      "description": "10 models",
-     "cost": "160"
+     "cost": "160",
+     "variant": "10 models",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -1729,7 +1801,8 @@
    "is_character": false,
    "is_battleline": true,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   },
   {
    "id": "000004097",
@@ -1871,11 +1944,17 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "255"
+     "cost": "255",
+     "variant": "1 model",
+     "tier_min": 1,
+     "tier_max": 2
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "270"
+     "cost": "270",
+     "variant": "1 model",
+     "tier_min": 3,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -1895,7 +1974,8 @@
    "is_character": true,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": true
   },
   {
    "id": "000004078",
@@ -2065,11 +2145,17 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "80"
+     "cost": "80",
+     "variant": "1 model",
+     "tier_min": 1,
+     "tier_max": 2
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "90"
+     "cost": "90",
+     "variant": "1 model",
+     "tier_min": 3,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -2087,7 +2173,8 @@
    "is_character": true,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": true
   },
   {
    "id": "000004084",
@@ -2184,7 +2271,10 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "70"
+     "cost": "70",
+     "variant": "1 model",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -2202,7 +2292,8 @@
    "is_character": true,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   },
   {
    "id": "000004083",
@@ -2298,7 +2389,10 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "130"
+     "cost": "130",
+     "variant": "1 model",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -2316,7 +2410,8 @@
    "is_character": true,
    "is_battleline": false,
    "is_epic_hero": true,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   },
   {
    "id": "000004091",
@@ -2407,11 +2502,17 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "130"
+     "cost": "130",
+     "variant": "1 model",
+     "tier_min": 1,
+     "tier_max": 2
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "140"
+     "cost": "140",
+     "variant": "1 model",
+     "tier_min": 3,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -2429,7 +2530,8 @@
    "is_character": false,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": true
   },
   {
    "id": "000004088",
@@ -2549,11 +2651,17 @@
    "points": [
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "145"
+     "cost": "145",
+     "variant": "6 models",
+     "tier_min": 1,
+     "tier_max": 2
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "160"
+     "cost": "160",
+     "variant": "6 models",
+     "tier_min": 3,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -2569,7 +2677,8 @@
    "is_character": false,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": true
   },
   {
    "id": "000004098",
@@ -2669,11 +2778,17 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "80"
+     "cost": "80",
+     "variant": "5 models",
+     "tier_min": null,
+     "tier_max": null
     },
     {
      "description": "10 models",
-     "cost": "155"
+     "cost": "155",
+     "variant": "10 models",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -2691,7 +2806,8 @@
    "is_character": false,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   },
   {
    "id": "000004094",
@@ -2814,7 +2930,10 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "340"
+     "cost": "340",
+     "variant": "1 model",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -2835,7 +2954,8 @@
    "is_character": true,
    "is_battleline": false,
    "is_epic_hero": true,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   },
   {
    "id": "000004085",
@@ -2941,7 +3061,10 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "60"
+     "cost": "60",
+     "variant": "1 model",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -2960,7 +3083,8 @@
    "is_character": true,
    "is_battleline": false,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   },
   {
    "id": "000004079",
@@ -3139,11 +3263,17 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "80"
+     "cost": "80",
+     "variant": "5 models",
+     "tier_min": null,
+     "tier_max": null
     },
     {
      "description": "10 models",
-     "cost": "160"
+     "cost": "160",
+     "variant": "10 models",
+     "tier_min": null,
+     "tier_max": null
     }
    ],
    "keywords": [
@@ -3161,7 +3291,8 @@
    "is_character": false,
    "is_battleline": true,
    "is_epic_hero": false,
-   "is_dedicated_transport": false
+   "is_dedicated_transport": false,
+   "has_order_tiers": false
   }
  ],
  "detachments": [

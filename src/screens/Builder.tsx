@@ -10,9 +10,11 @@ import type {
 import { getBattleSize, validateList } from '../lib/rules';
 import {
   buildListUnit,
+  datasheetMap,
   download,
   exportListText,
   intOf,
+  reconcileTiers,
 } from '../lib/helpers';
 import { loadFactionById } from '../lib/data';
 import { SummaryBar } from '../components/SummaryBar';
@@ -53,7 +55,11 @@ export function Builder({
   // Mutate helper: updates timestamp and bubbles up for autosave.
   function update(mut: (l: ArmyList) => ArmyList) {
     setList((prev) => {
-      const next = { ...mut(prev), updatedAt: Date.now() };
+      const mutated = mut(prev);
+      // Re-apply pick-order pricing (2nd+/3rd+) after every change so escalating
+      // unit costs stay correct as copies are added or removed.
+      const units = fd ? reconcileTiers(mutated.units, datasheetMap(fd)) : mutated.units;
+      const next = { ...mutated, units, updatedAt: Date.now() };
       onChange(next);
       return next;
     });

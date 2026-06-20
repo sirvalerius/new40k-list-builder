@@ -8,7 +8,7 @@ import type {
 } from '../lib/types';
 import { DatasheetCard } from '../components/DatasheetCard';
 import { Modal } from '../components/Modal';
-import { copiesOf, intOf } from '../lib/helpers';
+import { copiesOf, intOf, tierForPick, unitVariants } from '../lib/helpers';
 
 const ROLE_ORDER = [
   'Epic Hero',
@@ -227,12 +227,15 @@ function AddUnitModal({
   onClose: () => void;
   onConfirm: (tier: PointsOption) => void;
 }) {
-  const tiers = ds.points.length
-    ? ds.points
-    : [{ description: 'Default', cost: '0' }];
+  // Offer distinct model-count variants; the pick-order tier (2nd+/3rd+) is applied
+  // automatically based on how many copies are already in the list.
+  const tiers = unitVariants(ds);
   const [sel, setSel] = useState(0);
 
   const have = copiesOf(list, ds.id);
+  const nextPick = have + 1; // this unit will be the Nth copy
+  const selVariant = tiers[sel]?.variant ?? tiers[sel]?.description ?? '';
+  const resolvedCost = intOf((tierForPick(ds, selVariant, nextPick) ?? tiers[sel])?.cost);
   const lim = ds.is_battleline ? blLimit : unitLimit;
   const atLimit = lim > 0 && have >= lim;
   const heroBlocked = ds.is_epic_hero && have >= 1;
@@ -253,7 +256,7 @@ function AddUnitModal({
             disabled={blocked}
             onClick={() => onConfirm(tiers[sel])}
           >
-            {blocked ? 'At limit' : `Add — ${intOf(tiers[sel].cost)} pts`}
+            {blocked ? 'At limit' : `Add — ${resolvedCost} pts`}
           </button>
         </div>
       }
@@ -270,18 +273,27 @@ function AddUnitModal({
           </div>
         </div>
       )}
-      <h3 className="muted">Points option</h3>
+      <h3 className="muted">{ds.has_order_tiers ? 'Unit size' : 'Points option'}</h3>
       <div className="col" style={{ gap: 6 }}>
-        {tiers.map((t, i) => (
-          <button
-            key={i}
-            className={`pill-pts ${sel === i ? 'sel' : ''}`}
-            onClick={() => setSel(i)}
-          >
-            <b>{intOf(t.cost)} pts</b> — {t.description}
-          </button>
-        ))}
+        {tiers.map((t, i) => {
+          const vKey = t.variant ?? t.description;
+          const opt = tierForPick(ds, vKey, nextPick) ?? t;
+          return (
+            <button
+              key={i}
+              className={`pill-pts ${sel === i ? 'sel' : ''}`}
+              onClick={() => setSel(i)}
+            >
+              <b>{intOf(opt.cost)} pts</b> — {ds.has_order_tiers ? vKey : t.description}
+            </button>
+          );
+        })}
       </div>
+      {ds.has_order_tiers && (
+        <div className="muted tiny mt">
+          Costo automatico per il {nextPick}º esemplare (sale per 2º+/3º+). Si ricalcola se aggiungi o rimuovi copie.
+        </div>
+      )}
       <div className="mt">
         <DatasheetCard ds={ds} />
       </div>

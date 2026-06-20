@@ -48,12 +48,66 @@ export function buildListUnit(
     name: ds.name,
     pointsCost: intOf(tier.cost),
     pointsLabel: tier.description,
+    variantKey: tier.variant ?? tier.description,
     isEpicHero: ds.is_epic_hero,
     isBattleline: ds.is_battleline,
     isCharacter: ds.is_character,
     isAlly: false,
     warlord: false,
   };
+}
+
+/** Distinct model-count variants offered for a datasheet (collapses pick-order tiers). */
+export function unitVariants(ds: Datasheet): PointsOption[] {
+  if (!ds.points.length) return [{ description: 'Default', cost: '0', variant: 'Default' }];
+  if (!ds.has_order_tiers) return ds.points;
+  const seen = new Set<string>();
+  const out: PointsOption[] = [];
+  for (const p of ds.points) {
+    const key = p.variant ?? p.description;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(p); // representative (first/lowest-tier) option for this variant
+  }
+  return out;
+}
+
+const inTier = (p: PointsOption, idx: number): boolean =>
+  (p.tier_min == null || idx >= p.tier_min) && (p.tier_max == null || idx <= p.tier_max);
+
+/** The points option that applies to the `pick`-th copy of a chosen variant (1-based). */
+export function tierForPick(
+  ds: Datasheet,
+  variantKey: string,
+  pick: number,
+): PointsOption | undefined {
+  const opts = ds.points.filter((p) => (p.variant ?? p.description) === variantKey);
+  return opts.find((p) => inTier(p, pick)) ?? opts[0];
+}
+
+/**
+ * Re-price pick-order-tiered units by their position among same-datasheet copies.
+ * The Nth unit of a datasheet (in list order) pays the tier whose [min,max] contains N,
+ * for the variant (model count) the player chose. Non-tiered units are left untouched.
+ * Must run after any add/remove/reorder so escalating costs stay correct.
+ */
+export function reconcileTiers(
+  units: ListUnit[],
+  dsMap: Map<string, Datasheet>,
+): ListUnit[] {
+  const order = new Map<string, number>();
+  return units.map((u) => {
+    const ds = dsMap.get(u.datasheetId);
+    const idx = (order.get(u.datasheetId) ?? 0) + 1;
+    order.set(u.datasheetId, idx);
+    if (!ds || !ds.has_order_tiers) return u;
+    const variant = u.variantKey ?? u.pointsLabel;
+    const opts = ds.points.filter((p) => (p.variant ?? p.description) === variant);
+    const match = opts.find((p) => inTier(p, idx)) ?? opts[0];
+    if (!match) return u;
+    if (intOf(match.cost) === intOf(u.pointsCost) && match.description === u.pointsLabel) return u;
+    return { ...u, pointsCost: intOf(match.cost), pointsLabel: match.description };
+  });
 }
 
 export function emptyList(

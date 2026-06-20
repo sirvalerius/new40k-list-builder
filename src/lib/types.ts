@@ -50,7 +50,13 @@ export interface FactionIndexEntry {
 export interface Stat { name: string; M: string; T: string; Sv: string; inv_sv: string; W: string; Ld: string; OC: string; base_size: string; }
 export interface Weapon { name: string; type: string; range: string; A: string; BS_WS: string; S: string; AP: string; D: string; description: string; }
 export interface Ability { name: string; type: string; parameter: string; description: string; }
-export interface PointsOption { description: string; cost: string; }
+export interface PointsOption {
+  description: string;
+  cost: string;
+  variant?: string;          // description without the pick-order tier marker (e.g. "5 models")
+  tier_min?: number | null;  // first pick this tier applies to (1-based); null = unbounded
+  tier_max?: number | null;  // last pick this tier applies to; null = unbounded
+}
 
 export interface Datasheet {
   id: string;
@@ -70,6 +76,7 @@ export interface Datasheet {
   is_battleline: boolean;
   is_epic_hero: boolean;
   is_dedicated_transport: boolean;
+  has_order_tiers?: boolean;   // true if points cost escalates by pick order (2nd+/3rd+)
 }
 
 export interface Enhancement { name: string; cost: string; description: string; is_upgrade: boolean; }
@@ -102,8 +109,9 @@ export interface ListUnit {
   uid: string;                 // instance id
   datasheetId: string;
   name: string;
-  pointsCost: number;          // chosen tier cost
-  pointsLabel: string;         // which model-count option
+  pointsCost: number;          // resolved cost (auto-set by pick-order tier when applicable)
+  pointsLabel: string;         // resolved option description
+  variantKey?: string;         // chosen model-count variant (e.g. "5 models"); drives auto-tiering
   isEpicHero: boolean;
   isBattleline: boolean;
   isCharacter: boolean;
