@@ -29,6 +29,19 @@ export const wargearTotal = (u: ListUnit): number =>
 export const unitTotal = (u: ListUnit): number =>
   intOf(u.pointsCost) + intOf(u.enhancementCost) + wargearTotal(u);
 
+/** Clamp a unit's chosen weapon-option quantities to their per-option limits
+ *  for the unit's current model count (used when the model count changes). */
+export function clampLoadout(unit: ListUnit, ds: Datasheet): import('./types').ChosenWargear[] {
+  const count = unit.modelCount ?? ds.model_max ?? 1;
+  const limitOf = new Map((ds.weapon_options ?? []).map((o) => [o.text, o.limit]));
+  return (unit.wargearCosts ?? [])
+    .map((w) => {
+      const max = optionMax(limitOf.get(w.name), count);
+      return max != null && w.qty > max ? { ...w, qty: max } : w;
+    })
+    .filter((w) => w.qty > 0);
+}
+
 /** Max copies of a weapon option allowed for a unit of `modelCount` models.
  *  per_n = 1 per N (floor); all/slots/fixed per the limit; null = unbounded. */
 export function optionMax(

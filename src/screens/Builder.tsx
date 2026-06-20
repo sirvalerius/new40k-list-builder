@@ -11,6 +11,7 @@ import type {
 import { getBattleSize, validateList } from '../lib/rules';
 import {
   buildListUnit,
+  clampLoadout,
   datasheetMap,
   download,
   exportListText,
@@ -137,6 +138,20 @@ export function Builder({
     }));
   }
 
+  function setModelCount(uid: string, count: number) {
+    const dsMap = fd ? datasheetMap(fd) : null;
+    update((l) => ({
+      ...l,
+      units: l.units.map((u) => {
+        if (u.uid !== uid) return u;
+        const next = { ...u, modelCount: count };
+        const ds = dsMap?.get(u.datasheetId);
+        return ds ? { ...next, wargearCosts: clampLoadout(next, ds) } : next;
+        // reconcileTiers (in update) re-prices to the bracket containing `count`.
+      }),
+    }));
+  }
+
   function assignEnhancement(uid: string, enh: Enhancement) {
     update((l) => ({
       ...l,
@@ -232,6 +247,7 @@ export function Builder({
           onRemove={removeUnit}
           onSetWarlord={setWarlord}
           onSetWargear={setWargear}
+          onSetModelCount={setModelCount}
         />
       )}
       {tab === 'enh' && (

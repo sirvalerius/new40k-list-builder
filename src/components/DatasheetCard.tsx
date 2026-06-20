@@ -1,9 +1,11 @@
-import type { Datasheet } from '../lib/types';
+import type { ChosenWargear, Datasheet } from '../lib/types';
 import { StatLine } from './StatLine';
 import { Collapsible } from './Collapsible';
 import { stripHtml } from '../lib/helpers';
 
-export function DatasheetCard({ ds }: { ds: Datasheet }) {
+// When `selected` is given (a unit in the list), only the chosen weapon options are shown;
+// otherwise (browsing) every option is listed.
+export function DatasheetCard({ ds, selected }: { ds: Datasheet; selected?: ChosenWargear[] }) {
   const tags: string[] = [];
   if (ds.is_character) tags.push('Character');
   if (ds.is_battleline) tags.push('Battleline');
@@ -12,7 +14,12 @@ export function DatasheetCard({ ds }: { ds: Datasheet }) {
 
   const weapons = ds.weapons.filter((w) => w.name);
   const abilities = ds.abilities.filter((a) => a.name || a.description);
-  const options = ds.weapon_options || [];
+  const selQty = selected
+    ? new Map(selected.filter((s) => s.qty > 0).map((s) => [s.name, s.qty]))
+    : null;
+  const options = (ds.weapon_options || []).filter((o) =>
+    selQty ? selQty.has(o.text) : true,
+  );
 
   return (
     <div className="col" style={{ gap: 8 }}>
@@ -49,10 +56,11 @@ export function DatasheetCard({ ds }: { ds: Datasheet }) {
       )}
 
       {options.length > 0 && (
-        <Collapsible title={`Weapon options (${options.length})`}>
+        <Collapsible title={`${selQty ? 'Loadout' : 'Weapon options'} (${options.length})`}>
           <ul className="col" style={{ gap: 4, margin: 0, paddingLeft: 18 }}>
             {options.map((o, i) => (
               <li key={i} className="small">
+                {selQty ? <b>{selQty.get(o.text)}× </b> : null}
                 <span className="muted">{stripHtml(o.text)}</span>{' '}
                 {o.cost > 0 ? (
                   <span className="badge">+{o.cost} pt{o.type === 'model' ? '' : ' each'}</span>

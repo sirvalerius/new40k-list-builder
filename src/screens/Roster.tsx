@@ -37,6 +37,7 @@ export function Roster({
   onRemove,
   onSetWarlord,
   onSetWargear,
+  onSetModelCount,
 }: {
   list: ArmyList;
   fd: FactionData;
@@ -45,6 +46,7 @@ export function Roster({
   onRemove: (uid: string) => void;
   onSetWarlord: (uid: string) => void;
   onSetWargear: (uid: string, wargear: ChosenWargear[]) => void;
+  onSetModelCount: (uid: string, count: number) => void;
 }) {
   const [query, setQuery] = useState('');
   const [browsing, setBrowsing] = useState(false);
@@ -106,6 +108,26 @@ export function Roster({
                     ? ` · +${u.enhancementName} (${u.enhancementCost})`
                     : ''}
                 </div>
+                {ds?.countable && (ds.model_min ?? 1) !== (ds.model_max ?? 1) && (
+                  <div className="row mt" style={{ gap: 8, alignItems: 'center' }}>
+                    <span className="muted tiny">Models:</span>
+                    <button
+                      className="ghost stepper sm"
+                      disabled={(u.modelCount ?? ds.model_min!) <= (ds.model_min ?? 1)}
+                      onClick={() => onSetModelCount(u.uid, (u.modelCount ?? ds.model_min!) - 1)}
+                    >
+                      −
+                    </button>
+                    <b style={{ minWidth: 22, textAlign: 'center' }}>{u.modelCount ?? ds.model_min}</b>
+                    <button
+                      className="ghost stepper sm"
+                      disabled={(u.modelCount ?? ds.model_min!) >= (ds.model_max ?? 1)}
+                      onClick={() => onSetModelCount(u.uid, (u.modelCount ?? ds.model_min!) + 1)}
+                    >
+                      ＋
+                    </button>
+                  </div>
+                )}
                 <div className="row wrap mt" style={{ gap: 4 }}>
                   {u.warlord && <span className="badge warlord">Warlord</span>}
                   {u.isCharacter && <span className="badge char">Character</span>}
@@ -141,7 +163,7 @@ export function Roster({
               <details style={{ marginTop: 8 }}>
                 <summary className="muted small">Datasheet</summary>
                 <div className="mt">
-                  <DatasheetCard ds={ds} />
+                  <DatasheetCard ds={ds} selected={u.wargearCosts ?? []} />
                 </div>
               </details>
             )}
