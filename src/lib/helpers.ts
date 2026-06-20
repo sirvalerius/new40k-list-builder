@@ -21,6 +21,14 @@ export const intOf = (s: string | number | undefined): number => {
   return Number.isFinite(n) ? n : 0;
 };
 
+/** Sum of chosen paid wargear options (qty x cost). */
+export const wargearTotal = (u: ListUnit): number =>
+  (u.wargearCosts ?? []).reduce((s, w) => s + intOf(w.cost) * (w.qty || 0), 0);
+
+/** Full points cost of a list unit: base + enhancement + paid wargear. */
+export const unitTotal = (u: ListUnit): number =>
+  intOf(u.pointsCost) + intOf(u.enhancementCost) + wargearTotal(u);
+
 /** Strip the Wahapedia HTML markup (kwb spans, <br>, <b>) down to plain text. */
 export function stripHtml(html: string): string {
   if (!html) return '';
@@ -194,7 +202,9 @@ export function exportListText(
     if (u.isAlly) tags.push('ALLY');
     if (u.enhancementName)
       tags.push(`+${u.enhancementName} (${u.enhancementCost ?? 0})`);
-    const cost = intOf(u.pointsCost) + intOf(u.enhancementCost);
+    for (const w of u.wargearCosts ?? [])
+      if (w.qty > 0) tags.push(`${w.qty}x ${w.name} (${intOf(w.cost) * w.qty})`);
+    const cost = unitTotal(u);
     lines.push(
       `• ${u.name} [${u.pointsLabel}] — ${cost} pts${
         tags.length ? '  {' + tags.join(', ') + '}' : ''

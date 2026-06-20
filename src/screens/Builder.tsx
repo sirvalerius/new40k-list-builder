@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type {
   ArmyList,
+  ChosenWargear,
   Datasheet,
   Enhancement,
   FactionData,
@@ -129,6 +130,13 @@ export function Builder({
     }));
   }
 
+  function setWargear(uid: string, wargear: ChosenWargear[]) {
+    update((l) => ({
+      ...l,
+      units: l.units.map((u) => (u.uid === uid ? { ...u, wargearCosts: wargear } : u)),
+    }));
+  }
+
   function assignEnhancement(uid: string, enh: Enhancement) {
     update((l) => ({
       ...l,
@@ -223,6 +231,7 @@ export function Builder({
           onAdd={addUnit}
           onRemove={removeUnit}
           onSetWarlord={setWarlord}
+          onSetWargear={setWargear}
         />
       )}
       {tab === 'enh' && (

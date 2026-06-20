@@ -159,7 +159,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000377",
@@ -278,7 +279,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000379",
@@ -394,7 +396,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000001362",
@@ -510,7 +513,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000001361",
@@ -658,7 +662,8 @@
    "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000399",
@@ -802,7 +807,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000382",
@@ -1014,7 +1020,14 @@
    "has_order_tiers": false,
    "model_min": 4,
    "model_max": 10,
-   "countable": true
+   "countable": true,
+   "wargear_options": [
+    {
+     "name": "Psycannon",
+     "cost": 5,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000380",
@@ -1142,7 +1155,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000375",
@@ -1294,7 +1308,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000001360",
@@ -1521,7 +1536,19 @@
    "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": [
+    {
+     "name": "Sublimator",
+     "cost": 15,
+     "type": "wargear"
+    },
+    {
+     "name": "Heavy psycannon",
+     "cost": 15,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000374",
@@ -1649,7 +1676,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000390",
@@ -1889,7 +1917,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000002768",
@@ -2063,7 +2092,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000001197",
@@ -2229,7 +2259,8 @@
    "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000387",
@@ -2404,7 +2435,8 @@
    "has_order_tiers": true,
    "model_min": 5,
    "model_max": 10,
-   "countable": true
+   "countable": true,
+   "wargear_options": []
   },
   {
    "id": "000000373",
@@ -2541,7 +2573,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000391",
@@ -2700,7 +2733,8 @@
    "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000392",
@@ -2861,7 +2895,8 @@
    "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000393",
@@ -3022,7 +3057,8 @@
    "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000389",
@@ -3197,7 +3233,14 @@
    "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": [
+    {
+     "name": "Heavy psycannon",
+     "cost": 15,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000384",
@@ -3408,7 +3451,14 @@
    "has_order_tiers": true,
    "model_min": 4,
    "model_max": 10,
-   "countable": true
+   "countable": true,
+   "wargear_options": [
+    {
+     "name": "Psycannon",
+     "cost": 5,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000388",
@@ -3582,7 +3632,14 @@
    "has_order_tiers": true,
    "model_min": 5,
    "model_max": 10,
-   "countable": true
+   "countable": true,
+   "wargear_options": [
+    {
+     "name": "Psycannon",
+     "cost": 5,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000383",
@@ -3767,7 +3824,14 @@
    "has_order_tiers": true,
    "model_min": 5,
    "model_max": 10,
-   "countable": true
+   "countable": true,
+   "wargear_options": [
+    {
+     "name": "Psycannon",
+     "cost": 5,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000395",
@@ -3908,7 +3972,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000396",
@@ -4032,7 +4097,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000397",
@@ -4179,7 +4245,8 @@
    "has_order_tiers": false,
    "model_min": 4,
    "model_max": 4,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000001363",
@@ -4352,7 +4419,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000398",
@@ -4567,7 +4635,8 @@
    "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000001364",
@@ -4727,7 +4796,8 @@
    "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   },
   {
    "id": "000000381",
@@ -4892,7 +4962,8 @@
    "has_order_tiers": false,
    "model_min": 5,
    "model_max": 10,
-   "countable": true
+   "countable": true,
+   "wargear_options": []
   },
   {
    "id": "000000400",
@@ -5069,7 +5140,8 @@
    "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
-   "countable": false
+   "countable": false,
+   "wargear_options": []
   }
  ],
  "detachments": [

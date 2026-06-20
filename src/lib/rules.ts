@@ -20,6 +20,12 @@ const intOf = (s: string | number | undefined) => {
   return Number.isFinite(n) ? n : 0;
 };
 
+/** Full points of a unit: base + enhancement + paid wargear options (qty x cost). */
+const unitCost = (u: ArmyList['units'][number]): number =>
+  intOf(u.pointsCost) +
+  intOf(u.enhancementCost) +
+  (u.wargearCosts ?? []).reduce((s, w) => s + intOf(w.cost) * (w.qty || 0), 0);
+
 export function getBattleSize(rules: Rules, id: string): BattleSize | undefined {
   return rules.battle_sizes.find((b) => b.id === id);
 }
@@ -48,8 +54,8 @@ export function validateList(
   const chosen = detachments.filter((d) => list.detachmentIds.includes(d.id));
 
   // --- points ---
-  const unitPts = list.units.reduce((s, u) => s + intOf(u.pointsCost) + intOf(u.enhancementCost), 0);
-  const allyPoints = list.units.filter((u) => u.isAlly).reduce((s, u) => s + intOf(u.pointsCost) + intOf(u.enhancementCost), 0);
+  const unitPts = list.units.reduce((s, u) => s + unitCost(u), 0);
+  const allyPoints = list.units.filter((u) => u.isAlly).reduce((s, u) => s + unitCost(u), 0);
   if (pointsLimit && unitPts > pointsLimit)
     v.push({ level: 'error', code: 'POINTS', message: `Punti ${unitPts} oltre il limite ${pointsLimit}.` });
 
@@ -132,7 +138,7 @@ export function validateList(
       if (cap <= 0) continue; // agents / special gating handled in UI
       const used = list.units
         .filter((u) => u.isAlly && (u as any).allyKeyword === rule.allied_keyword)
-        .reduce((s, u) => s + intOf(u.pointsCost) + intOf(u.enhancementCost), 0);
+        .reduce((s, u) => s + unitCost(u), 0);
       if (used > cap)
         v.push({ level: 'error', code: 'ALLY_CAP', message: `Alleati ${rule.allied_keyword}: ${used} pt oltre il cap ${cap}.` });
     }

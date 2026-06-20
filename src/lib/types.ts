@@ -81,8 +81,11 @@ export interface Datasheet {
   model_min?: number | null;   // smallest legal model count (smallest cost bracket)
   model_max?: number | null;   // largest legal model count (largest cost bracket)
   countable?: boolean;         // true if the unit has a model-count range (multiple size brackets)
+  wargear_options?: WargearOption[];  // paid wargear/model upgrades (MFM "per X N pts")
 }
 
+export interface WargearOption { name: string; cost: number | string; type: 'wargear' | 'model'; }
+export interface ChosenWargear { name: string; cost: number; qty: number; }
 export interface Enhancement { name: string; cost: string; description: string; is_upgrade: boolean; }
 export interface DetachmentRule { name: string; description: string; }
 export interface Stratagem { name: string; cp_cost: string; type: string; description: string; }
@@ -123,6 +126,7 @@ export interface ListUnit {
   isAlly: boolean;             // counts against ally cap
   enhancementName?: string;    // attached enhancement
   enhancementCost?: number;
+  wargearCosts?: ChosenWargear[];  // paid wargear options chosen (qty x cost adds to unit cost)
   attachedToUid?: string;      // for Leader/Support attachment
   warlord?: boolean;
 }

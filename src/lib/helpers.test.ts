@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap } from './helpers';
+import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal } from './helpers';
 import type { Datasheet, FactionData, PointsOption } from './types';
 
 function ds(partial: Partial<Datasheet>): Datasheet {
@@ -104,5 +104,19 @@ describe('reconcileTiers by model count (countable units)', () => {
   });
   it('14 Termagants -> 20 bracket (110)', () => {
     expect(reconcileTiers([mkCount(termagants, 14)], map)[0].pointsCost).toBe(110);
+  });
+});
+
+describe('unitTotal (base + enhancement + paid wargear)', () => {
+  it('sums base, enhancement and qty x cost wargear', () => {
+    const u = {
+      ...mk(flat, '1 model'),
+      enhancementCost: 20,
+      wargearCosts: [{ name: 'Thunder Hammer', cost: 5, qty: 3 }],
+    };
+    expect(unitTotal(u)).toBe(100 + 20 + 15);
+  });
+  it('zero wargear leaves base unchanged', () => {
+    expect(unitTotal(mk(flat, '1 model'))).toBe(100);
   });
 });

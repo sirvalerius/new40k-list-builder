@@ -2,13 +2,15 @@ import { useMemo, useState } from 'react';
 import type {
   ArmyList,
   BattleSize,
+  ChosenWargear,
   Datasheet,
   FactionData,
   PointsOption,
+  WargearOption,
 } from '../lib/types';
 import { DatasheetCard } from '../components/DatasheetCard';
 import { Modal } from '../components/Modal';
-import { bracketForCount, copiesOf, intOf, tierForPick, unitVariants } from '../lib/helpers';
+import { bracketForCount, copiesOf, intOf, tierForPick, unitTotal, unitVariants } from '../lib/helpers';
 
 const ROLE_ORDER = [
   'Epic Hero',
@@ -25,6 +27,7 @@ export function Roster({
   onAdd,
   onRemove,
   onSetWarlord,
+  onSetWargear,
 }: {
   list: ArmyList;
   fd: FactionData;
@@ -32,6 +35,7 @@ export function Roster({
   onAdd: (ds: Datasheet, tier: PointsOption, modelCount?: number) => void;
   onRemove: (uid: string) => void;
   onSetWarlord: (uid: string) => void;
+  onSetWargear: (uid: string, wargear: ChosenWargear[]) => void;
 }) {
   const [query, setQuery] = useState('');
   const [browsing, setBrowsing] = useState(false);
@@ -87,7 +91,8 @@ export function Roster({
               <div style={{ flex: 1 }}>
                 <div style={{ fontWeight: 600 }}>{u.name}</div>
                 <div className="muted small">
-                  {u.pointsLabel} — {intOf(u.pointsCost)} pts
+                  {u.pointsLabel} — <b>{unitTotal(u)} pts</b>
+                  {intOf(u.pointsCost) !== unitTotal(u) ? ` (base ${intOf(u.pointsCost)})` : ''}
                   {u.enhancementName
                     ? ` · +${u.enhancementName} (${u.enhancementCost})`
                     : ''}
@@ -115,6 +120,13 @@ export function Roster({
                 Remove
               </button>
             </div>
+            {ds && (ds.wargear_options?.length ?? 0) > 0 && (
+              <WargearEditor
+                options={ds.wargear_options!}
+                chosen={u.wargearCosts ?? []}
+                onChange={(wc) => onSetWargear(u.uid, wc)}
+              />
+            )}
             {ds && (
               <details style={{ marginTop: 8 }}>
                 <summary className="muted small">Datasheet</summary>
@@ -209,6 +221,53 @@ export function Roster({
         />
       )}
     </div>
+  );
+}
+
+function WargearEditor({
+  options,
+  chosen,
+  onChange,
+}: {
+  options: WargearOption[];
+  chosen: ChosenWargear[];
+  onChange: (wc: ChosenWargear[]) => void;
+}) {
+  const qtyOf = (name: string) => chosen.find((c) => c.name === name)?.qty ?? 0;
+  const setQty = (o: WargearOption, qty: number) => {
+    const next = chosen.filter((c) => c.name !== o.name);
+    if (qty > 0) next.push({ name: o.name, cost: intOf(o.cost), qty });
+    onChange(next);
+  };
+  const total = chosen.reduce((s, c) => s + intOf(c.cost) * c.qty, 0);
+  return (
+    <details style={{ marginTop: 8 }}>
+      <summary className="muted small">
+        Paid wargear options{total > 0 ? ` · +${total} pts` : ''}
+      </summary>
+      <div className="col" style={{ gap: 6, marginTop: 6 }}>
+        {options.map((o, i) => {
+          const q = qtyOf(o.name);
+          return (
+            <div className="row" key={i} style={{ gap: 8, alignItems: 'center' }}>
+              <div style={{ flex: 1 }} className="small">
+                {o.name}{' '}
+                <span className="muted">
+                  (+{intOf(o.cost)} pt{o.type === 'model' ? ' /model' : ' each'})
+                </span>
+              </div>
+              <button className="ghost stepper sm" disabled={q <= 0} onClick={() => setQty(o, q - 1)}>
+                −
+              </button>
+              <b style={{ minWidth: 20, textAlign: 'center' }}>{q}</b>
+              <button className="ghost stepper sm" onClick={() => setQty(o, q + 1)}>
+                ＋
+              </button>
+            </div>
+          );
+        })}
+      </div>
+    </details>
   );
 }
 
