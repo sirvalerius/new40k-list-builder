@@ -139,7 +139,7 @@
    "model_min": 8,
    "model_max": 16,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001662",
@@ -289,7 +289,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001099",
@@ -456,7 +462,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 Acastus autocannons can each be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 lascannons</li><li>1 Acastus autocannon and 1 lascannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s Acastus ironstorm missile pod can be replaced with 1 helios defence missiles.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001094",
@@ -607,7 +624,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001097",
@@ -780,7 +803,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001096",
@@ -920,7 +949,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001095",
@@ -1060,7 +1095,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001098",
@@ -1244,7 +1285,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s reaper chainsword can be replaced with 1 hekaton siege claw and 1 twin rad cleanser.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001100",
@@ -1428,7 +1475,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s reaper chainsword can be replaced with 1 hekaton siege claw and 1 twin rad cleanser.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003844",
@@ -1540,7 +1593,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003849",
@@ -1662,7 +1715,13 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Cultist Champion’s autopistol can be replaced with 1 bolt pistol.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003850",
@@ -1854,7 +1913,33 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Cultist Champion’s autopistol can be replaced with 1 bolt pistol.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each have their autogun and close combat weapon replaced with 1 autopistol and 1 brutal assault weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 10 models in this unit, 1 Chaos Cultist’s autogun can be replaced with 1 flamer.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 10 models in this unit, 1 Chaos Cultist’s autogun can be replaced with 1 heavy stubber.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": " For every 10 models in this unit, 1 Chaos Cultist’s autogun can be replaced with 1 grenade launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003845",
@@ -2033,7 +2118,7 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003852",
@@ -2214,7 +2299,23 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Fellgor Champion’s bolt pistol can be replaced with 1 plasma pistol.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Fellgor Beastman’s close combat weapon can be replaced with 1 great weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Fellgor Beastman’s close combat weapon can be replaced with 1 corrupted stave.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003854",
@@ -2345,7 +2446,13 @@
    "model_min": 7,
    "model_max": 7,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002567",
@@ -2495,7 +2602,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001660",
@@ -2668,7 +2775,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s reaper chainsword can be replaced with 1 warpstrike claw.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001658",
@@ -2932,15 +3045,25 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "Despoiler gatling cannon",
+     "text": "This model’s daemonbreath meltagun can be replaced with 1 diabolus heavy stubber.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s reaper chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 daemonbreath thermal cannon</li><li>1 despoiler gatling cannon and 1 heavy darkflamer</li><li>1 despoiler battle cannon and 1 diabolus heavy stubber</li></ul>",
      "cost": 25,
      "type": "wargear"
     },
     {
-     "name": "Despoiler battle cannon",
+     "text": "This model’s warpstrike claw can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 daemonbreath thermal cannon</li><li>1 despoiler gatling cannon and 1 heavy darkflamer</li><li>1 despoiler battle cannon and 1 diabolus heavy stubber</li></ul>",
      "cost": 15,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 havoc missile pod</li><li>1 ruinspear rocket pod</li><li>1 hellstorm autocannons</li></ul>",
+     "cost": 0,
      "type": "wargear"
     }
    ]
@@ -3103,7 +3226,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004134",
@@ -3252,7 +3375,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001659",
@@ -3458,7 +3581,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 gheiststrike missile launchers and twin Desecrator cannon can be replaced with 1 gheiststrike missile launcher and 2 twin Desecrator cannons.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s brimstone volcano lance and ectoplasma decimator can be replaced with 1 darkflame cannon and 1 warpshock harpoon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003855",
@@ -3554,7 +3688,13 @@
    "model_min": 16,
    "model_max": 16,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003856",
@@ -3655,7 +3795,13 @@
    "model_min": 4,
    "model_max": 4,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003847",
@@ -3825,7 +3971,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s Enforcer pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autogun</li><li>1 lasgun</li><li>1 shotgun</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s Enforcer melee weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003857",
@@ -4009,7 +4166,13 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any numbers of models’ heavy stubbers can each be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autocannon</li><li>1 heavy bolter</li><li>1 lascannon</li><li>1 missile launcher</li><li>1 mortar</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003858",
@@ -4130,7 +4293,13 @@
    "model_min": 4,
    "model_max": 7,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003859",
@@ -4236,7 +4405,13 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "One model’s Ogryn weapon can be replaced with 1 Ogryn power drill.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003860",
@@ -4338,7 +4513,13 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003848",
@@ -4474,7 +4655,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003846",
@@ -4612,7 +4799,13 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003853",
@@ -4837,7 +5030,23 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Up to 3 Traitor Guardsmen can each have their lasgun replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 Cultist grenade launcher</li><li>1 flamer</li><li>1 meltagun</li><li>1 plasma gun</li><li>1 Cultist sniper rifle</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Traitor Sergeant’s close combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Traitor Sergeant’s corrupted pistol can be replaced with 1 boltgun.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002565",
@@ -4976,7 +5185,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s diabolus heavy stubber can be replaced with 1 havoc multi-launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002562",
@@ -5104,7 +5319,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s diabolus heavy stubber can be replaced with 1 daemonbreath meltagun.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002566",
@@ -5243,7 +5464,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s diabolus heavy stubber can be replaced with 1 daemonbreath meltagun.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002564",
@@ -5371,7 +5598,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s diabolus heavy stubber can be replaced with 1 havoc multi-launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001663",
@@ -5547,7 +5780,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s graviton pulsar can be replaced with one of the following;<ul style=\"list-style-type:circle\"><li>1 siege claw and 1 rad cleanser</li><li>1 lightning lock</li><li>1 conversion beam cannon</li><li>1 volkite veuglaire</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s volkite veuglaire can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 siege claw and 1 rad cleanser</li><li>1 graviton pulsar</li><li>1 lightning lock</li><li>1 conversion beam cannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002563",
@@ -5716,7 +5960,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s avenger chaincannon can be replaced with 1 daemonbreath spear.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s diabolus heavy stubber can be replaced with 1 havoc multi-launcher.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s slaughterclaw can be replaced with 1 reaper chaintalon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   }
  ],
  "detachments": [

@@ -123,7 +123,7 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001368",
@@ -251,7 +251,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001372",
@@ -445,7 +445,38 @@
    "model_min": 3,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "For every 5 models in this unit, up to 3 models' combi-bolters can each be replaced with 1 combi-weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 Blightlord Terminator’s combi-bolter and bubotic blade can be replaced with 1 flail of corruption.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 Blightlord Terminator’s combi-bolter can be replaced with 1 blight launcher.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 Blightlord Terminator's combi-bolter can be replaced with 1 reaper autocannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 Blightlord Terminator's combi-bolter can be replaced with 1 plague spewer.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "If this unit contains only 3 models, 1 Blightlord Terminator’s combi-bolter and bubotic blade can be replaced with 1 plague spewer and 1 close combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003628",
@@ -622,7 +653,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001049",
@@ -782,7 +824,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter</li><li>1 combi-weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 havoc launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003592",
@@ -997,7 +1050,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s bolt pistol and Astartes chainsword can be replaced with 1 paired accursed weapons.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001050",
@@ -1168,7 +1237,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 lascannons</li><li>2 heavy bolters</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 combi-bolter</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 havoc launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002461",
@@ -1339,7 +1424,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter</li><li>1 combi-weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 havoc launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001047",
@@ -1476,7 +1577,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 additional combi-bolter</li><li>1 combi-weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 havoc launcher or can replace 1 combi-bolter with 1 havoc launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001048",
@@ -1580,7 +1692,7 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003585",
@@ -1745,7 +1857,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s Thunderhawk heavy cannon can be replaced with 1 turbo-laser destructor.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s Thunderhawk cluster bombs can be replaced with 1 hellstrike missile battery",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001052",
@@ -1873,7 +1996,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002749",
@@ -2002,7 +2125,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001037",
@@ -2192,7 +2315,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s plague bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 plague combi-bolter</li><li>1 plague fist</li><li>1 plague-encrusted exalted weapon</li><li>1 plasma pistol</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plague fist</li><li>1 plague-encrusted exalted weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s plague bolt pistol and Astartes chainsword can be replaced with 1 twin lighting claws.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001038",
@@ -2355,7 +2494,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s plague combi-bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 plague-encrusted exalted weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s plague-encrusted exalted weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainfist</li><li>1 plague fist</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s plague combi-bolter and plague-encrusted exalted weapon can be replaced with 1 twin lighting claws.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001043",
@@ -2507,7 +2662,23 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "For every 10 models in the unit, 1 Death Guard Cultist’s Cultist firearm can be replaced with 1 flamer.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 10 models in the unit, 1 Death Guard Cultist’s Cultist firearm can be replaced with 1 heavy stubber.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 10 models in the unit, 1 Death Guard Cultist’s Cultist firearm can be replaced with 1 grenade launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001045",
@@ -2616,7 +2787,13 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "1 model can be equipped with 1 diseased icon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001041",
@@ -2813,7 +2990,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s plague combi-bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 plague-encrusted exalted weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s force weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainfist</li><li>1 plague fist</li><li>1 plague-encrusted exalted weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s plague combi-bolter and force weapon can be replaced with 1 twin lighting claws.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001371",
@@ -2968,7 +3161,18 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Deathshroud Champion can be equipped with 1 additional plaguespurt gauntlet.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Deathshroud Champion can be equipped with 1 icon of despair.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004209",
@@ -3202,14 +3406,34 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "Heavy reaper autocannon",
+     "text": "This model’s Hades battle cannon can be replaced with 1 ectoplasma destructor.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": " This model’s excruciator cannons can be replaced with 2 magma cutters",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s heavy baleflamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": " This model’s heavy missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Equip Heavy reaper autocannon",
      "cost": 10,
      "type": "wargear"
     },
     {
-     "name": "Hades lascannon",
+     "text": "Equip Hades lascannon",
      "cost": 10,
      "type": "wargear"
     }
@@ -3453,7 +3677,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s anvilus autocannon battery can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 arachnus heavy lascannon battery</li><li>1 hellfire plasma carronade</li><li>1 volkite falconet battery</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 aiolos missile launcher</li><li>1 boreas air defence missiles</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003688",
@@ -3674,7 +3914,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 quad lascannons can be replaced with 2 laser destroyers.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003652",
@@ -3962,7 +4218,28 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 quad lascannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li> 2 laser destroyers</li><li>2 quad heavy bolters</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 havoc launcher.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003616",
@@ -4150,7 +4427,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 twin hellstrike missile launchers can be replaced with 2 twin lascannons",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s 2 twin autocannons can be replaced with 2 quad heavy bolters.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001057",
@@ -4276,7 +4564,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s fleshmower can be replaced with 2 plaguespitters.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004110",
@@ -4389,7 +4683,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001367",
@@ -4500,7 +4794,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003593",
@@ -4630,7 +4924,13 @@
    "model_min": 7,
    "model_max": 7,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004112",
@@ -4816,7 +5116,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s plague flail can be replaced with 1 bileblade.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s bilesword can be replaced with 1 doomsday bell.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003586",
@@ -4940,7 +5251,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001046",
@@ -5177,7 +5494,33 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s multi-melta can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma cannon</li><li>1 twin autocannon</li><li>1 twin lascannon</li><li>1 twin heavy bolter</li><li>1 additional Helbrute fist</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 of this model’s Helbrute fists can be replaced with 1 missile launcher",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 of this model’s Helbrute fists can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Helbrute hammer</li><li>1 power scourge</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For each Helbrute fist this model is equipped with, it can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter*</li><li>1 heavy flamer*</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* That Helbrute fist cannot then be replaced.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003594",
@@ -5319,7 +5662,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 twin autocannons can be replaced with 2 twin lascannons.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003595",
@@ -5472,7 +5821,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s autocannon can be replaced with 1 havoc launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002750",
@@ -5583,7 +5938,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003632",
@@ -5868,7 +6223,33 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s Kratos battle cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 melta blast-gun</li><li>1 volkite cardanelle</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 autocannons</li><li>2 lascannons</li><li>2 volkite calivers</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy flamers</li><li>2 lascannons</li><li>2 volkite culverins </li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 havoc launcher</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 twin boltgun</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 hunter killer missile    ",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003608",
@@ -6062,7 +6443,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 twin volkite culverins can be replaced with 2 twin multi-melta",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 hunter-killer missile.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 storm bolter.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003612",
@@ -6274,7 +6671,28 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 multi-melta</li><li>1 twin heavy bolter</li><li>1 twin heavy flamer</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 hunter-killer missile.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 storm bolter.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 explorator augury web.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003648",
@@ -6520,7 +6938,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Each of this model’s grav-flux bombards can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 cyclonic melta lance</li><li>1 storm cannon</li><li>1 meltagun and 1 Leviathan siege claw</li><li>1 meltagun and 1 Leviathan siege drill</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s 2 heavy flamers can be replaced with 2 twin volkite calivers.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 3 hunter-killer missiles.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001054",
@@ -6638,7 +7072,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004109",
@@ -6760,7 +7194,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002460",
@@ -6877,7 +7311,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001055",
@@ -7010,7 +7444,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003644",
@@ -7209,7 +7643,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 heavy flamers can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li><li>2 volkite culverins</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s 2 lascannons can be replaced with on of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li><li>2 volkite culverins</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002462",
@@ -7319,7 +7764,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001377",
@@ -7493,7 +7938,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003596",
@@ -7588,7 +8033,13 @@
    "model_min": 16,
    "model_max": 16,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001374",
@@ -7734,7 +8185,7 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001058",
@@ -7855,7 +8306,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004116",
@@ -7963,7 +8414,7 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004114",
@@ -8104,7 +8555,18 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "1 Plague Drone that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Plague Drone that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001044",
@@ -8367,7 +8829,48 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Plague Champion’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma gun</li><li>1 plasma pistol</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Plague Champion’s plague knives can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bubotic weapons</li><li>1 power fist</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 Plague Marine’s boltgun can be replaced with 1 blight launcher.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 Plague Marine’s boltgun can be replaced with 1 plague spewer.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 Plague Marine’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 meltagun</li><li>1 plague belcher</li><li>1 plasma gun</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, up to 2 Plague Marines can each have their boltgun replaced with 1 bubotic weapons.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, up to 2 Plague Marines can each have their boltgun replaced with 1 heavy plague weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "One Plague Marine equipped with a boltgun can be equipped with 1 icon of despair. This model’s boltgun cannot be replaced.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001369",
@@ -8477,7 +8980,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004113",
@@ -8588,7 +9091,18 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "1 Plaguebearer that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Plaguebearer that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001376",
@@ -8747,7 +9261,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 entropy cannons can be replaced with 2 plaguespitters.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s heavy slugger can be replaced with 1 rothail volley gun.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001056",
@@ -8853,7 +9378,7 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003668",
@@ -9023,7 +9548,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s quad heavy bolter can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 graviton cannon</li><li>1 laser destroyer</li><li>1 quad launcher</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003656",
@@ -9355,7 +9886,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Each of this model’s heavy plasma cannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 conversion beam cannon</li><li>1 kheres-pattern assault cannon</li><li>1 multi-melta</li><li>1 twin autocannon</li><li>1 twin heavy bolter</li><li>1 twin lascannon</li><li>1 twin volkite culverin</li><li>1 Dreadnought chainfist and 1 combi-bolter</li><li>1 Dreadnought combat weapon and 1 combi-bolter</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Each of this model’s combi-bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 graviton blaster</li><li>1 heavy flamer</li><li>1 plasma blaster</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 cyclone missile launcher. ",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004111",
@@ -9492,7 +10039,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003640",
@@ -9665,7 +10212,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 hunter-killer missile.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 storm bolter.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003684",
@@ -9838,7 +10401,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 hunter-killer missile.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 storm bolter.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003676",
@@ -10011,7 +10590,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 hunter-killer missile.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 storm bolter.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003636",
@@ -10204,7 +10799,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003600",
@@ -10429,7 +11030,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 power fist</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003620",
@@ -10639,7 +11246,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 quad lascannons can be replaced with 2 laser destroyers.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003672",
@@ -10862,7 +11485,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s twin heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin multi-melta</li><li>1 typhoon missile launcher</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s 2 twin hellstrike missile launchers can be replaced with 2 twin lascannons",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001370",
@@ -10983,7 +11617,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003604",
@@ -11153,7 +11787,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 combi-bolters can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>2 heavy flamers</li><li>2 twin volkite chargers</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003680",
@@ -11330,7 +11970,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001053",
@@ -11449,7 +12100,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003660",
@@ -11599,7 +12250,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with 1 hunter-killer missile.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 storm bolter.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003664",
@@ -11747,7 +12409,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   }
  ],
  "detachments": [

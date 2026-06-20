@@ -141,7 +141,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004201",
@@ -270,7 +270,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002597",
@@ -466,7 +472,7 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002603",
@@ -618,7 +624,18 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "All models in this unit can each have their bolt cannon replaced with 1 graviton blast cannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "All models in this unit can each have their bolt cannon replaced with 1 SP conversion beamer.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004140",
@@ -744,7 +761,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002600",
@@ -887,7 +904,28 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "All models in this unit can each have their heavy plasma axe replaced with 1 concussion maul.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 model that is not equipped with a mole grenade launcher can have its heavy plasma axe or concussion maul replaced with 1 twin concussion gauntlet.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 model that is not equipped with a twin concussion gauntlet or a mole grenade launcher can be equipped with 1 mole grenade launcher.*",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "<b>* Designer’s Note:</b> If a Cthonian Beserk is equipped with a mole grenade launcher, it will be accompanied by an L-COG unit: both models should be placed on the same base and together they act as a single model for all rules purposes.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004145",
@@ -1014,7 +1052,13 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "All models in this unit can each have their breacher ordnance replaced with 1 tremor shells.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002595",
@@ -1149,7 +1193,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s mass hammer can be replaced with 1 darkstar axe.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s weavefield crest can be replaced with 1 teleport crest.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002599",
@@ -1331,7 +1386,28 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "All models in this unit can each have their EtaCarn plasma gun replaced with 1 volkanite disintegrator.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "All models in this unit can each have their concussion gauntlet replaced with 1 plasma blade gauntlet.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Hesyr’s concussion gauntlet or plasma blade gauntlet can be replaced with 1 graviton hammer.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Hesyr’s weavefield crest can be replaced with 1 teleport crest.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002596",
@@ -1486,7 +1562,7 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002598",
@@ -1729,7 +1805,33 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of Hearthkyn Warriors can each have their Autoch-pattern bolter replaced with 1 ion blaster.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Up to 2 Hearthkyn Warriors can each have their  Autoch-pattern bolter or ion blaster replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 HYLas auto rifle</li><li>1 HYLas rotary cannon</li><li>1 L7 missile launcher</li><li>1 EtaCarn plasma beamer</li><li>1 magna-rail rifle</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Up to 2 Hearthkyn Warriors can each have their Autoch-pattern bolter or ion blaster replaced with 1 plasma knife.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Theyn’s Autoch-pattern bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 ion blaster</li><li>1 Theyn’s pistol</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Theyn can be equipped with 1 Theyn’s melee weapon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002604",
@@ -1927,7 +2029,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 twin bolt cannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin bolt cannon and 1 twin ion beamer</li><li>2 twin ion beamers</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s cyclic ion cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 SP heavy conversion beamer</li><li>1 heavy magna-rail cannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s panspectral scanner can be replaced with 1 Hekaton warhead.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002601",
@@ -2123,7 +2241,33 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "For every 3 models in this unit, 1 model can be equipped with one of the following::<ul style=\"list-style-type:circle\"><li>1 HYLas rotary cannon</li><li>1 ion beamer</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 model that is not equipped with either a HYLas rotary cannon or an ion beamer can be equipped with 1 multiwave comms array.*",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 model that is not equipped with either a HYLas rotary cannon or an ion beamer can be equipped with 1 panspectral scanner.*",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 model that is not equipped with either a HYLas rotary cannon or an ion beamer can be equipped with 1 rollbar searchlight.*",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* A model can only take one of these options, and cannot be equipped with a HYLas rotary cannon or an ion beamer.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003710",
@@ -2275,7 +2419,23 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "All models in this unit can each have their bolt shotgun replaced with 1 bolt revolver and 1 plasma knife.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Hernkyn Yaegir can have its bolt revolver and plasma knife or its bolt shotgun replaced with 1 magna-coil rifle.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Hernkyn Yaegir can have its bolt revolver and plasma knife or its bolt shotgun replaced with 1 APM launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004143",
@@ -2426,7 +2586,13 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Steeljack Theyn’s heavy volkanite disintegrator and plasma knife can be replaced with 1 Autoch-pattern bolter and 1 plasma sword.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004144",
@@ -2566,7 +2732,13 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models in this unit can each have their plasma sword replaced with 1 concussion gauntlet.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004147",
@@ -2703,7 +2875,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with 1 smoke launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004146",
@@ -2852,7 +3030,18 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models in this unit can each have their magna-rail cannon replaced with 1 HYLas rotary cannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each be equipped with 1 smoke launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002594",
@@ -2998,7 +3187,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s Autoch-pattem combi-bolter can be replaced with 1 volkanite disintegrator.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s forgewrought plasma axe can be replaced with 1 mass gauntlet.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s rampart crest can be replaced with 1 teleport crest.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004141",
@@ -3106,7 +3311,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002602",
@@ -3266,7 +3471,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s HYLas beam cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 L7 missile launcher and 1 Sagitaur missile launcher</li><li>1 MATR autocannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002593",
@@ -3382,7 +3593,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   }
  ],
  "detachments": [

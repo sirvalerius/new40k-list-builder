@@ -132,7 +132,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000571",
@@ -245,7 +251,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000577",
@@ -441,7 +447,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s shuriken pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 death spinner</li><li>1 Dragon fusion gun</li><li>1 Dragon fusion pistol</li><li>1 Reaper launcher</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s star glaive can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Banshee blade</li><li>1 Scorpion chainsword</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000580",
@@ -598,7 +615,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s laser lance can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Dragon fusion gun</li><li>1 Banshee blade</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002759",
@@ -796,7 +819,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s shuriken pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 death spinner</li><li>1 Dragon fusion gun</li><li>1 Dragon fusion pistol</li><li>1 Reaper launcher</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s star glaive can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Banshee blade</li><li>1 Scorpion chainsword</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000581",
@@ -918,7 +952,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000575",
@@ -1039,7 +1073,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001400",
@@ -1146,7 +1180,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000622",
@@ -1318,7 +1358,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s shuriken cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 bright lance</li><li>1 scatter laser</li><li>1 starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000629",
@@ -1531,7 +1577,18 @@
    "model_min": 3,
    "model_max": 7,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their twin shuriken catapult replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dark lance</li><li>1 dissonance cannon</li><li>1 scatter laser</li><li>1 shuriken cannon</li><li>1 splinter cannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Cloud Dancer Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000632",
@@ -1801,7 +1858,23 @@
    "model_min": 5,
    "model_max": 11,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their Corsair firearm replaced with 1 spar-glaive.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 model’s Corsair firearm can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 blaster</li><li>1 dark lance</li><li>1 flamer</li><li>1 fusion gun</li><li>1 shredder</li><li>1 shuriken cannon</li><li>1 splinter cannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Corsair Reaver Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000633",
@@ -2095,7 +2168,23 @@
    "model_min": 5,
    "model_max": 11,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their Corsair firearm replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 shardcarbine</li><li>1 shuriken catapult</li><li>1 spar-glaive</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 model’s Corsair firearm can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 blaster</li><li>1 dark lance</li><li>1 flamer</li><li>1 fusion gun</li><li>1 shredder</li><li>1 shuriken cannon</li><li>1 splinter cannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Corsair Skyreaver Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004196",
@@ -2313,7 +2402,23 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Skyreaver Felarch can replace its shuriken pistol with one of the following:<ul style=\"list-style-type:circle\"><li>1  blast pistol</li><li>1 neuro disruptor</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in the unit, up to 2 Skyreaver models can each have their shuriken pistol and Corsair blade replaced with one of the following*:<ul style=\"list-style-type:circle\"><li>1 blaster and 1 close combat weapon</li><li>1 flamer and 1 close combat weapon</li><li>1 fusion gun and 1 close combat weapon</li><li>1 shredder and 1 close combat weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* You cannot select the same option more than once per unit unless it contains 10 models, in which case you cannot select the same weapon more than twice per unit.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002531",
@@ -2516,7 +2621,33 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Voidreaver Felarch’s shuriken pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 neuro disruptor</li><li>1 shuriken rifle</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Voidreaver Felarch can be equipped with:<ul style=\"list-style-type:circle\"><li>1 mistshield</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of Corsair Voidreavers in this unit can each have their shuriken pistol and power sword replaced with 1 shuriken rifle.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 Corsair Voidreaver’s power sword or shuriken rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "If this unit contains 10 models, 1 Corsair Voidreaver’s shuriken rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 shuriken cannon</li><li>1 wraithcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002532",
@@ -2793,7 +2924,48 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of Corsair Voidscarred can each have their shuriken pistol and power sword replaced with 1 shuriken rifle.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Voidscarred Felarch’s shuriken pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 neuro disruptor</li><li>1 shuriken rifle</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Voidscarred Felarch can be equipped with 1 mistshield.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 Corsair  Voidscarred’s shuriken rifle can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "If this unit contains 10 models, 1 Corsair Voidscarred’s shuriken rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 shuriken cannon</li><li>1 wraithcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "If this unit contains 10 models, 1 Corsair Voidscarred’s shuriken rifle can be replaced with 1 long rifle. ",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "If this unit contains 10 models, 1 Corsair Voidscarred’s power sword can be  replaced with 1 fusion pistol.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Corsair Voidscarred model equipped with a shuriken pistol and power sword can be equipped with 1 Faolchú.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000603",
@@ -2910,7 +3082,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 starcannons can be replaced with 2 bright lances.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003910",
@@ -3032,7 +3210,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000607",
@@ -3214,7 +3392,18 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Dark Reaper Exarch’s Reaper launcher can be replaced with 1 of the following:<ul style=\"list-style-type:circle\"><li>1 missile launcher</li><li>1 shuriken cannon</li><li>1 tempest launcher</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, it can have 1 Aspect Shrine token.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002537",
@@ -3341,7 +3530,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000593",
@@ -3510,7 +3699,28 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Dire Avenger Exarch’s Avenger shuriken catapult can be replaced with 1 shuriken pistol and one of the following:<ul style=\"list-style-type:circle\"><li>1 diresword</li><li>1 power glaive</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "If this unit’s Dire Avenger Exarch is equipped with 1 Avenger shuriken catapult, it can be equipped with 1 additional Avenger shuriken catapult.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Dire Avenger Exarch’s shuriken pistol can be replaced with 1 shimmershield.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, it can have 1 Aspect Shrine token.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000568",
@@ -3633,7 +3843,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000609",
@@ -3823,7 +4033,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s scatter laser can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 missile launcher</li><li>1 bright lance</li><li>1 shuriken cannon</li><li>1 starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s twin shuriken catapult can be replaced with 1 shuriken cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000582",
@@ -3968,7 +4189,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s witchblade can be replaced with 1 singing spear.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000583",
@@ -4126,7 +4353,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s witchblade can be replaced with 1 singing spear.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000596",
@@ -4325,7 +4558,18 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Fire Dragon Exarch model’s Exarch’s Dragon fusion gun can be replaced with 1 of the following:<ul style=\"list-style-type:circle\"><li>1 Dragon’s breath flamer</li><li>1 Dragon fusion pistol and 1 Dragon axe</li><li>1 firepike</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, it can have 1 Aspect Shrine token.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000610",
@@ -4469,7 +4713,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s twin shuriken catapult can be replaced with 1 shuriken cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001393",
@@ -4595,7 +4845,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s twin shuriken catapult can be replaced with 1 shuriken cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000574",
@@ -4719,7 +4975,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000589",
@@ -4905,7 +5161,13 @@
    "model_min": 11,
    "model_max": 11,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Heavy Weapon Platform’s shuriken cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 missile launcher</li><li>1 bright lance</li><li>1 scatter laser</li><li>1 starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000606",
@@ -4999,7 +5261,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000618",
@@ -5170,7 +5432,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Each of this model’s Hornet pulse lasers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>Aeldari missile launcher</li><li>Bright lance</li><li>Scatter laser</li><li>Shuriken cannon</li><li>Starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000594",
@@ -5348,7 +5616,23 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Howling Banshee Exarch’s Banshee blade can be replaced with 1 of the following:<ul style=\"list-style-type:circle\"><li>1 executioner</li><li>1 triskele</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Howling Banshee Exarch’s shuriken pistol and Banshee blade can be replaced with 1 mirrorswords.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, it can have 1 Aspect Shrine token.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000570",
@@ -5483,7 +5767,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000630",
@@ -5610,7 +5900,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000572",
@@ -5728,7 +6024,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000573",
@@ -5864,7 +6160,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004194",
@@ -5984,7 +6286,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003909",
@@ -6115,7 +6423,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000620",
@@ -6286,7 +6594,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s shuriken cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>Aeldari missile launcher</li><li>Bright lance</li><li>Scatter laser</li><li>Starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000576",
@@ -6398,7 +6712,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000611",
@@ -6533,7 +6847,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model's twin shuriken catapult can be replaced with 1 shuriken cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000623",
@@ -6650,7 +6970,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000631",
@@ -6838,7 +7164,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s D-bombard can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 Phantom starcannons and 1 wraith glaive</li><li>1 Phantom starcannon, 1 pulse laser and 1 wraith glaive</li><li>2 pulse lasers and 1 wraith glaive</li><li>1 Phantom pulsar</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s Phantom pulsar can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 D-bombard</li><li>2 Phantom starcannons and 1 wraith glaive</li><li>1 Phantom starcannon, 1 pulse laser and 1 wraith glaive</li><li>2 pulse lasers and 1 wraith glaive</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s Phantom starcannon can be replaced with 1 pulse laser.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000624",
@@ -6966,7 +7308,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004193",
@@ -7096,7 +7444,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000569",
@@ -7208,7 +7562,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000592",
@@ -7337,7 +7697,13 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000628",
@@ -7481,7 +7847,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s Revenant pulsar can be replaced with 1 sonic lance.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s sonic lance can be replaced with 1 Revenant pulsar.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000621",
@@ -7653,7 +8030,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s shuriken cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 bright lance</li><li>1 scatter laser</li><li>1 starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000615",
@@ -7805,7 +8188,13 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003911",
@@ -7919,7 +8308,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002535",
@@ -8067,7 +8456,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s shuriken pistol can be replaced with 1 neuro disruptor.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000602",
@@ -8251,7 +8646,23 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Shining Spear Exarch’s laser lance can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 paragon sabre</li><li>1 star lance</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Shining Spear Exarch’s twin shuriken catapult can be replaced with 1 shuriken cannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Shining Spear Exarch can be equipped with 1 shimmershield.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002533",
@@ -8390,7 +8801,7 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000627",
@@ -8573,7 +8984,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with up to two of the following:<ul style=\"list-style-type:circle\"><li>1 scatter laser</li><li>1 shuriken cannon</li><li>1 starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s inferno lance can be replaced with 1 deathshroud cannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s scattershield can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 inferno lance</li><li>1 deathshroud cannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002539",
@@ -8721,7 +9148,18 @@
    "model_min": 2,
    "model_max": 4,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their shuriken cannon replaced with 1 Skyweaver haywire cannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each have their star bolas replaced with 1 zephyrglaive.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002538",
@@ -8850,7 +9288,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000588",
@@ -8966,7 +9404,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004195",
@@ -9099,7 +9537,13 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002541",
@@ -9217,7 +9661,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000590",
@@ -9378,7 +9822,23 @@
    "model_min": 11,
    "model_max": 11,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Up to 2 Storm Guardians can each have their shuriken pistol replaced with 1 flamer.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Up to 2 Storm Guardians can each have their shuriken pistol replaced with 1 fusion gun.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Up to 2 Storm Guardians can each have their close combat weapon replaced with 1 power sword.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000595",
@@ -9567,7 +10027,18 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Striking Scorpion Exarch’s shuriken pistol, Scorpion chainsword and Scorpion’s claw can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 biting blade and 1 shuriken pistol</li><li>1 chainsabres</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, it can have 1 Aspect Shrine token.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000600",
@@ -9774,7 +10245,18 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Swooping Hawk Exarch’s Hawk’s talon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Exarch’s lasblaster</li><li>1 sunpistol and 1 power sword</li><li>1 scatter laser</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, it can have 1 Aspect Shrine token.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002543",
@@ -9907,7 +10389,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002544",
@@ -10049,7 +10531,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002536",
@@ -10232,7 +10714,28 @@
    "model_min": 5,
    "model_max": 12,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their Harlequin’s blade replaced with 1 Harlequin’s special weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Lead Player’s Harlequin’s blade can be replaced with 1 power sword.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "If this unit contains 9 or fewer models:<ul style=\"list-style-type:circle\"><li>Up to 2 models can each have their shuriken pistol replaced with 1 neuro disruptor</li><li>Up to 2 models can each have their shuriken pistol replaced with 1 fusion pistol</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "If this unit contains 10 or more models:<ul style=\"list-style-type:circle\"><li>Up to 4 models can each have their shuriken pistol replaced with 1 neuro disruptor</li><li>Up to 4 models can each have their shuriken pistol replaced with 1 fusion pistol</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002534",
@@ -10396,7 +10899,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s shuriken pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 fusion pistol</li><li>1 neuro disruptor</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model's Troupe Master's blade can be replaced with 1 Harlequin's special weapon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000626",
@@ -10531,7 +11045,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000625",
@@ -10656,7 +11176,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003912",
@@ -10770,7 +11296,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002540",
@@ -10920,7 +11446,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s Voidweaver haywire cannon can be replaced with 1 prismatic cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000605",
@@ -11089,7 +11621,18 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their bright lance replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 scatter laser</li><li>1 starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each have their shuriken cannon replaced with 1 missile launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000612",
@@ -11257,7 +11800,13 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Each model can have each shuriken cannon it is equipped with replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 missile launcher</li><li>1 bright lance</li><li>1 scatter laser</li><li>1 starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000585",
@@ -11402,7 +11951,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s witchblade can be replaced with 1 singing spear.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000584",
@@ -11555,7 +12110,13 @@
    "model_min": 2,
    "model_max": 4,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their witchblade replaced with 1 singing spear.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000587",
@@ -11720,7 +12281,13 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their witchblade replaced with 1 singing spear.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000619",
@@ -11858,7 +12425,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s twin shuriken catapult can be replaced with 1 shuriken cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000601",
@@ -12064,7 +12637,18 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Warp Spider Exarch’s Exarch’s death spinner can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 spinneret rifle and 1 death weavers</li><li>1 powerblades and 1 death weavers</li><li>1 powerblade array</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, it can have 1 Aspect Shrine token.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000616",
@@ -12226,7 +12810,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s scatter laser can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 bright lance</li><li>1 shuriken cannon</li><li>1 starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s shuriken cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 bright lance</li><li>1 scatter laser</li><li>1 starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000599",
@@ -12411,7 +13006,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s twin shuriken cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin missile launcher</li><li>1 twin bright lance</li><li>1 twin scatter laser</li><li>1 twin starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s twin shuriken catapult can be replaced with 1 shuriken cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002459",
@@ -12516,7 +13122,13 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000591",
@@ -12645,7 +13257,13 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their twin shuriken catapult replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 scatter laser</li><li>1 shuriken cannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000598",
@@ -12750,7 +13368,13 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "All of the models in this unit can each have their ghostswords replaced with 1 ghostaxe and 1 forceshield.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000597",
@@ -12860,7 +13484,13 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "All of the models in this unit can each have their wraithcannon replaced with 1 D-scythe.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000614",
@@ -13034,10 +13664,20 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "Heavy wraithcannon",
+     "text": "This model's suncannon can be replaced with 1 heavy wraithcannon.",
      "cost": 10,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s scattershield can be replaced with 1 heavy wraithcannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to two of the following:<ul style=\"list-style-type:circle\"><li>1 scatter laser</li><li>1 shuriken cannon</li><li>1 starcannon</li></ul>",
+     "cost": 0,
      "type": "wargear"
     }
    ]
@@ -13207,7 +13847,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s scattershield can be replaced with 1 heavy wraithcannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to two of the following:<ul style=\"list-style-type:circle\"><li>1 scatter laser</li><li>1 shuriken cannon</li><li>1 starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000613",
@@ -13414,7 +14065,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Each of this model's shuriken catapults can be replaced with 1 flamer.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 ghostglaive.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to two of the following:<ul style=\"list-style-type:circle\"><li>1 missile launcher</li><li>1 bright lance</li><li>1 scatter laser</li><li>1 shuriken cannon</li><li>1 starcannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000617",
@@ -13609,7 +14276,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 bright lance</li><li>1 scatter laser</li><li>1 shuriken cannon</li><li>1 starcannon</li><li>1 Wraithseer D-cannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003914",
@@ -13743,7 +14416,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s splinter pistol can be replaced with 1 blast pistol.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003918",
@@ -13895,7 +14574,13 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Klaivex’s klaive can be replaced with 1 demilklaives.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003916",
@@ -14090,7 +14775,43 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Sybarite’s close combat weapon can be replaced with 1 Sybarite weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Sybarite can be equipped with 1 phantasm grenade launcher.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Sybarite’s splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol</li><li>1 splinter pistol</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Kabalite Warrior’s splinter rifle can be replaced with 1 blaster.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Kabalite Warrior’s splinter rifle can be replaced with 1 dark lance.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Kabalite Warrior’s splinter rifle can be replaced with 1 shredder.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Kabalite Warrior’s splinter rifle can be replaced with 1 splinter cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003920",
@@ -14226,7 +14947,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s dark lance can be replaced with 1 disintegrator cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003919",
@@ -14398,7 +15125,23 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Arena Champion can be equipped with 1 agoniser.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 3 models in this unit, 1 model’s splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 heat lance</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 3 models in this unit, 1 model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 grav-talon</li><li>1 cluster caltrops</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003915",
@@ -14526,7 +15269,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol</li><li>1 splinter pistol</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003921",
@@ -14668,7 +15417,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s twin splinter rifle can be replaced with 1 splinter cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003917",
@@ -14786,7 +15541,13 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Hekatrix’s splinter pistol can be replaced with 1 blast pistol.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002542",
@@ -14909,7 +15670,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   }
  ],
  "detachments": [

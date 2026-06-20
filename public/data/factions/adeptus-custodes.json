@@ -148,7 +148,13 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their lastrum bolt cannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 adrathic devastator</li><li>1 twin las-pulsar</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002088",
@@ -260,7 +266,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001453",
@@ -446,7 +452,18 @@
    "model_min": 2,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their guardian spear replaced with 1 castellan axe.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 model’s guardian spear can be replaced with 1 vexilla and 1 misericordia.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002524",
@@ -577,7 +594,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with 1 hunter-killer missile.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001558",
@@ -736,7 +759,18 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their lastrum storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 infernus firepike</li><li>1 twin adrathic destructor</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each have their solerite power gauntlet replaced with 1 solerite power talon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001680",
@@ -867,7 +901,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002518",
@@ -1001,7 +1041,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001460",
@@ -1136,9 +1176,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "Twin arachnus heavy blaze cannon",
+     "text": "This model’s twin iliastus accelerator cannon can be replaced with 1 twin arachnus heavy blaze cannon.",
      "cost": 15,
      "type": "wargear"
     }
@@ -1288,7 +1328,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 lastrum storm bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 infernus incinerators</li><li>2 twin adrathic destructors</li><li>1 lastrum storm bolter and 1 infernus incinerator</li><li>1 lastrum storm bolter and 1 twin adrathic destructor</li><li>1 infernus incinerator and 1 twin adrathic destructor</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001557",
@@ -1401,7 +1447,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001461",
@@ -1526,7 +1578,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000882",
@@ -1707,7 +1765,18 @@
    "model_min": 4,
    "model_max": 5,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their guardian spear replaced with 1 sentinel blade and 1 praesidium shield.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 model’s guardian spear can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 vexilla and 1 misericordia</li><li>1 vexilla, 1 misericordia and 1 praesidium shield</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001559",
@@ -1853,7 +1922,13 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their adrasite spear replaced with 1 pyrithite spear.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001450",
@@ -2016,7 +2091,18 @@
    "model_min": 4,
    "model_max": 5,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their guardian spear replaced with 1 castellan axe.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 model can be equipped with 1 vexilla.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002520",
@@ -2156,7 +2242,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s executioner greatblade can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 master-crafted boltgun and 1 close combat weapon</li><li>1 Witchseeker flamer and 1 close combat weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001564",
@@ -2299,7 +2391,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001562",
@@ -2404,7 +2502,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002521",
@@ -2526,7 +2630,7 @@
    "model_min": 4,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001563",
@@ -2642,7 +2746,13 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001447",
@@ -2831,7 +2941,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s guardian spear can be replaced with one of the following:<br><ul><li>1 castellan axe</li><li>1 sentinel blade</li><li>1 sentinel blade and 1 praesidium shield</li><li>1 pyrithite spear and 1 praesidium shield</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001448",
@@ -2982,7 +3098,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s guardian spear can be replaced with 1 castellan axe.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001449",
@@ -3106,7 +3228,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s salvo launcher can be replaced with 1 Vertus hurricane bolter.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001479",
@@ -3269,7 +3397,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 iliastus accelerator culverins can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 arachnus storm cannons</li><li>2 Telemon caestus and 2 twin plasma projectors</li><li>1 iliastus accelerator culverin and 1 arachnus storm cannon</li><li>1 iliastus accelerator culverin, 1 Telemon caestus and 1 twin plasma projector</li><li>1 arachnus storm cannon, 1 Telemon caestus and 1 twin plasma projector</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001446",
@@ -3397,7 +3531,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002519",
@@ -3520,7 +3654,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001561",
@@ -3674,7 +3808,13 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their Venatari lance replaced with 1 kinetic destroyer and 1 tarsus buckler.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000883",
@@ -3809,7 +3949,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s multi-melta can be replaced with 1 Kheres-pattern assault cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000884",
@@ -3963,7 +4109,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with 1 hunter-killer missile.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 storm bolter.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001454",
@@ -4087,7 +4244,13 @@
    "model_min": 2,
    "model_max": 3,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their salvo launcher replaced with 1 Vertus hurricane bolter.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002522",
@@ -4198,7 +4361,7 @@
    "model_min": 4,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002523",
@@ -4328,7 +4491,13 @@
    "model_min": 4,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   }
  ],
  "detachments": [

@@ -12,7 +12,7 @@ export function DatasheetCard({ ds }: { ds: Datasheet }) {
 
   const weapons = ds.weapons.filter((w) => w.name);
   const abilities = ds.abilities.filter((a) => a.name || a.description);
-  const options = (ds.options || []).filter(Boolean);
+  const options = ds.weapon_options || [];
 
   return (
     <div className="col" style={{ gap: 8 }}>
@@ -49,17 +49,19 @@ export function DatasheetCard({ ds }: { ds: Datasheet }) {
       )}
 
       {options.length > 0 && (
-        <Collapsible title={`Wargear options (${options.length})`}>
+        <Collapsible title={`Weapon options (${options.length})`}>
           <ul className="col" style={{ gap: 4, margin: 0, paddingLeft: 18 }}>
             {options.map((o, i) => (
-              <li key={i} className="small muted">
-                {stripHtml(o)}
+              <li key={i} className="small">
+                <span className="muted">{stripHtml(o.text)}</span>{' '}
+                {o.cost > 0 ? (
+                  <span className="badge">+{o.cost} pt{o.type === 'model' ? '' : ' each'}</span>
+                ) : (
+                  <span className="muted tiny">free</span>
+                )}
               </li>
             ))}
           </ul>
-          <div className="muted tiny mt">
-            Wargear is free in points (cost depends only on model count).
-          </div>
         </Collapsible>
       )}
 

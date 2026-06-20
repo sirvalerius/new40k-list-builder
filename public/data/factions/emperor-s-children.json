@@ -170,7 +170,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter</li><li>1 combi-weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 havoc launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004093",
@@ -308,7 +319,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter</li><li>1 combi-weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 havoc launcher or can replace 1 combi-bolter with 1 havoc launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004090",
@@ -400,7 +422,7 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004081",
@@ -577,7 +599,33 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "1 Chaos Terminator’s combi-bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer</li><li>1 reaper autocannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each have their combi-bolter replaced with 1 combi-weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 model’s combi-bolter and accursed weapon can be replaced with 1 paired accursed weapons.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Up to 3 models can each have their accursed weapon replaced with 1 power fist.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 model’s accursed weapon can be replaced with 1 chainfist.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004086",
@@ -713,7 +761,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004087",
@@ -850,7 +898,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004095",
@@ -967,7 +1015,18 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "1 Daemonette that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Daemonette that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004208",
@@ -1201,7 +1260,28 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s Hades battle cannon can be replaced with 1 ectoplasma destructor.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": " This model’s excruciator cannons can be replaced with 2 magma cutters",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s heavy baleflamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": " This model’s heavy missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004096",
@@ -1304,7 +1384,7 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004089",
@@ -1410,7 +1490,7 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004077",
@@ -1582,7 +1662,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004092",
@@ -1706,7 +1786,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s Hades autocannon can be replaced with 1 baleflamer.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004080",
@@ -1874,7 +1960,23 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Obsessionist’s bolt pistol can be replaced with 1 plasma pistol.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Obsessionist’s power sword can be replaced with 1 rapture lash.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Infractor can be equipped with 1 icon of excess.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004097",
@@ -2053,7 +2155,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>living whip</li><li>ritual knife</li><li>shining aegis</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004078",
@@ -2258,7 +2366,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s plasma pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 rapture lash</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s Phoenix power spear can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 master-crafted power sword</li><li>1 screamer pistol</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004084",
@@ -2382,7 +2501,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s power sword can be replaced with 1 screamer pistol and 1 close combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004083",
@@ -2505,7 +2630,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004091",
@@ -2631,7 +2756,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s lasher tendrils can be replaced with 2 magma cutters.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004088",
@@ -2784,7 +2915,18 @@
    "model_min": 6,
    "model_max": 6,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Disharmonist’s sonic blaster can be replaced with 1 screamer pistol and 1 power sword.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Up to 2 Noise Marines can each replace their sonic blaster with 1 blastmaster.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004098",
@@ -2919,7 +3061,18 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "1 Seeker that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Seeker that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004094",
@@ -3072,7 +3225,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004085",
@@ -3206,7 +3359,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004079",
@@ -3420,7 +3573,33 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Obsessionist’s bolt pistol can be replaced with 1 plasma pistol.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Obsessionist’s power sword can be replaced with 1 rapture lash.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 Tormentor’s boltgun can be replaced with 1 meltagun.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 Tormentor’s boltgun can be replaced with 1 plasma gun.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Tormentor can be equipped with 1 icon of excess.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   }
  ],
  "detachments": [

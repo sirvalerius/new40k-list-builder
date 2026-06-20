@@ -157,7 +157,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000860",
@@ -324,7 +330,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 Acastus autocannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 lascannons</li><li>1 Acastus autocannon and 1 lascannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s Acastus ironstorm missile pod can be replaced with 1 helios defence missiles.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001481",
@@ -452,7 +469,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s Questoris heavy stubber can be replaced with 1 meltagun.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002769",
@@ -628,7 +651,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s volkite veuglaire can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 siege claw and 1 rad cleanser</li><li>1 graviton pulsar</li><li>1 lightning lock</li><li>1 conversion beam cannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s graviton pulsar can be replaced with one of the following;<ul style=\"list-style-type:circle\"><li>1 siege claw and 1 rad cleanser</li><li>1 lightning lock</li><li>1 conversion beam cannon</li><li>1 volkite veuglaire</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001482",
@@ -767,7 +801,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s Questoris heavy stubber can be replaced with 1 meltagun.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001484",
@@ -920,7 +960,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000861",
@@ -1071,7 +1111,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000862",
@@ -1244,7 +1290,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000863",
@@ -1384,7 +1436,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000864",
@@ -1524,7 +1582,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001485",
@@ -1708,7 +1772,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 shieldbreaker missile launchers and twin siegebreaker cannon can be replaced with 1 shieldbreaker missile launcher and 2 twin siegebreaker cannons.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000859",
@@ -1927,10 +1997,20 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "Rapid-fire battle cannon",
+     "text": "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s thermal cannon can be replaced with:<ul style=\"list-style-type:circle\"><li>1 rapid-fire battle cannon and 1 Questoris heavy stubber</li></ul>",
      "cost": 15,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li><b></b><br></ul>",
+     "cost": 0,
      "type": "wargear"
     }
    ]
@@ -2110,7 +2190,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004213",
@@ -2313,7 +2393,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s chastiser gatling cannon can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 bellatus reaper chainsword*</li><li>1 thundershock spear*</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s frag bombard can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 bellatus reaper chainsword*</li><li>1 thundershock spear*</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* A model cannot be equipped with more than one bellatus reaper chainsword or more than one thundershock spear.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000856",
@@ -2532,7 +2628,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000858",
@@ -2739,7 +2851,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000855",
@@ -2958,7 +3081,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001483",
@@ -3199,7 +3338,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s Questoris multi-laser can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 meltagun</li><li>1 Questoris heavy stubber</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001486",
@@ -3372,7 +3527,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 shieldbreaker missile launchers and twin siegebreaker cannon can be replaced with 1 shieldbreaker missile launcher and 2 twin siegebreaker cannons.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000857",
@@ -3602,7 +3763,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000865",
@@ -3786,7 +3963,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s reaper chainsword can be replaced with 1 hekaton siege claw and 1 twin rad cleanser.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000866",
@@ -3970,7 +4153,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s reaper chainsword can be replaced with 1 hekaton siege claw and 1 twin rad cleanser.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002770",
@@ -4059,7 +4248,7 @@
    "model_min": null,
    "model_max": null,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003841",
@@ -4170,7 +4359,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003842",
@@ -4362,7 +4551,43 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Skitarii Ranger Alpha can be equipped with 1 Alpha combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Skitarii Ranger Alpha’s galvanic rifle can be replaced with 1 Mechanicus pistol.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 arc rifle.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 plasma caliver.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 transuranic arquebus.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Ranger equipped with a galvanic rifle can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* That model’s galvanic rifle cannot be replaced.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003843",
@@ -4548,7 +4773,43 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Skitarii Vanguard Alpha can be equipped with 1 Alpha combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Skitarii Vanguard Alpha’s radium carbine can be replaced with 1 Mechanicus pistol.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 arc rifle.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 plasma caliver.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 transuranic arquebus.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Vanguard equipped with a radium carbine can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* That model’s radium carbine cannot be replaced.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003839",
@@ -4707,7 +4968,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s macrostubber can be replaced with 1 phosphor serpenta.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s volkite blaster can be replaced with 1 eradication ray.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003840",
@@ -4832,7 +5104,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s magnarail lance can be replaced with 1 transonic cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   }
  ],
  "detachments": [

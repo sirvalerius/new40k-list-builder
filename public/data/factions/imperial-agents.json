@@ -347,7 +347,28 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "For every 5 models in the unit, up to 1 model’s infernus heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 frag cannon.</li><li>1 hellstorm bolt rifle and 1 Astartes grenade launcher.</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in the unit, up to 1 model’s heavy thunder hammer can be replaced with 1 power weapon and 1 Astartes shield.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in the unit, up to 1 model’s stalker bolt rifle can be replaced with 1 plasma incinerator.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in the unit, up to 1 model’s Deathwatch marksman bolt carbine can be replaced with 1 combat knife.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000871",
@@ -482,7 +503,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003817",
@@ -663,7 +684,28 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s twin assault cannon can be replaced with 1 twin lascannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s 2 Blackstar rocket launchers can be replaced with 2 stormstrike missile launchers.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 hurricane bolter.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 auspex array</li><li>1 infernum halo-launcher</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000873",
@@ -805,7 +847,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003828",
@@ -932,7 +974,13 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002761",
@@ -1170,7 +1218,23 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Legionnaire Sergeant’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol and 1 power weapon</li><li>1 plasma pistol and 1 power weapon</li><li>1 bolt pistol and 1 Astartes chainsword</li><li>1 plasma pistol and 1 Astartes chainsword</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "One Legionnaire’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer</li><li>1 multi-melta</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "One Legionnaire’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003816",
@@ -1406,7 +1470,53 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "For every 5 models in this unit, up to 2 models can each have their boltgun and power weapon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 boltgun and 1 Astartes shield</li><li>1 power weapon and 1 Astartes shield</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, up to 2 models can each have their boltgun and power weapon replaced with 1 Deathwatch thunder hammer.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 model can have their boltgun and power weapon replaced with 1 stalker-pattern boltgun and 1 close combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, up to 2 models can each have their boltgun and power weapon replaced with 1 Deathwatch shotgun and 1 close combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 model can have its boltgun and power weapon replaced with 1 frag cannon and 1 close combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 model can have its boltgun and power weapon replaced with 1 infernus heavy bolter and 1 close combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "One model's boltgun and power weapon can be replaced with 1 Black Shield blades.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Watch Sergeant’s power weapon can be replaced with 1 xenophase blade.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Watch Sergeant's boltgun can be replaced with 1 combi-weapon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003822",
@@ -1652,7 +1762,18 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Up to 3 Deathwatch Terminators can each have their storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 assault cannon</li><li>1 heavy flamer</li><li>1 plasma cannon</li><li>1 cyclone missile launcher and 1 storm bolter (this model’s storm bolter cannot be replaced)</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each have their power fist and storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 storm bolter and 1 power weapon</li><li>1 storm bolter and 1 chainfist</li><li>1 twin lightning claws</li><li>1 thunder hammer and 1 storm shield</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000872",
@@ -1782,7 +1903,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002685",
@@ -1996,7 +2117,38 @@
    "model_min": 11,
    "model_max": 11,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Up to 2 Exaction Vigilants can each have their Arbites combat shotgun replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 executioner shotgun</li><li>1 Arbites grenade launcher</li><li>1 heavy stubber</li><li>1 webber</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Exaction Vigilant that is equipped with an Arbites combat shotgun can be equipped with 1 excruciator maul.*",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 other Exaction Vigilant that is equipped with an Arbites combat shotgun can be equipped with 1 Arbites medi-kit.*",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 other Exaction Vigilant that is equipped with an Arbites combat shotgun can be equipped with 1 soulguilt scanner.*",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Proctor-Exactant can be equipped with 1 nuncio aquila.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* That model’s Arbites combat shotgun cannot be replaced.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003825",
@@ -2265,7 +2417,28 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "1 Kill Team Intercessor’s bolt rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 hand flamer</li><li>1 plasma pistol</li><li>1 Astartes chainsword</li><li>1 Long Vigil melee weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 model equipped with a bolt rifle can replace its close combat weapon with one of the following:<ul style=\"list-style-type:circle\"><li>1 Astartes chainsword</li><li>1 Long Vigil melee weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, 1 model’s bolt rifle can be replaced with 1 Long Vigil ranged weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of Kill Team Intercessors with plasma incinerators can each have their bolt pistol replaced with 1 plasma pistol.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003813",
@@ -2429,10 +2602,25 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "Psycannon",
+     "text": "For every 5 models in this unit, 1 Grey Knights Terminator's storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator</li><li>1 psilencer</li><li>1 psycannon</li></ul>",
      "cost": 5,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Grey Knights Terminator equipped with a storm bolter can be equipped with 1 Ancient’s banner.*",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Grey Knights Terminator can have its storm bolter replaced with 1 narthecium.*",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* You cannot select both of these options for the same model.",
+     "cost": 0,
      "type": "wargear"
     }
    ]
@@ -2688,7 +2876,33 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Navis Sergeant-at-Arms’ Navis shotgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autopistol and 1 chainsword</li><li>1 bolt pistol and 1 power weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Navis Armsman’s Navis las-volley can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Navis Armsman's Navis shotgun can be replaced with 1 autopistol and 1 power weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Navis Armsman’s Navis shotgun can be replaced with 1 autopistol and 1 chainfist.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Navis Armsman can be equipped with 1 demolition charge.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003830",
@@ -2818,7 +3032,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with 1 hunter-killer missile.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003826",
@@ -3081,7 +3301,28 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "For every 5 models in this unit, 1 model equipped with a heavy bolt rifle can have its heavy bolt rifle replaced with 1 heavy bolter.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 model equipped with a melta rifle can have its melta rifle replaced with 1 multi-melta.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models equipped with flamestorm gauntlets can each have their flamestorm gauntlets replaced with 1 auto boltstorm gauntlets and 1 fragstorm grenade launcher.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models equipped with assault bolters can each have their assault bolters replaced with 1 plasma exterminators.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000877",
@@ -3240,7 +3481,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s bolt pistol can be replaced with 1 combi-weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s blessed wardings can be replaced with 1 psychic gifts and 1 Psychic Shock Wave.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "If this model is equipped with 1 psychic gifts, its Inquisitorial melee weapon can be replaced with 1 force weapon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000876",
@@ -3376,7 +3633,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002090",
@@ -3507,7 +3764,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001579",
@@ -3646,7 +3903,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000874",
@@ -3777,7 +4040,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002760",
@@ -3955,7 +4218,28 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s storm bolter can be replaced with 1 combi-weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s blessed wardings can be replaced with 1 psychic gifts and 1 psychic shock wave.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "If this model is equipped with 1 psychic gifts, its Inquisitorial melee weapon can be replaced with 1 force weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "If this model is equipped with 1 psychic gifts, its storm bolter can be replaced with 1 psycannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000875",
@@ -4070,7 +4354,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004214",
@@ -4213,7 +4503,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004173",
@@ -4368,7 +4664,13 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002767",
@@ -4582,7 +4884,38 @@
    "model_min": 6,
    "model_max": 12,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "For every 5 Inquisitorial Agents in this unit, it can be equipped with 1 Tome-skull.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 Inquisitorial Agents in this unit, 1 Inquisitorial Agent can be equipped with 1 plasma pistol.**",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 Inquisitorial Agents in this unit, 1 Inquisitorial Agent can be equipped with 1 eviscerator.**",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 Inquisitorial Agents in this unit, 1 Inquisitorial Agent can be equipped with 1 mystic stave.**",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of Gun Servitors can each have their heavy bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 multi-melta</li><li>1 plasma cannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "<i>**The some model cannot be equipped with more than one of these wargear options.</i>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003820",
@@ -4771,7 +5104,33 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s heavy bolter can be replaced with 1 heavy flamer.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s multi-laser can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Heavy bolter*</li><li>1 Heavy flamer*</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy stubber</li><li>1 storm bolter</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 hunter-killer missile.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "<i>This weapon cannot be replaced.</i>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002763",
@@ -4891,7 +5250,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003829",
@@ -5019,7 +5384,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003821",
@@ -5329,7 +5700,63 @@
    "model_min": 11,
    "model_max": 11,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Chaplain Cassius is equipped with: artificer crozius; bolt pistol.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Vael Donatus is equipped with: boltgun; bolt pistol; close combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Zameon Gydrael is equipped with: Long Vigil ranged weapon; Long Vigil melee weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Rodricus Grytt is equipped with: frag cannon; bolt pistol; close combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Antor Delassio is equipped with: Long Vigil ranged weapon; Long Vigil melee weapon, jump pack.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Edryc Setorax is equipped with: twin lightning claws, jump pack.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Jensus Natorian is equipped with: psychic Cleanse; bolt pistol; force weapon; psychic hood.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Drenn Redblade is equipped with: Long Vigil melee weapon; boltgun.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Garran Branatar is equipped with: heavy flamer; Long Vigil ranged weapon; power fist.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Ennox Sorrlock is equipped with: Long Vigil ranged weapon; close combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Jetek Suberei is equipped with: Deathwatch twin boltgun; Long Vigil melee weapon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003812",
@@ -5463,7 +5890,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s zealot’s vindictor can be replaced with 1 holy pistol and 1 power weapon",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002765",
@@ -5574,7 +6007,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002764",
@@ -5694,7 +6127,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003824",
@@ -6078,7 +6517,43 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of Kill Team Veterans can replace their boltgun and Long Vigil melee weapon with:<ul style=\"list-style-type:circle\"><li>1 Long Vigil ranged weapon</li><li>1 boltgun and 1 Astartes shield</li><li>1 Long Vigil melee weapon and 1 Astartes shield</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, up to 2 models can replace their boltgun and Long Vigil melee weapon with 1 Deathwatch thunder hammer.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in the unit, up to 2 models can replace their boltgun and Long Vigil melee weapon with one of the following:<ul style=\"list-style-type:circle\"><li>1 frag cannon</li><li>1 Infernus heavy bolter</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of Kill Team Biker models can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 Long Vigil melee weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 5 models in this unit, up to 2 models  can replace their boltgun and Long Vigil melee weapon with 1 Deathwatch thunder hammer.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Up to 3 models can each have their storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 assault cannon</li><li>1 heavy flamer</li><li>1 plasma cannon</li><li>1 cyclone missile launcher and 1 storm bolter (this model’s storm bolter cannot be replaced)</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of Kill Team Terminator models can replace their power fist and storm bolter with one of the following:<ul style=\"list-style-type:circle\"><li>1 storm bolter and 1 power weapon</li><li>1 storm bolter and 1 chainfist</li><li>1 twin lightning claws</li><li>1 Terminator thunder hammer and 1 storm shield</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002762",
@@ -6265,7 +6740,7 @@
    "model_min": 4,
    "model_max": 4,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004074",
@@ -6496,7 +6971,28 @@
    "model_min": 9,
    "model_max": 9,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "1 Missionary model can have its 1 plasma gun replaced with 1 meltagun.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Missionary model equipped with 1 plasma gun can be equipped with 1 holy fire (this model’s plasma gun cannot be replaced).",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Sanctifier model can have its 1 Sanctifier melee weapon replaced with 1 Ministorum hand flamer and 1 close combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Sanctifier model can have its 1 Sanctifier melee weapon replaced with 1 close combat weapon and 1 simulacrum imperialis.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003819",
@@ -6655,10 +7151,15 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "Twin multi-melta",
+     "text": "This model’s immolation flamers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 twin multi-melta</li></ul>",
      "cost": 15,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 hunter-killer missile.",
+     "cost": 0,
      "type": "wargear"
     }
    ]
@@ -6944,7 +7445,33 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Sister Superior’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 combi-weapon</li><li>1 condemnor boltgun</li><li>1 inferno pistol</li><li>1 Ministorum hand flamer</li><li>1 plasma pistol</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Sister Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Battle Sister’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Battle Sister’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 heavy bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li><li>1 Ministorum heavy flamer</li><li>1 multi-melta</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Battle Sister equipped with 1 boltgun can be equipped with 1 simulacrum imperialis (that model’s boltgun cannot be replaced).",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003827",
@@ -7213,7 +7740,38 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "One model equipped with a marksman bolt carbine can be equipped with 1 helix gauntlet.*",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "One model equipped with a marksman bolt carbine can be equipped with 1 Infiltrator comms array.*",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "One model can replace its bolt sniper rifle with 1 bolt carbine.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each replace their bolt sniper rifle with 1 las fusil.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each replace their combat knife with 1 bolt carbine and 1 close combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "<i>* These options cannot be taken on the same model.</i>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002684",
@@ -7333,7 +7891,13 @@
    "model_min": 11,
    "model_max": 11,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Proctor-Subductor can be equipped with 1 nuncio aquila.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002766",
@@ -7445,7 +8009,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003823",
@@ -7607,7 +8177,18 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Veteran Biker Sergeant can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 Long Vigil ranged weapon</li><li>1 Long Vigil melee weapon</li><li>1 xenophase blade</li><li>1 Astartes shield</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of Veteran Biker models can each be equipped with 1 Long Vigil melee weapon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002683",
@@ -7795,7 +8376,18 @@
    "model_min": 11,
    "model_max": 11,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Up to 2 Vigilants can each have their Arbites combat shotgun replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 executioner shotgun</li><li>1 Arbites grenade launcher</li><li>1 heavy stubber</li><li>1 webber</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Proctor-Vigilant can be equipped with 1 nuncio aquila.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000870",
@@ -7936,7 +8528,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002509",
@@ -8087,7 +8679,7 @@
    "model_min": 6,
    "model_max": 6,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003814",
@@ -8206,7 +8798,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003815",
@@ -8318,7 +8910,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   }
  ],
  "detachments": [

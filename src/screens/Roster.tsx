@@ -6,7 +6,7 @@ import type {
   Datasheet,
   FactionData,
   PointsOption,
-  WargearOption,
+  WeaponOption,
 } from '../lib/types';
 import { DatasheetCard } from '../components/DatasheetCard';
 import { Modal } from '../components/Modal';
@@ -120,9 +120,9 @@ export function Roster({
                 Remove
               </button>
             </div>
-            {ds && (ds.wargear_options?.length ?? 0) > 0 && (
-              <WargearEditor
-                options={ds.wargear_options!}
+            {ds && (ds.weapon_options?.length ?? 0) > 0 && (
+              <WeaponOptionsEditor
+                options={ds.weapon_options!}
                 chosen={u.wargearCosts ?? []}
                 onChange={(wc) => onSetWargear(u.uid, wc)}
               />
@@ -224,49 +224,59 @@ export function Roster({
   );
 }
 
-function WargearEditor({
+function WeaponOptionsEditor({
   options,
   chosen,
   onChange,
 }: {
-  options: WargearOption[];
+  options: WeaponOption[];
   chosen: ChosenWargear[];
   onChange: (wc: ChosenWargear[]) => void;
 }) {
-  const qtyOf = (name: string) => chosen.find((c) => c.name === name)?.qty ?? 0;
-  const setQty = (o: WargearOption, qty: number) => {
-    const next = chosen.filter((c) => c.name !== o.name);
-    if (qty > 0) next.push({ name: o.name, cost: intOf(o.cost), qty });
+  const qtyOf = (text: string) => chosen.find((c) => c.name === text)?.qty ?? 0;
+  const setQty = (o: WeaponOption, qty: number) => {
+    const next = chosen.filter((c) => c.name !== o.text);
+    if (qty > 0) next.push({ name: o.text, cost: o.cost, qty });
     onChange(next);
   };
   const total = chosen.reduce((s, c) => s + intOf(c.cost) * c.qty, 0);
   return (
     <details style={{ marginTop: 8 }}>
       <summary className="muted small">
-        Paid wargear options{total > 0 ? ` · +${total} pts` : ''}
+        Weapon options ({options.length}){total > 0 ? ` · +${total} pts` : ''}
       </summary>
-      <div className="col" style={{ gap: 6, marginTop: 6 }}>
+      <ul className="col" style={{ gap: 8, marginTop: 6, listStyle: 'none', padding: 0 }}>
         {options.map((o, i) => {
-          const q = qtyOf(o.name);
+          const q = qtyOf(o.text);
           return (
-            <div className="row" key={i} style={{ gap: 8, alignItems: 'center' }}>
+            <li className="row" key={i} style={{ gap: 8, alignItems: 'center' }}>
               <div style={{ flex: 1 }} className="small">
-                {o.name}{' '}
-                <span className="muted">
-                  (+{intOf(o.cost)} pt{o.type === 'model' ? ' /model' : ' each'})
-                </span>
+                {o.text}{' '}
+                {o.cost > 0 ? (
+                  <span className="badge">+{o.cost} pt{o.type === 'model' ? '' : ' each'}</span>
+                ) : (
+                  <span className="muted tiny">free</span>
+                )}
               </div>
-              <button className="ghost stepper sm" disabled={q <= 0} onClick={() => setQty(o, q - 1)}>
-                −
-              </button>
-              <b style={{ minWidth: 20, textAlign: 'center' }}>{q}</b>
-              <button className="ghost stepper sm" onClick={() => setQty(o, q + 1)}>
-                ＋
-              </button>
-            </div>
+              {o.cost > 0 && (
+                <>
+                  <button
+                    className="ghost stepper sm"
+                    disabled={q <= 0}
+                    onClick={() => setQty(o, q - 1)}
+                  >
+                    −
+                  </button>
+                  <b style={{ minWidth: 20, textAlign: 'center' }}>{q}</b>
+                  <button className="ghost stepper sm" onClick={() => setQty(o, q + 1)}>
+                    ＋
+                  </button>
+                </>
+              )}
+            </li>
           );
         })}
-      </div>
+      </ul>
     </details>
   );
 }

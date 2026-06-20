@@ -180,7 +180,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with up to 6 seeker missiles.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s 2 burst cannons can be replaced with 2 cyclic ion blasters.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000408",
@@ -275,7 +286,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000409",
@@ -400,7 +417,13 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000453",
@@ -601,7 +624,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 long-barrelled burst cannons can be replaced with 2 cyclic ion blasters.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s swiftstrike burst cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 ion cannon</li><li>1 swiftstrike railgun</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to 4 seeker missiles.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000412",
@@ -731,7 +770,13 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Breacher Fire Warrior Shas’ui can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 guardian drone (it cannot take duplicates of this piece of wargear)</li><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000433",
@@ -930,10 +975,25 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "High-yield missile pods",
+     "text": "Any number of models can each have their heavy rail rifle replaced with 1 high-yield missile pods.",
      "cost": 5,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 seeker missile</li><li>1 twin plasma rifle*</li><li>1 twin smart missile system*</li><li>1 weapon support system</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 missile drone</li><li>1 shield drone </li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* No model can be equipped with both a twin plasma rifle and twin smart missile system at the same time.",
+     "cost": 0,
      "type": "wargear"
     }
    ]
@@ -1047,7 +1107,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000406",
@@ -1182,7 +1248,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000402",
@@ -1404,7 +1470,28 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s high-output burst cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster*</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system*</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to three of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster*</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system* </li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* This model cannot have duplicates of these pieces of wargear.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001477",
@@ -1615,7 +1702,28 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s burst cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 cyclic ion blaster</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system*</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to three of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system*</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* This model cannot have duplicates of these pieces of wargear.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001478",
@@ -1826,7 +1934,28 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s burst cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 cyclic ion blaster*</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system*</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to three of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster*</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system* </li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* This model cannot have duplicates of these pieces of wargear. ",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000407",
@@ -2000,7 +2129,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000418",
@@ -2214,7 +2343,33 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their burst cannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 cyclic ion blaster</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system*</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can be equipped with up to two of the following, and can take duplicate<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each be equipped with up to three of the following, and can take duplicates**:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system* </li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* Each model cannot have duplicates of these pieces of wargear.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "** Each model cannot be equipped with more than 3 ranged weapons.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003700",
@@ -2349,10 +2504,20 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "Missile pod",
+     "text": "Any number of models can each have their plasma rifle replaced with 1 missile pod.",
      "cost": 5,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each have their missile pod replaced with 1 plasma rifle.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can be equipped with up to two of the following, but cannot take duplicates<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "cost": 0,
      "type": "wargear"
     }
    ]
@@ -2490,10 +2655,20 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "T'au flamer",
+     "text": "Any number of models can each have their burst cannon replaced with 1 T’au flamer.",
      "cost": 5,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each have their T’au flamer replaced with 1 burst cannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can be equipped with up to two of the following, but cannot take duplicates<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "cost": 0,
      "type": "wargear"
     }
    ]
@@ -2612,7 +2787,13 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000410",
@@ -2734,7 +2915,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000424",
@@ -2880,7 +3061,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 twin pulse carbines can be replaced with 2 smart missile systems.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to 2 seeker missiles.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000459",
@@ -3006,7 +3198,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s twin plasma rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin burst cannon</li><li>1 twin fusion blaster</li><li>1 twin missile pod</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000404",
@@ -3112,7 +3310,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with 1 hover drone.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000428",
@@ -3240,7 +3449,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000420",
@@ -3436,10 +3651,20 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "Cyclic Ion Raker",
+     "text": "This model’s fusion collider can be replaced with 1 cyclic ion raker.",
      "cost": 10,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s twin T’au flamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin fusion blaster</li><li>1 twin burst cannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with one battlesuit support system.",
+     "cost": 0,
      "type": "wargear"
     }
    ]
@@ -3585,7 +3810,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 Kroot bolt thrower and 1 Kroot rifle</li><li>1 twin Kroot gun</li><li>1 baggage harness</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000432",
@@ -3777,7 +4008,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s railgun can be replaced with 1 ion cannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s 2 twin pulse carbines can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 accelerator burst cannons</li><li>2 smart missile systems</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to 2 seeker missiles.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000449",
@@ -3886,7 +4133,13 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their burst cannon and markerlight replaced with 1 twin burst cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001391",
@@ -4001,7 +4254,13 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000413",
@@ -4155,7 +4414,18 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Long-quill’s Kroot rifle can be replaced with 1 Kroot carbine.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "For every 10 models in this unit, one Kroot Carnivore’s Kroot rifle can be replaced with 1 Tanglebomb launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002588",
@@ -4356,7 +4626,23 @@
    "model_min": 12,
    "model_max": 12,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Kroot Kill-broker’s Farstalker firearm can be replaced with 1 T’au-tech rifle.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Kroot Farstalker’s Farstalker firearm can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Dvorgite skinner</li><li>1 Londaxi tribalest</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Kroot Farstalker equipped with a Farstalker firearm can be equipped with 1 Pech’ra.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003704",
@@ -4478,7 +4764,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000415",
@@ -4583,7 +4869,7 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003705",
@@ -4733,7 +5019,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s Kroot long gun can be replaced with 1 blast javelin and 1 hunting javelin.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003702",
@@ -4855,7 +5147,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003703",
@@ -5001,7 +5293,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s dart-bow and tri-bade can be replaced with 1 bladestave and prey-hook.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000003706",
@@ -5133,7 +5431,7 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000414",
@@ -5270,7 +5568,13 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their repeater cannon replaced with 1 tanglecannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000431",
@@ -5462,7 +5766,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s railgun can be replaced with 1 ion cannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s 2 twin pulse carbines can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 accelerator burst cannons</li><li>2 smart missile systems</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to 2 seeker missiles.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000457",
@@ -5643,7 +5963,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000456",
@@ -5767,7 +6093,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000422",
@@ -5971,10 +6303,25 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "Ion rifle",
+     "text": "The Pathfinder Shas’ui can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 grav-inhibitor drone</li><li>1 pulse accelerator drone</li><li>1 recon drone</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Pathfinder Shas’ui can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Up to 3 Pathfinders can each have their pulse carbine replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 ion rifle</li><li>1 rail rifle</li></ul>",
      "cost": 5,
+     "type": "wargear"
+    },
+    {
+     "text": "1 model in this unit equipped with a pulse carbine can be equipped with 1 semi-automatic grenade launcher. That model’s pulse carbine cannot be replaced.",
+     "cost": 0,
      "type": "wargear"
     }
    ]
@@ -6167,7 +6514,18 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their Piranha burst cannon can be replaced with 1 Piranha fusion blaster.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each be equipped with up to 2 seeker missiles.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000425",
@@ -6322,7 +6680,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s accelerator burst cannon can be replaced with 1 missile pod.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000452",
@@ -6450,7 +6814,13 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000458",
@@ -6542,7 +6912,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000421",
@@ -6725,10 +7101,20 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "Ion accelerator",
+     "text": "This model’s heavy burst cannon can be replaced with 1 ion accelerator.",
      "cost": 20,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s twin plasma rifles can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin fusion blaster</li><li>1 twin smart missile system</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to 2 missile drones.",
+     "cost": 0,
      "type": "wargear"
     }
    ]
@@ -6849,7 +7235,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with up to 2 missile drones.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000439",
@@ -6987,7 +7379,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000430",
@@ -7131,7 +7529,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 twin pulse carbines can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 accelerator burst cannons</li><li>2 smart missile systems</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000417",
@@ -7285,7 +7689,33 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Stealth Shas’vre can be equipped with 1 gun drone.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Stealth Shas’vre can be equipped with 1 marker drone.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Stealth Shas’vre can be equipped with 1 pulse pistol.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": " 1 Stealth Shas’ui can be equipped with 1 homing beacon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "2 models can each have their burst cannon replaced with 1 fusion blaster.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000434",
@@ -7500,7 +7930,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s pulse driver cannon can be replaced with 1 pulse blast cannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s twin T’au flamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin airbursting fragmentation projector</li><li>1 twin burst cannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000411",
@@ -7642,7 +8083,18 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Fire Warrior Shas’ui can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 guardian drone (it cannot take duplicates of this piece of wargear)</li><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of Fire Warrior models can each have their pulse rifle replaced with 1 pulse carbine.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000426",
@@ -7797,7 +8249,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s missile pod can be replaced with 1 twin missile pod.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000403",
@@ -7905,7 +8363,13 @@
    "model_min": 4,
    "model_max": 12,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000446",
@@ -8115,7 +8579,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s tri-axis ion cannon can be replaced with 1 fusion eradicator.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s fusion eradicator can be replaced with 1 tri-axis ion cannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s 3 pulse ordnance drivers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 nexus missile launchers</li><li>1 heavy rail cannon array and 1 fragmentation cluster shell launcher</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000447",
@@ -8234,7 +8714,13 @@
    "model_min": 2,
    "model_max": 4,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004203",
@@ -8444,7 +8930,13 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000435",
@@ -8551,7 +9043,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000437",
@@ -8652,7 +9150,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000436",
@@ -8759,9 +9263,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "1 Tidewall Defence Platform",
+     "text": "This model can be equipped with 1 Tidewall defence platform.",
      "cost": 20,
      "type": "model"
     }
@@ -8992,7 +9496,28 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 burst cannons can be replaced with 2 cyclic ion blasters.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s 2 ion cannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 swiftstrike burst cannons</li><li>2 swiftstrike railguns</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with up to 6 seeker missiles.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s transport bay can be replaced with 2 skyspear missile racks.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000448",
@@ -9135,7 +9660,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 plasma rifles can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 fusion blasters</li><li>2 missile pods</li><li>2 rail rifles</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000427",
@@ -9281,7 +9812,13 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "If this unit contains 10 models:<ul style=\"list-style-type:circle\"><li>The Vespid Strain Leader can be equipped with 1 Oversight Drone.</li><li>1 Vespid Stingwing can replace its neutron blaster with 1 T’au flamer</li><li>1 Vespid Stingwing can replace its neutron blaster with 1 neutron grenade launcher</li><li>1 Vespid Stingwing can replace its neutron blaster with 1 neutron rail rifle.</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000443",
@@ -9438,7 +9975,28 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their fusion cascade replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 phased ion gun</li><li>1 twin hazard burst cannon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each have their twin hazard burst cannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 fusion cascade</li><li>1 phased ion gun</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 battlesuit support system</li><li>1 shield generator</li><li>1 weapon support system</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000444",
@@ -9589,7 +10147,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model can be equipped with up to 2 missile drones.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   }
  ],
  "detachments": [

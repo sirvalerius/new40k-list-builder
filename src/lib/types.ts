@@ -81,10 +81,11 @@ export interface Datasheet {
   model_min?: number | null;   // smallest legal model count (smallest cost bracket)
   model_max?: number | null;   // largest legal model count (largest cost bracket)
   countable?: boolean;         // true if the unit has a model-count range (multiple size brackets)
-  wargear_options?: WargearOption[];  // paid wargear/model upgrades (MFM "per X N pts")
+  weapon_options?: WeaponOption[];  // ordered options (free + paid) with inline cost
 }
 
-export interface WargearOption { name: string; cost: number | string; type: 'wargear' | 'model'; }
+// A weapon/wargear option line in datasheet order; cost 0 = free, >0 = paid (MFM).
+export interface WeaponOption { text: string; cost: number; type: 'wargear' | 'model'; }
 export interface ChosenWargear { name: string; cost: number; qty: number; }
 export interface Enhancement { name: string; cost: string; description: string; is_upgrade: boolean; }
 export interface DetachmentRule { name: string; description: string; }

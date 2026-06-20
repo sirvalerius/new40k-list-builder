@@ -132,7 +132,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s command uplink can be replaced with 1 chaff launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002086",
@@ -279,7 +285,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s command uplink can be replaced with 1 chaff launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002085",
@@ -411,7 +423,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s command uplink can be replaced with 1 chaff launcher.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000838",
@@ -569,7 +587,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000844",
@@ -681,7 +699,7 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000846",
@@ -786,7 +804,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000843",
@@ -887,7 +905,7 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000004211",
@@ -1035,7 +1053,13 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004212",
@@ -1172,7 +1196,13 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000852",
@@ -1336,9 +1366,9 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "Twin cognis lascannon",
+     "text": "Any number of models can each have their twin cognis autocannon replaced with 1 twin cognis lascannon.",
      "cost": 10,
      "type": "wargear"
     }
@@ -1534,7 +1564,18 @@
    "model_min": 2,
    "model_max": 4,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their twin Kastelan fist replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Kastelan phosphor blaster and 1 Kastelan fist</li><li>1 twin Kastelan phosphor blaster and 1 close combat weapon</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each have their incendine combustor replaced with 1 heavy phosphor blaster.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000841",
@@ -1665,7 +1706,18 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their heavy arc rifle replaced with 1 torsion cannon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each have their arc claw replaced with 1 hydraulic claw.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000842",
@@ -1818,7 +1870,18 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their heavy grav-cannon replaced with 1 Kataphron plasma culverin.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Any number of models can each have their phosphor blaster replaced with 1 cognis flamer.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000854",
@@ -2005,7 +2068,23 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s eradication beamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 daedalus missile launcher and 1 Icarus array</li><li>1 neutron laser and 1 cognis heavy stubber</li><li>1 twin Onager heavy phosphor blaster</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 additional cognis heavy stubber.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model can be equipped with 1 broad spectrum data-tether.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002084",
@@ -2159,7 +2238,7 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000002083",
@@ -2312,7 +2391,7 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001525",
@@ -2462,7 +2541,23 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Hoplite Alpha’s arc lance can be replaced with 1 Archeotech pistol.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Hoplite Alpha can be equipped with 1 Alpha close combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Secutarii Hoplite can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether</li><li>1 omnispex</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001526",
@@ -2623,7 +2718,23 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Peltast Alpha’s arc lance can be replaced with 1 Archeotech pistol.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Peltast Alpha can be equipped with 1 Alpha close combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Secutarii Peltast can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether</li><li>1 omnispex</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002082",
@@ -2754,7 +2865,13 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "1 Serberys Raider can be equipped with 1 enhanced data-tether.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002081",
@@ -2906,7 +3023,13 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "For every 3 models in this unit, 1 Serberys Sulphurhound’s 2 phosphor pistols can be replaced with 1 phosphor blast carbine and 1 phosphor pistol.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004119",
@@ -3093,7 +3216,18 @@
    "model_min": 9,
    "model_max": 9,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "1 Combat Servitor model can have its 1 phosphor blaster replaced with 1 meltagun.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "Up to 3 Combat Servitor models can each have their 1 phosphor blaster replaced with 1 incendine igniter.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000847",
@@ -3242,7 +3376,13 @@
    "model_min": 4,
    "model_max": 4,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Up to 2 models can each have their Servitor’s servo-arm replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter and 1 Servitor’s tools</li><li>1 multi-melta and 1 Servitor’s tools</li><li>1 plasma cannon and 1 Servitor’s tools</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000850",
@@ -3407,7 +3547,13 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of models can each have their stubcarbine and power weapon replaced with 1 flechette blaster and 1 taser goad.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000851",
@@ -3550,7 +3696,18 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "Any number of Sicarian Ruststalkers can each have their transonic razor and chordclaw replaced with 1 transonic blades.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Sicarian Ruststalker Princeps’ transonic razor and chordclaw can be replaced with 1 transonic blades and chordclaw.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002478",
@@ -3660,7 +3817,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000848",
@@ -3851,7 +4008,43 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Skitarii Ranger Alpha can be equipped with 1 Alpha combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Skitarii Ranger Alpha’s galvanic rifle can be replaced with 1 Mechanicus pistol.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 arc rifle.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 plasma caliver.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 transuranic arquebus.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Ranger equipped with a galvanic rifle can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* That model’s galvanic rifle cannot be replaced.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000849",
@@ -4036,7 +4229,43 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "The Skitarii Vanguard Alpha can be equipped with 1 Alpha combat weapon.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "The Skitarii Vanguard Alpha’s radium carbine can be replaced with 1 Mechanicus pistol.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 arc rifle.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 plasma caliver.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 transuranic arquebus.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "1 Skitarii Vanguard equipped with a radium carbine can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "* That model’s radium carbine cannot be replaced.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000001651",
@@ -4181,9 +4410,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": [
+   "weapon_options": [
     {
-     "name": "Ferrumite cannon",
+     "text": "This model’s belleros energy cannon can be replaced with 1 ferrumite cannon.",
      "cost": 10,
      "type": "wargear"
     }
@@ -4305,7 +4534,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003694",
@@ -4450,7 +4679,7 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000000853",
@@ -4584,7 +4813,7 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000003695",
@@ -4731,7 +4960,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s radium jezzail can be replaced with 1 Skatros transuranic arquebus.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000839",
@@ -4889,7 +5124,18 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s macrostubber can be replaced with 1 phosphor serpenta.",
+     "cost": 0,
+     "type": "wargear"
+    },
+    {
+     "text": "This model’s volkite blaster can be replaced with 1 eradication ray.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000000840",
@@ -5017,7 +5263,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001580",
@@ -5141,7 +5387,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s magnarail lance can be replaced with 1 transonic cannon.",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000002477",
@@ -5252,7 +5504,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001533",
@@ -5397,7 +5649,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "This model’s 2 combi-bolters can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>2 heavy flamers</li><li>2 twin volkite chargers</li></ul>",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   },
   {
    "id": "000004210",
@@ -5561,7 +5819,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": []
   },
   {
    "id": "000001822",
@@ -5674,7 +5932,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "wargear_options": []
+   "weapon_options": [
+    {
+     "text": "None",
+     "cost": 0,
+     "type": "wargear"
+    }
+   ]
   }
  ],
  "detachments": [
