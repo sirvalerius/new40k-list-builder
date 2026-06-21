@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords } from './helpers';
+import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed } from './helpers';
 import type { ArmyList, ChosenWargear, Datasheet, Detachment, FactionData, ListUnit, PointsOption, Weapon } from './types';
 
 function ds(partial: Partial<Datasheet>): Datasheet {
@@ -248,6 +248,25 @@ describe('stratagemAppliesTo (keyword AND/OR matching)', () => {
     const voc = [...vocab, 'AIRCRAFT'];
     expect(stratagemAppliesTo(s, ['INFANTRY'], voc)).toBe(true);
     expect(stratagemAppliesTo(s, ['VEHICLE', 'AIRCRAFT', 'FLY'], voc)).toBe(false);
+  });
+});
+
+describe('enhancementAllowed ("X model only" keyword requirement)', () => {
+  const vocab = ['ADEPTUS ASTARTES', 'GRAVIS', 'CAPTAIN', 'TECHMARINE', 'INFANTRY', 'WATCH MASTER'];
+  it('enforces a single keyword requirement', () => {
+    expect(enhancementAllowed('GRAVIS model only. +1 W.', ['CAPTAIN', 'GRAVIS'], vocab)).toBe(true);
+    expect(enhancementAllowed('GRAVIS model only. +1 W.', ['CAPTAIN', 'INFANTRY'], vocab)).toBe(false);
+  });
+  it('handles "A or B model only" as OR', () => {
+    const d = 'Watch Master or Techmarine model only. Re-roll.';
+    expect(enhancementAllowed(d, ['TECHMARINE'], vocab)).toBe(true);
+    expect(enhancementAllowed(d, ['CAPTAIN'], vocab)).toBe(false);
+  });
+  it('no "model only" clause -> allowed', () => {
+    expect(enhancementAllowed('Add 1 to wound rolls.', ['INFANTRY'], vocab)).toBe(true);
+  });
+  it('fails open when the required keyword is not in the vocab', () => {
+    expect(enhancementAllowed('PHOBOS model only.', ['INFANTRY'], vocab)).toBe(true);
   });
 });
 

@@ -369,29 +369,54 @@ export function stratagemAppliesTo(
   let target = text.match(/TARGET:?\s*([\s\S]*?)(?:EFFECT:|WHEN:|RESTRICTIONS:|$)/)?.[1] ?? text;
   // drop exclusion clauses so "excluding TERMINATOR" isn't read as a requirement
   target = target.split(/EXCLUDING|OTHER THAN|THAT IS NOT|THAT ARE NOT|CANNOT/)[0];
+  return matchKeywordExpr(target, kws, up);
+}
 
-  const taken = new Array(target.length).fill(false);
+/**
+ * Does a unit satisfy the keyword expression in `phrase`? Adjacency = AND (new group);
+ * "/", "," or "or" between keywords = OR (same group). A unit qualifies when every AND-group
+ * holds at least one of its keywords. No recognised keyword in the phrase → unconstrained (true).
+ * `up` = vocab keywords, uppercase, longest-first.
+ */
+function matchKeywordExpr(phrase: string, kws: Set<string>, up: string[]): boolean {
+  const taken = new Array(phrase.length).fill(false);
   const hits: { kw: string; start: number; end: number }[] = [];
   for (const v of up) {
-    for (let i = target.indexOf(v); i !== -1; i = target.indexOf(v, i + 1)) {
+    for (let i = phrase.indexOf(v); i !== -1; i = phrase.indexOf(v, i + 1)) {
       if (taken.slice(i, i + v.length).some(Boolean)) continue;
       hits.push({ kw: v, start: i, end: i + v.length });
       for (let j = i; j < i + v.length; j++) taken[j] = true;
     }
   }
-  if (!hits.length) return true; // no unit-type constraint -> general
+  if (!hits.length) return true;
   hits.sort((a, b) => a.start - b.start);
-
-  // Group the keywords: adjacency = AND (new group); "/", "," or "or" between them = OR
-  // (same group). A unit qualifies if EVERY AND-group holds at least one of its keywords —
-  // so "VEHICLE FLY" needs both, while "MONSTER/VEHICLE" needs either.
   const groups: string[][] = [[hits[0].kw]];
   for (let k = 1; k < hits.length; k++) {
-    const gap = target.slice(hits[k - 1].end, hits[k].start);
+    const gap = phrase.slice(hits[k - 1].end, hits[k].start);
     if (/[/,]|(^|\W)OR(\W|$)/.test(gap)) groups[groups.length - 1].push(hits[k].kw);
     else groups.push([hits[k].kw]);
   }
   return groups.every((g) => g.some((kw) => kws.has(kw)));
+}
+
+/**
+ * Many enhancements are restricted to a model type ("GRAVIS model only", "CAPTAIN model only",
+ * "Watch Master or Techmarine model only"). Returns whether a unit with `unitKeywords` may take
+ * the enhancement. No "… model only" clause, or an unrecognised keyword → allowed (fail-open).
+ */
+export function enhancementAllowed(
+  description: string,
+  unitKeywords: string[],
+  vocab: string[],
+): boolean {
+  const text = stripHtml(description).toUpperCase();
+  const m = text.match(/(?:^|\.\s*)([A-Z][A-Z0-9 '/\-]*?)\s+MODELS?\s+ONLY/);
+  if (!m) return true;
+  const kws = new Set(unitKeywords.map((k) => k.toUpperCase()));
+  const up = [...new Set(vocab.map((v) => v.toUpperCase()).filter((v) => v.length >= 3))].sort(
+    (a, b) => b.length - a.length,
+  );
+  return matchKeywordExpr(m[1], kws, up);
 }
 
 /**

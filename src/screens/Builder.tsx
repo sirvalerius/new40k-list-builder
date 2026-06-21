@@ -348,6 +348,7 @@ export function Builder({
       {tab === 'enh' && (
         <Enhancements
           list={list}
+          fd={fd}
           detachments={detachments}
           enhancementLimit={result.totals.enhancementLimit}
           enhancementsUsed={result.totals.enhancementsUsed}
