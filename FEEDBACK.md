@@ -9,3 +9,8 @@ below automatically (via the Cloudflare Worker in `feedback-worker/`).
 _setup verification � curl_
 
 Primo feedback di test - il pulsante funziona!
+
+---
+### 2026-06-21T16:11:26.259Z
+
+__tokcheck__
