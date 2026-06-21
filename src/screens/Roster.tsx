@@ -11,12 +11,17 @@ import type {
 import { DatasheetCard } from '../components/DatasheetCard';
 import { Modal } from '../components/Modal';
 import {
+  GROUP_LABEL,
+  GROUP_ORDER,
+  attachedLeaders,
   bracketForCount,
   copiesOf,
+  eligibleBodyguards,
   intOf,
   optionMax,
   stripHtml,
   tierForPick,
+  unitGroup,
   unitTotal,
   unitVariants,
 } from '../lib/helpers';
@@ -40,6 +45,7 @@ export function Roster({
   onSetWarlord,
   onSetWargear,
   onSetModelCount,
+  onAttach,
 }: {
   list: ArmyList;
   fd: FactionData;
@@ -51,10 +57,12 @@ export function Roster({
   onSetWarlord: (uid: string) => void;
   onSetWargear: (uid: string, wargear: ChosenWargear[]) => void;
   onSetModelCount: (uid: string, count: number) => void;
+  onAttach: (uid: string, toUid: string | null) => void;
 }) {
   const [query, setQuery] = useState('');
   const [browsing, setBrowsing] = useState(false);
   const [adding, setAdding] = useState<Datasheet | null>(null);
+  const [hideLegends, setHideLegends] = useState(true); // Legends hidden by default
 
   const dsById = useMemo(
     () => new Map(fd.datasheets.map((d) => [d.id, d])),
@@ -75,6 +83,7 @@ export function Roster({
   const visible = useMemo(
     () =>
       fd.datasheets.filter((d) => {
+        if (hideLegends && d.is_legends) return false;
         if (!subFaction) return true;
         if (d.chapter && d.chapter !== subFaction) return false;
         if (
@@ -84,7 +93,7 @@ export function Roster({
           return false;
         return true;
       }),
-    [fd, subFaction],
+    [fd, subFaction, hideLegends],
   );
 
   const sorted = useMemo(() => {
@@ -106,106 +115,154 @@ export function Roster({
   const unitLimit = intOf(battleSize.unit_limit);
   const blLimit = intOf(battleSize.battleline_limit);
 
+  const renderUnitCard = (u: typeof list.units[number]) => {
+    const ds = dsById.get(u.datasheetId);
+    const leaders = attachedLeaders(u.uid, list);
+    const eligible = ds?.is_leader ? eligibleBodyguards(ds, list, dsById) : [];
+    return (
+      <div className="card" key={u.uid}>
+        <div className="row">
+          <div style={{ flex: 1 }}>
+            <div style={{ fontWeight: 600 }}>{u.name}</div>
+            <div className="muted small">
+              {u.pointsLabel} — <b>{unitTotal(u)} pts</b>
+              {intOf(u.pointsCost) !== unitTotal(u) ? ` (base ${intOf(u.pointsCost)})` : ''}
+              {u.enhancementName
+                ? ` · +${u.enhancementName} (${u.enhancementCost})`
+                : ''}
+            </div>
+            {ds?.countable && (ds.model_min ?? 1) !== (ds.model_max ?? 1) && (
+              <div className="row mt" style={{ gap: 8, alignItems: 'center' }}>
+                <span className="muted tiny">Models:</span>
+                <button
+                  className="ghost stepper sm"
+                  disabled={(u.modelCount ?? ds.model_min!) <= (ds.model_min ?? 1)}
+                  onClick={() => onSetModelCount(u.uid, (u.modelCount ?? ds.model_min!) - 1)}
+                >
+                  −
+                </button>
+                <b style={{ minWidth: 22, textAlign: 'center' }}>{u.modelCount ?? ds.model_min}</b>
+                <button
+                  className="ghost stepper sm"
+                  disabled={(u.modelCount ?? ds.model_min!) >= (ds.model_max ?? 1)}
+                  onClick={() => onSetModelCount(u.uid, (u.modelCount ?? ds.model_min!) + 1)}
+                >
+                  ＋
+                </button>
+              </div>
+            )}
+            <div className="row wrap mt" style={{ gap: 4 }}>
+              {u.warlord && <span className="badge warlord">Warlord</span>}
+              {u.isCharacter && <span className="badge char">Character</span>}
+              {u.isBattleline && <span className="badge">Battleline</span>}
+              {u.isEpicHero && <span className="badge">Epic Hero</span>}
+              {u.isAlly && <span className="badge ally">Ally</span>}
+              {u.requiresDetachment && !chosenDetNames.has(u.requiresDetachment) && (
+                <span className="badge bad">needs {u.requiresDetachment}</span>
+              )}
+            </div>
+            {/* leaders/supports joined to this (bodyguard) unit */}
+            {leaders.length > 0 && (
+              <div className="row wrap mt" style={{ gap: 4, alignItems: 'center' }}>
+                <span className="muted tiny">Joined:</span>
+                {leaders.map((l) => (
+                  <span key={l.uid} className="badge char">
+                    {l.name}
+                  </span>
+                ))}
+              </div>
+            )}
+            {/* attach this Character to a bodyguard unit it can lead */}
+            {ds?.is_leader && (
+              <div className="row mt" style={{ gap: 8, alignItems: 'center' }}>
+                <span className="muted tiny">Attach to:</span>
+                {eligible.length > 0 || u.attachedToUid ? (
+                  <select
+                    className="small"
+                    value={u.attachedToUid ?? ''}
+                    onChange={(e) => onAttach(u.uid, e.target.value || null)}
+                  >
+                    <option value="">— not attached —</option>
+                    {eligible.map((b) => (
+                      <option key={b.uid} value={b.uid}>
+                        {b.name}
+                      </option>
+                    ))}
+                  </select>
+                ) : (
+                  <span className="muted tiny">no eligible unit in roster</span>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+        <div className="row wrap mt" style={{ gap: 6 }}>
+          {u.isCharacter && !u.warlord && (
+            <button className="small" onClick={() => onSetWarlord(u.uid)}>
+              Make Warlord
+            </button>
+          )}
+          <button className="small" onClick={() => onDuplicate(u.uid)}>
+            Duplicate
+          </button>
+          <div className="spacer" />
+          <button className="small danger" onClick={() => onRemove(u.uid)}>
+            Remove
+          </button>
+        </div>
+        {ds && (ds.weapon_options?.length ?? 0) > 0 && (
+          <WeaponOptionsEditor
+            options={ds.weapon_options!}
+            chosen={u.wargearCosts ?? []}
+            modelCount={u.modelCount ?? ds.model_max ?? 1}
+            onChange={(wc) => onSetWargear(u.uid, wc)}
+          />
+        )}
+        {ds && (
+          <details style={{ marginTop: 8 }}>
+            <summary className="muted small">Datasheet</summary>
+            <div className="mt">
+              <DatasheetCard ds={ds} selected={u.wargearCosts ?? []} />
+            </div>
+          </details>
+        )}
+      </div>
+    );
+  };
+
   return (
     <div>
-      <button
-        className="primary"
-        style={{ width: '100%' }}
-        onClick={() => setBrowsing(true)}
-      >
-        + Add unit
-      </button>
-
-      <div className="mt mb muted small">
+      <div className="mb muted small">
         {list.units.length} unit{list.units.length === 1 ? '' : 's'} in roster
       </div>
 
       {list.units.length === 0 && (
-        <div className="empty">No units yet. Tap “Add unit”.</div>
+        <div className="empty">No units yet. Tap the + button.</div>
       )}
 
-      {list.units.map((u) => {
-        const ds = dsById.get(u.datasheetId);
+      {/* units grouped by sub-type: Epic Heroes / Leaders & Supports / Battleline / Other */}
+      {GROUP_ORDER.map((g) => {
+        const inGroup = list.units.filter((u) => !u.isAlly && unitGroup(u) === g);
+        if (!inGroup.length) return null;
         return (
-          <div className="card" key={u.uid}>
-            <div className="row">
-              <div style={{ flex: 1 }}>
-                <div style={{ fontWeight: 600 }}>{u.name}</div>
-                <div className="muted small">
-                  {u.pointsLabel} — <b>{unitTotal(u)} pts</b>
-                  {intOf(u.pointsCost) !== unitTotal(u) ? ` (base ${intOf(u.pointsCost)})` : ''}
-                  {u.enhancementName
-                    ? ` · +${u.enhancementName} (${u.enhancementCost})`
-                    : ''}
-                </div>
-                {ds?.countable && (ds.model_min ?? 1) !== (ds.model_max ?? 1) && (
-                  <div className="row mt" style={{ gap: 8, alignItems: 'center' }}>
-                    <span className="muted tiny">Models:</span>
-                    <button
-                      className="ghost stepper sm"
-                      disabled={(u.modelCount ?? ds.model_min!) <= (ds.model_min ?? 1)}
-                      onClick={() => onSetModelCount(u.uid, (u.modelCount ?? ds.model_min!) - 1)}
-                    >
-                      −
-                    </button>
-                    <b style={{ minWidth: 22, textAlign: 'center' }}>{u.modelCount ?? ds.model_min}</b>
-                    <button
-                      className="ghost stepper sm"
-                      disabled={(u.modelCount ?? ds.model_min!) >= (ds.model_max ?? 1)}
-                      onClick={() => onSetModelCount(u.uid, (u.modelCount ?? ds.model_min!) + 1)}
-                    >
-                      ＋
-                    </button>
-                  </div>
-                )}
-                <div className="row wrap mt" style={{ gap: 4 }}>
-                  {u.warlord && <span className="badge warlord">Warlord</span>}
-                  {u.isCharacter && <span className="badge char">Character</span>}
-                  {u.isBattleline && <span className="badge">Battleline</span>}
-                  {u.isEpicHero && <span className="badge">Epic Hero</span>}
-                  {u.isAlly && <span className="badge ally">Ally</span>}
-                  {u.requiresDetachment && !chosenDetNames.has(u.requiresDetachment) && (
-                    <span className="badge bad">needs {u.requiresDetachment}</span>
-                  )}
-                </div>
-              </div>
-            </div>
-            <div className="row wrap mt" style={{ gap: 6 }}>
-              {u.isCharacter && !u.warlord && (
-                <button className="small" onClick={() => onSetWarlord(u.uid)}>
-                  Make Warlord
-                </button>
-              )}
-              <button className="small" onClick={() => onDuplicate(u.uid)}>
-                Duplicate
-              </button>
-              <div className="spacer" />
-              <button
-                className="small danger"
-                onClick={() => onRemove(u.uid)}
-              >
-                Remove
-              </button>
-            </div>
-            {ds && (ds.weapon_options?.length ?? 0) > 0 && (
-              <WeaponOptionsEditor
-                options={ds.weapon_options!}
-                chosen={u.wargearCosts ?? []}
-                modelCount={u.modelCount ?? ds.model_max ?? 1}
-                onChange={(wc) => onSetWargear(u.uid, wc)}
-              />
-            )}
-            {ds && (
-              <details style={{ marginTop: 8 }}>
-                <summary className="muted small">Datasheet</summary>
-                <div className="mt">
-                  <DatasheetCard ds={ds} selected={u.wargearCosts ?? []} />
-                </div>
-              </details>
-            )}
+          <div key={g} className="mb">
+            <h3 className="group-head muted">{GROUP_LABEL[g]} ({inGroup.length})</h3>
+            {inGroup.map(renderUnitCard)}
           </div>
         );
       })}
+      {/* allies kept at the bottom (managed in the Allies tab) */}
+      {list.units.some((u) => u.isAlly) && (
+        <div className="mb">
+          <h3 className="group-head muted">Allies</h3>
+          {list.units.filter((u) => u.isAlly).map(renderUnitCard)}
+        </div>
+      )}
+
+      {/* floating action button — always within thumb reach */}
+      <button className="fab" aria-label="Add unit" onClick={() => setBrowsing(true)}>
+        ＋
+      </button>
 
       {browsing && (
         <Modal title="Add a unit" onClose={() => setBrowsing(false)}>
@@ -215,6 +272,15 @@ export function Roster({
             onChange={(e) => setQuery(e.target.value)}
             className="mb"
           />
+          <label className="row mb" style={{ gap: 8, alignItems: 'center', cursor: 'pointer' }}>
+            <input
+              type="checkbox"
+              className="opt-check"
+              checked={hideLegends}
+              onChange={(e) => setHideLegends(e.target.checked)}
+            />
+            <span className="small">Nascondi unità Legends</span>
+          </label>
           {ROLE_ORDER.map((bucket) => {
             const inBucket = filtered.filter((d) => {
               if (bucket === 'Epic Hero') return d.is_epic_hero;

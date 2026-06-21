@@ -329,3 +329,57 @@ h3 { font-size: 0.98rem; }
 .stepper:disabled { opacity: 0.4; }
 .stepper.sm { width: 32px; height: 32px; font-size: 18px; border-radius: 8px; }
 .opt-check { width: 22px; height: 22px; accent-color: var(--accent, #4ea1ff); }
+
+/* floating "add unit" button — bottom-right, above the summary bar */
+.fab {
+  position: fixed;
+  right: 16px;
+  bottom: calc(76px + var(--safe-bottom));
+  z-index: 40;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 30px;
+  line-height: 1;
+  padding: 0;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fab:active { background: #a52a2a; }
+
+/* roster sub-type group headings */
+.group-head {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+/* bunker (in-game) cards */
+.card.bunker { border-color: #3a4658; }
+.bunker-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--accent-2);
+}
+.bunker-member {
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.bunker-member:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+.bunker-member-name { font-weight: 600; margin-bottom: 6px; }
+.bunker-strats {
+  border-top: 1px solid var(--border);
+  margin-top: 12px;
+  padding-top: 10px;
+}
+.strat .desc { margin-top: 4px; }

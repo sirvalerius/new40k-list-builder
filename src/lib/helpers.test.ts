@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout } from './helpers';
-import type { ChosenWargear, Datasheet, FactionData, PointsOption, Weapon } from './types';
+import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords } from './helpers';
+import type { ArmyList, ChosenWargear, Datasheet, Detachment, FactionData, ListUnit, PointsOption, Weapon } from './types';
 
 function ds(partial: Partial<Datasheet>): Datasheet {
   return {
@@ -176,6 +176,76 @@ describe('clampLoadout drops sub-model options when the model is removed', () =>
       wargearCosts: [{ name: ATV, cost: 60, qty: 1 }, { name: MM, cost: 0, qty: 1 }] as ChosenWargear[] };
     const out = clampLoadout(unit, outriders);
     expect(out.find((x) => x.name === MM)?.qty).toBe(1);
+  });
+});
+
+describe('unitGroup (roster sub-type)', () => {
+  const mkU = (p: Partial<ListUnit>): ListUnit =>
+    ({ uid: 'u', datasheetId: 'd', name: 'N', pointsCost: 0, pointsLabel: '', isEpicHero: false,
+       isBattleline: false, isCharacter: false, isAlly: false, warlord: false, ...p });
+  it('classifies by epic hero > character > battleline > other', () => {
+    expect(unitGroup(mkU({ isEpicHero: true, isCharacter: true }))).toBe('epic');
+    expect(unitGroup(mkU({ isCharacter: true }))).toBe('leader');
+    expect(unitGroup(mkU({ isBattleline: true }))).toBe('battleline');
+    expect(unitGroup(mkU({}))).toBe('other');
+  });
+});
+
+describe('Leader/Support attachment', () => {
+  const captain = ds({ id: 'cap', name: 'Captain', is_character: true, is_leader: true, can_lead: ['squad'] });
+  const squad = ds({ id: 'squad', name: 'Intercessors', is_battleline: true });
+  const other = ds({ id: 'oth', name: 'Tank' });
+  const dsMap = datasheetMap({ datasheets: [captain, squad, other] } as unknown as FactionData);
+  const u = (over: Partial<ListUnit>): ListUnit =>
+    ({ uid: Math.random().toString(36), datasheetId: 'squad', name: 'Intercessors', pointsCost: 0,
+       pointsLabel: '', isEpicHero: false, isBattleline: true, isCharacter: false, isAlly: false, warlord: false, ...over });
+  it('offers only bodyguard units the leader can join', () => {
+    const sq = u({ uid: 's1' });
+    const tk = u({ uid: 't1', datasheetId: 'oth', name: 'Tank', isBattleline: false });
+    const list = { units: [sq, tk] } as ArmyList;
+    const elig = eligibleBodyguards(captain, list, dsMap);
+    expect(elig.map((x) => x.uid)).toEqual(['s1']); // not the Tank
+  });
+  it('attachedLeaders finds characters joined to a bodyguard', () => {
+    const sq = u({ uid: 's1' });
+    const cap = u({ uid: 'c1', datasheetId: 'cap', name: 'Captain', isCharacter: true, isBattleline: false, attachedToUid: 's1' });
+    const list = { units: [sq, cap] } as ArmyList;
+    expect(attachedLeaders('s1', list).map((x) => x.uid)).toEqual(['c1']);
+  });
+});
+
+describe('stratagemAppliesTo (best-effort by keyword)', () => {
+  const vocab = ['ADEPTUS ASTARTES', 'INFANTRY', 'VEHICLE', 'TERMINATOR'];
+  it('applies when the unit shares a named target keyword', () => {
+    const s = 'WHEN: Your turn. TARGET: One ADEPTUS ASTARTES INFANTRY unit. EFFECT: +1.';
+    expect(stratagemAppliesTo(s, ['ADEPTUS ASTARTES', 'INFANTRY'], vocab)).toBe(true);
+    expect(stratagemAppliesTo(s, ['ADEPTUS ASTARTES', 'VEHICLE'], vocab)).toBe(true); // shares ADEPTUS ASTARTES
+  });
+  it('excludes when the target names only keywords the unit lacks', () => {
+    const s = 'TARGET: One TERMINATOR unit. EFFECT: x.';
+    expect(stratagemAppliesTo(s, ['ADEPTUS ASTARTES', 'INFANTRY'], vocab)).toBe(false);
+  });
+  it('treats a stratagem with no unit-type keyword as general', () => {
+    const s = 'WHEN: Any. TARGET: One unit from your army. EFFECT: y.';
+    expect(stratagemAppliesTo(s, ['VEHICLE'], vocab)).toBe(true);
+  });
+});
+
+describe('effectiveKeywords (detachment-granted keywords)', () => {
+  const fulguris = { keyword_grants: [{ when: ['LAND SPEEDER', 'STORM SPEEDER HAILSTRIKE'], grant: 'SPEEDER' }] } as Detachment;
+  it('grants the keyword to a matching unit', () => {
+    expect(effectiveKeywords(['Land Speeder', 'Vehicle', 'Fly'], [fulguris])).toContain('SPEEDER');
+  });
+  it('does not grant it to a non-matching unit (e.g. a Mounted Epic Hero)', () => {
+    expect(effectiveKeywords(['Character', 'Mounted', 'Epic Hero'], [fulguris])).not.toContain('SPEEDER');
+  });
+  it('a SPEEDER stratagem then excludes the non-speeder unit but includes the speeder', () => {
+    const vocab = ['SPEEDER', 'VEHICLE', 'MOUNTED'];
+    const s = 'WHEN: Move. TARGET: That SPEEDER unit. EFFECT: ingress.';
+    const khan = effectiveKeywords(['Character', 'Mounted'], [fulguris]);
+    const speeder = effectiveKeywords(['Land Speeder', 'Vehicle'], [fulguris]);
+    expect(stratagemAppliesTo(s, khan, vocab)).toBe(false);
+    expect(stratagemAppliesTo(s, speeder, vocab)).toBe(true);
   });
 });
 

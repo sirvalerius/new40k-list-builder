@@ -277,6 +277,95 @@ export function datasheetMap(fd: FactionData): Map<string, Datasheet> {
   return new Map(fd.datasheets.map((d) => [d.id, d]));
 }
 
+// ----- roster grouping by sub-type -----
+export type UnitGroup = 'epic' | 'leader' | 'battleline' | 'other';
+export const GROUP_ORDER: UnitGroup[] = ['epic', 'leader', 'battleline', 'other'];
+export const GROUP_LABEL: Record<UnitGroup, string> = {
+  epic: 'Epic Heroes',
+  leader: 'Leaders & Supports',
+  battleline: 'Battleline',
+  other: 'Other datasheets',
+};
+export function unitGroup(u: ListUnit): UnitGroup {
+  if (u.isEpicHero) return 'epic';
+  if (u.isCharacter) return 'leader';
+  if (u.isBattleline) return 'battleline';
+  return 'other';
+}
+
+// ----- Leader / Support attachment -----
+/** Units already in the list that this leader (Character) may attach to. */
+export function eligibleBodyguards(
+  leaderDs: Datasheet,
+  list: ArmyList,
+  dsById: Map<string, Datasheet>,
+): ListUnit[] {
+  const can = new Set(leaderDs.can_lead ?? []);
+  if (!can.size) return [];
+  return list.units.filter((u) => {
+    const ds = dsById.get(u.datasheetId);
+    return !u.isCharacter && ds != null && can.has(u.datasheetId);
+  });
+}
+/** Characters in the list currently attached to the given bodyguard unit. */
+export function attachedLeaders(bodyguardUid: string, list: ArmyList): ListUnit[] {
+  return list.units.filter((u) => u.attachedToUid === bodyguardUid);
+}
+
+/**
+ * Best-effort: does a detachment stratagem apply to a unit with these keywords?
+ * `vocab` = every unit-type keyword that exists in the faction. If the stratagem's
+ * target names none of them it is treated as general (applies to any unit); otherwise
+ * it applies only when the unit shares at least one named keyword.
+ */
+export function stratagemAppliesTo(
+  description: string,
+  unitKeywords: string[],
+  vocab: string[],
+): boolean {
+  const text = stripHtml(description).toUpperCase();
+  const target = (text.match(/TARGET:?\s*([\s\S]*?)(?:EFFECT:|WHEN:|RESTRICTIONS:|$)/)?.[1] ?? text);
+  const kws = new Set(unitKeywords.map((k) => k.toUpperCase()));
+  const mentioned = vocab.filter((v) => v && target.includes(v.toUpperCase()));
+  if (!mentioned.length) return true; // no unit-type constraint -> general
+  return mentioned.some((v) => kws.has(v.toUpperCase()));
+}
+
+/**
+ * A unit's keywords including those a chosen detachment grants it
+ * (e.g. Fulguris Task Force gives LAND SPEEDER units the SPEEDER keyword). Returned uppercase.
+ */
+export function effectiveKeywords(
+  unitKeywords: string[],
+  chosenDetachments: Detachment[],
+): string[] {
+  const kws = new Set(unitKeywords.map((k) => k.toUpperCase()));
+  for (const det of chosenDetachments) {
+    for (const g of det.keyword_grants ?? []) {
+      if (g.when.some((w) => kws.has(w.toUpperCase()))) kws.add(g.grant.toUpperCase());
+    }
+  }
+  return [...kws];
+}
+
+/**
+ * All unit-type keywords relevant for stratagem matching: every keyword on the faction's
+ * datasheets plus every keyword any detachment can grant (so e.g. SPEEDER is recognised as a
+ * constraint even though no datasheet carries it natively).
+ */
+export function factionKeywordVocab(fd: FactionData): string[] {
+  const set = new Set<string>();
+  for (const d of fd.datasheets) {
+    for (const k of d.keywords ?? []) if (k.length >= 3) set.add(k);
+    for (const k of d.faction_keywords ?? []) if (k.length >= 3) set.add(k);
+  }
+  for (const det of fd.detachments ?? []) {
+    for (const g of det.keyword_grants ?? []) if (g.grant.length >= 3) set.add(g.grant);
+  }
+  // longest first so multi-word keywords match before their fragments
+  return [...set].sort((a, b) => b.length - a.length);
+}
+
 /** Human-readable text export of an army list. */
 export function exportListText(
   list: ArmyList,

@@ -79,6 +79,8 @@ export interface Datasheet {
   is_battleline: boolean;
   is_epic_hero: boolean;
   is_dedicated_transport: boolean;
+  is_leader?: boolean;         // Character that can attach to a bodyguard unit
+  is_legends?: boolean;        // Warhammer Legends datasheet (hidden by default)
   has_order_tiers?: boolean;   // true if points cost escalates by pick order (2nd+/3rd+)
   model_min?: number | null;   // smallest legal model count (smallest cost bracket)
   model_max?: number | null;   // largest legal model count (largest cost bracket)
@@ -107,6 +109,8 @@ export interface WeaponOption {
 export interface ChosenWargear { name: string; cost: number; qty: number; }
 export interface Enhancement { name: string; cost: string; description: string; is_upgrade: boolean; }
 export interface DetachmentRule { name: string; description: string; }
+// "Friendly A/B/C units have the X keyword" — units holding any `when` keyword gain `grant`.
+export interface KeywordGrant { when: string[]; grant: string; }
 export interface Stratagem { name: string; cp_cost: string; type: string; description: string; }
 
 export interface Detachment {
@@ -119,6 +123,7 @@ export interface Detachment {
   restriction: string;
   boarding_actions?: boolean;  // Boarding Actions mode detachment (no DP; excluded from matched play)
   restricted_chapter?: string; // SM Chapter this detachment is bound to ('' = any)
+  keyword_grants?: KeywordGrant[]; // keywords this detachment confers on matching units
   rules: DetachmentRule[];
   enhancements: Enhancement[];
   stratagems: Stratagem[];

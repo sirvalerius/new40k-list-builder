@@ -26,8 +26,9 @@ import { DetachmentPicker } from './DetachmentPicker';
 import { Roster } from './Roster';
 import { Enhancements } from './Enhancements';
 import { Allies, type AllyAddition } from './Allies';
+import { BunkerMode } from './BunkerMode';
 
-type Tab = 'detach' | 'roster' | 'enh' | 'allies';
+type Tab = 'detach' | 'roster' | 'enh' | 'allies' | 'bunker';
 
 export function Builder({
   initial,
@@ -134,7 +135,21 @@ export function Builder({
   }
 
   function removeUnit(uid: string) {
-    update((l) => ({ ...l, units: l.units.filter((u) => u.uid !== uid) }));
+    update((l) => ({
+      ...l,
+      // also detach any leaders that were joined to the removed unit
+      units: l.units
+        .filter((u) => u.uid !== uid)
+        .map((u) => (u.attachedToUid === uid ? { ...u, attachedToUid: undefined } : u)),
+    }));
+  }
+
+  // Attach a Character (leader/support) to a bodyguard unit, or detach when toUid is null.
+  function attachUnit(uid: string, toUid: string | null) {
+    update((l) => ({
+      ...l,
+      units: l.units.map((u) => (u.uid === uid ? { ...u, attachedToUid: toUid ?? undefined } : u)),
+    }));
   }
 
   function duplicateUnit(uid: string) {
@@ -149,6 +164,7 @@ export function Builder({
         warlord: false,
         enhancementName: undefined,
         enhancementCost: undefined,
+        attachedToUid: undefined,
         wargearCosts: src.wargearCosts ? src.wargearCosts.map((w) => ({ ...w })) : undefined,
       };
       const idx = l.units.findIndex((u) => u.uid === uid);
@@ -297,6 +313,12 @@ export function Builder({
         >
           Allies ({list.units.filter((u) => u.isAlly).length})
         </button>
+        <button
+          className={tab === 'bunker' ? 'active' : ''}
+          onClick={() => setTab('bunker')}
+        >
+          🛡 Partita
+        </button>
       </div>
 
       {tab === 'detach' && (
@@ -319,6 +341,7 @@ export function Builder({
           onSetWarlord={setWarlord}
           onSetWargear={setWargear}
           onSetModelCount={setModelCount}
+          onAttach={attachUnit}
         />
       )}
       {tab === 'enh' && (
@@ -340,6 +363,7 @@ export function Builder({
           onRemove={removeUnit}
         />
       )}
+      {tab === 'bunker' && <BunkerMode list={list} fd={fd} />}
 
       <SummaryBar result={result} />
     </div>
