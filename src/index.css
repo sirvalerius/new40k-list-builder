@@ -502,6 +502,16 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 /* feedback form textarea */
 .wpn-profile { margin-top: 2px; line-height: 1.35; font-variant-numeric: tabular-nums; }
 
+/* detachable "joined" chip (a badge rendered as a button) */
+.chip-x {
+  min-height: 0;
+  height: auto;
+  padding: 2px 8px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.chip-x:hover { border-color: var(--accent-2); color: var(--bone); }
+
 .field-label {
   display: block;
   font-size: 0.72rem;

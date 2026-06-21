@@ -324,6 +324,11 @@ export function unitGroup(u: ListUnit): UnitGroup {
   return 'other';
 }
 
+/** Name to show for a unit: the user's custom name if set, else the datasheet name. */
+export function displayName(u: ListUnit): string {
+  return u.customName?.trim() || u.name;
+}
+
 // ----- Leader / Support attachment -----
 /** Units already in the list that this leader (Character) may attach to. */
 export function eligibleBodyguards(
@@ -487,7 +492,7 @@ export function exportListText(
       if (w.qty > 0) tags.push(`${w.qty}x ${w.name} (${intOf(w.cost) * w.qty})`);
     const cost = unitTotal(u);
     lines.push(
-      `• ${u.name} [${u.pointsLabel}] — ${cost} pts${
+      `• ${displayName(u)} [${u.pointsLabel}] — ${cost} pts${
         tags.length ? '  {' + tags.join(', ') + '}' : ''
       }`,
     );

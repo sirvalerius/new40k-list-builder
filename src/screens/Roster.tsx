@@ -17,6 +17,7 @@ import {
   attachedLeaders,
   bracketForCount,
   copiesOf,
+  displayName,
   eligibleBodyguards,
   getFavorites,
   intOf,
@@ -56,6 +57,7 @@ export function Roster({
   onSetWargear,
   onSetModelCount,
   onAttach,
+  onRename,
 }: {
   list: ArmyList;
   fd: FactionData;
@@ -68,11 +70,13 @@ export function Roster({
   onSetWargear: (uid: string, wargear: ChosenWargear[]) => void;
   onSetModelCount: (uid: string, count: number) => void;
   onAttach: (uid: string, toUid: string | null) => void;
+  onRename: (uid: string, name: string) => void;
 }) {
   const [query, setQuery] = useState('');
   const [browsing, setBrowsing] = useState(false);
   const [adding, setAdding] = useState<Datasheet | null>(null);
   const [hideLegends, setHideLegends] = useState(true); // Legends hidden by default
+  const [renaming, setRenaming] = useState<string | null>(null); // uid being renamed
   const [favs, setFavs] = useState<string[]>(() => getFavorites('ds'));
 
   const dsById = useMemo(
@@ -134,7 +138,37 @@ export function Roster({
       <div className="card" key={u.uid}>
         <div className="row">
           <div style={{ flex: 1 }}>
-            <div style={{ fontWeight: 600 }}>{u.name}</div>
+            {renaming === u.uid ? (
+              <input
+                className="small"
+                autoFocus
+                defaultValue={displayName(u)}
+                style={{ fontWeight: 600 }}
+                onBlur={(e) => {
+                  onRename(u.uid, e.target.value.trim());
+                  setRenaming(null);
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    onRename(u.uid, (e.target as HTMLInputElement).value.trim());
+                    setRenaming(null);
+                  } else if (e.key === 'Escape') setRenaming(null);
+                }}
+              />
+            ) : (
+              <div className="row" style={{ gap: 6, alignItems: 'baseline' }}>
+                <span style={{ fontWeight: 600 }}>{displayName(u)}</span>
+                {u.customName?.trim() && <span className="muted tiny">({u.name})</span>}
+                <button
+                  className="ghost iconbtn star"
+                  aria-label="Rename unit"
+                  title="Rename"
+                  onClick={() => setRenaming(u.uid)}
+                >
+                  ✎
+                </button>
+              </div>
+            )}
             <div className="muted small">
               {u.pointsLabel} — <b>{unitTotal(u)} pts</b>
               {intOf(u.pointsCost) !== unitTotal(u) ? ` (base ${intOf(u.pointsCost)})` : ''}
@@ -178,15 +212,21 @@ export function Roster({
             {/* leaders/supports joined to this (bodyguard) unit */}
             {leaders.length > 0 && (
               <div className="row wrap mt" style={{ gap: 4, alignItems: 'center' }}>
-                <span className="muted tiny">Joined:</span>
+                <span className="muted tiny">Joined ({leaders.length}/2):</span>
                 {leaders.map((l) => (
-                  <span key={l.uid} className="badge char">
-                    {l.name}
-                  </span>
+                  <button
+                    key={l.uid}
+                    className="badge char chip-x"
+                    title={`Detach ${displayName(l)}`}
+                    onClick={() => onAttach(l.uid, null)}
+                  >
+                    {displayName(l)} ×
+                  </button>
                 ))}
               </div>
             )}
-            {/* attach this Character to a bodyguard unit it can lead */}
+            {/* attach this Character to a bodyguard unit it can lead (1 Leader + 1 Support per
+                unit — full bodyguards are shown greyed with their current occupants) */}
             {ds?.is_leader && (
               <div className="row mt" style={{ gap: 8, alignItems: 'center' }}>
                 <span className="muted tiny">Attach to:</span>
@@ -197,11 +237,18 @@ export function Roster({
                     onChange={(e) => onAttach(u.uid, e.target.value || null)}
                   >
                     <option value="">— not attached —</option>
-                    {eligible.map((b) => (
-                      <option key={b.uid} value={b.uid}>
-                        {b.name}
-                      </option>
-                    ))}
+                    {eligible.map((b) => {
+                      const occ = attachedLeaders(b.uid, list).filter((x) => x.uid !== u.uid);
+                      const full = occ.length >= 2;
+                      const occNames = occ.map((x) => displayName(x)).join(', ');
+                      return (
+                        <option key={b.uid} value={b.uid} disabled={full}>
+                          {displayName(b)}
+                          {occNames ? ` — with ${occNames}` : ''}
+                          {full ? ' (full)' : ''}
+                        </option>
+                      );
+                    })}
                   </select>
                 ) : (
                   <span className="muted tiny">no eligible unit in roster</span>

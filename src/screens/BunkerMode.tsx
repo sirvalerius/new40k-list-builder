@@ -3,6 +3,7 @@ import { DatasheetCard } from '../components/DatasheetCard';
 import { Collapsible } from '../components/Collapsible';
 import {
   datasheetMap,
+  displayName,
   effectiveKeywords,
   factionKeywordVocab,
   stratagemAppliesTo,
@@ -56,7 +57,7 @@ export function BunkerMode({
         const applicable = strats.filter((s) =>
           stratagemAppliesTo(s.description, kws, vocab),
         );
-        const title = members.map((m) => m.name).join(' + ');
+        const title = members.map((m) => displayName(m)).join(' + ');
 
         return (
           <div className="card bunker" key={u.uid}>
@@ -72,7 +73,7 @@ export function BunkerMode({
               return (
                 <div key={m.uid} className="bunker-member">
                   <div className="bunker-member-name">
-                    {m.name}
+                    {displayName(m)}
                     {tags.length ? <span className="muted small"> · {tags.join(' · ')}</span> : null}
                   </div>
                   <DatasheetCard ds={ds} selected={m.wargearCosts ?? []} />

@@ -144,6 +144,7 @@ export interface ListUnit {
   uid: string;                 // instance id
   datasheetId: string;
   name: string;
+  customName?: string;         // user-given name (shown instead of the datasheet name)
   pointsCost: number;          // resolved cost (auto-set by pick-order tier when applicable)
   pointsLabel: string;         // resolved option description
   variantKey?: string;         // resolved cost bracket variant (e.g. "5 models")

@@ -146,10 +146,24 @@ export function Builder({
   }
 
   // Attach a Character (leader/support) to a bodyguard unit, or detach when toUid is null.
+  // A bodyguard can hold at most two Characters (one Leader + one Support).
   function attachUnit(uid: string, toUid: string | null) {
+    update((l) => {
+      if (toUid) {
+        const occupants = l.units.filter((x) => x.uid !== uid && x.attachedToUid === toUid).length;
+        if (occupants >= 2) return l;
+      }
+      return {
+        ...l,
+        units: l.units.map((u) => (u.uid === uid ? { ...u, attachedToUid: toUid ?? undefined } : u)),
+      };
+    });
+  }
+
+  function renameUnit(uid: string, customName: string) {
     update((l) => ({
       ...l,
-      units: l.units.map((u) => (u.uid === uid ? { ...u, attachedToUid: toUid ?? undefined } : u)),
+      units: l.units.map((u) => (u.uid === uid ? { ...u, customName } : u)),
     }));
   }
 
@@ -343,6 +357,7 @@ export function Builder({
           onSetWargear={setWargear}
           onSetModelCount={setModelCount}
           onAttach={attachUnit}
+          onRename={renameUnit}
         />
       )}
       {tab === 'enh' && (
