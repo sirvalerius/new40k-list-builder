@@ -162,16 +162,19 @@ export function Roster({
                 </button>
               </div>
             )}
-            <div className="row wrap mt" style={{ gap: 4 }}>
-              {u.warlord && <span className="badge warlord">Warlord</span>}
-              {u.isCharacter && <span className="badge char">Character</span>}
-              {u.isBattleline && <span className="badge">Battleline</span>}
-              {u.isEpicHero && <span className="badge">Epic Hero</span>}
-              {u.isAlly && <span className="badge ally">Ally</span>}
-              {u.requiresDetachment && !chosenDetNames.has(u.requiresDetachment) && (
-                <span className="badge bad">needs {u.requiresDetachment}</span>
-              )}
-            </div>
+            {/* only state the group header doesn't already imply (type badges would be
+                redundant with the sub-type section the card sits under) */}
+            {(u.warlord ||
+              u.isAlly ||
+              (u.requiresDetachment && !chosenDetNames.has(u.requiresDetachment))) && (
+              <div className="row wrap mt" style={{ gap: 4 }}>
+                {u.warlord && <span className="badge warlord">Warlord</span>}
+                {u.isAlly && <span className="badge ally">Ally</span>}
+                {u.requiresDetachment && !chosenDetNames.has(u.requiresDetachment) && (
+                  <span className="badge bad">needs {u.requiresDetachment}</span>
+                )}
+              </div>
+            )}
             {/* leaders/supports joined to this (bodyguard) unit */}
             {leaders.length > 0 && (
               <div className="row wrap mt" style={{ gap: 4, alignItems: 'center' }}>

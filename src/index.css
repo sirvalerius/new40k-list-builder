@@ -409,6 +409,14 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 }
 .pill-pts.sel { border-color: var(--accent); background: #221416; }
 
+/* skeleton loading placeholders */
+.skel {
+  background: linear-gradient(90deg, var(--bg-elev2) 25%, #262b39 50%, var(--bg-elev2) 75%);
+  background-size: 200% 100%;
+  animation: skel-shimmer 1.3s ease-in-out infinite;
+}
+@keyframes skel-shimmer { to { background-position: -200% 0; } }
+
 .spin {
   width: 26px; height: 26px;
   border: 3px solid var(--border);

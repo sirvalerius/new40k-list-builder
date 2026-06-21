@@ -27,6 +27,7 @@ import { Roster } from './Roster';
 import { Enhancements } from './Enhancements';
 import { Allies, type AllyAddition } from './Allies';
 import { BunkerMode } from './BunkerMode';
+import { SkeletonList } from '../components/Skeleton';
 
 type Tab = 'detach' | 'roster' | 'enh' | 'allies' | 'bunker';
 
@@ -82,7 +83,7 @@ export function Builder({
   );
 
   if (!fd || !battleSize) {
-    return <div className="spin" />;
+    return <SkeletonList count={4} label="Loading faction…" />;
   }
   const faction = fd; // non-null past the guard, for use inside closures
   const bs = battleSize;

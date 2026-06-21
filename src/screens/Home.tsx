@@ -6,6 +6,7 @@ import {
   importLists,
 } from '../lib/db';
 import { download, unitTotal } from '../lib/helpers';
+import { SkeletonList } from '../components/Skeleton';
 
 export function Home({
   rules,
@@ -99,7 +100,7 @@ export function Home({
         />
       </div>
 
-      {lists === null && <div className="spin" />}
+      {lists === null && <SkeletonList count={3} label="Loading saved lists…" />}
       {lists && lists.length === 0 && (
         <div className="empty">
           No armies muster in the archives yet.
