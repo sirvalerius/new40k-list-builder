@@ -320,6 +320,14 @@ function WeaponOptionsEditor({
     baseUsed.set(o.base, (baseUsed.get(o.base) ?? 0) + qtyOf(o.text));
   }
 
+  // Sub-model provider counts: an option that pertains to an optional sub-model (e.g. the
+  // Invader ATV's gun) can only be taken as many times as that model is actually in the unit.
+  const providerQty = new Map<string, number>();
+  for (const o of options)
+    if (o.type === 'model' && o.model) providerQty.set(o.model, qtyOf(o.text));
+  const titleCase = (s: string) =>
+    s.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
+
   return (
     <details style={{ marginTop: 8 }}>
       <summary className="muted small">
@@ -346,13 +354,19 @@ function WeaponOptionsEditor({
           }
           const rawMax = optionMax(o.limit, modelCount);
           // share the base-weapon pool across sibling options replacing the same base
-          const max =
+          let max =
             o.base && rawMax != null
               ? Math.min(rawMax, (basePool.get(o.base) ?? rawMax) - ((baseUsed.get(o.base) ?? 0) - qtyOf(o.text)))
               : rawMax;
+          // cap by the count of the optional sub-model this option pertains to
+          const provModel = o.type !== 'model' ? o.model : '';
+          const provCap = provModel && providerQty.has(provModel) ? providerQty.get(provModel)! : null;
+          if (provCap != null) max = Math.min(max ?? Infinity, provCap);
+          const needsModel = provCap === 0 ? titleCase(provModel!) : '';
           const q = Math.min(qtyOf(o.text), max ?? Infinity);
-          const limLabel =
-            o.limit?.kind === 'per_n'
+          const limLabel = needsModel
+            ? `richiede ${needsModel}`
+            : o.limit?.kind === 'per_n'
               ? `max ${max} (1 / ${o.limit.n})`
               : o.limit?.kind === 'slots'
                 ? `up to ${o.limit.slots}/model`

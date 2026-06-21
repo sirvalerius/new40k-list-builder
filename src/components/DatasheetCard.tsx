@@ -1,7 +1,7 @@
 import type { ChosenWargear, Datasheet } from '../lib/types';
 import { StatLine } from './StatLine';
 import { Collapsible } from './Collapsible';
-import { stripHtml } from '../lib/helpers';
+import { equippedWeapons, stripHtml } from '../lib/helpers';
 
 // When `selected` is given (a unit in the list), only the chosen weapon options are shown;
 // otherwise (browsing) every option is listed.
@@ -12,7 +12,7 @@ export function DatasheetCard({ ds, selected }: { ds: Datasheet; selected?: Chos
   if (ds.is_epic_hero) tags.push('Epic Hero');
   if (ds.is_dedicated_transport) tags.push('Transport');
 
-  const weapons = ds.weapons.filter((w) => w.name);
+  const weapons = equippedWeapons(ds, selected);
   const abilities = ds.abilities.filter((a) => a.name || a.description);
   const selQty = selected
     ? new Map(selected.filter((s) => s.qty > 0).map((s) => [s.name, s.qty]))

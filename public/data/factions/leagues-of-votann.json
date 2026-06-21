@@ -281,7 +281,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -643,7 +645,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt cannon"
+     "base": "bolt cannon",
+     "model": "",
+     "grants": [
+      "Graviton blast cannon"
+     ]
     },
     {
      "text": "All models in this unit can each have their bolt cannon replaced with 1 SP conversion beamer.",
@@ -652,7 +658,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt cannon"
+     "base": "bolt cannon",
+     "model": "",
+     "grants": [
+      "SP conversion beamer"
+     ]
     }
    ],
    "chapter": "",
@@ -935,7 +945,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "heavy plasma axe"
+     "base": "heavy plasma axe",
+     "model": "",
+     "grants": [
+      "Concussion maul"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model that is not equipped with a mole grenade launcher can have its heavy plasma axe or concussion maul replaced with 1 twin concussion gauntlet.",
@@ -945,7 +959,14 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Mole grenade launcher",
+      "Concussion maul",
+      "Heavy plasma axe",
+      "Twin concussion gauntlet"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model that is not equipped with a twin concussion gauntlet or a mole grenade launcher can be equipped with 1 mole grenade launcher.*",
@@ -955,7 +976,12 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Mole grenade launcher",
+      "Twin concussion gauntlet"
+     ]
     },
     {
      "text": "<b>* Designer’s Note:</b> If a Cthonian Beserk is equipped with a mole grenade launcher, it will be accompanied by an L-COG unit: both models should be placed on the same base and together they act as a single model for all rules purposes.",
@@ -964,7 +990,11 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Mole grenade launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -1103,7 +1133,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "breacher ordnance"
+     "base": "breacher ordnance",
+     "model": "",
+     "grants": [
+      "Tremor shells"
+     ]
     }
    ],
    "chapter": "",
@@ -1251,7 +1285,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "mass hammer"
+     "base": "mass hammer",
+     "model": "",
+     "grants": [
+      "Darkstar axe"
+     ]
     },
     {
      "text": "This model’s weavefield crest can be replaced with 1 teleport crest.",
@@ -1261,7 +1299,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "weavefield crest"
+     "base": "weavefield crest",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1455,7 +1495,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "etacarn plasma gun"
+     "base": "etacarn plasma gun",
+     "model": "",
+     "grants": [
+      "Volkanite disintegrator"
+     ]
     },
     {
      "text": "All models in this unit can each have their concussion gauntlet replaced with 1 plasma blade gauntlet.",
@@ -1464,7 +1508,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "concussion gauntlet"
+     "base": "concussion gauntlet",
+     "model": "",
+     "grants": [
+      "Plasma blade gauntlet"
+     ]
     },
     {
      "text": "The Hesyr’s concussion gauntlet or plasma blade gauntlet can be replaced with 1 graviton hammer.",
@@ -1474,7 +1522,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "concussion gauntlet or plasma blade gauntlet"
+     "base": "concussion gauntlet or plasma blade gauntlet",
+     "model": "",
+     "grants": [
+      "Concussion gauntlet",
+      "Graviton hammer",
+      "Plasma blade gauntlet"
+     ]
     },
     {
      "text": "The Hesyr’s weavefield crest can be replaced with 1 teleport crest.",
@@ -1484,7 +1538,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "weavefield crest"
+     "base": "weavefield crest",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1896,7 +1952,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "autoch-pattern bolter"
+     "base": "autoch-pattern bolter",
+     "model": "",
+     "grants": [
+      "Ion blaster"
+     ]
     },
     {
      "text": "Up to 2 Hearthkyn Warriors can each have their  Autoch-pattern bolter or ion blaster replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 HYLas auto rifle</li><li>1 HYLas rotary cannon</li><li>1 L7 missile launcher</li><li>1 EtaCarn plasma beamer</li><li>1 magna-rail rifle</li></ul>",
@@ -1905,16 +1965,32 @@
      "limit": {
       "kind": "all"
      },
-     "base": "autoch-pattern bolter or ion blaster"
+     "base": "autoch-pattern bolter or ion blaster",
+     "model": "",
+     "grants": [
+      "Autoch-pattern bolter",
+      "EtaCarn plasma beamer",
+      "HYLas auto rifle",
+      "HYLas rotary cannon",
+      "Ion blaster",
+      "Magna-rail rifle"
+     ]
     },
     {
      "text": "Up to 2 Hearthkyn Warriors can each have their Autoch-pattern bolter or ion blaster replaced with 1 plasma knife.",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
-     "base": "autoch-pattern bolter or ion blaster"
+     "base": "autoch-pattern bolter or ion blaster",
+     "model": "",
+     "grants": [
+      "Autoch-pattern bolter",
+      "Ion blaster",
+      "Plasma knife"
+     ]
     },
     {
      "text": "The Theyn’s Autoch-pattern bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 ion blaster</li><li>1 Theyn’s pistol</li></ul>",
@@ -1924,7 +2000,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "autoch-pattern bolter"
+     "base": "autoch-pattern bolter",
+     "model": "",
+     "grants": [
+      "Ion blaster",
+      "Theyn’s pistol"
+     ]
     },
     {
      "text": "The Theyn can be equipped with 1 Theyn’s melee weapon.",
@@ -1934,7 +2015,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Theyn’s melee weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -2145,7 +2230,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin bolt cannons"
+     "base": "2 twin bolt cannons",
+     "model": "",
+     "grants": [
+      "Twin bolt cannon ",
+      "Twin ion beamer"
+     ]
     },
     {
      "text": "This model’s cyclic ion cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 SP heavy conversion beamer</li><li>1 heavy magna-rail cannon</li></ul>",
@@ -2155,7 +2245,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "cyclic ion cannon"
+     "base": "cyclic ion cannon",
+     "model": "",
+     "grants": [
+      "Heavy magna-rail cannon",
+      "SP heavy conversion beamer"
+     ]
     },
     {
      "text": "This model’s panspectral scanner can be replaced with 1 Hekaton warhead.",
@@ -2165,7 +2260,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "panspectral scanner"
+     "base": "panspectral scanner",
+     "model": "",
+     "grants": [
+      "Hekaton warhead"
+     ]
     }
    ],
    "chapter": "",
@@ -2374,7 +2473,12 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "HYLas rotary cannon",
+      "Ion beamer"
+     ]
     },
     {
      "text": "1 model that is not equipped with either a HYLas rotary cannon or an ion beamer can be equipped with 1 multiwave comms array.*",
@@ -2384,7 +2488,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "HYLas rotary cannon",
+      "Ion beamer"
+     ]
     },
     {
      "text": "1 model that is not equipped with either a HYLas rotary cannon or an ion beamer can be equipped with 1 panspectral scanner.*",
@@ -2394,7 +2503,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "HYLas rotary cannon",
+      "Ion beamer"
+     ]
     },
     {
      "text": "1 model that is not equipped with either a HYLas rotary cannon or an ion beamer can be equipped with 1 rollbar searchlight.*",
@@ -2404,7 +2518,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "HYLas rotary cannon",
+      "Ion beamer"
+     ]
     },
     {
      "text": "* A model can only take one of these options, and cannot be equipped with a HYLas rotary cannon or an ion beamer.",
@@ -2413,7 +2532,12 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "HYLas rotary cannon",
+      "Ion beamer"
+     ]
     }
    ],
    "chapter": "",
@@ -2577,7 +2701,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt shotgun"
+     "base": "bolt shotgun",
+     "model": "",
+     "grants": [
+      "Bolt revolver",
+      "Plasma knife"
+     ]
     },
     {
      "text": "1 Hernkyn Yaegir can have its bolt revolver and plasma knife or its bolt shotgun replaced with 1 magna-coil rifle.",
@@ -2587,7 +2716,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt revolver",
+      "Bolt shotgun",
+      "Magna-coil rifle",
+      "Plasma knife"
+     ]
     },
     {
      "text": "1 Hernkyn Yaegir can have its bolt revolver and plasma knife or its bolt shotgun replaced with 1 APM launcher.",
@@ -2597,7 +2733,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "APM launcher",
+      "Bolt revolver",
+      "Bolt shotgun",
+      "Plasma knife"
+     ]
     }
    ],
    "chapter": "",
@@ -2761,7 +2904,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy volkanite disintegrator and plasma knife"
+     "base": "heavy volkanite disintegrator and plasma knife",
+     "model": "",
+     "grants": [
+      "Autoch-pattern bolter",
+      "Heavy volkanite disintegrator",
+      "Plasma knife",
+      "Plasma sword"
+     ]
     }
    ],
    "chapter": "",
@@ -2913,7 +3063,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "plasma sword"
+     "base": "plasma sword",
+     "model": "",
+     "grants": [
+      "Concussion gauntlet"
+     ]
     }
    ],
    "chapter": "",
@@ -3063,7 +3217,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3224,7 +3380,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "magna-rail cannon"
+     "base": "magna-rail cannon",
+     "model": "",
+     "grants": [
+      "HYLas rotary cannon"
+     ]
     },
     {
      "text": "Any number of models can each be equipped with 1 smoke launcher.",
@@ -3233,7 +3393,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3392,7 +3554,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "autoch-pattem combi-bolter"
+     "base": "autoch-pattem combi-bolter",
+     "model": "",
+     "grants": [
+      "Volkanite disintegrator"
+     ]
     },
     {
      "text": "This model’s forgewrought plasma axe can be replaced with 1 mass gauntlet.",
@@ -3402,7 +3568,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "forgewrought plasma axe"
+     "base": "forgewrought plasma axe",
+     "model": "",
+     "grants": [
+      "Mass gauntlet"
+     ]
     },
     {
      "text": "This model’s rampart crest can be replaced with 1 teleport crest.",
@@ -3412,7 +3582,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "rampart crest"
+     "base": "rampart crest",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3695,7 +3867,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "hylas beam cannon"
+     "base": "hylas beam cannon",
+     "model": "",
+     "grants": [
+      "MATR autocannon",
+      "Sagitaur missile launcher"
+     ]
     }
    ],
    "chapter": "",

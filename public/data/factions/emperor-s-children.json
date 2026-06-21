@@ -180,7 +180,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Combi-weapon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 havoc launcher.",
@@ -190,7 +195,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Havoc launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -341,7 +350,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Combi-weapon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 havoc launcher or can replace 1 combi-bolter with 1 havoc launcher.",
@@ -351,7 +365,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Havoc launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -635,7 +654,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "combi-bolter"
+     "base": "combi-bolter",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Reaper autocannon"
+     ]
     },
     {
      "text": "Any number of models can each have their combi-bolter replaced with 1 combi-weapon.",
@@ -644,7 +668,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "combi-bolter"
+     "base": "combi-bolter",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
     },
     {
      "text": "1 model’s combi-bolter and accursed weapon can be replaced with 1 paired accursed weapons.",
@@ -654,16 +682,27 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "combi-bolter and accursed weapon"
+     "base": "combi-bolter and accursed weapon",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Accursed weapon",
+      "Paired accursed weapons"
+     ]
     },
     {
      "text": "Up to 3 models can each have their accursed weapon replaced with 1 power fist.",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 3
      },
-     "base": "accursed weapon"
+     "base": "accursed weapon",
+     "model": "",
+     "grants": [
+      "Power fist"
+     ]
     },
     {
      "text": "1 model’s accursed weapon can be replaced with 1 chainfist.",
@@ -673,7 +712,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "accursed weapon"
+     "base": "accursed weapon",
+     "model": "",
+     "grants": [
+      "Chainfist"
+     ]
     }
    ],
    "chapter": "",
@@ -1080,7 +1123,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Daemonette that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
@@ -1090,7 +1135,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1337,7 +1384,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "hades battle cannon"
+     "base": "hades battle cannon",
+     "model": "",
+     "grants": [
+      "Ectoplasma destructor"
+     ]
     },
     {
      "text": " This model’s excruciator cannons can be replaced with 2 magma cutters",
@@ -1347,7 +1398,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "excruciator cannons"
+     "base": "excruciator cannons",
+     "model": "",
+     "grants": [
+      "Excruciator cannon",
+      "Magma cutters"
+     ]
     },
     {
      "text": "This model’s heavy baleflamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
@@ -1357,7 +1413,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy baleflamer"
+     "base": "heavy baleflamer",
+     "model": "",
+     "grants": [
+      "Hades lascannon",
+      "Heavy reaper autocannon",
+      "Electroscourge"
+     ]
     },
     {
      "text": " This model’s heavy missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
@@ -1367,7 +1429,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy missile launcher"
+     "base": "heavy missile launcher",
+     "model": "",
+     "grants": [
+      "Hades lascannon",
+      "Heavy reaper autocannon",
+      "Electroscourge"
+     ]
     }
    ],
    "chapter": "",
@@ -1891,7 +1959,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "hades autocannon"
+     "base": "hades autocannon",
+     "model": "",
+     "grants": [
+      "Baleflamer"
+     ]
     }
    ],
    "chapter": "",
@@ -2072,7 +2144,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Obsessionist’s power sword can be replaced with 1 rapture lash.",
@@ -2082,7 +2156,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "power sword"
+     "base": "power sword",
+     "model": "",
+     "grants": [
+      "Rapture lash"
+     ]
     },
     {
      "text": "1 Infractor can be equipped with 1 icon of excess.",
@@ -2092,7 +2170,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2284,7 +2364,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Living whip",
+      "Ritual knife"
+     ]
     }
    ],
    "chapter": "",
@@ -2502,7 +2587,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "plasma pistol"
+     "base": "plasma pistol",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Rapture lash"
+     ]
     },
     {
      "text": "This model’s Phoenix power spear can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 master-crafted power sword</li><li>1 screamer pistol</li></ul>",
@@ -2512,7 +2602,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "phoenix power spear"
+     "base": "phoenix power spear",
+     "model": "",
+     "grants": [
+      "Screamer pistol",
+      "Master-crafted power sword"
+     ]
     }
    ],
    "chapter": "",
@@ -2649,7 +2744,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "power sword"
+     "base": "power sword",
+     "model": "",
+     "grants": [
+      "Screamer pistol",
+      "Close combat weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -2913,7 +3013,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "lasher tendrils"
+     "base": "lasher tendrils",
+     "model": "",
+     "grants": [
+      "Magma cutters"
+     ]
     }
    ],
    "chapter": "",
@@ -3079,16 +3183,26 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "sonic blaster"
+     "base": "sonic blaster",
+     "model": "",
+     "grants": [
+      "Screamer pistol",
+      "Power sword"
+     ]
     },
     {
      "text": "Up to 2 Noise Marines can each replace their sonic blaster with 1 blastmaster.",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Sonic blaster"
+     ]
     }
    ],
    "chapter": "",
@@ -3236,7 +3350,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Seeker that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
@@ -3246,7 +3362,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3764,7 +3882,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Obsessionist’s power sword can be replaced with 1 rapture lash.",
@@ -3774,7 +3894,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "power sword"
+     "base": "power sword",
+     "model": "",
+     "grants": [
+      "Rapture lash"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Tormentor’s boltgun can be replaced with 1 meltagun.",
@@ -3784,7 +3908,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Meltagun"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Tormentor’s boltgun can be replaced with 1 plasma gun.",
@@ -3794,7 +3922,9 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Tormentor can be equipped with 1 icon of excess.",
@@ -3804,7 +3934,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",

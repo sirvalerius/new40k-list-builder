@@ -138,7 +138,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Wing missiles"
+     ]
     }
    ],
    "chapter": "",
@@ -359,7 +363,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Killkannon",
+      "Zzap gun"
+     ]
     },
     {
      "text": "This model can be equipped with:<ul style=\"list-style-type:circle\"><li>1 lobba</li></ul>",
@@ -369,7 +378,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Lobba"
+     ]
     },
     {
      "text": "This model can be equipped with up to 4 big shootas.",
@@ -379,7 +392,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Big shoota"
+     ]
     },
     {
      "text": "This model’s tracks and wheels can be replaced with 1 deff rolla.",
@@ -389,7 +406,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "tracks and wheels"
+     "base": "tracks and wheels",
+     "model": "",
+     "grants": [
+      "Deff rolla"
+     ]
     },
     {
      "text": "This model can be equipped with any of the following:<ul style=\"list-style-type:circle\"><li>1 ’ard case</li><li>1 grabbin’ klaw</li><li>1 wreckin’ ball</li></ul>",
@@ -399,7 +420,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Grabbin’ klaw",
+      "Wreckin’ ball"
+     ]
     }
    ],
    "chapter": "",
@@ -572,7 +598,14 @@
       "kind": "per_n",
       "n": 10
      },
-     "base": "slugga and choppa"
+     "base": "slugga and choppa",
+     "model": "",
+     "grants": [
+      "Slugga",
+      "Thump gun",
+      "Choppa",
+      "Close combat weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -854,7 +887,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Thump gun"
+     ]
     }
    ],
    "chapter": "",
@@ -1012,7 +1049,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "kannon"
+     "base": "kannon",
+     "model": "",
+     "grants": [
+      "Lobba",
+      "Zzap gun"
+     ]
     }
    ],
    "chapter": "",
@@ -1160,7 +1202,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "kustom mega-blasta"
+     "base": "kustom mega-blasta",
+     "model": "",
+     "grants": [
+      "Traktor blasta"
+     ]
     },
     {
      "text": "This model’s power klaw can be replaced with 1 drilla.",
@@ -1170,7 +1216,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "power klaw"
+     "base": "power klaw",
+     "model": "",
+     "grants": [
+      "Drilla"
+     ]
     }
    ],
    "chapter": "",
@@ -1353,7 +1403,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "kustom-mega blasta"
+     "base": "kustom-mega blasta",
+     "model": "",
+     "grants": [
+      "Kombi-weapon",
+      "Kustom shoota",
+      "Killsaw"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 tellyport blasta</li><li>1 kustom force field</li></ul>",
@@ -1363,7 +1419,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Tellyport blasta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 grot oiler.",
@@ -1373,7 +1433,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1616,7 +1678,18 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "slugga"
+     "base": "slugga",
+     "model": "",
+     "grants": [
+      "Kombi-weapon",
+      "Kustom mega-blasta",
+      "Kustom mega-slugga",
+      "Rokkit launcha",
+      "Shokk attack gun",
+      "Big choppa",
+      "Choppa",
+      "Power klaw"
+     ]
     },
     {
      "text": "This model’s choppa can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 kombi-weapon</li><li>1 kustom mega-blasta</li><li>1 kustom mega-slugga</li><li>1 rokkit launcha</li><li>1 big choppa</li><li>1 killsaw</li><li>1 power klaw</li></ul>",
@@ -1626,7 +1699,18 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "choppa"
+     "base": "choppa",
+     "model": "",
+     "grants": [
+      "Kombi-weapon",
+      "Kustom mega-blasta",
+      "Kustom mega-slugga",
+      "Rokkit launcha",
+      "Slugga",
+      "Big choppa",
+      "Killsaw",
+      "Power klaw"
+     ]
     }
    ],
    "chapter": "",
@@ -1758,7 +1842,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1897,7 +1983,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2064,7 +2152,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2211,7 +2301,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Big shoota"
+     ]
     }
    ],
    "chapter": "",
@@ -2723,7 +2817,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2943,7 +3039,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "big choppa"
+     "base": "big choppa",
+     "model": "",
+     "grants": [
+      "Choppa",
+      "Power klaw"
+     ]
     },
     {
      "text": "The Boss Nob’s big choppa and slugga can be replaced with 1 kombi-weapon and 1 close combat weapon.",
@@ -2953,7 +3054,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "big choppa and slugga"
+     "base": "big choppa and slugga",
+     "model": "",
+     "grants": [
+      "Kombi-weapon",
+      "Slugga",
+      "Big choppa",
+      "Choppa",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "Any number of Boyz can each have their slugga and choppa replaced with 1 shoota and 1 close combat weapon.",
@@ -2962,7 +3071,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": "slugga and choppa"
+     "base": "slugga and choppa",
+     "model": "",
+     "grants": [
+      "Shoota",
+      "Slugga",
+      "Choppa",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "For every 10 models in this unit, 1 Boy’s choppa and slugga can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 big shoota and 1 close combat weapon</li><li>1 rokkit launcha and 1 close combat weapon</li></ul>",
@@ -2972,7 +3088,16 @@
       "kind": "per_n",
       "n": 10
      },
-     "base": "choppa and slugga"
+     "base": "choppa and slugga",
+     "model": "",
+     "grants": [
+      "Big shoota",
+      "Rokkit launcha",
+      "Shoota",
+      "Slugga",
+      "Choppa",
+      "Close combat weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -3139,7 +3264,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "smash hammer"
+     "base": "smash hammer",
+     "model": "",
+     "grants": [
+      "Rokkit pistol"
+     ]
     },
     {
      "text": "One Breaka Boy’s smash hammer can be replaced with 1 knucklebustas.",
@@ -3148,7 +3277,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "smash hammer"
+     "base": "smash hammer",
+     "model": "",
+     "grants": [
+      "Knucklebustas"
+     ]
     },
     {
      "text": "One Breaka Boy’s smash hammer can be replaced with 1 tankhammer.",
@@ -3157,7 +3290,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "smash hammer"
+     "base": "smash hammer",
+     "model": "",
+     "grants": [
+      "Tankhammer"
+     ]
     }
    ],
    "chapter": "",
@@ -3319,7 +3456,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "big shoota"
+     "base": "big shoota",
+     "model": "",
+     "grants": [
+      "Kustom mega-blasta",
+      "Rokkit launcha"
+     ]
     }
    ],
    "chapter": "",
@@ -3460,7 +3602,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Skorcha missile rack"
+     ]
     }
    ],
    "chapter": "",
@@ -3654,7 +3800,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s big shoota can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 kustom mega-blasta</li><li>1 rokkit launcha</li><li>1 skorcha</li></ul>",
@@ -3664,7 +3812,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "big shoota"
+     "base": "big shoota",
+     "model": "",
+     "grants": [
+      "Kustom mega-blasta",
+      "Rokkit launcha",
+      "Skorcha"
+     ]
     },
     {
      "text": "This model’s 2 deffguns can be replaced with 2 rattler kannons.",
@@ -3674,7 +3828,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 deffguns"
+     "base": "2 deffguns",
+     "model": "",
+     "grants": [
+      "Deffgun",
+      "Rattler kannon"
+     ]
     }
    ],
    "chapter": "",
@@ -3799,7 +3958,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4037,7 +4198,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Twin supa-shoota"
+     ]
     }
    ],
    "chapter": "",
@@ -4213,7 +4378,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "big shootas can each be"
+     "base": "big shootas can each be",
+     "model": "",
+     "grants": [
+      "Big shoota",
+      "Kustom mega-blasta",
+      "Rokkit launcha",
+      "Skorcha",
+      "Dread klaw"
+     ]
     },
     {
      "text": "This model’s dread klaws can each be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 big shoota</li><li>1 kustom-mega blasta</li><li>1 rokkit launcha</li><li>1 skorcha</li></ul>",
@@ -4223,7 +4396,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "dread klaws can each be"
+     "base": "dread klaws can each be",
+     "model": "",
+     "grants": [
+      "Big shoota",
+      "Kustom mega-blasta",
+      "Rokkit launcha",
+      "Skorcha",
+      "Dread klaw"
+     ]
     }
    ],
    "chapter": "",
@@ -4427,7 +4608,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Big shoota"
+     ]
     },
     {
      "text": "Each of this model’s zzap guns can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 lobba</li><li>1 kannon</li></ul>",
@@ -4437,7 +4622,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "zzap guns"
+     "base": "zzap guns",
+     "model": "",
+     "grants": [
+      "Lobba",
+      "Zzap gun"
+     ]
     },
     {
      "text": "This model’s kannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 lobba</li><li>1 zzap gun</li></ul>",
@@ -4447,7 +4637,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "kannon"
+     "base": "kannon",
+     "model": "",
+     "grants": [
+      "Lobba",
+      "Zzap gun"
+     ]
     },
     {
      "text": "Each of this model’s twin big shootas can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 skorcha</li><li>1 rokkit launcha</li></ul>",
@@ -4457,7 +4652,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin big shootas"
+     "base": "twin big shootas",
+     "model": "",
+     "grants": [
+      "Big shoota",
+      "Rokkit launcha",
+      "Skorcha",
+      "Twin big shoota"
+     ]
     }
    ],
    "chapter": "",
@@ -4746,7 +4948,12 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Kopta rokkits",
+      "Kustom mega-blasta"
+     ]
     }
    ],
    "chapter": "",
@@ -4908,7 +5115,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "twin big shoota"
+     "base": "twin big shoota",
+     "model": "",
+     "grants": [
+      "Kustom mega-blasta"
+     ]
     },
     {
      "text": "Any number of models can each be equipped with 1 killsaw.",
@@ -4917,7 +5128,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Killsaw"
+     ]
     }
    ],
    "chapter": "",
@@ -5070,7 +5285,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Grot-guided bomm",
+      "Wing missiles"
+     ]
     }
    ],
    "chapter": "",
@@ -5211,7 +5431,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5383,7 +5605,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Supa-kannon"
+     ]
     }
    ],
    "chapter": "",
@@ -5966,7 +6192,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6139,7 +6367,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin big shoota"
+     "base": "twin big shoota",
+     "model": "",
+     "grants": [
+      "Twin grotzooka",
+      "Twin kustom mega-blasta",
+      "Twin rokkit launcha",
+      "Twin skorcha"
+     ]
     },
     {
      "text": "This model’s twin grotzooka can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin big shoota</li><li>1 twin kustom mega-blasta</li><li>1 twin rokkit launcha</li><li>1 twin skorcha</li></ul>",
@@ -6149,7 +6384,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin grotzooka"
+     "base": "twin grotzooka",
+     "model": "",
+     "grants": [
+      "Twin big shoota",
+      "Twin kustom mega-blasta",
+      "Twin rokkit launcha",
+      "Twin skorcha"
+     ]
     }
    ],
    "chapter": "",
@@ -6318,7 +6560,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": "big shoota"
+     "base": "big shoota",
+     "model": "",
+     "grants": [
+      "Grotzooka",
+      "Kustom mega-blasta",
+      "Rokkit launcha",
+      "Skorcha"
+     ]
     },
     {
      "text": "For every four models in this unit, one model can be equipped with one of the following in addition to any other weapons:<ul style=\"list-style-type:circle\"><li>1 Grot tank shoota</li><li>1 grotzooka</li><li>1 kustom mega-blasta</li><li>1 rokkit launcha</li><li>1 skorcha</li></ul>",
@@ -6327,7 +6576,15 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Grot tank shoota",
+      "Grotzooka",
+      "Kustom mega-blasta",
+      "Rokkit launcha",
+      "Skorcha"
+     ]
     }
    ],
    "chapter": "",
@@ -6628,7 +6885,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Big shoota"
+     ]
     }
    ],
    "chapter": "",
@@ -6773,7 +7034,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6942,7 +7205,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Rokkit launcha",
+      "Skorcha",
+      "Twin big shoota"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin big shoota</li><li>2 rokkit launchas</li><li>1 skorcha</li></ul>",
@@ -6952,7 +7221,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Rokkit launcha",
+      "Skorcha",
+      "Twin big shoota"
+     ]
     }
    ],
    "chapter": "",
@@ -7265,7 +7540,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bursta kannon"
+     "base": "bursta kannon",
+     "model": "",
+     "grants": [
+      "Giga shoota"
+     ]
     }
    ],
    "chapter": "",
@@ -7439,7 +7718,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "kan shoota"
+     "base": "kan shoota",
+     "model": "",
+     "grants": [
+      "Grotzooka",
+      "Rokkit launcha",
+      "Skorcha"
+     ]
     }
    ],
    "chapter": "",
@@ -7677,16 +7962,29 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "choppa"
+     "base": "choppa",
+     "model": "",
+     "grants": [
+      "Big choppa",
+      "Power klaw"
+     ]
     },
     {
      "text": "Up to 2 Kommandos can each have their slugga and choppa replaced with 1 speshul Kommando shoota and 1 close combat weapon.",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
-     "base": "slugga and choppa"
+     "base": "slugga and choppa",
+     "model": "",
+     "grants": [
+      "Speshul Kommando shoota",
+      "Slugga",
+      "Choppa",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "1 Kommando’s slugga and choppa can be replaced with 1 breacha ram.",
@@ -7696,7 +7994,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "slugga and choppa"
+     "base": "slugga and choppa",
+     "model": "",
+     "grants": [
+      "Slugga",
+      "Breacha ram",
+      "Choppa"
+     ]
     },
     {
      "text": "1 Kommando’s slugga and choppa can be replaced with 1 burna and 1 close combat weapon.",
@@ -7706,7 +8010,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "slugga and choppa"
+     "base": "slugga and choppa",
+     "model": "",
+     "grants": [
+      "Burna",
+      "Slugga",
+      "Choppa",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "1 Kommando’s slugga and choppa can be replaced with 1 rokkit launcha and 1 close combat weapon.",
@@ -7716,7 +8027,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "slugga and choppa"
+     "base": "slugga and choppa",
+     "model": "",
+     "grants": [
+      "Rokkit launcha",
+      "Slugga",
+      "Choppa",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "This unit can be equipped with 1 bomb squig.",
@@ -7725,7 +8043,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This unit can be equipped with 1 distraction grot.",
@@ -7734,7 +8054,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -8035,7 +8357,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "tracks and wheels"
+     "base": "tracks and wheels",
+     "model": "",
+     "grants": [
+      "Deff rolla"
+     ]
     },
     {
      "text": "This model can be equipped with 1 grabbin’ klaw.",
@@ -8045,7 +8371,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Grabbin’ klaw"
+     ]
     },
     {
      "text": "This model can be equipped with 1 wreckin’ ball.",
@@ -8055,7 +8385,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Wreckin’ ball"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 big shoota</li><li>2 big shootas</li><li>1 big shoota and 1 rokkit launcha</li><li>1 rokkit launcha</li><li>2 rokkit launchas</li></ul>",
@@ -8065,7 +8399,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Big shoota",
+      "Rokkit launcha"
+     ]
     }
    ],
    "chapter": "",
@@ -8232,7 +8571,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "big shoota"
+     "base": "big shoota",
+     "model": "",
+     "grants": [
+      "Kustom mega-blasta",
+      "Rokkit launcha"
+     ]
     }
    ],
    "chapter": "",
@@ -8373,7 +8717,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -8530,7 +8876,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "killkannon"
+     "base": "killkannon",
+     "model": "",
+     "grants": [
+      "Dread killsaw",
+      "Dread rippa klaw"
+     ]
     },
     {
      "text": "This model’s dread rippa klaw can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dread killsaw</li><li>1 killkannon</li></ul>",
@@ -8540,7 +8891,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "dread rippa klaw"
+     "base": "dread rippa klaw",
+     "model": "",
+     "grants": [
+      "Killkannon",
+      "Dread killsaw"
+     ]
     }
    ],
    "chapter": "",
@@ -8740,7 +9096,15 @@
      "limit": {
       "kind": "all"
      },
-     "base": "kustom shoota and power klaw"
+     "base": "kustom shoota and power klaw",
+     "model": "",
+     "grants": [
+      "Kombi-weapon",
+      "Kustom shoota",
+      "Killsaw",
+      "Power klaw",
+      "Twin killsaw"
+     ]
     }
    ],
    "chapter": "",
@@ -9000,7 +9364,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "wrench"
+     "base": "wrench",
+     "model": "",
+     "grants": [
+      "Killsaw"
+     ]
     }
    ],
    "chapter": "",
@@ -9211,7 +9579,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "smasha gun"
+     "base": "smasha gun",
+     "model": "",
+     "grants": [
+      "Kustom mega-kannon",
+      "Traktor kannon"
+     ]
     }
    ],
    "chapter": "",
@@ -9357,7 +9730,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "killkannon"
+     "base": "killkannon",
+     "model": "",
+     "grants": [
+      "Dread killsaw",
+      "Dread rippa klaw"
+     ]
     },
     {
      "text": "This model’s dread rippa klaw can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dread killsaw</li><li>1 killkannon</li></ul>",
@@ -9367,7 +9745,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "dread rippa klaw"
+     "base": "dread rippa klaw",
+     "model": "",
+     "grants": [
+      "Killkannon",
+      "Dread killsaw"
+     ]
     }
    ],
    "chapter": "",
@@ -9484,7 +9867,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9901,7 +10286,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -10077,7 +10464,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "big choppa"
+     "base": "big choppa",
+     "model": "",
+     "grants": [
+      "Power klaw"
+     ]
     },
     {
      "text": "Any number of models can each have their slugga and big choppa replaced with 1 kombi-weapon and 1 close combat weapon.",
@@ -10086,7 +10477,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": "slugga and big choppa"
+     "base": "slugga and big choppa",
+     "model": "",
+     "grants": [
+      "Kombi-weapon",
+      "Slugga",
+      "Big choppa",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, this unit can be equipped with 1 ammo runt.",
@@ -10096,7 +10494,9 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -10280,7 +10680,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Slugga"
+     ]
     },
     {
      "text": "Any number of models can each have their choppa replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 big choppa</li><li>1 killsaw</li><li>1 power klaw</li><li>1 power stabba</li><li>1 slugga</li></ul>",
@@ -10289,7 +10693,15 @@
      "limit": {
       "kind": "all"
      },
-     "base": "choppa"
+     "base": "choppa",
+     "model": "",
+     "grants": [
+      "Slugga",
+      "Big choppa",
+      "Killsaw",
+      "Power klaw",
+      "Power stabba"
+     ]
     }
    ],
    "chapter": "",
@@ -10414,7 +10826,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -10543,7 +10957,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -10689,7 +11105,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "power klaw"
+     "base": "power klaw",
+     "model": "",
+     "grants": [
+      "Killsaw"
+     ]
     }
    ],
    "chapter": "",
@@ -11049,7 +11469,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -11194,7 +11616,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -11383,7 +11807,9 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -11721,7 +12147,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "choppa"
+     "base": "choppa",
+     "model": "",
+     "grants": [
+      "Power klaw"
+     ]
     }
    ],
    "chapter": "",
@@ -11893,7 +12323,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "rokkit pistols"
+     "base": "rokkit pistols",
+     "model": "",
+     "grants": [
+      "Rokkit pistol",
+      "Smash hammer"
+     ]
     },
     {
      "text": "One Tankbusta can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 pulsa rokkit</li><li>1 additional rokkit launcha</li></ul>",
@@ -11902,7 +12337,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Rokkit launcha"
+     ]
     }
    ],
    "chapter": "",
@@ -12037,7 +12476,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Wreckin’ ball"
+     ]
     }
    ],
    "chapter": "",
@@ -12173,7 +12616,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -12350,7 +12795,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Slugga",
+      "Choppa"
+     ]
     },
     {
      "text": "The Boss Nob on Warbike can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 slugga</li><li>1 big choppa</li><li>1 power klaw</li></ul>",
@@ -12360,7 +12810,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Slugga",
+      "Big choppa",
+      "Choppa",
+      "Power klaw"
+     ]
     }
    ],
    "chapter": "",
@@ -12518,7 +12975,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "big choppa"
+     "base": "big choppa",
+     "model": "",
+     "grants": [
+      "Power klaw"
+     ]
     },
     {
      "text": "This model can be equipped with 1 attack squig.",
@@ -12528,7 +12989,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Attack squig"
+     ]
     }
    ],
    "chapter": "",
@@ -12787,7 +13252,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "killsaw"
+     "base": "killsaw",
+     "model": "",
+     "grants": [
+      "Big choppa",
+      "Power klaw"
+     ]
     }
    ],
    "chapter": "",
@@ -12922,7 +13392,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "twin big shoota"
+     "base": "twin big shoota",
+     "model": "",
+     "grants": [
+      "Rack of rokkits"
+     ]
     }
    ],
    "chapter": "",
@@ -13057,7 +13531,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "twin big shoota"
+     "base": "twin big shoota",
+     "model": "",
+     "grants": [
+      "Rack of rokkits"
+     ]
     }
    ],
    "chapter": "",
@@ -13218,7 +13696,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin wazbom mega-kannon"
+     "base": "twin wazbom mega-kannon",
+     "model": "",
+     "grants": [
+      "Twin tellyport mega-blasta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 blastajet force field.",
@@ -13228,7 +13710,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model can be equipped with 1 twin supa-shoota.",
@@ -13238,7 +13722,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Twin supa-shoota"
+     ]
     }
    ],
    "chapter": "",

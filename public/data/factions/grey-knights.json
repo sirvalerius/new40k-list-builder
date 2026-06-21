@@ -170,7 +170,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Incinerator",
+      "Psilencer",
+      "Psycannon"
+     ]
     }
    ],
    "chapter": "",
@@ -302,7 +308,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -702,7 +710,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -1075,7 +1088,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Incinerator",
+      "Psilencer",
+      "Psycannon"
+     ]
     },
     {
      "text": "1 Terminator can have its storm bolter replaced with 1 Apothecary’s narthecium.",
@@ -1085,7 +1104,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     },
     {
      "text": "1 Terminator’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 Ancient’s banner</li><li>1 psilencer and 1 Ancient’s banner</li><li>1 psycannon and 1 Ancient’s banner</li><li>1 storm bolter and 1 Ancient’s banner*</li></ul>",
@@ -1095,7 +1118,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Incinerator",
+      "Psilencer",
+      "Psycannon"
+     ]
     },
     {
      "text": "* That model’s storm bolter cannot be replaced.",
@@ -1104,7 +1133,11 @@
      "limit": {
       "kind": "note"
      },
-     "base": "storm bolter cannot be"
+     "base": "storm bolter cannot be",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -1401,7 +1434,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Incinerator",
+      "Psilencer",
+      "Psycannon"
+     ]
     }
    ],
    "chapter": "",
@@ -1642,7 +1681,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "dreadfists"
+     "base": "dreadfists",
+     "model": "",
+     "grants": [
+      "Nemesis daemon greathammer",
+      "Nemesis flail",
+      "Nemesis mace"
+     ]
     },
     {
      "text": "This model can be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 gatling psilencer</li><li>1 heavy incinerator</li><li>1 heavy psycannon</li><li>1 sublimator</li></ul>",
@@ -1652,7 +1697,14 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Gatling psilencer",
+      "Heavy incinerator",
+      "Heavy psycannon",
+      "Sublimator"
+     ]
     },
     {
      "text": "This model can be equipped with 1 fragstorm grenade launcher.",
@@ -1662,7 +1714,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Fragstorm grenade launcher"
+     ]
     },
     {
      "text": "Equip Heavy psycannon",
@@ -1671,7 +1727,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy psycannon"
+     ]
     }
    ],
    "chapter": "",
@@ -2056,7 +2116,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "assault cannon"
+     "base": "assault cannon",
+     "model": "",
+     "grants": [
+      "Multi-melta",
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model’s assault cannon, storm bolter and Dreadnought combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy psycannon, 1 storm bolter and 1 Nemesis doomglaive</li><li>1 heavy psycannon, 1 incinerator and 1 Nemesis doomglaive</li></ul>",
@@ -2066,7 +2131,16 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "assault cannon, storm bolter and dreadnought combat weapon"
+     "base": "assault cannon, storm bolter and dreadnought combat weapon",
+     "model": "",
+     "grants": [
+      "Assault cannon",
+      "Heavy psycannon",
+      "Incinerator",
+      "Storm bolter",
+      "Dreadnought combat weapon",
+      "Nemesis doomglaive"
+     ]
     },
     {
      "text": "This model’s storm bolter and Dreadnought combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 missile launcher and 1 armoured feet</li><li>1 heavy flamer and 1 Dreadnought combat weapon</li></ul>",
@@ -2076,7 +2150,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter and dreadnought combat weapon"
+     "base": "storm bolter and dreadnought combat weapon",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Storm bolter",
+      "Armoured feet",
+      "Dreadnought combat weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -2264,7 +2345,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -2274,7 +2359,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 multi-melta</li><li>1 twin assault cannon</li><li>1 twin lascannon</li><li>1 twin psycannon</li></ul>",
@@ -2284,7 +2373,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Multi-melta",
+      "Twin assault cannon",
+      "Twin lascannon",
+      "Twin psycannon"
+     ]
     }
    ],
    "chapter": "",
@@ -2464,7 +2560,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "thunderhawk cluster bombs"
+     "base": "thunderhawk cluster bombs",
+     "model": "",
+     "grants": [
+      "Hellstrike missile battery"
+     ]
     },
     {
      "text": "This model’s Thunderhawk heavy cannon can be replaced with 1 turbo-laser destructor.",
@@ -2474,7 +2574,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "thunderhawk heavy cannon"
+     "base": "thunderhawk heavy cannon",
+     "model": "",
+     "grants": [
+      "Turbo-laser destructor"
+     ]
     }
    ],
    "chapter": "",
@@ -2663,7 +2767,16 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "storm bolter and nemesis force weapon"
+     "base": "storm bolter and nemesis force weapon",
+     "model": "",
+     "grants": [
+      "Incinerator",
+      "Psilencer",
+      "Psycannon",
+      "Storm bolter",
+      "Close combat weapon",
+      "Nemesis force weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -2813,7 +2926,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2986,7 +3101,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
@@ -2996,7 +3115,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -3006,7 +3129,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -3181,7 +3308,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
@@ -3191,7 +3322,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -3201,7 +3336,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -3376,7 +3515,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
@@ -3386,7 +3529,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -3396,7 +3543,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -3585,7 +3736,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "dreadfists"
+     "base": "dreadfists",
+     "model": "",
+     "grants": [
+      "Nemesis daemon greathammer"
+     ]
     },
     {
      "text": "This model can be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 gatling psilencer</li><li>1 heavy incinerator</li><li>1 heavy psycannon</li></ul>",
@@ -3595,7 +3750,13 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Gatling psilencer",
+      "Heavy incinerator",
+      "Heavy psycannon"
+     ]
     }
    ],
    "chapter": "",
@@ -3820,7 +3981,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Incinerator",
+      "Psilencer",
+      "Psycannon"
+     ]
     },
     {
      "text": "1 Paladin can have its storm bolter replaced with 1 Apothecary’s narthecium.",
@@ -3830,7 +3997,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     },
     {
      "text": "1 Paladin’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 Ancient’s banner</li><li>1 psilencer and 1 Ancient’s banner</li><li>1 psycannon and 1 Ancient’s banner</li><li>1 storm bolter and 1 Ancient’s banner*</li></ul>",
@@ -3840,7 +4011,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Incinerator",
+      "Psilencer",
+      "Psycannon"
+     ]
     },
     {
      "text": "* That model’s storm bolter cannot be replaced.",
@@ -3849,7 +4026,11 @@
      "limit": {
       "kind": "note"
      },
-     "base": "storm bolter cannot be"
+     "base": "storm bolter cannot be",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -4036,7 +4217,16 @@
      "limit": {
       "kind": "all"
      },
-     "base": "storm bolter and nemesis force weapon"
+     "base": "storm bolter and nemesis force weapon",
+     "model": "",
+     "grants": [
+      "Incinerator",
+      "Psilencer",
+      "Psycannon",
+      "Storm bolter",
+      "Close combat weapon",
+      "Nemesis force weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -4235,7 +4425,16 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "storm bolter and nemesis force weapon"
+     "base": "storm bolter and nemesis force weapon",
+     "model": "",
+     "grants": [
+      "Incinerator",
+      "Psilencer",
+      "Psycannon",
+      "Storm bolter",
+      "Close combat weapon",
+      "Nemesis force weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -4390,7 +4589,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -4400,7 +4603,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin lascannon.",
@@ -4410,7 +4617,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     }
    ],
    "chapter": "",
@@ -4548,7 +4759,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 additional storm bolter.",
@@ -4558,7 +4773,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -4718,7 +4937,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "servitor’s servo-arm"
+     "base": "servitor’s servo-arm",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Multi-melta",
+      "Servitor’s tools"
+     ]
     }
    ],
    "chapter": "",
@@ -4905,7 +5130,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "las-talon"
+     "base": "las-talon",
+     "model": "",
+     "grants": [
+      "Icarus stormcannon"
+     ]
     },
     {
      "text": "This model’s skyhammer missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 typhoon missile launcher</li></ul>",
@@ -4915,7 +5144,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "skyhammer missile launcher"
+     "base": "skyhammer missile launcher",
+     "model": "",
+     "grants": [
+      "Twin heavy bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -5144,7 +5377,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hurricane bolter"
+     ]
     },
     {
      "text": "This model’s twin assault cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy plasma cannon</li><li>1 twin lascannon</li></ul>",
@@ -5154,7 +5391,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin assault cannon"
+     "base": "twin assault cannon",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model’s typhoon missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 twin multi-melta</li></ul>",
@@ -5164,7 +5405,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "typhoon missile launcher"
+     "base": "typhoon missile launcher",
+     "model": "",
+     "grants": [
+      "Twin heavy bolter",
+      "Twin multi-melta"
+     ]
     }
    ],
    "chapter": "",
@@ -5338,7 +5584,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "skyhammer missile launcher"
+     "base": "skyhammer missile launcher",
+     "model": "",
+     "grants": [
+      "Twin heavy bolter",
+      "Twin lascannon"
+     ]
     }
    ],
    "chapter": "",
@@ -5517,7 +5768,16 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "storm bolter and nemesis force weapon"
+     "base": "storm bolter and nemesis force weapon",
+     "model": "",
+     "grants": [
+      "Incinerator",
+      "Psilencer",
+      "Psycannon",
+      "Storm bolter",
+      "Close combat weapon",
+      "Nemesis force weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -5708,7 +5968,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "assault cannon"
+     "base": "assault cannon",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model’s storm bolter can be replaced with 1 heavy flamer.",
@@ -5718,7 +5982,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
     }
    ],
    "chapter": "",

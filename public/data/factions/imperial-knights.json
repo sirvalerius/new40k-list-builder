@@ -166,7 +166,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -346,7 +348,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 acastus autocannons"
+     "base": "2 acastus autocannons",
+     "model": "",
+     "grants": [
+      "Acastus autocannon",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model’s Acastus ironstorm missile pod can be replaced with 1 helios defence missiles.",
@@ -356,7 +363,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "acastus ironstorm missile pod"
+     "base": "acastus ironstorm missile pod",
+     "model": "",
+     "grants": [
+      "Helios defence missiles"
+     ]
     }
    ],
    "chapter": "",
@@ -497,7 +508,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "questoris heavy stubber"
+     "base": "questoris heavy stubber",
+     "model": "",
+     "grants": [
+      "Meltagun"
+     ]
     }
    ],
    "chapter": "",
@@ -686,7 +701,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "volkite veuglaire"
+     "base": "volkite veuglaire",
+     "model": "",
+     "grants": [
+      "Conversion beam cannon",
+      "Graviton pulsar",
+      "Lightning lock",
+      "Rad cleanser",
+      "Siege claw"
+     ]
     },
     {
      "text": "This model’s graviton pulsar can be replaced with one of the following;<ul style=\"list-style-type:circle\"><li>1 siege claw and 1 rad cleanser</li><li>1 lightning lock</li><li>1 conversion beam cannon</li><li>1 volkite veuglaire</li></ul>",
@@ -696,7 +719,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "graviton pulsar"
+     "base": "graviton pulsar",
+     "model": "",
+     "grants": [
+      "Conversion beam cannon",
+      "Lightning lock",
+      "Rad cleanser",
+      "Volkite veuglaire",
+      "Siege claw"
+     ]
     }
    ],
    "chapter": "",
@@ -848,7 +879,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "questoris heavy stubber"
+     "base": "questoris heavy stubber",
+     "model": "",
+     "grants": [
+      "Meltagun"
+     ]
     }
    ],
    "chapter": "",
@@ -1166,7 +1201,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1351,7 +1388,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1503,7 +1542,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1655,7 +1696,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1852,7 +1895,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 shieldbreaker missile launchers and twin siegebreaker cannon"
+     "base": "2 shieldbreaker missile launchers and twin siegebreaker cannon",
+     "model": "",
+     "grants": [
+      "Shieldbreaker missile launcher",
+      "Twin siegebreaker cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -2084,7 +2132,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "meltagun"
+     "base": "meltagun",
+     "model": "",
+     "grants": [
+      "Questoris heavy stubber"
+     ]
     },
     {
      "text": "This model’s thermal cannon can be replaced with:<ul style=\"list-style-type:circle\"><li>1 rapid-fire battle cannon and 1 Questoris heavy stubber</li></ul>",
@@ -2094,7 +2146,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "thermal cannon"
+     "base": "thermal cannon",
+     "model": "",
+     "grants": [
+      "Questoris heavy stubber",
+      "Rapid-fire battle cannon"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li><b></b><br></ul>",
@@ -2104,7 +2161,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironstorm missile pod",
+      "Stormspear rocket pod",
+      "Twin Icarus autocannon"
+     ]
     }
    ],
    "chapter": "",
@@ -2499,7 +2562,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "chastiser gatling cannon"
+     "base": "chastiser gatling cannon",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s frag bombard can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 bellatus reaper chainsword*</li><li>1 thundershock spear*</li></ul>",
@@ -2509,7 +2574,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "frag bombard"
+     "base": "frag bombard",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* A model cannot be equipped with more than one bellatus reaper chainsword or more than one thundershock spear.",
@@ -2518,7 +2585,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2750,7 +2819,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "meltagun"
+     "base": "meltagun",
+     "model": "",
+     "grants": [
+      "Questoris heavy stubber"
+     ]
     },
     {
      "text": "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
@@ -2760,7 +2833,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "reaper chainsword"
+     "base": "reaper chainsword",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
@@ -2770,7 +2845,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironstorm missile pod",
+      "Stormspear rocket pod",
+      "Twin Icarus autocannon"
+     ]
     }
    ],
    "chapter": "",
@@ -2990,7 +3071,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "meltagun"
+     "base": "meltagun",
+     "model": "",
+     "grants": [
+      "Questoris heavy stubber"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
@@ -3000,7 +3085,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironstorm missile pod",
+      "Stormspear rocket pod",
+      "Twin Icarus autocannon"
+     ]
     }
    ],
    "chapter": "",
@@ -3232,7 +3323,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "meltagun"
+     "base": "meltagun",
+     "model": "",
+     "grants": [
+      "Questoris heavy stubber"
+     ]
     },
     {
      "text": "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
@@ -3242,7 +3337,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "reaper chainsword"
+     "base": "reaper chainsword",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
@@ -3252,7 +3349,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironstorm missile pod",
+      "Stormspear rocket pod",
+      "Twin Icarus autocannon"
+     ]
     }
    ],
    "chapter": "",
@@ -3506,7 +3609,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "questoris multi-laser"
+     "base": "questoris multi-laser",
+     "model": "",
+     "grants": [
+      "Meltagun",
+      "Questoris heavy stubber"
+     ]
     },
     {
      "text": "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
@@ -3516,7 +3624,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "reaper chainsword"
+     "base": "reaper chainsword",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
@@ -3526,7 +3636,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironstorm missile pod",
+      "Stormspear rocket pod",
+      "Twin Icarus autocannon"
+     ]
     }
    ],
    "chapter": "",
@@ -3712,7 +3828,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 shieldbreaker missile launchers and twin siegebreaker cannon"
+     "base": "2 shieldbreaker missile launchers and twin siegebreaker cannon",
+     "model": "",
+     "grants": [
+      "Shieldbreaker missile launcher",
+      "Twin siegebreaker cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -3955,7 +4076,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "meltagun"
+     "base": "meltagun",
+     "model": "",
+     "grants": [
+      "Questoris heavy stubber"
+     ]
     },
     {
      "text": "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
@@ -3965,7 +4090,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "reaper chainsword"
+     "base": "reaper chainsword",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironstorm missile pod</li><li>1 stormspear rocket pod</li><li>1 twin Icarus autocannon</li></ul>",
@@ -3975,7 +4102,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironstorm missile pod",
+      "Stormspear rocket pod",
+      "Twin Icarus autocannon"
+     ]
     }
    ],
    "chapter": "",
@@ -4172,7 +4305,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "reaper chainsword"
+     "base": "reaper chainsword",
+     "model": "",
+     "grants": [
+      "Twin rad cleanser"
+     ]
     }
    ],
    "chapter": "",
@@ -4369,7 +4506,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "reaper chainsword"
+     "base": "reaper chainsword",
+     "model": "",
+     "grants": [
+      "Twin rad cleanser"
+     ]
     }
    ],
    "chapter": "",
@@ -4778,7 +4919,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Alpha combat weapon"
+     ]
     },
     {
      "text": "The Skitarii Ranger Alpha’s galvanic rifle can be replaced with 1 Mechanicus pistol.",
@@ -4788,7 +4933,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "galvanic rifle"
+     "base": "galvanic rifle",
+     "model": "",
+     "grants": [
+      "Mechanicus pistol"
+     ]
     },
     {
      "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 arc rifle.",
@@ -4798,7 +4947,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "galvanic rifle"
+     "base": "galvanic rifle",
+     "model": "",
+     "grants": [
+      "Arc rifle"
+     ]
     },
     {
      "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 plasma caliver.",
@@ -4808,7 +4961,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "galvanic rifle"
+     "base": "galvanic rifle",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 transuranic arquebus.",
@@ -4818,7 +4973,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "galvanic rifle"
+     "base": "galvanic rifle",
+     "model": "",
+     "grants": [
+      "Transuranic arquebus"
+     ]
     },
     {
      "text": "1 Skitarii Ranger equipped with a galvanic rifle can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
@@ -4828,7 +4987,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Galvanic rifle"
+     ]
     },
     {
      "text": "* That model’s galvanic rifle cannot be replaced.",
@@ -4837,7 +5000,11 @@
      "limit": {
       "kind": "note"
      },
-     "base": "galvanic rifle cannot be"
+     "base": "galvanic rifle cannot be",
+     "model": "",
+     "grants": [
+      "Galvanic rifle"
+     ]
     }
    ],
    "chapter": "",
@@ -5036,7 +5203,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Alpha combat weapon"
+     ]
     },
     {
      "text": "The Skitarii Vanguard Alpha’s radium carbine can be replaced with 1 Mechanicus pistol.",
@@ -5046,7 +5217,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "radium carbine"
+     "base": "radium carbine",
+     "model": "",
+     "grants": [
+      "Mechanicus pistol"
+     ]
     },
     {
      "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 arc rifle.",
@@ -5056,7 +5231,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "radium carbine"
+     "base": "radium carbine",
+     "model": "",
+     "grants": [
+      "Arc rifle"
+     ]
     },
     {
      "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 plasma caliver.",
@@ -5066,7 +5245,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "radium carbine"
+     "base": "radium carbine",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 transuranic arquebus.",
@@ -5076,7 +5257,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "radium carbine"
+     "base": "radium carbine",
+     "model": "",
+     "grants": [
+      "Transuranic arquebus"
+     ]
     },
     {
      "text": "1 Skitarii Vanguard equipped with a radium carbine can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
@@ -5086,7 +5271,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Radium carbine"
+     ]
     },
     {
      "text": "* That model’s radium carbine cannot be replaced.",
@@ -5095,7 +5284,11 @@
      "limit": {
       "kind": "note"
      },
-     "base": "radium carbine cannot be"
+     "base": "radium carbine cannot be",
+     "model": "",
+     "grants": [
+      "Radium carbine"
+     ]
     }
    ],
    "chapter": "",
@@ -5267,7 +5460,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "macrostubber"
+     "base": "macrostubber",
+     "model": "",
+     "grants": [
+      "Phosphor serpenta"
+     ]
     },
     {
      "text": "This model’s volkite blaster can be replaced with 1 eradication ray.",
@@ -5277,7 +5474,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "volkite blaster"
+     "base": "volkite blaster",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5415,7 +5614,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "magnarail lance"
+     "base": "magnarail lance",
+     "model": "",
+     "grants": [
+      "Transonic cannon"
+     ]
     }
    ],
    "chapter": "",

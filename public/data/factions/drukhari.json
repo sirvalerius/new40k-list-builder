@@ -181,7 +181,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter pistol"
+     "base": "splinter pistol",
+     "model": "",
+     "grants": [
+      "Blast pistol"
+     ]
     },
     {
      "text": "This model’s huskblade can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 agoniser</li><li>1 master-crafted power weapon</li></ul>",
@@ -191,7 +195,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "huskblade"
+     "base": "huskblade",
+     "model": "",
+     "grants": [
+      "Agoniser",
+      "Master-crafted power weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -389,7 +398,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -615,7 +626,15 @@
      "limit": {
       "kind": "all"
      },
-     "base": "twin shuriken catapult"
+     "base": "twin shuriken catapult",
+     "model": "",
+     "grants": [
+      "Dark lance",
+      "Dissonance cannon",
+      "Scatter laser",
+      "Shuriken cannon",
+      "Splinter cannon"
+     ]
     },
     {
      "text": "The Cloud Dancer Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
@@ -625,7 +644,24 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "CLOUD DANCER FELARCH",
+     "grants": [
+      "Dissonance pistol",
+      "Void sabre"
+     ]
+    },
+    {
+     "text": "Include 1 Cloud Dancer Felarch",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "model": "CLOUD DANCER FELARCH",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -908,7 +944,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "corsair firearm"
+     "base": "corsair firearm",
+     "model": "",
+     "grants": [
+      "Spar-glaive"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model’s Corsair firearm can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 blaster</li><li>1 dark lance</li><li>1 flamer</li><li>1 fusion gun</li><li>1 shredder</li><li>1 shuriken cannon</li><li>1 splinter cannon</li></ul>",
@@ -918,7 +958,17 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "corsair firearm"
+     "base": "corsair firearm",
+     "model": "",
+     "grants": [
+      "Dark lance",
+      "Flamer",
+      "Fusion gun",
+      "Shredder",
+      "Splinter cannon",
+      "Shuriken cannon",
+      "Blaster"
+     ]
     },
     {
      "text": "The Corsair Reaver Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
@@ -928,7 +978,24 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "CORSAIR REAVER FELARCH",
+     "grants": [
+      "Void sabre",
+      "Dissonance pistol"
+     ]
+    },
+    {
+     "text": "Include 1 Corsair Reaver Felarch",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "model": "CORSAIR REAVER FELARCH",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1235,7 +1302,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "corsair firearm"
+     "base": "corsair firearm",
+     "model": "",
+     "grants": [
+      "Spar-glaive",
+      "Shuriken catapult",
+      "Shardcarbine"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model’s Corsair firearm can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 blaster</li><li>1 dark lance</li><li>1 flamer</li><li>1 fusion gun</li><li>1 shredder</li><li>1 shuriken cannon</li><li>1 splinter cannon</li></ul>",
@@ -1245,7 +1318,17 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "corsair firearm"
+     "base": "corsair firearm",
+     "model": "",
+     "grants": [
+      "Dark lance",
+      "Flamer",
+      "Blaster",
+      "Shredder",
+      "Splinter cannon",
+      "Shuriken cannon",
+      "Fusion gun"
+     ]
     },
     {
      "text": "The Corsair Skyreaver Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
@@ -1255,7 +1338,24 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "CORSAIR SKYREAVER FELARCH",
+     "grants": [
+      "Dissonance pistol",
+      "Void sabre"
+     ]
+    },
+    {
+     "text": "Include 1 Corsair Skyreaver Felarch",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "model": "CORSAIR SKYREAVER FELARCH",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1471,7 +1571,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Neuro disruptor",
+      "Blast pistol",
+      "Shuriken pistol"
+     ]
     },
     {
      "text": "For every 5 models in the unit, up to 2 Skyreaver models can each have their shuriken pistol and Corsair blade replaced with one of the following*:<ul style=\"list-style-type:circle\"><li>1 blaster and 1 close combat weapon</li><li>1 flamer and 1 close combat weapon</li><li>1 fusion gun and 1 close combat weapon</li><li>1 shredder and 1 close combat weapon</li></ul>",
@@ -1481,7 +1587,17 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "shuriken pistol and corsair blade"
+     "base": "shuriken pistol and corsair blade",
+     "model": "",
+     "grants": [
+      "Blaster",
+      "Flamer",
+      "Fusion gun",
+      "Shredder",
+      "Shuriken pistol",
+      "Corsair blade",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "* You cannot select the same option more than once per unit unless it contains 10 models, in which case you cannot select the same weapon more than twice per unit.",
@@ -1490,7 +1606,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1707,7 +1825,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "shuriken pistol"
+     "base": "shuriken pistol",
+     "model": "",
+     "grants": [
+      "Neuro disruptor",
+      "Shuriken rifle"
+     ]
     },
     {
      "text": "The Voidreaver Felarch can be equipped with:<ul style=\"list-style-type:circle\"><li>1 mistshield</li></ul>",
@@ -1717,7 +1840,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of Corsair Voidreavers in this unit can each have their shuriken pistol and power sword replaced with 1 shuriken rifle.",
@@ -1726,7 +1851,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "shuriken pistol and power sword"
+     "base": "shuriken pistol and power sword",
+     "model": "",
+     "grants": [
+      "Power sword",
+      "Shuriken rifle",
+      "Shuriken pistol"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Corsair Voidreaver’s power sword or shuriken rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
@@ -1736,7 +1867,14 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "power sword or shuriken rifle"
+     "base": "power sword or shuriken rifle",
+     "model": "",
+     "grants": [
+      "Power sword",
+      "Shredder",
+      "Shuriken rifle",
+      "Blaster"
+     ]
     },
     {
      "text": "If this unit contains 10 models, 1 Corsair Voidreaver’s shuriken rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 shuriken cannon</li><li>1 wraithcannon</li></ul>",
@@ -1745,7 +1883,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "shuriken rifle"
+     "base": "shuriken rifle",
+     "model": "",
+     "grants": [
+      "Shuriken cannon",
+      "Wraithcannon"
+     ]
     }
    ],
    "chapter": "",
@@ -2035,7 +2178,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "shuriken pistol and power sword"
+     "base": "shuriken pistol and power sword",
+     "model": "",
+     "grants": [
+      "Power sword",
+      "Shuriken rifle",
+      "Shuriken pistol"
+     ]
     },
     {
      "text": "The Voidscarred Felarch’s shuriken pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 neuro disruptor</li><li>1 shuriken rifle</li></ul>",
@@ -2045,7 +2194,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "shuriken pistol"
+     "base": "shuriken pistol",
+     "model": "",
+     "grants": [
+      "Neuro disruptor",
+      "Shuriken rifle"
+     ]
     },
     {
      "text": "The Voidscarred Felarch can be equipped with 1 mistshield.",
@@ -2055,7 +2209,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "For every 5 models in this unit, 1 Corsair  Voidscarred’s shuriken rifle can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
@@ -2065,7 +2221,12 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "shuriken rifle"
+     "base": "shuriken rifle",
+     "model": "",
+     "grants": [
+      "Shredder",
+      "Blaster"
+     ]
     },
     {
      "text": "If this unit contains 10 models, 1 Corsair Voidscarred’s shuriken rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 shuriken cannon</li><li>1 wraithcannon</li></ul>",
@@ -2074,7 +2235,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "shuriken rifle"
+     "base": "shuriken rifle",
+     "model": "",
+     "grants": [
+      "Wraithcannon",
+      "Shuriken cannon"
+     ]
     },
     {
      "text": "If this unit contains 10 models, 1 Corsair Voidscarred’s shuriken rifle can be replaced with 1 long rifle. ",
@@ -2083,7 +2249,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "shuriken rifle"
+     "base": "shuriken rifle",
+     "model": "",
+     "grants": [
+      "Long rifle"
+     ]
     },
     {
      "text": "If this unit contains 10 models, 1 Corsair Voidscarred’s power sword can be  replaced with 1 fusion pistol.",
@@ -2092,7 +2262,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "power sword"
+     "base": "power sword",
+     "model": "",
+     "grants": [
+      "Fusion pistol"
+     ]
     },
     {
      "text": "1 Corsair Voidscarred model equipped with a shuriken pistol and power sword can be equipped with 1 Faolchú.",
@@ -2102,7 +2276,48 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Power sword",
+      "Shuriken pistol"
+     ]
+    },
+    {
+     "text": "Include 1 Shade Runner",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "model": "SHADE RUNNER",
+     "grants": []
+    },
+    {
+     "text": "Include 1 Soul Weaver",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "model": "SOUL WEAVER",
+     "grants": []
+    },
+    {
+     "text": "Include 1 Way Seeker",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "model": "WAY SEEKER",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2283,7 +2498,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2432,7 +2649,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Spirit vortex"
+     ]
     }
    ],
    "chapter": "",
@@ -2829,7 +3050,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Liquifier gun",
+      "Monstrous weapons",
+      "Paired monstrous weapons"
+     ]
     }
    ],
    "chapter": "",
@@ -3233,7 +3460,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "close combat weapon"
+     "base": "close combat weapon",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
     },
     {
      "text": "The Kabalite Archsybarite’s splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol</li><li>1 splinter pistol</li></ul>",
@@ -3243,7 +3474,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter rifle"
+     "base": "splinter rifle",
+     "model": "",
+     "grants": [
+      "Blast pistol",
+      "Splinter pistol"
+     ]
     },
     {
      "text": "The Kabalite Archsybarite can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 Kabalite icon</li><li>1 phantasm grenade launcher</li></ul>",
@@ -3253,7 +3489,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Kabalite Agent's splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
@@ -3263,7 +3501,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter rifle"
+     "base": "splinter rifle",
+     "model": "",
+     "grants": [
+      "Blaster",
+      "Shredder"
+     ]
     },
     {
      "text": "1 Kabalite Agent’s splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dark lance</li><li>1 splinter cannon</li></ul>",
@@ -3273,7 +3516,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter rifle"
+     "base": "splinter rifle",
+     "model": "",
+     "grants": [
+      "Dark lance",
+      "Splinter cannon"
+     ]
     },
     {
      "text": "1 Kabalite Agent’s splinter rifle can be replaced with 1 stinger pistol.",
@@ -3283,7 +3531,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter rifle"
+     "base": "splinter rifle",
+     "model": "",
+     "grants": [
+      "Stinger pistol"
+     ]
     },
     {
      "text": "1 Kabalite Agent’s splinter rifle can be replaced with 1 shardcarbine.",
@@ -3293,7 +3545,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter rifle"
+     "base": "splinter rifle",
+     "model": "",
+     "grants": [
+      "Shardcarbine"
+     ]
     },
     {
      "text": "1 Kabalite Agent’s splinter rifle can be replaced with 1 pain sculptors.",
@@ -3303,7 +3559,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter rifle"
+     "base": "splinter rifle",
+     "model": "",
+     "grants": [
+      "Pain sculptors"
+     ]
     },
     {
      "text": "1 Kabalite Agent’s splinter rifle can be replaced with 1 splinter pistol and 1 razorflail.",
@@ -3313,7 +3573,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter rifle"
+     "base": "splinter rifle",
+     "model": "",
+     "grants": [
+      "Splinter pistol",
+      "Razorflail"
+     ]
     },
     {
      "text": "1 Kabalite Agent equipped with a splinter rifle can be equipped with 1 stimm-needler. This model’s splinter rifle cannot be replaced.",
@@ -3323,7 +3588,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter rifle cannot be"
+     "base": "splinter rifle cannot be",
+     "model": "",
+     "grants": [
+      "Splinter rifle"
+     ]
     }
    ],
    "chapter": "",
@@ -3514,7 +3783,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Helliarch’s hellglaive can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 splinter pistol and 1 power weapon.</li><li>1 splinter pistol and 1 stunclaw.</li></ul>",
@@ -3524,7 +3795,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "hellglaive"
+     "base": "hellglaive",
+     "model": "",
+     "grants": [
+      "Splinter pistol",
+      "Power weapon",
+      "Stunclaw"
+     ]
     },
     {
      "text": "If the Helliarch is equipped with 1 splinter pistol, it can be equipped with 1 hellglaive (that model’s hellglaive cannot be replaced).",
@@ -3533,7 +3810,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "hellglaive cannot be"
+     "base": "hellglaive cannot be",
+     "model": "",
+     "grants": [
+      "Splinter pistol",
+      "Hellglaive"
+     ]
     }
    ],
    "chapter": "",
@@ -3706,7 +3988,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "klaive"
+     "base": "klaive",
+     "model": "",
+     "grants": []
     },
     {
      "text": "For every 5 models in this unit, it can be equipped with 1 Incubi Shrine token.",
@@ -3716,7 +4000,9 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3931,7 +4217,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "close combat weapon"
+     "base": "close combat weapon",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
     },
     {
      "text": "The Sybarite can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 Kabalite icon</li><li>1 phantasm grenade launcher</li></ul>",
@@ -3941,7 +4231,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Sybarite’s splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol</li><li>1 splinter pistol</li></ul>",
@@ -3951,7 +4243,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter rifle"
+     "base": "splinter rifle",
+     "model": "",
+     "grants": [
+      "Blast pistol",
+      "Splinter pistol"
+     ]
     },
     {
      "text": "1 Kabalite Warrior’s splinter rifle can be replaced with 1 blaster.",
@@ -3961,7 +4258,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter rifle"
+     "base": "splinter rifle",
+     "model": "",
+     "grants": [
+      "Blaster"
+     ]
     },
     {
      "text": "1 Kabalite Warrior’s splinter rifle can be replaced with 1 dark lance.",
@@ -3971,7 +4272,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter rifle"
+     "base": "splinter rifle",
+     "model": "",
+     "grants": [
+      "Dark lance"
+     ]
     },
     {
      "text": "1 Kabalite Warrior’s splinter rifle can be replaced with 1 shredder.",
@@ -3981,7 +4286,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter rifle"
+     "base": "splinter rifle",
+     "model": "",
+     "grants": [
+      "Shredder"
+     ]
     },
     {
      "text": "1 Kabalite Warrior’s splinter rifle can be replaced with 1 splinter cannon.",
@@ -3991,7 +4300,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter rifle"
+     "base": "splinter rifle",
+     "model": "",
+     "grants": [
+      "Splinter cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -4124,7 +4437,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4656,7 +4971,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4829,7 +5146,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "dark lance"
+     "base": "dark lance",
+     "model": "",
+     "grants": [
+      "Disintegrator cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -4979,7 +5300,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "dark lances can each be"
+     "base": "dark lances can each be",
+     "model": "",
+     "grants": [
+      "Dark lance",
+      "Disintegrator cannon"
+     ]
     },
     {
      "text": "Equip Dark lance",
@@ -4988,7 +5314,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Dark lance"
+     ]
     }
    ],
    "chapter": "",
@@ -5129,7 +5459,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5327,7 +5659,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 dark lances"
+     "base": "2 dark lances",
+     "model": "",
+     "grants": [
+      "Dark Lance",
+      "Disintegrator cannon"
+     ]
     },
     {
      "text": "This model’s twin splinter rifle can be replaced with 1 splinter cannon.",
@@ -5337,7 +5674,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin splinter rifle"
+     "base": "twin splinter rifle",
+     "model": "",
+     "grants": [
+      "Splinter cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -5489,7 +5830,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5679,7 +6022,12 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": "splinter rifle"
+     "base": "splinter rifle",
+     "model": "",
+     "grants": [
+      "Blaster",
+      "Heat lance"
+     ]
     },
     {
      "text": "For every 3 models in this unit, 1 model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 cluster caltrops</li><li>1 grav-talon</li></ul>",
@@ -5689,7 +6037,9 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5926,7 +6276,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "shardcarbine"
+     "base": "shardcarbine",
+     "model": "",
+     "grants": [
+      "Blast pistol",
+      "Splinter pistol",
+      "Power weapon"
+     ]
     },
     {
      "text": "Any number of Scourges can each replace their splinter cannon with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 dark lance</li><li>1 haywire blaster</li><li>1 heat lance</li><li>1 shredder</li></ul>",
@@ -5935,7 +6291,16 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Blaster",
+      "Dark lance",
+      "Haywire blaster",
+      "Heat lance",
+      "Shredder",
+      "Splinter cannon"
+     ]
     },
     {
      "text": "Equip Dark lance",
@@ -5944,7 +6309,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Dark lance"
+     ]
     }
    ],
    "chapter": "",
@@ -6137,7 +6506,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "shardcarbine"
+     "base": "shardcarbine",
+     "model": "",
+     "grants": [
+      "Blast pistol",
+      "Splinter pistol",
+      "Power weapon"
+     ]
     },
     {
      "text": "1 Scourge’s shardcarbine can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
@@ -6147,7 +6522,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "shardcarbine"
+     "base": "shardcarbine",
+     "model": "",
+     "grants": [
+      "Blaster",
+      "Shredder"
+     ]
     }
    ],
    "chapter": "",
@@ -6309,7 +6689,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "shuriken pistol"
+     "base": "shuriken pistol",
+     "model": "",
+     "grants": [
+      "Neuro disruptor"
+     ]
     }
    ],
    "chapter": "",
@@ -6470,7 +6854,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "shuriken cannon"
+     "base": "shuriken cannon",
+     "model": "",
+     "grants": [
+      "Skyweaver haywire cannon"
+     ]
     },
     {
      "text": "Any number of models can each have their star bolas replaced with 1 zephyrglaive.",
@@ -6479,7 +6867,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "star bolas"
+     "base": "star bolas",
+     "model": "",
+     "grants": [
+      "Zephyrglaive"
+     ]
     }
    ],
    "chapter": "",
@@ -6757,7 +7149,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7224,7 +7618,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Stinger pod",
+      "Twin haywire blaster",
+      "Twin heat lance",
+      "Twin splinter cannon"
+     ]
     },
     {
      "text": "Any number of models can each replace one of their macro-scalpels with one of the following:<ul style=\"list-style-type:circle\"><li>1 Talos ichor injector</li><li>1 twin liquifier gun</li></ul>",
@@ -7233,7 +7634,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Twin liquifier gun",
+      "Macro-scalpel",
+      "Talos ichor injector"
+     ]
     },
     {
      "text": "Any number of models can each replace one of their macro-scalpels with one of the following:<ul style=\"list-style-type:circle\"><li>1 chain flails</li><li>1 Talos gauntlet</li></ul>",
@@ -7242,7 +7649,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Chain-flails",
+      "Macro-scalpel",
+      "Talos gauntlet"
+     ]
     }
    ],
    "chapter": "",
@@ -7378,7 +7791,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7574,7 +7989,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "harlequin’s blade"
+     "base": "harlequin’s blade",
+     "model": "",
+     "grants": [
+      "Harlequin’s special weapon"
+     ]
     },
     {
      "text": "The Lead Player’s Harlequin’s blade can be replaced with 1 power sword.",
@@ -7584,7 +8003,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "harlequin’s blade"
+     "base": "harlequin’s blade",
+     "model": "",
+     "grants": [
+      "Power sword"
+     ]
     },
     {
      "text": "If this unit contains 9 or fewer models:<ul style=\"list-style-type:circle\"><li>Up to 2 models can each have their shuriken pistol replaced with 1 neuro disruptor</li><li>Up to 2 models can each have their shuriken pistol replaced with 1 fusion pistol</li></ul>",
@@ -7593,7 +8016,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "shuriken pistol"
+     "base": "shuriken pistol",
+     "model": "",
+     "grants": [
+      "Fusion pistol",
+      "Neuro disruptor"
+     ]
     },
     {
      "text": "If this unit contains 10 or more models:<ul style=\"list-style-type:circle\"><li>Up to 4 models can each have their shuriken pistol replaced with 1 neuro disruptor</li><li>Up to 4 models can each have their shuriken pistol replaced with 1 fusion pistol</li></ul>",
@@ -7602,7 +8030,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "shuriken pistol"
+     "base": "shuriken pistol",
+     "model": "",
+     "grants": [
+      "Fusion pistol",
+      "Neuro disruptor"
+     ]
     }
    ],
    "chapter": "",
@@ -7780,7 +8213,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "shuriken pistol"
+     "base": "shuriken pistol",
+     "model": "",
+     "grants": [
+      "Neuro disruptor",
+      "Fusion pistol"
+     ]
     },
     {
      "text": "This model's Troupe Master's blade can be replaced with 1 Harlequin's special weapon.",
@@ -7790,7 +8228,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "troupe master's blade"
+     "base": "troupe master's blade",
+     "model": "",
+     "grants": [
+      "Harlequin’s special weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -7934,7 +8376,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -8089,7 +8533,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin splinter rifle"
+     "base": "twin splinter rifle",
+     "model": "",
+     "grants": [
+      "Splinter cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -8254,7 +8702,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s 2 void lances can be replaced with 2 dark scythes.",
@@ -8264,7 +8714,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 void lances"
+     "base": "2 void lances",
+     "model": "",
+     "grants": [
+      "Dark scythe",
+      "Void lance"
+     ]
     }
    ],
    "chapter": "",
@@ -8428,7 +8883,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "voidweaver haywire cannon"
+     "base": "voidweaver haywire cannon",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -8621,7 +9078,15 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "twin torturer’s tools"
+     "base": "twin torturer’s tools",
+     "model": "",
+     "grants": [
+      "Hexrifle",
+      "Liquifier gun",
+      "Ossefactor",
+      "Stinger pistol",
+      "Torturer’s tools"
+     ]
     },
     {
      "text": "The Acothyst’s twin torturer’s tools can be replaced with 1 power weapon and 1 torturer’s tool.",
@@ -8631,7 +9096,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin torturer’s tools"
+     "base": "twin torturer’s tools",
+     "model": "",
+     "grants": [
+      "Power weapon",
+      "Torturer’s tools"
+     ]
     },
     {
      "text": "If the Acothyst is not equipped with a power weapon, its torturer’s tool can be replaced with 1 power weapon.",
@@ -8640,7 +9110,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "tool"
+     "base": "tool",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -8796,7 +9270,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "splinter pistol"
+     "base": "splinter pistol",
+     "model": "",
+     "grants": [
+      "Blast pistol"
+     ]
     },
     {
      "text": "The Hekatrix’s Hekatarii blade can be replaced with 1 power weapon.",
@@ -8806,16 +9284,27 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "hekatarii blade"
+     "base": "hekatarii blade",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
     },
     {
      "text": "Up to 3 Wyches can each have their splinter pistol and Hekatarii blade replaced with 1 gladiatorial weapons.",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 3
      },
-     "base": "splinter pistol and hekatarii blade"
+     "base": "splinter pistol and hekatarii blade",
+     "model": "",
+     "grants": [
+      "Splinter pistol",
+      "Gladiatorial weapons",
+      "Hekatarii blade"
+     ]
     }
    ],
    "chapter": "",

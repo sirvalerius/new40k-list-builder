@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax } from './helpers';
-import type { Datasheet, FactionData, PointsOption } from './types';
+import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout } from './helpers';
+import type { ChosenWargear, Datasheet, FactionData, PointsOption, Weapon } from './types';
 
 function ds(partial: Partial<Datasheet>): Datasheet {
   return {
@@ -118,6 +118,64 @@ describe('unitTotal (base + enhancement + paid wargear)', () => {
   });
   it('zero wargear leaves base unchanged', () => {
     expect(unitTotal(mk(flat, '1 model'))).toBe(100);
+  });
+});
+
+// Outrider Squad: 5 bikes + optional Invader ATV; the ATV's gun can swap to a multi-melta.
+const w = (name: string): Weapon =>
+  ({ name, type: 'Ranged', range: '24', A: '1', BS_WS: '3', S: '4', AP: '0', D: '1', description: '' });
+const outriders = ds({
+  id: 'out', name: 'Outrider Squad', model_min: 6, model_max: 6,
+  weapons: [w('Twin bolt rifle'), w('Onslaught gatling cannon'), w('Multi-melta'), w('Astartes chainsword')],
+  weapon_options: [
+    { text: "An Invader ATV's onslaught gatling cannon can be replaced with 1 multi-melta.",
+      cost: 0, type: 'wargear', limit: { kind: 'fixed', max: 1 }, base: 'onslaught gatling cannon',
+      model: 'INVADER ATV', grants: ['Multi-melta'] },
+    { text: '1 Invader ATV', cost: 60, type: 'model', limit: { kind: 'fixed', max: 1 }, base: '',
+      model: 'INVADER ATV', grants: [] },
+  ],
+});
+const ATV = '1 Invader ATV';
+const MM = "An Invader ATV's onslaught gatling cannon can be replaced with 1 multi-melta.";
+const names = (ws: Weapon[]) => ws.map((x) => x.name);
+
+describe('equippedWeapons (show only what the unit fields)', () => {
+  it('no ATV: hides the ATV gun and the multi-melta upgrade', () => {
+    const eq = names(equippedWeapons(outriders, []));
+    expect(eq).toContain('Twin bolt rifle');
+    expect(eq).toContain('Astartes chainsword');
+    expect(eq).not.toContain('Onslaught gatling cannon'); // sub-model not bought
+    expect(eq).not.toContain('Multi-melta');               // upgrade not taken
+  });
+  it('ATV bought, no swap: shows the gatling cannon, not the multi-melta', () => {
+    const eq = names(equippedWeapons(outriders, [{ name: ATV, cost: 60, qty: 1 }]));
+    expect(eq).toContain('Onslaught gatling cannon');
+    expect(eq).not.toContain('Multi-melta');
+  });
+  it('ATV + multi-melta: shows the multi-melta, hides the replaced gatling', () => {
+    const eq = names(equippedWeapons(outriders, [
+      { name: ATV, cost: 60, qty: 1 },
+      { name: MM, cost: 0, qty: 1 },
+    ]));
+    expect(eq).toContain('Multi-melta');
+    expect(eq).not.toContain('Onslaught gatling cannon');
+  });
+  it('browsing (undefined) shows every weapon', () => {
+    expect(equippedWeapons(outriders, undefined)).toHaveLength(4);
+  });
+});
+
+describe('clampLoadout drops sub-model options when the model is removed', () => {
+  it('removing the ATV drops its multi-melta', () => {
+    const unit = { ...buildListUnit(outriders, outriders.points[0] ?? { description: '', cost: '0' }, 6),
+      wargearCosts: [{ name: MM, cost: 0, qty: 1 }] as ChosenWargear[] };
+    expect(clampLoadout(unit, outriders).find((x) => x.name === MM)).toBeUndefined();
+  });
+  it('keeps the multi-melta while the ATV is present', () => {
+    const unit = { ...buildListUnit(outriders, outriders.points[0] ?? { description: '', cost: '0' }, 6),
+      wargearCosts: [{ name: ATV, cost: 60, qty: 1 }, { name: MM, cost: 0, qty: 1 }] as ChosenWargear[] };
+    const out = clampLoadout(unit, outriders);
+    expect(out.find((x) => x.name === MM)?.qty).toBe(1);
   });
 });
 

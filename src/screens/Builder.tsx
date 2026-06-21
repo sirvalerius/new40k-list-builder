@@ -167,9 +167,16 @@ export function Builder({
   }
 
   function setWargear(uid: string, wargear: ChosenWargear[]) {
+    const dsMap = fd ? datasheetMap(fd) : null;
     update((l) => ({
       ...l,
-      units: l.units.map((u) => (u.uid === uid ? { ...u, wargearCosts: wargear } : u)),
+      units: l.units.map((u) => {
+        if (u.uid !== uid) return u;
+        const next = { ...u, wargearCosts: wargear };
+        const ds = dsMap?.get(u.datasheetId);
+        // clampLoadout drops sub-model options when their model is removed (e.g. ATV gun).
+        return ds ? { ...next, wargearCosts: clampLoadout(next, ds) } : next;
+      }),
     }));
   }
 

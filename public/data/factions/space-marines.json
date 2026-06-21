@@ -426,7 +426,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "flamestorm gauntlets"
+     "base": "flamestorm gauntlets",
+     "model": "",
+     "grants": [
+      "Auto boltstorm gauntlets",
+      "Fragstorm grenade launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -574,7 +579,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt rifle and close combat weapon"
+     "base": "bolt rifle and close combat weapon",
+     "model": "",
+     "grants": [
+      "Bolt rifle",
+      "Close combat weapon",
+      "Power weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -768,7 +779,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "power fist"
+     "base": "power fist",
+     "model": "",
+     "grants": [
+      "Chainfist",
+      "Close combat weapon",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "This model’s storm bolter and power fist can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin lightning claws</li><li>1 thunder hammer and 1 Terminator storm shield</li></ul>",
@@ -778,7 +796,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter and power fist"
+     "base": "storm bolter and power fist",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Power fist",
+      "Thunder hammer",
+      "Twin lightning claws"
+     ]
     }
    ],
    "chapter": "",
@@ -1014,7 +1039,17 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Combi-weapon",
+      "Grav-pistol",
+      "Storm bolter",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     }
    ],
    "chapter": "",
@@ -1387,7 +1422,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1825,7 +1862,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolt pistol"
+     "base": "heavy bolt pistol",
+     "model": "",
+     "grants": [
+      "Hand flamer"
+     ]
     },
     {
      "text": "The Assault Intercessor Sergeant’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li></ul>",
@@ -1835,7 +1876,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     }
    ],
    "chapter": "",
@@ -2038,7 +2085,9 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "heavy bolt pistol"
+     "base": "heavy bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Assault Intercessor Sergeant with Jump Pack’s Astartes chainsword can be replaced with one of the following: <br><ul style=\"list-style-type:circle\"><li>1 power weapon </li><li>1 power fist </li></ul>",
@@ -2048,7 +2097,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power weapon",
+      "Power fist"
+     ]
     },
     {
      "text": "The Assault Intercessor Sergeant with Jump Pack’s heavy bolt pistol can be replaced with one of the following: <br><ul style=\"list-style-type:circle\"><li>1 hand flamer</li><li>1 plasma pistol</li></ul>",
@@ -2058,7 +2112,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolt pistol"
+     "base": "heavy bolt pistol",
+     "model": "",
+     "grants": [
+      "Hand flamer"
+     ]
     }
    ],
    "chapter": "",
@@ -2360,7 +2418,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Flamer",
+      "Grav-pistol",
+      "Hand flamer",
+      "Inferno pistol"
+     ]
     },
     {
      "text": "The Assault Sergeant’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li></ul>",
@@ -2370,7 +2435,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "The Assault Sergeant can do one of the following:<ul style=\"list-style-type:circle\"><li>Replace its bolt pistol and Astartes chainsword with 1 twin lightning claws.</li><li>Be equipped with 1 Astartes shield.</li></ul>",
@@ -2380,7 +2451,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Astartes chainsword",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "Up to 2 Assault Marines can each have their bolt pistol and Astartes chainsword replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol and 1 Astartes chainsword</li><li>1 flamer and 1 close combat weapon</li><li>1 meltagun and 1 close combat weapon</li><li>1 plasma gun and 1 close combat weapon</li></ul>",
@@ -2389,7 +2466,15 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol and astartes chainsword"
+     "base": "bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Flamer",
+      "Meltagun",
+      "Astartes chainsword",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model’s Astartes chainsword can be replaced with 1 eviscerator.",
@@ -2399,7 +2484,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Eviscerator"
+     ]
     }
    ],
    "chapter": "",
@@ -2709,7 +2798,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Flamer",
+      "Grav-pistol",
+      "Hand flamer",
+      "Inferno pistol"
+     ]
     },
     {
      "text": "The Assault Sergeant with Jump Pack’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li></ul>",
@@ -2719,7 +2815,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "The Assault Sergeant with Jump Pack can do one of the following:<ul style=\"list-style-type:circle\"><li>Replace its bolt pistol and Astartes chainsword with 1 twin lightning claws.</li><li>Be equipped with 1 Astartes shield.</li></ul>",
@@ -2729,7 +2831,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Astartes chainsword",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "Up to 2 Assault Marines with Jump Packs can each have their bolt pistol and Astartes chainsword replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol and 1 Astartes chainsword</li><li>1 flamer and 1 close combat weapon</li><li>1 meltagun and 1 close combat weapon</li><li>1 plasma gun and 1 close combat weapon</li></ul>",
@@ -2738,7 +2846,15 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol and astartes chainsword"
+     "base": "bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Flamer",
+      "Meltagun",
+      "Astartes chainsword",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model’s Astartes chainsword can be replaced with 1 eviscerator.",
@@ -2748,7 +2864,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Eviscerator"
+     ]
     }
    ],
    "chapter": "",
@@ -2902,7 +3022,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "servitor servo-arm"
+     "base": "servitor servo-arm",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Multi-melta",
+      "Close combat weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -3219,7 +3345,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 astraeus las-rippers"
+     "base": "2 astraeus las-rippers",
+     "model": "",
+     "grants": [
+      "Astraeus las-ripper"
+     ]
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin lascannon.",
@@ -3229,7 +3359,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 ironhail heavy stubber.",
@@ -3239,7 +3373,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironhail heavy stubber"
+     ]
     }
    ],
    "chapter": "",
@@ -3400,7 +3538,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "heavy bolter"
+     "base": "heavy bolter",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     }
    ],
    "chapter": "",
@@ -3714,7 +3856,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin assault cannon"
+     "base": "twin assault cannon",
+     "model": "",
+     "grants": [
+      "Baal flamestorm cannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -3724,7 +3870,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -3734,7 +3884,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li></ul>",
@@ -3744,7 +3898,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer"
+     ]
     }
    ],
    "chapter": "Blood Angels",
@@ -4386,7 +4545,21 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Combi-weapon",
+      "Flamer",
+      "Grav-pistol",
+      "Hand flamer",
+      "Inferno pistol",
+      "Storm bolter",
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "Any number of Space Marine Bikers can each have their bolt pistol replaced with 1 Astartes chainsword.",
@@ -4395,7 +4568,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
     },
     {
      "text": "Up to 2 Space Marine Bikers can each have their bolt pistol replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grav-gun</li><li>1 meltagun</li><li>1 plasma gun</li><li>1 plasma pistol</li></ul>",
@@ -4404,16 +4581,39 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Flamer",
+      "Grav-gun",
+      "Meltagun"
+     ]
     },
     {
      "text": "An Attack Bike’s heavy bolter can be replaced with 1 multi-melta.  ",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
-     "base": "heavy bolter"
+     "base": "heavy bolter",
+     "model": "ATTACK BIKE",
+     "grants": [
+      "Multi-melta"
+     ]
+    },
+    {
+     "text": "Include 1 Attack Bike",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "model": "ATTACK BIKE",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4592,7 +4792,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "assault cannon"
+     "base": "assault cannon",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -4879,7 +5083,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolt pistol"
+     "base": "heavy bolt pistol",
+     "model": "",
+     "grants": [
+      "Neo-volkite pistol"
+     ]
     }
    ],
    "chapter": "",
@@ -5040,7 +5248,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolt pistol"
+     "base": "heavy bolt pistol",
+     "model": "",
+     "grants": [
+      "Inferno pistol"
+     ]
     },
     {
      "text": "This model’s master-crafted chainsword can be replaced with one of the following: <br><ul style=\"list-style-type:circle\"><li>1 relic weapon</li><li>1 power fist</li></ul>",
@@ -5050,7 +5262,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "master-crafted chainsword"
+     "base": "master-crafted chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Relic weapon"
+     ]
     }
    ],
    "chapter": "Blood Angels",
@@ -5208,7 +5425,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Blood Claw Pack Leader’s Astartes chainsword can be replaced with 1 power weapon.",
@@ -5218,7 +5437,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -5345,7 +5568,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Blood Angels",
@@ -5529,7 +5754,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Twin multi-melta"
+     ]
     },
     {
      "text": "This model’s Brutalis fists and Brutalis bolt rifles can be replaced with 1 Brutalis talons.",
@@ -5539,7 +5768,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "brutalis fists and brutalis bolt rifles"
+     "base": "brutalis fists and brutalis bolt rifles",
+     "model": "",
+     "grants": [
+      "Brutalis bolt rifles",
+      "Brutalis fists"
+     ]
     }
    ],
    "chapter": "",
@@ -5814,7 +6048,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5950,7 +6186,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Space Wolves",
@@ -6160,7 +6398,17 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol, master-crafted bolter and close combat weapon"
+     "base": "bolt pistol, master-crafted bolter and close combat weapon",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Heavy bolt pistol ",
+      "Master-crafted bolter",
+      "Neo-volkite pistol",
+      "Close combat weapon",
+      "Master-crafted power weapon ",
+      "Power fist"
+     ]
     },
     {
      "text": "This model’s close combat weapon can be replaced with one of the following: <br><ul style=\"list-style-type:circle\"><li>1 master-crafted power weapon </li><li>1 power fist</li></ul>",
@@ -6170,7 +6418,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "close combat weapon"
+     "base": "close combat weapon",
+     "model": "",
+     "grants": [
+      "Master-crafted power weapon ",
+      "Power fist"
+     ]
     }
    ],
    "chapter": "",
@@ -6351,7 +6604,17 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "master-crafted heavy bolt rifle and master-crafted power weapon"
+     "base": "master-crafted heavy bolt rifle and master-crafted power weapon",
+     "model": "",
+     "grants": [
+      "Boltstorm gauntlet",
+      "Master-crafted heavy bolt rifle",
+      "Master-crafted power weapon",
+      "Power fist",
+      "Relic blade",
+      "Relic chainsword",
+      "Relic fist"
+     ]
     }
    ],
    "chapter": "",
@@ -6642,7 +6905,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
     },
     {
      "text": "This model’s relic weapon can be replaced with 1 relic fist",
@@ -6652,7 +6919,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "relic weapon"
+     "base": "relic weapon",
+     "model": "",
+     "grants": [
+      "Relic fist"
+     ]
     }
    ],
    "chapter": "",
@@ -6935,7 +7206,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Blood Angels",
@@ -7144,7 +7417,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolt pistol"
+     "base": "heavy bolt pistol",
+     "model": "",
+     "grants": [
+      "Hand flamer"
+     ]
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following: <br><ul style=\"list-style-type:circle\"><li>1 power fist </li><li>1 relic weapon</li></ul>",
@@ -7154,7 +7431,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Relic weapon"
+     ]
     },
     {
      "text": "This model’s heavy bolt pistol and Astartes chainsword can be replaced with 1 thunder hammer and 1 relic shield.",
@@ -7164,7 +7446,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolt pistol and astartes chainsword"
+     "base": "heavy bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Heavy bolt pistol",
+      "Astartes chainsword",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "If this model is equipped with a heavy bolt pistol and an Astartes chainsword, it can be equipped with 1 relic shield. This model’s heavy bolt pistol and Astartes chainsword cannot be replaced.",
@@ -7174,7 +7462,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolt pistol and astartes chainsword cannot be"
+     "base": "heavy bolt pistol and astartes chainsword cannot be",
+     "model": "",
+     "grants": [
+      "Heavy bolt pistol",
+      "Astartes chainsword"
+     ]
     }
    ],
    "chapter": "",
@@ -7463,7 +7756,18 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Hand flamer",
+      "Inferno pistol",
+      "Master-crafted boltgun",
+      "Storm bolter",
+      "Power fist",
+      "Relic weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 close combat weapon and 1 relic shield*</li><li>1 power fist</li><li>1 relic weapon</li></ul>",
@@ -7473,7 +7777,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Close combat weapon",
+      "Power fist",
+      "Relic weapon"
+     ]
     },
     {
      "text": "This model’s bolt pistol and Astartes chainsword can be replaced with 1 twin lightning claws.",
@@ -7483,7 +7793,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and astartes chainsword"
+     "base": "bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Astartes chainsword",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "* Maximum one per model.",
@@ -7492,7 +7808,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7659,7 +7977,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7810,7 +8130,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "combi-weapon"
+     "base": "combi-weapon",
+     "model": "",
+     "grants": [
+      "Heavy bolt pistol"
+     ]
     },
     {
      "text": "This model’s master-crafted power weapon can be replaced with 1 Astartes chainsword.",
@@ -7820,7 +8144,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "master-crafted power weapon"
+     "base": "master-crafted power weapon",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -8107,7 +8435,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "twin flamer"
+     "base": "twin flamer",
+     "model": "",
+     "grants": [
+      "Twin meltagun"
+     ]
     },
     {
      "text": "Any number of models can each have their Centurion bolters replaced with 1 Centurion assault launcher.",
@@ -8116,7 +8448,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": "centurion bolters"
+     "base": "centurion bolters",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -8281,7 +8615,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "centurion bolters"
+     "base": "centurion bolters",
+     "model": "",
+     "grants": [
+      "Centurion missile launcher"
+     ]
     },
     {
      "text": "Any number of models can each have their grav-cannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 twin lascannon</li></ul>",
@@ -8290,7 +8628,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "grav-cannon"
+     "base": "grav-cannon",
+     "model": "",
+     "grants": [
+      "Twin heavy bolter",
+      "Twin lascannon"
+     ]
     }
    ],
    "chapter": "",
@@ -8464,7 +8807,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -8474,7 +8822,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer",
+      "Multi-melta",
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -8718,7 +9073,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Ultramarines",
@@ -9030,7 +9387,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9485,7 +9844,17 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter and dreadnought combat weapon"
+     "base": "storm bolter and dreadnought combat weapon",
+     "model": "",
+     "grants": [
+      "Assault cannon",
+      "Dreadnought inferno cannon",
+      "Heavy flamer",
+      "Multi-melta",
+      "Storm bolter",
+      "Twin lascannon",
+      "Dreadnought combat weapon"
+     ]
     },
     {
      "text": "This model’s assault cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Dreadnought inferno cannon</li><li>1 heavy plasma cannon</li><li>1 multi-melta</li><li>1 storm bolter and 1 Dreadnought combat weapon</li><li>1 heavy flamer and 1 Dreadnought combat weapon</li><li>1 twin lascannon</li></ul>",
@@ -9495,7 +9864,16 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "assault cannon"
+     "base": "assault cannon",
+     "model": "",
+     "grants": [
+      "Dreadnought inferno cannon",
+      "Heavy flamer",
+      "Multi-melta",
+      "Storm bolter",
+      "Twin lascannon",
+      "Dreadnought combat weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -9726,7 +10104,17 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Combi-weapon",
+      "Grav-pistol",
+      "Hand flamer",
+      "Inferno pistol",
+      "Storm bolter",
+      "Power fist"
+     ]
     }
    ],
    "chapter": "",
@@ -10474,7 +10862,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Flamer",
+      "Grav-pistol",
+      "Hand flamer",
+      "Inferno pistol"
+     ]
     },
     {
      "text": "Any number of Company Veterans can each have their bolt pistol replaced with 1 Astartes shield.",
@@ -10483,7 +10878,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of Company Veterans can each have  their bolt pistol and boltgun replaced with 1 twin lightning claws.",
@@ -10492,7 +10889,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol and boltgun"
+     "base": "bolt pistol and boltgun",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Boltgun",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "The Company Ancient’s bolt pistol can be replaced  with one of the following:<ul style=\"list-style-type:circle\"><li>1 boltgun</li><li>1 combi-weapon</li></ul>",
@@ -10502,7 +10905,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Combi-weapon"
+     ]
     },
     {
      "text": "Any number of Company Veterans can each have their boltgun replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Astartes chainsword</li><li>1 Astartes shield</li><li>1 combi-weapon</li><li>1 flamer</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 grav-cannon</li><li>1 grav-gun</li><li>1 lascannon</li><li>1 meltagun</li><li>1 missile launcher</li><li>1 multi-melta</li><li>1 plasma cannon</li><li>1 plasma gun</li><li>1 storm bolter</li><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li></ul>",
@@ -10511,7 +10919,24 @@
      "limit": {
       "kind": "all"
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Flamer",
+      "Grav-cannon",
+      "Grav-gun",
+      "Heavy bolter",
+      "Heavy flamer",
+      "Meltagun",
+      "Lascannon",
+      "Multi-melta",
+      "Storm bolter",
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     }
    ],
    "chapter": "",
@@ -10771,7 +11196,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -11232,7 +11659,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Combi-weapon",
+      "Grav-pistol",
+      "Storm bolter"
+     ]
     },
     {
      "text": "The Veteran Biker Sergeant’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li></ul>",
@@ -11242,7 +11676,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "Any number of Veteran Bikers’ bolt pistols can each be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 grav-pistol</li><li>1 plasma pistol</li><li>1 thunder hammer</li><li>1 power fist</li><li>1 power weapon</li><li>1 storm shield</li></ul>",
@@ -11251,7 +11691,15 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Grav-pistol",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "Any number of Veteran Bikers’ Astartes chainswords can each be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer </li><li>1 grav-gun</li><li>1 grav-pistol</li><li>1 meltagun</li><li>1 plasma gun</li><li>1 plasma pistol</li><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li><li>1 storm shield</li></ul>",
@@ -11260,7 +11708,18 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Flamer",
+      "Grav-gun",
+      "Grav-pistol",
+      "Meltagun",
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     }
    ],
    "chapter": "",
@@ -11458,7 +11917,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin assault cannon"
+     "base": "twin assault cannon",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model’s 2 Blackstar rocket launchers can be replaced with 2 stormstrike missile launchers.",
@@ -11468,7 +11931,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 blackstar rocket launchers"
+     "base": "2 blackstar rocket launchers",
+     "model": "",
+     "grants": [
+      "Blackstar rocket launcher",
+      "Stormstrike missile launcher"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hurricane bolter.",
@@ -11478,7 +11946,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hurricane bolter"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 auspex array</li><li>1 infernum halo-launcher</li></ul>",
@@ -11488,7 +11960,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Deathwatch",
@@ -11837,7 +12311,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolt pistol"
+     "base": "heavy bolt pistol",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Pyre pistol"
+     ]
     },
     {
      "text": "Any number of Neophytes can each have their bolt pistol and Astartes chainsword replaced with 1 Neophyte firearm and 1 close combat weapon.",
@@ -11846,7 +12325,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol and astartes chainsword"
+     "base": "bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Neophyte firearm",
+      "Astartes chainsword",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "Any number of Initiates can each have their bolt rifle replaced with 1 heavy bolt pistol and 1 Astartes chainsword.",
@@ -11855,7 +12341,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt rifle"
+     "base": "bolt rifle",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Heavy bolt pistol",
+      "Astartes chainsword"
+     ]
     },
     {
      "text": "For every 10 models in this unit, up to 2 Initiates can each have their bolt rifle replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 heavy bolt pistol and 1 power fist</li><li>1 pyreblaster</li></ul>",
@@ -11865,7 +12357,14 @@
       "kind": "per_n",
       "n": 10
      },
-     "base": "bolt rifle"
+     "base": "bolt rifle",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Heavy bolt pistol",
+      "Pyreblaster",
+      "Power fist"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -12347,7 +12846,23 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and boltgun"
+     "base": "bolt pistol and boltgun",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Boltgun",
+      "Combi-weapon",
+      "Flamer",
+      "Grav-pistol",
+      "Hand flamer",
+      "Inferno pistol",
+      "Storm bolter",
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "Any number of Neophytes can each have their boltgun replaced with one of the following: <br><ul style=\"list-style-type:circle\"><li>1 Astartes shotgun</li><li>1 combat knife</li></ul>",
@@ -12356,7 +12871,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "NEOPHYTES",
+     "grants": [
+      "Astartes shotgun",
+      "Combat knife"
+     ]
     },
     {
      "text": "Any number of Initiates can each have their boltgun replaced with 1 Astartes chainsword.",
@@ -12365,7 +12885,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
     },
     {
      "text": "1 Initiate’s boltgun can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 plasma gun</li><li>1 meltagun</li><li>1 grav-gun</li></ul>",
@@ -12375,7 +12899,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Flamer",
+      "Grav-gun",
+      "Meltagun"
+     ]
     },
     {
      "text": "1 Initiate’s boltgun can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 power weapon</li><li>1 power fist</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 grav-cannon</li><li>1 lascannon</li><li>1 missile launcher</li><li>1 multi-melta</li><li>1 plasma cannon</li></ul>",
@@ -12385,7 +12915,18 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Flamer",
+      "Grav-cannon",
+      "Heavy bolter",
+      "Heavy flamer",
+      "Lascannon",
+      "Multi-melta",
+      "Power fist",
+      "Power weapon"
+     ]
     },
     {
      "text": "*This model can only be equipped with two ranged weapons if one of them is a Pistol (and it can only have one Pistol).",
@@ -12394,7 +12935,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Black Templars",
@@ -12513,7 +13056,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Space Wolves",
@@ -12803,7 +13348,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolt pistol"
+     "base": "heavy bolt pistol",
+     "model": "",
+     "grants": [
+      "Inferno pistol"
+     ]
     },
     {
      "text": "This model’s master-crafted chainsword can be replaced with one of the following: <br><ul style=\"list-style-type:circle\"><li>1 relic weapon</li><li>1 power fist</li></ul>",
@@ -12813,7 +13362,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "master-crafted chainsword"
+     "base": "master-crafted chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Relic weapon"
+     ]
     }
    ],
    "chapter": "Blood Angels",
@@ -13017,7 +13571,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolt pistol"
+     "base": "heavy bolt pistol",
+     "model": "",
+     "grants": [
+      "Hand flamer"
+     ]
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following: <br><ul style=\"list-style-type:circle\"><li>1 relic weapon</li><li>1 power fist</li></ul>",
@@ -13027,7 +13585,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Relic weapon"
+     ]
     }
    ],
    "chapter": "Blood Angels",
@@ -13224,7 +13787,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Twin multi-melta"
+     ]
     },
     {
      "text": "This model's blood fists and blood fist bolt rifles can be replaced with 1 blood talons.",
@@ -13234,7 +13801,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "blood fists and blood fist bolt rifles"
+     "base": "blood fists and blood fist bolt rifles",
+     "model": "",
+     "grants": [
+      "Blood fist bolt rifles",
+      "Blood fists"
+     ]
     }
    ],
    "chapter": "Blood Angels",
@@ -13414,7 +13986,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
     },
     {
      "text": "This model’s meltagun can be replaced with 1 heavy flamer.",
@@ -13424,7 +14000,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "meltagun"
+     "base": "meltagun",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
     },
     {
      "text": "This model’s Furioso fists can be replaced with 1 blood talons.",
@@ -13434,7 +14014,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "furioso fists"
+     "base": "furioso fists",
+     "model": "",
+     "grants": [
+      "Blood talons"
+     ]
     },
     {
      "text": "This model can be equipped with 1 smoke launchers.",
@@ -13444,7 +14028,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Blood Angels",
@@ -13691,7 +14277,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolt pistol"
+     "base": "heavy bolt pistol",
+     "model": "",
+     "grants": [
+      "Hand flamer",
+      "Inferno pistol"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model's Astartes chainsword can be replaced with equipped with 1 eviscerator.",
@@ -13701,7 +14292,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Eviscerator"
+     ]
     },
     {
      "text": "1 model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li></ul>",
@@ -13711,7 +14306,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     }
    ],
    "chapter": "Blood Angels",
@@ -13956,7 +14557,9 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "heavy bolt pistol"
+     "base": "heavy bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "For every 5 models in this unit, 1 model’s Astartes chainsword can be replaced with 1 eviscerator.",
@@ -13966,7 +14569,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Eviscerator"
+     ]
     },
     {
      "text": "1 model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li></ul>",
@@ -13976,7 +14583,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Power weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model’s heavy bolt pistol and Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 hand flamer and 1 Astartes chainsword</li><li>1 hand flamer and 1 power fist</li><li>1 hand flamer and 1 power weapon</li><li>1 heavy bolt pistol and 1 power fist</li><li>1 heavy bolt pistol and 1 power weapon</li><li>1 inferno pistol and 1 Astartes chainsword</li><li>1 inferno pistol and 1 power fist</li><li>1 inferno pistol and 1 power weapon</li><li>1 plasma pistol and 1 Astartes chainsword</li><li>1 plasma pistol and 1 power fist</li><li>1 plasma pistol and 1 power weapon</li></ul>",
@@ -13986,7 +14598,16 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "heavy bolt pistol and astartes chainsword"
+     "base": "heavy bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Hand flamer",
+      "Heavy bolt pistol",
+      "Inferno pistol",
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon"
+     ]
     }
    ],
    "chapter": "Blood Angels",
@@ -14278,7 +14899,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt rifle"
+     "base": "bolt rifle",
+     "model": "",
+     "grants": [
+      "Hand flamer",
+      "Inferno pistol",
+      "Astartes chainsword"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model's bolt rifle and close combat weapon can be replaced with 1 eviscerator.",
@@ -14288,7 +14915,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "bolt rifle and close combat weapon"
+     "base": "bolt rifle and close combat weapon",
+     "model": "",
+     "grants": [
+      "Bolt rifle",
+      "Close combat weapon",
+      "Eviscerator"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model equipped with a bolt rifle can be equipped with 1 Astartes grenade launcher.",
@@ -14298,7 +14931,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt rifle"
+     ]
     },
     {
      "text": "1 model’s close combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Astartes chainsword</li><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li></ul>",
@@ -14308,7 +14945,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "close combat weapon"
+     "base": "close combat weapon",
+     "model": "",
+     "grants": [
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     }
    ],
    "chapter": "Blood Angels",
@@ -14548,7 +15192,15 @@
      "limit": {
       "kind": "all"
      },
-     "base": "boltgun and close combat weapon"
+     "base": "boltgun and close combat weapon",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Boltgun",
+      "Astartes chainsword",
+      "Close combat weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "Any number of models can each have their bolt pistol replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 hand flamer</li><li>1 inferno pistol</li><li>1 plasma pistol</li></ul>",
@@ -14557,7 +15209,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Hand flamer",
+      "Inferno pistol"
+     ]
     },
     {
      "text": "Any number of models can each have their Astartes chainsword replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li></ul>",
@@ -14566,7 +15223,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Power weapon"
+     ]
     }
    ],
    "chapter": "Blood Angels",
@@ -14814,7 +15476,15 @@
      "limit": {
       "kind": "all"
      },
-     "base": "boltgun and close combat weapon"
+     "base": "boltgun and close combat weapon",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Boltgun",
+      "Astartes chainsword",
+      "Thunder hammer",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "Any number of models can each have their bolt pistol replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 hand flamer</li><li>1 inferno pistol</li><li>1 plasma pistol</li></ul>",
@@ -14823,7 +15493,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Hand flamer",
+      "Inferno pistol"
+     ]
     },
     {
      "text": "Any number of models can each have their Astartes chainsword replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li></ul>",
@@ -14832,7 +15507,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Power weapon"
+     ]
     }
    ],
    "chapter": "Blood Angels",
@@ -14955,7 +15635,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "deathstorm cannon array"
+     "base": "deathstorm cannon array",
+     "model": "",
+     "grants": [
+      "Deathstorm missile array"
+     ]
     }
    ],
    "chapter": "",
@@ -15219,7 +15903,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Assault cannon",
+      "Heavy flamer"
+     ]
     },
     {
      "text": "Any number of models can each have their power fist and storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 storm bolter and 1 power weapon</li><li>1 storm bolter and 1 chainfist</li><li>1 thunder hammer and 1 storm shield</li><li>1 twin lightning claws</li></ul>",
@@ -15228,7 +15917,16 @@
      "limit": {
       "kind": "all"
      },
-     "base": "power fist and storm bolter"
+     "base": "power fist and storm bolter",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Chainfist",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer",
+      "Twin lightning claws"
+     ]
     }
    ],
    "chapter": "Deathwatch",
@@ -15488,7 +16186,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "boltgun and power weapon"
+     "base": "boltgun and power weapon",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Close combat weapon",
+      "Power weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, up to 2 models can each have their boltgun and power weapon replaced with 1 Deathwatch thunder hammer.",
@@ -15498,7 +16202,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "boltgun and power weapon"
+     "base": "boltgun and power weapon",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Deathwatch thunder hammer",
+      "Power weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model can have its boltgun and power weapon replaced with 1 stalker-pattern boltgun and 1 close combat weapon.",
@@ -15508,7 +16218,14 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Stalker-pattern boltgun",
+      "Close combat weapon",
+      "Power weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, up to 2 models can each have their boltgun and power weapon replaced with 1 Deathwatch shotgun and 1 close combat weapon.",
@@ -15518,7 +16235,14 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "boltgun and power weapon"
+     "base": "boltgun and power weapon",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Deathwatch shotgun",
+      "Close combat weapon",
+      "Power weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model can have its boltgun and power weapon replaced with 1 frag cannon and 1 close combat weapon.",
@@ -15528,7 +16252,14 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Frag cannon",
+      "Close combat weapon",
+      "Power weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model can have its boltgun and power weapon replaced with 1 infernus heavy bolter and 1 close combat weapon.",
@@ -15538,7 +16269,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Close combat weapon",
+      "Power weapon"
+     ]
     },
     {
      "text": "1 model’s boltgun and power weapon can be replaced with 1 Black Shield blades.",
@@ -15548,7 +16285,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun and power weapon"
+     "base": "boltgun and power weapon",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Black Shield blades",
+      "Power weapon"
+     ]
     },
     {
      "text": "The Watch Sergeant’s power weapon can be replaced with 1 xenophase blade.",
@@ -15558,7 +16301,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "power weapon"
+     "base": "power weapon",
+     "model": "",
+     "grants": [
+      "Xenophase blade"
+     ]
     },
     {
      "text": "The Watch Sergeant’s boltgun can be replaced with 1 combi-weapon.",
@@ -15568,7 +16315,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
     }
    ],
    "chapter": "Deathwatch",
@@ -15848,7 +16599,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": "storm bolter and power fist"
+     "base": "storm bolter and power fist",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Power fist",
+      "Thunder hammer",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "Any number of Deathwing Command Terminators can each have their power fist replaced with 1 chainfist.",
@@ -15857,7 +16615,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "power fist"
+     "base": "power fist",
+     "model": "",
+     "grants": [
+      "Chainfist"
+     ]
     },
     {
      "text": "1 Deathwing Command Terminator’s power fist can be replaced with 1 power weapon.",
@@ -15867,7 +16629,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "power fist"
+     "base": "power fist",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Deathwing Command Terminator can replace its storm bolter with one of the following:<ul style=\"list-style-type:circle\"><li>1 assault cannon</li><li>1 heavy flamer</li><li>1 plasma cannon</li><li>1 storm bolter and 1 cyclone missile launcher (this model’s storm bolter cannot be replaced)</li></ul>",
@@ -15877,7 +16643,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "storm bolter cannot be"
+     "base": "storm bolter cannot be",
+     "model": "",
+     "grants": [
+      "Assault cannon",
+      "Heavy flamer",
+      "Storm bolter"
+     ]
     },
     {
      "text": "This unit can be equipped with 1 Watcher in the Dark.*",
@@ -15886,7 +16658,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* The rules for a Watcher in the Dark can be found on the Deathwing Knights datasheet.",
@@ -15895,7 +16669,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Dark Angels",
@@ -16066,7 +16842,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "great weapon of the unforgiven"
+     "base": "great weapon of the unforgiven",
+     "model": "",
+     "grants": [
+      "Relic weapon"
+     ]
     },
     {
      "text": "All Deathwing Knights in this unit can each have their mace of absolution replaced with 1 power weapon. ",
@@ -16075,7 +16855,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "mace of absolution"
+     "base": "mace of absolution",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
     },
     {
      "text": "This unit can be equipped with 1 Watcher in the Dark.",
@@ -16084,7 +16868,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Dark Angels",
@@ -16279,7 +17065,17 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter and master-crafted power weapon"
+     "base": "storm bolter and master-crafted power weapon",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Chainfist",
+      "Mace of absolution",
+      "Master-crafted power weapon",
+      "Power fist",
+      "Thunder hammer",
+      "Twin lightning claws"
+     ]
     }
    ],
    "chapter": "Dark Angels",
@@ -16515,7 +17311,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "power fist"
+     "base": "power fist",
+     "model": "",
+     "grants": [
+      "Chainfist"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Deathwing Terminator can replace its storm bolter with one of the following:<ul style=\"list-style-type:circle\"><li>1 assault cannon</li><li>1 heavy flamer</li><li>1 plasma cannon</li><li>1 storm bolter and 1 cyclone missile launcher (this model’s storm bolter cannot be replaced)</li></ul>",
@@ -16525,7 +17325,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "storm bolter cannot be"
+     "base": "storm bolter cannot be",
+     "model": "",
+     "grants": [
+      "Assault cannon",
+      "Heavy flamer",
+      "Storm bolter"
+     ]
     },
     {
      "text": "This unit can be equipped with 1 Watcher in the Dark.",
@@ -16534,7 +17340,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Dark Angels",
@@ -16885,7 +17693,12 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "infernus heavy bolter"
+     "base": "infernus heavy bolter",
+     "model": "",
+     "grants": [
+      "Frag cannon",
+      "Hellstorm bolt rifle"
+     ]
     },
     {
      "text": "For every 5 models in the unit, up to 1 model’s heavy thunder hammer can be replaced with 1 power weapon and 1 Astartes shield.",
@@ -16895,7 +17708,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "heavy thunder hammer"
+     "base": "heavy thunder hammer",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
     },
     {
      "text": "For every 5 models in the unit, up to 1 model’s stalker bolt rifle can be replaced with 1 plasma incinerator.",
@@ -16905,7 +17722,9 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "stalker bolt rifle"
+     "base": "stalker bolt rifle",
+     "model": "",
+     "grants": []
     },
     {
      "text": "For every 5 models in the unit, up to 1 model’s Deathwatch marksman bolt carbine can be replaced with 1 combat knife.",
@@ -16915,7 +17734,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "deathwatch marksman bolt carbine"
+     "base": "deathwatch marksman bolt carbine",
+     "model": "",
+     "grants": [
+      "Combat knife"
+     ]
     }
    ],
    "chapter": "Deathwatch",
@@ -17147,7 +17970,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "plasma destroyer"
+     "base": "plasma destroyer",
+     "model": "",
+     "grants": [
+      "Conversion beam cannon",
+      "Infernus cannon",
+      "Magna-melta cannon"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li><li>2 lascannons</li></ul>",
@@ -17157,7 +17986,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -17167,7 +18002,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -17177,7 +18016,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     }
    ],
    "chapter": "",
@@ -17388,7 +18231,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "anvilus autocannon battery"
+     "base": "anvilus autocannon battery",
+     "model": "",
+     "grants": [
+      "Arachnus heavy lascannon battery",
+      "Volkite falconet battery"
+     ]
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer.",
@@ -17398,7 +18246,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Twin heavy flamer"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 aiolos missile launcher</li><li>1 boreas air defence missiles</li></ul>",
@@ -17408,7 +18260,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Aiolos missile launcher",
+      "Boreas air defence missiles"
+     ]
     }
    ],
    "chapter": "",
@@ -17574,7 +18431,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "superfrag rocket launcher"
+     "base": "superfrag rocket launcher",
+     "model": "",
+     "grants": [
+      "Superkrak rocket launcher"
+     ]
     },
     {
      "text": "The Desolation Sergeant’s superfrag rocket launcher or superkrak rocket launcher can be replaced with 1 vengor launcher.",
@@ -17584,7 +18445,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "superfrag rocket launcher or superkrak rocket launcher"
+     "base": "superfrag rocket launcher or superkrak rocket launcher",
+     "model": "",
+     "grants": [
+      "Superfrag rocket launcher",
+      "Superkrak rocket launcher",
+      "Vengor launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -17916,7 +18783,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Grav-cannon",
+      "Heavy bolter",
+      "Lascannon",
+      "Multi-melta"
+     ]
     },
     {
      "text": "The Devastator Sergeant’s bolt pistol and boltgun can be replaced with two different weapons from the following list:*<br><ul style=\"list-style-type:circle\"><li>1 Astartes chain sword</li><li>1 bolt pistol</li><li>1 boltgun</li><li>1 combi-weapon</li><li>1 grav-pistol</li><li>1 plasma pistol</li><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li></ul>",
@@ -17926,7 +18800,17 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and boltgun"
+     "base": "bolt pistol and boltgun",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Boltgun",
+      "Combi-weapon",
+      "Grav-pistol",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "* This model can only be equipped with two ranged weapons if one of them is a Pistol (and it can only have one Pistol)",
@@ -17935,7 +18819,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -18155,7 +19041,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "assault cannon"
+     "base": "assault cannon",
+     "model": "",
+     "grants": [
+      "Multi-melta",
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model’s Dreadnought combat weapon and storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 missile launcher and 1 close combat weapon</li><li>1 heavy flamer and 1 Dreadnought combat weapon</li></ul>",
@@ -18165,7 +19056,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "dreadnought combat weapon and storm bolter"
+     "base": "dreadnought combat weapon and storm bolter",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Storm bolter",
+      "Close combat weapon",
+      "Dreadnought combat weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -18277,7 +19175,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -18562,7 +19462,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt sniper rifle"
+     "base": "bolt sniper rifle",
+     "model": "",
+     "grants": [
+      "Instigator bolt carbine",
+      "Las fusil"
+     ]
     },
     {
      "text": "All Eliminators in this unit can each have their bolt sniper rifle replaced with 1 las fusil.",
@@ -18571,7 +19476,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt sniper rifle"
+     "base": "bolt sniper rifle",
+     "model": "",
+     "grants": [
+      "Las fusil"
+     ]
     }
    ],
    "chapter": "",
@@ -18868,7 +19777,11 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": "melta rifle"
+     "base": "melta rifle",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     }
    ],
    "chapter": "",
@@ -19076,7 +19989,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "absolvor bolt pistol"
+     "base": "absolvor bolt pistol",
+     "model": "",
+     "grants": [
+      "Pyre pistol"
+     ]
     },
     {
      "text": "If this model is equipped with an absolvor bolt pistol, it can be equipped with 1 master-crafted power weapon (this model’s absolvor bolt pistol cannot be replaced).",
@@ -19086,7 +20003,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "absolvor bolt pistol cannot be"
+     "base": "absolvor bolt pistol cannot be",
+     "model": "",
+     "grants": [
+      "Absolvor bolt pistol",
+      "Master-crafted power weapon"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -19440,7 +20362,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 quad lascannons"
+     "base": "2 quad lascannons",
+     "model": "",
+     "grants": [
+      "Laser destroyer",
+      "Quad lascannon"
+     ]
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer",
@@ -19450,7 +20377,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer",
+      "Twin heavy flamer"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -19460,7 +20393,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer",
+      "Multi-melta",
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -19725,7 +20665,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 quad lascannons"
+     "base": "2 quad lascannons",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Laser destroyer",
+      "Quad heavy bolter",
+      "Quad lascannon"
+     ]
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer.",
@@ -19735,7 +20682,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer",
+      "Twin heavy flamer"
+     ]
     },
     {
      "text": "This model can be equipped with 1 havoc launcher.",
@@ -19745,7 +20698,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Havoc launcher "
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -19755,7 +20712,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Heavy bolter",
+      "Heavy flamer",
+      "Multi-melta",
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -20159,7 +21124,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin hellstrike missile launchers"
+     "base": "2 twin hellstrike missile launchers",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model’s 2 twin autocannons can be replaced with 2 quad heavy bolters.",
@@ -20169,7 +21138,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin autocannons"
+     "base": "2 twin autocannons",
+     "model": "",
+     "grants": [
+      "Quad heavy bolter",
+      "Twin autocannon"
+     ]
     }
    ],
    "chapter": "",
@@ -20299,7 +21273,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "twin firestrike las-talon"
+     "base": "twin firestrike las-talon",
+     "model": "",
+     "grants": [
+      "Twin Firestrike autocannon"
+     ]
     }
    ],
    "chapter": "",
@@ -20643,7 +21621,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Deathwatch bolt rifle",
+      "Hand flamer",
+      "Astartes chainsword",
+      "Power weapon"
+     ]
     },
     {
      "text": "The Kill Team Sergeant can replace its close combat weapon with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 Astartes chainsword</li><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li></ul>",
@@ -20653,7 +21638,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Astartes chainsword",
+      "Close combat weapon",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model equipped with a Deathwatch bolt rifle can be equipped with 1 Astartes grenade launcher.",
@@ -20663,7 +21656,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Deathwatch bolt rifle"
+     ]
     },
     {
      "text": "One model equipped with a plasma incinerator can replace its bolt pistol with 1 plasma pistol.",
@@ -20672,7 +21669,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt pistol"
+     ]
     },
     {
      "text": "1 model can replace its superfrag rocket launcher with 1 vengor launcher.",
@@ -20682,7 +21683,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Superfrag rocket launcher",
+      "Vengor launcher"
+     ]
     },
     {
      "text": "Any number of models can each replace their superfrag rocket launcher with 1 superkrak rocket launcher.",
@@ -20691,7 +21697,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Superfrag rocket launcher",
+      "Superkrak rocket launcher"
+     ]
     }
    ],
    "chapter": "Deathwatch",
@@ -20875,7 +21886,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy frag cannon and furioso fist"
+     "base": "heavy frag cannon and furioso fist",
+     "model": "",
+     "grants": [
+      "Heavy frag cannon",
+      "Meltagun",
+      "Blood talons",
+      "Furioso fist"
+     ]
     },
     {
      "text": "This model’s storm bolter can be replaced with 1 heavy flamer.",
@@ -20885,7 +21903,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
     },
     {
      "text": "This model’s meltagun can be replaced with 1 heavy flamer.",
@@ -20895,7 +21917,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "meltagun"
+     "base": "meltagun",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
     },
     {
      "text": "This model can be equipped with 1 magna-grapple.",
@@ -20905,7 +21931,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Blood Angels",
@@ -21038,7 +22066,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Blood Angels",
@@ -21210,7 +22240,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 storm bolters"
+     "base": "2 storm bolters",
+     "model": "",
+     "grants": [
+      "Fragstorm grenade launcher",
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model can be equipped with 1 ironhail heavy stubber.",
@@ -21220,7 +22255,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironhail heavy stubber"
+     ]
     },
     {
      "text": "This model can be equipped with 1 Icarus rocket pod.",
@@ -21230,7 +22269,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Icarus rocket pod"
+     ]
     }
    ],
    "chapter": "",
@@ -21414,7 +22457,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 storm bolters"
+     "base": "2 storm bolters",
+     "model": "",
+     "grants": [
+      "Fragstorm grenade launcher",
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironhail heavy stubber</li><li>1 multi-melta</li></ul>",
@@ -21424,7 +22472,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironhail heavy stubber",
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 Icarus rocket pod.",
@@ -21434,7 +22487,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Icarus rocket pod"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -21594,7 +22651,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironhail heavy stubber"
+     ]
     },
     {
      "text": "This model can be equipped with 1 Icarus rocket pod.",
@@ -21604,7 +22665,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Icarus rocket pod"
+     ]
     }
    ],
    "chapter": "",
@@ -21776,7 +22841,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironhail heavy stubber",
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 Icarus rocket pod.",
@@ -21786,7 +22856,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Icarus rocket pod"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -21946,7 +23020,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironhail heavy stubber"
+     ]
     },
     {
      "text": "This model can be equipped with 1 Icarus rocket pod.",
@@ -21956,7 +23034,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Icarus rocket pod"
+     ]
     }
    ],
    "chapter": "",
@@ -22117,7 +23199,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironhail heavy stubber",
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 Icarus rocket pod.",
@@ -22127,7 +23214,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Icarus rocket pod"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -22299,7 +23390,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt carbine"
+     "base": "bolt carbine",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Grey Hunter Pack Leader’s Astartes chainsword can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li></ul>",
@@ -22309,7 +23402,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Power weapon"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -22461,7 +23559,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "hammerfall heavy bolter array"
+     "base": "hammerfall heavy bolter array",
+     "model": "",
+     "grants": [
+      "Hammerfall heavy flamer array"
+     ]
     }
    ],
    "chapter": "",
@@ -22599,7 +23701,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Space Wolves",
@@ -22744,7 +23848,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "heavy bolt rifle"
+     "base": "heavy bolt rifle",
+     "model": "",
+     "grants": [
+      "Heavy bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -22916,7 +24024,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -23055,7 +24165,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Black Templars",
@@ -23190,7 +24302,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Space Wolves",
@@ -23337,7 +24451,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -23347,7 +24465,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -23482,7 +24604,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -23687,7 +24811,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironhail heavy stubber"
+     ]
     },
     {
      "text": "This model’s 2 storm bolters can be replaced with 2 fragstorm grenade launchers.",
@@ -23697,7 +24825,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 storm bolters"
+     "base": "2 storm bolters",
+     "model": "",
+     "grants": [
+      "Fragstorm grenade launcher",
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 bellicatus missile array</li><li>1 ironhail skytalon array</li><li>1 orbital comms array</li><li>1 shield dome</li></ul>",
@@ -23707,7 +24840,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironhail skytalon array"
+     ]
     }
    ],
    "chapter": "",
@@ -23924,7 +25061,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironhail heavy stubber",
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model’s 2 storm bolters can be replaced with 2 fragstorm grenade launchers.",
@@ -23934,7 +25076,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 storm bolters"
+     "base": "2 storm bolters",
+     "model": "",
+     "grants": [
+      "Fragstorm grenade launcher",
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 bellicatus missile array</li><li>1 ironhail skytalon array</li><li>1 orbital comms array</li><li>1 shield dome</li></ul>",
@@ -23944,7 +25091,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironhail skytalon array"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -24110,7 +25261,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": "assault bolters"
+     "base": "assault bolters",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -24271,7 +25424,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -24499,7 +25654,12 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Deathwatch heavy bolt rifle",
+      "Deathwatch heavy bolter"
+     ]
     },
     {
      "text": "1 model can replace its melta rifle with 1 multi-melta.",
@@ -24509,7 +25669,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Melta rifle",
+      "Multi-melta"
+     ]
     },
     {
      "text": "Any number of models can each have their flamestorm gauntlets replaced with 1 auto boltstorm gauntlets and 1 fragstorm grenade launcher.",
@@ -24518,7 +25683,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "flamestorm gauntlets"
+     "base": "flamestorm gauntlets",
+     "model": "",
+     "grants": [
+      "Auto boltstorm gauntlets",
+      "Fragstorm grenade launcher"
+     ]
     }
    ],
    "chapter": "Deathwatch",
@@ -24808,7 +25978,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Infiltrator can be equipped with 1 Infiltrator comms array.*",
@@ -24818,7 +25990,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* These options cannot be taken on the same model.",
@@ -24827,7 +26001,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -25216,7 +26392,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt rifle"
+     "base": "bolt rifle",
+     "model": "",
+     "grants": [
+      "Hand flamer",
+      "Astartes chainsword",
+      "Power weapon"
+     ]
     },
     {
      "text": "The Intercessor Sergeant’s close combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Astartes chainsword</li><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li></ul>",
@@ -25226,7 +26408,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "close combat weapon"
+     "base": "close combat weapon",
+     "model": "",
+     "grants": [
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model equipped with a bolt rifle can be equipped with 1 Astartes grenade launcher.",
@@ -25236,7 +26425,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt rifle"
+     ]
     }
    ],
    "chapter": "",
@@ -25382,7 +26575,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "onslaught gatling cannon"
+     "base": "onslaught gatling cannon",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     }
    ],
    "chapter": "",
@@ -25551,7 +26748,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "incendium cannon"
+     "base": "incendium cannon",
+     "model": "",
+     "grants": [
+      "Twin ironhail autocannon"
+     ]
     }
    ],
    "chapter": "",
@@ -26016,7 +27217,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Bolt pistol"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -26220,7 +27425,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "seismic hammer"
+     "base": "seismic hammer",
+     "model": "",
+     "grants": [
+      "Dreadnought chainfist"
+     ]
     },
     {
      "text": "This model’s Dreadnought combat weapon and storm bolter can be replaced with 1 hurricane bolter.",
@@ -26230,7 +27439,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "dreadnought combat weapon and storm bolter"
+     "base": "dreadnought combat weapon and storm bolter",
+     "model": "",
+     "grants": [
+      "Hurricane bolter",
+      "Storm bolter",
+      "Dreadnought combat weapon"
+     ]
     },
     {
      "text": "This model’s storm bolter can be replaced with 1 heavy flamer.",
@@ -26240,7 +27455,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
     },
     {
      "text": "This model’s meltagun can be replaced with 1 heavy flamer.",
@@ -26250,7 +27469,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "meltagun"
+     "base": "meltagun",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
     },
     {
      "text": "This model can be equipped with up to 2 hunter-killer missiles.",
@@ -26260,7 +27483,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 Ironclad assault launchers.",
@@ -26270,7 +27497,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -26458,7 +27687,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "javelin missile launcher"
+     "base": "javelin missile launcher",
+     "model": "",
+     "grants": [
+      "Lascannon"
+     ]
     },
     {
      "text": "This model’s heavy bolter can be replaced with 1 multi-melta.",
@@ -26468,7 +27701,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolter"
+     "base": "heavy bolter",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with up to 2 hunter-killer missiles.",
@@ -26478,7 +27715,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     }
    ],
    "chapter": "",
@@ -27233,7 +28474,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Artificer crozius"
+     ]
     },
     {
      "text": "Vael Donatus is equipped with: boltgun; bolt pistol; close combat weapon.",
@@ -27242,7 +28488,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Boltgun",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "Zameon Gydrael is equipped with: Long Vigil ranged weapon; Long Vigil melee weapon.",
@@ -27251,7 +28503,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Long Vigil melee weapon",
+      "Long Vigil ranged weapon"
+     ]
     },
     {
      "text": "Rodricus Grytt is equipped with: frag cannon; bolt pistol; close combat weapon.",
@@ -27260,7 +28517,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Frag cannon",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "Antor Delassio is equipped with: Long Vigil ranged weapon; Long Vigil melee weapon, jump pack.",
@@ -27269,7 +28532,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Long Vigil melee weapon",
+      "Long Vigil ranged weapon"
+     ]
     },
     {
      "text": "Edryc Setorax is equipped with: twin lightning claws, jump pack.",
@@ -27278,7 +28546,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "Jensus Natorian is equipped with: psychic Cleanse; bolt pistol; force weapon; psychic hood.",
@@ -27287,7 +28559,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Force weapon",
+      "Psychic Cleanse"
+     ]
     },
     {
      "text": "Drenn Redblade is equipped with: Long Vigil melee weapon; boltgun.",
@@ -27296,7 +28574,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Long Vigil melee weapon",
+      "Boltgun"
+     ]
     },
     {
      "text": "Garran Branatar is equipped with: heavy flamer; Long Vigil ranged weapon; power fist.",
@@ -27305,7 +28588,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Long Vigil ranged weapon",
+      "Power fist"
+     ]
     },
     {
      "text": "Ennox Sorrlock is equipped with: Long Vigil ranged weapon; close combat weapon.",
@@ -27314,7 +28603,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Long Vigil ranged weapon",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "Jetek Suberei is equipped with: Deathwatch twin boltgun; Long Vigil melee weapon.",
@@ -27323,7 +28617,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Long Vigil melee weapon",
+      "Boltgun",
+      "Deathwatch twin boltgun"
+     ]
     }
    ],
    "chapter": "Deathwatch",
@@ -27726,7 +29026,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "kratos battle cannon"
+     "base": "kratos battle cannon",
+     "model": "",
+     "grants": [
+      "Melta blast-gun",
+      "Volkite cardanelle"
+     ]
     },
     {
      "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 autocannons</li><li>2 lascannons</li><li>2 volkite calivers</li></ul>",
@@ -27736,7 +29041,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolters"
+     "base": "heavy bolters",
+     "model": "",
+     "grants": [
+      "Autocannon",
+      "Heavy bolter",
+      "Lascannons",
+      "Volkite caliver"
+     ]
     },
     {
      "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy flamers</li><li>2 lascannons</li><li>2 volkite culverins </li></ul>",
@@ -27746,7 +29058,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolters"
+     "base": "heavy bolters",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer",
+      "Lascannons",
+      "Volkite culverin"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 havoc launcher</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 twin boltgun</li></ul>",
@@ -27756,7 +29075,16 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Havoc launcher",
+      "Heavy bolter",
+      "Heavy flamer",
+      "Multi-melta",
+      "Twin boltgun"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter killer missile    ",
@@ -27766,7 +29094,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     }
    ],
    "chapter": "",
@@ -27893,7 +29225,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Space Wolves",
@@ -28073,7 +29407,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
@@ -28083,7 +29421,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -28093,7 +29435,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -28275,7 +29621,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin volkite culverins"
+     "base": "2 twin volkite culverins",
+     "model": "",
+     "grants": [
+      "Twin multi-melta",
+      "Twin volkite culverin"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -28285,7 +29636,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -28295,7 +29650,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -28477,7 +29836,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
@@ -28487,7 +29850,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -28497,7 +29864,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -28685,7 +30056,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
@@ -28695,7 +30070,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -28705,7 +30084,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -28894,7 +30277,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -28904,7 +30291,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
@@ -28914,7 +30305,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 combi-weapon.",
@@ -28924,7 +30319,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -29083,7 +30482,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -29093,7 +30496,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     }
    ],
    "chapter": "",
@@ -29253,7 +30660,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -29263,7 +30674,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -29273,7 +30688,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     }
    ],
    "chapter": "",
@@ -29473,7 +30892,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Multi-melta",
+      "Twin heavy bolter",
+      "Twin heavy flamer"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -29483,7 +30909,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -29493,7 +30923,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model can be equipped with 1 explorator augury web.",
@@ -29503,7 +30937,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -29685,7 +31121,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
@@ -29695,7 +31135,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -29705,7 +31149,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -29849,7 +31297,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolter"
+     "base": "heavy bolter",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     }
    ],
    "chapter": "",
@@ -29986,7 +31438,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -30132,7 +31586,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -30291,7 +31747,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolter"
+     "base": "heavy bolter",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model’s assault cannon can be replaced with 1 heavy flamer.",
@@ -30301,7 +31761,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "assault cannon"
+     "base": "assault cannon",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
     }
    ],
    "chapter": "",
@@ -30459,7 +31923,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolter"
+     "base": "heavy bolter",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     }
    ],
    "chapter": "",
@@ -30620,7 +32088,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolter"
+     "base": "heavy bolter",
+     "model": "",
+     "grants": [
+      "Assault cannon"
+     ]
     }
    ],
    "chapter": "Dark Angels",
@@ -31084,7 +32556,16 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "grav-flux bombards"
+     "base": "grav-flux bombards",
+     "model": "",
+     "grants": [
+      "Cyclonic melta lance",
+      "Grav-flux bombard",
+      "Meltagun",
+      "Storm cannon",
+      "Leviathan siege claw",
+      "Leviathan siege drill"
+     ]
     },
     {
      "text": "This model’s 2 heavy flamers can be replaced with 2 twin volkite calivers.",
@@ -31094,7 +32575,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 heavy flamers"
+     "base": "2 heavy flamers",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Twin volkite caliver"
+     ]
     },
     {
      "text": "This model can be equipped with 3 hunter-killer missiles.",
@@ -31104,7 +32590,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     }
    ],
    "chapter": "",
@@ -31423,7 +32913,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Meltagun"
+     ]
     }
    ],
    "chapter": "Blood Angels",
@@ -31731,7 +33226,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -31957,7 +33457,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Combi-weapon",
+      "Grav-pistol",
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -32201,7 +33708,16 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Combi-weapon",
+      "Grav-pistol",
+      "Hand flamer",
+      "Inferno pistol",
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -32413,7 +33929,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "master-crafted bolter"
+     "base": "master-crafted bolter",
+     "model": "",
+     "grants": [
+      "Master-crafted power weapon",
+      "Power fist"
+     ]
     },
     {
      "text": "This model’s bolt pistol, master-crafted bolter and close combat weapon can be replaced with 1 neo volkite pistol, 1 master-crafted power weapon and 1 storm shield. ",
@@ -32423,7 +33944,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol, master-crafted bolter and close combat weapon"
+     "base": "bolt pistol, master-crafted bolter and close combat weapon",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Master-crafted bolter",
+      "Neo-volkite pistol",
+      "Close combat weapon",
+      "Master-crafted power weapon"
+     ]
     },
     {
      "text": "This model’s bolt pistol can be replaced with 1 heavy bolt pistol. ",
@@ -32433,7 +33962,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Heavy bolt pistol"
+     ]
     },
     {
      "text": "This model’s close combat weapon can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 master-crafted power weapon</li><li>1 power fist</li></ul>",
@@ -32443,7 +33976,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "close combat weapon"
+     "base": "close combat weapon",
+     "model": "",
+     "grants": [
+      "Master-crafted power weapon",
+      "Power fist"
+     ]
     }
    ],
    "chapter": "",
@@ -33028,7 +34566,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Dark Angels",
@@ -33337,7 +34877,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Space Wolves",
@@ -33692,7 +35234,16 @@
      "limit": {
       "kind": "all"
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Grav-cannon",
+      "Heavy bolter",
+      "Heavy flamer",
+      "Lascannon",
+      "Flamer",
+      "Multi-melta"
+     ]
     },
     {
      "text": "The Long Fang Pack Leader’s boltgun can be replace with one of the following<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grav-gun</li><li>1 meltagun</li><li>1 plasma gun</li><li>1 plasma pistol</li></ul>",
@@ -33702,7 +35253,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Grav-gun",
+      "Flamer",
+      "Meltagun"
+     ]
     },
     {
      "text": "The Long Fang Pack Leader’s close combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Astartes chainsword</li><li>1 power fist</li><li>1 power weapon</li></ul>",
@@ -33712,7 +35270,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "close combat weapon"
+     "base": "close combat weapon",
+     "model": "",
+     "grants": [
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -33855,7 +35419,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Space Wolves",
@@ -34134,7 +35700,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "plasma pistol"
+     "base": "plasma pistol",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -34310,7 +35880,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 heavy flamers"
+     "base": "2 heavy flamers",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer",
+      "Lascannon",
+      "Volkite culverin"
+     ]
     },
     {
      "text": "This model’s 2 lascannons can be replaced with on of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li><li>2 volkite culverins</li></ul>",
@@ -34320,7 +35897,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 lascannons"
+     "base": "2 lascannons",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer",
+      "Lascannon",
+      "Volkite culverin"
+     ]
     }
    ],
    "chapter": "",
@@ -34539,7 +36123,16 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin heavy bolters"
+     "base": "2 twin heavy bolters",
+     "model": "",
+     "grants": [
+      "Assault cannon",
+      "Dreadnought inferno cannon",
+      "Multi-melta",
+      "Twin autocannon",
+      "Twin heavy bolter",
+      "Twin lascannon"
+     ]
     }
    ],
    "chapter": "",
@@ -34844,7 +36437,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "avenger mega bolter"
+     "base": "avenger mega bolter",
+     "model": "",
+     "grants": [
+      "Nephilim lascannons"
+     ]
     }
    ],
    "chapter": "Dark Angels",
@@ -35168,9 +36765,14 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
-     "base": "onslaught gatling cannon"
+     "base": "onslaught gatling cannon",
+     "model": "INVADER ATV",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "1 Invader ATV",
@@ -35180,7 +36782,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "INVADER ATV",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -35492,7 +37096,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -35502,7 +37111,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -35512,7 +37125,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -35690,7 +37307,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -35700,7 +37322,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -35710,7 +37336,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -35835,7 +37465,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -36118,7 +37750,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "quad heavy bolter"
+     "base": "quad heavy bolter",
+     "model": "",
+     "grants": [
+      "Graviton cannon",
+      "Laser destroyer"
+     ]
     }
    ],
    "chapter": "",
@@ -36307,7 +37944,9 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Dark Angels",
@@ -36505,7 +38144,9 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": "plasma talon"
+     "base": "plasma talon",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Dark Angels",
@@ -36761,7 +38402,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolter"
+     "base": "heavy bolter",
+     "model": "",
+     "grants": [
+      "Assault cannon"
+     ]
     }
    ],
    "chapter": "Dark Angels",
@@ -36904,7 +38549,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Dark Angels",
@@ -37065,7 +38712,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -37075,7 +38726,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -37085,7 +38740,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -37293,7 +38952,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Icarus rocket pod"
+     ]
     },
     {
      "text": "This model’s heavy flamer can be replaced with 1 onslaught gatling cannon.",
@@ -37303,7 +38966,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy flamer"
+     "base": "heavy flamer",
+     "model": "",
+     "grants": [
+      "Onslaught gatling cannon"
+     ]
     },
     {
      "text": "This model’s heavy onslaught gatling cannon can be replaced with 1 macro plasma incinerator.",
@@ -37313,7 +38980,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy onslaught gatling cannon"
+     "base": "heavy onslaught gatling cannon",
+     "model": "",
+     "grants": [
+      "Onslaught gatling cannon"
+     ]
     },
     {
      "text": "This model’s twin fragstorm grenade launcher can be replaced with 1 twin storm bolter.",
@@ -37323,7 +38994,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin fragstorm grenade launcher"
+     "base": "twin fragstorm grenade launcher",
+     "model": "",
+     "grants": [
+      "Twin storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -37494,7 +39169,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "combat knife"
+     "base": "combat knife",
+     "model": "",
+     "grants": [
+      "Bolt carbine",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "If the Reiver Sergeant is equipped with 1 bolt carbine, it can be equipped with 1 combat knife.",
@@ -37503,7 +39183,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt carbine",
+      "Combat knife"
+     ]
     },
     {
      "text": "All models in this unit can each be equipped with 1 Reiver grav-chute.",
@@ -37512,7 +39197,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "All models in this unit can each be equipped with 1 grapnel launcher.",
@@ -37521,7 +39208,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -37836,7 +39525,20 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy plasma cannons"
+     "base": "heavy plasma cannons",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Conversion beam cannon",
+      "Twin autocannon",
+      "Twin heavy bolter",
+      "Twin lascannon",
+      "Kheres-pattern assault cannon",
+      "Multi-melta",
+      "Twin volkite culverin",
+      "Dreadnought chainfist",
+      "Dreadnought combat weapon"
+     ]
     },
     {
      "text": "Each of this model’s combi-bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 graviton blaster</li><li>1 heavy flamer</li><li>1 plasma blaster</li></ul>",
@@ -37846,7 +39548,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "combi-bolters"
+     "base": "combi-bolters",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Graviton blaster",
+      "Heavy flamer"
+     ]
     },
     {
      "text": "This model can be equipped with 1 cyclone missile launcher. ",
@@ -37856,7 +39564,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -38039,7 +39749,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Multi-melta",
+      "Twin assault cannon",
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -38049,7 +39765,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -38059,7 +39779,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -38292,7 +40016,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "combi-bolter"
+     "base": "combi-bolter",
+     "model": "",
+     "grants": [
+      "Volkite charger"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Relic Terminator’s combi-bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer</li><li>1 reaper autocannon</li></ul>",
@@ -38302,7 +40030,12 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "combi-bolter"
+     "base": "combi-bolter",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Reaper autocannon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model can be equipped with 1 grenade harness.",
@@ -38312,7 +40045,9 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of models can each have their power fist replaced with 1 power weapon.",
@@ -38321,7 +40056,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "power fist"
+     "base": "power fist",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
     },
     {
      "text": "Any number of models can each have their power fist replaced with one 1 chainfist.",
@@ -38330,7 +40069,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "power fist"
+     "base": "power fist",
+     "model": "",
+     "grants": [
+      "Chainfist"
+     ]
     },
     {
      "text": "Any number of models can each have their combi-bolter and power fist replaced with 1 twin lightning claws.",
@@ -38339,7 +40082,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "combi-bolter and power fist"
+     "base": "combi-bolter and power fist",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Power fist",
+      "Twin lightning claws"
+     ]
     }
    ],
    "chapter": "",
@@ -38529,7 +40278,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model’s heavy onslaught gatling cannon can be replaced with 1 las-talon.",
@@ -38539,7 +40292,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy onslaught gatling cannon"
+     "base": "heavy onslaught gatling cannon",
+     "model": "",
+     "grants": [
+      "Las-talon"
+     ]
     }
    ],
    "chapter": "",
@@ -38741,7 +40498,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model’s heavy onslaught gatling cannon can be replaced with 1 las-talon.",
@@ -38751,7 +40512,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy onslaught gatling cannon"
+     "base": "heavy onslaught gatling cannon",
+     "model": "",
+     "grants": [
+      "Las-talon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
@@ -38761,7 +40526,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -38979,7 +40748,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "macro plasma incinerator"
+     "base": "macro plasma incinerator",
+     "model": "",
+     "grants": [
+      "Heavy laser destroyer"
+     ]
     },
     {
      "text": "This model can be equipped with 1 ironhail heavy stubber.",
@@ -38989,7 +40762,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironhail heavy stubber"
+     ]
     },
     {
      "text": "This model can be equipped with 1 Icarus rocket pod.",
@@ -38999,7 +40776,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Icarus rocket pod"
+     ]
     }
    ],
    "chapter": "",
@@ -39228,7 +41009,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "macro plasma incinerator"
+     "base": "macro plasma incinerator",
+     "model": "",
+     "grants": [
+      "Heavy laser destroyer"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironhail heavy stubber</li><li>1 multi-melta</li></ul>",
@@ -39238,7 +41023,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ironhail heavy stubber",
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 Icarus rocket pod.",
@@ -39248,7 +41038,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Icarus rocket pod"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -39391,7 +41185,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     }
    ],
    "chapter": "",
@@ -39544,7 +41342,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     }
    ],
    "chapter": "",
@@ -40019,7 +41821,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "encarmine blade"
+     "base": "encarmine blade",
+     "model": "",
+     "grants": [
+      "Encarmine spear"
+     ]
     },
     {
      "text": "For every 3 models in this unit, 1 model’s Angelus boltgun can be replaced with 1 inferno pistol.",
@@ -40029,7 +41835,11 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": "angelus boltgun"
+     "base": "angelus boltgun",
+     "model": "",
+     "grants": [
+      "Inferno pistol"
+     ]
     },
     {
      "text": "One model can be equipped with 1 Sanguinary banner.",
@@ -40038,7 +41848,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Blood Angels",
@@ -40293,7 +42105,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Blood Angels",
@@ -40552,7 +42366,16 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Combi-weapon",
+      "Grav-pistol",
+      "Hand flamer",
+      "Inferno pistol",
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li></ul>",
@@ -40562,7 +42385,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     }
    ],
    "chapter": "Blood Angels",
@@ -40868,7 +42697,20 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Combi-weapon",
+      "Grav-pistol",
+      "Hand flamer",
+      "Inferno pistol",
+      "Storm bolter",
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "Any number of models can each have their twin boltgun replaced with 1 Astartes grenade launcher.",
@@ -40877,7 +42719,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "twin boltgun"
+     "base": "twin boltgun",
+     "model": "",
+     "grants": [
+      "Boltgun"
+     ]
     }
    ],
    "chapter": "",
@@ -41044,7 +42890,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "scout sniper rifle"
+     "base": "scout sniper rifle",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -41285,7 +43133,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
     },
     {
      "text": "Any number of models can each have their boltgun replaced with one of the following: <br><ul style=\"list-style-type:circle\"><li>1 Astartes shotgun </li><li>1 combat knife</li></ul>",
@@ -41294,7 +43146,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Astartes shotgun",
+      "Combat knife"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Scout’s boltgun can be replaced with 1 Scout sniper rifle. ",
@@ -41304,7 +43161,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Scout sniper rifle"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Scout’s boltgun can be replaced with one of the following: <br><ul style=\"list-style-type:circle\"><li>1 heavy bolter </li><li>1 missile launcher</li></ul>",
@@ -41314,7 +43175,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Heavy bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -41439,7 +43304,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Ultramarines",
@@ -41593,7 +43460,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Ultramarines",
@@ -41763,7 +43632,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -41773,7 +43647,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -41783,7 +43661,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -41953,7 +43835,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -41963,7 +43850,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -41973,7 +43864,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -42154,7 +44049,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -42164,7 +44064,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -42174,7 +44078,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -42344,7 +44252,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -42354,7 +44267,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -42364,7 +44281,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -42534,7 +44455,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -42544,7 +44470,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -42554,7 +44484,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -42810,7 +44744,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Power weapon"
+     ]
     },
     {
      "text": "The Skyclaw Pack Leader’s bolt pistol can be replaced with 1 plasma pistol.",
@@ -42820,7 +44759,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Up to 2 Skyclaws can each have their bolt pistol and Astartes chainsword replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol and 1 Astartes chainsword</li><li>1 flamer and 1 close combat weapon</li><li>1 grav-gun and 1 close combat weapon</li><li>1 meltagun and 1 close combat weapon</li><li>1 plasma gun and 1 close combat weapon</li></ul>",
@@ -42829,7 +44770,16 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol and astartes chainsword"
+     "base": "bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Flamer",
+      "Grav-gun",
+      "Meltagun",
+      "Astartes chainsword",
+      "Close combat weapon"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -42978,7 +44928,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -43176,7 +45128,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 quad lascannons"
+     "base": "2 quad lascannons",
+     "model": "",
+     "grants": [
+      "Laser destroyer",
+      "Quad lascannon"
+     ]
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer",
@@ -43186,7 +45143,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer",
+      "Twin heavy flamer"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -43196,7 +45159,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer",
+      "Multi-melta",
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -43467,7 +45437,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Deathwatch marksman bolt carbine"
+     ]
     },
     {
      "text": "One model can replace its bolt sniper rifle with 1 instigator bolt carbine.",
@@ -43476,7 +45450,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt sniper rifle",
+      "Instigator bolt carbine"
+     ]
     },
     {
      "text": "Any number of models can each replace their bolt sniper rifle with 1 las fusil.",
@@ -43485,7 +45464,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bolt sniper rifle",
+      "Las fusil"
+     ]
     },
     {
      "text": "Any number of models can each replace their combat knife with 1 Deathwatch bolt carbine and 1 close combat weapon.",
@@ -43494,7 +45478,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Deathwatch bolt carbine",
+      "Close combat weapon",
+      "Combat knife"
+     ]
     }
    ],
    "chapter": "Deathwatch",
@@ -43641,7 +45631,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -43651,7 +45645,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -43854,7 +45852,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "sternguard bolt rifle"
+     "base": "sternguard bolt rifle",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Astartes chainsword",
+      "Power weapon",
+      "Power fist"
+     ]
     },
     {
      "text": " Any number of Sternguard Veterans can each have their Sternguard bolt rifle replaced with 1 combi-weapon.",
@@ -43863,7 +45868,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "sternguard bolt rifle"
+     "base": "sternguard bolt rifle",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Sternguard Veteran’s Sternguard bolt rifle can be replaced with one of the following: <br><ul style=\"list-style-type:circle\"><li>1 pyrecannon </li><li>1 Sternguard heavy bolter</li></ul>",
@@ -43873,7 +45882,12 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "sternguard bolt rifle"
+     "base": "sternguard bolt rifle",
+     "model": "",
+     "grants": [
+      "Pyrecannon",
+      "Sternguard heavy bolter"
+     ]
     },
     {
      "text": "* This model's Sternguard bolt rifle cannot be replaced.",
@@ -43882,7 +45896,11 @@
      "limit": {
       "kind": "note"
      },
-     "base": "sternguard bolt rifle cannot be"
+     "base": "sternguard bolt rifle cannot be",
+     "model": "",
+     "grants": [
+      "Sternguard bolt rifle"
+     ]
     }
    ],
    "chapter": "",
@@ -44085,7 +46103,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "sternguard bolt rifle"
+     "base": "sternguard bolt rifle",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon"
+     ]
     },
     {
      "text": " Any number of Sternguard Veterans can each have their Sternguard bolt rifle replaced with 1 combi-weapon.",
@@ -44094,7 +46119,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "sternguard bolt rifle"
+     "base": "sternguard bolt rifle",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Sternguard Veteran’s Sternguard bolt rifle can be replaced with one of the following: <br><ul style=\"list-style-type:circle\"><li>1 pyrecannon</li><li>1 Sternguard heavy bolter</li></ul>",
@@ -44104,7 +46133,12 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "sternguard bolt rifle"
+     "base": "sternguard bolt rifle",
+     "model": "",
+     "grants": [
+      "Pyrecannon",
+      "Sternguard heavy bolter"
+     ]
     },
     {
      "text": "* This model's Sternguard bolt rifle cannot be replaced.",
@@ -44113,7 +46147,11 @@
      "limit": {
       "kind": "note"
      },
-     "base": "sternguard bolt rifle cannot be"
+     "base": "sternguard bolt rifle cannot be",
+     "model": "",
+     "grants": [
+      "Sternguard bolt rifle"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -44307,7 +46345,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Twin multi-melta"
+     ]
     },
     {
      "text": "This model’s 2 twin hellstrike missile launchers can be replaced with 2 twin lascannons",
@@ -44317,7 +46359,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin hellstrike missile launchers"
+     "base": "2 twin hellstrike missile launchers",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     }
    ],
    "chapter": "",
@@ -44937,7 +46983,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 skyhammer missile launchers"
+     "base": "2 skyhammer missile launchers",
+     "model": "",
+     "grants": [
+      "Skyhammer missile launcher",
+      "Twin heavy bolter",
+      "Twin multi-melta"
+     ]
     },
     {
      "text": "This model’s twin stormstrike missile launcher can be replaced with 1 twin lascannon.",
@@ -44947,7 +46999,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin stormstrike missile launcher"
+     "base": "twin stormstrike missile launcher",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -45135,7 +47191,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "skyhammer missile launcher"
+     "base": "skyhammer missile launcher",
+     "model": "",
+     "grants": [
+      "Twin heavy bolter"
+     ]
     },
     {
      "text": "This model’s las-talon can be replaced with 1 Icarus stormcannon.",
@@ -45145,7 +47205,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "las-talon"
+     "base": "las-talon",
+     "model": "",
+     "grants": [
+      "Icarus stormcannon"
+     ]
     }
    ],
    "chapter": "",
@@ -45381,7 +47445,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin assault cannon"
+     "base": "twin assault cannon",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model’s typhoon missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 twin multi-melta</li></ul>",
@@ -45391,7 +47459,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "typhoon missile launcher"
+     "base": "typhoon missile launcher",
+     "model": "",
+     "grants": [
+      "Twin heavy bolter",
+      "Twin multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 2 hurricane bolters.",
@@ -45401,7 +47474,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hurricane bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -45582,7 +47659,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "skyhammer missile launcher"
+     "base": "skyhammer missile launcher",
+     "model": "",
+     "grants": [
+      "Twin heavy bolter",
+      "Twin lascannon"
+     ]
     }
    ],
    "chapter": "",
@@ -45764,7 +47846,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 skyhammer missile launchers can"
+     "base": "2 skyhammer missile launchers can",
+     "model": "",
+     "grants": [
+      "Skyhammer missile launcher",
+      "Twin heavy bolter",
+      "Twin multi-melta"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -46266,7 +48354,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Master-crafted power weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Sword Brother’s Astartes chainsword can be replaced with 1 thunder hammer.",
@@ -46276,7 +48368,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Thunder hammer"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Sword Brother’s heavy bolt pistol can be replaced with 1 plasma pistol.",
@@ -46286,7 +48382,9 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "heavy bolt pistol"
+     "base": "heavy bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "For every 5 models in this unit, up to 2 Sword Brothers can each have their heavy bolt pistol replaced with 1 pyre pistol.",
@@ -46296,7 +48394,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "heavy bolt pistol"
+     "base": "heavy bolt pistol",
+     "model": "",
+     "grants": [
+      "Pyre pistol"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Sword Brother’s heavy bolt pistol and Astartes chainsword can be replaced with 1 twin lightning claws.",
@@ -46306,7 +48408,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "heavy bolt pistol and astartes chainsword"
+     "base": "heavy bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Heavy bolt pistol",
+      "Astartes chainsword",
+      "Twin lightning claws"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -46687,7 +48795,17 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Flamer",
+      "Grav-cannon",
+      "Grav-gun",
+      "Heavy bolter",
+      "Lascannon",
+      "Meltagun",
+      "Multi-melta"
+     ]
     },
     {
      "text": "1 Tactical Marine’s boltgun can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grav-gun</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
@@ -46697,7 +48815,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Flamer",
+      "Grav-gun",
+      "Meltagun"
+     ]
     },
     {
      "text": "The Tactical Sergeant’s bolt pistol and boltgun can be replaced with 1 twin lightning claws, or two different weapons from the following list:* <br><ul style=\"list-style-type:circle\"><li>1 Astartes chainsword</li><li>1 bolt pistol</li><li>1 boltgun</li><li>1 combi-weapon</li><li>1 grav-pistol</li><li>1 plasma pistol</li><li>1 storm bolter</li><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li></ul>",
@@ -46707,7 +48831,20 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and boltgun"
+     "base": "bolt pistol and boltgun",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Boltgun",
+      "Combi-weapon",
+      "Grav-pistol",
+      "Storm bolter",
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": " * This model can only be equipped with two ranged weapons if one of them is a Pistol (and it can only have one Pistol).",
@@ -46716,7 +48853,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -46975,7 +49114,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hand flamer",
+      "Heavy bolt pistol"
+     ]
     },
     {
      "text": "The Kill Team Sergeant with Jump Pack can replace its Astartes chainsword with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li></ul>",
@@ -46985,7 +49129,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model can replace its heavy bolt pistol with 1 plasma pistol.",
@@ -46995,7 +49145,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolt pistol"
+     ]
     },
     {
      "text": "Any number of models can each have their assault bolters replaced with 1 plasma exterminators.",
@@ -47004,7 +49158,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": "assault bolters"
+     "base": "assault bolters",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Deathwatch",
@@ -47114,7 +49270,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -47253,7 +49411,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     }
    ],
    "chapter": "",
@@ -47688,7 +49850,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Combi-weapon",
+      "Grav-pistol",
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model’s Omnissian power axe can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Astartes chainsword</li><li>1 power fist</li><li>1 thunder hammer</li></ul>",
@@ -47698,7 +49867,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "omnissian power axe"
+     "base": "omnissian power axe",
+     "model": "",
+     "grants": [
+      "Astartes chainsword",
+      "Power fist",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "This model must be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 servo arm</li><li>1 conversion beamer</li><li>1 flamer, 1 plasma cutter and 2 servo-arms</li></ul>",
@@ -47708,7 +49883,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Conversion beamer",
+      "Flamer",
+      "Plasma cutter",
+      "Servo arm"
+     ]
     }
    ],
    "chapter": "",
@@ -47847,7 +50029,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "thunder hammer and storm shield"
+     "base": "thunder hammer and storm shield",
+     "model": "",
+     "grants": [
+      "Thunder hammer",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "Equip Thunder Hammer",
@@ -47856,7 +50043,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Thunder hammer"
+     ]
     }
    ],
    "chapter": "",
@@ -48059,7 +50250,12 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Assault cannon",
+      "Heavy flamer"
+     ]
     },
     {
      "text": "Any number of models can each have their power fist replaced with 1 chainfist.",
@@ -48068,7 +50264,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "power fist"
+     "base": "power fist",
+     "model": "",
+     "grants": [
+      "Chainfist"
+     ]
     },
     {
      "text": "The Terminator Sergeant’s power fist can be replaced with 1 power weapon.",
@@ -48078,7 +50278,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "power fist"
+     "base": "power fist",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
     },
     {
      "text": "* This model’s storm bolter cannot be replaced.",
@@ -48087,7 +50291,11 @@
      "limit": {
       "kind": "note"
      },
-     "base": "storm bolter cannot be"
+     "base": "storm bolter cannot be",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -48290,7 +50498,12 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Assault cannon",
+      "Heavy flamer"
+     ]
     },
     {
      "text": "Any number of models can each have their power fist replaced with 1 chainfist.",
@@ -48299,7 +50512,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "power fist"
+     "base": "power fist",
+     "model": "",
+     "grants": [
+      "Chainfist"
+     ]
     },
     {
      "text": "The Terminator Squad Leader’s power fist can be replaced with 1 power weapon.",
@@ -48309,7 +50526,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "power fist"
+     "base": "power fist",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
     },
     {
      "text": "* This model’s storm bolter cannot be replaced.",
@@ -48318,7 +50539,11 @@
      "limit": {
       "kind": "note"
      },
-     "base": "storm bolter cannot be"
+     "base": "storm bolter cannot be",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "Black Templars",
@@ -48500,7 +50725,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
@@ -48510,7 +50739,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -48520,7 +50753,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -48678,7 +50915,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 combi-bolters"
+     "base": "2 combi-bolters",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Heavy flamer",
+      "Twin volkite charger"
+     ]
     }
    ],
    "chapter": "",
@@ -48957,7 +51200,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -49136,7 +51381,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "thunderhawk heavy cannon"
+     "base": "thunderhawk heavy cannon",
+     "model": "",
+     "grants": [
+      "Turbo-laser destructor"
+     ]
     },
     {
      "text": "This model’s Thunderhawk cluster bombs can be replaced with 1 hellstrike missile battery.",
@@ -49146,7 +51395,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "thunderhawk cluster bombs"
+     "base": "thunderhawk cluster bombs",
+     "model": "",
+     "grants": [
+      "Hellstrike missile battery"
+     ]
     }
    ],
    "chapter": "",
@@ -49284,7 +51537,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -49472,7 +51727,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Boltgun"
+     ]
     },
     {
      "text": "For every 3 models in this unit, one model’s bolt pistol can be replaced with 1 plasma pistol.",
@@ -49482,7 +51741,9 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Space Wolves",
@@ -49753,7 +52014,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Blood Angels",
@@ -49927,7 +52190,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -49937,7 +52205,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer",
+      "Multi-melta",
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -50061,7 +52336,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Ultramarines",
@@ -50336,7 +52613,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Ultramarines",
@@ -50655,7 +52934,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Grav-pistol",
+      "Hand flamer",
+      "Inferno pistol"
+     ]
     }
    ],
    "chapter": "",
@@ -50862,7 +53147,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Grav-pistol",
+      "Hand flamer",
+      "Inferno pistol"
+     ]
     }
    ],
    "chapter": "",
@@ -51076,7 +53367,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "assault cannon"
+     "base": "assault cannon",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
     },
     {
      "text": "This model’s storm bolter can be replaced with 1 heavy flamer.",
@@ -51086,7 +53381,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
     },
     {
      "text": "This model’s assault cannon, storm bolter and Dreadnought combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Fenrisian greataxe, 1 blizzard shield and 1 storm bolter</li><li>1 Fenrisian greataxe, 1 blizzard shield and 1 heavy flamer</li></ul>",
@@ -51096,7 +53395,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "assault cannon, storm bolter and dreadnought combat weapon"
+     "base": "assault cannon, storm bolter and dreadnought combat weapon",
+     "model": "",
+     "grants": [
+      "Assault cannon",
+      "Heavy flamer",
+      "Storm bolter",
+      "Dreadnought combat weapon"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -51361,7 +53667,17 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "assault cannon"
+     "base": "assault cannon",
+     "model": "",
+     "grants": [
+      "Dreadnought inferno cannon",
+      "Heavy flamer",
+      "Multi-melta",
+      "Twin autocannon",
+      "Twin heavy bolter",
+      "Twin heavy flamer",
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model’s storm bolter and Dreadnought combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer and 1 Dreadnought combat weapon</li><li>1 missile launcher</li><li>1 twin autocannon </li></ul>",
@@ -51371,7 +53687,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter and dreadnought combat weapon"
+     "base": "storm bolter and dreadnought combat weapon",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Storm bolter",
+      "Twin autocannon",
+      "Dreadnought combat weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -51540,7 +53863,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Equip Blades of honour",
@@ -51549,7 +53874,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Blades of honour"
+     ]
     }
    ],
    "chapter": "Ultramarines",
@@ -51704,7 +54033,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -51714,7 +54047,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -51871,7 +54208,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     }
    ],
    "chapter": "",
@@ -52359,7 +54700,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Deathwatch",
@@ -52491,7 +54834,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Deathwatch",
@@ -52646,7 +54991,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -52656,7 +55005,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -52803,7 +55156,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -52813,7 +55170,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -53001,7 +55362,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Combi-weapon",
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -53179,7 +55546,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "master-crafted power weapon"
+     "base": "master-crafted power weapon",
+     "model": "",
+     "grants": [
+      "Thunder hammer"
+     ]
     },
     {
      "text": "This model’s storm shield can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 master-crafted bolt carbine</li><li>1 master-crafted heavy bolt pistol</li><li>1 plasma pistol</li></ul>",
@@ -53189,7 +55560,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm shield"
+     "base": "storm shield",
+     "model": "",
+     "grants": [
+      "Master-crafted bolt carbine",
+      "Master-crafted heavy bolt pistol"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -53395,7 +55771,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "power weapon"
+     "base": "power weapon",
+     "model": "",
+     "grants": [
+      "Chainfist",
+      "Close combat weapon",
+      "Power fist",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "This model’s storm bolter and power weapon can be replaced with 1 twin lightning claws.",
@@ -53405,7 +55788,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter and power weapon"
+     "base": "storm bolter and power weapon",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Power weapon",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "This model’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainfist</li><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li><li>1 combi-weapon</li></ul>",
@@ -53415,7 +55804,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Chainfist",
+      "Power weapon",
+      "Power fist",
+      "Thunder hammer"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -53659,7 +56056,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and relic weapon"
+     "base": "bolt pistol and relic weapon",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Relic weapon",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 master-crafted boltgun</li><li>1 plasma pistol</li><li>1 storm bolter</li><li>1 power fist</li><li>1 relic weapon</li><li>1 thunder hammer</li></ul>",
@@ -53669,7 +56072,16 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Master-crafted boltgun",
+      "Storm bolter",
+      "Power fist",
+      "Relic weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "This model’s relic weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 power fist</li><li>1 thunder hammer</li><li>1 storm shield and 1 close combat weapon</li></ul>",
@@ -53679,7 +56091,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "relic weapon"
+     "base": "relic weapon",
+     "model": "",
+     "grants": [
+      "Close combat weapon",
+      "Power fist",
+      "Thunder hammer"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -53904,7 +56322,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "master-crafted power weapon and storm shield"
+     "base": "master-crafted power weapon and storm shield",
+     "model": "",
+     "grants": [
+      "Master-crafted power weapon",
+      "Paired master-crafted power weapons"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -54149,7 +56572,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and boltgun"
+     "base": "bolt pistol and boltgun",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Boltgun",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "This model’s bolt pistol and boltgun can be replaced with two different weapons from the following list:*<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 boltgun</li><li>1 combi-weapon</li><li>1 plasma pistol</li><li>1 storm bolter</li><li>1 Astartes chainsword</li><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li><li>1 storm shield</li></ul>",
@@ -54159,7 +56588,18 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and boltgun"
+     "base": "bolt pistol and boltgun",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Boltgun",
+      "Combi-weapon",
+      "Storm bolter",
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "*  This model can only be equipped with two ranged weapons if one of them is a Pistol (and it can only have one Pistol).",
@@ -54168,7 +56608,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Space Wolves",
@@ -54410,7 +56852,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter and power weapon"
+     "base": "storm bolter and power weapon",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Power weapon",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "This model’s storm bolter and power weapon can be replaced with two different options from the following list:*<ul style=\"list-style-type:circle\"><li>1 assault cannon</li><li>1 heavy flamer</li><li>1 cyclone missile launcher and 1 storm bolter</li><li>1 storm bolter</li><li>1 chainfist</li><li>1 power fist</li><li>1 thunder hammer</li><li>1 storm shield</li></ul>",
@@ -54420,7 +56868,17 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter and power weapon"
+     "base": "storm bolter and power weapon",
+     "model": "",
+     "grants": [
+      "Assault cannon",
+      "Heavy flamer",
+      "Storm bolter",
+      "Chainfist",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "This model’s storm bolter can be replaced with 1 combi-weapon. ",
@@ -54430,7 +56888,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
     },
     {
      "text": "* This model can only be equipped with two ranged weapons if one of them is a cyclone missile launcher and the other is either a storm bolter or a combi-weapon.",
@@ -54439,7 +56901,12 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -54670,7 +57137,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and astartes chainsword"
+     "base": "bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Astartes chainsword",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "This model’s bolt pistol and Astartes chainsword can be replaced with two different weapons from the following list:*<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 combi-weapon</li><li>1 plasma pistol</li><li>1 storm bolter</li><li>1 Astartes chainsword</li><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li><li>1 storm shield</li></ul>",
@@ -54680,7 +57153,17 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and astartes chainsword"
+     "base": "bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Combi-weapon",
+      "Storm bolter",
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": " * This model can only be equipped with two ranged weapons if one of them is a Pistol (and it can only have one Pistol).",
@@ -54689,7 +57172,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Space Wolves",
@@ -54885,7 +57370,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": "storm bolter"
+     "base": "storm bolter",
+     "model": "",
+     "grants": []
     },
     {
      "text": "For every 5 models in this unit, 1 Wolf Guard Terminator can replace its storm bolter and master-crafted power weapon with 1 assault cannon and 1 powerfist.",
@@ -54895,7 +57382,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Assault cannon",
+      "Storm bolter",
+      "Master-crafted power weapon"
+     ]
     },
     {
      "text": "The Wolf Guard Terminator Pack Leader’s storm bolter and master-crafted power weapon can be replaced with 1 of the following:<ul style=\"list-style-type:circle\"><li>1 relic greataxe</li><li>1 twin lightning claws</li></ul>",
@@ -54905,7 +57398,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "storm bolter and master-crafted power weapon"
+     "base": "storm bolter and master-crafted power weapon",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Master-crafted power weapon",
+      "Relic greataxe",
+      "Twin lightning claws"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -55150,7 +57650,16 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Master-crafted boltgun",
+      "Storm bolter",
+      "Power fist",
+      "Relic weapon",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "This model’s relic weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 power fist</li><li>1 thunder hammer</li><li>1 relic shield and 1 close combat weapon</li></ul>",
@@ -55160,7 +57669,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "relic weapon"
+     "base": "relic weapon",
+     "model": "",
+     "grants": [
+      "Close combat weapon",
+      "Power fist",
+      "Thunder hammer"
+     ]
     },
     {
      "text": "This model’s bolt pistol and relic weapon can be replaced with 1 twin lightning claws.",
@@ -55170,7 +57685,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and relic weapon"
+     "base": "bolt pistol and relic weapon",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Relic weapon",
+      "Twin lightning claws"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -55566,7 +58087,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "plasma pistol"
+     "base": "plasma pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Wolf Scout equipped with a plasma pistol can be equipped with 1 haywire mine (That model’s plasma pistol cannot be replaced).",
@@ -55576,7 +58099,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "plasma pistol cannot be"
+     "base": "plasma pistol cannot be",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Wolf Scout’s plasma pistol and combat blade can be replaced with 1 bolt pistol, 1 Thunderclap and 1 runic stave.",
@@ -55586,7 +58111,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "plasma pistol and combat blade"
+     "base": "plasma pistol and combat blade",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Thunderclap",
+      "Combat blade",
+      "Runic stave"
+     ]
     },
     {
      "text": "If this unit contains 12 models, 1 Wolf Scout’s plasma pistol can be replaced with 1 instigator bolt carbine.",
@@ -55595,7 +58127,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "plasma pistol"
+     "base": "plasma pistol",
+     "model": "",
+     "grants": [
+      "Instigator bolt carbine"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -55988,7 +58524,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun and bolt pistol"
+     "base": "boltgun and bolt pistol",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Boltgun",
+      "Power weapon"
+     ]
     },
     {
      "text": "1 Wolf Scout’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grav-gun</li><li>1 heavy bolter</li><li>1 meltagun</li><li>1 missile launcher</li><li>1 plasma gun</li></ul>",
@@ -55998,7 +58540,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Flamer",
+      "Grav-gun",
+      "Meltagun"
+     ]
     },
     {
      "text": "Any number of models can each have their boltgun replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Astartes shotgun</li><li>1 combat knife</li></ul>",
@@ -56007,7 +58556,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Astartes shotgun",
+      "Combat knife"
+     ]
     },
     {
      "text": "The Wolf Scout Pack Leader’s bolt pistol and boltgun can be replaced with with 1 twin lightning claws, or two different weapons from the following list:*<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 boltgun</li><li>1 combi-weapon</li><li>1 grav-pistol</li><li>1 hand flamer</li><li>1 inferno pistol</li><li>1 plasma pistol</li><li>1 storm bolter</li><li>1 Astartes chainsword</li><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer.</li></ul>",
@@ -56017,7 +58571,23 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and boltgun"
+     "base": "bolt pistol and boltgun",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Boltgun",
+      "Combi-weapon",
+      "Flamer",
+      "Grav-pistol",
+      "Hand flamer",
+      "Inferno pistol",
+      "Storm bolter",
+      "Astartes chainsword",
+      "Power fist",
+      "Power weapon",
+      "Thunder hammer",
+      "Twin lightning claws"
+     ]
     },
     {
      "text": "* This model can only be equipped with two ranged weapons if one of them is a Pistol (and it can only have one Pistol)",
@@ -56026,7 +58596,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Space Wolves",
@@ -56173,7 +58745,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "death totem"
+     "base": "death totem",
+     "model": "",
+     "grants": [
+      "Stormfrag auto-launcher"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -56359,7 +58935,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "fenrisian greataxe or great wolf claw and storm bolter"
+     "base": "fenrisian greataxe or great wolf claw and storm bolter",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Storm bolter",
+      "Great wolf claw"
+     ]
     },
     {
      "text": "If this model is not equipped with a storm bolter, its heavy flamer can be replaced with 1 storm bolter.",
@@ -56369,7 +58951,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -56517,7 +59104,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "death totem"
+     "base": "death totem",
+     "model": "",
+     "grants": [
+      "Stormfrag auto-launcher"
+     ]
     }
    ],
    "chapter": "Space Wolves",
@@ -56647,7 +59238,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",

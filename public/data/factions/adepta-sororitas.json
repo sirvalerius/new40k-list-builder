@@ -645,7 +645,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Combi-weapon",
+      "Condemnor boltgun",
+      "Inferno pistol ",
+      "Ministorum hand flamer"
+     ]
     },
     {
      "text": "The Sister Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
@@ -655,7 +663,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Chainsword",
+      "Power weapon"
+     ]
     },
     {
      "text": "1 Battle Sister’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li></ul>",
@@ -665,7 +678,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Artificer-crafted storm bolter",
+      "Meltagun",
+      "Ministorum flamer"
+     ]
     },
     {
      "text": "1 Battle Sister’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 heavy bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li><li>1 Ministorum heavy flamer</li><li>1 multi-melta</li></ul>",
@@ -675,7 +694,16 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Artificer-crafted storm bolter",
+      "Heavy bolter",
+      "Meltagun",
+      "Ministorum flamer",
+      "Ministorum heavy flamer",
+      "Multi-melta"
+     ]
     },
     {
      "text": "1 Battle Sister equipped with 1 boltgun can be equipped with 1 simulacrum imperialis (that model’s boltgun cannot be replaced).",
@@ -685,7 +713,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun cannot be"
+     "base": "boltgun cannot be",
+     "model": "",
+     "grants": [
+      "Boltgun"
+     ]
     }
    ],
    "chapter": "",
@@ -908,7 +940,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Condemnor boltgun",
+      "Inferno pistol"
+     ]
     },
     {
      "text": "This model’s hallowed chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blessed blade</li><li>1 power weapon</li></ul>",
@@ -918,7 +955,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "hallowed chainsword"
+     "base": "hallowed chainsword",
+     "model": "",
+     "grants": [
+      "Blessed blade",
+      "Power weapon"
+     ]
     },
     {
      "text": "If this model is equipped with a hallowed chainsword, it can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 brazier of holy fire</li><li>1 null rod</li></ul>",
@@ -928,7 +970,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Brazier of holy fire",
+      "Hallowed Chainsword"
+     ]
     },
     {
      "text": "If this model is equipped with a plasma pistol and a power weapon, it can be equipped with:<ul style=\"list-style-type:circle\"><li>1 rod of office</li></ul>",
@@ -938,7 +985,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -1093,7 +1144,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "blessed halberd"
+     "base": "blessed halberd",
+     "model": "",
+     "grants": [
+      "Ministorum hand flamer",
+      "Holy Eviscerator",
+      "Power weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -1271,7 +1328,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "castigator autocannons"
+     "base": "castigator autocannons",
+     "model": "",
+     "grants": [
+      "Castigator battle cannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -1281,7 +1342,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -1291,7 +1356,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -1477,25 +1546,41 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "condemnor bolt pistol"
+     "base": "condemnor bolt pistol",
+     "model": "",
+     "grants": [
+      "Inferno pistol"
+     ]
     },
     {
      "text": "Up to 2 Celestian Insidiants can each have their condemnor bolt pistol replaced with 1 Ministorum hand flamer.",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
-     "base": "condemnor bolt pistol"
+     "base": "condemnor bolt pistol",
+     "model": "",
+     "grants": [
+      "Ministorum hand flamer"
+     ]
     },
     {
      "text": "Up to 2 Celestian Insidiants can each have their condemnor bolt pistol and null mace replaced with 1 blessed sword.",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
-     "base": "condemnor bolt pistol and null mace"
+     "base": "condemnor bolt pistol and null mace",
+     "model": "",
+     "grants": [
+      "Condemnor bolt pistol",
+      "Blessed sword",
+      "Null mace"
+     ]
     },
     {
      "text": "One Celestian Insidiant’s condemnor bolt pistol and null mace can be replaced with 1 virge of admonition.",
@@ -1504,7 +1589,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "condemnor bolt pistol and null mace"
+     "base": "condemnor bolt pistol and null mace",
+     "model": "",
+     "grants": [
+      "Condemnor bolt pistol",
+      "Null mace",
+      "Virge of admonition"
+     ]
     },
     {
      "text": "One Celestian Insidiant’s condemnor bolt pistol can be replaced with 1 denuncia oratory.",
@@ -1513,7 +1604,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": "condemnor bolt pistol"
+     "base": "condemnor bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "One Celestian Insidiant equipped with 1 condemnor bolt pistol can be equipped with 1 simulacrum imperialis (that model’s condemnor bolt pistol cannot be replaced).",
@@ -1522,7 +1615,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "condemnor bolt pistol cannot be"
+     "base": "condemnor bolt pistol cannot be",
+     "model": "",
+     "grants": [
+      "Condemnor bolt pistol"
+     ]
     }
    ],
    "chapter": "",
@@ -1653,7 +1750,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1857,7 +1956,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "hallowed mace"
+     "base": "hallowed mace",
+     "model": "",
+     "grants": [
+      "Anointed halberd"
+     ]
     },
     {
      "text": "The Sacresant Superior’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 inferno pistol</li><li>1 Ministorum hand flamer</li><li>1 plasma pistol</li></ul>",
@@ -1867,7 +1970,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Inferno pistol",
+      "Ministorum hand flamer"
+     ]
     },
     {
      "text": "The Sacresant Superior’s hallowed mace can be replaced with 1 spear of the faithful.",
@@ -1877,7 +1985,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "hallowed mace"
+     "base": "hallowed mace",
+     "model": "",
+     "grants": [
+      "Spear of the faithful"
+     ]
     }
    ],
    "chapter": "",
@@ -1990,7 +2102,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2264,7 +2378,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2767,7 +2883,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Combi-weapon",
+      "Condemnor boltgun",
+      "Inferno pistol ",
+      "Ministorum hand flamer"
+     ]
     },
     {
      "text": "The Dominion Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
@@ -2777,7 +2901,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Chainsword",
+      "Power weapon"
+     ]
     },
     {
      "text": "Up to 4 Dominions can each have their boltgun replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li></ul>",
@@ -2786,7 +2915,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Artificer-crafted storm bolter",
+      "Meltagun",
+      "Ministorum flamer"
+     ]
     },
     {
      "text": "1 Dominion equipped with 1 boltgun can be equipped with 1 simulacrum imperialis (that model’s boltgun cannot be replaced).",
@@ -2796,7 +2931,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun cannot be"
+     "base": "boltgun cannot be",
+     "model": "",
+     "grants": [
+      "Boltgun"
+     ]
     }
    ],
    "chapter": "",
@@ -2962,7 +3101,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model’s Exorcist missile launcher can be replaced with 1 Exorcist conflagration rockets.",
@@ -2972,7 +3115,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "exorcist missile launcher"
+     "base": "exorcist missile launcher",
+     "model": "",
+     "grants": [
+      "Exorcist conflagration rockets"
+     ]
     }
    ],
    "chapter": "",
@@ -3393,7 +3540,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model’s immolation flamers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 twin multi-melta</li></ul>",
@@ -3403,7 +3554,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "immolation flamers"
+     "base": "immolation flamers",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Twin heavy bolter",
+      "Twin multi-melta"
+     ]
     }
    ],
    "chapter": "",
@@ -3568,7 +3725,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3840,7 +3999,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "zealot’s vindictor"
+     "base": "zealot’s vindictor",
+     "model": "",
+     "grants": [
+      "Holy pistol",
+      "Power Weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -4025,7 +4189,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of models can each have their 2 heavy bolters replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter and 1 Mortifier flamer</li><li>2 Mortifier flamers</li></ul>",
@@ -4034,7 +4200,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "2 heavy bolters"
+     "base": "2 heavy bolters",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Mortifier flamer"
+     ]
     },
     {
      "text": "Any number of models can each have their twin penitent buzz-blades replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin penitent flails</li><li>1 penitent buzz-blade and 1 penitent flail</li></ul>",
@@ -4043,7 +4214,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "twin penitent buzz-blades"
+     "base": "twin penitent buzz-blades",
+     "model": "",
+     "grants": [
+      "Penitent buzz-blade",
+      "Penitent flail",
+      "Twin penitent flails"
+     ]
     }
    ],
    "chapter": "",
@@ -4348,7 +4525,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4537,7 +4716,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "paragon storm bolters"
+     "base": "paragon storm bolters",
+     "model": "",
+     "grants": [
+      "Paragon grenade launchers"
+     ]
     },
     {
      "text": "Any number of models can each have their Paragon war blade replaced with 1 Paragon war mace.",
@@ -4546,7 +4729,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "paragon war blade"
+     "base": "paragon war blade",
+     "model": "",
+     "grants": [
+      "Paragon war mace"
+     ]
     },
     {
      "text": "Any number of models can each have their heavy bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Ministorum heavy flamer</li><li>1 multi-melta</li></ul>",
@@ -4555,7 +4742,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "heavy bolter"
+     "base": "heavy bolter",
+     "model": "",
+     "grants": [
+      "Ministorum heavy flamer",
+      "Multi-melta"
+     ]
     }
    ],
    "chapter": "",
@@ -4720,7 +4912,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "twin penitent buzz-blades"
+     "base": "twin penitent buzz-blades",
+     "model": "",
+     "grants": [
+      "Penitent buzz-blade",
+      "Penitent flail",
+      "Twin penitent flails"
+     ]
     }
    ],
    "chapter": "",
@@ -5024,7 +5222,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer</li><li>1 storm bolter</li></ul>",
@@ -5034,7 +5236,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -5295,7 +5502,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Combi-weapon",
+      "Condemnor boltgun",
+      "Inferno pistol ",
+      "Ministorum hand flamer"
+     ]
     },
     {
      "text": "The Retributor Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
@@ -5305,7 +5520,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Chainsword",
+      "Power weapon"
+     ]
     },
     {
      "text": "Each Retributor’s heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Ministorum heavy flamer</li><li>1 multi-melta</li></ul>",
@@ -5314,7 +5534,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "heavy bolter"
+     "base": "heavy bolter",
+     "model": "",
+     "grants": [
+      "Ministorum heavy flamer",
+      "Multi-melta"
+     ]
     }
    ],
    "chapter": "",
@@ -5719,7 +5944,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Meltagun"
+     ]
     },
     {
      "text": "1 Missionary model equipped with 1 plasma gun can be equipped with 1 holy fire (this model’s plasma gun cannot be replaced).",
@@ -5729,7 +5958,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "plasma gun cannot be"
+     "base": "plasma gun cannot be",
+     "model": "",
+     "grants": [
+      "Holy fire"
+     ]
     },
     {
      "text": "1 Sanctifier model can have its 1 Sanctifier melee weapon replaced with 1 Ministorum hand flamer and 1 close combat weapon.",
@@ -5739,7 +5972,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Ministorum hand flamer",
+      "Close combat weapon",
+      "Sanctifier melee weapon"
+     ]
     },
     {
      "text": "1 Sanctifier model can have its 1 Sanctifier melee weapon replaced with 1 close combat weapon and 1 simulacrum imperialis.",
@@ -5749,7 +5988,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Close combat weapon",
+      "Sanctifier melee weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -5961,7 +6205,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "2 bolt pistols"
+     "base": "2 bolt pistols",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Inferno pistol",
+      "Ministorum hand flamer"
+     ]
     },
     {
      "text": "The Seraphim Superior’s 2 bolt pistols can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol and 1 chainsword</li><li>1 bolt pistol and 1 plasma pistol</li><li>1 bolt pistol and 1 power weapon</li><li>1 plasma pistol and 1 chainsword</li><li>1 plasma pistol and 1 power weapon</li></ul>",
@@ -5971,7 +6221,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 bolt pistols"
+     "base": "2 bolt pistols",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Chainsword",
+      "Power weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -6206,7 +6462,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and boltgun"
+     "base": "bolt pistol and boltgun",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Boltgun",
+      "Power weapon"
+     ]
     },
     {
      "text": "1 Sister Novitiate’s autogun can be replaced with 1 sacred banner.",
@@ -6216,7 +6478,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "autogun"
+     "base": "autogun",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Sister Novitiate’s autogun can be replaced with 1 simulacrum imperialis.",
@@ -6226,16 +6490,23 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "autogun"
+     "base": "autogun",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Up to 2 Sisters Novitiate can each have their autogun replaced with 1 Ministorum flamer.",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
-     "base": "autogun"
+     "base": "autogun",
+     "model": "",
+     "grants": [
+      "Ministorum flamer"
+     ]
     },
     {
      "text": "Any number of Sisters Novitiate can each have their autogun and close combat weapon replaced with 1 Novitiate melee weapons.",
@@ -6244,7 +6515,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "autogun and close combat weapon"
+     "base": "autogun and close combat weapon",
+     "model": "",
+     "grants": [
+      "Autogun",
+      "Close combat weapon",
+      "Novitiate melee weapons"
+     ]
     }
    ],
    "chapter": "",
@@ -6387,7 +6664,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     }
    ],
    "chapter": "",
@@ -6694,7 +6975,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Zephyrim Superior’s bolt pistol can be replaced with 1 plasma pistol.",
@@ -6704,7 +6987,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",

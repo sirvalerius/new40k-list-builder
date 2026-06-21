@@ -467,7 +467,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Lascannon",
+      "Heavy bolter"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -477,7 +482,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Heavy bolter",
+      "Storm bolter",
+      "Multi-melta"
+     ]
     }
    ],
    "chapter": "",
@@ -644,7 +656,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Inferno combi-bolter",
+      "Inferno combi-weapon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 havoc launcher.",
@@ -654,7 +671,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Havoc launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -872,7 +893,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Accursed weapon",
+      "Combi-bolter",
+      "Combi-weapon",
+      "Power fist"
+     ]
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
@@ -882,7 +910,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Accursed weapon",
+      "Bolt pistol",
+      "Power fist"
+     ]
     },
     {
      "text": "This model’s bolt pistol and Astartes chainsword can be replaced with 1 paired accursed weapons.",
@@ -892,7 +926,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and astartes chainsword"
+     "base": "bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Accursed weapon",
+      "Bolt pistol",
+      "Paired accursed weapons",
+      "Astartes chainsword"
+     ]
     }
    ],
    "chapter": "",
@@ -1070,7 +1111,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Inferno heavy bolter",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 inferno combi-bolter</li><li>1 inferno combi-weapon</li></ul>",
@@ -1080,7 +1126,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Inferno combi-bolter",
+      "Inferno combi-weapon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 havoc launcher.",
@@ -1090,7 +1141,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Havoc launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -1268,7 +1323,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Inferno heavy bolter",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 inferno combi-bolter</li><li>1 inferno combi-weapon</li></ul>",
@@ -1278,7 +1338,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Inferno combi-bolter",
+      "Inferno combi-weapon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 havoc launcher.",
@@ -1288,7 +1353,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Havoc launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -1432,7 +1501,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Inferno combi-bolter",
+      "Inferno combi-weapon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 havoc launcher or can replace 1 inferno combi-bolter with 1 havoc launcher.",
@@ -1442,7 +1516,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Havoc launcher",
+      "Inferno combi-bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -1703,7 +1782,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "thunderhawk heavy cannon"
+     "base": "thunderhawk heavy cannon",
+     "model": "",
+     "grants": [
+      "Turbo-laser destructor"
+     ]
     },
     {
      "text": "This model’s Thunderhawk cluster bombs can be replaced with 1 hellstrike missile battery",
@@ -1713,7 +1796,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "thunderhawk cluster bombs"
+     "base": "thunderhawk cluster bombs",
+     "model": "",
+     "grants": [
+      "Hellstrike missile battery"
+     ]
     }
    ],
    "chapter": "",
@@ -1868,7 +1955,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Inferno combi-bolter",
+      "Inferno combi-weapon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 havoc launcher.",
@@ -1878,7 +1970,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Havoc launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -2418,7 +2514,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "hades battle cannon"
+     "base": "hades battle cannon",
+     "model": "",
+     "grants": [
+      "Ectoplasma destructor"
+     ]
     },
     {
      "text": "This model’s excruciator cannons can be replaced with 2 pyraflux magma cutters",
@@ -2428,7 +2528,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "excruciator cannons"
+     "base": "excruciator cannons",
+     "model": "",
+     "grants": [
+      "Excruciator cannon",
+      "Pyraflux magma cutters"
+     ]
     },
     {
      "text": "This model’s heavy baleflamer can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
@@ -2438,7 +2543,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy baleflamer"
+     "base": "heavy baleflamer",
+     "model": "",
+     "grants": [
+      "Hades lascannon",
+      "Heavy reaper autocannon",
+      "Electroscourge"
+     ]
     },
     {
      "text": "This model’s heavy missile launcher can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
@@ -2448,7 +2559,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy missile launcher"
+     "base": "heavy missile launcher",
+     "model": "",
+     "grants": [
+      "Hades lascannon",
+      "Heavy reaper autocannon",
+      "Electroscourge"
+     ]
     },
     {
      "text": "Equip Hades lascannon",
@@ -2457,7 +2574,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hades lascannon"
+     ]
     },
     {
      "text": "Equip Heavy reaper autocannon",
@@ -2466,7 +2587,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy reaper autocannon"
+     ]
     }
    ],
    "chapter": "",
@@ -2713,7 +2838,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "anvilus autocannon battery"
+     "base": "anvilus autocannon battery",
+     "model": "",
+     "grants": [
+      "Volkite falconet battery",
+      "Arachnus heavy lascannon battery"
+     ]
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer.",
@@ -2723,7 +2853,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Twin heavy flamer"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 aiolos missile launcher</li><li>1 boreas air defence missiles</li></ul>",
@@ -2733,7 +2867,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Boreas air defence missiles",
+      "Aiolos missile launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -2882,7 +3021,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Prosperine khopesh"
+     ]
     }
    ],
    "chapter": "",
@@ -3033,7 +3176,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Prosperine khopesh"
+     ]
     }
    ],
    "chapter": "",
@@ -3261,7 +3408,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 quad lascannons"
+     "base": "2 quad lascannons",
+     "model": "",
+     "grants": [
+      "Laser destroyer",
+      "Quad lascannon"
+     ]
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer",
@@ -3271,7 +3423,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Twin heavy flamer",
+      "Heavy bolter"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -3281,7 +3439,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Storm bolter",
+      "Multi-melta",
+      "Heavy bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -3576,7 +3741,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 quad lascannons"
+     "base": "2 quad lascannons",
+     "model": "",
+     "grants": [
+      "Quad heavy bolter",
+      "Laser destroyer",
+      "Heavy bolter",
+      "Quad lascannon"
+     ]
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer.",
@@ -3586,7 +3758,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Twin heavy flamer",
+      "Heavy flamer",
+      "Heavy bolter"
+     ]
     },
     {
      "text": "This model can be equipped with 1 havoc launcher.",
@@ -3596,7 +3774,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Havoc launcher "
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -3606,7 +3788,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Multi-melta",
+      "Heavy flamer",
+      "Heavy bolter",
+      "Combi-weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -3801,7 +3991,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin hellstrike missile launchers"
+     "base": "2 twin hellstrike missile launchers",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     },
     {
      "text": "This model’s 2 twin autocannons can be replaced with 2 quad heavy bolters.",
@@ -3811,7 +4005,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin autocannons"
+     "base": "2 twin autocannons",
+     "model": "",
+     "grants": [
+      "Twin autocannon",
+      "Quad heavy bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -4073,7 +4272,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 hades autocannons"
+     "base": "2 hades autocannons",
+     "model": "",
+     "grants": [
+      "Ectoplasma cannon",
+      "Hades autocannon"
+     ]
     },
     {
      "text": "This model’s Forgefiend jaws can be replaced with 1 ectoplasma cannon and 1 Forgefiend claws.",
@@ -4083,7 +4287,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "forgefiend jaws"
+     "base": "forgefiend jaws",
+     "model": "",
+     "grants": [
+      "Ectoplasma cannon",
+      "Forgefiend claws"
+     ]
     }
    ],
    "chapter": "",
@@ -4325,7 +4534,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "multi-melta"
+     "base": "multi-melta",
+     "model": "",
+     "grants": [
+      "Helbrute plasma cannon",
+      "Twin autocannon",
+      "Twin inferno heavy bolter",
+      "Twin lascannon",
+      "Helbrute fist"
+     ]
     },
     {
      "text": "This model’s missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Helbrute fist</li><li>1 Helbrute hammer</li><li>1 power scourge</li></ul>",
@@ -4335,7 +4552,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "missile launcher"
+     "base": "missile launcher",
+     "model": "",
+     "grants": [
+      "Helbrute fist",
+      "Helbrute hammer",
+      "Power scourge"
+     ]
     },
     {
      "text": "For each Helbrute fist this model is equipped with, it can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 inferno combi-bolter</li><li>1 heavy flamer</li></ul>",
@@ -4345,7 +4568,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Inferno combi-bolter",
+      "Helbrute fist"
+     ]
     }
    ],
    "chapter": "",
@@ -4477,7 +4706,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "hades autocannon"
+     "base": "hades autocannon",
+     "model": "",
+     "grants": [
+      "Baleflamer"
+     ]
     }
    ],
    "chapter": "",
@@ -4626,7 +4859,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin autocannons"
+     "base": "2 twin autocannons",
+     "model": "",
+     "grants": [
+      "Twin lascannon",
+      "Twin autocannon"
+     ]
     }
    ],
    "chapter": "",
@@ -4786,7 +5024,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "autocannon"
+     "base": "autocannon",
+     "model": "",
+     "grants": [
+      "Havoc launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -5348,7 +5590,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "kratos battle cannon"
+     "base": "kratos battle cannon",
+     "model": "",
+     "grants": [
+      "Volkite cardanelle",
+      "Melta blast-gun"
+     ]
     },
     {
      "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 autocannons</li><li>2 lascannons</li><li>2 volkite calivers</li></ul>",
@@ -5358,7 +5605,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolters"
+     "base": "heavy bolters",
+     "model": "",
+     "grants": [
+      "Volkite caliver",
+      "Autocannon",
+      "Heavy bolter",
+      "Lascannons"
+     ]
     },
     {
      "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy flamers</li><li>2 lascannons</li><li>2 volkite culverins </li></ul>",
@@ -5368,7 +5622,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolters"
+     "base": "heavy bolters",
+     "model": "",
+     "grants": [
+      "Volkite culverin",
+      "Heavy bolter",
+      "Heavy flamer",
+      "Lascannons"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 havoc launcher</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 twin boltgun</li></ul>",
@@ -5378,7 +5639,16 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Multi-melta",
+      "Combi-weapon",
+      "Twin boltgun",
+      "Havoc launcher",
+      "Heavy bolter",
+      "Heavy flamer"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter killer missile    ",
@@ -5388,7 +5658,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     }
    ],
    "chapter": "",
@@ -5589,7 +5863,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin volkite culverins"
+     "base": "2 twin volkite culverins",
+     "model": "",
+     "grants": [
+      "Twin volkite culverin",
+      "Twin multi-melta"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -5599,7 +5878,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -5609,7 +5892,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -5828,7 +6115,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Multi-melta",
+      "Twin heavy bolter",
+      "Twin heavy flamer",
+      "Heavy bolter"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -5838,7 +6132,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -5848,7 +6146,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     },
     {
      "text": "This model can be equipped with 1 explorator augury web.",
@@ -5858,7 +6160,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6111,7 +6415,16 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "grav-flux bombards"
+     "base": "grav-flux bombards",
+     "model": "",
+     "grants": [
+      "Grav-flux bombard",
+      "Cyclonic melta lance",
+      "Leviathan siege drill",
+      "Meltagun",
+      "Leviathan siege claw",
+      "Storm cannon"
+     ]
     },
     {
      "text": "This model’s 2 heavy flamers can be replaced with 2 twin volkite calivers.",
@@ -6121,7 +6434,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 heavy flamers"
+     "base": "2 heavy flamers",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Twin volkite caliver"
+     ]
     },
     {
      "text": "This model can be equipped with 3 hunter-killer missiles.",
@@ -6131,7 +6449,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     }
    ],
    "chapter": "",
@@ -6307,7 +6629,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Rod of sorcery",
+      "Baleful sword"
+     ]
     }
    ],
    "chapter": "",
@@ -6682,7 +7009,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 heavy flamers"
+     "base": "2 heavy flamers",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Volkite culverin",
+      "Lascannon",
+      "Heavy flamer"
+     ]
     },
     {
      "text": "This model’s 2 lascannons can be replaced with on of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li><li>2 volkite culverins</li></ul>",
@@ -6692,7 +7026,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 lascannons"
+     "base": "2 lascannons",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Volkite culverin",
+      "Lascannon",
+      "Heavy flamer"
+     ]
     }
    ],
    "chapter": "",
@@ -6825,7 +7166,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "lasher tendrils"
+     "base": "lasher tendrils",
+     "model": "",
+     "grants": [
+      "Magma cutter"
+     ]
     }
    ],
    "chapter": "",
@@ -7177,7 +7522,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Pink Horror that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
@@ -7187,7 +7534,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7364,7 +7713,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "quad heavy bolter"
+     "base": "quad heavy bolter",
+     "model": "",
+     "grants": [
+      "Graviton cannon",
+      "Laser destroyer"
+     ]
     }
    ],
    "chapter": "",
@@ -7703,7 +8057,20 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy plasma cannons"
+     "base": "heavy plasma cannons",
+     "model": "",
+     "grants": [
+      "Twin lascannon",
+      "Twin volkite culverin",
+      "Kheres-pattern assault cannon",
+      "Multi-melta",
+      "Dreadnought combat weapon",
+      "Dreadnought chainfist",
+      "Conversion beam cannon",
+      "Combi-bolter",
+      "Twin autocannon",
+      "Twin heavy bolter"
+     ]
     },
     {
      "text": "Each of this model’s combi-bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 graviton blaster</li><li>1 heavy flamer</li><li>1 plasma blaster</li></ul>",
@@ -7713,7 +8080,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "combi-bolters"
+     "base": "combi-bolters",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Combi-bolter",
+      "Graviton blaster"
+     ]
     },
     {
      "text": "This model can be equipped with 1 cyclone missile launcher. ",
@@ -7723,7 +8096,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7950,7 +8325,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "inferno bolt pistol"
+     "base": "inferno bolt pistol",
+     "model": "",
+     "grants": [
+      "Warpflame pistol"
+     ]
     },
     {
      "text": "1 Rubric Marine’s inferno boltgun can be replaced with 1 soulreaper cannon.",
@@ -7960,7 +8339,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "inferno boltgun"
+     "base": "inferno boltgun",
+     "model": "",
+     "grants": [
+      "Soulreaper cannon"
+     ]
     },
     {
      "text": "Any number of Rubric Marines can each have their inferno boltgun replaced with 1 warpflamer.",
@@ -7969,7 +8352,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "inferno boltgun"
+     "base": "inferno boltgun",
+     "model": "",
+     "grants": [
+      "Warpflamer"
+     ]
     },
     {
      "text": "1 Rubric Marine can be equipped with 1 icon of flame.",
@@ -7979,7 +8366,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -8194,7 +8583,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "inferno combi-bolter"
+     "base": "inferno combi-bolter",
+     "model": "",
+     "grants": [
+      "Prosperine khopesh"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Scarab Occult Terminator’s inferno combi-bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy warpflamer</li><li>1 soulreaper cannon</li></ul>",
@@ -8204,7 +8597,12 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "inferno combi-bolter"
+     "base": "inferno combi-bolter",
+     "model": "",
+     "grants": [
+      "Heavy warpflamer",
+      "Soulreaper cannon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Scarab Occult Terminator can be equipped with 1 hellfyre missile rack.",
@@ -8214,7 +8612,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hellfyre missile rack"
+     ]
     }
    ],
    "chapter": "",
@@ -8489,7 +8891,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "pyreflux meltagun"
+     "base": "pyreflux meltagun",
+     "model": "",
+     "grants": [
+      "Warpflame projector",
+      "Power claw"
+     ]
     }
    ],
    "chapter": "",
@@ -8669,7 +9076,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -8679,7 +9091,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -8689,7 +9105,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -8869,7 +9289,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Lascannon",
+      "Heavy bolter"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -8879,7 +9304,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -8889,7 +9318,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -9069,7 +9502,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Lascannon",
+      "Heavy bolter"
+     ]
     },
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -9079,7 +9517,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -9089,7 +9531,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -9288,7 +9734,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9437,7 +9885,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Prosperine khopesh"
+     ]
     }
    ],
    "chapter": "",
@@ -9600,7 +10052,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "inferno combi-bolter"
+     "base": "inferno combi-bolter",
+     "model": "",
+     "grants": [
+      "Inferno combi-weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -9817,7 +10273,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 quad lascannons"
+     "base": "2 quad lascannons",
+     "model": "",
+     "grants": [
+      "Quad lascannon",
+      "Laser destroyer"
+     ]
     },
     {
      "text": "This model’s twin heavy bolter can be replaced with 1 twin heavy flamer",
@@ -9827,7 +10288,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Twin heavy flamer",
+      "Heavy flamer"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -9837,7 +10304,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Storm bolter",
+      "Heavy flamer",
+      "Multi-melta"
+     ]
     }
    ],
    "chapter": "",
@@ -10067,7 +10541,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin heavy bolter"
+     "base": "twin heavy bolter",
+     "model": "",
+     "grants": [
+      "Twin multi-melta"
+     ]
     },
     {
      "text": "This model’s 2 twin hellstrike missile launchers can be replaced with 2 twin lascannons",
@@ -10077,7 +10555,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin hellstrike missile launchers"
+     "base": "2 twin hellstrike missile launchers",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
     }
    ],
    "chapter": "",
@@ -10254,7 +10736,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 combi-bolters"
+     "base": "2 combi-bolters",
+     "model": "",
+     "grants": [
+      "Twin volkite charger",
+      "Combi-bolter",
+      "Heavy flamer"
+     ]
     }
    ],
    "chapter": "",
@@ -10438,7 +10926,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Lascannon",
+      "Heavy bolter"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
@@ -10448,7 +10941,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Heavy bolter",
+      "Heavy flamer",
+      "Multi-melta"
+     ]
     }
    ],
    "chapter": "",
@@ -10575,7 +11075,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "divining spear"
+     "base": "divining spear",
+     "model": "",
+     "grants": [
+      "Autopistol",
+      "Chainsword"
+     ]
     }
    ],
    "chapter": "",
@@ -10942,7 +11447,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "tzaangor blades"
+     "base": "tzaangor blades",
+     "model": "",
+     "grants": [
+      "Autopistol",
+      "Chainsword"
+     ]
     },
     {
      "text": "1 Tzaangor not equipped with a herd banner can be equipped with 1 brayhorn.",
@@ -10952,7 +11462,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Tzaangor not equipped with a brayhorn can be equipped with 1 herd banner.",
@@ -10962,7 +11474,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -11119,7 +11633,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Hunter-killer missile"
+     ]
     },
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -11129,7 +11647,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Storm bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -11283,7 +11805,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",

@@ -1,12 +1,64 @@
 // Misc pure helpers used across the UI.
 import type {
   ArmyList,
+  ChosenWargear,
   Datasheet,
   Detachment,
   FactionData,
   ListUnit,
   PointsOption,
+  Weapon,
 } from './types';
+
+const normName = (s: string): string =>
+  (s || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+
+/**
+ * Weapon profiles a unit actually fields, given its chosen loadout (`selected`).
+ * Hides: upgrade weapons whose option wasn't taken; weapons that belong only to an
+ * optional sub-model (e.g. an Invader ATV) that wasn't purchased; base weapons that a
+ * chosen single-model replacement swapped away. When `selected` is undefined (browsing),
+ * every weapon is shown.
+ */
+export function equippedWeapons(ds: Datasheet, selected?: ChosenWargear[]): Weapon[] {
+  const weapons = (ds.weapons ?? []).filter((w) => w.name);
+  const opts = ds.weapon_options ?? [];
+  if (selected == null || !opts.length) return weapons;
+
+  const chosen = new Set(selected.filter((s) => s.qty > 0).map((s) => s.name));
+  const addonModels = new Set(
+    opts.filter((o) => o.type === 'model' && o.model).map((o) => o.model as string),
+  );
+  const addonTaken = new Set(
+    opts.filter((o) => o.type === 'model' && o.model && chosen.has(o.text)).map((o) => o.model as string),
+  );
+
+  const grantedAll = new Set<string>();        // a weapon some option can add
+  const grantedNow = new Set<string>();        // a weapon a CHOSEN option adds
+  const replacedNow = new Set<string>();       // base swapped away by a chosen single-model option
+  const addonForWeapon = new Map<string, string>(); // weapon -> the sub-model it belongs to
+  for (const o of opts) {
+    for (const g of o.grants ?? []) {
+      grantedAll.add(normName(g));
+      if (chosen.has(o.text)) grantedNow.add(normName(g));
+    }
+    if (o.base) {
+      const onAddon = !!o.model && addonModels.has(o.model);
+      if (onAddon) addonForWeapon.set(normName(o.base), o.model as string);
+      // a single-model replacement (sub-model or fixed-1) removes its base entirely
+      if (chosen.has(o.text) && (onAddon || o.limit?.kind === 'fixed')) replacedNow.add(normName(o.base));
+    }
+  }
+
+  return weapons.filter((w) => {
+    const n = normName(w.name);
+    const requiresAddon = addonForWeapon.get(n);
+    if (requiresAddon && !addonTaken.has(requiresAddon)) return grantedNow.has(n);
+    if (grantedAll.has(n)) return grantedNow.has(n);   // optional/upgrade weapon
+    if (replacedNow.has(n)) return false;              // replaced base
+    return true;                                       // standard kit
+  });
+}
 
 export function uid(): string {
   // Good-enough unique id without external deps.
@@ -31,15 +83,28 @@ export const unitTotal = (u: ListUnit): number =>
 
 /** Clamp a unit's chosen weapon-option quantities to their per-option limits
  *  for the unit's current model count (used when the model count changes). */
-export function clampLoadout(unit: ListUnit, ds: Datasheet): import('./types').ChosenWargear[] {
+export function clampLoadout(unit: ListUnit, ds: Datasheet): ChosenWargear[] {
   const count = unit.modelCount ?? ds.model_max ?? 1;
-  const limitOf = new Map((ds.weapon_options ?? []).map((o) => [o.text, o.limit]));
-  return (unit.wargearCosts ?? [])
-    .map((w) => {
-      const max = optionMax(limitOf.get(w.name), count);
-      return max != null && w.qty > max ? { ...w, qty: max } : w;
-    })
-    .filter((w) => w.qty > 0);
+  const opts = ds.weapon_options ?? [];
+  const limitOf = new Map(opts.map((o) => [o.text, o.limit]));
+  let wargear = (unit.wargearCosts ?? []).map((w) => {
+    const max = optionMax(limitOf.get(w.name), count);
+    return max != null && w.qty > max ? { ...w, qty: max } : w;
+  });
+  // Cap options by the count of the optional sub-model they pertain to (e.g. removing the
+  // Invader ATV must also drop its multi-melta).
+  const qty = (text: string) => wargear.find((w) => w.name === text)?.qty ?? 0;
+  const providerQty = new Map<string, number>();
+  for (const o of opts) if (o.type === 'model' && o.model) providerQty.set(o.model, qty(o.text));
+  wargear = wargear.map((w) => {
+    const o = opts.find((op) => op.text === w.name);
+    if (o && o.type !== 'model' && o.model && providerQty.has(o.model)) {
+      const cap = providerQty.get(o.model)!;
+      return w.qty > cap ? { ...w, qty: cap } : w;
+    }
+    return w;
+  });
+  return wargear.filter((w) => w.qty > 0);
 }
 
 /** Max copies of a weapon option allowed for a unit of `modelCount` models.

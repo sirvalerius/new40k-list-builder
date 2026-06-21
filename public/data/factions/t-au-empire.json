@@ -190,7 +190,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Seeker missile"
+     ]
     },
     {
      "text": "This model’s 2 burst cannons can be replaced with 2 cyclic ion blasters.",
@@ -200,7 +204,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 burst cannons"
+     "base": "2 burst cannons",
+     "model": "",
+     "grants": [
+      "Burst cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -307,7 +315,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -444,7 +454,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -658,7 +670,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 long-barrelled burst cannons"
+     "base": "2 long-barrelled burst cannons",
+     "model": "",
+     "grants": [
+      "Long-barrelled burst cannon"
+     ]
     },
     {
      "text": "This model’s swiftstrike burst cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 ion cannon</li><li>1 swiftstrike railgun</li></ul>",
@@ -668,7 +684,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "swiftstrike burst cannon"
+     "base": "swiftstrike burst cannon",
+     "model": "",
+     "grants": [
+      "Swiftstrike railgun"
+     ]
     },
     {
      "text": "This model can be equipped with up to 4 seeker missiles.",
@@ -678,7 +698,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Seeker missile"
+     ]
     }
    ],
    "chapter": "",
@@ -821,7 +845,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1032,7 +1058,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "heavy rail rifle"
+     "base": "heavy rail rifle",
+     "model": "",
+     "grants": [
+      "High-yield missile pods"
+     ]
     },
     {
      "text": "Any number of models can each be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 seeker missile</li><li>1 twin plasma rifle*</li><li>1 twin smart missile system*</li><li>1 weapon support system</li></ul>",
@@ -1042,7 +1072,13 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Seeker missile",
+      "Twin plasma rifle",
+      "Twin smart missile system"
+     ]
     },
     {
      "text": "Any number of models can each be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 missile drone</li><li>1 shield drone </li></ul>",
@@ -1052,7 +1088,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* No model can be equipped with both a twin plasma rifle and twin smart missile system at the same time.",
@@ -1061,7 +1099,12 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Twin plasma rifle",
+      "Twin smart missile system"
+     ]
     }
    ],
    "chapter": "",
@@ -1185,7 +1228,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1557,7 +1602,16 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "high-output burst cannon"
+     "base": "high-output burst cannon",
+     "model": "",
+     "grants": [
+      "Airbursting fragmentation projector",
+      "Burst cannon",
+      "Fusion blaster",
+      "Missile pod",
+      "Plasma rifle",
+      "T’au flamer"
+     ]
     },
     {
      "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
@@ -1567,7 +1621,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model can be equipped with up to three of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster*</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system* </li></ul>",
@@ -1577,7 +1633,16 @@
       "kind": "slots",
       "slots": 3
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Airbursting fragmentation projector",
+      "Burst cannon",
+      "Fusion blaster",
+      "Missile pod",
+      "Plasma rifle",
+      "T’au flamer"
+     ]
     },
     {
      "text": "* This model cannot have duplicates of these pieces of wargear.",
@@ -1586,7 +1651,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1810,7 +1877,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "burst cannon"
+     "base": "burst cannon",
+     "model": "",
+     "grants": [
+      "Airbursting fragmentation projector",
+      "Fusion blaster",
+      "Missile pod",
+      "Plasma rifle",
+      "T’au flamer"
+     ]
     },
     {
      "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
@@ -1820,7 +1895,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model can be equipped with up to three of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system*</li></ul>",
@@ -1830,7 +1907,16 @@
       "kind": "slots",
       "slots": 3
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Airbursting fragmentation projector",
+      "Burst cannon",
+      "Fusion blaster",
+      "Missile pod",
+      "Plasma rifle",
+      "T’au flamer"
+     ]
     },
     {
      "text": "* This model cannot have duplicates of these pieces of wargear.",
@@ -1839,7 +1925,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2063,7 +2151,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "burst cannon"
+     "base": "burst cannon",
+     "model": "",
+     "grants": [
+      "Airbursting fragmentation projector",
+      "Fusion blaster",
+      "Missile pod",
+      "Plasma rifle",
+      "T’au flamer"
+     ]
     },
     {
      "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
@@ -2073,7 +2169,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model can be equipped with up to three of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster*</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system* </li></ul>",
@@ -2083,7 +2181,16 @@
       "kind": "slots",
       "slots": 3
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Airbursting fragmentation projector",
+      "Burst cannon",
+      "Fusion blaster",
+      "Missile pod",
+      "Plasma rifle",
+      "T’au flamer"
+     ]
     },
     {
      "text": "* This model cannot have duplicates of these pieces of wargear. ",
@@ -2092,7 +2199,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2494,7 +2603,15 @@
      "limit": {
       "kind": "all"
      },
-     "base": "burst cannon"
+     "base": "burst cannon",
+     "model": "",
+     "grants": [
+      "Airbursting fragmentation projector",
+      "Fusion blaster",
+      "Missile pod",
+      "Plasma rifle",
+      "T’au flamer"
+     ]
     },
     {
      "text": "Any number of models can be equipped with up to two of the following, and can take duplicate<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
@@ -2504,7 +2621,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of models can each be equipped with up to three of the following, and can take duplicates**:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system* </li></ul>",
@@ -2514,7 +2633,16 @@
       "kind": "slots",
       "slots": 3
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Airbursting fragmentation projector",
+      "Burst cannon",
+      "Fusion blaster",
+      "Missile pod",
+      "Plasma rifle",
+      "T’au flamer"
+     ]
     },
     {
      "text": "* Each model cannot have duplicates of these pieces of wargear.",
@@ -2523,7 +2651,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "** Each model cannot be equipped with more than 3 ranged weapons.",
@@ -2532,7 +2662,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2679,7 +2811,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "plasma rifle"
+     "base": "plasma rifle",
+     "model": "",
+     "grants": [
+      "Missile pod"
+     ]
     },
     {
      "text": "Any number of models can each have their missile pod replaced with 1 plasma rifle.",
@@ -2688,7 +2824,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "missile pod"
+     "base": "missile pod",
+     "model": "",
+     "grants": [
+      "Plasma rifle"
+     ]
     },
     {
      "text": "Any number of models can be equipped with up to two of the following, but cannot take duplicates<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
@@ -2698,7 +2838,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2845,7 +2987,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "burst cannon"
+     "base": "burst cannon",
+     "model": "",
+     "grants": [
+      "T’au flamer"
+     ]
     },
     {
      "text": "Any number of models can each have their T’au flamer replaced with 1 burst cannon.",
@@ -2854,7 +3000,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "t’au flamer"
+     "base": "t’au flamer",
+     "model": "",
+     "grants": [
+      "Burst cannon"
+     ]
     },
     {
      "text": "Any number of models can be equipped with up to two of the following, but cannot take duplicates<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
@@ -2864,7 +3014,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2993,7 +3145,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3276,7 +3430,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin pulse carbines"
+     "base": "2 twin pulse carbines",
+     "model": "",
+     "grants": [
+      "Twin pulse carbine",
+      "Smart missile system"
+     ]
     },
     {
      "text": "This model can be equipped with up to 2 seeker missiles.",
@@ -3286,7 +3445,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Seeker missile"
+     ]
     }
    ],
    "chapter": "",
@@ -3425,7 +3588,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin plasma rifle"
+     "base": "twin plasma rifle",
+     "model": "",
+     "grants": [
+      "Twin burst cannon",
+      "Twin fusion blaster",
+      "Twin missile pod"
+     ]
     }
    ],
    "chapter": "",
@@ -3544,7 +3713,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
@@ -3554,7 +3725,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3694,7 +3867,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3903,7 +4078,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "fusion collider"
+     "base": "fusion collider",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s twin T’au flamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin fusion blaster</li><li>1 twin burst cannon</li></ul>",
@@ -3913,7 +4090,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin t’au flamer"
+     "base": "twin t’au flamer",
+     "model": "",
+     "grants": [
+      "Twin burst cannon",
+      "Twin fusion blaster"
+     ]
     },
     {
      "text": "This model can be equipped with one battlesuit support system.",
@@ -3923,7 +4105,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4079,7 +4263,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Kroot bolt thrower",
+      "Kroot rifle",
+      "Twin Kroot gun",
+      "Kroot rifle"
+     ]
     }
    ],
    "chapter": "",
@@ -4284,7 +4475,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "railgun"
+     "base": "railgun",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s 2 twin pulse carbines can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 accelerator burst cannons</li><li>2 smart missile systems</li></ul>",
@@ -4294,7 +4487,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin pulse carbines"
+     "base": "2 twin pulse carbines",
+     "model": "",
+     "grants": [
+      "Accelerator burst cannon",
+      "Twin pulse carbine",
+      "Smart missile system"
+     ]
     },
     {
      "text": "This model can be equipped with up to 2 seeker missiles.",
@@ -4304,7 +4503,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Seeker missile"
+     ]
     }
    ],
    "chapter": "",
@@ -4425,7 +4628,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "burst cannon and markerlight"
+     "base": "burst cannon and markerlight",
+     "model": "",
+     "grants": [
+      "Burst cannon",
+      "Twin burst cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -4552,7 +4760,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4719,7 +4929,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "kroot rifle"
+     "base": "kroot rifle",
+     "model": "",
+     "grants": [
+      "Kroot carbine"
+     ]
     },
     {
      "text": "For every 10 models in this unit, one Kroot Carnivore’s Kroot rifle can be replaced with 1 Tanglebomb launcher.",
@@ -4729,7 +4943,11 @@
       "kind": "per_n",
       "n": 10
      },
-     "base": "kroot rifle"
+     "base": "kroot rifle",
+     "model": "",
+     "grants": [
+      "Tanglebomb launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -4943,7 +5161,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "farstalker firearm"
+     "base": "farstalker firearm",
+     "model": "",
+     "grants": [
+      "T’au-tech rifle"
+     ]
     },
     {
      "text": "1 Kroot Farstalker’s Farstalker firearm can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Dvorgite skinner</li><li>1 Londaxi tribalest</li></ul>",
@@ -4953,7 +5175,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "farstalker firearm"
+     "base": "farstalker firearm",
+     "model": "",
+     "grants": [
+      "Dvorgite skinner",
+      "Londaxi tribalest"
+     ]
     },
     {
      "text": "1 Kroot Farstalker equipped with a Farstalker firearm can be equipped with 1 Pech’ra.",
@@ -4963,7 +5190,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Farstalker firearm"
+     ]
     }
    ],
    "chapter": "",
@@ -5357,7 +5588,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "kroot long gun"
+     "base": "kroot long gun",
+     "model": "",
+     "grants": [
+      "Blast javelin",
+      "Hunting javelin"
+     ]
     }
    ],
    "chapter": "",
@@ -5640,7 +5876,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "dart-bow and tri-bade"
+     "base": "dart-bow and tri-bade",
+     "model": "",
+     "grants": [
+      "Bladestave and prey-hook"
+     ]
     }
    ],
    "chapter": "",
@@ -5923,7 +6163,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "repeater cannon"
+     "base": "repeater cannon",
+     "model": "",
+     "grants": [
+      "Tanglecannon"
+     ]
     }
    ],
    "chapter": "",
@@ -6128,7 +6372,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "railgun"
+     "base": "railgun",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s 2 twin pulse carbines can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 accelerator burst cannons</li><li>2 smart missile systems</li></ul>",
@@ -6138,7 +6384,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin pulse carbines"
+     "base": "2 twin pulse carbines",
+     "model": "",
+     "grants": [
+      "Accelerator burst cannon",
+      "Twin pulse carbine",
+      "Smart missile system"
+     ]
     },
     {
      "text": "This model can be equipped with up to 2 seeker missiles.",
@@ -6148,7 +6400,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Seeker missile"
+     ]
     }
    ],
    "chapter": "",
@@ -6341,7 +6597,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6477,7 +6735,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6694,7 +6954,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Pathfinder Shas’ui can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
@@ -6704,7 +6966,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Up to 3 Pathfinders can each have their pulse carbine replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 ion rifle</li><li>1 rail rifle</li></ul>",
@@ -6713,7 +6977,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "pulse carbine"
+     "base": "pulse carbine",
+     "model": "",
+     "grants": [
+      "Rail rifle"
+     ]
     },
     {
      "text": "1 model in this unit equipped with a pulse carbine can be equipped with 1 semi-automatic grenade launcher. That model’s pulse carbine cannot be replaced.",
@@ -6723,7 +6991,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "pulse carbine cannot be"
+     "base": "pulse carbine cannot be",
+     "model": "",
+     "grants": [
+      "Pulse carbine"
+     ]
     }
    ],
    "chapter": "",
@@ -6925,7 +7197,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "piranha burst cannon"
+     "base": "piranha burst cannon",
+     "model": "",
+     "grants": [
+      "Piranha fusion blaster"
+     ]
     },
     {
      "text": "Any number of models can each be equipped with up to 2 seeker missiles.",
@@ -6934,7 +7210,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Seeker missile"
+     ]
     }
    ],
    "chapter": "",
@@ -7102,7 +7382,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "accelerator burst cannon"
+     "base": "accelerator burst cannon",
+     "model": "",
+     "grants": [
+      "Missile pod"
+     ]
     }
    ],
    "chapter": "",
@@ -7242,7 +7526,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7346,7 +7632,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7542,7 +7830,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy burst cannon"
+     "base": "heavy burst cannon",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s twin plasma rifles can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin fusion blaster</li><li>1 twin smart missile system</li></ul>",
@@ -7552,7 +7842,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin plasma rifles"
+     "base": "twin plasma rifles",
+     "model": "",
+     "grants": [
+      "Twin fusion blaster",
+      "Twin plasma rifle",
+      "Twin smart missile system"
+     ]
     },
     {
      "text": "This model can be equipped with up to 2 missile drones.",
@@ -7562,7 +7858,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7693,7 +7991,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7843,7 +8143,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -8000,7 +8302,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin pulse carbines"
+     "base": "2 twin pulse carbines",
+     "model": "",
+     "grants": [
+      "Accelerator burst cannon",
+      "Twin pulse carbine",
+      "Smart missile system"
+     ]
     }
    ],
    "chapter": "",
@@ -8167,7 +8475,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Stealth Shas’vre can be equipped with 1 marker drone.",
@@ -8177,7 +8487,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Stealth Shas’vre can be equipped with 1 pulse pistol.",
@@ -8187,7 +8499,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Pulse pistol"
+     ]
     },
     {
      "text": " 1 Stealth Shas’ui can be equipped with 1 homing beacon.",
@@ -8197,7 +8513,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "2 models can each have their burst cannon replaced with 1 fusion blaster.",
@@ -8207,7 +8525,11 @@
       "kind": "fixed",
       "max": 2
      },
-     "base": "burst cannon"
+     "base": "burst cannon",
+     "model": "",
+     "grants": [
+      "Fusion blaster"
+     ]
     }
    ],
    "chapter": "",
@@ -8435,7 +8757,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "pulse driver cannon"
+     "base": "pulse driver cannon",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s twin T’au flamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin airbursting fragmentation projector</li><li>1 twin burst cannon</li></ul>",
@@ -8445,7 +8769,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin t’au flamer"
+     "base": "twin t’au flamer",
+     "model": "",
+     "grants": [
+      "Twin airbursting fragmentation projector",
+      "Twin burst cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -8600,7 +8929,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of Fire Warrior models can each have their pulse rifle replaced with 1 pulse carbine.",
@@ -8609,7 +8940,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "pulse rifle"
+     "base": "pulse rifle",
+     "model": "",
+     "grants": [
+      "Pulse carbine"
+     ]
     }
    ],
    "chapter": "",
@@ -8777,7 +9112,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "missile pod"
+     "base": "missile pod",
+     "model": "",
+     "grants": [
+      "Twin missile pod"
+     ]
     }
    ],
    "chapter": "",
@@ -8897,7 +9236,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9120,7 +9461,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "tri-axis ion cannon"
+     "base": "tri-axis ion cannon",
+     "model": "",
+     "grants": [
+      "Fusion eradicator"
+     ]
     },
     {
      "text": "This model’s fusion eradicator can be replaced with 1 tri-axis ion cannon.",
@@ -9130,7 +9475,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "fusion eradicator"
+     "base": "fusion eradicator",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s 3 pulse ordnance drivers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 nexus missile launchers</li><li>1 heavy rail cannon array and 1 fragmentation cluster shell launcher</li></ul>",
@@ -9140,7 +9487,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "3 pulse ordnance drivers"
+     "base": "3 pulse ordnance drivers",
+     "model": "",
+     "grants": [
+      "Fragmentation cluster shell launcher",
+      "Heavy rail cannon array",
+      "Nexus missile launcher",
+      "Pulse ordnance driver"
+     ]
     }
    ],
    "chapter": "",
@@ -9271,7 +9625,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9493,7 +9849,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9612,7 +9970,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9725,7 +10085,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9845,7 +10207,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "TIDEWALL DEFENCE PLATFORM",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -10085,7 +10449,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 burst cannons"
+     "base": "2 burst cannons",
+     "model": "",
+     "grants": [
+      "Burst cannon"
+     ]
     },
     {
      "text": "This model’s 2 ion cannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 swiftstrike burst cannons</li><li>2 swiftstrike railguns</li></ul>",
@@ -10095,7 +10463,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 ion cannons"
+     "base": "2 ion cannons",
+     "model": "",
+     "grants": [
+      "Burst cannon",
+      "Swiftstrike burst cannon",
+      "Swiftstrike railgun"
+     ]
     },
     {
      "text": "This model can be equipped with up to 6 seeker missiles.",
@@ -10105,7 +10479,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Seeker missile"
+     ]
     },
     {
      "text": "This model’s transport bay can be replaced with 2 skyspear missile racks.",
@@ -10115,7 +10493,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "transport bay"
+     "base": "transport bay",
+     "model": "",
+     "grants": [
+      "Skyspear missile rack"
+     ]
     }
    ],
    "chapter": "",
@@ -10271,7 +10653,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 plasma rifles"
+     "base": "2 plasma rifles",
+     "model": "",
+     "grants": [
+      "Fusion blaster",
+      "Missile pod",
+      "Plasma rifle",
+      "Rail rifle"
+     ]
     }
    ],
    "chapter": "",
@@ -10429,7 +10818,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Neutron blaster",
+      "Neutron grenade launcher",
+      "Neutron rail rifle",
+      "T’au flamer"
+     ]
     }
    ],
    "chapter": "",
@@ -10598,7 +10994,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "fusion cascade"
+     "base": "fusion cascade",
+     "model": "",
+     "grants": [
+      "Phased ion gun",
+      "Twin hazard burst cannon"
+     ]
     },
     {
      "text": "Any number of models can each have their twin hazard burst cannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 fusion cascade</li><li>1 phased ion gun</li></ul>",
@@ -10607,7 +11008,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "twin hazard burst cannon"
+     "base": "twin hazard burst cannon",
+     "model": "",
+     "grants": [
+      "Fusion cascade",
+      "Phased ion gun"
+     ]
     },
     {
      "text": "Any number of models can each be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 battlesuit support system</li><li>1 shield generator</li><li>1 weapon support system</li></ul>",
@@ -10616,7 +11022,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of models can each be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
@@ -10626,7 +11034,9 @@
       "kind": "slots",
       "slots": 2
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -10790,7 +11200,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",

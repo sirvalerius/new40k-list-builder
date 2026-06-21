@@ -142,7 +142,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "command uplink"
+     "base": "command uplink",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -302,7 +304,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "command uplink"
+     "base": "command uplink",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -447,7 +451,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "command uplink"
+     "base": "command uplink",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1091,7 +1097,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1240,7 +1248,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1416,7 +1426,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "twin cognis autocannon"
+     "base": "twin cognis autocannon",
+     "model": "",
+     "grants": [
+      "Twin cognis lascannon"
+     ]
     }
    ],
    "chapter": "",
@@ -1620,7 +1634,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": "twin kastelan fist"
+     "base": "twin kastelan fist",
+     "model": "",
+     "grants": [
+      "Kastelan phosphor blaster",
+      "Twin Kastelan phosphor blaster",
+      "Close combat weapon",
+      "Kastelan fist"
+     ]
     },
     {
      "text": "Any number of models can each have their incendine combustor replaced with 1 heavy phosphor blaster.",
@@ -1629,7 +1650,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "incendine combustor"
+     "base": "incendine combustor",
+     "model": "",
+     "grants": [
+      "Heavy phosphor blaster"
+     ]
     }
    ],
    "chapter": "",
@@ -1772,7 +1797,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "heavy arc rifle"
+     "base": "heavy arc rifle",
+     "model": "",
+     "grants": [
+      "Torsion cannon"
+     ]
     },
     {
      "text": "Any number of models can each have their arc claw replaced with 1 hydraulic claw.",
@@ -1781,7 +1810,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "arc claw"
+     "base": "arc claw",
+     "model": "",
+     "grants": [
+      "Hydraulic claw"
+     ]
     }
    ],
    "chapter": "",
@@ -1946,7 +1979,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": "heavy grav-cannon"
+     "base": "heavy grav-cannon",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of models can each have their phosphor blaster replaced with 1 cognis flamer.",
@@ -1955,7 +1990,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "phosphor blaster"
+     "base": "phosphor blaster",
+     "model": "",
+     "grants": [
+      "Cognis flamer"
+     ]
     }
    ],
    "chapter": "",
@@ -2155,7 +2194,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "eradication beamer"
+     "base": "eradication beamer",
+     "model": "",
+     "grants": [
+      "Cognis heavy stubber",
+      "Daedalus missile launcher",
+      "Neutron laser",
+      "Icarus array",
+      "Twin Onager heavy phosphor blaster"
+     ]
     },
     {
      "text": "This model can be equipped with 1 additional cognis heavy stubber.",
@@ -2165,7 +2212,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Cognis heavy stubber"
+     ]
     },
     {
      "text": "This model can be equipped with 1 broad spectrum data-tether.",
@@ -2175,7 +2226,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2649,7 +2702,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "arc lance"
+     "base": "arc lance",
+     "model": "",
+     "grants": [
+      "Archeotech pistol"
+     ]
     },
     {
      "text": "The Hoplite Alpha can be equipped with 1 Alpha close combat weapon.",
@@ -2659,7 +2716,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Alpha close combat weapon"
+     ]
     },
     {
      "text": "1 Secutarii Hoplite can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether</li><li>1 omnispex</li></ul>",
@@ -2669,7 +2730,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2843,7 +2906,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "arc lance"
+     "base": "arc lance",
+     "model": "",
+     "grants": [
+      "Archeotech pistol"
+     ]
     },
     {
      "text": "The Peltast Alpha can be equipped with 1 Alpha close combat weapon.",
@@ -2853,7 +2920,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Alpha close combat weapon",
+      "Close combat weapon"
+     ]
     },
     {
      "text": "1 Secutarii Peltast can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether</li><li>1 omnispex</li></ul>",
@@ -2863,7 +2935,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3007,7 +3081,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3172,7 +3248,12 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": "2 phosphor pistols"
+     "base": "2 phosphor pistols",
+     "model": "",
+     "grants": [
+      "Phosphor blast carbine",
+      "Phosphor pistol"
+     ]
     }
    ],
    "chapter": "",
@@ -3372,16 +3453,27 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Meltagun",
+      "Phosphor blaster"
+     ]
     },
     {
      "text": "Up to 3 Combat Servitor models can each have their 1 phosphor blaster replaced with 1 incendine igniter.",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 3
      },
-     "base": "1 phosphor blaster"
+     "base": "1 phosphor blaster",
+     "model": "",
+     "grants": [
+      "Incendine igniter",
+      "Phosphor blaster"
+     ]
     }
    ],
    "chapter": "",
@@ -3542,7 +3634,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "servitor’s servo-arm"
+     "base": "servitor’s servo-arm",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Multi-melta",
+      "Servitor’s tools"
+     ]
     }
    ],
    "chapter": "",
@@ -3719,7 +3817,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": "stubcarbine and power weapon"
+     "base": "stubcarbine and power weapon",
+     "model": "",
+     "grants": [
+      "Flechette blaster",
+      "Stubcarbine",
+      "Power weapon",
+      "Taser goad"
+     ]
     }
    ],
    "chapter": "",
@@ -3874,7 +3979,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "transonic razor and chordclaw"
+     "base": "transonic razor and chordclaw",
+     "model": "",
+     "grants": [
+      "Transonic blades"
+     ]
     },
     {
      "text": "The Sicarian Ruststalker Princeps’ transonic razor and chordclaw can be replaced with 1 transonic blades and chordclaw.",
@@ -3884,7 +3993,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Transonic blades",
+      "Transonic blades and chordclaw",
+      "Transonic razor and chordclaw"
+     ]
     }
    ],
    "chapter": "",
@@ -4200,7 +4315,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Alpha combat weapon"
+     ]
     },
     {
      "text": "The Skitarii Ranger Alpha’s galvanic rifle can be replaced with 1 Mechanicus pistol.",
@@ -4210,7 +4329,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "galvanic rifle"
+     "base": "galvanic rifle",
+     "model": "",
+     "grants": [
+      "Mechanicus pistol"
+     ]
     },
     {
      "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 arc rifle.",
@@ -4220,7 +4343,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "galvanic rifle"
+     "base": "galvanic rifle",
+     "model": "",
+     "grants": [
+      "Arc rifle"
+     ]
     },
     {
      "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 plasma caliver.",
@@ -4230,7 +4357,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "galvanic rifle"
+     "base": "galvanic rifle",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Skitarii Ranger’s galvanic rifle can be replaced with 1 transuranic arquebus.",
@@ -4240,7 +4369,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "galvanic rifle"
+     "base": "galvanic rifle",
+     "model": "",
+     "grants": [
+      "Transuranic arquebus"
+     ]
     },
     {
      "text": "1 Skitarii Ranger equipped with a galvanic rifle can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
@@ -4250,7 +4383,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Galvanic rifle"
+     ]
     },
     {
      "text": "* That model’s galvanic rifle cannot be replaced.",
@@ -4259,7 +4396,11 @@
      "limit": {
       "kind": "note"
      },
-     "base": "galvanic rifle cannot be"
+     "base": "galvanic rifle cannot be",
+     "model": "",
+     "grants": [
+      "Galvanic rifle"
+     ]
     }
    ],
    "chapter": "",
@@ -4457,7 +4598,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Alpha combat weapon"
+     ]
     },
     {
      "text": "The Skitarii Vanguard Alpha’s radium carbine can be replaced with 1 Mechanicus pistol.",
@@ -4467,7 +4612,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "radium carbine"
+     "base": "radium carbine",
+     "model": "",
+     "grants": [
+      "Mechanicus pistol"
+     ]
     },
     {
      "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 arc rifle.",
@@ -4477,7 +4626,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "radium carbine"
+     "base": "radium carbine",
+     "model": "",
+     "grants": [
+      "Arc rifle"
+     ]
     },
     {
      "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 plasma caliver.",
@@ -4487,7 +4640,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "radium carbine"
+     "base": "radium carbine",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Skitarii Vanguard’s radium carbine can be replaced with 1 transuranic arquebus.",
@@ -4497,7 +4652,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "radium carbine"
+     "base": "radium carbine",
+     "model": "",
+     "grants": [
+      "Transuranic arquebus"
+     ]
     },
     {
      "text": "1 Skitarii Vanguard equipped with a radium carbine can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
@@ -4507,7 +4666,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Radium carbine"
+     ]
     },
     {
      "text": "* That model’s radium carbine cannot be replaced.",
@@ -4516,7 +4679,11 @@
      "limit": {
       "kind": "note"
      },
-     "base": "radium carbine cannot be"
+     "base": "radium carbine cannot be",
+     "model": "",
+     "grants": [
+      "Radium carbine"
+     ]
     }
    ],
    "chapter": "",
@@ -4674,7 +4841,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "belleros energy cannon"
+     "base": "belleros energy cannon",
+     "model": "",
+     "grants": [
+      "Ferrumite cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -5237,7 +5408,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "radium jezzail"
+     "base": "radium jezzail",
+     "model": "",
+     "grants": [
+      "Skatros transuranic arquebus"
+     ]
     }
    ],
    "chapter": "",
@@ -5408,7 +5583,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "macrostubber"
+     "base": "macrostubber",
+     "model": "",
+     "grants": [
+      "Phosphor serpenta"
+     ]
     },
     {
      "text": "This model’s volkite blaster can be replaced with 1 eradication ray.",
@@ -5418,7 +5597,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "volkite blaster"
+     "base": "volkite blaster",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5685,7 +5866,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "magnarail lance"
+     "base": "magnarail lance",
+     "model": "",
+     "grants": [
+      "Transonic cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -5956,7 +6141,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 combi-bolters"
+     "base": "2 combi-bolters",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Heavy flamer",
+      "Twin volkite charger"
+     ]
     }
    ],
    "chapter": "",
@@ -6247,7 +6438,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",

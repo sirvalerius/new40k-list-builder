@@ -316,7 +316,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -461,7 +463,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -589,7 +593,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -775,7 +781,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -933,7 +941,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Bloodcrusher that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
@@ -943,7 +953,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1067,7 +1079,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Bloodletter that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
@@ -1077,7 +1091,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1198,7 +1214,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1401,7 +1419,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "great axe of khorne"
+     "base": "great axe of khorne",
+     "model": "",
+     "grants": [
+      "Bloodflail",
+      "Lash of Khorne"
+     ]
     }
    ],
    "chapter": "",
@@ -1563,7 +1586,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1705,7 +1730,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1849,7 +1876,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2050,7 +2079,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "daemon hammer"
+     "base": "daemon hammer",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
     },
     {
      "text": "This model’s plasma pistol can be replaced with 1 power fist.",
@@ -2060,7 +2093,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "plasma pistol"
+     "base": "plasma pistol",
+     "model": "",
+     "grants": [
+      "Power fist"
+     ]
     }
    ],
    "chapter": "",
@@ -2281,7 +2318,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "combi-bolter"
+     "base": "combi-bolter",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
     },
     {
      "text": "This model’s exalted weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainfist</li><li>1 power fist</li></ul>",
@@ -2291,7 +2332,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "exalted weapon"
+     "base": "exalted weapon",
+     "model": "",
+     "grants": [
+      "Chainfist",
+      "Power fist"
+     ]
     },
     {
      "text": "This model’s combi-bolter and exalted weapon can be replaced with 1 paired accursed weapons.",
@@ -2301,7 +2347,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "combi-bolter and exalted weapon"
+     "base": "combi-bolter and exalted weapon",
+     "model": "",
+     "grants": [
+      "Exalted weapon",
+      "Combi-bolter",
+      "Paired accursed weapons"
+     ]
     }
    ],
    "chapter": "",
@@ -2592,7 +2644,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Combi-weapon",
+      "Accursed weapon",
+      "Power fist"
+     ]
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
@@ -2602,7 +2661,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Accursed weapon",
+      "Bolt pistol",
+      "Power fist"
+     ]
     },
     {
      "text": "This model’s bolt pistol and Astartes chainsword can be replaced with 1 paired accursed weapons.",
@@ -2612,7 +2677,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and astartes chainsword"
+     "base": "bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Accursed weapon",
+      "Bolt pistol",
+      "Astartes chainsword",
+      "Paired accursed weapons"
+     ]
     }
    ],
    "chapter": "",
@@ -2897,7 +2969,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Accursed weapon",
+      "Combi-weapon",
+      "Combi-bolter",
+      "Power fist"
+     ]
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
@@ -2907,7 +2986,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Accursed weapon",
+      "Power fist"
+     ]
     },
     {
      "text": "This model’s bolt pistol and Astartes chainsword can be replaced with 1 paired accursed weapons.",
@@ -2917,7 +3002,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and astartes chainsword"
+     "base": "bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Paired accursed weapons",
+      "Astartes chainsword",
+      "Bolt pistol",
+      "Accursed weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -3202,7 +3294,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Combi-bolter",
+      "Power fist",
+      "Accursed weapon"
+     ]
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
@@ -3212,7 +3311,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Power fist",
+      "Accursed weapon"
+     ]
     },
     {
      "text": "This model’s bolt pistol and Astartes chainsword can be replaced with 1 paired accursed weapons.",
@@ -3222,7 +3327,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and astartes chainsword"
+     "base": "bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Paired accursed weapons",
+      "Astartes chainsword",
+      "Bolt pistol",
+      "Accursed weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -3507,7 +3619,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Combi-weapon",
+      "Combi-bolter",
+      "Accursed weapon"
+     ]
     },
     {
      "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
@@ -3517,7 +3636,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Bolt pistol",
+      "Accursed weapon"
+     ]
     },
     {
      "text": "This model’s bolt pistol and Astartes chainsword can be replaced with 1 paired accursed weapons.",
@@ -3527,7 +3652,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and astartes chainsword"
+     "base": "bolt pistol and astartes chainsword",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Astartes chainsword",
+      "Accursed weapon",
+      "Paired accursed weapons"
+     ]
     }
    ],
    "chapter": "",
@@ -3763,7 +3895,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s accursed weapon can be replaced with 1 power fist.",
@@ -3773,7 +3907,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "accursed weapon"
+     "base": "accursed weapon",
+     "model": "",
+     "grants": [
+      "Power fist"
+     ]
     },
     {
      "text": "This model's bolt pistol and accursed weapon can be replaced with 1 twin lightning claws.",
@@ -3783,7 +3921,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol and accursed weapon"
+     "base": "bolt pistol and accursed weapon",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Twin lightning claws",
+      "Accursed weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -4001,7 +4145,12 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "combi-bolter"
+     "base": "combi-bolter",
+     "model": "",
+     "grants": [
+      "Reaper autocannon",
+      "Heavy flamer"
+     ]
     },
     {
      "text": "Any number of models can each have their combi-bolter replaced with 1 combi-weapon.",
@@ -4010,7 +4159,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "combi-bolter"
+     "base": "combi-bolter",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model’s combi-bolter and accursed weapon can be replaced with 1 paired accursed weapons.",
@@ -4020,7 +4173,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "combi-bolter and accursed weapon"
+     "base": "combi-bolter and accursed weapon",
+     "model": "",
+     "grants": [
+      "Paired accursed weapons",
+      "Accursed weapon",
+      "Combi-bolter"
+     ]
     },
     {
      "text": "For every 5 models in this unit, up to 3 models can each have their accursed weapon replaced with 1 power fist.",
@@ -4030,7 +4189,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "accursed weapon"
+     "base": "accursed weapon",
+     "model": "",
+     "grants": [
+      "Power fist"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model’s accursed weapon can be replaced with 1 chainfist.",
@@ -4040,7 +4203,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "accursed weapon"
+     "base": "accursed weapon",
+     "model": "",
+     "grants": [
+      "Chainfist"
+     ]
     }
    ],
    "chapter": "",
@@ -4258,7 +4425,9 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "For every 5 models in this unit, up to 2 models can each have their boltgun replaced with 1 combi-weapon.",
@@ -4268,7 +4437,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model’s boltgun and accursed weapon can be replaced with 1 paired accursed weapons.",
@@ -4278,7 +4451,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "boltgun and accursed weapon"
+     "base": "boltgun and accursed weapon",
+     "model": "",
+     "grants": [
+      "Accursed weapon",
+      "Boltgun",
+      "Paired accursed weapons"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 model equipped with a boltgun can have its accursed weapon replaced with 1 power fist. That model’s boltgun cannot be replaced.",
@@ -4288,7 +4467,13 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "boltgun cannot be"
+     "base": "boltgun cannot be",
+     "model": "",
+     "grants": [
+      "Accursed weapon",
+      "Power fist",
+      "Boltgun"
+     ]
     },
     {
      "text": "1 model can be equipped with 1 Chaos icon.",
@@ -4298,7 +4483,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4436,7 +4623,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4769,7 +4958,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "autopistol"
+     "base": "autopistol",
+     "model": "",
+     "grants": [
+      "Bolt pistol"
+     ]
     }
    ],
    "chapter": "",
@@ -5016,7 +5209,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "autopistol"
+     "base": "autopistol",
+     "model": "",
+     "grants": [
+      "Bolt pistol"
+     ]
     },
     {
      "text": "Any number of models can each have their autogun and close combat weapon replaced with 1 autopistol and 1 brutal assault weapon.",
@@ -5025,7 +5222,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": "autogun and close combat weapon"
+     "base": "autogun and close combat weapon",
+     "model": "",
+     "grants": [
+      "Close combat weapon",
+      "Autopistol",
+      "Brutal assault weapon",
+      "Autogun"
+     ]
     },
     {
      "text": "For every 10 models in this unit, 1 Chaos Cultist’s autogun can be replaced with 1 flamer.",
@@ -5035,7 +5239,11 @@
       "kind": "per_n",
       "n": 10
      },
-     "base": "autogun"
+     "base": "autogun",
+     "model": "",
+     "grants": [
+      "Flamer"
+     ]
     },
     {
      "text": "For every 10 models in this unit, 1 Chaos Cultist’s autogun can be replaced with 1 heavy stubber.",
@@ -5045,7 +5253,11 @@
       "kind": "per_n",
       "n": 10
      },
-     "base": "autogun"
+     "base": "autogun",
+     "model": "",
+     "grants": [
+      "Heavy stubber"
+     ]
     },
     {
      "text": " For every 10 models in this unit, 1 Chaos Cultist’s autogun can be replaced with 1 grenade launcher.",
@@ -5055,7 +5267,9 @@
       "kind": "per_n",
       "n": 10
      },
-     "base": "autogun"
+     "base": "autogun",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5228,7 +5442,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5406,7 +5622,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5536,7 +5754,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Daemonette that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
@@ -5546,7 +5766,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6093,7 +6315,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6243,7 +6467,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6373,7 +6599,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6529,7 +6757,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6649,7 +6879,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6873,7 +7105,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Fellgor Beastman’s close combat weapon can be replaced with 1 great weapon.",
@@ -6883,7 +7117,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "close combat weapon"
+     "base": "close combat weapon",
+     "model": "",
+     "grants": [
+      "Great weapon"
+     ]
     },
     {
      "text": "1 Fellgor Beastman’s close combat weapon can be replaced with 1 corrupted stave.",
@@ -6893,7 +7131,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "close combat weapon"
+     "base": "close combat weapon",
+     "model": "",
+     "grants": [
+      "Corrupted stave",
+      "Corrupted stave"
+     ]
     }
    ],
    "chapter": "",
@@ -7010,7 +7253,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7139,7 +7384,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7273,7 +7520,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7418,7 +7667,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7540,7 +7791,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7713,7 +7966,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7855,7 +8110,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -8060,7 +8317,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "plague flail"
+     "base": "plague flail",
+     "model": "",
+     "grants": [
+      "Bileblade"
+     ]
     },
     {
      "text": "This model’s bilesword can be replaced with 1 doomsday bell.",
@@ -8070,7 +8331,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bilesword"
+     "base": "bilesword",
+     "model": "",
+     "grants": [
+      "Doomsday bell"
+     ]
     }
    ],
    "chapter": "",
@@ -8362,7 +8627,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Accursed weapon"
+     ]
     },
     {
      "text": "The Havoc Champion’s flamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 boltgun</li><li>1 meltagun</li><li>1 plasma gun</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
@@ -8372,7 +8642,14 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "flamer"
+     "base": "flamer",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Boltgun",
+      "Accursed weapon",
+      "Meltagun"
+     ]
     },
     {
      "text": "Any number of Havocs can each have their Havoc autocannon or Havoc lascannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Havoc autocannon</li><li>1 Havoc heavy bolter</li><li>1 Havoc lascannon</li><li>1 Havoc missile launcher</li><li>1 Havoc reaper chaincannon</li></ul>",
@@ -8381,7 +8658,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": "havoc autocannon or havoc lascannon"
+     "base": "havoc autocannon or havoc lascannon",
+     "model": "",
+     "grants": [
+      "Havoc reaper chaincannon",
+      "Havoc heavy bolter",
+      "Havoc autocannon",
+      "Havoc lascannon"
+     ]
     }
    ],
    "chapter": "",
@@ -8530,7 +8814,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -8679,7 +8965,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -8818,7 +9106,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -8950,7 +9240,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9099,7 +9391,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9250,7 +9544,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9388,7 +9684,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9515,7 +9813,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9713,7 +10013,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Living whip",
+      "Ritual knife"
+     ]
     }
    ],
    "chapter": "",
@@ -10066,7 +10371,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Heavy melee weapon",
+      "Accursed weapon",
+      "Astartes chainsword"
+     ]
     },
     {
      "text": "The Aspiring Champion’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol*</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 heavy melee weapon</li></ul>",
@@ -10076,7 +10387,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Heavy melee weapon",
+      "Accursed weapon",
+      "Astartes chainsword"
+     ]
     },
     {
      "text": "1 model can be equipped with 1 Chaos icon.",
@@ -10086,7 +10403,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of Legionaries can each have their boltgun replaced with 1 Astartes chainsword.",
@@ -10095,7 +10414,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
     },
     {
      "text": "One Legionary’s boltgun can be replaced with 1 heavy melee weapon.",
@@ -10104,7 +10427,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Heavy melee weapon"
+     ]
     },
     {
      "text": "One Legionary’s boltgun can be replaced with 1 balefire tome.",
@@ -10113,7 +10440,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Balefire tome"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Legionary’s boltgun can be replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 plasma pistol and 1 Astartes chainsword</li><li>1 flamer</li><li>1 havoc autocannon</li><li>1 heavy bolter</li><li>1 lascannon</li><li>1 meltagun</li><li>1 missile launcher</li><li>1 plasma gun</li><li>1 reaper chaincannon </li></ul>",
@@ -10123,7 +10454,17 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "boltgun"
+     "base": "boltgun",
+     "model": "",
+     "grants": [
+      "Flamer",
+      "Havoc autocannon",
+      "Heavy bolter",
+      "Meltagun",
+      "Lascannon",
+      "Reaper chaincannon",
+      "Astartes chainsword"
+     ]
     },
     {
      "text": "* Maximum 1 per model.",
@@ -10132,7 +10473,9 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -10314,7 +10657,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Rod of sorcery",
+      "Baleful sword"
+     ]
     }
    ],
    "chapter": "",
@@ -10617,7 +10965,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -10750,7 +11100,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -10873,7 +11225,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -11072,7 +11426,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Pink Horror that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
@@ -11082,7 +11438,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -11236,7 +11594,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Plague Drone that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
@@ -11246,7 +11606,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -11371,7 +11733,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -11495,7 +11859,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Plaguebearer that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
@@ -11505,7 +11871,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -11642,7 +12010,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -11792,7 +12162,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Pox Rider that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
@@ -11802,7 +12174,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -11930,7 +12304,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -12224,7 +12600,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Raptor Champion’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 accursed weapon</li><li>1 heavy melee weapon</li></ul>",
@@ -12234,7 +12612,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Heavy melee weapon",
+      "Accursed weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, up to 2 Raptors can each have their bolt pistol replaced with 1 plasma pistol (these models’ Astartes chainswords cannot be replaced).",
@@ -12244,7 +12627,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
     },
     {
      "text": "For every 5 models in this unit, up to 2 Raptors can each have their Astartes chainsword replaced with 1 heavy melee weapon.",
@@ -12254,7 +12641,11 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Heavy melee weapon"
+     ]
     },
     {
      "text": "For every 5 models in this unit, 1 Raptor can replace their Astartes chainsword with 1 mutations.",
@@ -12264,7 +12655,12 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Astartes chainsword",
+      "Mutations"
+     ]
     },
     {
      "text": "Up to 2 Raptors can each have their Astartes chainsword replaced with one of the following options (you cannot select the same option more than once):<ul style=\"list-style-type:circle\"><li>1 flamer and 1 close combat weapon</li><li>1 meltagun and 1 close combat weapon</li><li>1 plasma gun and 1 close combat weapon</li></ul>",
@@ -12273,7 +12669,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Flamer",
+      "Close combat weapon",
+      "Meltagun"
+     ]
     },
     {
      "text": "If this unit contains 10 models, up to 2 additional Raptors can each have their Astartes chainsword replaced with one of the following options (you cannot select the same option more than once):<ul style=\"list-style-type:circle\"><li>1 flamer and 1 close combat weapon</li><li>1 meltagun and 1 close combat weapon</li><li>1 plasma gun and 1 close combat weapon</li></ul>",
@@ -12282,7 +12684,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "astartes chainsword"
+     "base": "astartes chainsword",
+     "model": "",
+     "grants": [
+      "Flamer",
+      "Close combat weapon",
+      "Meltagun"
+     ]
     }
    ],
    "chapter": "",
@@ -12416,7 +12824,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -12641,7 +13051,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "enforcer pistol"
+     "base": "enforcer pistol",
+     "model": "",
+     "grants": [
+      "Shotgun",
+      "Lasgun",
+      "Autogun"
+     ]
     },
     {
      "text": "This model’s Enforcer melee weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li></ul>",
@@ -12651,7 +13067,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "enforcer melee weapon"
+     "base": "enforcer melee weapon",
+     "model": "",
+     "grants": [
+      "Power weapon",
+      "Power fist"
+     ]
     }
    ],
    "chapter": "",
@@ -12877,7 +13298,15 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Lascannon",
+      "Heavy stubber",
+      "Heavy bolter",
+      "Autocannon",
+      "Mortar"
+     ]
     }
    ],
    "chapter": "",
@@ -13030,7 +13459,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -13168,7 +13599,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "ogryn weapon"
+     "base": "ogryn weapon",
+     "model": "",
+     "grants": [
+      "Ogryn power drill"
+     ]
     }
    ],
    "chapter": "",
@@ -13312,7 +13747,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -13502,7 +13939,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -13658,7 +14097,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -13808,7 +14249,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -13925,7 +14368,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -14063,7 +14508,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -14211,7 +14658,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Seeker that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
@@ -14221,7 +14670,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -14393,7 +14844,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -14542,7 +14995,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -14662,7 +15117,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -14792,7 +15249,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -14924,7 +15383,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -15045,7 +15506,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -15166,7 +15629,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -15559,7 +16024,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "combi-bolter"
+     "base": "combi-bolter",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
     },
     {
      "text": "This model can be equipped with 1 Chaos familiar.",
@@ -15569,7 +16038,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -15888,7 +16359,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Power fist",
+      "Accursed weapon",
+      "Astartes chainsword",
+      "Combi-weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -16199,7 +16678,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Accursed weapon",
+      "Combi-bolter",
+      "Combi-weapon",
+      "Power fist",
+      "Astartes chainsword"
+     ]
     }
    ],
    "chapter": "",
@@ -16493,7 +16980,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": [
+      "Combi-weapon",
+      "Astartes chainsword",
+      "Accursed weapon",
+      "Power fist",
+      "Combi-bolter"
+     ]
     }
    ],
    "chapter": "",
@@ -16699,7 +17194,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "warpsword"
+     "base": "warpsword",
+     "model": "",
+     "grants": [
+      "Warpclaw"
+     ]
     }
    ],
    "chapter": "",
@@ -16835,7 +17334,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -16967,7 +17468,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -17133,7 +17636,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -17255,7 +17760,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -17405,7 +17912,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -17533,7 +18042,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -17682,7 +18193,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -17820,7 +18333,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -18012,7 +18527,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -18279,7 +18796,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "lasgun"
+     "base": "lasgun",
+     "model": "",
+     "grants": [
+      "Cultist sniper rifle",
+      "Flamer",
+      "Meltagun"
+     ]
     },
     {
      "text": "The Traitor Sergeant’s close combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
@@ -18289,7 +18812,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "close combat weapon"
+     "base": "close combat weapon",
+     "model": "",
+     "grants": [
+      "Chainsword",
+      "Power weapon"
+     ]
     },
     {
      "text": "The Traitor Sergeant’s corrupted pistol can be replaced with 1 boltgun.",
@@ -18299,7 +18827,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "corrupted pistol"
+     "base": "corrupted pistol",
+     "model": "",
+     "grants": [
+      "Boltgun"
+     ]
     }
    ],
    "chapter": "",
@@ -18427,7 +18959,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -18602,7 +19136,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -18757,7 +19293,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",

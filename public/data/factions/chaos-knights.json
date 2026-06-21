@@ -300,7 +300,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -480,7 +482,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 acastus autocannons can each be"
+     "base": "2 acastus autocannons can each be",
+     "model": "",
+     "grants": [
+      "Acastus Autocannon",
+      "Lascannon"
+     ]
     },
     {
      "text": "This model’s Acastus ironstorm missile pod can be replaced with 1 helios defence missiles.",
@@ -490,7 +497,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "acastus ironstorm missile pod"
+     "base": "acastus ironstorm missile pod",
+     "model": "",
+     "grants": [
+      "Helios defence missiles"
+     ]
     }
    ],
    "chapter": "",
@@ -653,7 +664,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -838,7 +851,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -990,7 +1005,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1142,7 +1159,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1339,7 +1358,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "reaper chainsword"
+     "base": "reaper chainsword",
+     "model": "",
+     "grants": [
+      "Twin rad cleanser"
+     ]
     }
    ],
    "chapter": "",
@@ -1536,7 +1559,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "reaper chainsword"
+     "base": "reaper chainsword",
+     "model": "",
+     "grants": [
+      "Twin rad cleanser"
+     ]
     }
    ],
    "chapter": "",
@@ -1785,7 +1812,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "autopistol"
+     "base": "autopistol",
+     "model": "",
+     "grants": [
+      "Bolt pistol"
+     ]
     }
    ],
    "chapter": "",
@@ -1990,7 +2021,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "autopistol"
+     "base": "autopistol",
+     "model": "",
+     "grants": [
+      "Bolt pistol"
+     ]
     },
     {
      "text": "Any number of models can each have their autogun and close combat weapon replaced with 1 autopistol and 1 brutal assault weapon.",
@@ -1999,7 +2034,14 @@
      "limit": {
       "kind": "all"
      },
-     "base": "autogun and close combat weapon"
+     "base": "autogun and close combat weapon",
+     "model": "",
+     "grants": [
+      "Close combat weapon",
+      "Brutal assault weapon",
+      "Autogun",
+      "Autopistol"
+     ]
     },
     {
      "text": "For every 10 models in this unit, 1 Chaos Cultist’s autogun can be replaced with 1 flamer.",
@@ -2009,7 +2051,11 @@
       "kind": "per_n",
       "n": 10
      },
-     "base": "autogun"
+     "base": "autogun",
+     "model": "",
+     "grants": [
+      "Flamer"
+     ]
     },
     {
      "text": "For every 10 models in this unit, 1 Chaos Cultist’s autogun can be replaced with 1 heavy stubber.",
@@ -2019,7 +2065,11 @@
       "kind": "per_n",
       "n": 10
      },
-     "base": "autogun"
+     "base": "autogun",
+     "model": "",
+     "grants": [
+      "Heavy stubber"
+     ]
     },
     {
      "text": " For every 10 models in this unit, 1 Chaos Cultist’s autogun can be replaced with 1 grenade launcher.",
@@ -2029,7 +2079,9 @@
       "kind": "per_n",
       "n": 10
      },
-     "base": "autogun"
+     "base": "autogun",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2404,7 +2456,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "bolt pistol"
+     "base": "bolt pistol",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Fellgor Beastman’s close combat weapon can be replaced with 1 great weapon.",
@@ -2414,7 +2468,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "close combat weapon"
+     "base": "close combat weapon",
+     "model": "",
+     "grants": [
+      "Great weapon"
+     ]
     },
     {
      "text": "1 Fellgor Beastman’s close combat weapon can be replaced with 1 corrupted stave.",
@@ -2424,7 +2482,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "close combat weapon"
+     "base": "close combat weapon",
+     "model": "",
+     "grants": [
+      "Corrupted stave",
+      "Corrupted stave"
+     ]
     }
    ],
    "chapter": "",
@@ -2567,7 +2630,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2905,7 +2970,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "reaper chainsword"
+     "base": "reaper chainsword",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3182,7 +3249,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "daemonbreath meltagun"
+     "base": "daemonbreath meltagun",
+     "model": "",
+     "grants": [
+      "Diabolus heavy stubber"
+     ]
     },
     {
      "text": "This model’s reaper chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 daemonbreath thermal cannon</li><li>1 despoiler gatling cannon and 1 heavy darkflamer</li><li>1 despoiler battle cannon and 1 diabolus heavy stubber</li></ul>",
@@ -3192,7 +3263,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "reaper chainsword"
+     "base": "reaper chainsword",
+     "model": "",
+     "grants": [
+      "Daemonbreath thermal cannon",
+      "Despoiler battle cannon",
+      "Despoiler gatling cannon",
+      "Diabolus heavy stubber",
+      "Heavy darkflamer"
+     ]
     },
     {
      "text": "This model’s warpstrike claw can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 daemonbreath thermal cannon</li><li>1 despoiler gatling cannon and 1 heavy darkflamer</li><li>1 despoiler battle cannon and 1 diabolus heavy stubber</li></ul>",
@@ -3202,7 +3281,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "warpstrike claw"
+     "base": "warpstrike claw",
+     "model": "",
+     "grants": [
+      "Daemonbreath thermal cannon",
+      "Despoiler battle cannon",
+      "Despoiler gatling cannon",
+      "Diabolus heavy stubber",
+      "Heavy darkflamer"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 havoc missile pod</li><li>1 ruinspear rocket pod</li><li>1 hellstorm autocannons</li></ul>",
@@ -3212,7 +3299,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Havoc missile pod",
+      "Hellstorm autocannons",
+      "Ruinspear rocket pod"
+     ]
     }
    ],
    "chapter": "",
@@ -3744,7 +3837,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 gheiststrike missile launchers and twin desecrator cannon"
+     "base": "2 gheiststrike missile launchers and twin desecrator cannon",
+     "model": "",
+     "grants": [
+      "Gheiststrike missile launcher",
+      "Twin Desecrator cannon"
+     ]
     },
     {
      "text": "This model’s brimstone volcano lance and ectoplasma decimator can be replaced with 1 darkflame cannon and 1 warpshock harpoon.",
@@ -3754,7 +3852,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "brimstone volcano lance and ectoplasma decimator"
+     "base": "brimstone volcano lance and ectoplasma decimator",
+     "model": "",
+     "grants": [
+      "Brimstone volcano lance",
+      "Darkflame cannon",
+      "Warpshock harpoon"
+     ]
     }
    ],
    "chapter": "",
@@ -3862,7 +3966,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3975,7 +4081,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4158,7 +4266,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "enforcer pistol"
+     "base": "enforcer pistol",
+     "model": "",
+     "grants": [
+      "Autogun",
+      "Lasgun",
+      "Shotgun"
+     ]
     },
     {
      "text": "This model’s Enforcer melee weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li></ul>",
@@ -4168,7 +4282,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "enforcer melee weapon"
+     "base": "enforcer melee weapon",
+     "model": "",
+     "grants": [
+      "Power fist",
+      "Power weapon"
+     ]
     }
    ],
    "chapter": "",
@@ -4364,7 +4483,15 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Autocannon",
+      "Heavy bolter",
+      "Heavy stubber",
+      "Lascannon",
+      "Mortar"
+     ]
     }
    ],
    "chapter": "",
@@ -4497,7 +4624,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4615,7 +4744,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "ogryn weapon"
+     "base": "ogryn weapon",
+     "model": "",
+     "grants": [
+      "Ogryn power drill"
+     ]
     }
    ],
    "chapter": "",
@@ -4729,7 +4862,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4877,7 +5012,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5027,7 +5164,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5264,7 +5403,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "lasgun"
+     "base": "lasgun",
+     "model": "",
+     "grants": [
+      "Cultist sniper rifle",
+      "Flamer",
+      "Meltagun"
+     ]
     },
     {
      "text": "The Traitor Sergeant’s close combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
@@ -5274,7 +5419,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "close combat weapon"
+     "base": "close combat weapon",
+     "model": "",
+     "grants": [
+      "Chainsword",
+      "Power weapon"
+     ]
     },
     {
      "text": "The Traitor Sergeant’s corrupted pistol can be replaced with 1 boltgun.",
@@ -5284,7 +5434,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "corrupted pistol"
+     "base": "corrupted pistol",
+     "model": "",
+     "grants": [
+      "Boltgun"
+     ]
     }
    ],
    "chapter": "",
@@ -5436,7 +5590,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "diabolus heavy stubber"
+     "base": "diabolus heavy stubber",
+     "model": "",
+     "grants": [
+      "Havoc multi-launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -5577,7 +5735,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "diabolus heavy stubber"
+     "base": "diabolus heavy stubber",
+     "model": "",
+     "grants": [
+      "Daemonbreath meltagun"
+     ]
     }
    ],
    "chapter": "",
@@ -5729,7 +5891,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "diabolus heavy stubber"
+     "base": "diabolus heavy stubber",
+     "model": "",
+     "grants": [
+      "Daemonbreath meltagun"
+     ]
     }
    ],
    "chapter": "",
@@ -5870,7 +6036,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "diabolus heavy stubber"
+     "base": "diabolus heavy stubber",
+     "model": "",
+     "grants": [
+      "Havoc multi-launcher"
+     ]
     }
    ],
    "chapter": "",
@@ -6059,7 +6229,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "graviton pulsar"
+     "base": "graviton pulsar",
+     "model": "",
+     "grants": [
+      "Conversion beam cannon",
+      "Lightning lock",
+      "Rad cleanser",
+      "Volkite veuglaire",
+      "Siege claw"
+     ]
     },
     {
      "text": "This model’s volkite veuglaire can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 siege claw and 1 rad cleanser</li><li>1 graviton pulsar</li><li>1 lightning lock</li><li>1 conversion beam cannon</li></ul>",
@@ -6069,7 +6247,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "volkite veuglaire"
+     "base": "volkite veuglaire",
+     "model": "",
+     "grants": [
+      "Conversion beam cannon",
+      "Graviton pulsar",
+      "Lightning lock",
+      "Rad cleanser",
+      "Siege claw"
+     ]
     }
    ],
    "chapter": "",
@@ -6251,7 +6437,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "avenger chaincannon"
+     "base": "avenger chaincannon",
+     "model": "",
+     "grants": [
+      "Daemonbreath spear"
+     ]
     },
     {
      "text": "This model’s diabolus heavy stubber can be replaced with 1 havoc multi-launcher.",
@@ -6261,7 +6451,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "diabolus heavy stubber"
+     "base": "diabolus heavy stubber",
+     "model": "",
+     "grants": [
+      "Havoc multi-launcher"
+     ]
     },
     {
      "text": "This model’s slaughterclaw can be replaced with 1 reaper chaintalon.",
@@ -6271,7 +6465,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "slaughterclaw"
+     "base": "slaughterclaw",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",

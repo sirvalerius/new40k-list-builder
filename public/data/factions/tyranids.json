@@ -118,7 +118,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -674,7 +676,15 @@
      "limit": {
       "kind": "all"
      },
-     "base": "carnifex extra scything talons"
+     "base": "carnifex extra scything talons",
+     "model": "",
+     "grants": [
+      "Deathspitters with slimer maggots",
+      "Devourers with brainleech worms",
+      "Heavy venom cannon",
+      "Stranglethorn cannon",
+      "Carnifex crushing claws"
+     ]
     },
     {
      "text": "Any number of models can each have their Carnifex scything talons replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 deathspitters with slimer maggots</li><li>1 devourers with brainleech worms</li><li>1 Carnifex crushing claws</li></ul>",
@@ -683,7 +693,13 @@
      "limit": {
       "kind": "all"
      },
-     "base": "carnifex scything talons"
+     "base": "carnifex scything talons",
+     "model": "",
+     "grants": [
+      "Deathspitters with slimer maggots",
+      "Devourers with brainleech worms",
+      "Carnifex crushing claws"
+     ]
     },
     {
      "text": "Any number of models can each be equipped with 1 bio-plasma.",
@@ -692,7 +708,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Bio-plasma"
+     ]
     },
     {
      "text": "Any number of models can each be equipped with 1 spine banks.",
@@ -701,7 +721,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Spine banks"
+     ]
     }
    ],
    "chapter": "",
@@ -932,7 +956,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1426,7 +1452,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin stranglethorn cannon"
+     "base": "twin stranglethorn cannon",
+     "model": "",
+     "grants": [
+      "Twin heavy venom cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -1560,7 +1590,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1839,7 +1871,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2130,7 +2164,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "shockcannon"
+     "base": "shockcannon",
+     "model": "",
+     "grants": [
+      "Impaler cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -2292,7 +2330,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "monstrous bonesword and lash whip"
+     "base": "monstrous bonesword and lash whip",
+     "model": "",
+     "grants": [
+      "Heavy venom cannon",
+      "Stranglethorn cannon",
+      "Monstrous scything talons"
+     ]
     },
     {
      "text": "This model’s monstrous scything talons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy venom cannon*</li><li>1 stranglethorn cannon*</li></ul>",
@@ -2302,7 +2346,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "monstrous scything talons"
+     "base": "monstrous scything talons",
+     "model": "",
+     "grants": [
+      "Heavy venom cannon",
+      "Stranglethorn cannon"
+     ]
     },
     {
      "text": "*This model cannot be equipped with both a stranglethorn cannon and a heavy venom cannon. This model cannot be equipped with more than 1 heavy venom cannon, and it cannot be equipped with more than 1 stranglethorn cannon.",
@@ -2311,7 +2360,12 @@
      "limit": {
       "kind": "note"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Heavy venom cannon",
+      "Stranglethorn cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -2810,7 +2864,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3523,7 +3579,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4447,7 +4505,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4580,7 +4640,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Spinemaws"
+     ]
     }
    ],
    "chapter": "",
@@ -4808,7 +4872,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4925,7 +4991,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Spinemaws"
+     ]
     }
    ],
    "chapter": "",
@@ -5322,7 +5392,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "fleshborer"
+     "base": "fleshborer",
+     "model": "",
+     "grants": [
+      "Termagant devourer"
+     ]
     },
     {
      "text": "All models in this unit can each have their fleshborer replaced with 1 Termagant spinefists.",
@@ -5331,7 +5405,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "fleshborer"
+     "base": "fleshborer",
+     "model": "",
+     "grants": [
+      "Termagant spinefists"
+     ]
     },
     {
      "text": "For every 10 models in this unit, 1 model’s ranged weapon can be replaced with 1 shardlauncher",
@@ -5341,7 +5419,11 @@
       "kind": "per_n",
       "n": 10
      },
-     "base": "ranged weapon"
+     "base": "ranged weapon",
+     "model": "",
+     "grants": [
+      "Shardlauncher"
+     ]
     },
     {
      "text": "For every 10 models in this unit, 1 model’s ranged weapon can be replaced with 1 spike rifle.",
@@ -5351,7 +5433,11 @@
       "kind": "per_n",
       "n": 10
      },
-     "base": "ranged weapon"
+     "base": "ranged weapon",
+     "model": "",
+     "grants": [
+      "Spike rifle"
+     ]
     },
     {
      "text": "For every 10 models in this unit, 1 model’s ranged weapon can be replaced with 1 strangleweb",
@@ -5361,7 +5447,11 @@
       "kind": "per_n",
       "n": 10
      },
-     "base": "ranged weapon"
+     "base": "ranged weapon",
+     "model": "",
+     "grants": [
+      "Strangleweb"
+     ]
     }
    ],
    "chapter": "",
@@ -5515,7 +5605,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "massive scything talons"
+     "base": "massive scything talons",
+     "model": "",
+     "grants": [
+      "Massive crushing claws"
+     ]
     }
    ],
    "chapter": "",
@@ -5647,7 +5741,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6137,7 +6233,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6412,7 +6510,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "devourer"
+     "base": "devourer",
+     "model": "",
+     "grants": [
+      "Deathspitter",
+      "Spinefists"
+     ]
     },
     {
      "text": "For every 3 models in this unit, 1 model’s devourer can be replaced with 1 barbed strangler.",
@@ -6422,7 +6525,11 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": "devourer"
+     "base": "devourer",
+     "model": "",
+     "grants": [
+      "Barbed strangler"
+     ]
     },
     {
      "text": "For every 3 models in this unit, 1 model’s devourer can be replaced with 1 venom cannon.",
@@ -6432,7 +6539,11 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": "devourer"
+     "base": "devourer",
+     "model": "",
+     "grants": [
+      "Venom cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -6704,7 +6815,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "fleshborer hive"
+     "base": "fleshborer hive",
+     "model": "",
+     "grants": [
+      "Acid spray",
+      "Rupture cannon"
+     ]
     },
     {
      "text": "Equip Rupture cannon",
@@ -6713,7 +6829,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Rupture cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -6842,7 +6962,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "scything talons and rending claws"
+     "base": "scything talons and rending claws",
+     "model": "",
+     "grants": [
+      "Bone cleaver, lash whip and rending claws",
+      "Crushing claws and rending claws"
+     ]
     }
    ],
    "chapter": "",
@@ -7232,7 +7357,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "monstrous bonesword and lash whip"
+     "base": "monstrous bonesword and lash whip",
+     "model": "",
+     "grants": [
+      "Heavy venom cannon",
+      "Stranglethorn cannon",
+      "Monstrous scything talons"
+     ]
     }
    ],
    "chapter": "",
@@ -7359,7 +7490,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",

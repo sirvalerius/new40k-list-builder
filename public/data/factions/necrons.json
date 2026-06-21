@@ -141,7 +141,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "gauss cannon"
+     "base": "gauss cannon",
+     "model": "",
+     "grants": [
+      "Tesla cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -271,7 +275,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -396,7 +402,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -665,7 +673,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "gauss scalpel"
+     "base": "gauss scalpel",
+     "model": "",
+     "grants": [
+      "Tesla caster"
+     ]
     },
     {
      "text": "1 model’s gauss scalpel or tesla caster can be replaced with 1 atomiser beam and 1 nanoscarab projector.",
@@ -675,7 +687,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "gauss scalpel or tesla caster"
+     "base": "gauss scalpel or tesla caster",
+     "model": "",
+     "grants": [
+      "Atomiser beam",
+      "Gauss scalpel",
+      "Tesla caster"
+     ]
     },
     {
      "text": "1 model’s gauss scalpel or tesla caster can be replaced with 1 accelerator mandible.",
@@ -685,7 +703,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "gauss scalpel or tesla caster"
+     "base": "gauss scalpel or tesla caster",
+     "model": "",
+     "grants": [
+      "Gauss scalpel",
+      "Tesla caster"
+     ]
     }
    ],
    "chapter": "",
@@ -1031,7 +1054,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Particle beamer"
+     ]
     },
     {
      "text": "Any number of models can each be equipped with 1 fabricator claw array.",
@@ -1040,7 +1067,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of models can each be equipped with 1 gloom prism.",
@@ -1049,7 +1078,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1177,7 +1208,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin gauss reaper"
+     "base": "twin gauss reaper",
+     "model": "",
+     "grants": [
+      "Transdimensional isolator"
+     ]
     }
    ],
    "chapter": "",
@@ -1299,7 +1334,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1421,7 +1458,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1579,7 +1618,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Particle caster",
+      "Transdimensional beamer"
+     ]
     },
     {
      "text": "Any number of models can each have their vicious claws replaced with whip coils.",
@@ -1588,7 +1632,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "vicious claws"
+     "base": "vicious claws",
+     "model": "",
+     "grants": [
+      "Whip coils"
+     ]
     }
    ],
    "chapter": "",
@@ -1753,7 +1801,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "gauss cannon"
+     "base": "gauss cannon",
+     "model": "",
+     "grants": [
+      "Tesla cannon"
+     ]
     },
     {
      "text": "This model’s staff of light can be replaced with 1 Overlord’s blade.",
@@ -1763,7 +1815,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "staff of light"
+     "base": "staff of light",
+     "model": "",
+     "grants": [
+      "Overlord’s blade"
+     ]
     },
     {
      "text": "This model can be equipped with 1 resurrection orb.",
@@ -1773,7 +1829,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3761,7 +3819,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "gauss blaster"
+     "base": "gauss blaster",
+     "model": "",
+     "grants": [
+      "Tesla carbine"
+     ]
     }
    ],
    "chapter": "",
@@ -4201,7 +4263,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "gauss destructor"
+     "base": "gauss destructor",
+     "model": "",
+     "grants": [
+      "Enmitic exterminator"
+     ]
     }
    ],
    "chapter": "",
@@ -4350,7 +4416,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "staff of light"
+     "base": "staff of light",
+     "model": "",
+     "grants": [
+      "Lord’s blade"
+     ]
     },
     {
      "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 nanoscarab amulet</li><li>1 resurrection orb</li></ul>",
@@ -4360,7 +4430,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4502,7 +4574,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "staff of light"
+     "base": "staff of light",
+     "model": "",
+     "grants": [
+      "Lord’s blade"
+     ]
     },
     {
      "text": "This model can be equipped with 1 resurrection orb.",
@@ -4512,7 +4588,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4635,7 +4713,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "warscythe"
+     "base": "warscythe",
+     "model": "",
+     "grants": [
+      "Hyperphase sword"
+     ]
     }
    ],
    "chapter": "",
@@ -4790,7 +4872,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "4 gauss flux arcs"
+     "base": "4 gauss flux arcs",
+     "model": "",
+     "grants": [
+      "Death ray",
+      "Gauss flux arc"
+     ]
     }
    ],
    "chapter": "",
@@ -4919,7 +5006,11 @@
      "limit": {
       "kind": "all"
      },
-     "base": "gauss flayer"
+     "base": "gauss flayer",
+     "model": "",
+     "grants": [
+      "Gauss reaper"
+     ]
     }
    ],
    "chapter": "",
@@ -5651,7 +5742,9 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5923,7 +6016,15 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "tachyon arrow and overlord’s blade"
+     "base": "tachyon arrow and overlord’s blade",
+     "model": "",
+     "grants": [
+      "Staff of light",
+      "Tachyon arrow",
+      "Overlord’s blade",
+      "Staff of light",
+      "Voidscythe"
+     ]
     },
     {
      "text": "If this model is not equipped with a tachyon arrow, it can be equipped with 1 resurrection orb.",
@@ -5933,7 +6034,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Tachyon arrow"
+     ]
     }
    ],
    "chapter": "",
@@ -6512,7 +6617,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "gauss exterminator"
+     "base": "gauss exterminator",
+     "model": "",
+     "grants": [
+      "Focused death ray",
+      "Heat cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -6678,7 +6788,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 singularity generators"
+     "base": "2 singularity generators",
+     "model": "",
+     "grants": [
+      "Singularity generator",
+      "Synaptic obliterator",
+      "Transdimensional projector"
+     ]
     }
    ],
    "chapter": "",
@@ -6808,7 +6924,9 @@
       "kind": "per_n",
       "n": 3
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7211,7 +7329,13 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 tesla cannons"
+     "base": "2 tesla cannons",
+     "model": "",
+     "grants": [
+      "Gauss cannon",
+      "Particle beamer",
+      "Tesla cannon"
+     ]
     }
    ],
    "chapter": "",
@@ -7728,7 +7852,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "twin gauss blaster"
+     "base": "twin gauss blaster",
+     "model": "",
+     "grants": [
+      "Particle beamer",
+      "Twin tesla carbine"
+     ]
     },
     {
      "text": "Any number of models can each be equipped with 1 shieldvanes.",
@@ -7737,7 +7866,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of models can each be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 nebuloscope</li><li>1 shadowloom</li></ul>",
@@ -7746,7 +7877,9 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7875,7 +8008,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": ""
+     "base": "",
+     "model": "",
+     "grants": [
+      "Gauss exterminator",
+      "Twin tesla destructor"
+     ]
     }
    ],
    "chapter": "",
@@ -8266,7 +8404,12 @@
      "limit": {
       "kind": "all"
      },
-     "base": "rod of covenant"
+     "base": "rod of covenant",
+     "model": "",
+     "grants": [
+      "Particle caster",
+      "Voidblade"
+     ]
     }
    ],
    "chapter": "",
@@ -8431,7 +8574,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "heat ray"
+     "base": "heat ray",
+     "model": "",
+     "grants": [
+      "Particle shredder",
+      "Heavy gauss cannon array"
+     ]
     }
    ],
    "chapter": "",
