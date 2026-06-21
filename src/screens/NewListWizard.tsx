@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import type { FactionIndexEntry } from '../lib/types';
-import type { Rules } from '../lib/types';
+import type { FactionIndexEntry, Rules } from '../lib/types';
 import { intOf } from '../lib/helpers';
 
 export function NewListWizard({
@@ -14,9 +13,24 @@ export function NewListWizard({
   onCreate: (factionId: string, battleSizeId: string, name: string) => void;
   onCancel: () => void;
 }) {
+  // Battle size whose points are closest to a given max-points target.
+  const closestBs = (pts: number) =>
+    [...rules.battle_sizes].sort(
+      (a, b) => Math.abs(intOf(a.points) - pts) - Math.abs(intOf(b.points) - pts),
+    )[0]?.id ?? '';
+
   const [step, setStep] = useState<1 | 2>(1);
-  const [battleSizeId, setBattleSizeId] = useState<string>('');
+  const [name, setName] = useState('');
+  const [maxPoints, setMaxPoints] = useState(2000);
+  const [battleSizeId, setBattleSizeId] = useState<string>(() => closestBs(2000));
   const [query, setQuery] = useState('');
+  const [factionId, setFactionId] = useState('');
+
+  // Editing max points pre-selects the matching battle size (the user can still override).
+  function onMaxPoints(v: number) {
+    setMaxPoints(v);
+    setBattleSizeId(closestBs(v));
+  }
 
   const sorted = [...factions].sort((a, b) => a.name.localeCompare(b.name));
   const filtered = sorted.filter((f) =>
@@ -26,16 +40,39 @@ export function NewListWizard({
   if (step === 1) {
     return (
       <div>
-        <h2>Choose a battle size</h2>
+        <h2>New list</h2>
+
+        <label className="field-label">List name</label>
+        <input
+          placeholder="e.g. Crusade of the Emperor's Wrath"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          className="mb"
+        />
+
+        <label className="field-label">Max points</label>
+        <input
+          type="number"
+          inputMode="numeric"
+          min={250}
+          max={5000}
+          step={50}
+          value={maxPoints}
+          onChange={(e) => onMaxPoints(intOf(e.target.value))}
+          className="mb"
+        />
+
+        <h3 className="muted">Battle size</h3>
         <div className="col">
           {rules.battle_sizes.map((b) => (
             <button
               key={b.id}
-              className={`card tappable ${
-                battleSizeId === b.id ? 'primary' : 'ghost'
-              }`}
+              className={`card tappable ${battleSizeId === b.id ? 'primary' : 'ghost'}`}
               style={{ textAlign: 'left', display: 'block', height: 'auto', padding: 14 }}
-              onClick={() => setBattleSizeId(b.id)}
+              onClick={() => {
+                setBattleSizeId(b.id);
+                setMaxPoints(intOf(b.points));
+              }}
             >
               <div style={{ fontWeight: 700, fontSize: '1.05rem' }}>
                 {b.name} — {intOf(b.points)} pts
@@ -49,22 +86,25 @@ export function NewListWizard({
             </button>
           ))}
         </div>
+
         <div className="row mt">
           <button className="ghost" onClick={onCancel}>
             Cancel
           </button>
           <div className="spacer" />
-          <button
-            className="primary"
-            disabled={!battleSizeId}
-            onClick={() => setStep(2)}
-          >
+          <button className="primary" disabled={!battleSizeId} onClick={() => setStep(2)}>
             Next →
           </button>
         </div>
       </div>
     );
   }
+
+  const create = () => {
+    if (!factionId) return;
+    const fname = factions.find((f) => f.id === factionId)?.name ?? 'New';
+    onCreate(factionId, battleSizeId, name.trim() || `${fname} list`);
+  };
 
   return (
     <div>
@@ -79,9 +119,9 @@ export function NewListWizard({
         {filtered.map((f) => (
           <button
             key={f.id}
-            className="card tappable ghost list-tile"
+            className={`card tappable list-tile ${factionId === f.id ? 'det-selected' : 'ghost'}`}
             style={{ textAlign: 'left', height: 'auto', padding: 12 }}
-            onClick={() => onCreate(f.id, battleSizeId, `${f.name} list`)}
+            onClick={() => setFactionId(f.id)}
           >
             <div className="meta">
               <div className="name">{f.name}</div>
@@ -90,7 +130,7 @@ export function NewListWizard({
                 {f.detachment_count} detachments
               </div>
             </div>
-            <span aria-hidden>→</span>
+            <span aria-hidden>{factionId === f.id ? '✓' : '→'}</span>
           </button>
         ))}
         {filtered.length === 0 && <div className="empty">No match.</div>}
@@ -98,6 +138,10 @@ export function NewListWizard({
       <div className="row mt">
         <button className="ghost" onClick={() => setStep(1)}>
           ← Back
+        </button>
+        <div className="spacer" />
+        <button className="primary" disabled={!factionId} onClick={create}>
+          Create
         </button>
       </div>
     </div>

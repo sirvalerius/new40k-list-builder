@@ -502,6 +502,15 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 /* feedback form textarea */
 .wpn-profile { margin-top: 2px; line-height: 1.35; font-variant-numeric: tabular-nums; }
 
+.field-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  margin: 0 0 4px;
+}
+
 /* favourites star + selected-detachment highlight */
 .star { min-width: 34px; width: 34px; height: 34px; font-size: 18px; color: var(--accent-2); padding: 0; }
 .card.det-selected { border-color: var(--accent); background: #1b1417; }
