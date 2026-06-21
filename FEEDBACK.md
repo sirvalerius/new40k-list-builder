@@ -1405,3 +1405,384 @@ Sul testo degli Enanchements metti da che battagliore provengono. Metti un toolt
 }
 ```
 </details>
+
+---
+### 2026-06-21T20:15:16.190Z
+
+_Emperor’s Children list — Emperor’s Children · Strike Force · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
+
+In generale su questa lista nessuno degli enanchements controlla correttamente i requisiti delle keyword. Penso sia così per tutti gli enanchements della codebase e bisognerebbe verificare
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqo7g26q4kmzldi",
+  "name": "Emperor’s Children list",
+  "factionId": "EC",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000001036",
+    "000900003"
+  ],
+  "units": [
+    {
+      "uid": "mqo7spqs0wli4yy",
+      "datasheetId": "000004083",
+      "name": "Lucius the Eternal",
+      "pointsCost": 130,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo7suoxfd6zwlr",
+      "datasheetId": "000004087",
+      "name": "Daemon Prince of Slaanesh with Wings",
+      "pointsCost": 205,
+      "pointsLabel": "1 model (1st unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo7t0u7kc8iwk9",
+      "datasheetId": "000004078",
+      "name": "Lord Exultant",
+      "pointsCost": 80,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Rapture lash (instead of plasma pistol)",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqo7t5j2j96b3rb",
+      "datasheetId": "000004078",
+      "name": "Lord Exultant",
+      "pointsCost": 80,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Rapture lash (instead of plasma pistol)",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqo7u5ff4u4lhgx",
+      "datasheetId": "000004091",
+      "name": "Maulerfiend",
+      "pointsCost": 130,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "This model’s lasher tendrils can be replaced with 2 magma cutters.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqo7udrl5hjzesc",
+      "datasheetId": "000004090",
+      "name": "Chaos Spawn",
+      "pointsCost": 70,
+      "pointsLabel": "2 models",
+      "variantKey": "2 models",
+      "modelCount": 2,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo7uiyigrbycao",
+      "datasheetId": "000004208",
+      "name": "Defiler",
+      "pointsCost": 290,
+      "pointsLabel": "1 model (1st unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Heavy reaper autocannon (instead of heavy baleflamer)",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "Heavy reaper autocannon (instead of heavy missile launcher)",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqo7wzm8loth2or",
+      "datasheetId": "000004095",
+      "name": "Daemonettes",
+      "pointsCost": 90,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "requiresDetachment": "Carnival of Excess",
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo7x29svuyllw9",
+      "datasheetId": "000004095",
+      "name": "Daemonettes",
+      "pointsCost": 90,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "requiresDetachment": "Carnival of Excess",
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo7x1x96cqxwnf",
+      "datasheetId": "000004095",
+      "name": "Daemonettes",
+      "pointsCost": 90,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "requiresDetachment": "Carnival of Excess",
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo7x9bazg70twg",
+      "datasheetId": "000004080",
+      "name": "Infractors",
+      "pointsCost": 85,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "The Obsessionist’s bolt pistol can be replaced with 1 plasma pistol.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "The Obsessionist’s power sword can be replaced with 1 rapture lash.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqo7yzqhjppjtn2",
+      "datasheetId": "000004080",
+      "name": "Infractors",
+      "pointsCost": 85,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "The Obsessionist’s bolt pistol can be replaced with 1 plasma pistol.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "The Obsessionist’s power sword can be replaced with 1 rapture lash.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqo7xml0ojncqcb",
+      "datasheetId": "000004079",
+      "name": "Tormentors",
+      "pointsCost": 80,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "The Obsessionist’s bolt pistol can be replaced with 1 plasma pistol.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "The Obsessionist’s power sword can be replaced with 1 rapture lash.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "For every 5 models in this unit, 1 Tormentor’s boltgun can be replaced with 1 meltagun.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "1 Tormentor can be equipped with 1 icon of excess.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqo7zn4uzhe1f1f",
+      "datasheetId": "000004089",
+      "name": "Flawless Blades",
+      "pointsCost": 190,
+      "pointsLabel": "6 models",
+      "variantKey": "6 models",
+      "modelCount": 6,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": []
+    },
+    {
+      "uid": "mqo80le5y0ddea3",
+      "datasheetId": "000004088",
+      "name": "Noise Marines",
+      "pointsCost": 145,
+      "pointsLabel": "6 models (1st-2nd unit)",
+      "variantKey": "6 models",
+      "modelCount": 6,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Up to 2 Noise Marines can each replace their sonic blaster with 1 blastmaster.",
+          "cost": 0,
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "uid": "mqo80rntctn4vyz",
+      "datasheetId": "000004093",
+      "name": "Chaos Rhino",
+      "pointsCost": 80,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Combi-weapon",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "This model can be equipped with 1 havoc launcher or can replace 1 combi-bolter with 1 havoc launcher.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqo821062cbn6m7",
+      "datasheetId": "000004098",
+      "name": "Seekers",
+      "pointsCost": 80,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "requiresDetachment": "Carnival of Excess",
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "1 Seeker that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "1 Seeker that is not equipped with an instrument of Chaos can be equipped with 1 daemonic icon.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    }
+  ],
+  "createdAt": 1782071645714,
+  "updatedAt": 1782072678361
+}
+```
+</details>
