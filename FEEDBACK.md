@@ -625,3 +625,155 @@ Sotto le opzioni arma che aggiungono un profilo arma metti il profilo dell'arma 
 _New list — 11th edition · #new40k · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
 
 Chiedi un nome e un punteggio massimo per la creazione della lista. A seconda del punteggio massimo preseleziona la grandezza della battaglia, ma aspetta comunque la conferma dell'utente che prema su crea
+
+---
+### 2026-06-21T20:06:55.879Z
+
+_Emperor’s Children list — Emperor’s Children · Strike Force · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
+
+Non viene aggiunto il costo in punti degli autocannon sul defiler. Controlla se altri equipaggiamenti hanno costo in punti ed aggiorna tutto.
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqo7g26q4kmzldi",
+  "name": "Emperor’s Children list",
+  "factionId": "EC",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000001036",
+    "000900003"
+  ],
+  "units": [
+    {
+      "uid": "mqo7spqs0wli4yy",
+      "datasheetId": "000004083",
+      "name": "Lucius the Eternal",
+      "pointsCost": 130,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo7suoxfd6zwlr",
+      "datasheetId": "000004087",
+      "name": "Daemon Prince of Slaanesh with Wings",
+      "pointsCost": 205,
+      "pointsLabel": "1 model (1st unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo7t0u7kc8iwk9",
+      "datasheetId": "000004078",
+      "name": "Lord Exultant",
+      "pointsCost": 80,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Rapture lash (instead of plasma pistol)",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqo7t5j2j96b3rb",
+      "datasheetId": "000004078",
+      "name": "Lord Exultant",
+      "pointsCost": 80,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Rapture lash (instead of plasma pistol)",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqo7u5ff4u4lhgx",
+      "datasheetId": "000004091",
+      "name": "Maulerfiend",
+      "pointsCost": 130,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo7udrl5hjzesc",
+      "datasheetId": "000004090",
+      "name": "Chaos Spawn",
+      "pointsCost": 70,
+      "pointsLabel": "2 models",
+      "variantKey": "2 models",
+      "modelCount": 2,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo7uiyigrbycao",
+      "datasheetId": "000004208",
+      "name": "Defiler",
+      "pointsCost": 290,
+      "pointsLabel": "1 model (1st unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Heavy reaper autocannon (instead of heavy baleflamer)",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "Heavy reaper autocannon (instead of heavy missile launcher)",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    }
+  ],
+  "createdAt": 1782071645714,
+  "updatedAt": 1782072344335
+}
+```
+</details>
