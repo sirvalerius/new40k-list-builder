@@ -38,6 +38,10 @@ export function equippedWeapons(ds: Datasheet, selected?: ChosenWargear[]): Weap
   const replacedNow = new Set<string>();       // base swapped away by a chosen single-model option
   const addonForWeapon = new Map<string, string>(); // weapon -> the sub-model it belongs to
   for (const o of opts) {
+    // Constraint notes ("* X cannot be replaced") are informational — they neither grant nor
+    // replace a weapon. Skipping them stops a named base weapon (e.g. the Sternguard bolt rifle)
+    // being mistaken for an unchosen upgrade and hidden from the card.
+    if (o.limit?.kind === 'note') continue;
     for (const g of o.grants ?? []) {
       grantedAll.add(normName(g));
       if (chosen.has(o.text)) grantedNow.add(normName(g));

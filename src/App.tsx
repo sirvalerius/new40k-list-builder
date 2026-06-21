@@ -36,9 +36,12 @@ export default function App() {
     if (!vv) return;
     const root = document.documentElement;
     const update = () => {
-      root.style.setProperty('--vv-dx', `${vv.offsetLeft + vv.width - window.innerWidth}px`);
-      root.style.setProperty('--vv-dy', `${vv.offsetTop + vv.height - window.innerHeight}px`);
-      root.style.setProperty('--vv-scale', `${1 / vv.scale}`);
+      // Only counteract the viewport while actually pinch-zoomed; at normal zoom keep an exact
+      // identity transform so the fixed bars don't drift/overflow from sub-pixel width diffs.
+      const zoomed = vv.scale > 1.01;
+      root.style.setProperty('--vv-dx', zoomed ? `${vv.offsetLeft + vv.width - window.innerWidth}px` : '0px');
+      root.style.setProperty('--vv-dy', zoomed ? `${vv.offsetTop + vv.height - window.innerHeight}px` : '0px');
+      root.style.setProperty('--vv-scale', zoomed ? `${1 / vv.scale}` : '1');
     };
     update();
     vv.addEventListener('resize', update);
