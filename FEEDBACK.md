@@ -327,3 +327,10 @@ le sezioni weapons dovrebbero essere formattate come delle tabelle più leggibil
 }
 ```
 </details>
+
+---
+### 2026-06-21T18:33:24.291Z
+
+_New40k List Builder — 11th edition · #new40k · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
+
+Metti la possibilità di aggiungere distaccamenti e unità tra i preferiti che compariranno in cima della lista di riferimento. Aggiungi una barra di ricerca anche per i detachment. Sopra ancora ai preferiti dovranno essere in lista i distaccamenti selezionati. Per i distaccamenti aggiungi anche come dato la lista degli enanchement che sblocca.
