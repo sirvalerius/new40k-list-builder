@@ -2045,3 +2045,118 @@ Non c'è visibilità delle unità a cui le unità possono unirsi con leader o co
 }
 ```
 </details>
+
+---
+### 2026-06-21T20:43:33.651Z
+
+_Space Marines list — Space Marines · Strike Force · Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
+
+La card delle sternguard mi pare non abbiano il profilo del loro fucile base
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqnridxkdhsrk52",
+  "name": "Space Marines list",
+  "factionId": "SM",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000001119",
+    "000900007"
+  ],
+  "units": [
+    {
+      "uid": "mqnrjjmvfu9nrhg",
+      "datasheetId": "000004167",
+      "name": "Suboden Khan",
+      "pointsCost": 100,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "attachedToUid": "mqnrk20y9lpiilo"
+    },
+    {
+      "uid": "mqnrk20y9lpiilo",
+      "datasheetId": "000002712",
+      "name": "Outrider Squad",
+      "pointsCost": 140,
+      "pointsLabel": "6 models",
+      "variantKey": "6 models",
+      "modelCount": 6,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "1 Invader ATV",
+          "cost": 60,
+          "qty": 1
+        },
+        {
+          "name": "An Invader ATV’s onslaught gatling cannon can be replaced with 1 multi-melta.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqo93b1dopplgbt",
+      "datasheetId": "000002255",
+      "name": "Sternguard Veteran Squad",
+      "pointsCost": 100,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": []
+    },
+    {
+      "uid": "mqo5gasz8et531q",
+      "datasheetId": "000001191",
+      "name": "Stormraven Gunship",
+      "pointsCost": 280,
+      "pointsLabel": "1 model (1st unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": []
+    },
+    {
+      "uid": "mqo8e4g7i1p74og",
+      "datasheetId": "000001157",
+      "name": "Intercessor Squad",
+      "pointsCost": 80,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": []
+    }
+  ],
+  "createdAt": 1782044880392,
+  "updatedAt": 1782074413583,
+  "subFaction": "White Scars"
+}
+```
+</details>
