@@ -363,7 +363,7 @@ export function Builder({
           onRemove={removeUnit}
         />
       )}
-      {tab === 'bunker' && <BunkerMode list={list} fd={fd} />}
+      {tab === 'bunker' && <BunkerMode list={list} fd={fd} rules={rules} />}
 
       <SummaryBar result={result} />
     </div>

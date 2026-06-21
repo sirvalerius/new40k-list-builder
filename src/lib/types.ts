@@ -35,6 +35,7 @@ export interface Rules {
   allies: AllyRule[];
   faction_supers: FactionSuper[];
   force_dispositions: string[];
+  core_stratagems?: Stratagem[]; // rulebook stratagems available to every army
   attribution: string;
 }
 

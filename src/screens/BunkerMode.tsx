@@ -1,4 +1,4 @@
-import type { ArmyList, FactionData } from '../lib/types';
+import type { ArmyList, FactionData, Rules } from '../lib/types';
 import { DatasheetCard } from '../components/DatasheetCard';
 import { Collapsible } from '../components/Collapsible';
 import {
@@ -11,13 +11,23 @@ import {
 
 // In-game ("bunker") reference: one ready-to-use card per fielded unit, with a Leader/Support
 // and its bodyguard merged into the same card, plus the stratagems that apply to that unit.
-export function BunkerMode({ list, fd }: { list: ArmyList; fd: FactionData }) {
+export function BunkerMode({
+  list,
+  fd,
+  rules,
+}: {
+  list: ArmyList;
+  fd: FactionData;
+  rules: Rules;
+}) {
   const dsById = datasheetMap(fd);
   const vocab = factionKeywordVocab(fd);
   const chosenDet = fd.detachments.filter((d) => list.detachmentIds.includes(d.id));
-  const strats = chosenDet.flatMap((d) =>
-    d.stratagems.map((s) => ({ ...s, detach: d.name })),
-  );
+  // core stratagems (rulebook, every army) + the chosen detachments' stratagems
+  const strats = [
+    ...(rules.core_stratagems ?? []).map((s) => ({ ...s, detach: 'Core Stratagem' })),
+    ...chosenDet.flatMap((d) => d.stratagems.map((s) => ({ ...s, detach: d.name }))),
+  ];
 
   if (!list.units.length)
     return <div className="empty">Aggiungi unità per usare la modalità partita.</div>;

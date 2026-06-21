@@ -396,5 +396,67 @@
   "Priority Assets",
   "Reconnaissance"
  ],
+ "core_stratagems": [
+  {
+   "name": "Command Re-roll",
+   "cp_cost": "1",
+   "type": "Core Stratagem",
+   "description": "WHEN: Any phase, just after you make an Advance, Charge, Hit, Wound, Damage, Save, Hazard or number-of-attacks roll for a friendly unit or model. TARGET: That unit or model. EFFECT: Re-roll that roll (if rolling several dice, re-roll one of them)."
+  },
+  {
+   "name": "Epic Challenge",
+   "cp_cost": "1",
+   "type": "Core Stratagem",
+   "description": "WHEN: Fight phase, just after a friendly CHARACTER unit is selected to fight. TARGET: That CHARACTER unit. EFFECT: Until the end of the phase, one CHARACTER model in your unit has the [PRECISION] ability on its melee weapons."
+  },
+  {
+   "name": "Insane Bravery",
+   "cp_cost": "1",
+   "type": "Core Stratagem",
+   "description": "WHEN: Battle-shock step of your Command phase, just before you take a battle-shock test for a friendly unit. TARGET: That unit. EFFECT: That battle-shock test is automatically passed. RESTRICTIONS: Once per battle."
+  },
+  {
+   "name": "Explosives",
+   "cp_cost": "1",
+   "type": "Core Stratagem",
+   "description": "WHEN: Your Shooting phase. TARGET: One friendly unengaged GRENADES unit that is eligible to shoot and did not Advance. EFFECT: Select an enemy unit within 8\" of and visible to a model in your unit; roll six D6: for each 4+ that enemy unit suffers 1 mortal wound."
+  },
+  {
+   "name": "Crushing Impact",
+   "cp_cost": "1",
+   "type": "Core Stratagem",
+   "description": "WHEN: Your Charge phase, just after a friendly MONSTER or VEHICLE unit ends a charge move. TARGET: That MONSTER or VEHICLE unit. EFFECT: Roll a number of D6 equal to its Toughness: for each 1 your unit suffers 1 mortal wound; for each 5+ an engaged enemy unit suffers 1 mortal wound (max 6)."
+  },
+  {
+   "name": "Rapid Ingress",
+   "cp_cost": "1",
+   "type": "Core Stratagem",
+   "description": "WHEN: End of your opponent's Movement phase. TARGET: One friendly unit in Strategic Reserves. EFFECT: Your unit makes an Ingress move. RESTRICTIONS: Not during the first battle round; cannot select an Aircraft."
+  },
+  {
+   "name": "Fire Overwatch",
+   "cp_cost": "1",
+   "type": "Core Stratagem",
+   "description": "WHEN: Your opponent's Movement or Charge phase, just after an enemy unit ends a move within 24\". TARGET: One friendly unengaged unit. EFFECT: Your unit shoots using snap shooting — it may target only that enemy unit and hits only on unmodified 6s."
+  },
+  {
+   "name": "Smokescreen",
+   "cp_cost": "1",
+   "type": "Core Stratagem",
+   "description": "WHEN: Start of your opponent's Shooting phase. TARGET: One friendly SMOKE unit. EFFECT: Until the end of the phase, that unit (and units screened by it) has the benefit of cover."
+  },
+  {
+   "name": "Heroic Intervention",
+   "cp_cost": "1",
+   "type": "Core Stratagem",
+   "description": "WHEN: End of your opponent's Charge phase. TARGET: One friendly unengaged unit within 12\" of one or more enemy units. EFFECT: Resolve a charge with your unit (Leap to Defend, or Into the Fray for +1CP)."
+  },
+  {
+   "name": "Counteroffensive",
+   "cp_cost": "2",
+   "type": "Core Stratagem",
+   "description": "WHEN: Fight step of your opponent's Fight phase, just after an enemy unit has resolved its attacks. TARGET: One friendly unit eligible to fight. EFFECT: Until the end of the phase, your unit has the Fights First ability and must be the next unit you select to fight."
+  }
+ ],
  "attribution": "Powered by Wahapedia"
 }
