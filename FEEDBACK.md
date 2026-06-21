@@ -618,3 +618,10 @@ Sotto le opzioni arma che aggiungono un profilo arma metti il profilo dell'arma 
 }
 ```
 </details>
+
+---
+### 2026-06-21T19:54:01.035Z
+
+_New list — 11th edition · #new40k · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
+
+Chiedi un nome e un punteggio massimo per la creazione della lista. A seconda del punteggio massimo preseleziona la grandezza della battaglia, ma aspetta comunque la conferma dell'utente che prema su crea
