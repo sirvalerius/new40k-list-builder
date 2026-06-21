@@ -144,3 +144,74 @@ Quando ci sono opzioni arma a spunta che diventano non piu selezionabili dovrebb
 }
 ```
 </details>
+
+---
+### 2026-06-21T17:25:47.263Z
+
+_Space Marines list — Space Marines · Strike Force · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
+
+Gli stratagemmi applicati sono sbagliati, non tengono conto del requisito di psyker o veicle fly
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqo1yakixzjtept",
+  "name": "Space Marines list",
+  "factionId": "SM",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000001119",
+    "000000994"
+  ],
+  "units": [
+    {
+      "uid": "mqo20aqvezef4em",
+      "datasheetId": "000001191",
+      "name": "Stormraven Gunship",
+      "pointsCost": 280,
+      "pointsLabel": "1 model (1st unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo21ztqy5fezl8",
+      "datasheetId": "000001606",
+      "name": "Assault Intercessor Squad",
+      "pointsCost": 75,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo22j6uiok7avs",
+      "datasheetId": "000002266",
+      "name": "Librarian",
+      "pointsCost": 60,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    }
+  ],
+  "createdAt": 1782062418690,
+  "updatedAt": 1782062616486,
+  "subFaction": "White Scars"
+}
+```
+</details>
