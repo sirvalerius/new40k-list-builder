@@ -2614,7 +2614,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 3 models in this unit, 1 model can be equipped with one of the following::<ul style=\"list-style-type:circle\"><li>1 HYLas rotary cannon</li><li>1 ion beamer</li></ul>",
+     "text": "HYLas rotary cannon",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2622,9 +2622,24 @@
       "n": 3
      },
      "base": "",
+     "group": "000002601-0",
      "model": "",
      "grants": [
-      "HYLas rotary cannon",
+      "HYLas rotary cannon"
+     ]
+    },
+    {
+     "text": "Ion beamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 3
+     },
+     "base": "",
+     "group": "000002601-0",
+     "model": "",
+     "grants": [
       "Ion beamer"
      ]
     },

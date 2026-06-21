@@ -287,6 +287,12 @@ h3 { font-size: 0.98rem; }
   padding: 20px 14px calc(140px + var(--safe-bottom));
   line-height: 1.6;
 }
+.footer .credit {
+  color: var(--text);
+  font-size: 0.82rem;
+  margin-bottom: 6px;
+}
+.footer .credit a { color: var(--accent-2); font-weight: 600; }
 
 .chip-toggle {
   display: inline-flex;

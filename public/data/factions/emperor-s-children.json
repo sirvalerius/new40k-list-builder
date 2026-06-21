@@ -175,7 +175,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter</li><li>1 combi-weapon</li></ul>",
+     "text": "Combi-bolter",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -183,9 +183,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000004082-0",
      "model": "",
      "grants": [
-      "Combi-bolter",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Combi-weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000004082-0",
+     "model": "",
+     "grants": [
       "Combi-weapon"
      ]
     },
@@ -347,7 +362,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-bolter</li><li>1 combi-weapon</li></ul>",
+     "text": "Combi-bolter",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -355,9 +370,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000004093-0",
      "model": "",
      "grants": [
-      "Combi-bolter",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Combi-weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000004093-0",
+     "model": "",
+     "grants": [
       "Combi-weapon"
      ]
     },
@@ -2458,7 +2488,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>living whip</li><li>ritual knife</li><li>shining aegis</li></ul>",
+     "text": "Living whip",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2466,11 +2496,39 @@
       "max": 1
      },
      "base": "",
+     "group": "000004097-0",
      "model": "",
      "grants": [
-      "Living whip",
+      "Living whip"
+     ]
+    },
+    {
+     "text": "Ritual knife",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000004097-0",
+     "model": "",
+     "grants": [
       "Ritual knife"
      ]
+    },
+    {
+     "text": "Shining aegis",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000004097-0",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",

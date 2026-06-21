@@ -729,7 +729,7 @@
      ]
     },
     {
-     "text": "The Cloud Dancer Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
+     "text": "Dissonance pistol",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -737,9 +737,24 @@
       "max": 1
      },
      "base": "",
-     "model": "CLOUD DANCER FELARCH",
+     "group": "000004170-1",
+     "model": "",
      "grants": [
-      "Dissonance pistol",
+      "Dissonance pistol"
+     ]
+    },
+    {
+     "text": "Void sabre",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000004170-1",
+     "model": "",
+     "grants": [
       "Void sabre"
      ]
     },
@@ -1163,7 +1178,7 @@
      ]
     },
     {
-     "text": "The Corsair Reaver Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
+     "text": "Dissonance pistol",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1171,10 +1186,25 @@
       "max": 1
      },
      "base": "",
-     "model": "CORSAIR REAVER FELARCH",
+     "group": "000004171-2",
+     "model": "",
      "grants": [
-      "Void sabre",
       "Dissonance pistol"
+     ]
+    },
+    {
+     "text": "Void sabre",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000004171-2",
+     "model": "",
+     "grants": [
+      "Void sabre"
      ]
     },
     {
@@ -1650,7 +1680,7 @@
      ]
     },
     {
-     "text": "The Corsair Skyreaver Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
+     "text": "Dissonance pistol",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1658,9 +1688,24 @@
       "max": 1
      },
      "base": "",
-     "model": "CORSAIR SKYREAVER FELARCH",
+     "group": "000004172-2",
+     "model": "",
      "grants": [
-      "Dissonance pistol",
+      "Dissonance pistol"
+     ]
+    },
+    {
+     "text": "Void sabre",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000004172-2",
+     "model": "",
+     "grants": [
       "Void sabre"
      ]
     },
@@ -1885,7 +1930,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "The Skyreaver Felarch can replace its shuriken pistol with one of the following:<ul style=\"list-style-type:circle\"><li>1  blast pistol</li><li>1 neuro disruptor</li></ul>",
+     "text": "Blast pistol",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1893,11 +1938,25 @@
       "max": 1
      },
      "base": "",
+     "group": "000004199-0",
      "model": "",
      "grants": [
-      "Neuro disruptor",
-      "Blast pistol",
-      "Shuriken pistol"
+      "Blast pistol"
+     ]
+    },
+    {
+     "text": "Neuro disruptor",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000004199-0",
+     "model": "",
+     "grants": [
+      "Neuro disruptor"
      ]
     },
     {
@@ -3982,7 +4041,7 @@
      ]
     },
     {
-     "text": "The Kabalite Archsybarite can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 Kabalite icon</li><li>1 phantasm grenade launcher</li></ul>",
+     "text": "Kabalite icon",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3990,6 +4049,20 @@
       "max": 1
      },
      "base": "",
+     "group": "000004156-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Phantasm grenade launcher",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000004156-2",
      "model": "",
      "grants": []
     },
@@ -4776,7 +4849,7 @@
      ]
     },
     {
-     "text": "The Sybarite can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 Kabalite icon</li><li>1 phantasm grenade launcher</li></ul>",
+     "text": "Kabalite icon",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4784,6 +4857,20 @@
       "max": 1
      },
      "base": "",
+     "group": "000000644-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Phantasm grenade launcher",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000644-1",
      "model": "",
      "grants": []
     },
@@ -6646,7 +6733,7 @@
      ]
     },
     {
-     "text": "For every 3 models in this unit, 1 model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 cluster caltrops</li><li>1 grav-talon</li></ul>",
+     "text": "Cluster caltrops",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6654,6 +6741,20 @@
       "n": 3
      },
      "base": "",
+     "group": "000000658-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Grav-talon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 3
+     },
+     "base": "",
+     "group": "000000658-1",
      "model": "",
      "grants": []
     }
@@ -6919,34 +7020,74 @@
      ]
     },
     {
-     "text": "Any number of Scourges can each replace their splinter cannon with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 dark lance</li><li>1 haywire blaster</li><li>1 heat lance</li><li>1 shredder</li></ul>",
+     "text": "Blaster",
      "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000000662-1",
      "model": "",
      "grants": [
-      "Blaster",
-      "Dark lance",
-      "Haywire blaster",
-      "Heat lance",
-      "Shredder",
-      "Splinter cannon"
+      "Blaster"
      ]
     },
     {
-     "text": "Equip Dark lance",
+     "text": "Dark lance",
      "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000000662-1",
      "model": "",
      "grants": [
       "Dark lance"
+     ]
+    },
+    {
+     "text": "Haywire blaster",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000662-1",
+     "model": "",
+     "grants": [
+      "Blaster",
+      "Haywire blaster"
+     ]
+    },
+    {
+     "text": "Heat lance",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000662-1",
+     "model": "",
+     "grants": [
+      "Heat lance"
+     ]
+    },
+    {
+     "text": "Shredder",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000662-1",
+     "model": "",
+     "grants": [
+      "Shredder"
      ]
     }
    ],
@@ -8297,48 +8438,100 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each replace their twin splinter cannon with one of the following:<ul style=\"list-style-type:circle\"><li>1 stinger pod</li><li>1 twin haywire blaster</li><li>1 twin heat lance</li></ul>",
+     "text": "Stinger pod",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000663-0",
+     "model": "",
+     "grants": [
+      "Stinger pod"
+     ]
+    },
+    {
+     "text": "Twin haywire blaster",
      "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000000663-0",
      "model": "",
      "grants": [
-      "Stinger pod",
-      "Twin haywire blaster",
-      "Twin heat lance",
-      "Twin splinter cannon"
+      "Twin haywire blaster"
      ]
     },
     {
-     "text": "Any number of models can each replace one of their macro-scalpels with one of the following:<ul style=\"list-style-type:circle\"><li>1 Talos ichor injector</li><li>1 twin liquifier gun</li></ul>",
+     "text": "Twin heat lance",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000000663-0",
      "model": "",
      "grants": [
-      "Twin liquifier gun",
-      "Macro-scalpel",
+      "Twin heat lance"
+     ]
+    },
+    {
+     "text": "Talos ichor injector",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000663-1",
+     "model": "",
+     "grants": [
       "Talos ichor injector"
      ]
     },
     {
-     "text": "Any number of models can each replace one of their macro-scalpels with one of the following:<ul style=\"list-style-type:circle\"><li>1 chain flails</li><li>1 Talos gauntlet</li></ul>",
+     "text": "Twin liquifier gun",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000000663-1",
      "model": "",
      "grants": [
-      "Chain-flails",
-      "Macro-scalpel",
+      "Twin liquifier gun"
+     ]
+    },
+    {
+     "text": "Chain flails",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000663-2",
+     "model": "",
+     "grants": [
+      "Chain-flails"
+     ]
+    },
+    {
+     "text": "Talos gauntlet",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000663-2",
+     "model": "",
+     "grants": [
       "Talos gauntlet"
      ]
     }
@@ -8703,7 +8896,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "shuriken pistol",
      "model": "",
@@ -8717,7 +8911,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 4
      },
      "base": "shuriken pistol",
      "model": "",

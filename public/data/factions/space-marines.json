@@ -2884,7 +2884,7 @@
      ]
     },
     {
-     "text": "The Assault Sergeant can do one of the following:<ul style=\"list-style-type:circle\"><li>Replace its bolt pistol and Astartes chainsword with 1 twin lightning claws.</li><li>Be equipped with 1 Astartes shield.</li></ul>",
+     "text": "Replace its bolt pistol and Astartes chainsword with 1 twin lightning claws",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2892,12 +2892,26 @@
       "max": 1
      },
      "base": "",
+     "group": "000000061-2",
      "model": "",
      "grants": [
       "Bolt pistol",
       "Astartes chainsword",
       "Twin lightning claws"
      ]
+    },
+    {
+     "text": "Be equipped with 1 Astartes shield",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000061-2",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Plasma pistol and 1 Astartes chainsword (instead of bolt pistol and astartes chainsword)",
@@ -3389,7 +3403,7 @@
      ]
     },
     {
-     "text": "The Assault Sergeant with Jump Pack can do one of the following:<ul style=\"list-style-type:circle\"><li>Replace its bolt pistol and Astartes chainsword with 1 twin lightning claws.</li><li>Be equipped with 1 Astartes shield.</li></ul>",
+     "text": "Replace its bolt pistol and Astartes chainsword with 1 twin lightning claws",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3397,12 +3411,26 @@
       "max": 1
      },
      "base": "",
+     "group": "000000064-2",
      "model": "",
      "grants": [
       "Bolt pistol",
       "Astartes chainsword",
       "Twin lightning claws"
      ]
+    },
+    {
+     "text": "Be equipped with 1 Astartes shield",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000064-2",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Plasma pistol and 1 Astartes chainsword (instead of bolt pistol and astartes chainsword)",
@@ -4574,7 +4602,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li></ul>",
+     "text": "Heavy bolters",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4582,9 +4610,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000000168-3",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamers",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000168-3",
+     "model": "",
+     "grants": [
       "Heavy flamer"
      ]
     }
@@ -10284,7 +10327,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "text": "Heavy bolters",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -10292,14 +10335,29 @@
       "max": 1
      },
      "base": "",
+     "group": "000001153-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001153-0",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
+     "text": "Heavy bolter",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -10307,11 +10365,54 @@
       "max": 1
      },
      "base": "",
+     "group": "000001153-1",
      "model": "",
      "grants": [
-      "Heavy bolter",
-      "Heavy flamer",
-      "Multi-melta",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001153-1",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Multi-melta",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001153-1",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
+    },
+    {
+     "text": "Storm bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001153-1",
+     "model": "",
+     "grants": [
       "Storm bolter"
      ]
     }
@@ -13932,41 +14033,218 @@
      ]
     },
     {
-     "text": "Any number of Veteran Bikers’ bolt pistols can each be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 grav-pistol</li><li>1 plasma pistol</li><li>1 thunder hammer</li><li>1 power fist</li><li>1 power weapon</li><li>1 storm shield</li></ul>",
+     "text": "Grav-pistol",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000001166-2",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Grav-pistol",
-      "Power fist",
-      "Power weapon",
+      "Grav-pistol"
+     ]
+    },
+    {
+     "text": "Plasma pistol",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Thunder hammer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-2",
+     "model": "",
+     "grants": [
       "Thunder hammer"
      ]
     },
     {
-     "text": "Any number of Veteran Bikers’ Astartes chainswords can each be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer </li><li>1 grav-gun</li><li>1 grav-pistol</li><li>1 meltagun</li><li>1 plasma gun</li><li>1 plasma pistol</li><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li><li>1 storm shield</li></ul>",
+     "text": "Power fist",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000001166-2",
      "model": "",
      "grants": [
-      "Flamer",
-      "Grav-gun",
-      "Grav-pistol",
-      "Meltagun",
-      "Astartes chainsword",
-      "Power fist",
-      "Power weapon",
+      "Power fist"
+     ]
+    },
+    {
+     "text": "Power weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-2",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
+    },
+    {
+     "text": "Storm shield",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Flamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-3",
+     "model": "",
+     "grants": [
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Grav-gun",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-3",
+     "model": "",
+     "grants": [
+      "Grav-gun"
+     ]
+    },
+    {
+     "text": "Grav-pistol",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-3",
+     "model": "",
+     "grants": [
+      "Grav-pistol"
+     ]
+    },
+    {
+     "text": "Meltagun",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-3",
+     "model": "",
+     "grants": [
+      "Meltagun"
+     ]
+    },
+    {
+     "text": "Plasma gun",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-3",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Plasma pistol",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-3",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Power fist",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-3",
+     "model": "",
+     "grants": [
+      "Power fist"
+     ]
+    },
+    {
+     "text": "Power weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-3",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
+    },
+    {
+     "text": "Thunder hammer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-3",
+     "model": "",
+     "grants": [
       "Thunder hammer"
      ]
+    },
+    {
+     "text": "Storm shield",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000001166-3",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -14202,7 +14480,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 auspex array</li><li>1 infernum halo-launcher</li></ul>",
+     "text": "Auspex array",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -14210,6 +14488,20 @@
       "max": 1
      },
      "base": "",
+     "group": "000000358-3",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Infernum halo-launcher",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000358-3",
      "model": "",
      "grants": []
     }
@@ -21225,7 +21517,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li><li>2 lascannons</li></ul>",
+     "text": "Heavy bolters",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -21233,10 +21525,39 @@
       "max": 1
      },
      "base": "",
+     "group": "000002268-1",
      "model": "",
      "grants": [
-      "Heavy bolter",
-      "Heavy flamer",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamers",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002268-1",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Lascannons",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002268-1",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
     },
@@ -21529,7 +21850,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 aiolos missile launcher</li><li>1 boreas air defence missiles</li></ul>",
+     "text": "Aiolos missile launcher",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -21537,9 +21858,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000002269-2",
      "model": "",
      "grants": [
-      "Aiolos missile launcher",
+      "Aiolos missile launcher"
+     ]
+    },
+    {
+     "text": "Boreas air defence missiles",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002269-2",
+     "model": "",
+     "grants": [
       "Boreas air defence missiles"
      ]
     }
@@ -23854,7 +24190,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
+     "text": "Heavy bolter",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -23862,11 +24198,54 @@
       "max": 1
      },
      "base": "",
+     "group": "000001666-2",
      "model": "",
      "grants": [
-      "Heavy bolter",
-      "Heavy flamer",
-      "Multi-melta",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001666-2",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Multi-melta",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001666-2",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
+    },
+    {
+     "text": "Storm bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001666-2",
+     "model": "",
+     "grants": [
       "Storm bolter"
      ]
     }
@@ -24191,7 +24570,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
+     "text": "Combi-weapon",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -24199,12 +24578,69 @@
       "max": 1
      },
      "base": "",
+     "group": "000002704-3",
      "model": "",
      "grants": [
-      "Combi-weapon",
-      "Heavy bolter",
-      "Heavy flamer",
-      "Multi-melta",
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Heavy bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002704-3",
+     "model": "",
+     "grants": [
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002704-3",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Multi-melta",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002704-3",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
+    },
+    {
+     "text": "Storm bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002704-3",
+     "model": "",
+     "grants": [
       "Storm bolter"
      ]
     }
@@ -25132,7 +25568,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Kill Team Sergeant can replace its Deathwatch bolt rifle with one of the following:<ul style=\"list-style-type:circle\"><li>1 Astartes chainsword</li><li>1 hand flamer</li><li>1 plasma pistol</li><li>1 power weapon</li></ul>",
+     "text": "Astartes chainsword",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -25140,16 +25576,57 @@
       "max": 1
      },
      "base": "",
+     "group": "000002780-0",
      "model": "",
      "grants": [
-      "Deathwatch bolt rifle",
-      "Hand flamer",
-      "Astartes chainsword",
+      "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Hand flamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002780-0",
+     "model": "",
+     "grants": [
+      "Hand flamer"
+     ]
+    },
+    {
+     "text": "Plasma pistol",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002780-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Power weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002780-0",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     },
     {
-     "text": "The Kill Team Sergeant can replace its close combat weapon with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 Astartes chainsword</li><li>1 power fist</li><li>1 power weapon</li><li>1 thunder hammer</li></ul>",
+     "text": "Astartes chainsword",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -25157,12 +25634,54 @@
       "max": 1
      },
      "base": "",
+     "group": "000002780-1",
      "model": "",
      "grants": [
-      "Astartes chainsword",
-      "Close combat weapon",
-      "Power fist",
-      "Power weapon",
+      "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Power fist",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002780-1",
+     "model": "",
+     "grants": [
+      "Power fist"
+     ]
+    },
+    {
+     "text": "Power weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002780-1",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
+    },
+    {
+     "text": "Thunder hammer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002780-1",
+     "model": "",
+     "grants": [
       "Thunder hammer"
      ]
     },
@@ -26031,7 +26550,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironhail heavy stubber</li><li>1 multi-melta</li></ul>",
+     "text": "Ironhail heavy stubber",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -26039,9 +26558,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000002787-1",
      "model": "",
      "grants": [
-      "Ironhail heavy stubber",
+      "Ironhail heavy stubber"
+     ]
+    },
+    {
+     "text": "Multi-melta",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002787-1",
+     "model": "",
+     "grants": [
       "Multi-melta"
      ]
     },
@@ -26404,7 +26938,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironhail heavy stubber</li><li>1 multi-melta</li></ul>",
+     "text": "Ironhail heavy stubber",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -26412,9 +26946,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000002789-0",
      "model": "",
      "grants": [
-      "Ironhail heavy stubber",
+      "Ironhail heavy stubber"
+     ]
+    },
+    {
+     "text": "Multi-melta",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002789-0",
+     "model": "",
+     "grants": [
       "Multi-melta"
      ]
     },
@@ -26766,7 +27315,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironhail heavy stubber</li><li>1 multi-melta</li></ul>",
+     "text": "Ironhail heavy stubber",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -26774,9 +27323,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000002788-0",
      "model": "",
      "grants": [
-      "Ironhail heavy stubber",
+      "Ironhail heavy stubber"
+     ]
+    },
+    {
+     "text": "Multi-melta",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002788-0",
+     "model": "",
+     "grants": [
       "Multi-melta"
      ]
     },
@@ -28464,7 +29028,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 bellicatus missile array</li><li>1 ironhail skytalon array</li><li>1 orbital comms array</li><li>1 shield dome</li></ul>",
+     "text": "Bellicatus missile array",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -28472,10 +29036,50 @@
       "max": 1
      },
      "base": "",
+     "group": "000002568-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Ironhail skytalon array",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002568-2",
      "model": "",
      "grants": [
       "Ironhail skytalon array"
      ]
+    },
+    {
+     "text": "Orbital comms array",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002568-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield dome",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002568-2",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -28687,7 +29291,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironhail heavy stubber</li><li>1 multi-melta</li></ul>",
+     "text": "Ironhail heavy stubber",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -28695,9 +29299,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000002786-0",
      "model": "",
      "grants": [
-      "Ironhail heavy stubber",
+      "Ironhail heavy stubber"
+     ]
+    },
+    {
+     "text": "Multi-melta",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002786-0",
+     "model": "",
+     "grants": [
       "Multi-melta"
      ]
     },
@@ -28717,7 +29336,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 bellicatus missile array</li><li>1 ironhail skytalon array</li><li>1 orbital comms array</li><li>1 shield dome</li></ul>",
+     "text": "Bellicatus missile array",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -28725,10 +29344,50 @@
       "max": 1
      },
      "base": "",
+     "group": "000002786-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Ironhail skytalon array",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002786-2",
      "model": "",
      "grants": [
       "Ironhail skytalon array"
      ]
+    },
+    {
+     "text": "Orbital comms array",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002786-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield dome",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002786-2",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Black Templars",
@@ -32991,7 +33650,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 havoc launcher</li><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 twin boltgun</li></ul>",
+     "text": "Combi-weapon",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -32999,13 +33658,84 @@
       "max": 1
      },
      "base": "",
+     "group": "000001175-3",
      "model": "",
      "grants": [
-      "Combi-weapon",
-      "Havoc launcher",
-      "Heavy bolter",
-      "Heavy flamer",
-      "Multi-melta",
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Havoc launcher",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001175-3",
+     "model": "",
+     "grants": [
+      "Havoc launcher"
+     ]
+    },
+    {
+     "text": "Heavy bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001175-3",
+     "model": "",
+     "grants": [
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001175-3",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Multi-melta",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001175-3",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
+    },
+    {
+     "text": "Twin boltgun",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001175-3",
+     "model": "",
+     "grants": [
       "Twin boltgun"
      ]
     },
@@ -34833,7 +35563,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 multi-melta</li><li>1 twin heavy bolter</li><li>1 twin heavy flamer</li></ul>",
+     "text": "Heavy bolter",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -34841,11 +35571,55 @@
       "max": 1
      },
      "base": "",
+     "group": "000001608-0",
+     "model": "",
+     "grants": [
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Multi-melta",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001608-0",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
+    },
+    {
+     "text": "Twin heavy bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001608-0",
      "model": "",
      "grants": [
       "Heavy bolter",
-      "Multi-melta",
-      "Twin heavy bolter",
+      "Twin heavy bolter"
+     ]
+    },
+    {
+     "text": "Twin heavy flamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001608-0",
+     "model": "",
+     "grants": [
       "Twin heavy flamer"
      ]
     },
@@ -37315,7 +38089,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 storm bolter</li></ul>",
+     "text": "Combi-weapon",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -37323,9 +38097,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000000079-0",
      "model": "",
      "grants": [
-      "Combi-weapon",
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Storm bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000079-0",
+     "model": "",
+     "grants": [
       "Storm bolter"
      ]
     }
@@ -39666,7 +40455,7 @@
      "grants": []
     },
     {
-     "text": "The Long Fang Pack Leader’s boltgun can be replace with one of the following<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grav-gun</li><li>1 meltagun</li><li>1 plasma gun</li><li>1 plasma pistol</li></ul>",
+     "text": "Flamer",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -39674,13 +40463,67 @@
       "max": 1
      },
      "base": "",
+     "group": "000000326-1",
      "model": "",
      "grants": [
-      "Boltgun",
-      "Grav-gun",
-      "Flamer",
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Grav-gun",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000326-1",
+     "model": "",
+     "grants": [
+      "Grav-gun"
+     ]
+    },
+    {
+     "text": "Meltagun",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000326-1",
+     "model": "",
+     "grants": [
       "Meltagun"
      ]
+    },
+    {
+     "text": "Plasma gun",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000326-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Plasma pistol",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000326-1",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Astartes chainsword (instead of close combat weapon)",
@@ -40429,7 +41272,7 @@
      ]
     },
     {
-     "text": "This model’s 2 lascannons can be replaced with on of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li><li>2 volkite culverins</li></ul>",
+     "text": "Heavy bolters (instead of 2 lascannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -40437,10 +41280,41 @@
       "max": 1
      },
      "base": "2 lascannons",
+     "group": "000001189-1",
      "model": "",
      "grants": [
       "Heavy bolter",
+      "Lascannon"
+     ]
+    },
+    {
+     "text": "Heavy flamers (instead of 2 lascannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 lascannons",
+     "group": "000001189-1",
+     "model": "",
+     "grants": [
       "Heavy flamer",
+      "Lascannon"
+     ]
+    },
+    {
+     "text": "Volkite culverins (instead of 2 lascannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 lascannons",
+     "group": "000001189-1",
+     "model": "",
+     "grants": [
       "Lascannon",
       "Volkite culverin"
      ]
@@ -41748,7 +42622,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "text": "Heavy bolters",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -41756,9 +42630,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000002714-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002714-0",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
     },
@@ -41961,7 +42850,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "text": "Heavy bolters",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -41969,9 +42858,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000002715-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002715-0",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
     },
@@ -45968,7 +46872,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 ironhail heavy stubber</li><li>1 multi-melta</li></ul>",
+     "text": "Ironhail heavy stubber",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -45976,9 +46880,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000002790-1",
      "model": "",
      "grants": [
-      "Ironhail heavy stubber",
+      "Ironhail heavy stubber"
+     ]
+    },
+    {
+     "text": "Multi-melta",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002790-1",
+     "model": "",
+     "grants": [
       "Multi-melta"
      ]
     },
@@ -48929,7 +49848,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "text": "Heavy bolters",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -48937,9 +49856,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000001161-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001161-0",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
     },
@@ -49134,7 +50068,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "text": "Heavy bolters",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -49142,9 +50076,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000001185-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001185-0",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
     },
@@ -49350,7 +50299,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "text": "Heavy bolters",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -49358,9 +50307,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000001163-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001163-0",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
     },
@@ -49555,7 +50519,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "text": "Heavy bolters",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -49563,9 +50527,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000000123-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000123-0",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
     },
@@ -49760,7 +50739,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "text": "Heavy bolters",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -49768,9 +50747,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000000092-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000092-0",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
     },
@@ -50554,7 +51548,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
+     "text": "Heavy bolter",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -50562,11 +51556,54 @@
       "max": 1
      },
      "base": "",
+     "group": "000002252-2",
      "model": "",
      "grants": [
-      "Heavy bolter",
-      "Heavy flamer",
-      "Multi-melta",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002252-2",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Multi-melta",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002252-2",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
+    },
+    {
+     "text": "Storm bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002252-2",
+     "model": "",
+     "grants": [
       "Storm bolter"
      ]
     }
@@ -55039,7 +56076,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Kill Team Sergeant with Jump Pack can replace its heavy bolt pistol with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 hand flamer</li><li>1 plasma pistol</li></ul>",
+     "text": "Hand flamer",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -55047,14 +56084,14 @@
       "max": 1
      },
      "base": "",
+     "group": "000003874-0",
      "model": "",
      "grants": [
-      "Hand flamer",
-      "Heavy bolt pistol"
+      "Hand flamer"
      ]
     },
     {
-     "text": "The Kill Team Sergeant with Jump Pack can replace its Astartes chainsword with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li></ul>",
+     "text": "Plasma pistol",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -55062,10 +56099,37 @@
       "max": 1
      },
      "base": "",
+     "group": "000003874-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Power fist",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000003874-1",
      "model": "",
      "grants": [
-      "Astartes chainsword",
-      "Power fist",
+      "Power fist"
+     ]
+    },
+    {
+     "text": "Power weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000003874-1",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     },
@@ -55920,7 +56984,7 @@
      ]
     },
     {
-     "text": "This model must be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 servo arm</li><li>1 conversion beamer</li><li>1 flamer, 1 plasma cutter and 2 servo-arms</li></ul>",
+     "text": "Servo arm",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -55928,9 +56992,39 @@
       "max": 1
      },
      "base": "",
+     "group": "000001527-2",
      "model": "",
      "grants": [
-      "Conversion beamer",
+      "Servo arm"
+     ]
+    },
+    {
+     "text": "Conversion beamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001527-2",
+     "model": "",
+     "grants": [
+      "Conversion beamer"
+     ]
+    },
+    {
+     "text": "Flamer, 1 plasma cutter and 2 servo-arms",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001527-2",
+     "model": "",
+     "grants": [
       "Flamer",
       "Plasma cutter",
       "Servo arm"
@@ -58347,7 +59441,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "text": "Heavy bolters",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -58355,14 +59449,29 @@
       "max": 1
      },
      "base": "",
+     "group": "000000093-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000093-0",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 multi-melta</li><li>1 storm bolter</li></ul>",
+     "text": "Heavy bolter",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -58370,11 +59479,54 @@
       "max": 1
      },
      "base": "",
+     "group": "000000093-1",
      "model": "",
      "grants": [
-      "Heavy bolter",
-      "Heavy flamer",
-      "Multi-melta",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000093-1",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Multi-melta",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000093-1",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
+    },
+    {
+     "text": "Storm bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000093-1",
+     "model": "",
+     "grants": [
       "Storm bolter"
      ]
     }
@@ -64229,7 +65381,7 @@
      ]
     },
     {
-     "text": "The Wolf Guard Terminator Pack Leader’s storm bolter and master-crafted power weapon can be replaced with 1 of the following:<ul style=\"list-style-type:circle\"><li>1 relic greataxe</li><li>1 twin lightning claws</li></ul>",
+     "text": "Relic greataxe (instead of storm bolter and master-crafted power weapon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -64237,11 +65389,28 @@
       "max": 1
      },
      "base": "storm bolter and master-crafted power weapon",
+     "group": "000000318-2",
      "model": "",
      "grants": [
       "Storm bolter",
       "Master-crafted power weapon",
-      "Relic greataxe",
+      "Relic greataxe"
+     ]
+    },
+    {
+     "text": "Twin lightning claws (instead of storm bolter and master-crafted power weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter and master-crafted power weapon",
+     "group": "000000318-2",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Master-crafted power weapon",
       "Twin lightning claws"
      ]
     }

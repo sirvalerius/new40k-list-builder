@@ -2804,7 +2804,7 @@
      ]
     },
     {
-     "text": "1 Secutarii Hoplite can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether</li><li>1 omnispex</li></ul>",
+     "text": "Enhanced data-tether",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2812,6 +2812,20 @@
       "max": 1
      },
      "base": "",
+     "group": "000001525-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Omnispex",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001525-2",
      "model": "",
      "grants": []
     }
@@ -3011,7 +3025,7 @@
      ]
     },
     {
-     "text": "1 Secutarii Peltast can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether</li><li>1 omnispex</li></ul>",
+     "text": "Enhanced data-tether",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3019,6 +3033,20 @@
       "max": 1
      },
      "base": "",
+     "group": "000001526-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Omnispex",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001526-2",
      "model": "",
      "grants": []
     }
@@ -4512,7 +4540,7 @@
      ]
     },
     {
-     "text": "1 Skitarii Ranger equipped with a galvanic rifle can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
+     "text": "Enhanced data-tether*",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4520,10 +4548,22 @@
       "max": 1
      },
      "base": "",
+     "group": "000000848-5",
      "model": "",
-     "grants": [
-      "Galvanic rifle"
-     ]
+     "grants": []
+    },
+    {
+     "text": "Omnispex*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000848-5",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* That model’s galvanic rifle cannot be replaced.",
@@ -4797,7 +4837,7 @@
      ]
     },
     {
-     "text": "1 Skitarii Vanguard equipped with a radium carbine can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 enhanced data-tether*</li><li>1 omnispex*</li></ul>",
+     "text": "Enhanced data-tether*",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4805,10 +4845,22 @@
       "max": 1
      },
      "base": "",
+     "group": "000000849-5",
      "model": "",
-     "grants": [
-      "Radium carbine"
-     ]
+     "grants": []
+    },
+    {
+     "text": "Omnispex*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000849-5",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* That model’s radium carbine cannot be replaced.",

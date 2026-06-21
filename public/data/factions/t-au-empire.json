@@ -866,7 +866,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Breacher Fire Warrior Shas’ui can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 guardian drone (it cannot take duplicates of this piece of wargear)</li><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "text": "Guardian drone (it cannot take duplicates of this piece of wargear)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -874,6 +874,46 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000412-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Gun drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000412-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000412-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000412-0",
      "model": "",
      "grants": []
     }
@@ -1095,7 +1135,7 @@
      ]
     },
     {
-     "text": "Any number of models can each be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 seeker missile</li><li>1 twin plasma rifle*</li><li>1 twin smart missile system*</li><li>1 weapon support system</li></ul>",
+     "text": "Seeker missile",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1103,15 +1143,44 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000433-1",
      "model": "",
      "grants": [
-      "Seeker missile",
-      "Twin plasma rifle",
+      "Seeker missile"
+     ]
+    },
+    {
+     "text": "Twin plasma rifle*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000433-1",
+     "model": "",
+     "grants": [
+      "Twin plasma rifle"
+     ]
+    },
+    {
+     "text": "Twin smart missile system*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000433-1",
+     "model": "",
+     "grants": [
       "Twin smart missile system"
      ]
     },
     {
-     "text": "Any number of models can each be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 missile drone</li><li>1 shield drone </li></ul>",
+     "text": "Weapon support system",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1119,6 +1188,59 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000433-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Gun drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000433-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000433-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Missile drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000433-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000433-2",
      "model": "",
      "grants": []
     },
@@ -1256,7 +1378,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "text": "Gun drone",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1264,6 +1386,33 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000405-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000405-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000405-0",
      "model": "",
      "grants": []
     }
@@ -1797,7 +1946,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "text": "Gun drone",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1805,11 +1954,38 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000402-1",
      "model": "",
      "grants": []
     },
     {
-     "text": "This model can be equipped with up to three of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster*</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system* </li></ul>",
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000402-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000402-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Airbursting fragmentation projector*",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1817,15 +1993,138 @@
       "slots": 3
      },
      "base": "",
+     "group": "000000402-2",
      "model": "",
      "grants": [
-      "Airbursting fragmentation projector",
-      "Burst cannon",
-      "Fusion blaster",
-      "Missile pod",
-      "Plasma rifle",
+      "Airbursting fragmentation projector"
+     ]
+    },
+    {
+     "text": "Battlesuit support system*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000402-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Burst cannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000402-2",
+     "model": "",
+     "grants": [
+      "Burst cannon"
+     ]
+    },
+    {
+     "text": "Cyclic ion blaster*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000402-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Fusion blaster",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000402-2",
+     "model": "",
+     "grants": [
+      "Fusion blaster"
+     ]
+    },
+    {
+     "text": "Missile pod",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000402-2",
+     "model": "",
+     "grants": [
+      "Missile pod"
+     ]
+    },
+    {
+     "text": "Plasma rifle",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000402-2",
+     "model": "",
+     "grants": [
+      "Plasma rifle"
+     ]
+    },
+    {
+     "text": "Shield generator*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000402-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "T’au flamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000402-2",
+     "model": "",
+     "grants": [
       "T’au flamer"
      ]
+    },
+    {
+     "text": "Weapon support system*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000402-2",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* This model cannot have duplicates of these pieces of wargear.",
@@ -2187,7 +2486,7 @@
      "grants": []
     },
     {
-     "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "text": "Gun drone",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2195,11 +2494,38 @@
       "slots": 2
      },
      "base": "",
+     "group": "000001477-1",
      "model": "",
      "grants": []
     },
     {
-     "text": "This model can be equipped with up to three of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system*</li></ul>",
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000001477-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000001477-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Airbursting fragmentation projector*",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2207,15 +2533,138 @@
       "slots": 3
      },
      "base": "",
+     "group": "000001477-2",
      "model": "",
      "grants": [
-      "Airbursting fragmentation projector",
-      "Burst cannon",
-      "Fusion blaster",
-      "Missile pod",
-      "Plasma rifle",
+      "Airbursting fragmentation projector"
+     ]
+    },
+    {
+     "text": "Battlesuit support system*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001477-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Burst cannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001477-2",
+     "model": "",
+     "grants": [
+      "Burst cannon"
+     ]
+    },
+    {
+     "text": "Cyclic ion blaster",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001477-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Fusion blaster",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001477-2",
+     "model": "",
+     "grants": [
+      "Fusion blaster"
+     ]
+    },
+    {
+     "text": "Missile pod",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001477-2",
+     "model": "",
+     "grants": [
+      "Missile pod"
+     ]
+    },
+    {
+     "text": "Plasma rifle",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001477-2",
+     "model": "",
+     "grants": [
+      "Plasma rifle"
+     ]
+    },
+    {
+     "text": "Shield generator*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001477-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "T’au flamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001477-2",
+     "model": "",
+     "grants": [
       "T’au flamer"
      ]
+    },
+    {
+     "text": "Weapon support system*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001477-2",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* This model cannot have duplicates of these pieces of wargear.",
@@ -2576,7 +3025,7 @@
      "grants": []
     },
     {
-     "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "text": "Gun drone",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2584,11 +3033,38 @@
       "slots": 2
      },
      "base": "",
+     "group": "000001478-1",
      "model": "",
      "grants": []
     },
     {
-     "text": "This model can be equipped with up to three of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster*</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system* </li></ul>",
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000001478-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000001478-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Airbursting fragmentation projector*",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2596,15 +3072,138 @@
       "slots": 3
      },
      "base": "",
+     "group": "000001478-2",
      "model": "",
      "grants": [
-      "Airbursting fragmentation projector",
-      "Burst cannon",
-      "Fusion blaster",
-      "Missile pod",
-      "Plasma rifle",
+      "Airbursting fragmentation projector"
+     ]
+    },
+    {
+     "text": "Battlesuit support system*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001478-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Burst cannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001478-2",
+     "model": "",
+     "grants": [
+      "Burst cannon"
+     ]
+    },
+    {
+     "text": "Cyclic ion blaster*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001478-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Fusion blaster",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001478-2",
+     "model": "",
+     "grants": [
+      "Fusion blaster"
+     ]
+    },
+    {
+     "text": "Missile pod",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001478-2",
+     "model": "",
+     "grants": [
+      "Missile pod"
+     ]
+    },
+    {
+     "text": "Plasma rifle",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001478-2",
+     "model": "",
+     "grants": [
+      "Plasma rifle"
+     ]
+    },
+    {
+     "text": "Shield generator*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001478-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "T’au flamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001478-2",
+     "model": "",
+     "grants": [
       "T’au flamer"
      ]
+    },
+    {
+     "text": "Weapon support system*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000001478-2",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* This model cannot have duplicates of these pieces of wargear. ",
@@ -3133,7 +3732,7 @@
      "grants": []
     },
     {
-     "text": "Any number of models can be equipped with up to two of the following, and can take duplicate<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "text": "Gun drone",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3141,11 +3740,38 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000418-1",
      "model": "",
      "grants": []
     },
     {
-     "text": "Any number of models can each be equipped with up to three of the following, and can take duplicates**:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system* </li></ul>",
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000418-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000418-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Airbursting fragmentation projector*",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3153,15 +3779,138 @@
       "slots": 3
      },
      "base": "",
+     "group": "000000418-2",
      "model": "",
      "grants": [
-      "Airbursting fragmentation projector",
-      "Burst cannon",
-      "Fusion blaster",
-      "Missile pod",
-      "Plasma rifle",
+      "Airbursting fragmentation projector"
+     ]
+    },
+    {
+     "text": "Battlesuit support system*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000418-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Burst cannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000418-2",
+     "model": "",
+     "grants": [
+      "Burst cannon"
+     ]
+    },
+    {
+     "text": "Cyclic ion blaster",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000418-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Fusion blaster",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000418-2",
+     "model": "",
+     "grants": [
+      "Fusion blaster"
+     ]
+    },
+    {
+     "text": "Missile pod",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000418-2",
+     "model": "",
+     "grants": [
+      "Missile pod"
+     ]
+    },
+    {
+     "text": "Plasma rifle",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000418-2",
+     "model": "",
+     "grants": [
+      "Plasma rifle"
+     ]
+    },
+    {
+     "text": "Shield generator*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000418-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "T’au flamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000418-2",
+     "model": "",
+     "grants": [
       "T’au flamer"
      ]
+    },
+    {
+     "text": "Weapon support system*",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 3
+     },
+     "base": "",
+     "group": "000000418-2",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* Each model cannot have duplicates of these pieces of wargear.",
@@ -3352,7 +4101,7 @@
      ]
     },
     {
-     "text": "Any number of models can be equipped with up to two of the following, but cannot take duplicates<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "text": "Gun drone",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3360,6 +4109,33 @@
       "slots": 2
      },
      "base": "",
+     "group": "000003700-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000003700-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000003700-2",
      "model": "",
      "grants": []
     }
@@ -3530,7 +4306,7 @@
      ]
     },
     {
-     "text": "Any number of models can be equipped with up to two of the following, but cannot take duplicates<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "text": "Gun drone",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3538,6 +4314,33 @@
       "slots": 2
      },
      "base": "",
+     "group": "000003701-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000003701-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000003701-2",
      "model": "",
      "grants": []
     }
@@ -3663,7 +4466,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Any number of models can be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "text": "Gun drone",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3671,6 +4474,33 @@
       "slots": 2
      },
      "base": "",
+     "group": "000003699-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000003699-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000003699-0",
      "model": "",
      "grants": []
     }
@@ -4285,7 +5115,7 @@
      "grants": []
     },
     {
-     "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "text": "Gun drone",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4293,6 +5123,33 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000404-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000404-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000404-1",
      "model": "",
      "grants": []
     }
@@ -4844,7 +5701,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 Kroot bolt thrower and 1 Kroot rifle</li><li>1 twin Kroot gun</li><li>1 baggage harness</li></ul>",
+     "text": "Kroot bolt thrower and 1 Kroot rifle",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4852,13 +5709,41 @@
       "max": 1
      },
      "base": "",
+     "group": "000001392-0",
      "model": "",
      "grants": [
       "Kroot bolt thrower",
       "Kroot rifle",
-      "Twin Kroot gun",
       "Kroot rifle"
      ]
+    },
+    {
+     "text": "Twin Kroot gun",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001392-0",
+     "model": "",
+     "grants": [
+      "Twin Kroot gun"
+     ]
+    },
+    {
+     "text": "Baggage harness",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001392-0",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -7623,7 +8508,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Pathfinder Shas’ui can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 grav-inhibitor drone</li><li>1 pulse accelerator drone</li><li>1 recon drone</li></ul>",
+     "text": "Grav-inhibitor drone",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7631,11 +8516,38 @@
       "max": 1
      },
      "base": "",
+     "group": "000000422-0",
      "model": "",
      "grants": []
     },
     {
-     "text": "The Pathfinder Shas’ui can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "text": "Pulse accelerator drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000422-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Recon drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000422-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Gun drone",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7643,6 +8555,33 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000422-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000422-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000422-1",
      "model": "",
      "grants": []
     },
@@ -9684,7 +10623,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Fire Warrior Shas’ui can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 guardian drone (it cannot take duplicates of this piece of wargear)</li><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "text": "Guardian drone (it cannot take duplicates of this piece of wargear)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9692,6 +10631,46 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000411-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Gun drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000411-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000411-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000411-0",
      "model": "",
      "grants": []
     },
@@ -11892,18 +12871,43 @@
      ]
     },
     {
-     "text": "Any number of models can each be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 battlesuit support system</li><li>1 shield generator</li><li>1 weapon support system</li></ul>",
+     "text": "Battlesuit support system",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000000443-2",
      "model": "",
      "grants": []
     },
     {
-     "text": "Any number of models can each be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
+     "text": "Shield generator",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000443-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Weapon support system",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000443-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Gun drone",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -11911,6 +12915,33 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000443-3",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Marker drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000443-3",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shield drone",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000443-3",
      "model": "",
      "grants": []
     }

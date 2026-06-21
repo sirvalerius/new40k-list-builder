@@ -149,6 +149,12 @@ export default function App() {
 
         {view.kind !== 'builder' && (
           <footer className="footer">
+            <div className="credit">
+              Ideato e creato da{' '}
+              <a href="https://alhazred.sh" target="_blank" rel="noopener noreferrer">
+                Alhazred.sh
+              </a>
+            </div>
             <div>
               <b>Powered by Wahapedia.</b>
             </div>

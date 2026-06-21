@@ -757,7 +757,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 combi-weapon</li><li>1 storm bolter</li></ul>",
+     "text": "Combi-weapon",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -765,9 +765,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000001361-0",
      "model": "",
      "grants": [
-      "Combi-weapon",
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Storm bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001361-0",
+     "model": "",
+     "grants": [
       "Storm bolter"
      ]
     }
@@ -1892,7 +1907,37 @@
      ]
     },
     {
-     "text": "This model can be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 gatling psilencer</li><li>1 heavy incinerator</li><li>1 heavy psycannon</li><li>1 sublimator</li></ul>",
+     "text": "Gatling psilencer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000001360-1",
+     "model": "",
+     "grants": [
+      "Gatling psilencer"
+     ]
+    },
+    {
+     "text": "Heavy incinerator",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000001360-1",
+     "model": "",
+     "grants": [
+      "Heavy incinerator"
+     ]
+    },
+    {
+     "text": "Heavy psycannon",
      "cost": 15,
      "type": "wargear",
      "limit": {
@@ -1900,11 +1945,24 @@
       "slots": 2
      },
      "base": "",
+     "group": "000001360-1",
      "model": "",
      "grants": [
-      "Gatling psilencer",
-      "Heavy incinerator",
-      "Heavy psycannon",
+      "Heavy psycannon"
+     ]
+    },
+    {
+     "text": "Sublimator",
+     "cost": 15,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000001360-1",
+     "model": "",
+     "grants": [
       "Sublimator"
      ]
     },
@@ -1920,19 +1978,6 @@
      "model": "",
      "grants": [
       "Fragstorm grenade launcher"
-     ]
-    },
-    {
-     "text": "Equip Heavy psycannon",
-     "cost": 15,
-     "type": "wargear",
-     "limit": {
-      "kind": "all"
-     },
-     "base": "",
-     "model": "",
-     "grants": [
-      "Heavy psycannon"
      ]
     }
    ],
@@ -4128,7 +4173,37 @@
      "grants": []
     },
     {
-     "text": "This model can be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 gatling psilencer</li><li>1 heavy incinerator</li><li>1 heavy psycannon</li></ul>",
+     "text": "Gatling psilencer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000389-1",
+     "model": "",
+     "grants": [
+      "Gatling psilencer"
+     ]
+    },
+    {
+     "text": "Heavy incinerator",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000389-1",
+     "model": "",
+     "grants": [
+      "Heavy incinerator"
+     ]
+    },
+    {
+     "text": "Heavy psycannon",
      "cost": 15,
      "type": "wargear",
      "limit": {
@@ -4136,10 +4211,9 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000389-1",
      "model": "",
      "grants": [
-      "Gatling psilencer",
-      "Heavy incinerator",
       "Heavy psycannon"
      ]
     }

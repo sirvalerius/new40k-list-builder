@@ -3409,7 +3409,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 havoc missile pod</li><li>1 ruinspear rocket pod</li><li>1 hellstorm autocannons</li></ul>",
+     "text": "Havoc missile pod",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3417,11 +3417,40 @@
       "max": 1
      },
      "base": "",
+     "group": "000001658-3",
      "model": "",
      "grants": [
-      "Havoc missile pod",
-      "Hellstorm autocannons",
+      "Havoc missile pod"
+     ]
+    },
+    {
+     "text": "Ruinspear rocket pod",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001658-3",
+     "model": "",
+     "grants": [
       "Ruinspear rocket pod"
+     ]
+    },
+    {
+     "text": "Hellstorm autocannons",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001658-3",
+     "model": "",
+     "grants": [
+      "Hellstorm autocannons"
      ]
     }
    ],
@@ -4655,19 +4684,70 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Any numbers of models’ heavy stubbers can each be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autocannon</li><li>1 heavy bolter</li><li>1 lascannon</li><li>1 missile launcher</li><li>1 mortar</li></ul>",
+     "text": "Autocannon",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000003857-0",
      "model": "",
      "grants": [
-      "Autocannon",
-      "Heavy bolter",
-      "Heavy stubber",
-      "Lascannon",
+      "Autocannon"
+     ]
+    },
+    {
+     "text": "Heavy bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000003857-0",
+     "model": "",
+     "grants": [
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000003857-0",
+     "model": "",
+     "grants": [
+      "Lascannon"
+     ]
+    },
+    {
+     "text": "Missile launcher",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000003857-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Mortar",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000003857-0",
+     "model": "",
+     "grants": [
       "Mortar"
      ]
     }

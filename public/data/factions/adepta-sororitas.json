@@ -742,7 +742,7 @@
      "grants": []
     },
     {
-     "text": "The Sister Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
+     "text": "Chainsword",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -750,9 +750,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000000903-1",
      "model": "",
      "grants": [
-      "Chainsword",
+      "Chainsword"
+     ]
+    },
+    {
+     "text": "Power weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000903-1",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     },
@@ -1202,7 +1217,7 @@
      ]
     },
     {
-     "text": "If this model is equipped with a hallowed chainsword, it can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 brazier of holy fire</li><li>1 null rod</li></ul>",
+     "text": "Brazier of holy fire",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1210,11 +1225,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000000899-2",
      "model": "",
      "grants": [
-      "Brazier of holy fire",
-      "Hallowed Chainsword"
+      "Brazier of holy fire"
      ]
+    },
+    {
+     "text": "Null rod",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000899-2",
+     "model": "",
+     "grants": []
     },
     {
      "text": "If this model is equipped with a plasma pistol and a power weapon, it can be equipped with:<ul style=\"list-style-type:circle\"><li>1 rod of office</li></ul>",
@@ -3286,7 +3314,7 @@
      "grants": []
     },
     {
-     "text": "The Dominion Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
+     "text": "Chainsword",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3294,9 +3322,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000000909-1",
      "model": "",
      "grants": [
-      "Chainsword",
+      "Chainsword"
+     ]
+    },
+    {
+     "text": "Power weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000909-1",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     },
@@ -5797,7 +5840,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer</li><li>1 storm bolter</li></ul>",
+     "text": "Heavy flamer",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -5805,9 +5848,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000001199-1",
      "model": "",
      "grants": [
-      "Heavy flamer",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Storm bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001199-1",
+     "model": "",
+     "grants": [
       "Storm bolter"
      ]
     }
@@ -6153,7 +6211,7 @@
      "grants": []
     },
     {
-     "text": "The Retributor Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
+     "text": "Chainsword",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6161,9 +6219,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000000908-1",
      "model": "",
      "grants": [
-      "Chainsword",
+      "Chainsword"
+     ]
+    },
+    {
+     "text": "Power weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000908-1",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     },

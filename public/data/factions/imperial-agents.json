@@ -790,7 +790,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 auspex array</li><li>1 infernum halo-launcher</li></ul>",
+     "text": "Auspex array",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -798,6 +798,20 @@
       "max": 1
      },
      "base": "",
+     "group": "000003817-3",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Infernum halo-launcher",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000003817-3",
      "model": "",
      "grants": []
     }
@@ -3046,7 +3060,7 @@
      ]
     },
     {
-     "text": "1 model equipped with a bolt rifle can replace its close combat weapon with one of the following:<ul style=\"list-style-type:circle\"><li>1 Astartes chainsword</li><li>1 Long Vigil melee weapon</li></ul>",
+     "text": "Astartes chainsword",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3054,11 +3068,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000003825-1",
      "model": "",
      "grants": [
-      "Bolt rifle",
-      "Astartes chainsword",
-      "Close combat weapon",
+      "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Long Vigil melee weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000003825-1",
+     "model": "",
+     "grants": [
       "Long Vigil melee weapon"
      ]
     },
@@ -3599,7 +3626,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Navis Sergeant-at-Arms’ Navis shotgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autopistol and 1 chainsword</li><li>1 bolt pistol and 1 power weapon</li></ul>",
+     "text": "Autopistol and 1 chainsword",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3607,12 +3634,26 @@
       "max": 1
      },
      "base": "",
+     "group": "000002587-0",
      "model": "",
      "grants": [
       "Autopistol",
+      "Chainsword"
+     ]
+    },
+    {
+     "text": "Bolt pistol and 1 power weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002587-0",
+     "model": "",
+     "grants": [
       "Bolt pistol",
-      "Navis shotgun",
-      "Chainsword",
       "Power weapon"
      ]
     },
@@ -6444,7 +6485,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy stubber</li><li>1 storm bolter</li></ul>",
+     "text": "Heavy stubber",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6452,9 +6493,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000003820-2",
      "model": "",
      "grants": [
-      "Heavy stubber",
+      "Heavy stubber"
+     ]
+    },
+    {
+     "text": "Storm bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000003820-2",
+     "model": "",
+     "grants": [
       "Storm bolter"
      ]
     },
@@ -8081,7 +8137,7 @@
      ]
     },
     {
-     "text": "For every 5 models in the unit, up to 2 models can replace their boltgun and Long Vigil melee weapon with one of the following:<ul style=\"list-style-type:circle\"><li>1 frag cannon</li><li>1 Infernus heavy bolter</li></ul>",
+     "text": "Frag cannon",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -8089,21 +8145,46 @@
       "n": 5
      },
      "base": "",
+     "group": "000003824-2",
      "model": "",
      "grants": [
-      "Boltgun",
-      "Frag cannon",
-      "Long Vigil melee weapon"
+      "Frag cannon"
      ]
     },
     {
-     "text": "Any number of Kill Team Biker models can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 Long Vigil melee weapon</li></ul>",
+     "text": "Infernus heavy bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "",
+     "group": "000003824-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Bolt pistol",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000003824-3",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Long Vigil melee weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000003824-3",
      "model": "",
      "grants": [
       "Long Vigil melee weapon"
@@ -8182,21 +8263,61 @@
      "grants": []
     },
     {
-     "text": "Any number of Kill Team Terminator models can replace their power fist and storm bolter with one of the following:<ul style=\"list-style-type:circle\"><li>1 storm bolter and 1 power weapon</li><li>1 storm bolter and 1 chainfist</li><li>1 twin lightning claws</li><li>1 Terminator thunder hammer and 1 storm shield</li></ul>",
+     "text": "Storm bolter and 1 power weapon",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000003824-6",
      "model": "",
      "grants": [
       "Storm bolter",
-      "Chainfist",
-      "Power fist",
-      "Power weapon",
-      "Terminator thunder hammer",
+      "Power weapon"
+     ]
+    },
+    {
+     "text": "Storm bolter and 1 chainfist",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000003824-6",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Chainfist"
+     ]
+    },
+    {
+     "text": "Twin lightning claws",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000003824-6",
+     "model": "",
+     "grants": [
       "Twin lightning claws"
+     ]
+    },
+    {
+     "text": "Terminator thunder hammer and 1 storm shield",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000003824-6",
+     "model": "",
+     "grants": [
+      "Terminator thunder hammer"
      ]
     }
    ],
@@ -9274,7 +9395,7 @@
      "grants": []
     },
     {
-     "text": "The Sister Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
+     "text": "Chainsword",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9282,9 +9403,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000003818-1",
      "model": "",
      "grants": [
-      "Chainsword",
+      "Chainsword"
+     ]
+    },
+    {
+     "text": "Power weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000003818-1",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     },
@@ -10226,7 +10362,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "The Veteran Biker Sergeant can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 Long Vigil ranged weapon</li><li>1 Long Vigil melee weapon</li><li>1 xenophase blade</li><li>1 Astartes shield</li></ul>",
+     "text": "Long Vigil ranged weapon",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -10234,12 +10370,54 @@
       "max": 1
      },
      "base": "",
+     "group": "000003823-0",
      "model": "",
      "grants": [
-      "Long Vigil ranged weapon",
-      "Long Vigil melee weapon",
+      "Long Vigil ranged weapon"
+     ]
+    },
+    {
+     "text": "Long Vigil melee weapon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000003823-0",
+     "model": "",
+     "grants": [
+      "Long Vigil melee weapon"
+     ]
+    },
+    {
+     "text": "Xenophase blade",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000003823-0",
+     "model": "",
+     "grants": [
       "Xenophase blade"
      ]
+    },
+    {
+     "text": "Astartes shield",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000003823-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of Veteran Biker models can each be equipped with 1 Long Vigil melee weapon.",

@@ -1638,16 +1638,30 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 particle caster</li><li>1 transdimensional beamer</li></ul>",
+     "text": "Particle caster",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000000546-0",
      "model": "",
      "grants": [
-      "Particle caster",
+      "Particle caster"
+     ]
+    },
+    {
+     "text": "Transdimensional beamer",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000546-0",
+     "model": "",
+     "grants": [
       "Transdimensional beamer"
      ]
     },
@@ -4505,7 +4519,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 nanoscarab amulet</li><li>1 resurrection orb</li></ul>",
+     "text": "Nanoscarab amulet",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4513,6 +4527,20 @@
       "max": 1
      },
      "base": "",
+     "group": "000002351-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Resurrection orb",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000002351-1",
      "model": "",
      "grants": []
     }
@@ -8099,13 +8127,26 @@
      "grants": []
     },
     {
-     "text": "Any number of models can each be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 nebuloscope</li><li>1 shadowloom</li></ul>",
+     "text": "Nebuloscope",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000000548-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shadowloom",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000548-2",
      "model": "",
      "grants": []
     }
@@ -8232,16 +8273,45 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This unit can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 gauss exterminator and 1 twin tesla destructor</li><li>2 gauss exterminators</li><li>2 twin tesla destructors</li></ul>",
+     "text": "Gauss exterminator and 1 twin tesla destructor",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000002362-0",
      "model": "",
      "grants": [
       "Gauss exterminator",
+      "Twin tesla destructor"
+     ]
+    },
+    {
+     "text": "Gauss exterminators",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000002362-0",
+     "model": "",
+     "grants": [
+      "Gauss exterminator"
+     ]
+    },
+    {
+     "text": "Twin tesla destructors",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000002362-0",
+     "model": "",
+     "grants": [
       "Twin tesla destructor"
      ]
     }

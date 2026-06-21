@@ -403,7 +403,7 @@ export function exportListText(
   lines.push('');
   lines.push(`Total: ${pointsTotal} / ${pointsLimit} pts`);
   lines.push('');
-  lines.push('Built with New40k List Builder — Powered by Wahapedia (unofficial).');
+  lines.push('Built with New40k List Builder by Alhazred.sh — Powered by Wahapedia (unofficial).');
   return lines.join('\n');
 }
 

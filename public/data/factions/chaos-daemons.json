@@ -10760,7 +10760,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>Living whip</li><li>Ritual knife</li><li>Shining aegis</li></ul>",
+     "text": "Living whip",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -10768,11 +10768,39 @@
       "max": 1
      },
      "base": "",
+     "group": "000001137-0",
      "model": "",
      "grants": [
-      "Living whip",
+      "Living whip"
+     ]
+    },
+    {
+     "text": "Ritual knife",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001137-0",
+     "model": "",
+     "grants": [
       "Ritual knife"
      ]
+    },
+    {
+     "text": "Shining aegis",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001137-0",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -11603,7 +11631,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 rod of sorcery</li><li>1 baleful sword</li></ul>",
+     "text": "Rod of sorcery",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -11611,9 +11639,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000001120-0",
      "model": "",
      "grants": [
-      "Rod of sorcery",
+      "Rod of sorcery"
+     ]
+    },
+    {
+     "text": "Baleful sword",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000001120-0",
+     "model": "",
+     "grants": [
       "Baleful sword"
      ]
     }
@@ -13712,7 +13755,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "astartes chainsword",
      "group": "000004067-6",
@@ -13727,7 +13771,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "astartes chainsword",
      "group": "000004067-6",
@@ -13742,7 +13787,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "astartes chainsword",
      "group": "000004067-6",
@@ -14404,19 +14450,70 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Any numbers of models’ heavy stubbers can each be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autocannon</li><li>1 heavy bolter</li><li>1 lascannon</li><li>1 missile launcher</li><li>1 mortar</li></ul>",
+     "text": "Autocannon",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000004058-0",
      "model": "",
      "grants": [
-      "Lascannon",
-      "Heavy stubber",
-      "Heavy bolter",
-      "Autocannon",
+      "Autocannon"
+     ]
+    },
+    {
+     "text": "Heavy bolter",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000004058-0",
+     "model": "",
+     "grants": [
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000004058-0",
+     "model": "",
+     "grants": [
+      "Lascannon"
+     ]
+    },
+    {
+     "text": "Missile launcher",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000004058-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Mortar",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000004058-0",
+     "model": "",
+     "grants": [
       "Mortar"
      ]
     }

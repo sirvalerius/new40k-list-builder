@@ -1955,7 +1955,7 @@
      ]
     },
     {
-     "text": "The Cloud Dancer Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
+     "text": "Dissonance pistol",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1963,9 +1963,24 @@
       "max": 1
      },
      "base": "",
-     "model": "CLOUD DANCER FELARCH",
+     "group": "000000629-1",
+     "model": "",
      "grants": [
-      "Dissonance pistol",
+      "Dissonance pistol"
+     ]
+    },
+    {
+     "text": "Void sabre",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000629-1",
+     "model": "",
+     "grants": [
       "Void sabre"
      ]
     },
@@ -2388,7 +2403,7 @@
      ]
     },
     {
-     "text": "The Corsair Reaver Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
+     "text": "Dissonance pistol",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2396,9 +2411,24 @@
       "max": 1
      },
      "base": "",
-     "model": "CORSAIR REAVER FELARCH",
+     "group": "000000632-2",
+     "model": "",
      "grants": [
-      "Dissonance pistol",
+      "Dissonance pistol"
+     ]
+    },
+    {
+     "text": "Void sabre",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000632-2",
+     "model": "",
+     "grants": [
       "Void sabre"
      ]
     },
@@ -2874,7 +2904,7 @@
      ]
     },
     {
-     "text": "The Corsair Skyreaver Felarch can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 dissonance pistol</li><li>1 void sabre</li></ul>",
+     "text": "Dissonance pistol",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2882,9 +2912,24 @@
       "max": 1
      },
      "base": "",
-     "model": "CORSAIR SKYREAVER FELARCH",
+     "group": "000000633-2",
+     "model": "",
      "grants": [
-      "Dissonance pistol",
+      "Dissonance pistol"
+     ]
+    },
+    {
+     "text": "Void sabre",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000633-2",
+     "model": "",
+     "grants": [
       "Void sabre"
      ]
     },
@@ -3124,7 +3169,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "The Skyreaver Felarch can replace its shuriken pistol with one of the following:<ul style=\"list-style-type:circle\"><li>1  blast pistol</li><li>1 neuro disruptor</li></ul>",
+     "text": "Blast pistol",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3132,11 +3177,25 @@
       "max": 1
      },
      "base": "",
+     "group": "000004196-0",
      "model": "",
      "grants": [
-      "Blast pistol",
-      "Neuro disruptor",
-      "Shuriken pistol"
+      "Blast pistol"
+     ]
+    },
+    {
+     "text": "Neuro disruptor",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000004196-0",
+     "model": "",
+     "grants": [
+      "Neuro disruptor"
      ]
     },
     {
@@ -4474,7 +4533,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "The Dark Reaper Exarch’s Reaper launcher can be replaced with 1 of the following:<ul style=\"list-style-type:circle\"><li>1 missile launcher</li><li>1 shuriken cannon</li><li>1 tempest launcher</li></ul>",
+     "text": "Missile launcher (instead of reaper launcher)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4482,9 +4541,37 @@
       "max": 1
      },
      "base": "reaper launcher",
+     "group": "000000607-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Shuriken cannon (instead of reaper launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "reaper launcher",
+     "group": "000000607-0",
      "model": "",
      "grants": [
-      "Shuriken cannon",
+      "Shuriken cannon"
+     ]
+    },
+    {
+     "text": "Tempest launcher (instead of reaper launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "reaper launcher",
+     "group": "000000607-0",
+     "model": "",
+     "grants": [
       "Tempest launcher"
      ]
     },
@@ -5824,7 +5911,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "The Fire Dragon Exarch model’s Exarch’s Dragon fusion gun can be replaced with 1 of the following:<ul style=\"list-style-type:circle\"><li>1 Dragon’s breath flamer</li><li>1 Dragon fusion pistol and 1 Dragon axe</li><li>1 firepike</li></ul>",
+     "text": "Dragon’s breath flamer (instead of exarch’s dragon fusion gun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -5832,13 +5919,44 @@
       "max": 1
      },
      "base": "exarch’s dragon fusion gun",
+     "group": "000000596-0",
+     "model": "",
+     "grants": [
+      "Dragon fusion gun",
+      "Dragon’s breath flamer"
+     ]
+    },
+    {
+     "text": "Dragon fusion pistol and 1 Dragon axe (instead of exarch’s dragon fusion gun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "exarch’s dragon fusion gun",
+     "group": "000000596-0",
      "model": "",
      "grants": [
       "Dragon fusion gun",
       "Dragon fusion pistol",
-      "Dragon’s breath flamer",
-      "Firepike",
       "Dragon axe"
+     ]
+    },
+    {
+     "text": "Firepike (instead of exarch’s dragon fusion gun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "exarch’s dragon fusion gun",
+     "group": "000000596-0",
+     "model": "",
+     "grants": [
+      "Dragon fusion gun",
+      "Firepike"
      ]
     },
     {
@@ -7077,7 +7195,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "The Howling Banshee Exarch’s Banshee blade can be replaced with 1 of the following:<ul style=\"list-style-type:circle\"><li>1 executioner</li><li>1 triskele</li></ul>",
+     "text": "Executioner (instead of banshee blade)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7085,10 +7203,25 @@
       "max": 1
      },
      "base": "banshee blade",
+     "group": "000000594-0",
+     "model": "",
+     "grants": [
+      "Executioner"
+     ]
+    },
+    {
+     "text": "Triskele (instead of banshee blade)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "banshee blade",
+     "group": "000000594-0",
      "model": "",
      "grants": [
       "Triskele",
-      "Executioner",
       "Triskele"
      ]
     },
@@ -10968,7 +11101,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with up to two of the following:<ul style=\"list-style-type:circle\"><li>1 scatter laser</li><li>1 shuriken cannon</li><li>1 starcannon</li></ul>",
+     "text": "Scatter laser",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -10976,10 +11109,39 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000627-0",
      "model": "",
      "grants": [
-      "Scatter laser",
-      "Shuriken cannon",
+      "Scatter laser"
+     ]
+    },
+    {
+     "text": "Shuriken cannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000627-0",
+     "model": "",
+     "grants": [
+      "Shuriken cannon"
+     ]
+    },
+    {
+     "text": "Starcannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000627-0",
+     "model": "",
+     "grants": [
       "Starcannon"
      ]
     },
@@ -12959,7 +13121,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "shuriken pistol",
      "model": "",
@@ -12973,7 +13136,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 4
      },
      "base": "shuriken pistol",
      "model": "",
@@ -14161,18 +14325,56 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Each model can have each shuriken cannon it is equipped with replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 missile launcher</li><li>1 bright lance</li><li>1 scatter laser</li><li>1 starcannon</li></ul>",
+     "text": "Missile launcher",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "",
+     "group": "000000612-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Bright lance",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000612-0",
      "model": "",
      "grants": [
-      "Bright lance",
-      "Scatter laser",
-      "Shuriken cannon",
+      "Bright lance"
+     ]
+    },
+    {
+     "text": "Scatter laser",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000612-0",
+     "model": "",
+     "grants": [
+      "Scatter laser"
+     ]
+    },
+    {
+     "text": "Starcannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "group": "000000612-0",
+     "model": "",
+     "grants": [
       "Starcannon"
      ]
     }
@@ -16422,7 +16624,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with up to two of the following:<ul style=\"list-style-type:circle\"><li>1 scatter laser</li><li>1 shuriken cannon</li><li>1 starcannon</li></ul>",
+     "text": "Scatter laser",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -16430,10 +16632,39 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000614-2",
      "model": "",
      "grants": [
-      "Scatter laser",
-      "Shuriken cannon",
+      "Scatter laser"
+     ]
+    },
+    {
+     "text": "Shuriken cannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000614-2",
+     "model": "",
+     "grants": [
+      "Shuriken cannon"
+     ]
+    },
+    {
+     "text": "Starcannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000614-2",
+     "model": "",
+     "grants": [
       "Starcannon"
      ]
     }
@@ -16624,7 +16855,7 @@
      ]
     },
     {
-     "text": "This model can be equipped with up to two of the following:<ul style=\"list-style-type:circle\"><li>1 scatter laser</li><li>1 shuriken cannon</li><li>1 starcannon</li></ul>",
+     "text": "Scatter laser",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -16632,10 +16863,39 @@
       "slots": 2
      },
      "base": "",
+     "group": "000003913-1",
      "model": "",
      "grants": [
-      "Scatter laser",
-      "Shuriken cannon",
+      "Scatter laser"
+     ]
+    },
+    {
+     "text": "Shuriken cannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000003913-1",
+     "model": "",
+     "grants": [
+      "Shuriken cannon"
+     ]
+    },
+    {
+     "text": "Starcannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000003913-1",
+     "model": "",
+     "grants": [
       "Starcannon"
      ]
     }
@@ -16879,7 +17139,7 @@
      "grants": []
     },
     {
-     "text": "This model can be equipped with up to two of the following:<ul style=\"list-style-type:circle\"><li>1 missile launcher</li><li>1 bright lance</li><li>1 scatter laser</li><li>1 shuriken cannon</li><li>1 starcannon</li></ul>",
+     "text": "Missile launcher",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -16887,11 +17147,67 @@
       "slots": 2
      },
      "base": "",
+     "group": "000000613-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Bright lance",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000613-2",
      "model": "",
      "grants": [
-      "Bright lance",
-      "Scatter laser",
-      "Shuriken cannon",
+      "Bright lance"
+     ]
+    },
+    {
+     "text": "Scatter laser",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000613-2",
+     "model": "",
+     "grants": [
+      "Scatter laser"
+     ]
+    },
+    {
+     "text": "Shuriken cannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000613-2",
+     "model": "",
+     "grants": [
+      "Shuriken cannon"
+     ]
+    },
+    {
+     "text": "Starcannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "slots",
+      "slots": 2
+     },
+     "base": "",
+     "group": "000000613-2",
+     "model": "",
+     "grants": [
       "Starcannon"
      ]
     }
@@ -17096,7 +17412,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 bright lance</li><li>1 scatter laser</li><li>1 shuriken cannon</li><li>1 starcannon</li><li>1 Wraithseer D-cannon</li></ul>",
+     "text": "Aeldari missile launcher",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -17104,12 +17420,82 @@
       "max": 1
      },
      "base": "",
+     "group": "000000617-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Bright lance",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000617-0",
      "model": "",
      "grants": [
-      "Bright lance",
-      "Scatter laser",
-      "Shuriken cannon",
-      "Starcannon",
+      "Bright lance"
+     ]
+    },
+    {
+     "text": "Scatter laser",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000617-0",
+     "model": "",
+     "grants": [
+      "Scatter laser"
+     ]
+    },
+    {
+     "text": "Shuriken cannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000617-0",
+     "model": "",
+     "grants": [
+      "Shuriken cannon"
+     ]
+    },
+    {
+     "text": "Starcannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000617-0",
+     "model": "",
+     "grants": [
+      "Starcannon"
+     ]
+    },
+    {
+     "text": "Wraithseer D-cannon",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000000617-0",
+     "model": "",
+     "grants": [
       "Wraithseer D-cannon"
      ]
     }
@@ -18127,7 +18513,7 @@
      ]
     },
     {
-     "text": "For every 3 models in this unit, 1 model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 grav-talon</li><li>1 cluster caltrops</li></ul>",
+     "text": "Grav-talon",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -18135,6 +18521,20 @@
       "n": 3
      },
      "base": "",
+     "group": "000003919-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Cluster caltrops",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 3
+     },
+     "base": "",
+     "group": "000003919-2",
      "model": "",
      "grants": []
     }
@@ -18274,7 +18674,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol</li><li>1 splinter pistol</li></ul>",
+     "text": "Blast pistol",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -18282,9 +18682,24 @@
       "max": 1
      },
      "base": "",
+     "group": "000003915-0",
      "model": "",
      "grants": [
-      "Blast pistol",
+      "Blast pistol"
+     ]
+    },
+    {
+     "text": "Splinter pistol",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "",
+     "group": "000003915-0",
+     "model": "",
+     "grants": [
       "Splinter pistol"
      ]
     }
