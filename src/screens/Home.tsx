@@ -5,7 +5,7 @@ import {
   getAllLists,
   importLists,
 } from '../lib/db';
-import { download } from '../lib/helpers';
+import { download, unitTotal } from '../lib/helpers';
 
 export function Home({
   rules,
@@ -30,6 +30,9 @@ export function Home({
 
   function bsName(id: string) {
     return rules.battle_sizes.find((b) => b.id === id)?.name ?? '';
+  }
+  function bsPoints(id: string) {
+    return rules.battle_sizes.find((b) => b.id === id)?.points ?? 0;
   }
 
   async function onDelete(l: ArmyList) {
@@ -114,8 +117,13 @@ export function Home({
             >
               <div className="name">{l.name}</div>
               <div className="muted small">
-                {factionName(l.factionId)} · {bsName(l.battleSizeId)} ·{' '}
-                {l.units.length} unit{l.units.length === 1 ? '' : 's'}
+                {factionName(l.factionId)} · {bsName(l.battleSizeId)}
+              </div>
+              <div className="muted small">
+                <b>{l.units.reduce((s, u) => s + unitTotal(u), 0)}</b>
+                /{bsPoints(l.battleSizeId)} pts · {l.units.length} unit
+                {l.units.length === 1 ? '' : 's'} · {l.detachmentIds.length} detach
+                {l.detachmentIds.length === 1 ? '' : 's'}
               </div>
             </div>
             <button className="ghost small" onClick={() => onOpen(l.id)}>

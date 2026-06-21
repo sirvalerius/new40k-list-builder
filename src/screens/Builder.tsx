@@ -17,6 +17,7 @@ import {
   exportListText,
   intOf,
   reconcileTiers,
+  uid as uid_,
 } from '../lib/helpers';
 import { loadFactionById } from '../lib/data';
 import { SummaryBar } from '../components/SummaryBar';
@@ -92,6 +93,13 @@ export function Builder({
       const detachmentIds = has
         ? l.detachmentIds.filter((x) => x !== id)
         : [...l.detachmentIds, id];
+      // Selecting a Chapter-locked detachment binds the army to that Chapter, so the
+      // unit list / other detachments stay coherent (Black Templars psyker exclusion, etc.).
+      let subFaction = l.subFaction;
+      if (!has) {
+        const picked = fd?.detachments.find((d) => d.id === id);
+        if (picked?.restricted_chapter && !subFaction) subFaction = picked.restricted_chapter;
+      }
       // dropping a detachment clears enhancements it provided
       let units = l.units;
       if (has && fd) {
@@ -106,7 +114,7 @@ export function Builder({
             : u,
         );
       }
-      return { ...l, detachmentIds, units };
+      return { ...l, detachmentIds, units, subFaction };
     });
   }
 
@@ -127,6 +135,28 @@ export function Builder({
 
   function removeUnit(uid: string) {
     update((l) => ({ ...l, units: l.units.filter((u) => u.uid !== uid) }));
+  }
+
+  function duplicateUnit(uid: string) {
+    update((l) => {
+      const src = l.units.find((u) => u.uid === uid);
+      if (!src) return l;
+      // Clone the loadout (model count + paid wargear) but drop the per-army
+      // singletons: Warlord and the enhancement (which is limited/unique).
+      const copy = {
+        ...src,
+        uid: uid_(),
+        warlord: false,
+        enhancementName: undefined,
+        enhancementCost: undefined,
+        wargearCosts: src.wargearCosts ? src.wargearCosts.map((w) => ({ ...w })) : undefined,
+      };
+      const idx = l.units.findIndex((u) => u.uid === uid);
+      const units = [...l.units];
+      units.splice(idx + 1, 0, copy); // insert right after the original
+      return { ...l, units };
+      // reconcileTiers (in update) re-prices both for the new pick-order positions.
+    });
   }
 
   function setWarlord(uid: string) {
@@ -278,6 +308,7 @@ export function Builder({
           subFaction={sub}
           onAdd={addUnit}
           onRemove={removeUnit}
+          onDuplicate={duplicateUnit}
           onSetWarlord={setWarlord}
           onSetWargear={setWargear}
           onSetModelCount={setModelCount}

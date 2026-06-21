@@ -36,6 +36,7 @@ export function Roster({
   subFaction,
   onAdd,
   onRemove,
+  onDuplicate,
   onSetWarlord,
   onSetWargear,
   onSetModelCount,
@@ -46,6 +47,7 @@ export function Roster({
   subFaction: string;
   onAdd: (ds: Datasheet, tier: PointsOption, modelCount?: number) => void;
   onRemove: (uid: string) => void;
+  onDuplicate: (uid: string) => void;
   onSetWarlord: (uid: string) => void;
   onSetWargear: (uid: string, wargear: ChosenWargear[]) => void;
   onSetModelCount: (uid: string, count: number) => void;
@@ -174,6 +176,9 @@ export function Roster({
                   Make Warlord
                 </button>
               )}
+              <button className="small" onClick={() => onDuplicate(u.uid)}>
+                Duplicate
+              </button>
               <div className="spacer" />
               <button
                 className="small danger"

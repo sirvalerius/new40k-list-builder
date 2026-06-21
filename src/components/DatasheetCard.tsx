@@ -37,20 +37,26 @@ export function DatasheetCard({ ds, selected }: { ds: Datasheet; selected?: Chos
       {weapons.length > 0 && (
         <Collapsible title={`Weapons (${weapons.length})`}>
           <div className="col" style={{ gap: 6 }}>
-            {weapons.map((w, i) => (
-              <div key={i} className="small">
-                <b>{w.name}</b>{' '}
-                <span className="muted">
-                  [{w.type}
-                  {w.range && w.range !== 'Melee' ? ` ${w.range}"` : ''}] A{w.A} ·
-                  {w.BS_WS}
-                  {w.type === 'Ranged' ? ' BS' : ' WS'} · S{w.S} · AP{w.AP} · D{w.D}
-                </span>
-                {w.description && (
-                  <span className="muted"> — {stripHtml(w.description)}</span>
-                )}
-              </div>
-            ))}
+            {weapons.map((w, i) => {
+              const skill = w.type === 'Ranged' ? 'BS' : 'WS';
+              // BS_WS holds a target number (e.g. "3" -> "3+"); "N/A" for torrent/auto-hit.
+              const sk = /^\d+$/.test(String(w.BS_WS).trim())
+                ? `${skill} ${w.BS_WS}+`
+                : `${skill} ${w.BS_WS}`;
+              return (
+                <div key={i} className="small">
+                  <b>{w.name}</b>{' '}
+                  <span className="muted">
+                    [{w.type}
+                    {w.range && w.range !== 'Melee' ? ` ${w.range}"` : ''}] A{w.A} · {sk} ·
+                    S{w.S} · AP{w.AP} · D{w.D}
+                  </span>
+                  {w.description && (
+                    <span className="muted"> — {stripHtml(w.description)}</span>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </Collapsible>
       )}
