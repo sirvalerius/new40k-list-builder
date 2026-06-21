@@ -197,8 +197,9 @@ h3.muted {
   font-size: 0.8rem;
   font-weight: 600;
 }
-.group-head::before,
-h3.muted::before {
+/* the ✠ is a deliberate marker on the roster's main sub-type dividers only —
+   not on every section heading (that uniform repeat is the AI-grammar tell) */
+.group-head::before {
   content: '✠ ';
   color: var(--border-gold);
 }
