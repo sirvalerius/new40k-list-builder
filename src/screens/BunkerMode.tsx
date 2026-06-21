@@ -30,7 +30,7 @@ export function BunkerMode({
   ];
 
   if (!list.units.length)
-    return <div className="empty">Aggiungi unità per usare la modalità partita.</div>;
+    return <div className="empty">Add units to use the in-game reference.</div>;
 
   // A "primary" unit is one not attached to another; its joined leaders share the card.
   const primaries = list.units.filter((u) => !u.attachedToUid);
@@ -38,8 +38,8 @@ export function BunkerMode({
   return (
     <div>
       <div className="mb muted small">
-        Modalità partita — schede pronte all'uso, una per unità in gioco. Leader e Support
-        compaiono nella stessa card del loro bodyguard, con gli stratagemmi applicabili.
+        In-game reference — one ready card per fielded unit. Leaders and Support share their
+        bodyguard's card, with the stratagems that apply.
       </div>
 
       {primaries.map((u) => {
@@ -81,7 +81,7 @@ export function BunkerMode({
             })}
 
             <div className="bunker-strats">
-              <Collapsible title={`Stratagemmi applicabili (${applicable.length})`}>
+              <Collapsible title={`Applicable stratagems (${applicable.length})`}>
                 <div className="col" style={{ gap: 10 }}>
                   {applicable.map((s, i) => (
                     <div key={i} className="strat small">
@@ -95,7 +95,7 @@ export function BunkerMode({
                   ))}
                   {!applicable.length && (
                     <div className="muted small">
-                      Nessun stratagemma applicabile dai detachment scelti.
+                      No applicable stratagems from the chosen detachments.
                     </div>
                   )}
                 </div>

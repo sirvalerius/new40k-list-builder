@@ -19,8 +19,8 @@ export function FeedbackButton({
     <>
       <button
         className="ghost iconbtn"
-        aria-label="Segnala un bug"
-        title="Segnala un bug"
+        aria-label="Report a bug"
+        title="Report a bug"
         onClick={() => setOpen(true)}
       >
         🐞
@@ -74,17 +74,17 @@ function FeedbackModal({
 
   return (
     <Modal
-      title="Segnala un bug"
+      title="Report a bug"
       onClose={onClose}
       footer={
         state === 'done' ? (
           <button className="primary" style={{ width: '100%' }} onClick={onClose}>
-            Chiudi
+            Close
           </button>
         ) : (
           <div className="row">
             <button className="ghost" onClick={onClose}>
-              Annulla
+              Cancel
             </button>
             <div className="spacer" />
             <button
@@ -92,23 +92,23 @@ function FeedbackModal({
               disabled={!text.trim() || state === 'sending'}
               onClick={submit}
             >
-              {state === 'sending' ? 'Invio…' : 'Invia'}
+              {state === 'sending' ? 'Sending…' : 'Send'}
             </button>
           </div>
         )
       }
     >
       {state === 'done' ? (
-        <div className="banner ok">Grazie! Il feedback è stato registrato.</div>
+        <div className="banner ok">Thanks — your feedback was recorded.</div>
       ) : (
         <>
           <p className="muted small">
-            Descrivi il bug o il suggerimento. Verrà aggiunto a <code>FEEDBACK.md</code>{' '}
-            nella repository.
+            Describe the bug or suggestion. It's appended to <code>FEEDBACK.md</code>{' '}
+            in the repository.
           </p>
           <textarea
             className="fb-text"
-            placeholder="Cosa è andato storto? Cosa stavi facendo?"
+            placeholder="What went wrong? What were you doing?"
             value={text}
             maxLength={4000}
             onChange={(e) => setText(e.target.value)}
@@ -124,7 +124,7 @@ function FeedbackModal({
             aria-hidden
           />
           {state === 'error' && (
-            <div className="banner bad mt">Invio fallito. Riprova tra poco.</div>
+            <div className="banner bad mt">Couldn't send. Try again shortly.</div>
           )}
         </>
       )}

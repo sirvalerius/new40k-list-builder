@@ -178,7 +178,7 @@ export default function App() {
         {view.kind !== 'builder' && (
           <footer className="footer">
             <div className="credit">
-              Ideato e creato da{' '}
+              Designed &amp; built by{' '}
               <a href="https://alhazred.sh" target="_blank" rel="noopener noreferrer">
                 Alhazred.sh
               </a>
@@ -194,7 +194,7 @@ export default function App() {
             <div>{rules.attribution}</div>
             <div className="version">
               {APP_VERSION}
-              {BUILD_DATE ? ` · aggiornata il ${BUILD_DATE}` : ''}
+              {BUILD_DATE ? ` · updated ${BUILD_DATE}` : ''}
             </div>
           </footer>
         )}

@@ -37,6 +37,13 @@ const ROLE_ORDER = [
   'Other',
 ];
 
+// English ordinal suffix: 1->st, 2->nd, 3->rd, 4->th, 11->th …
+const ordinal = (n: number) => {
+  const s = ['th', 'st', 'nd', 'rd'];
+  const v = n % 100;
+  return s[(v - 20) % 10] || s[v] || s[0];
+};
+
 export function Roster({
   list,
   fd,
@@ -284,7 +291,7 @@ export function Roster({
               checked={hideLegends}
               onChange={(e) => setHideLegends(e.target.checked)}
             />
-            <span className="small">Nascondi unità Legends</span>
+            <span className="small">Hide Legends units</span>
           </label>
           {(() => {
             const favSet = new Set(favs);
@@ -331,7 +338,7 @@ export function Roster({
               <>
                 {favRows.length > 0 && (
                   <div className="mb">
-                    <h3 className="muted">★ Preferiti</h3>
+                    <h3 className="muted">★ Favourites</h3>
                     <div className="col" style={{ gap: 6 }}>{favRows.map(renderRow)}</div>
                   </div>
                 )}
@@ -493,7 +500,7 @@ function WeaponOptionsEditor({
           // Unavailable = nothing chosen and no remaining allowance (pool/sub-model used up).
           const unavailable = q === 0 && (max ?? Infinity) <= 0;
           const limLabel = needsModel
-            ? `richiede ${needsModel}`
+            ? `needs ${needsModel}`
             : o.limit?.kind === 'per_n'
               ? `max ${max} (1 / ${o.limit.n})`
               : o.limit?.kind === 'slots'
@@ -657,9 +664,9 @@ function AddUnitModal({
             </div>
           </div>
           <div className="muted tiny mt">
-            Prezzo allo scaglione minimo che contiene {count} modelli
-            {ds.has_order_tiers ? ` · ${nextPick}º esemplare (sale per 2º+/3º+)` : ''}.
-            Si ricalcola se aggiungi o rimuovi copie.
+            Priced at the smallest bracket that holds {count} models
+            {ds.has_order_tiers ? ` · ${nextPick}${ordinal(nextPick)} copy (rises for 2nd+/3rd+)` : ''}.
+            Recalculates as you add or remove copies.
           </div>
         </>
       ) : (
@@ -682,7 +689,7 @@ function AddUnitModal({
           </div>
           {ds.has_order_tiers && (
             <div className="muted tiny mt">
-              Costo automatico per il {nextPick}º esemplare (sale per 2º+/3º+).
+              Cost auto-set for the {nextPick}{ordinal(nextPick)} copy (rises for 2nd+/3rd+).
             </div>
           )}
         </>

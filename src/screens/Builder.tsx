@@ -317,7 +317,7 @@ export function Builder({
           className={tab === 'bunker' ? 'active' : ''}
           onClick={() => setTab('bunker')}
         >
-          🛡 Partita
+          🛡 In-game
         </button>
       </div>
 

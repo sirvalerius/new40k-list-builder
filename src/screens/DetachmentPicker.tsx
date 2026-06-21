@@ -40,7 +40,7 @@ export function DetachmentPicker({
       </div>
 
       <input
-        placeholder="Cerca detachment…"
+        placeholder="Search detachments…"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         className="mb"
@@ -59,8 +59,8 @@ export function DetachmentPicker({
             <div className="row" style={{ alignItems: 'flex-start' }}>
               <button
                 className="ghost iconbtn star"
-                aria-label={fav ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti'}
-                title="Preferito"
+                aria-label={fav ? 'Remove from favourites' : 'Add to favourites'}
+                title="Favourite"
                 onClick={() => setFavs(toggleFavorite('det', d.id))}
               >
                 {fav ? '★' : '☆'}
@@ -89,7 +89,7 @@ export function DetachmentPicker({
 
             {d.enhancements.length > 0 && (
               <div className="mt">
-                <Collapsible title={`Enhancements sbloccati (${d.enhancements.length})`}>
+                <Collapsible title={`Enhancements unlocked (${d.enhancements.length})`}>
                   {d.enhancements.map((e, i) => (
                     <div key={i} className="small mb">
                       <b>{e.name}</b>{' '}
