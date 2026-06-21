@@ -689,7 +689,7 @@
      ]
     },
     {
-     "text": "This model’s swiftstrike burst cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 ion cannon</li><li>1 swiftstrike railgun</li></ul>",
+     "text": "Ion cannon (instead of swiftstrike burst cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -697,6 +697,20 @@
       "max": 1
      },
      "base": "swiftstrike burst cannon",
+     "group": "000000453-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Swiftstrike railgun (instead of swiftstrike burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "swiftstrike burst cannon",
+     "group": "000000453-1",
      "model": "",
      "grants": [
       "Swiftstrike railgun"
@@ -1628,7 +1642,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s high-output burst cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 burst cannon</li><li>1 cyclic ion blaster*</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system*</li></ul>",
+     "text": "Airbursting fragmentation projector* (instead of high-output burst cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1636,14 +1650,150 @@
       "max": 1
      },
      "base": "high-output burst cannon",
+     "group": "000000402-0",
      "model": "",
      "grants": [
       "Airbursting fragmentation projector",
+      "Burst cannon"
+     ]
+    },
+    {
+     "text": "Battlesuit support system* (instead of high-output burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "high-output burst cannon",
+     "group": "000000402-0",
+     "model": "",
+     "grants": [
+      "Burst cannon"
+     ]
+    },
+    {
+     "text": "Burst cannon (instead of high-output burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "high-output burst cannon",
+     "group": "000000402-0",
+     "model": "",
+     "grants": [
+      "Burst cannon"
+     ]
+    },
+    {
+     "text": "Cyclic ion blaster* (instead of high-output burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "high-output burst cannon",
+     "group": "000000402-0",
+     "model": "",
+     "grants": [
+      "Burst cannon"
+     ]
+    },
+    {
+     "text": "Fusion blaster (instead of high-output burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "high-output burst cannon",
+     "group": "000000402-0",
+     "model": "",
+     "grants": [
       "Burst cannon",
-      "Fusion blaster",
-      "Missile pod",
-      "Plasma rifle",
+      "Fusion blaster"
+     ]
+    },
+    {
+     "text": "Missile pod (instead of high-output burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "high-output burst cannon",
+     "group": "000000402-0",
+     "model": "",
+     "grants": [
+      "Burst cannon",
+      "Missile pod"
+     ]
+    },
+    {
+     "text": "Plasma rifle (instead of high-output burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "high-output burst cannon",
+     "group": "000000402-0",
+     "model": "",
+     "grants": [
+      "Burst cannon",
+      "Plasma rifle"
+     ]
+    },
+    {
+     "text": "Shield generator* (instead of high-output burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "high-output burst cannon",
+     "group": "000000402-0",
+     "model": "",
+     "grants": [
+      "Burst cannon"
+     ]
+    },
+    {
+     "text": "T’au flamer (instead of high-output burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "high-output burst cannon",
+     "group": "000000402-0",
+     "model": "",
+     "grants": [
+      "Burst cannon",
       "T’au flamer"
+     ]
+    },
+    {
+     "text": "Weapon support system* (instead of high-output burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "high-output burst cannon",
+     "group": "000000402-0",
+     "model": "",
+     "grants": [
+      "Burst cannon"
      ]
     },
     {
@@ -1910,7 +2060,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s burst cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 cyclic ion blaster</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system*</li></ul>",
+     "text": "Airbursting fragmentation projector* (instead of burst cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1918,14 +2068,123 @@
       "max": 1
      },
      "base": "burst cannon",
+     "group": "000001477-0",
      "model": "",
      "grants": [
-      "Airbursting fragmentation projector",
-      "Fusion blaster",
-      "Missile pod",
-      "Plasma rifle",
+      "Airbursting fragmentation projector"
+     ]
+    },
+    {
+     "text": "Battlesuit support system* (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001477-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Cyclic ion blaster (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001477-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Fusion blaster (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001477-0",
+     "model": "",
+     "grants": [
+      "Fusion blaster"
+     ]
+    },
+    {
+     "text": "Missile pod (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001477-0",
+     "model": "",
+     "grants": [
+      "Missile pod"
+     ]
+    },
+    {
+     "text": "Plasma rifle (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001477-0",
+     "model": "",
+     "grants": [
+      "Plasma rifle"
+     ]
+    },
+    {
+     "text": "Shield generator* (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001477-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "T’au flamer (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001477-0",
+     "model": "",
+     "grants": [
       "T’au flamer"
      ]
+    },
+    {
+     "text": "Weapon support system* (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001477-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
@@ -2190,7 +2449,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s burst cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 cyclic ion blaster*</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system*</li></ul>",
+     "text": "Airbursting fragmentation projector* (instead of burst cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2198,14 +2457,123 @@
       "max": 1
      },
      "base": "burst cannon",
+     "group": "000001478-0",
      "model": "",
      "grants": [
-      "Airbursting fragmentation projector",
-      "Fusion blaster",
-      "Missile pod",
-      "Plasma rifle",
+      "Airbursting fragmentation projector"
+     ]
+    },
+    {
+     "text": "Battlesuit support system* (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001478-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Cyclic ion blaster* (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001478-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Fusion blaster (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001478-0",
+     "model": "",
+     "grants": [
+      "Fusion blaster"
+     ]
+    },
+    {
+     "text": "Missile pod (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001478-0",
+     "model": "",
+     "grants": [
+      "Missile pod"
+     ]
+    },
+    {
+     "text": "Plasma rifle (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001478-0",
+     "model": "",
+     "grants": [
+      "Plasma rifle"
+     ]
+    },
+    {
+     "text": "Shield generator* (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001478-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "T’au flamer (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001478-0",
+     "model": "",
+     "grants": [
       "T’au flamer"
      ]
+    },
+    {
+     "text": "Weapon support system* (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "burst cannon",
+     "group": "000001478-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model can be equipped with up to two of the following, and can take duplicates:<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
@@ -2647,21 +3015,122 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their burst cannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 airbursting fragmentation projector*</li><li>1 battlesuit support system*</li><li>1 cyclic ion blaster</li><li>1 fusion blaster</li><li>1 missile pod</li><li>1 plasma rifle</li><li>1 shield generator*</li><li>1 T’au flamer</li><li>1 weapon support system*</li></ul>",
+     "text": "Airbursting fragmentation projector* (instead of burst cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "burst cannon",
+     "group": "000000418-0",
      "model": "",
      "grants": [
-      "Airbursting fragmentation projector",
-      "Fusion blaster",
-      "Missile pod",
-      "Plasma rifle",
+      "Airbursting fragmentation projector"
+     ]
+    },
+    {
+     "text": "Battlesuit support system* (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "burst cannon",
+     "group": "000000418-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Cyclic ion blaster (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "burst cannon",
+     "group": "000000418-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Fusion blaster (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "burst cannon",
+     "group": "000000418-0",
+     "model": "",
+     "grants": [
+      "Fusion blaster"
+     ]
+    },
+    {
+     "text": "Missile pod (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "burst cannon",
+     "group": "000000418-0",
+     "model": "",
+     "grants": [
+      "Missile pod"
+     ]
+    },
+    {
+     "text": "Plasma rifle (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "burst cannon",
+     "group": "000000418-0",
+     "model": "",
+     "grants": [
+      "Plasma rifle"
+     ]
+    },
+    {
+     "text": "Shield generator* (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "burst cannon",
+     "group": "000000418-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "T’au flamer (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "burst cannon",
+     "group": "000000418-0",
+     "model": "",
+     "grants": [
       "T’au flamer"
      ]
+    },
+    {
+     "text": "Weapon support system* (instead of burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "burst cannon",
+     "group": "000000418-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of models can be equipped with up to two of the following, and can take duplicate<ul style=\"list-style-type:circle\"><li>1 gun drone</li><li>1 marker drone</li><li>1 shield drone</li></ul>",
@@ -3645,7 +4114,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s twin plasma rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin burst cannon</li><li>1 twin fusion blaster</li><li>1 twin missile pod</li></ul>",
+     "text": "Twin burst cannon (instead of twin plasma rifle)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3653,10 +4122,39 @@
       "max": 1
      },
      "base": "twin plasma rifle",
+     "group": "000000459-0",
      "model": "",
      "grants": [
-      "Twin burst cannon",
-      "Twin fusion blaster",
+      "Twin burst cannon"
+     ]
+    },
+    {
+     "text": "Twin fusion blaster (instead of twin plasma rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin plasma rifle",
+     "group": "000000459-0",
+     "model": "",
+     "grants": [
+      "Twin fusion blaster"
+     ]
+    },
+    {
+     "text": "Twin missile pod (instead of twin plasma rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin plasma rifle",
+     "group": "000000459-0",
+     "model": "",
+     "grants": [
       "Twin missile pod"
      ]
     }
@@ -4156,7 +4654,7 @@
      "grants": []
     },
     {
-     "text": "This model’s twin T’au flamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin fusion blaster</li><li>1 twin burst cannon</li></ul>",
+     "text": "Twin fusion blaster (instead of twin t’au flamer)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4164,10 +4662,25 @@
       "max": 1
      },
      "base": "twin t’au flamer",
+     "group": "000000420-1",
      "model": "",
      "grants": [
-      "Twin burst cannon",
       "Twin fusion blaster"
+     ]
+    },
+    {
+     "text": "Twin burst cannon (instead of twin t’au flamer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin t’au flamer",
+     "group": "000000420-1",
+     "model": "",
+     "grants": [
+      "Twin burst cannon"
      ]
     },
     {
@@ -4557,7 +5070,7 @@
      "grants": []
     },
     {
-     "text": "This model’s 2 twin pulse carbines can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 accelerator burst cannons</li><li>2 smart missile systems</li></ul>",
+     "text": "Accelerator burst cannons (instead of 2 twin pulse carbines)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4565,9 +5078,25 @@
       "max": 1
      },
      "base": "2 twin pulse carbines",
+     "group": "000000432-1",
      "model": "",
      "grants": [
       "Accelerator burst cannon",
+      "Twin pulse carbine"
+     ]
+    },
+    {
+     "text": "Smart missile systems (instead of 2 twin pulse carbines)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 twin pulse carbines",
+     "group": "000000432-1",
+     "model": "",
+     "grants": [
       "Twin pulse carbine",
       "Smart missile system"
      ]
@@ -5253,7 +5782,7 @@
      ]
     },
     {
-     "text": "1 Kroot Farstalker’s Farstalker firearm can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Dvorgite skinner</li><li>1 Londaxi tribalest</li></ul>",
+     "text": "Dvorgite skinner (instead of farstalker firearm)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -5261,9 +5790,24 @@
       "max": 1
      },
      "base": "farstalker firearm",
+     "group": "000002588-1",
      "model": "",
      "grants": [
-      "Dvorgite skinner",
+      "Dvorgite skinner"
+     ]
+    },
+    {
+     "text": "Londaxi tribalest (instead of farstalker firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "farstalker firearm",
+     "group": "000002588-1",
+     "model": "",
+     "grants": [
       "Londaxi tribalest"
      ]
     },
@@ -6487,7 +7031,7 @@
      "grants": []
     },
     {
-     "text": "This model’s 2 twin pulse carbines can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 accelerator burst cannons</li><li>2 smart missile systems</li></ul>",
+     "text": "Accelerator burst cannons (instead of 2 twin pulse carbines)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6495,9 +7039,25 @@
       "max": 1
      },
      "base": "2 twin pulse carbines",
+     "group": "000000431-1",
      "model": "",
      "grants": [
       "Accelerator burst cannon",
+      "Twin pulse carbine"
+     ]
+    },
+    {
+     "text": "Smart missile systems (instead of 2 twin pulse carbines)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 twin pulse carbines",
+     "group": "000000431-1",
+     "model": "",
+     "grants": [
       "Twin pulse carbine",
       "Smart missile system"
      ]
@@ -7087,13 +7647,28 @@
      "grants": []
     },
     {
-     "text": "Up to 3 Pathfinders can each have their pulse carbine replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 ion rifle</li><li>1 rail rifle</li></ul>",
+     "text": "Ion rifle (instead of pulse carbine)",
      "cost": 5,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 3
      },
      "base": "pulse carbine",
+     "group": "000000422-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Rail rifle (instead of pulse carbine)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 3
+     },
+     "base": "pulse carbine",
+     "group": "000000422-2",
      "model": "",
      "grants": [
       "Rail rifle"
@@ -7961,7 +8536,7 @@
      "grants": []
     },
     {
-     "text": "This model’s twin plasma rifles can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin fusion blaster</li><li>1 twin smart missile system</li></ul>",
+     "text": "Twin fusion blaster (instead of twin plasma rifles)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7969,9 +8544,25 @@
       "max": 1
      },
      "base": "twin plasma rifles",
+     "group": "000000421-1",
      "model": "",
      "grants": [
       "Twin fusion blaster",
+      "Twin plasma rifle"
+     ]
+    },
+    {
+     "text": "Twin smart missile system (instead of twin plasma rifles)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin plasma rifles",
+     "group": "000000421-1",
+     "model": "",
+     "grants": [
       "Twin plasma rifle",
       "Twin smart missile system"
      ]
@@ -8429,7 +9020,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 twin pulse carbines can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 accelerator burst cannons</li><li>2 smart missile systems</li></ul>",
+     "text": "Accelerator burst cannons (instead of 2 twin pulse carbines)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -8437,9 +9028,25 @@
       "max": 1
      },
      "base": "2 twin pulse carbines",
+     "group": "000000430-0",
      "model": "",
      "grants": [
       "Accelerator burst cannon",
+      "Twin pulse carbine"
+     ]
+    },
+    {
+     "text": "Smart missile systems (instead of 2 twin pulse carbines)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 twin pulse carbines",
+     "group": "000000430-0",
+     "model": "",
+     "grants": [
       "Twin pulse carbine",
       "Smart missile system"
      ]
@@ -8900,7 +9507,7 @@
      "grants": []
     },
     {
-     "text": "This model’s twin T’au flamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin airbursting fragmentation projector</li><li>1 twin burst cannon</li></ul>",
+     "text": "Twin airbursting fragmentation projector (instead of twin t’au flamer)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -8908,9 +9515,24 @@
       "max": 1
      },
      "base": "twin t’au flamer",
+     "group": "000000434-1",
      "model": "",
      "grants": [
-      "Twin airbursting fragmentation projector",
+      "Twin airbursting fragmentation projector"
+     ]
+    },
+    {
+     "text": "Twin burst cannon (instead of twin t’au flamer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin t’au flamer",
+     "group": "000000434-1",
+     "model": "",
+     "grants": [
       "Twin burst cannon"
      ]
     }
@@ -9626,7 +10248,7 @@
      "grants": []
     },
     {
-     "text": "This model’s 3 pulse ordnance drivers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 nexus missile launchers</li><li>1 heavy rail cannon array and 1 fragmentation cluster shell launcher</li></ul>",
+     "text": "Nexus missile launchers (instead of 3 pulse ordnance drivers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9634,11 +10256,27 @@
       "max": 1
      },
      "base": "3 pulse ordnance drivers",
+     "group": "000000446-2",
+     "model": "",
+     "grants": [
+      "Nexus missile launcher",
+      "Pulse ordnance driver"
+     ]
+    },
+    {
+     "text": "Heavy rail cannon array and 1 fragmentation cluster shell launcher (instead of 3 pulse ordnance drivers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "3 pulse ordnance drivers",
+     "group": "000000446-2",
      "model": "",
      "grants": [
       "Fragmentation cluster shell launcher",
       "Heavy rail cannon array",
-      "Nexus missile launcher",
       "Pulse ordnance driver"
      ]
     }
@@ -10614,7 +11252,7 @@
      ]
     },
     {
-     "text": "This model’s 2 ion cannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 swiftstrike burst cannons</li><li>2 swiftstrike railguns</li></ul>",
+     "text": "Swiftstrike burst cannons (instead of 2 ion cannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -10622,10 +11260,25 @@
       "max": 1
      },
      "base": "2 ion cannons",
+     "group": "000000454-1",
      "model": "",
      "grants": [
       "Burst cannon",
-      "Swiftstrike burst cannon",
+      "Swiftstrike burst cannon"
+     ]
+    },
+    {
+     "text": "Swiftstrike railguns (instead of 2 ion cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 ion cannons",
+     "group": "000000454-1",
+     "model": "",
+     "grants": [
       "Swiftstrike railgun"
      ]
     },
@@ -10806,7 +11459,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 plasma rifles can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 fusion blasters</li><li>2 missile pods</li><li>2 rail rifles</li></ul>",
+     "text": "Fusion blasters (instead of 2 plasma rifles)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -10814,10 +11467,41 @@
       "max": 1
      },
      "base": "2 plasma rifles",
+     "group": "000000448-0",
      "model": "",
      "grants": [
       "Fusion blaster",
+      "Plasma rifle"
+     ]
+    },
+    {
+     "text": "Missile pods (instead of 2 plasma rifles)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 plasma rifles",
+     "group": "000000448-0",
+     "model": "",
+     "grants": [
       "Missile pod",
+      "Plasma rifle"
+     ]
+    },
+    {
+     "text": "Rail rifles (instead of 2 plasma rifles)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 plasma rifles",
+     "group": "000000448-0",
+     "model": "",
+     "grants": [
       "Plasma rifle",
       "Rail rifle"
      ]
@@ -11152,30 +11836,58 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their fusion cascade replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 phased ion gun</li><li>1 twin hazard burst cannon</li></ul>",
+     "text": "Phased ion gun (instead of fusion cascade)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "fusion cascade",
+     "group": "000000443-0",
      "model": "",
      "grants": [
-      "Phased ion gun",
+      "Phased ion gun"
+     ]
+    },
+    {
+     "text": "Twin hazard burst cannon (instead of fusion cascade)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "fusion cascade",
+     "group": "000000443-0",
+     "model": "",
+     "grants": [
       "Twin hazard burst cannon"
      ]
     },
     {
-     "text": "Any number of models can each have their twin hazard burst cannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 fusion cascade</li><li>1 phased ion gun</li></ul>",
+     "text": "Fusion cascade (instead of twin hazard burst cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "twin hazard burst cannon",
+     "group": "000000443-1",
      "model": "",
      "grants": [
-      "Fusion cascade",
+      "Fusion cascade"
+     ]
+    },
+    {
+     "text": "Phased ion gun (instead of twin hazard burst cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "twin hazard burst cannon",
+     "group": "000000443-1",
+     "model": "",
+     "grants": [
       "Phased ion gun"
      ]
     },

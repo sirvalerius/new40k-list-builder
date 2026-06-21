@@ -27,6 +27,7 @@ export default {
 
     const message = String(body.message || '').trim();
     const context = String(body.context || '').slice(0, 500);
+    const list = String(body.list || '').slice(0, 20000); // attached current list dump
     if (!message) return json({ error: 'Empty message' }, 400, cors);
     if (message.length > 4000) return json({ error: 'Too long' }, 400, cors);
 
@@ -39,7 +40,7 @@ export default {
       Accept: 'application/vnd.github+json',
       'User-Agent': 'new40k-feedback-worker',
     };
-    const entry = formatEntry(message, context);
+    const entry = formatEntry(message, context, list);
 
     // read-modify-write; retry once if the file's sha changed underneath us (409)
     for (let attempt = 0; attempt < 2; attempt++) {
@@ -71,10 +72,13 @@ export default {
   },
 };
 
-function formatEntry(message, context) {
+function formatEntry(message, context, list) {
   const ts = new Date().toISOString();
   const ctx = context ? `\n_${context}_\n` : '';
-  return `\n---\n### ${ts}\n${ctx}\n${message}\n`;
+  const dump = list
+    ? `\n\n<details><summary>Current list</summary>\n\n\`\`\`json\n${list}\n\`\`\`\n</details>\n`
+    : '';
+  return `\n---\n### ${ts}\n${ctx}\n${message}\n${dump}`;
 }
 
 function encodeUtf8(str) {

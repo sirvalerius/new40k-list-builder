@@ -378,12 +378,25 @@ function WeaponOptionsEditor({
   const total = chosen.reduce((s, c) => s + intOf(c.cost) * c.qty, 0);
 
   // Base weapons auto-scale: pool = max models that carry the base; remaining = pool - replacements.
+  // (display only — shown as "base · X: N left")
   const basePool = new Map<string, number>();
   const baseUsed = new Map<string, number>();
+  // Cap pool: options that replace the same base, OR are split from one "one of the following"
+  // list (same `group`), share an aggregate cap. Group takes precedence so a split list's cap
+  // (e.g. up to 4) is independent of other same-base single options.
+  const capPool = new Map<string, number>();
+  const capUsed = new Map<string, number>();
+  const capKey = (o: WeaponOption) => o.group || o.base || '';
   for (const o of options) {
-    if (!o.base) continue;
-    basePool.set(o.base, Math.max(basePool.get(o.base) ?? 0, optionMax(o.limit, modelCount) ?? 0));
-    baseUsed.set(o.base, (baseUsed.get(o.base) ?? 0) + qtyOf(o.text));
+    if (o.base) {
+      basePool.set(o.base, Math.max(basePool.get(o.base) ?? 0, optionMax(o.limit, modelCount) ?? 0));
+      baseUsed.set(o.base, (baseUsed.get(o.base) ?? 0) + qtyOf(o.text));
+    }
+    const key = capKey(o);
+    if (key) {
+      capPool.set(key, Math.max(capPool.get(key) ?? 0, optionMax(o.limit, modelCount) ?? 0));
+      capUsed.set(key, (capUsed.get(key) ?? 0) + qtyOf(o.text));
+    }
   }
 
   // Sub-model provider counts: an option that pertains to an optional sub-model (e.g. the
@@ -419,10 +432,11 @@ function WeaponOptionsEditor({
             );
           }
           const rawMax = optionMax(o.limit, modelCount);
-          // share the base-weapon pool across sibling options replacing the same base
+          // share the cap pool across sibling options (same base, or same split-list group)
+          const key = capKey(o);
           let max =
-            o.base && rawMax != null
-              ? Math.min(rawMax, (basePool.get(o.base) ?? rawMax) - ((baseUsed.get(o.base) ?? 0) - qtyOf(o.text)))
+            key && rawMax != null
+              ? Math.min(rawMax, (capPool.get(key) ?? rawMax) - ((capUsed.get(key) ?? 0) - qtyOf(o.text)))
               : rawMax;
           // cap by the count of the optional sub-model this option pertains to
           const provModel = o.type !== 'model' ? o.model : '';

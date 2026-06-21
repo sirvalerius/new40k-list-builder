@@ -180,7 +180,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model's splinter pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol</li><li>1 soul trap</li></ul>",
+     "text": "Blast pistol (instead of splinter pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -188,13 +188,27 @@
       "max": 1
      },
      "base": "splinter pistol",
+     "group": "000000634-0",
      "model": "",
      "grants": [
       "Blast pistol"
      ]
     },
     {
-     "text": "This model’s huskblade can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 agoniser</li><li>1 master-crafted power weapon</li></ul>",
+     "text": "Soul trap (instead of splinter pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "splinter pistol",
+     "group": "000000634-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Agoniser (instead of huskblade)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -202,9 +216,24 @@
       "max": 1
      },
      "base": "huskblade",
+     "group": "000000634-1",
      "model": "",
      "grants": [
-      "Agoniser",
+      "Agoniser"
+     ]
+    },
+    {
+     "text": "Master-crafted power weapon (instead of huskblade)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "huskblade",
+     "group": "000000634-1",
+     "model": "",
+     "grants": [
       "Master-crafted power weapon"
      ]
     }
@@ -630,19 +659,72 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their twin shuriken catapult replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dark lance</li><li>1 dissonance cannon</li><li>1 scatter laser</li><li>1 shuriken cannon</li><li>1 splinter cannon</li></ul>",
+     "text": "Dark lance (instead of twin shuriken catapult)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "twin shuriken catapult",
+     "group": "000004170-0",
      "model": "",
      "grants": [
-      "Dark lance",
-      "Dissonance cannon",
-      "Scatter laser",
-      "Shuriken cannon",
+      "Dark lance"
+     ]
+    },
+    {
+     "text": "Dissonance cannon (instead of twin shuriken catapult)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "twin shuriken catapult",
+     "group": "000004170-0",
+     "model": "",
+     "grants": [
+      "Dissonance cannon"
+     ]
+    },
+    {
+     "text": "Scatter laser (instead of twin shuriken catapult)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "twin shuriken catapult",
+     "group": "000004170-0",
+     "model": "",
+     "grants": [
+      "Scatter laser"
+     ]
+    },
+    {
+     "text": "Shuriken cannon (instead of twin shuriken catapult)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "twin shuriken catapult",
+     "group": "000004170-0",
+     "model": "",
+     "grants": [
+      "Shuriken cannon"
+     ]
+    },
+    {
+     "text": "Splinter cannon (instead of twin shuriken catapult)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "twin shuriken catapult",
+     "group": "000004170-0",
+     "model": "",
+     "grants": [
       "Splinter cannon"
      ]
     },
@@ -963,7 +1045,7 @@
      ]
     },
     {
-     "text": "For every 5 models in this unit, 1 model’s Corsair firearm can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 blaster</li><li>1 dark lance</li><li>1 flamer</li><li>1 fusion gun</li><li>1 shredder</li><li>1 shuriken cannon</li><li>1 splinter cannon</li></ul>",
+     "text": "Aeldari missile launcher (instead of corsair firearm)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -971,15 +1053,113 @@
       "n": 5
      },
      "base": "corsair firearm",
+     "group": "000004171-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Blaster (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004171-1",
      "model": "",
      "grants": [
-      "Dark lance",
-      "Flamer",
-      "Fusion gun",
-      "Shredder",
-      "Splinter cannon",
-      "Shuriken cannon",
       "Blaster"
+     ]
+    },
+    {
+     "text": "Dark lance (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004171-1",
+     "model": "",
+     "grants": [
+      "Dark lance"
+     ]
+    },
+    {
+     "text": "Flamer (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004171-1",
+     "model": "",
+     "grants": [
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Fusion gun (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004171-1",
+     "model": "",
+     "grants": [
+      "Fusion gun"
+     ]
+    },
+    {
+     "text": "Shredder (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004171-1",
+     "model": "",
+     "grants": [
+      "Shredder"
+     ]
+    },
+    {
+     "text": "Shuriken cannon (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004171-1",
+     "model": "",
+     "grants": [
+      "Shuriken cannon"
+     ]
+    },
+    {
+     "text": "Splinter cannon (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004171-1",
+     "model": "",
+     "grants": [
+      "Splinter cannon"
      ]
     },
     {
@@ -1310,22 +1490,49 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their Corsair firearm replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 shardcarbine</li><li>1 shuriken catapult</li><li>1 spar-glaive</li></ul>",
+     "text": "Shardcarbine (instead of corsair firearm)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "corsair firearm",
+     "group": "000004172-0",
      "model": "",
      "grants": [
-      "Spar-glaive",
-      "Shuriken catapult",
       "Shardcarbine"
      ]
     },
     {
-     "text": "For every 5 models in this unit, 1 model’s Corsair firearm can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Aeldari missile launcher</li><li>1 blaster</li><li>1 dark lance</li><li>1 flamer</li><li>1 fusion gun</li><li>1 shredder</li><li>1 shuriken cannon</li><li>1 splinter cannon</li></ul>",
+     "text": "Shuriken catapult (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "corsair firearm",
+     "group": "000004172-0",
+     "model": "",
+     "grants": [
+      "Shuriken catapult"
+     ]
+    },
+    {
+     "text": "Spar-glaive (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "corsair firearm",
+     "group": "000004172-0",
+     "model": "",
+     "grants": [
+      "Spar-glaive"
+     ]
+    },
+    {
+     "text": "Aeldari missile launcher (instead of corsair firearm)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1333,15 +1540,113 @@
       "n": 5
      },
      "base": "corsair firearm",
+     "group": "000004172-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Blaster (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004172-1",
      "model": "",
      "grants": [
-      "Dark lance",
-      "Flamer",
-      "Blaster",
-      "Shredder",
-      "Splinter cannon",
-      "Shuriken cannon",
+      "Blaster"
+     ]
+    },
+    {
+     "text": "Dark lance (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004172-1",
+     "model": "",
+     "grants": [
+      "Dark lance"
+     ]
+    },
+    {
+     "text": "Flamer (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004172-1",
+     "model": "",
+     "grants": [
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Fusion gun (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004172-1",
+     "model": "",
+     "grants": [
       "Fusion gun"
+     ]
+    },
+    {
+     "text": "Shredder (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004172-1",
+     "model": "",
+     "grants": [
+      "Shredder"
+     ]
+    },
+    {
+     "text": "Shuriken cannon (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004172-1",
+     "model": "",
+     "grants": [
+      "Shuriken cannon"
+     ]
+    },
+    {
+     "text": "Splinter cannon (instead of corsair firearm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "corsair firearm",
+     "group": "000004172-1",
+     "model": "",
+     "grants": [
+      "Splinter cannon"
      ]
     },
     {
@@ -1596,7 +1901,7 @@
      ]
     },
     {
-     "text": "For every 5 models in the unit, up to 2 Skyreaver models can each have their shuriken pistol and Corsair blade replaced with one of the following*:<ul style=\"list-style-type:circle\"><li>1 blaster and 1 close combat weapon</li><li>1 flamer and 1 close combat weapon</li><li>1 fusion gun and 1 close combat weapon</li><li>1 shredder and 1 close combat weapon</li></ul>",
+     "text": "Blaster and 1 close combat weapon (instead of shuriken pistol and corsair blade)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1604,11 +1909,63 @@
       "n": 5
      },
      "base": "shuriken pistol and corsair blade",
+     "group": "000004199-1",
      "model": "",
      "grants": [
       "Blaster",
+      "Shuriken pistol",
+      "Corsair blade",
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Flamer and 1 close combat weapon (instead of shuriken pistol and corsair blade)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "shuriken pistol and corsair blade",
+     "group": "000004199-1",
+     "model": "",
+     "grants": [
       "Flamer",
+      "Shuriken pistol",
+      "Corsair blade",
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Fusion gun and 1 close combat weapon (instead of shuriken pistol and corsair blade)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "shuriken pistol and corsair blade",
+     "group": "000004199-1",
+     "model": "",
+     "grants": [
       "Fusion gun",
+      "Shuriken pistol",
+      "Corsair blade",
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Shredder and 1 close combat weapon (instead of shuriken pistol and corsair blade)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "shuriken pistol and corsair blade",
+     "group": "000004199-1",
+     "model": "",
+     "grants": [
       "Shredder",
       "Shuriken pistol",
       "Corsair blade",
@@ -1836,7 +2193,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "The Voidreaver Felarch’s shuriken pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 neuro disruptor</li><li>1 shuriken rifle</li></ul>",
+     "text": "Neuro disruptor (instead of shuriken pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1844,9 +2201,24 @@
       "max": 1
      },
      "base": "shuriken pistol",
+     "group": "000004168-0",
      "model": "",
      "grants": [
-      "Neuro disruptor",
+      "Neuro disruptor"
+     ]
+    },
+    {
+     "text": "Shuriken rifle (instead of shuriken pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "shuriken pistol",
+     "group": "000004168-0",
+     "model": "",
+     "grants": [
       "Shuriken rifle"
      ]
     },
@@ -1878,7 +2250,7 @@
      ]
     },
     {
-     "text": "For every 5 models in this unit, 1 Corsair Voidreaver’s power sword or shuriken rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
+     "text": "Blaster (instead of power sword or shuriken rifle)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1886,25 +2258,56 @@
       "n": 5
      },
      "base": "power sword or shuriken rifle",
+     "group": "000004168-3",
      "model": "",
      "grants": [
       "Power sword",
-      "Shredder",
       "Shuriken rifle",
       "Blaster"
      ]
     },
     {
-     "text": "If this unit contains 10 models, 1 Corsair Voidreaver’s shuriken rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 shuriken cannon</li><li>1 wraithcannon</li></ul>",
+     "text": "Shredder (instead of power sword or shuriken rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "power sword or shuriken rifle",
+     "group": "000004168-3",
+     "model": "",
+     "grants": [
+      "Power sword",
+      "Shredder",
+      "Shuriken rifle"
+     ]
+    },
+    {
+     "text": "Shuriken cannon (instead of shuriken rifle)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "shuriken rifle",
+     "group": "000004168-4",
      "model": "",
      "grants": [
-      "Shuriken cannon",
+      "Shuriken cannon"
+     ]
+    },
+    {
+     "text": "Wraithcannon (instead of shuriken rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "shuriken rifle",
+     "group": "000004168-4",
+     "model": "",
+     "grants": [
       "Wraithcannon"
      ]
     }
@@ -2207,7 +2610,7 @@
      ]
     },
     {
-     "text": "The Voidscarred Felarch’s shuriken pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 neuro disruptor</li><li>1 shuriken rifle</li></ul>",
+     "text": "Neuro disruptor (instead of shuriken pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2215,9 +2618,24 @@
       "max": 1
      },
      "base": "shuriken pistol",
+     "group": "000004169-1",
      "model": "",
      "grants": [
-      "Neuro disruptor",
+      "Neuro disruptor"
+     ]
+    },
+    {
+     "text": "Shuriken rifle (instead of shuriken pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "shuriken pistol",
+     "group": "000004169-1",
+     "model": "",
+     "grants": [
       "Shuriken rifle"
      ]
     },
@@ -2234,7 +2652,7 @@
      "grants": []
     },
     {
-     "text": "For every 5 models in this unit, 1 Corsair  Voidscarred’s shuriken rifle can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
+     "text": "Blaster (instead of shuriken rifle)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2242,24 +2660,53 @@
       "n": 5
      },
      "base": "shuriken rifle",
+     "group": "000004169-3",
      "model": "",
      "grants": [
-      "Shredder",
       "Blaster"
      ]
     },
     {
-     "text": "If this unit contains 10 models, 1 Corsair Voidscarred’s shuriken rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 shuriken cannon</li><li>1 wraithcannon</li></ul>",
+     "text": "Shredder (instead of shuriken rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "shuriken rifle",
+     "group": "000004169-3",
+     "model": "",
+     "grants": [
+      "Shredder"
+     ]
+    },
+    {
+     "text": "Shuriken cannon (instead of shuriken rifle)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "shuriken rifle",
+     "group": "000004169-4",
      "model": "",
      "grants": [
-      "Wraithcannon",
       "Shuriken cannon"
+     ]
+    },
+    {
+     "text": "Wraithcannon (instead of shuriken rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "shuriken rifle",
+     "group": "000004169-4",
+     "model": "",
+     "grants": [
+      "Wraithcannon"
      ]
     },
     {
@@ -3505,7 +3952,7 @@
      ]
     },
     {
-     "text": "The Kabalite Archsybarite’s splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol</li><li>1 splinter pistol</li></ul>",
+     "text": "Blast pistol (instead of splinter rifle)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3513,9 +3960,24 @@
       "max": 1
      },
      "base": "splinter rifle",
+     "group": "000004156-1",
      "model": "",
      "grants": [
-      "Blast pistol",
+      "Blast pistol"
+     ]
+    },
+    {
+     "text": "Splinter pistol (instead of splinter rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "splinter rifle",
+     "group": "000004156-1",
+     "model": "",
+     "grants": [
       "Splinter pistol"
      ]
     },
@@ -3532,7 +3994,7 @@
      "grants": []
     },
     {
-     "text": "1 Kabalite Agent's splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
+     "text": "Blaster (instead of splinter rifle)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3540,14 +4002,29 @@
       "max": 1
      },
      "base": "splinter rifle",
+     "group": "000004156-3",
      "model": "",
      "grants": [
-      "Blaster",
+      "Blaster"
+     ]
+    },
+    {
+     "text": "Shredder (instead of splinter rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "splinter rifle",
+     "group": "000004156-3",
+     "model": "",
+     "grants": [
       "Shredder"
      ]
     },
     {
-     "text": "1 Kabalite Agent’s splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dark lance</li><li>1 splinter cannon</li></ul>",
+     "text": "Dark lance (instead of splinter rifle)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3555,9 +4032,24 @@
       "max": 1
      },
      "base": "splinter rifle",
+     "group": "000004156-4",
      "model": "",
      "grants": [
-      "Dark lance",
+      "Dark lance"
+     ]
+    },
+    {
+     "text": "Splinter cannon (instead of splinter rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "splinter rifle",
+     "group": "000004156-4",
+     "model": "",
+     "grants": [
       "Splinter cannon"
      ]
     },
@@ -3828,7 +4320,7 @@
      "grants": []
     },
     {
-     "text": "The Helliarch’s hellglaive can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 splinter pistol and 1 power weapon.</li><li>1 splinter pistol and 1 stunclaw.</li></ul>",
+     "text": "Splinter pistol and 1 power weapon (instead of hellglaive)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3836,10 +4328,26 @@
       "max": 1
      },
      "base": "hellglaive",
+     "group": "000000659-1",
      "model": "",
      "grants": [
       "Splinter pistol",
-      "Power weapon",
+      "Power weapon"
+     ]
+    },
+    {
+     "text": "Splinter pistol and 1 stunclaw (instead of hellglaive)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "hellglaive",
+     "group": "000000659-1",
+     "model": "",
+     "grants": [
+      "Splinter pistol",
       "Stunclaw"
      ]
     },
@@ -4280,7 +4788,7 @@
      "grants": []
     },
     {
-     "text": "The Sybarite’s splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol</li><li>1 splinter pistol</li></ul>",
+     "text": "Blast pistol (instead of splinter rifle)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4288,9 +4796,24 @@
       "max": 1
      },
      "base": "splinter rifle",
+     "group": "000000644-2",
      "model": "",
      "grants": [
-      "Blast pistol",
+      "Blast pistol"
+     ]
+    },
+    {
+     "text": "Splinter pistol (instead of splinter rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "splinter rifle",
+     "group": "000000644-2",
+     "model": "",
+     "grants": [
       "Splinter pistol"
      ]
     },
@@ -6093,7 +6616,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 3 models in this unit, 1 model’s splinter rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 heat lance</li></ul>",
+     "text": "Blaster (instead of splinter rifle)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6101,9 +6624,24 @@
       "n": 3
      },
      "base": "splinter rifle",
+     "group": "000000658-0",
      "model": "",
      "grants": [
-      "Blaster",
+      "Blaster"
+     ]
+    },
+    {
+     "text": "Heat lance (instead of splinter rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 3
+     },
+     "base": "splinter rifle",
+     "group": "000000658-0",
+     "model": "",
+     "grants": [
       "Heat lance"
      ]
     },
@@ -6349,7 +6887,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Solarite’s shardcarbine can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol and 1 power weapon</li><li>1 splinter pistol and 1 power weapon</li></ul>",
+     "text": "Blast pistol and 1 power weapon (instead of shardcarbine)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6357,9 +6895,25 @@
       "max": 1
      },
      "base": "shardcarbine",
+     "group": "000000662-0",
      "model": "",
      "grants": [
       "Blast pistol",
+      "Power weapon"
+     ]
+    },
+    {
+     "text": "Splinter pistol and 1 power weapon (instead of shardcarbine)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "shardcarbine",
+     "group": "000000662-0",
+     "model": "",
+     "grants": [
       "Splinter pistol",
       "Power weapon"
      ]
@@ -6581,7 +7135,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Solarite’s shardcarbine can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blast pistol and 1 power weapon</li><li>1 splinter pistol and 1 power weapon</li></ul>",
+     "text": "Blast pistol and 1 power weapon (instead of shardcarbine)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6589,15 +7143,31 @@
       "max": 1
      },
      "base": "shardcarbine",
+     "group": "000004157-0",
      "model": "",
      "grants": [
       "Blast pistol",
+      "Power weapon"
+     ]
+    },
+    {
+     "text": "Splinter pistol and 1 power weapon (instead of shardcarbine)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "shardcarbine",
+     "group": "000004157-0",
+     "model": "",
+     "grants": [
       "Splinter pistol",
       "Power weapon"
      ]
     },
     {
-     "text": "1 Scourge’s shardcarbine can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blaster</li><li>1 shredder</li></ul>",
+     "text": "Blaster (instead of shardcarbine)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6605,9 +7175,24 @@
       "max": 1
      },
      "base": "shardcarbine",
+     "group": "000004157-1",
      "model": "",
      "grants": [
-      "Blaster",
+      "Blaster"
+     ]
+    },
+    {
+     "text": "Shredder (instead of shardcarbine)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "shardcarbine",
+     "group": "000004157-1",
+     "model": "",
+     "grants": [
       "Shredder"
      ]
     }
@@ -8314,7 +8899,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s shuriken pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 fusion pistol</li><li>1 neuro disruptor</li></ul>",
+     "text": "Fusion pistol (instead of shuriken pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -8322,10 +8907,25 @@
       "max": 1
      },
      "base": "shuriken pistol",
+     "group": "000004161-0",
      "model": "",
      "grants": [
-      "Neuro disruptor",
       "Fusion pistol"
+     ]
+    },
+    {
+     "text": "Neuro disruptor (instead of shuriken pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "shuriken pistol",
+     "group": "000004161-0",
+     "model": "",
+     "grants": [
+      "Neuro disruptor"
      ]
     },
     {

@@ -654,7 +654,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Sister Superior’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 combi-weapon</li><li>1 condemnor boltgun</li><li>1 inferno pistol</li><li>1 Ministorum hand flamer</li><li>1 plasma pistol</li></ul>",
+     "text": "Bolt pistol (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -662,14 +662,84 @@
       "max": 1
      },
      "base": "boltgun",
+     "group": "000000903-0",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Combi-weapon",
-      "Condemnor boltgun",
-      "Inferno pistol ",
+      "Bolt pistol"
+     ]
+    },
+    {
+     "text": "Combi-weapon (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000903-0",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Condemnor boltgun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000903-0",
+     "model": "",
+     "grants": [
+      "Condemnor boltgun"
+     ]
+    },
+    {
+     "text": "Inferno pistol (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000903-0",
+     "model": "",
+     "grants": [
+      "Inferno pistol "
+     ]
+    },
+    {
+     "text": "Ministorum hand flamer (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000903-0",
+     "model": "",
+     "grants": [
       "Ministorum hand flamer"
      ]
+    },
+    {
+     "text": "Plasma pistol (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000903-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Sister Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
@@ -687,7 +757,7 @@
      ]
     },
     {
-     "text": "1 Battle Sister’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li></ul>",
+     "text": "Artificer-crafted storm bolter (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -695,15 +765,44 @@
       "max": 1
      },
      "base": "boltgun",
+     "group": "000000903-2",
      "model": "",
      "grants": [
-      "Artificer-crafted storm bolter",
-      "Meltagun",
+      "Artificer-crafted storm bolter"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000903-2",
+     "model": "",
+     "grants": [
+      "Meltagun"
+     ]
+    },
+    {
+     "text": "Ministorum flamer (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000903-2",
+     "model": "",
+     "grants": [
       "Ministorum flamer"
      ]
     },
     {
-     "text": "1 Battle Sister’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 heavy bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li><li>1 Ministorum heavy flamer</li><li>1 multi-melta</li></ul>",
+     "text": "Artificer-crafted storm bolter (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -711,13 +810,84 @@
       "max": 1
      },
      "base": "boltgun",
+     "group": "000000903-3",
      "model": "",
      "grants": [
-      "Artificer-crafted storm bolter",
-      "Heavy bolter",
-      "Meltagun",
-      "Ministorum flamer",
-      "Ministorum heavy flamer",
+      "Artificer-crafted storm bolter"
+     ]
+    },
+    {
+     "text": "Heavy bolter (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000903-3",
+     "model": "",
+     "grants": [
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000903-3",
+     "model": "",
+     "grants": [
+      "Meltagun"
+     ]
+    },
+    {
+     "text": "Ministorum flamer (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000903-3",
+     "model": "",
+     "grants": [
+      "Ministorum flamer"
+     ]
+    },
+    {
+     "text": "Ministorum heavy flamer (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000903-3",
+     "model": "",
+     "grants": [
+      "Ministorum heavy flamer"
+     ]
+    },
+    {
+     "text": "Multi-melta (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000903-3",
+     "model": "",
+     "grants": [
       "Multi-melta"
      ]
     },
@@ -959,7 +1129,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 condemnor boltgun</li><li>1 inferno pistol</li><li>1 plasma pistol</li></ul>",
+     "text": "Condemnor boltgun (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -967,14 +1137,42 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000000899-0",
      "model": "",
      "grants": [
-      "Condemnor boltgun",
+      "Condemnor boltgun"
+     ]
+    },
+    {
+     "text": "Inferno pistol (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000899-0",
+     "model": "",
+     "grants": [
       "Inferno pistol"
      ]
     },
     {
-     "text": "This model’s hallowed chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 blessed blade</li><li>1 power weapon</li></ul>",
+     "text": "Plasma pistol (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000899-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Blessed blade (instead of hallowed chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -982,9 +1180,24 @@
       "max": 1
      },
      "base": "hallowed chainsword",
+     "group": "000000899-1",
      "model": "",
      "grants": [
-      "Blessed blade",
+      "Blessed blade"
+     ]
+    },
+    {
+     "text": "Power weapon (instead of hallowed chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "hallowed chainsword",
+     "group": "000000899-1",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     },
@@ -1168,7 +1381,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s blessed halberd can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 holy eviscerator</li><li>1 Ministorum hand flamer and 1 power weapon</li></ul>",
+     "text": "Holy eviscerator (instead of blessed halberd)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1176,10 +1389,25 @@
       "max": 1
      },
      "base": "blessed halberd",
+     "group": "000003714-0",
+     "model": "",
+     "grants": [
+      "Holy Eviscerator"
+     ]
+    },
+    {
+     "text": "Ministorum hand flamer and 1 power weapon (instead of blessed halberd)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "blessed halberd",
+     "group": "000003714-0",
      "model": "",
      "grants": [
       "Ministorum hand flamer",
-      "Holy Eviscerator",
       "Power weapon"
      ]
     }
@@ -2002,7 +2230,7 @@
      ]
     },
     {
-     "text": "The Sacresant Superior’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 inferno pistol</li><li>1 Ministorum hand flamer</li><li>1 plasma pistol</li></ul>",
+     "text": "Inferno pistol (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2010,11 +2238,39 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000002481-1",
      "model": "",
      "grants": [
-      "Inferno pistol",
+      "Inferno pistol"
+     ]
+    },
+    {
+     "text": "Ministorum hand flamer (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000002481-1",
+     "model": "",
+     "grants": [
       "Ministorum hand flamer"
      ]
+    },
+    {
+     "text": "Plasma pistol (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000002481-1",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Sacresant Superior’s hallowed mace can be replaced with 1 spear of the faithful.",
@@ -2942,7 +3198,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Dominion Superior’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 combi-weapon</li><li>1 condemnor boltgun</li><li>1 inferno pistol</li><li>1 Ministorum hand flamer</li><li>1 plasma pistol</li></ul>",
+     "text": "Bolt pistol (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2950,14 +3206,84 @@
       "max": 1
      },
      "base": "boltgun",
+     "group": "000000909-0",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Combi-weapon",
-      "Condemnor boltgun",
-      "Inferno pistol ",
+      "Bolt pistol"
+     ]
+    },
+    {
+     "text": "Combi-weapon (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000909-0",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Condemnor boltgun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000909-0",
+     "model": "",
+     "grants": [
+      "Condemnor boltgun"
+     ]
+    },
+    {
+     "text": "Inferno pistol (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000909-0",
+     "model": "",
+     "grants": [
+      "Inferno pistol "
+     ]
+    },
+    {
+     "text": "Ministorum hand flamer (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000909-0",
+     "model": "",
+     "grants": [
       "Ministorum hand flamer"
      ]
+    },
+    {
+     "text": "Plasma pistol (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000909-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Dominion Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
@@ -2975,17 +3301,47 @@
      ]
     },
     {
-     "text": "Up to 4 Dominions can each have their boltgun replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li></ul>",
+     "text": "Artificer-crafted storm bolter (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "boltgun",
+     "group": "000000909-2",
+     "model": "",
+     "grants": [
+      "Artificer-crafted storm bolter"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of boltgun)",
      "cost": 5,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 4
      },
      "base": "boltgun",
+     "group": "000000909-2",
      "model": "",
      "grants": [
-      "Artificer-crafted storm bolter",
-      "Meltagun",
+      "Meltagun"
+     ]
+    },
+    {
+     "text": "Ministorum flamer (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "boltgun",
+     "group": "000000909-2",
+     "model": "",
+     "grants": [
       "Ministorum flamer"
      ]
     },
@@ -3636,7 +3992,23 @@
      ]
     },
     {
-     "text": "This model’s immolation flamers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 twin multi-melta</li></ul>",
+     "text": "Twin heavy bolter (instead of immolation flamers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "immolation flamers",
+     "group": "000000911-1",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Twin heavy bolter"
+     ]
+    },
+    {
+     "text": "Twin multi-melta (instead of immolation flamers)",
      "cost": 15,
      "type": "wargear",
      "limit": {
@@ -3644,10 +4016,9 @@
       "max": 1
      },
      "base": "immolation flamers",
+     "group": "000000911-1",
      "model": "",
      "grants": [
-      "Heavy bolter",
-      "Twin heavy bolter",
       "Twin multi-melta"
      ]
     }
@@ -4307,13 +4678,14 @@
      "grants": []
     },
     {
-     "text": "Any number of models can each have their 2 heavy bolters replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter and 1 Mortifier flamer</li><li>2 Mortifier flamers</li></ul>",
+     "text": "Heavy bolter and 1 Mortifier flamer (instead of 2 heavy bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "2 heavy bolters",
+     "group": "000002067-1",
      "model": "",
      "grants": [
       "Heavy bolter",
@@ -4321,18 +4693,49 @@
      ]
     },
     {
-     "text": "Any number of models can each have their twin penitent buzz-blades replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin penitent flails</li><li>1 penitent buzz-blade and 1 penitent flail</li></ul>",
+     "text": "Mortifier flamers (instead of 2 heavy bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "2 heavy bolters",
+     "group": "000002067-1",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Mortifier flamer"
+     ]
+    },
+    {
+     "text": "Twin penitent flails (instead of twin penitent buzz-blades)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "twin penitent buzz-blades",
+     "group": "000002067-2",
      "model": "",
      "grants": [
       "Penitent buzz-blade",
       "Penitent flail",
       "Twin penitent flails"
+     ]
+    },
+    {
+     "text": "Penitent buzz-blade and 1 penitent flail (instead of twin penitent buzz-blades)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "twin penitent buzz-blades",
+     "group": "000002067-2",
+     "model": "",
+     "grants": [
+      "Penitent buzz-blade",
+      "Penitent flail"
      ]
     }
    ],
@@ -4865,16 +5268,30 @@
      ]
     },
     {
-     "text": "Any number of models can each have their heavy bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Ministorum heavy flamer</li><li>1 multi-melta</li></ul>",
+     "text": "Ministorum heavy flamer (instead of heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "heavy bolter",
+     "group": "000002483-2",
+     "model": "",
+     "grants": [
+      "Ministorum heavy flamer"
+     ]
+    },
+    {
+     "text": "Multi-melta (instead of heavy bolter)",
      "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "heavy bolter",
+     "group": "000002483-2",
      "model": "",
      "grants": [
-      "Ministorum heavy flamer",
       "Multi-melta"
      ]
     }
@@ -5037,13 +5454,29 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their twin penitent buzz-blades replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 penitent buzz-blade and 1 penitent flail</li><li>1 twin penitent flails</li></ul>",
+     "text": "Penitent buzz-blade and 1 penitent flail (instead of twin penitent buzz-blades)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "twin penitent buzz-blades",
+     "group": "000000897-0",
+     "model": "",
+     "grants": [
+      "Penitent buzz-blade",
+      "Penitent flail"
+     ]
+    },
+    {
+     "text": "Twin penitent flails (instead of twin penitent buzz-blades)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "twin penitent buzz-blades",
+     "group": "000000897-0",
      "model": "",
      "grants": [
       "Penitent buzz-blade",
@@ -5632,7 +6065,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Retributor Superior’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 combi-weapon</li><li>1 condemnor boltgun</li><li>1 inferno pistol</li><li>1 Ministorum hand flamer</li><li>1 plasma pistol</li></ul>",
+     "text": "Bolt pistol (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -5640,14 +6073,84 @@
       "max": 1
      },
      "base": "boltgun",
+     "group": "000000908-0",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Combi-weapon",
-      "Condemnor boltgun",
-      "Inferno pistol ",
+      "Bolt pistol"
+     ]
+    },
+    {
+     "text": "Combi-weapon (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000908-0",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Condemnor boltgun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000908-0",
+     "model": "",
+     "grants": [
+      "Condemnor boltgun"
+     ]
+    },
+    {
+     "text": "Inferno pistol (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000908-0",
+     "model": "",
+     "grants": [
+      "Inferno pistol "
+     ]
+    },
+    {
+     "text": "Ministorum hand flamer (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000908-0",
+     "model": "",
+     "grants": [
       "Ministorum hand flamer"
      ]
+    },
+    {
+     "text": "Plasma pistol (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000000908-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Retributor Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
@@ -5665,16 +6168,30 @@
      ]
     },
     {
-     "text": "Each Retributor’s heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Ministorum heavy flamer</li><li>1 multi-melta</li></ul>",
+     "text": "Ministorum heavy flamer (instead of heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "heavy bolter",
+     "group": "000000908-2",
+     "model": "",
+     "grants": [
+      "Ministorum heavy flamer"
+     ]
+    },
+    {
+     "text": "Multi-melta (instead of heavy bolter)",
      "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "heavy bolter",
+     "group": "000000908-2",
      "model": "",
      "grants": [
-      "Ministorum heavy flamer",
       "Multi-melta"
      ]
     }
@@ -6344,7 +6861,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 5 models in the unit, up to 2 Seraphim can each have their 2 bolt pistols replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 inferno pistols</li><li>2 Ministorum hand flamers</li></ul>",
+     "text": "Inferno pistols (instead of 2 bolt pistols)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6352,15 +6869,31 @@
       "n": 5
      },
      "base": "2 bolt pistols",
+     "group": "000000904-0",
      "model": "",
      "grants": [
       "Bolt pistol",
-      "Inferno pistol",
+      "Inferno pistol"
+     ]
+    },
+    {
+     "text": "Ministorum hand flamers (instead of 2 bolt pistols)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "2 bolt pistols",
+     "group": "000000904-0",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
       "Ministorum hand flamer"
      ]
     },
     {
-     "text": "The Seraphim Superior’s 2 bolt pistols can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol and 1 chainsword</li><li>1 bolt pistol and 1 plasma pistol</li><li>1 bolt pistol and 1 power weapon</li><li>1 plasma pistol and 1 chainsword</li><li>1 plasma pistol and 1 power weapon</li></ul>",
+     "text": "Bolt pistol and 1 chainsword (instead of 2 bolt pistols)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6368,10 +6901,73 @@
       "max": 1
      },
      "base": "2 bolt pistols",
+     "group": "000000904-1",
      "model": "",
      "grants": [
       "Bolt pistol",
-      "Chainsword",
+      "Chainsword"
+     ]
+    },
+    {
+     "text": "Bolt pistol and 1 plasma pistol (instead of 2 bolt pistols)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 bolt pistols",
+     "group": "000000904-1",
+     "model": "",
+     "grants": [
+      "Bolt pistol"
+     ]
+    },
+    {
+     "text": "Bolt pistol and 1 power weapon (instead of 2 bolt pistols)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 bolt pistols",
+     "group": "000000904-1",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Power weapon"
+     ]
+    },
+    {
+     "text": "Plasma pistol and 1 chainsword (instead of 2 bolt pistols)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 bolt pistols",
+     "group": "000000904-1",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Chainsword"
+     ]
+    },
+    {
+     "text": "Plasma pistol and 1 power weapon (instead of 2 bolt pistols)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 bolt pistols",
+     "group": "000000904-1",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
       "Power weapon"
      ]
     }
@@ -6603,7 +7199,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Novitiate Superior’s bolt pistol and boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol and 1 power weapon</li><li>1 plasma pistol and 1 power weapon</li></ul>",
+     "text": "Bolt pistol and 1 power weapon (instead of bolt pistol and boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6611,6 +7207,24 @@
       "max": 1
      },
      "base": "bolt pistol and boltgun",
+     "group": "000002507-0",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Boltgun",
+      "Power weapon"
+     ]
+    },
+    {
+     "text": "Plasma pistol and 1 power weapon (instead of bolt pistol and boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol and boltgun",
+     "group": "000002507-0",
      "model": "",
      "grants": [
       "Bolt pistol",

@@ -916,7 +916,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "The Biker Champion’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 power fist</li></ul>",
+     "text": "Plasma pistol (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -924,10 +924,52 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000000957-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Accursed weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000957-0",
      "model": "",
      "grants": [
-      "Accursed weapon",
-      "Astartes chainsword",
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Astartes chainsword (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000957-0",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Power fist (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000957-0",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
@@ -945,19 +987,47 @@
      ]
     },
     {
-     "text": "Up to 2 Chaos Bikers can each have their combi-bolter replaced with 1 combi-weapon, or can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "text": "Flamer (instead of combi-bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "combi-bolter",
+     "group": "000000957-2",
      "model": "",
      "grants": [
-      "Combi-weapon",
-      "Flamer",
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of combi-bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "combi-bolter",
+     "group": "000000957-2",
+     "model": "",
+     "grants": [
       "Meltagun"
      ]
+    },
+    {
+     "text": "Plasma gun (instead of combi-bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "combi-bolter",
+     "group": "000000957-2",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 model can be equipped with 1 Chaos icon.",
@@ -1196,7 +1266,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s plasma destroyer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 conversion beam cannon</li><li>1 infernus cannon</li><li>1 magna-melta cannon</li></ul>",
+     "text": "Conversion beam cannon (instead of plasma destroyer)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1204,10 +1274,39 @@
       "max": 1
      },
      "base": "plasma destroyer",
+     "group": "000001302-0",
      "model": "",
      "grants": [
-      "Conversion beam cannon",
-      "Infernus cannon",
+      "Conversion beam cannon"
+     ]
+    },
+    {
+     "text": "Infernus cannon (instead of plasma destroyer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "plasma destroyer",
+     "group": "000001302-0",
+     "model": "",
+     "grants": [
+      "Infernus cannon"
+     ]
+    },
+    {
+     "text": "Magna-melta cannon (instead of plasma destroyer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "plasma destroyer",
+     "group": "000001302-0",
+     "model": "",
+     "grants": [
       "Magna-melta cannon"
      ]
     },
@@ -1616,7 +1715,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s daemon hammer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 accursed weapon</li><li>1 Astartes chainsword</li></ul>",
+     "text": "Accursed weapon (instead of daemon hammer)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1624,10 +1723,24 @@
       "max": 1
      },
      "base": "daemon hammer",
+     "group": "000000929-0",
      "model": "",
      "grants": [
       "Accursed weapon"
      ]
+    },
+    {
+     "text": "Astartes chainsword (instead of daemon hammer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "daemon hammer",
+     "group": "000000929-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s plasma pistol can be replaced with 1 power fist.",
@@ -1830,7 +1943,7 @@
      ]
     },
     {
-     "text": "This model’s exalted weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainfist</li><li>1 power fist</li></ul>",
+     "text": "Chainfist (instead of exalted weapon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1838,9 +1951,24 @@
       "max": 1
      },
      "base": "exalted weapon",
+     "group": "000000930-1",
      "model": "",
      "grants": [
-      "Chainfist",
+      "Chainfist"
+     ]
+    },
+    {
+     "text": "Power fist (instead of exalted weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "exalted weapon",
+     "group": "000000930-1",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
@@ -2070,7 +2198,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "text": "Plasma pistol (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2078,15 +2206,57 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000000931-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Combi-weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000931-0",
      "model": "",
      "grants": [
-      "Combi-weapon",
-      "Accursed weapon",
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Accursed weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000931-0",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000931-0",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
     {
-     "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "text": "Bolt pistol (instead of astartes chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2094,10 +2264,52 @@
       "max": 1
      },
      "base": "astartes chainsword",
+     "group": "000000931-1",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Accursed weapon",
+      "Bolt pistol"
+     ]
+    },
+    {
+     "text": "Plasma pistol (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000931-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Accursed weapon (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000931-1",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000931-1",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
@@ -2335,7 +2547,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "text": "Plasma pistol (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2343,16 +2555,72 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000000933-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Combi-bolter (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000933-0",
      "model": "",
      "grants": [
-      "Combi-bolter",
-      "Combi-weapon",
-      "Accursed weapon",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Combi-weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000933-0",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Accursed weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000933-0",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000933-0",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
     {
-     "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "text": "Bolt pistol (instead of astartes chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2360,10 +2628,52 @@
       "max": 1
      },
      "base": "astartes chainsword",
+     "group": "000000933-1",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Accursed weapon",
+      "Bolt pistol"
+     ]
+    },
+    {
+     "text": "Plasma pistol (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000933-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Accursed weapon (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000933-1",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000933-1",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
@@ -2608,7 +2918,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "text": "Plasma pistol (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2616,16 +2926,72 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000000932-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Combi-bolter (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000932-0",
      "model": "",
      "grants": [
-      "Combi-bolter",
-      "Combi-weapon",
-      "Accursed weapon",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Combi-weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000932-0",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Accursed weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000932-0",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000932-0",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
     {
-     "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "text": "Bolt pistol (instead of astartes chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2633,10 +2999,52 @@
       "max": 1
      },
      "base": "astartes chainsword",
+     "group": "000000932-1",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Accursed weapon",
+      "Bolt pistol"
+     ]
+    },
+    {
+     "text": "Plasma pistol (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000932-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Accursed weapon (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000932-1",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000932-1",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
@@ -2884,7 +3292,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "text": "Plasma pistol (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2892,16 +3300,72 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000000934-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Combi-bolter (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000934-0",
      "model": "",
      "grants": [
-      "Combi-bolter",
-      "Combi-weapon",
-      "Accursed weapon",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Combi-weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000934-0",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Accursed weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000934-0",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000934-0",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
     {
-     "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "text": "Bolt pistol (instead of astartes chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2909,10 +3373,52 @@
       "max": 1
      },
      "base": "astartes chainsword",
+     "group": "000000934-1",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Accursed weapon",
+      "Bolt pistol"
+     ]
+    },
+    {
+     "text": "Plasma pistol (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000934-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Accursed weapon (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000934-1",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000934-1",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
@@ -3156,7 +3662,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "text": "Plasma pistol (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3164,16 +3670,72 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000000935-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Combi-bolter (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000935-0",
      "model": "",
      "grants": [
-      "Combi-bolter",
-      "Combi-weapon",
-      "Accursed weapon",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Combi-weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000935-0",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Accursed weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000935-0",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000935-0",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
     {
-     "text": "This model’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "text": "Bolt pistol (instead of astartes chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3181,10 +3743,52 @@
       "max": 1
      },
      "base": "astartes chainsword",
+     "group": "000000935-1",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Accursed weapon",
+      "Bolt pistol"
+     ]
+    },
+    {
+     "text": "Plasma pistol (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000935-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Accursed weapon (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000935-1",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000935-1",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
@@ -4328,7 +4932,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 5 models in this unit, 1 Terminator’s combi-bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer</li><li>1 reaper autocannon</li></ul>",
+     "text": "Heavy flamer (instead of combi-bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4336,9 +4940,24 @@
       "n": 5
      },
      "base": "combi-bolter",
+     "group": "000000947-0",
      "model": "",
      "grants": [
-      "Heavy flamer",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Reaper autocannon (instead of combi-bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "combi-bolter",
+     "group": "000000947-0",
+     "model": "",
+     "grants": [
       "Reaper autocannon"
      ]
     },
@@ -6251,7 +6870,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Each of this model’s Decimator butcher cannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Decimator conversion beamer</li><li>1 soulburner petard</li><li>1 storm laser</li><li>1 hellflamer and 1 Decimator claw</li></ul>",
+     "text": "Decimator conversion beamer (instead of decimator butcher cannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6259,13 +6878,59 @@
       "max": 1
      },
      "base": "decimator butcher cannons",
+     "group": "000001295-0",
      "model": "",
      "grants": [
       "Decimator butcher cannon",
-      "Decimator conversion beamer",
+      "Decimator conversion beamer"
+     ]
+    },
+    {
+     "text": "Soulburner petard (instead of decimator butcher cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "decimator butcher cannons",
+     "group": "000001295-0",
+     "model": "",
+     "grants": [
+      "Decimator butcher cannon",
+      "Soulburner petard"
+     ]
+    },
+    {
+     "text": "Storm laser (instead of decimator butcher cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "decimator butcher cannons",
+     "group": "000001295-0",
+     "model": "",
+     "grants": [
+      "Decimator butcher cannon",
+      "Storm laser"
+     ]
+    },
+    {
+     "text": "Hellflamer and 1 Decimator claw (instead of decimator butcher cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "decimator butcher cannons",
+     "group": "000001295-0",
+     "model": "",
+     "grants": [
+      "Decimator butcher cannon",
       "Hellflamer",
-      "Soulburner petard",
-      "Storm laser",
       "Decimator claw"
      ]
     },
@@ -6553,7 +7218,37 @@
      ]
     },
     {
-     "text": "This model’s heavy baleflamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
+     "text": "Hades lascannon (instead of heavy baleflamer)",
+     "cost": 10,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy baleflamer",
+     "group": "000000969-2",
+     "model": "",
+     "grants": [
+      "Hades lascannon"
+     ]
+    },
+    {
+     "text": "Heavy reaper autocannon (instead of heavy baleflamer)",
+     "cost": 10,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy baleflamer",
+     "group": "000000969-2",
+     "model": "",
+     "grants": [
+      "Heavy reaper autocannon"
+     ]
+    },
+    {
+     "text": "Electroscourge (a model cannot be equipped with more than one electroscourge) (instead of heavy baleflamer)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6561,15 +7256,14 @@
       "max": 1
      },
      "base": "heavy baleflamer",
+     "group": "000000969-2",
      "model": "",
      "grants": [
-      "Hades lascannon",
-      "Heavy reaper autocannon",
       "Electroscourge"
      ]
     },
     {
-     "text": " This model’s heavy missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
+     "text": "Hades lascannon (instead of heavy missile launcher)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6577,37 +7271,40 @@
       "max": 1
      },
      "base": "heavy missile launcher",
+     "group": "000000969-3",
      "model": "",
      "grants": [
-      "Hades lascannon",
-      "Heavy reaper autocannon",
-      "Electroscourge"
+      "Hades lascannon"
      ]
     },
     {
-     "text": "Equip Heavy reaper autocannon",
-     "cost": 10,
+     "text": "Heavy reaper autocannon (instead of heavy missile launcher)",
+     "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
-     "base": "",
+     "base": "heavy missile launcher",
+     "group": "000000969-3",
      "model": "",
      "grants": [
       "Heavy reaper autocannon"
      ]
     },
     {
-     "text": "Equip Hades lascannon",
-     "cost": 10,
+     "text": "Electroscourge (a model cannot be equipped with more than one electroscourge) (instead of heavy missile launcher)",
+     "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
-     "base": "",
+     "base": "heavy missile launcher",
+     "group": "000000969-3",
      "model": "",
      "grants": [
-      "Hades lascannon"
+      "Electroscourge"
      ]
     }
    ],
@@ -6849,7 +7546,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s anvilus autocannon battery can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 arachnus heavy lascannon battery</li><li>1 hellfire plasma carronade</li><li>1 volkite falconet battery</li></ul>",
+     "text": "Arachnus heavy lascannon battery (instead of anvilus autocannon battery)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6857,10 +7554,38 @@
       "max": 1
      },
      "base": "anvilus autocannon battery",
+     "group": "000003626-0",
      "model": "",
      "grants": [
-      "Volkite falconet battery",
       "Arachnus heavy lascannon battery"
+     ]
+    },
+    {
+     "text": "Hellfire plasma carronade (instead of anvilus autocannon battery)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "anvilus autocannon battery",
+     "group": "000003626-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Volkite falconet battery (instead of anvilus autocannon battery)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "anvilus autocannon battery",
+     "group": "000003626-0",
+     "model": "",
+     "grants": [
+      "Volkite falconet battery"
      ]
     },
     {
@@ -7879,7 +8604,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 quad lascannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li> 2 laser destroyers</li><li>2 quad heavy bolters</li></ul>",
+     "text": "Laser destroyers (instead of 2 quad lascannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7887,9 +8612,25 @@
       "max": 1
      },
      "base": "2 quad lascannons",
+     "group": "000003654-0",
      "model": "",
      "grants": [
       "Laser destroyer",
+      "Quad lascannon"
+     ]
+    },
+    {
+     "text": "Quad heavy bolters (instead of 2 quad lascannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 quad lascannons",
+     "group": "000003654-0",
+     "model": "",
+     "grants": [
       "Quad heavy bolter",
       "Quad lascannon",
       "Heavy bolter"
@@ -9422,7 +10163,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Havoc Champion’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "text": "Accursed weapon (instead of astartes chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9430,14 +10171,29 @@
       "max": 1
      },
      "base": "astartes chainsword",
+     "group": "000000966-0",
      "model": "",
      "grants": [
-      "Accursed weapon",
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000966-0",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
     {
-     "text": "The Havoc Champion’s flamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 boltgun</li><li>1 meltagun</li><li>1 plasma gun</li><li>1 plasma pistol</li><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "text": "Boltgun (instead of flamer)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9445,26 +10201,156 @@
       "max": 1
      },
      "base": "flamer",
+     "group": "000000966-1",
      "model": "",
      "grants": [
-      "Boltgun",
-      "Meltagun",
-      "Accursed weapon",
+      "Boltgun"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of flamer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "flamer",
+     "group": "000000966-1",
+     "model": "",
+     "grants": [
+      "Meltagun"
+     ]
+    },
+    {
+     "text": "Plasma gun (instead of flamer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "flamer",
+     "group": "000000966-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Plasma pistol (instead of flamer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "flamer",
+     "group": "000000966-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Accursed weapon (instead of flamer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "flamer",
+     "group": "000000966-1",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of flamer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "flamer",
+     "group": "000000966-1",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
     {
-     "text": "Any number of Havocs can each have their Havoc autocannon or Havoc lascannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Havoc autocannon</li><li>1 Havoc heavy bolter</li><li>1 Havoc lascannon</li><li>1 Havoc missile launcher</li><li>1 Havoc reaper chaincannon</li></ul>",
+     "text": "Havoc autocannon (instead of havoc autocannon or havoc lascannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "havoc autocannon or havoc lascannon",
+     "group": "000000966-2",
+     "model": "",
+     "grants": [
+      "Havoc autocannon",
+      "Havoc lascannon"
+     ]
+    },
+    {
+     "text": "Havoc heavy bolter (instead of havoc autocannon or havoc lascannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "havoc autocannon or havoc lascannon",
+     "group": "000000966-2",
      "model": "",
      "grants": [
       "Havoc autocannon",
       "Havoc heavy bolter",
+      "Havoc lascannon"
+     ]
+    },
+    {
+     "text": "Havoc lascannon (instead of havoc autocannon or havoc lascannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "havoc autocannon or havoc lascannon",
+     "group": "000000966-2",
+     "model": "",
+     "grants": [
+      "Havoc autocannon",
+      "Havoc lascannon"
+     ]
+    },
+    {
+     "text": "Havoc missile launcher (instead of havoc autocannon or havoc lascannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "havoc autocannon or havoc lascannon",
+     "group": "000000966-2",
+     "model": "",
+     "grants": [
+      "Havoc autocannon",
+      "Havoc lascannon"
+     ]
+    },
+    {
+     "text": "Havoc reaper chaincannon (instead of havoc autocannon or havoc lascannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "havoc autocannon or havoc lascannon",
+     "group": "000000966-2",
+     "model": "",
+     "grants": [
+      "Havoc autocannon",
       "Havoc lascannon",
       "Havoc reaper chaincannon"
      ]
@@ -9709,7 +10595,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s multi-melta can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Helbrute plasma cannon</li><li>1 twin autocannon</li><li>1 twin heavy bolter</li><li>1 twin lascannon</li><li>1 Helbrute fist</li></ul>",
+     "text": "Helbrute plasma cannon (instead of multi-melta)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9717,17 +10603,74 @@
       "max": 1
      },
      "base": "multi-melta",
+     "group": "000000954-0",
      "model": "",
      "grants": [
-      "Helbrute plasma cannon",
-      "Twin autocannon",
-      "Twin heavy bolter",
-      "Twin lascannon",
+      "Helbrute plasma cannon"
+     ]
+    },
+    {
+     "text": "Twin autocannon (instead of multi-melta)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "multi-melta",
+     "group": "000000954-0",
+     "model": "",
+     "grants": [
+      "Twin autocannon"
+     ]
+    },
+    {
+     "text": "Twin heavy bolter (instead of multi-melta)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "multi-melta",
+     "group": "000000954-0",
+     "model": "",
+     "grants": [
+      "Twin heavy bolter"
+     ]
+    },
+    {
+     "text": "Twin lascannon (instead of multi-melta)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "multi-melta",
+     "group": "000000954-0",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
+    },
+    {
+     "text": "Helbrute fist (instead of multi-melta)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "multi-melta",
+     "group": "000000954-0",
+     "model": "",
+     "grants": [
       "Helbrute fist"
      ]
     },
     {
-     "text": "This model’s missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Helbrute fist</li><li>1 Helbrute hammer</li><li>1 power scourge</li></ul>",
+     "text": "Helbrute fist (instead of missile launcher)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9735,10 +10678,39 @@
       "max": 1
      },
      "base": "missile launcher",
+     "group": "000000954-1",
      "model": "",
      "grants": [
-      "Helbrute fist",
-      "Helbrute hammer",
+      "Helbrute fist"
+     ]
+    },
+    {
+     "text": "Helbrute hammer (instead of missile launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "missile launcher",
+     "group": "000000954-1",
+     "model": "",
+     "grants": [
+      "Helbrute hammer"
+     ]
+    },
+    {
+     "text": "Power scourge (instead of missile launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "missile launcher",
+     "group": "000000954-1",
+     "model": "",
+     "grants": [
       "Power scourge"
      ]
     },
@@ -11192,7 +12164,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s gorestorm cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 daemongore cannon</li><li>1 ichor cannon</li></ul>",
+     "text": "Daemongore cannon (instead of gorestorm cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -11200,9 +12172,24 @@
       "max": 1
      },
      "base": "gorestorm cannon",
+     "group": "000000970-0",
      "model": "",
      "grants": [
-      "Daemongore cannon",
+      "Daemongore cannon"
+     ]
+    },
+    {
+     "text": "Ichor cannon (instead of gorestorm cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "gorestorm cannon",
+     "group": "000000970-0",
+     "model": "",
+     "grants": [
       "Ichor cannon"
      ]
     },
@@ -11507,7 +12494,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s Kratos battle cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 melta blast-gun</li><li>1 volkite cardanelle</li></ul>",
+     "text": "Melta blast-gun (instead of kratos battle cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -11515,14 +12502,29 @@
       "max": 1
      },
      "base": "kratos battle cannon",
+     "group": "000003634-0",
      "model": "",
      "grants": [
-      "Volkite cardanelle",
       "Melta blast-gun"
      ]
     },
     {
-     "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 autocannons</li><li>2 lascannons</li><li>2 volkite calivers</li></ul>",
+     "text": "Volkite cardanelle (instead of kratos battle cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "kratos battle cannon",
+     "group": "000003634-0",
+     "model": "",
+     "grants": [
+      "Volkite cardanelle"
+     ]
+    },
+    {
+     "text": "Autocannons (instead of heavy bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -11530,16 +12532,31 @@
       "max": 1
      },
      "base": "heavy bolters",
+     "group": "000003634-1",
      "model": "",
      "grants": [
       "Autocannon",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons (instead of heavy bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy bolters",
+     "group": "000003634-1",
+     "model": "",
+     "grants": [
       "Heavy bolter",
-      "Volkite caliver",
       "Lascannons"
      ]
     },
     {
-     "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy flamers</li><li>2 lascannons</li><li>2 volkite culverins </li></ul>",
+     "text": "Volkite calivers (instead of heavy bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -11547,12 +12564,59 @@
       "max": 1
      },
      "base": "heavy bolters",
+     "group": "000003634-1",
      "model": "",
      "grants": [
       "Heavy bolter",
-      "Heavy flamer",
-      "Volkite culverin",
+      "Volkite caliver"
+     ]
+    },
+    {
+     "text": "Heavy flamers (instead of heavy bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy bolters",
+     "group": "000003634-2",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Lascannons (instead of heavy bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy bolters",
+     "group": "000003634-2",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
       "Lascannons"
+     ]
+    },
+    {
+     "text": "Volkite culverins (instead of heavy bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy bolters",
+     "group": "000003634-2",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Volkite culverin"
      ]
     },
     {
@@ -12713,7 +13777,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "The Aspiring Champion’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol*</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 heavy melee weapon</li></ul>",
+     "text": "Plasma pistol* (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -12721,15 +13785,57 @@
       "max": 1
      },
      "base": "boltgun",
+     "group": "000002570-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Accursed weapon (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000002570-0",
      "model": "",
      "grants": [
-      "Accursed weapon",
-      "Astartes chainsword",
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Astartes chainsword (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000002570-0",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Heavy melee weapon (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000002570-0",
+     "model": "",
+     "grants": [
       "Heavy melee weapon"
      ]
     },
     {
-     "text": "The Aspiring Champion’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol*</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 heavy melee weapon</li></ul>",
+     "text": "Plasma pistol* (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -12737,10 +13843,52 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000002570-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Accursed weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000002570-1",
      "model": "",
      "grants": [
-      "Accursed weapon",
-      "Astartes chainsword",
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Astartes chainsword (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000002570-1",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Heavy melee weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000002570-1",
+     "model": "",
+     "grants": [
       "Heavy melee weapon"
      ]
     },
@@ -12796,7 +13944,7 @@
      ]
     },
     {
-     "text": "For every 5 models in this unit, 1 Legionary’s boltgun can be replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 plasma pistol and 1 Astartes chainsword</li><li>1 flamer</li><li>1 havoc autocannon</li><li>1 heavy bolter</li><li>1 lascannon</li><li>1 meltagun</li><li>1 missile launcher</li><li>1 plasma gun</li><li>1 reaper chaincannon </li></ul>",
+     "text": "Plasma pistol and 1 Astartes chainsword (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -12804,15 +13952,126 @@
       "n": 5
      },
      "base": "boltgun",
+     "group": "000002570-6",
      "model": "",
      "grants": [
-      "Flamer",
-      "Havoc autocannon",
-      "Heavy bolter",
-      "Meltagun",
-      "Lascannon",
-      "Reaper chaincannon",
       "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Flamer (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "boltgun",
+     "group": "000002570-6",
+     "model": "",
+     "grants": [
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Havoc autocannon (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "boltgun",
+     "group": "000002570-6",
+     "model": "",
+     "grants": [
+      "Havoc autocannon"
+     ]
+    },
+    {
+     "text": "Heavy bolter (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "boltgun",
+     "group": "000002570-6",
+     "model": "",
+     "grants": [
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannon (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "boltgun",
+     "group": "000002570-6",
+     "model": "",
+     "grants": [
+      "Lascannon"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "boltgun",
+     "group": "000002570-6",
+     "model": "",
+     "grants": [
+      "Meltagun"
+     ]
+    },
+    {
+     "text": "Missile launcher (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "boltgun",
+     "group": "000002570-6",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Plasma gun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "boltgun",
+     "group": "000002570-6",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Reaper chaincannon (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "boltgun",
+     "group": "000002570-6",
+     "model": "",
+     "grants": [
+      "Reaper chaincannon"
      ]
     },
     {
@@ -13071,7 +14330,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Each of this model’s grav-flux bombards can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 cyclonic melta lance</li><li>1 storm cannon</li><li>1 meltagun and 1 Leviathan siege claw</li><li>1 meltagun and 1 Leviathan siege drill</li></ul>",
+     "text": "Cyclonic melta lance (instead of grav-flux bombards)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -13079,11 +14338,58 @@
       "max": 1
      },
      "base": "grav-flux bombards",
+     "group": "000003650-0",
      "model": "",
      "grants": [
       "Cyclonic melta lance",
-      "Leviathan siege claw",
+      "Grav-flux bombard"
+     ]
+    },
+    {
+     "text": "Storm cannon (instead of grav-flux bombards)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "grav-flux bombards",
+     "group": "000003650-0",
+     "model": "",
+     "grants": [
       "Storm cannon",
+      "Grav-flux bombard"
+     ]
+    },
+    {
+     "text": "Meltagun and 1 Leviathan siege claw (instead of grav-flux bombards)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "grav-flux bombards",
+     "group": "000003650-0",
+     "model": "",
+     "grants": [
+      "Leviathan siege claw",
+      "Meltagun",
+      "Grav-flux bombard"
+     ]
+    },
+    {
+     "text": "Meltagun and 1 Leviathan siege drill (instead of grav-flux bombards)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "grav-flux bombards",
+     "group": "000003650-0",
+     "model": "",
+     "grants": [
       "Leviathan siege drill",
       "Meltagun",
       "Grav-flux bombard"
@@ -13999,7 +15305,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 heavy flamers can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li><li>2 volkite culverins</li></ul>",
+     "text": "Heavy bolters (instead of 2 heavy flamers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -14007,11 +15313,42 @@
       "max": 1
      },
      "base": "2 heavy flamers",
+     "group": "000003646-0",
      "model": "",
      "grants": [
       "Heavy bolter",
-      "Volkite culverin",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Lascannons (instead of 2 heavy flamers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 heavy flamers",
+     "group": "000003646-0",
+     "model": "",
+     "grants": [
       "Lascannon",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Volkite culverins (instead of 2 heavy flamers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 heavy flamers",
+     "group": "000003646-0",
+     "model": "",
+     "grants": [
+      "Volkite culverin",
       "Heavy flamer"
      ]
     },
@@ -14988,7 +16325,7 @@
      "grants": []
     },
     {
-     "text": "The Visionary’s Nostraman chainblade can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 accursed weapon</li><li>1 power fist</li></ul>",
+     "text": "Accursed weapon (instead of nostraman chainblade)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -14996,9 +16333,24 @@
       "max": 1
      },
      "base": "nostraman chainblade",
+     "group": "000003876-1",
      "model": "",
      "grants": [
-      "Accursed weapon",
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of nostraman chainblade)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "nostraman chainblade",
+     "group": "000003876-1",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
@@ -15016,46 +16368,130 @@
      ]
     },
     {
-     "text": "If this unit contains 10 models, one Legionary’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 missile launcher</li></ul>",
+     "text": "Heavy bolter (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "boltgun",
+     "group": "000003876-3",
      "model": "",
      "grants": [
       "Heavy bolter"
      ]
     },
     {
-     "text": "One Legionary’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "text": "Missile launcher (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "boltgun",
+     "group": "000003876-3",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Flamer (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "boltgun",
+     "group": "000003876-4",
      "model": "",
      "grants": [
-      "Flamer",
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "boltgun",
+     "group": "000003876-4",
+     "model": "",
+     "grants": [
       "Meltagun"
      ]
     },
     {
-     "text": "Up to four Legionaries can each have their boltgun replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 accursed weapon</li><li>1 Nostraman chainglaive</li><li>1 paired accursed weapons</li><li>1 voice eater and 1 Astartes chainsword</li></ul>",
+     "text": "Plasma gun (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "boltgun",
+     "group": "000003876-4",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Accursed weapon (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "boltgun",
+     "group": "000003876-5",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Nostraman chainglaive (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "boltgun",
+     "group": "000003876-5",
+     "model": "",
+     "grants": [
+      "Nostraman chainglaive"
+     ]
+    },
+    {
+     "text": "Paired accursed weapons (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "boltgun",
+     "group": "000003876-5",
      "model": "",
      "grants": [
       "Accursed weapon",
-      "Astartes chainsword",
-      "Nostraman chainglaive",
       "Paired accursed weapons"
+     ]
+    },
+    {
+     "text": "Voice eater and 1 Astartes chainsword (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "boltgun",
+     "group": "000003876-5",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
      ]
     }
    ],
@@ -15752,7 +17188,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "The Plague Champion’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma gun</li><li>1 plasma pistol</li></ul>",
+     "text": "Bolt pistol (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -15760,13 +17196,40 @@
       "max": 1
      },
      "base": "boltgun",
+     "group": "000003584-0",
      "model": "",
      "grants": [
       "Bolt pistol"
      ]
     },
     {
-     "text": "The Plague Champion’s plague knives can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bubotic weapons</li><li>1 power fist</li></ul>",
+     "text": "Plasma gun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003584-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Plasma pistol (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003584-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Bubotic weapons (instead of plague knives)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -15774,9 +17237,24 @@
       "max": 1
      },
      "base": "plague knives",
+     "group": "000003584-1",
      "model": "",
      "grants": [
-      "Bubotic weapons",
+      "Bubotic weapons"
+     ]
+    },
+    {
+     "text": "Power fist (instead of plague knives)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "plague knives",
+     "group": "000003584-1",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     },
@@ -15809,7 +17287,7 @@
      ]
     },
     {
-     "text": "For every 5 models in this unit, 1 Plague Marine’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 meltagun</li><li>1 plague belcher</li><li>1 plasma gun</li></ul>",
+     "text": "Meltagun (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -15817,11 +17295,39 @@
       "n": 5
      },
      "base": "boltgun",
+     "group": "000003584-4",
      "model": "",
      "grants": [
-      "Plague belcher",
       "Meltagun"
      ]
+    },
+    {
+     "text": "Plague belcher (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "boltgun",
+     "group": "000003584-4",
+     "model": "",
+     "grants": [
+      "Plague belcher"
+     ]
+    },
+    {
+     "text": "Plasma gun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "boltgun",
+     "group": "000003584-4",
+     "model": "",
+     "grants": []
     },
     {
      "text": "For every 5 models in this unit, up to 2 Plague Marines can each have their boltgun replaced with 1 bubotic weapons.",
@@ -16173,7 +17679,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s quad heavy bolter can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 graviton cannon</li><li>1 laser destroyer</li><li>1 quad launcher</li></ul>",
+     "text": "Graviton cannon (instead of quad heavy bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -16181,11 +17687,39 @@
       "max": 1
      },
      "base": "quad heavy bolter",
+     "group": "000003670-0",
      "model": "",
      "grants": [
-      "Laser destroyer",
       "Graviton cannon"
      ]
+    },
+    {
+     "text": "Laser destroyer (instead of quad heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "quad heavy bolter",
+     "group": "000003670-0",
+     "model": "",
+     "grants": [
+      "Laser destroyer"
+     ]
+    },
+    {
+     "text": "Quad launcher (instead of quad heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "quad heavy bolter",
+     "group": "000003670-0",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -16459,7 +17993,7 @@
      "grants": []
     },
     {
-     "text": "The Raptor Champion’s Astartes chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 accursed weapon</li><li>1 heavy melee weapon</li></ul>",
+     "text": "Accursed weapon (instead of astartes chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -16467,9 +18001,24 @@
       "max": 1
      },
      "base": "astartes chainsword",
+     "group": "000000958-1",
      "model": "",
      "grants": [
-      "Accursed weapon",
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Heavy melee weapon (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "astartes chainsword",
+     "group": "000000958-1",
+     "model": "",
+     "grants": [
       "Heavy melee weapon"
      ]
     },
@@ -16517,32 +18066,93 @@
      ]
     },
     {
-     "text": "Up to 2 Raptors can each have their Astartes chainsword replaced with one of the following options (you cannot select the same option more than once):<ul style=\"list-style-type:circle\"><li>1 flamer and 1 close combat weapon</li><li>1 meltagun and 1 close combat weapon</li><li>1 plasma gun and 1 close combat weapon</li></ul>",
+     "text": "Flamer and 1 close combat weapon (instead of astartes chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "astartes chainsword",
+     "group": "000000958-5",
      "model": "",
      "grants": [
       "Flamer",
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Meltagun and 1 close combat weapon (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "astartes chainsword",
+     "group": "000000958-5",
+     "model": "",
+     "grants": [
       "Meltagun",
       "Close combat weapon"
      ]
     },
     {
-     "text": "If this unit contains 10 models, up to 2 additional Raptors can each have their Astartes chainsword replaced with one of the following options (you cannot select the same option more than once):<ul style=\"list-style-type:circle\"><li>1 flamer and 1 close combat weapon</li><li>1 meltagun and 1 close combat weapon</li><li>1 plasma gun and 1 close combat weapon</li></ul>",
+     "text": "Plasma gun and 1 close combat weapon (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "astartes chainsword",
+     "group": "000000958-5",
+     "model": "",
+     "grants": [
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Flamer and 1 close combat weapon (instead of astartes chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "astartes chainsword",
+     "group": "000000958-6",
      "model": "",
      "grants": [
       "Flamer",
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Meltagun and 1 close combat weapon (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "astartes chainsword",
+     "group": "000000958-6",
+     "model": "",
+     "grants": [
       "Meltagun",
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Plasma gun and 1 close combat weapon (instead of astartes chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "astartes chainsword",
+     "group": "000000958-6",
+     "model": "",
+     "grants": [
       "Close combat weapon"
      ]
     }
@@ -17281,7 +18891,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Each of this model’s heavy plasma cannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 conversion beam cannon</li><li>1 kheres-pattern assault cannon</li><li>1 multi-melta</li><li>1 twin autocannon</li><li>1 twin heavy bolter</li><li>1 twin lascannon</li><li>1 twin volkite culverin</li><li>1 Dreadnought chainfist and 1 combi-bolter</li><li>1 Dreadnought combat weapon and 1 combi-bolter</li></ul>",
+     "text": "Conversion beam cannon (instead of heavy plasma cannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -17289,22 +18899,136 @@
       "max": 1
      },
      "base": "heavy plasma cannons",
+     "group": "000003658-0",
      "model": "",
      "grants": [
-      "Combi-bolter",
-      "Multi-melta",
-      "Twin volkite culverin",
-      "Kheres-pattern assault cannon",
-      "Dreadnought combat weapon",
-      "Dreadnought chainfist",
-      "Conversion beam cannon",
-      "Twin heavy bolter",
-      "Twin autocannon",
+      "Conversion beam cannon"
+     ]
+    },
+    {
+     "text": "Kheres-pattern assault cannon (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003658-0",
+     "model": "",
+     "grants": [
+      "Kheres-pattern assault cannon"
+     ]
+    },
+    {
+     "text": "Multi-melta (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003658-0",
+     "model": "",
+     "grants": [
+      "Multi-melta"
+     ]
+    },
+    {
+     "text": "Twin autocannon (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003658-0",
+     "model": "",
+     "grants": [
+      "Twin autocannon"
+     ]
+    },
+    {
+     "text": "Twin heavy bolter (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003658-0",
+     "model": "",
+     "grants": [
+      "Twin heavy bolter"
+     ]
+    },
+    {
+     "text": "Twin lascannon (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003658-0",
+     "model": "",
+     "grants": [
       "Twin lascannon"
      ]
     },
     {
-     "text": "Each of this model’s combi-bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 graviton blaster</li><li>1 heavy flamer</li><li>1 plasma blaster</li></ul>",
+     "text": "Twin volkite culverin (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003658-0",
+     "model": "",
+     "grants": [
+      "Twin volkite culverin"
+     ]
+    },
+    {
+     "text": "Dreadnought chainfist and 1 combi-bolter (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003658-0",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Dreadnought chainfist"
+     ]
+    },
+    {
+     "text": "Dreadnought combat weapon and 1 combi-bolter (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003658-0",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Dreadnought combat weapon"
+     ]
+    },
+    {
+     "text": "Graviton blaster (instead of combi-bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -17312,11 +19036,42 @@
       "max": 1
      },
      "base": "combi-bolters",
+     "group": "000003658-1",
      "model": "",
      "grants": [
       "Combi-bolter",
-      "Heavy flamer",
       "Graviton blaster"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of combi-bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "combi-bolters",
+     "group": "000003658-1",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Plasma blaster (instead of combi-bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "combi-bolters",
+     "group": "000003658-1",
+     "model": "",
+     "grants": [
+      "Combi-bolter"
      ]
     },
     {
@@ -17509,7 +19264,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s Enforcer pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autogun</li><li>1 lasgun</li><li>1 shotgun</li></ul>",
+     "text": "Autogun (instead of enforcer pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -17517,15 +19272,44 @@
       "max": 1
      },
      "base": "enforcer pistol",
+     "group": "000002731-0",
      "model": "",
      "grants": [
-      "Autogun",
-      "Lasgun",
+      "Autogun"
+     ]
+    },
+    {
+     "text": "Lasgun (instead of enforcer pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "enforcer pistol",
+     "group": "000002731-0",
+     "model": "",
+     "grants": [
+      "Lasgun"
+     ]
+    },
+    {
+     "text": "Shotgun (instead of enforcer pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "enforcer pistol",
+     "group": "000002731-0",
+     "model": "",
+     "grants": [
       "Shotgun"
      ]
     },
     {
-     "text": "This model’s Enforcer melee weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li></ul>",
+     "text": "Power fist (instead of enforcer melee weapon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -17533,9 +19317,24 @@
       "max": 1
      },
      "base": "enforcer melee weapon",
+     "group": "000002731-1",
      "model": "",
      "grants": [
-      "Power fist",
+      "Power fist"
+     ]
+    },
+    {
+     "text": "Power weapon (instead of enforcer melee weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "enforcer melee weapon",
+     "group": "000002731-1",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     }
@@ -19938,7 +21737,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 power fist</li></ul>",
+     "text": "Plasma pistol (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -19946,12 +21745,82 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000000940-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Combi-bolter (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000940-0",
      "model": "",
      "grants": [
-      "Combi-bolter",
-      "Combi-weapon",
-      "Accursed weapon",
-      "Astartes chainsword",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Combi-weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000940-0",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Accursed weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000940-0",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Astartes chainsword (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000940-0",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Power fist (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000940-0",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     }
@@ -20182,7 +22051,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 power fist</li></ul>",
+     "text": "Plasma pistol (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -20190,12 +22059,82 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000000941-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Combi-bolter (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000941-0",
      "model": "",
      "grants": [
-      "Combi-bolter",
-      "Combi-weapon",
-      "Accursed weapon",
-      "Astartes chainsword",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Combi-weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000941-0",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Accursed weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000941-0",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Astartes chainsword (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000941-0",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Power fist (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000941-0",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     }
@@ -20436,7 +22375,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 power fist</li></ul>",
+     "text": "Plasma pistol (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -20444,12 +22383,82 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000000942-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Combi-bolter (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000942-0",
      "model": "",
      "grants": [
-      "Combi-bolter",
-      "Combi-weapon",
-      "Accursed weapon",
-      "Astartes chainsword",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Combi-weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000942-0",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Accursed weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000942-0",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Astartes chainsword (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000942-0",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Power fist (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000942-0",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     }
@@ -20685,7 +22694,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 combi-bolter</li><li>1 combi-weapon</li><li>1 accursed weapon</li><li>1 Astartes chainsword</li><li>1 power fist</li></ul>",
+     "text": "Plasma pistol (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -20693,12 +22702,82 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000000943-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Combi-bolter (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000943-0",
      "model": "",
      "grants": [
-      "Combi-bolter",
-      "Combi-weapon",
-      "Accursed weapon",
-      "Astartes chainsword",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Combi-weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000943-0",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Accursed weapon (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000943-0",
+     "model": "",
+     "grants": [
+      "Accursed weapon"
+     ]
+    },
+    {
+     "text": "Astartes chainsword (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000943-0",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Power fist (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000943-0",
+     "model": "",
+     "grants": [
       "Power fist"
      ]
     }
@@ -21182,7 +23261,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s twin heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin multi-melta</li><li>1 typhoon missile launcher</li></ul>",
+     "text": "Twin multi-melta (instead of twin heavy bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -21190,10 +23269,24 @@
       "max": 1
      },
      "base": "twin heavy bolter",
+     "group": "000003674-0",
      "model": "",
      "grants": [
       "Twin multi-melta"
      ]
+    },
+    {
+     "text": "Typhoon missile launcher (instead of twin heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin heavy bolter",
+     "group": "000003674-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s 2 twin hellstrike missile launchers can be replaced with 2 twin lascannons",
@@ -21380,7 +23473,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 combi-bolters can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>2 heavy flamers</li><li>2 twin volkite chargers</li></ul>",
+     "text": "Heavy flamers (instead of 2 combi-bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -21388,11 +23481,27 @@
       "max": 1
      },
      "base": "2 combi-bolters",
+     "group": "000003606-0",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Twin volkite chargers (instead of 2 combi-bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 combi-bolters",
+     "group": "000003606-0",
      "model": "",
      "grants": [
       "Twin volkite charger",
-      "Combi-bolter",
-      "Heavy flamer"
+      "Combi-bolter"
      ]
     }
    ],
@@ -21780,22 +23889,78 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Up to 3 Traitor Guardsmen can each have their lasgun replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 Cultist grenade launcher</li><li>1 flamer</li><li>1 meltagun</li><li>1 plasma gun</li><li>1 Cultist sniper rifle</li></ul>",
+     "text": "Cultist grenade launcher (instead of lasgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 3
      },
      "base": "lasgun",
+     "group": "000002590-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Flamer (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 3
+     },
+     "base": "lasgun",
+     "group": "000002590-0",
      "model": "",
      "grants": [
-      "Cultist sniper rifle",
-      "Flamer",
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 3
+     },
+     "base": "lasgun",
+     "group": "000002590-0",
+     "model": "",
+     "grants": [
       "Meltagun"
      ]
     },
     {
-     "text": "The Traitor Sergeant’s close combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
+     "text": "Plasma gun (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 3
+     },
+     "base": "lasgun",
+     "group": "000002590-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Cultist sniper rifle (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 3
+     },
+     "base": "lasgun",
+     "group": "000002590-0",
+     "model": "",
+     "grants": [
+      "Cultist sniper rifle"
+     ]
+    },
+    {
+     "text": "Chainsword (instead of close combat weapon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -21803,9 +23968,24 @@
       "max": 1
      },
      "base": "close combat weapon",
+     "group": "000002590-1",
      "model": "",
      "grants": [
-      "Chainsword",
+      "Chainsword"
+     ]
+    },
+    {
+     "text": "Power weapon (instead of close combat weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "close combat weapon",
+     "group": "000002590-1",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     },

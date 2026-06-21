@@ -682,34 +682,114 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their Carnifex extra scything talons replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 deathspitters with slimer maggots</li><li>1 devourers with brainleech worms</li><li>1 heavy venom cannon</li><li>1 stranglethorn cannon</li><li>1 Carnifex crushing claws</li></ul>",
+     "text": "Deathspitters with slimer maggots (instead of carnifex extra scything talons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "carnifex extra scything talons",
+     "group": "000000490-0",
      "model": "",
      "grants": [
-      "Deathspitters with slimer maggots",
-      "Devourers with brainleech worms",
-      "Heavy venom cannon",
-      "Stranglethorn cannon",
+      "Deathspitters with slimer maggots"
+     ]
+    },
+    {
+     "text": "Devourers with brainleech worms (instead of carnifex extra scything talons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "carnifex extra scything talons",
+     "group": "000000490-0",
+     "model": "",
+     "grants": [
+      "Devourers with brainleech worms"
+     ]
+    },
+    {
+     "text": "Heavy venom cannon (instead of carnifex extra scything talons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "carnifex extra scything talons",
+     "group": "000000490-0",
+     "model": "",
+     "grants": [
+      "Heavy venom cannon"
+     ]
+    },
+    {
+     "text": "Stranglethorn cannon (instead of carnifex extra scything talons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "carnifex extra scything talons",
+     "group": "000000490-0",
+     "model": "",
+     "grants": [
+      "Stranglethorn cannon"
+     ]
+    },
+    {
+     "text": "Carnifex crushing claws (instead of carnifex extra scything talons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "carnifex extra scything talons",
+     "group": "000000490-0",
+     "model": "",
+     "grants": [
       "Carnifex crushing claws"
      ]
     },
     {
-     "text": "Any number of models can each have their Carnifex scything talons replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 deathspitters with slimer maggots</li><li>1 devourers with brainleech worms</li><li>1 Carnifex crushing claws</li></ul>",
+     "text": "Deathspitters with slimer maggots (instead of carnifex scything talons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "carnifex scything talons",
+     "group": "000000490-1",
      "model": "",
      "grants": [
-      "Deathspitters with slimer maggots",
-      "Devourers with brainleech worms",
+      "Deathspitters with slimer maggots"
+     ]
+    },
+    {
+     "text": "Devourers with brainleech worms (instead of carnifex scything talons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "carnifex scything talons",
+     "group": "000000490-1",
+     "model": "",
+     "grants": [
+      "Devourers with brainleech worms"
+     ]
+    },
+    {
+     "text": "Carnifex crushing claws (instead of carnifex scything talons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "carnifex scything talons",
+     "group": "000000490-1",
+     "model": "",
+     "grants": [
       "Carnifex crushing claws"
      ]
     },
@@ -2361,7 +2441,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s monstrous bonesword and lash whip can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy venom cannon</li><li>1 stranglethorn cannon</li><li>1 monstrous scything talons</li></ul>",
+     "text": "Heavy venom cannon (instead of monstrous bonesword and lash whip)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2369,15 +2449,44 @@
       "max": 1
      },
      "base": "monstrous bonesword and lash whip",
+     "group": "000000460-0",
      "model": "",
      "grants": [
-      "Heavy venom cannon",
-      "Stranglethorn cannon",
+      "Heavy venom cannon"
+     ]
+    },
+    {
+     "text": "Stranglethorn cannon (instead of monstrous bonesword and lash whip)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "monstrous bonesword and lash whip",
+     "group": "000000460-0",
+     "model": "",
+     "grants": [
+      "Stranglethorn cannon"
+     ]
+    },
+    {
+     "text": "Monstrous scything talons (instead of monstrous bonesword and lash whip)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "monstrous bonesword and lash whip",
+     "group": "000000460-0",
+     "model": "",
+     "grants": [
       "Monstrous scything talons"
      ]
     },
     {
-     "text": "This model’s monstrous scything talons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy venom cannon*</li><li>1 stranglethorn cannon*</li></ul>",
+     "text": "Heavy venom cannon* (instead of monstrous scything talons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2385,9 +2494,24 @@
       "max": 1
      },
      "base": "monstrous scything talons",
+     "group": "000000460-1",
      "model": "",
      "grants": [
-      "Heavy venom cannon",
+      "Heavy venom cannon"
+     ]
+    },
+    {
+     "text": "Stranglethorn cannon* (instead of monstrous scything talons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "monstrous scything talons",
+     "group": "000000460-1",
+     "model": "",
+     "grants": [
       "Stranglethorn cannon"
      ]
     },
@@ -6623,16 +6747,30 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their devourer replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 deathspitter</li><li>1 spinefists</li></ul>",
+     "text": "Deathspitter (instead of devourer)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "devourer",
+     "group": "000002692-0",
      "model": "",
      "grants": [
-      "Deathspitter",
+      "Deathspitter"
+     ]
+    },
+    {
+     "text": "Spinefists (instead of devourer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "devourer",
+     "group": "000002692-0",
+     "model": "",
+     "grants": [
       "Spinefists"
      ]
     },
@@ -6931,7 +7069,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s fleshborer hive can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 acid spray</li><li>1 rupture cannon</li></ul>",
+     "text": "Acid spray (instead of fleshborer hive)",
      "cost": 10,
      "type": "wargear",
      "limit": {
@@ -6939,20 +7077,22 @@
       "max": 1
      },
      "base": "fleshborer hive",
+     "group": "000000496-0",
      "model": "",
      "grants": [
-      "Acid spray",
-      "Rupture cannon"
+      "Acid spray"
      ]
     },
     {
-     "text": "Equip Rupture cannon",
+     "text": "Rupture cannon (instead of fleshborer hive)",
      "cost": 20,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
-     "base": "",
+     "base": "fleshborer hive",
+     "group": "000000496-0",
      "model": "",
      "grants": [
       "Rupture cannon"
@@ -7081,16 +7221,30 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their scything talons and rending claws replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bone cleaver, lash whip and rending claws</li><li>1 crushing claws and rending claws</li></ul>",
+     "text": "Bone cleaver, lash whip and rending claws (instead of scything talons and rending claws)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "scything talons and rending claws",
+     "group": "000000471-0",
      "model": "",
      "grants": [
-      "Bone cleaver, lash whip and rending claws",
+      "Bone cleaver, lash whip and rending claws"
+     ]
+    },
+    {
+     "text": "Crushing claws and rending claws (instead of scything talons and rending claws)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "scything talons and rending claws",
+     "group": "000000471-0",
+     "model": "",
+     "grants": [
       "Crushing claws and rending claws"
      ]
     }
@@ -7481,7 +7635,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s monstrous bonesword and lash whip can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy venom cannon</li><li>1 stranglethorn cannon</li><li>1 monstrous scything talons</li></ul>",
+     "text": "Heavy venom cannon (instead of monstrous bonesword and lash whip)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7489,10 +7643,39 @@
       "max": 1
      },
      "base": "monstrous bonesword and lash whip",
+     "group": "000002528-0",
      "model": "",
      "grants": [
-      "Heavy venom cannon",
-      "Stranglethorn cannon",
+      "Heavy venom cannon"
+     ]
+    },
+    {
+     "text": "Stranglethorn cannon (instead of monstrous bonesword and lash whip)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "monstrous bonesword and lash whip",
+     "group": "000002528-0",
+     "model": "",
+     "grants": [
+      "Stranglethorn cannon"
+     ]
+    },
+    {
+     "text": "Monstrous scything talons (instead of monstrous bonesword and lash whip)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "monstrous bonesword and lash whip",
+     "group": "000002528-0",
+     "model": "",
+     "grants": [
       "Monstrous scything talons"
      ]
     }

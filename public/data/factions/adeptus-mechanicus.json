@@ -1652,13 +1652,29 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their twin Kastelan fist replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Kastelan phosphor blaster and 1 Kastelan fist</li><li>1 twin Kastelan phosphor blaster and 1 close combat weapon</li></ul>",
+     "text": "Kastelan phosphor blaster and 1 Kastelan fist (instead of twin kastelan fist)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "twin kastelan fist",
+     "group": "000000845-0",
+     "model": "",
+     "grants": [
+      "Kastelan phosphor blaster",
+      "Kastelan fist"
+     ]
+    },
+    {
+     "text": "Twin Kastelan phosphor blaster and 1 close combat weapon (instead of twin kastelan fist)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "twin kastelan fist",
+     "group": "000000845-0",
      "model": "",
      "grants": [
       "Kastelan phosphor blaster",
@@ -2217,7 +2233,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s eradication beamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 daedalus missile launcher and 1 Icarus array</li><li>1 neutron laser and 1 cognis heavy stubber</li><li>1 twin Onager heavy phosphor blaster</li></ul>",
+     "text": "Daedalus missile launcher and 1 Icarus array (instead of eradication beamer)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2225,12 +2241,41 @@
       "max": 1
      },
      "base": "eradication beamer",
+     "group": "000000854-0",
+     "model": "",
+     "grants": [
+      "Daedalus missile launcher",
+      "Icarus array"
+     ]
+    },
+    {
+     "text": "Neutron laser and 1 cognis heavy stubber (instead of eradication beamer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "eradication beamer",
+     "group": "000000854-0",
      "model": "",
      "grants": [
       "Cognis heavy stubber",
-      "Daedalus missile launcher",
-      "Neutron laser",
-      "Icarus array",
+      "Neutron laser"
+     ]
+    },
+    {
+     "text": "Twin Onager heavy phosphor blaster (instead of eradication beamer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "eradication beamer",
+     "group": "000000854-0",
+     "model": "",
+     "grants": [
       "Twin Onager heavy phosphor blaster"
      ]
     },
@@ -3674,17 +3719,49 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Up to 2 models can each have their Servitor’s servo-arm replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter and 1 Servitor’s tools</li><li>1 multi-melta and 1 Servitor’s tools</li><li>1 plasma cannon and 1 Servitor’s tools</li></ul>",
+     "text": "Heavy bolter and 1 Servitor’s tools (instead of servitor’s servo-arm)",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "servitor’s servo-arm",
+     "group": "000000847-0",
      "model": "",
      "grants": [
       "Heavy bolter",
+      "Servitor’s tools"
+     ]
+    },
+    {
+     "text": "Multi-melta and 1 Servitor’s tools (instead of servitor’s servo-arm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "servitor’s servo-arm",
+     "group": "000000847-0",
+     "model": "",
+     "grants": [
       "Multi-melta",
+      "Servitor’s tools"
+     ]
+    },
+    {
+     "text": "Plasma cannon and 1 Servitor’s tools (instead of servitor’s servo-arm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "servitor’s servo-arm",
+     "group": "000000847-0",
+     "model": "",
+     "grants": [
       "Servitor’s tools"
      ]
     }
@@ -6255,7 +6332,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 combi-bolters can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>2 heavy flamers</li><li>2 twin volkite chargers</li></ul>",
+     "text": "Heavy flamers (instead of 2 combi-bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6263,10 +6340,26 @@
       "max": 1
      },
      "base": "2 combi-bolters",
+     "group": "000001533-0",
      "model": "",
      "grants": [
       "Combi-bolter",
-      "Heavy flamer",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Twin volkite chargers (instead of 2 combi-bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 combi-bolters",
+     "group": "000001533-0",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
       "Twin volkite charger"
      ]
     }

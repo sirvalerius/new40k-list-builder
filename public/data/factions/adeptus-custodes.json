@@ -153,16 +153,30 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their lastrum bolt cannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 adrathic devastator</li><li>1 twin las-pulsar</li></ul>",
+     "text": "Adrathic devastator (instead of lastrum bolt cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "lastrum bolt cannon",
+     "group": "000001560-0",
      "model": "",
      "grants": [
-      "Adrathic devastator",
+      "Adrathic devastator"
+     ]
+    },
+    {
+     "text": "Twin las-pulsar (instead of lastrum bolt cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "lastrum bolt cannon",
+     "group": "000001560-0",
+     "model": "",
+     "grants": [
       "Twin las-pulsar"
      ]
     }
@@ -820,16 +834,30 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their lastrum storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 infernus firepike</li><li>1 twin adrathic destructor</li></ul>",
+     "text": "Infernus firepike (instead of lastrum storm bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "lastrum storm bolter",
+     "group": "000001558-0",
      "model": "",
      "grants": [
-      "Infernus firepike",
+      "Infernus firepike"
+     ]
+    },
+    {
+     "text": "Twin adrathic destructor (instead of lastrum storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "lastrum storm bolter",
+     "group": "000001558-0",
+     "model": "",
+     "grants": [
       "Twin adrathic destructor"
      ]
     },
@@ -1440,7 +1468,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 lastrum storm bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 infernus incinerators</li><li>2 twin adrathic destructors</li><li>1 lastrum storm bolter and 1 infernus incinerator</li><li>1 lastrum storm bolter and 1 twin adrathic destructor</li><li>1 infernus incinerator and 1 twin adrathic destructor</li></ul>",
+     "text": "Infernus incinerators (instead of 2 lastrum storm bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1448,6 +1476,71 @@
       "max": 1
      },
      "base": "2 lastrum storm bolters",
+     "group": "000001458-0",
+     "model": "",
+     "grants": [
+      "Infernus incinerator",
+      "Lastrum storm bolter"
+     ]
+    },
+    {
+     "text": "Twin adrathic destructors (instead of 2 lastrum storm bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 lastrum storm bolters",
+     "group": "000001458-0",
+     "model": "",
+     "grants": [
+      "Lastrum storm bolter",
+      "Twin adrathic destructor"
+     ]
+    },
+    {
+     "text": "Lastrum storm bolter and 1 infernus incinerator (instead of 2 lastrum storm bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 lastrum storm bolters",
+     "group": "000001458-0",
+     "model": "",
+     "grants": [
+      "Infernus incinerator",
+      "Lastrum storm bolter"
+     ]
+    },
+    {
+     "text": "Lastrum storm bolter and 1 twin adrathic destructor (instead of 2 lastrum storm bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 lastrum storm bolters",
+     "group": "000001458-0",
+     "model": "",
+     "grants": [
+      "Lastrum storm bolter",
+      "Twin adrathic destructor"
+     ]
+    },
+    {
+     "text": "Infernus incinerator and 1 twin adrathic destructor (instead of 2 lastrum storm bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 lastrum storm bolters",
+     "group": "000001458-0",
      "model": "",
      "grants": [
       "Infernus incinerator",
@@ -1926,7 +2019,7 @@
      ]
     },
     {
-     "text": "1 model’s guardian spear can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 vexilla and 1 misericordia</li><li>1 vexilla, 1 misericordia and 1 praesidium shield</li></ul>",
+     "text": "Vexilla and 1 misericordia (instead of guardian spear)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1934,6 +2027,22 @@
       "max": 1
      },
      "base": "guardian spear",
+     "group": "000000882-1",
+     "model": "",
+     "grants": [
+      "Misericordia"
+     ]
+    },
+    {
+     "text": "Vexilla, 1 misericordia and 1 praesidium shield (instead of guardian spear)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "guardian spear",
+     "group": "000000882-1",
      "model": "",
      "grants": [
       "Misericordia"
@@ -2448,7 +2557,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s executioner greatblade can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 master-crafted boltgun and 1 close combat weapon</li><li>1 Witchseeker flamer and 1 close combat weapon</li></ul>",
+     "text": "Master-crafted boltgun and 1 close combat weapon (instead of executioner greatblade)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2456,9 +2565,25 @@
       "max": 1
      },
      "base": "executioner greatblade",
+     "group": "000002520-0",
      "model": "",
      "grants": [
       "Master-crafted boltgun",
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Witchseeker flamer and 1 close combat weapon (instead of executioner greatblade)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "executioner greatblade",
+     "group": "000002520-0",
+     "model": "",
+     "grants": [
       "Witchseeker flamer",
       "Close combat weapon"
      ]
@@ -3199,7 +3324,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s guardian spear can be replaced with one of the following:<br><ul><li>1 castellan axe</li><li>1 sentinel blade</li><li>1 sentinel blade and 1 praesidium shield</li><li>1 pyrithite spear and 1 praesidium shield</li></ul>",
+     "text": "Castellan axe (instead of guardian spear)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3207,14 +3332,59 @@
       "max": 1
      },
      "base": "guardian spear",
+     "group": "000001447-0",
      "model": "",
      "grants": [
       "Castellan axe",
-      "Pyrithite spear",
+      "Castellan axe"
+     ]
+    },
+    {
+     "text": "Sentinel blade (instead of guardian spear)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "guardian spear",
+     "group": "000001447-0",
+     "model": "",
+     "grants": [
       "Sentinel blade",
-      "Castellan axe",
-      "Pyrithite spear",
       "Sentinel blade"
+     ]
+    },
+    {
+     "text": "Sentinel blade and 1 praesidium shield (instead of guardian spear)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "guardian spear",
+     "group": "000001447-0",
+     "model": "",
+     "grants": [
+      "Sentinel blade",
+      "Sentinel blade"
+     ]
+    },
+    {
+     "text": "Pyrithite spear and 1 praesidium shield (instead of guardian spear)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "guardian spear",
+     "group": "000001447-0",
+     "model": "",
+     "grants": [
+      "Pyrithite spear",
+      "Pyrithite spear"
      ]
     }
    ],
@@ -3704,7 +3874,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 iliastus accelerator culverins can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 arachnus storm cannons</li><li>2 Telemon caestus and 2 twin plasma projectors</li><li>1 iliastus accelerator culverin and 1 arachnus storm cannon</li><li>1 iliastus accelerator culverin, 1 Telemon caestus and 1 twin plasma projector</li><li>1 arachnus storm cannon, 1 Telemon caestus and 1 twin plasma projector</li></ul>",
+     "text": "Arachnus storm cannons (instead of 2 iliastus accelerator culverins)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3712,6 +3882,73 @@
       "max": 1
      },
      "base": "2 iliastus accelerator culverins",
+     "group": "000001479-0",
+     "model": "",
+     "grants": [
+      "Arachnus storm cannon",
+      "Iliastus accelerator culverin"
+     ]
+    },
+    {
+     "text": "Telemon caestus and 2 twin plasma projectors (instead of 2 iliastus accelerator culverins)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 iliastus accelerator culverins",
+     "group": "000001479-0",
+     "model": "",
+     "grants": [
+      "Iliastus accelerator culverin",
+      "Twin plasma projector",
+      "Telemon caestus"
+     ]
+    },
+    {
+     "text": "Iliastus accelerator culverin and 1 arachnus storm cannon (instead of 2 iliastus accelerator culverins)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 iliastus accelerator culverins",
+     "group": "000001479-0",
+     "model": "",
+     "grants": [
+      "Arachnus storm cannon",
+      "Iliastus accelerator culverin"
+     ]
+    },
+    {
+     "text": "Iliastus accelerator culverin, 1 Telemon caestus and 1 twin plasma projector (instead of 2 iliastus accelerator culverins)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 iliastus accelerator culverins",
+     "group": "000001479-0",
+     "model": "",
+     "grants": [
+      "Iliastus accelerator culverin",
+      "Twin plasma projector",
+      "Telemon caestus"
+     ]
+    },
+    {
+     "text": "Arachnus storm cannon, 1 Telemon caestus and 1 twin plasma projector (instead of 2 iliastus accelerator culverins)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 iliastus accelerator culverins",
+     "group": "000001479-0",
      "model": "",
      "grants": [
       "Arachnus storm cannon",

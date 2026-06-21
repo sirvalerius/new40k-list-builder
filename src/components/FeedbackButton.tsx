@@ -1,11 +1,18 @@
 import { useState } from 'react';
+import type { ArmyList } from '../lib/types';
 import { Modal } from './Modal';
 
 // Configured at build time (CI sets it from the FEEDBACK_URL repo variable). When unset,
 // the button is hidden, so the app works fine before the Worker is deployed.
 const FEEDBACK_URL = import.meta.env.VITE_FEEDBACK_URL as string | undefined;
 
-export function FeedbackButton({ context }: { context?: string }) {
+export function FeedbackButton({
+  context,
+  getList,
+}: {
+  context?: string;
+  getList?: () => ArmyList | null;
+}) {
   const [open, setOpen] = useState(false);
   if (!FEEDBACK_URL) return null;
   return (
@@ -18,16 +25,24 @@ export function FeedbackButton({ context }: { context?: string }) {
       >
         🐞
       </button>
-      {open && <FeedbackModal context={context} onClose={() => setOpen(false)} />}
+      {open && (
+        <FeedbackModal
+          context={context}
+          getList={getList}
+          onClose={() => setOpen(false)}
+        />
+      )}
     </>
   );
 }
 
 function FeedbackModal({
   context,
+  getList,
   onClose,
 }: {
   context?: string;
+  getList?: () => ArmyList | null;
   onClose: () => void;
 }) {
   const [text, setText] = useState('');
@@ -39,12 +54,15 @@ function FeedbackModal({
     if (!message || state === 'sending') return;
     setState('sending');
     try {
+      const list = getList?.() ?? null;
       const res = await fetch(FEEDBACK_URL!, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           message,
           context: `${context ?? ''} · ${navigator.userAgent}`.slice(0, 500),
+          // current list attached so bugs can be reproduced from the exact roster
+          list: list ? JSON.stringify(list, null, 2) : '',
           website: hp,
         }),
       });

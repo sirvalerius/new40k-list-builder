@@ -1990,19 +1990,85 @@
      ]
     },
     {
-     "text": "Up to 2 Hearthkyn Warriors can each have their  Autoch-pattern bolter or ion blaster replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 HYLas auto rifle</li><li>1 HYLas rotary cannon</li><li>1 L7 missile launcher</li><li>1 EtaCarn plasma beamer</li><li>1 magna-rail rifle</li></ul>",
+     "text": "HYLas auto rifle (instead of autoch-pattern bolter or ion blaster)",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "autoch-pattern bolter or ion blaster",
+     "group": "000002598-1",
+     "model": "",
+     "grants": [
+      "Autoch-pattern bolter",
+      "HYLas auto rifle",
+      "Ion blaster"
+     ]
+    },
+    {
+     "text": "HYLas rotary cannon (instead of autoch-pattern bolter or ion blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "autoch-pattern bolter or ion blaster",
+     "group": "000002598-1",
+     "model": "",
+     "grants": [
+      "Autoch-pattern bolter",
+      "HYLas rotary cannon",
+      "Ion blaster"
+     ]
+    },
+    {
+     "text": "L7 missile launcher (instead of autoch-pattern bolter or ion blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "autoch-pattern bolter or ion blaster",
+     "group": "000002598-1",
+     "model": "",
+     "grants": [
+      "Autoch-pattern bolter",
+      "Ion blaster"
+     ]
+    },
+    {
+     "text": "EtaCarn plasma beamer (instead of autoch-pattern bolter or ion blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "autoch-pattern bolter or ion blaster",
+     "group": "000002598-1",
      "model": "",
      "grants": [
       "Autoch-pattern bolter",
       "EtaCarn plasma beamer",
-      "HYLas auto rifle",
-      "HYLas rotary cannon",
+      "Ion blaster"
+     ]
+    },
+    {
+     "text": "Magna-rail rifle (instead of autoch-pattern bolter or ion blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "autoch-pattern bolter or ion blaster",
+     "group": "000002598-1",
+     "model": "",
+     "grants": [
+      "Autoch-pattern bolter",
       "Ion blaster",
       "Magna-rail rifle"
      ]
@@ -2024,7 +2090,7 @@
      ]
     },
     {
-     "text": "The Theyn’s Autoch-pattern bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 ion blaster</li><li>1 Theyn’s pistol</li></ul>",
+     "text": "Ion blaster (instead of autoch-pattern bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2032,9 +2098,24 @@
       "max": 1
      },
      "base": "autoch-pattern bolter",
+     "group": "000002598-3",
      "model": "",
      "grants": [
-      "Ion blaster",
+      "Ion blaster"
+     ]
+    },
+    {
+     "text": "Theyn’s pistol (instead of autoch-pattern bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "autoch-pattern bolter",
+     "group": "000002598-3",
+     "model": "",
+     "grants": [
       "Theyn’s pistol"
      ]
     },
@@ -2256,7 +2337,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 twin bolt cannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin bolt cannon and 1 twin ion beamer</li><li>2 twin ion beamers</li></ul>",
+     "text": "Twin bolt cannon and 1 twin ion beamer (instead of 2 twin bolt cannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2264,6 +2345,7 @@
       "max": 1
      },
      "base": "2 twin bolt cannons",
+     "group": "000002604-0",
      "model": "",
      "grants": [
       "Twin bolt cannon ",
@@ -2271,7 +2353,23 @@
      ]
     },
     {
-     "text": "This model’s cyclic ion cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 SP heavy conversion beamer</li><li>1 heavy magna-rail cannon</li></ul>",
+     "text": "Twin ion beamers (instead of 2 twin bolt cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 twin bolt cannons",
+     "group": "000002604-0",
+     "model": "",
+     "grants": [
+      "Twin bolt cannon ",
+      "Twin ion beamer"
+     ]
+    },
+    {
+     "text": "SP heavy conversion beamer (instead of cyclic ion cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2279,10 +2377,25 @@
       "max": 1
      },
      "base": "cyclic ion cannon",
+     "group": "000002604-1",
      "model": "",
      "grants": [
-      "Heavy magna-rail cannon",
       "SP heavy conversion beamer"
+     ]
+    },
+    {
+     "text": "Heavy magna-rail cannon (instead of cyclic ion cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "cyclic ion cannon",
+     "group": "000002604-1",
+     "model": "",
+     "grants": [
+      "Heavy magna-rail cannon"
      ]
     },
     {
@@ -3917,7 +4030,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s HYLas beam cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 L7 missile launcher and 1 Sagitaur missile launcher</li><li>1 MATR autocannon</li></ul>",
+     "text": "L7 missile launcher and 1 Sagitaur missile launcher (instead of hylas beam cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3925,10 +4038,25 @@
       "max": 1
      },
      "base": "hylas beam cannon",
+     "group": "000002602-0",
      "model": "",
      "grants": [
-      "MATR autocannon",
       "Sagitaur missile launcher"
+     ]
+    },
+    {
+     "text": "MATR autocannon (instead of hylas beam cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "hylas beam cannon",
+     "group": "000002602-0",
+     "model": "",
+     "grants": [
+      "MATR autocannon"
      ]
     }
    ],

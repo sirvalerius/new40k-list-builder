@@ -804,7 +804,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s great axe of Khorne can be replaced with 1 axe of Khorne and one of the following:<ul style=\"list-style-type:circle\"><li>1 bloodflail</li><li>1 lash of Khorne</li></ul>",
+     "text": "Bloodflail (instead of great axe of khorne)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -812,9 +812,24 @@
       "max": 1
      },
      "base": "great axe of khorne",
+     "group": "000004105-0",
      "model": "",
      "grants": [
-      "Bloodflail",
+      "Bloodflail"
+     ]
+    },
+    {
+     "text": "Lash of Khorne (instead of great axe of khorne)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "great axe of khorne",
+     "group": "000004105-0",
+     "model": "",
+     "grants": [
       "Lash of Khorne"
      ]
     }
@@ -2147,7 +2162,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 5 models in this unit, 1 Chaos Terminator’s combi-bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer</li><li>1 reaper autocannon</li></ul>",
+     "text": "Heavy flamer (instead of combi-bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2155,9 +2170,24 @@
       "n": 5
      },
      "base": "combi-bolter",
+     "group": "000002629-0",
      "model": "",
      "grants": [
-      "Heavy flamer",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Reaper autocannon (instead of combi-bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "combi-bolter",
+     "group": "000002629-0",
+     "model": "",
+     "grants": [
       "Reaper autocannon"
      ]
     },
@@ -2950,7 +2980,37 @@
      ]
     },
     {
-     "text": "This model’s heavy baleflamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
+     "text": "Hades lascannon (instead of heavy baleflamer)",
+     "cost": 10,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy baleflamer",
+     "group": "000004207-2",
+     "model": "",
+     "grants": [
+      "Hades lascannon"
+     ]
+    },
+    {
+     "text": "Heavy reaper autocannon (instead of heavy baleflamer)",
+     "cost": 10,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy baleflamer",
+     "group": "000004207-2",
+     "model": "",
+     "grants": [
+      "Heavy reaper autocannon"
+     ]
+    },
+    {
+     "text": "Electroscourge (a model cannot be equipped with more than one electroscourge) (instead of heavy baleflamer)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2958,15 +3018,14 @@
       "max": 1
      },
      "base": "heavy baleflamer",
+     "group": "000004207-2",
      "model": "",
      "grants": [
-      "Hades lascannon",
-      "Heavy reaper autocannon",
       "Electroscourge"
      ]
     },
     {
-     "text": " This model’s heavy missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
+     "text": "Hades lascannon (instead of heavy missile launcher)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2974,37 +3033,40 @@
       "max": 1
      },
      "base": "heavy missile launcher",
-     "model": "",
-     "grants": [
-      "Hades lascannon",
-      "Heavy reaper autocannon",
-      "Electroscourge"
-     ]
-    },
-    {
-     "text": "Equip Hades lascannon",
-     "cost": 10,
-     "type": "wargear",
-     "limit": {
-      "kind": "all"
-     },
-     "base": "",
+     "group": "000004207-3",
      "model": "",
      "grants": [
       "Hades lascannon"
      ]
     },
     {
-     "text": "Equip Heavy reaper autocannon",
-     "cost": 10,
+     "text": "Heavy reaper autocannon (instead of heavy missile launcher)",
+     "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
-     "base": "",
+     "base": "heavy missile launcher",
+     "group": "000004207-3",
      "model": "",
      "grants": [
       "Heavy reaper autocannon"
+     ]
+    },
+    {
+     "text": "Electroscourge (a model cannot be equipped with more than one electroscourge) (instead of heavy missile launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy missile launcher",
+     "group": "000004207-3",
+     "model": "",
+     "grants": [
+      "Electroscourge"
      ]
     }
    ],
@@ -3253,7 +3315,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s anvilus autocannon battery can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 arachnus heavy lascannon battery</li><li>1 hellfire plasma carronade</li><li>1 volkite falconet battery</li></ul>",
+     "text": "Arachnus heavy lascannon battery (instead of anvilus autocannon battery)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3261,10 +3323,38 @@
       "max": 1
      },
      "base": "anvilus autocannon battery",
+     "group": "000003625-0",
      "model": "",
      "grants": [
-      "Volkite falconet battery",
       "Arachnus heavy lascannon battery"
+     ]
+    },
+    {
+     "text": "Hellfire plasma carronade (instead of anvilus autocannon battery)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "anvilus autocannon battery",
+     "group": "000003625-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Volkite falconet battery (instead of anvilus autocannon battery)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "anvilus autocannon battery",
+     "group": "000003625-0",
+     "model": "",
+     "grants": [
+      "Volkite falconet battery"
      ]
     },
     {
@@ -4110,7 +4200,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 quad lascannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li> 2 laser destroyers</li><li>2 quad heavy bolters</li></ul>",
+     "text": "Laser destroyers (instead of 2 quad lascannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4118,10 +4208,26 @@
       "max": 1
      },
      "base": "2 quad lascannons",
+     "group": "000003653-0",
      "model": "",
      "grants": [
       "Quad lascannon",
-      "Laser destroyer",
+      "Laser destroyer"
+     ]
+    },
+    {
+     "text": "Quad heavy bolters (instead of 2 quad lascannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 quad lascannons",
+     "group": "000003653-0",
+     "model": "",
+     "grants": [
+      "Quad lascannon",
       "Heavy bolter",
       "Quad heavy bolter"
      ]
@@ -5274,7 +5380,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s multi-melta can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma cannon</li><li>1 twin autocannon</li><li>1 twin heavy bolter</li><li>1 twin lascannon</li><li>1 Helbrute fist</li></ul>",
+     "text": "Plasma cannon (instead of multi-melta)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -5282,17 +5388,74 @@
       "max": 1
      },
      "base": "multi-melta",
+     "group": "000002632-0",
      "model": "",
      "grants": [
-      "Plasma cannon",
-      "Twin autocannon",
-      "Twin heavy bolter",
-      "Twin lascannon",
+      "Plasma cannon"
+     ]
+    },
+    {
+     "text": "Twin autocannon (instead of multi-melta)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "multi-melta",
+     "group": "000002632-0",
+     "model": "",
+     "grants": [
+      "Twin autocannon"
+     ]
+    },
+    {
+     "text": "Twin heavy bolter (instead of multi-melta)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "multi-melta",
+     "group": "000002632-0",
+     "model": "",
+     "grants": [
+      "Twin heavy bolter"
+     ]
+    },
+    {
+     "text": "Twin lascannon (instead of multi-melta)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "multi-melta",
+     "group": "000002632-0",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
+    },
+    {
+     "text": "Helbrute fist (instead of multi-melta)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "multi-melta",
+     "group": "000002632-0",
+     "model": "",
+     "grants": [
       "Helbrute fist"
      ]
     },
     {
-     "text": "This model’s missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Helbrute fist</li><li>1 Helbrute hammer</li><li>1 power scourge</li></ul>",
+     "text": "Helbrute fist (instead of missile launcher)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -5300,10 +5463,39 @@
       "max": 1
      },
      "base": "missile launcher",
+     "group": "000002632-1",
      "model": "",
      "grants": [
-      "Helbrute fist",
-      "Helbrute hammer",
+      "Helbrute fist"
+     ]
+    },
+    {
+     "text": "Helbrute hammer (instead of missile launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "missile launcher",
+     "group": "000002632-1",
+     "model": "",
+     "grants": [
+      "Helbrute hammer"
+     ]
+    },
+    {
+     "text": "Power scourge (instead of missile launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "missile launcher",
+     "group": "000002632-1",
+     "model": "",
+     "grants": [
       "Power scourge"
      ]
     },
@@ -6387,7 +6579,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s gorestorm cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 daemongore cannon</li><li>1 ichor cannon</li></ul>",
+     "text": "Daemongore cannon (instead of gorestorm cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6395,9 +6587,24 @@
       "max": 1
      },
      "base": "gorestorm cannon",
+     "group": "000002642-0",
      "model": "",
      "grants": [
-      "Daemongore cannon",
+      "Daemongore cannon"
+     ]
+    },
+    {
+     "text": "Ichor cannon (instead of gorestorm cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "gorestorm cannon",
+     "group": "000002642-0",
+     "model": "",
+     "grants": [
       "Ichor cannon"
      ]
     },
@@ -6841,7 +7048,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s Kratos battle cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 melta blast-gun</li><li>1 volkite cardanelle</li></ul>",
+     "text": "Melta blast-gun (instead of kratos battle cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6849,14 +7056,29 @@
       "max": 1
      },
      "base": "kratos battle cannon",
+     "group": "000003633-0",
      "model": "",
      "grants": [
-      "Melta blast-gun",
+      "Melta blast-gun"
+     ]
+    },
+    {
+     "text": "Volkite cardanelle (instead of kratos battle cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "kratos battle cannon",
+     "group": "000003633-0",
+     "model": "",
+     "grants": [
       "Volkite cardanelle"
      ]
     },
     {
-     "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 autocannons</li><li>2 lascannons</li><li>2 volkite calivers</li></ul>",
+     "text": "Autocannons (instead of heavy bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6864,16 +7086,31 @@
       "max": 1
      },
      "base": "heavy bolters",
+     "group": "000003633-1",
      "model": "",
      "grants": [
       "Autocannon",
-      "Volkite caliver",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons (instead of heavy bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy bolters",
+     "group": "000003633-1",
+     "model": "",
+     "grants": [
       "Heavy bolter",
       "Lascannons"
      ]
     },
     {
-     "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy flamers</li><li>2 lascannons</li><li>2 volkite culverins </li></ul>",
+     "text": "Volkite calivers (instead of heavy bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6881,12 +7118,59 @@
       "max": 1
      },
      "base": "heavy bolters",
+     "group": "000003633-1",
+     "model": "",
+     "grants": [
+      "Volkite caliver",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamers (instead of heavy bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy bolters",
+     "group": "000003633-2",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Lascannons (instead of heavy bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy bolters",
+     "group": "000003633-2",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Lascannons"
+     ]
+    },
+    {
+     "text": "Volkite culverins (instead of heavy bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy bolters",
+     "group": "000003633-2",
      "model": "",
      "grants": [
       "Volkite culverin",
-      "Heavy bolter",
-      "Heavy flamer",
-      "Lascannons"
+      "Heavy bolter"
      ]
     },
     {
@@ -7831,7 +8115,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Each of this model’s grav-flux bombards can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 cyclonic melta lance</li><li>1 storm cannon</li><li>1 meltagun and 1 Leviathan siege claw</li><li>1 meltagun and 1 Leviathan siege drill</li></ul>",
+     "text": "Cyclonic melta lance (instead of grav-flux bombards)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7839,14 +8123,61 @@
       "max": 1
      },
      "base": "grav-flux bombards",
+     "group": "000003649-0",
+     "model": "",
+     "grants": [
+      "Grav-flux bombard",
+      "Cyclonic melta lance"
+     ]
+    },
+    {
+     "text": "Storm cannon (instead of grav-flux bombards)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "grav-flux bombards",
+     "group": "000003649-0",
+     "model": "",
+     "grants": [
+      "Storm cannon",
+      "Grav-flux bombard"
+     ]
+    },
+    {
+     "text": "Meltagun and 1 Leviathan siege claw (instead of grav-flux bombards)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "grav-flux bombards",
+     "group": "000003649-0",
      "model": "",
      "grants": [
       "Meltagun",
-      "Storm cannon",
       "Leviathan siege claw",
+      "Grav-flux bombard"
+     ]
+    },
+    {
+     "text": "Meltagun and 1 Leviathan siege drill (instead of grav-flux bombards)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "grav-flux bombards",
+     "group": "000003649-0",
+     "model": "",
+     "grants": [
+      "Meltagun",
       "Leviathan siege drill",
-      "Grav-flux bombard",
-      "Cyclonic melta lance"
+      "Grav-flux bombard"
      ]
     },
     {
@@ -8481,7 +8812,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 heavy flamers can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li><li>2 volkite culverins</li></ul>",
+     "text": "Heavy bolters (instead of 2 heavy flamers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -8489,12 +8820,43 @@
       "max": 1
      },
      "base": "2 heavy flamers",
+     "group": "000003645-0",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons (instead of 2 heavy flamers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 heavy flamers",
+     "group": "000003645-0",
+     "model": "",
+     "grants": [
+      "Heavy flamer",
+      "Lascannon"
+     ]
+    },
+    {
+     "text": "Volkite culverins (instead of 2 heavy flamers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 heavy flamers",
+     "group": "000003645-0",
      "model": "",
      "grants": [
       "Volkite culverin",
-      "Heavy flamer",
-      "Lascannon",
-      "Heavy bolter"
+      "Heavy flamer"
      ]
     },
     {
@@ -8841,7 +9203,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s quad heavy bolter can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 graviton cannon</li><li>1 laser destroyer</li><li>1 quad launcher</li></ul>",
+     "text": "Graviton cannon (instead of quad heavy bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -8849,11 +9211,39 @@
       "max": 1
      },
      "base": "quad heavy bolter",
+     "group": "000003669-0",
      "model": "",
      "grants": [
-      "Graviton cannon",
+      "Graviton cannon"
+     ]
+    },
+    {
+     "text": "Laser destroyer (instead of quad heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "quad heavy bolter",
+     "group": "000003669-0",
+     "model": "",
+     "grants": [
       "Laser destroyer"
      ]
+    },
+    {
+     "text": "Quad launcher (instead of quad heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "quad heavy bolter",
+     "group": "000003669-0",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -9193,7 +9583,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Each of this model’s heavy plasma cannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 conversion beam cannon</li><li>1 kheres-pattern assault cannon</li><li>1 multi-melta</li><li>1 twin autocannon</li><li>1 twin heavy bolter</li><li>1 twin lascannon</li><li>1 twin volkite culverin</li><li>1 Dreadnought chainfist and 1 combi-bolter</li><li>1 Dreadnought combat weapon and 1 combi-bolter</li></ul>",
+     "text": "Conversion beam cannon (instead of heavy plasma cannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9201,22 +9591,136 @@
       "max": 1
      },
      "base": "heavy plasma cannons",
+     "group": "000003657-0",
      "model": "",
      "grants": [
-      "Twin lascannon",
-      "Twin autocannon",
-      "Conversion beam cannon",
-      "Dreadnought combat weapon",
-      "Twin volkite culverin",
-      "Dreadnought chainfist",
-      "Twin heavy bolter",
-      "Kheres-pattern assault cannon",
-      "Combi-bolter",
+      "Conversion beam cannon"
+     ]
+    },
+    {
+     "text": "Kheres-pattern assault cannon (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003657-0",
+     "model": "",
+     "grants": [
+      "Kheres-pattern assault cannon"
+     ]
+    },
+    {
+     "text": "Multi-melta (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003657-0",
+     "model": "",
+     "grants": [
       "Multi-melta"
      ]
     },
     {
-     "text": "Each of this model’s combi-bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 graviton blaster</li><li>1 heavy flamer</li><li>1 plasma blaster</li></ul>",
+     "text": "Twin autocannon (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003657-0",
+     "model": "",
+     "grants": [
+      "Twin autocannon"
+     ]
+    },
+    {
+     "text": "Twin heavy bolter (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003657-0",
+     "model": "",
+     "grants": [
+      "Twin heavy bolter"
+     ]
+    },
+    {
+     "text": "Twin lascannon (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003657-0",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
+    },
+    {
+     "text": "Twin volkite culverin (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003657-0",
+     "model": "",
+     "grants": [
+      "Twin volkite culverin"
+     ]
+    },
+    {
+     "text": "Dreadnought chainfist and 1 combi-bolter (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003657-0",
+     "model": "",
+     "grants": [
+      "Dreadnought chainfist",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Dreadnought combat weapon and 1 combi-bolter (instead of heavy plasma cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy plasma cannons",
+     "group": "000003657-0",
+     "model": "",
+     "grants": [
+      "Dreadnought combat weapon",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Graviton blaster (instead of combi-bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9224,10 +9728,41 @@
       "max": 1
      },
      "base": "combi-bolters",
+     "group": "000003657-1",
+     "model": "",
+     "grants": [
+      "Graviton blaster",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of combi-bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "combi-bolters",
+     "group": "000003657-1",
      "model": "",
      "grants": [
       "Heavy flamer",
-      "Graviton blaster",
+      "Combi-bolter"
+     ]
+    },
+    {
+     "text": "Plasma blaster (instead of combi-bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "combi-bolters",
+     "group": "000003657-1",
+     "model": "",
+     "grants": [
       "Combi-bolter"
      ]
     },
@@ -10861,7 +11396,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s twin heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin multi-melta</li><li>1 typhoon missile launcher</li></ul>",
+     "text": "Twin multi-melta (instead of twin heavy bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -10869,10 +11404,24 @@
       "max": 1
      },
      "base": "twin heavy bolter",
+     "group": "000003673-0",
      "model": "",
      "grants": [
       "Twin multi-melta"
      ]
+    },
+    {
+     "text": "Typhoon missile launcher (instead of twin heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin heavy bolter",
+     "group": "000003673-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s 2 twin hellstrike missile launchers can be replaced with 2 twin lascannons",
@@ -11064,7 +11613,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 combi-bolters can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>2 heavy flamers</li><li>2 twin volkite chargers</li></ul>",
+     "text": "Heavy flamers (instead of 2 combi-bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -11072,11 +11621,27 @@
       "max": 1
      },
      "base": "2 combi-bolters",
+     "group": "000003605-0",
+     "model": "",
+     "grants": [
+      "Combi-bolter",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Twin volkite chargers (instead of 2 combi-bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 combi-bolters",
+     "group": "000003605-0",
      "model": "",
      "grants": [
       "Twin volkite charger",
-      "Combi-bolter",
-      "Heavy flamer"
+      "Combi-bolter"
      ]
     }
    ],

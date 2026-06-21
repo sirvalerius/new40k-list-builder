@@ -352,7 +352,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 5 models in the unit, up to 1 model’s infernus heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 frag cannon.</li><li>1 hellstorm bolt rifle and 1 Astartes grenade launcher.</li></ul>",
+     "text": "Frag cannon (instead of infernus heavy bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -360,9 +360,24 @@
       "n": 5
      },
      "base": "infernus heavy bolter",
+     "group": "000004174-0",
      "model": "",
      "grants": [
-      "Frag cannon",
+      "Frag cannon"
+     ]
+    },
+    {
+     "text": "Hellstorm bolt rifle and 1 Astartes grenade launcher (instead of infernus heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "infernus heavy bolter",
+     "group": "000004174-0",
+     "model": "",
+     "grants": [
       "Hellstorm bolt rifle"
      ]
     },
@@ -1319,7 +1334,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "The Legionnaire Sergeant’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol and 1 power weapon</li><li>1 plasma pistol and 1 power weapon</li><li>1 bolt pistol and 1 Astartes chainsword</li><li>1 plasma pistol and 1 Astartes chainsword</li></ul>",
+     "text": "Bolt pistol and 1 power weapon (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1327,41 +1342,127 @@
       "max": 1
      },
      "base": "boltgun",
+     "group": "000002761-0",
      "model": "",
      "grants": [
       "Bolt pistol",
-      "Astartes chainsword",
       "Power weapon"
      ]
     },
     {
-     "text": "One Legionnaire’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer</li><li>1 multi-melta</li></ul>",
+     "text": "Plasma pistol and 1 power weapon (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000002761-0",
+     "model": "",
+     "grants": [
+      "Power weapon"
+     ]
+    },
+    {
+     "text": "Bolt pistol and 1 Astartes chainsword (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000002761-0",
+     "model": "",
+     "grants": [
+      "Bolt pistol",
+      "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Plasma pistol and 1 Astartes chainsword (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000002761-0",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "boltgun",
+     "group": "000002761-1",
      "model": "",
      "grants": [
       "Flamer",
-      "Heavy flamer",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Multi-melta (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "boltgun",
+     "group": "000002761-1",
+     "model": "",
+     "grants": [
       "Multi-melta"
      ]
     },
     {
-     "text": "One Legionnaire’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "text": "Flamer (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "boltgun",
+     "group": "000002761-2",
      "model": "",
      "grants": [
-      "Flamer",
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "boltgun",
+     "group": "000002761-2",
+     "model": "",
+     "grants": [
       "Meltagun"
      ]
+    },
+    {
+     "text": "Plasma gun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "boltgun",
+     "group": "000002761-2",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1605,7 +1706,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 5 models in this unit, up to 2 models can each have their boltgun and power weapon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 boltgun and 1 Astartes shield</li><li>1 power weapon and 1 Astartes shield</li></ul>",
+     "text": "Boltgun and 1 Astartes shield (instead of boltgun and power weapon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1613,6 +1714,23 @@
       "n": 5
      },
      "base": "boltgun and power weapon",
+     "group": "000003816-0",
+     "model": "",
+     "grants": [
+      "Boltgun",
+      "Power weapon"
+     ]
+    },
+    {
+     "text": "Power weapon and 1 Astartes shield (instead of boltgun and power weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "boltgun and power weapon",
+     "group": "000003816-0",
      "model": "",
      "grants": [
       "Boltgun",
@@ -1997,7 +2115,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Up to 3 Deathwatch Terminators can each have their storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 assault cannon</li><li>1 heavy flamer</li><li>1 plasma cannon</li><li>1 cyclone missile launcher and 1 storm bolter (this model’s storm bolter cannot be replaced)</li></ul>",
+     "text": "Assault cannon (instead of storm bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2005,28 +2123,115 @@
       "max": 1
      },
      "base": "storm bolter",
+     "group": "000003822-0",
      "model": "",
      "grants": [
-      "Assault cannon",
+      "Assault cannon"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000003822-0",
+     "model": "",
+     "grants": [
       "Heavy flamer"
      ]
     },
     {
-     "text": "Any number of models can each have their power fist and storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 storm bolter and 1 power weapon</li><li>1 storm bolter and 1 chainfist</li><li>1 twin lightning claws</li><li>1 thunder hammer and 1 storm shield</li></ul>",
+     "text": "Plasma cannon (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000003822-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Cyclone missile launcher and 1 storm bolter (this model’s storm bolter cannot be replaced) (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000003822-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Storm bolter and 1 power weapon (instead of power fist and storm bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "power fist and storm bolter",
+     "group": "000003822-1",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Power fist",
+      "Power weapon"
+     ]
+    },
+    {
+     "text": "Storm bolter and 1 chainfist (instead of power fist and storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "power fist and storm bolter",
+     "group": "000003822-1",
      "model": "",
      "grants": [
       "Storm bolter",
       "Chainfist",
+      "Power fist"
+     ]
+    },
+    {
+     "text": "Twin lightning claws (instead of power fist and storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "power fist and storm bolter",
+     "group": "000003822-1",
+     "model": "",
+     "grants": [
+      "Storm bolter",
       "Power fist",
-      "Power weapon",
-      "Thunder hammer",
       "Twin lightning claws"
+     ]
+    },
+    {
+     "text": "Thunder hammer and 1 storm shield (instead of power fist and storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "power fist and storm bolter",
+     "group": "000003822-1",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Power fist",
+      "Thunder hammer"
      ]
     }
    ],
@@ -2383,17 +2588,60 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Up to 2 Exaction Vigilants can each have their Arbites combat shotgun replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 executioner shotgun</li><li>1 Arbites grenade launcher</li><li>1 heavy stubber</li><li>1 webber</li></ul>",
+     "text": "Executioner shotgun (instead of arbites combat shotgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "arbites combat shotgun",
+     "group": "000002685-0",
      "model": "",
      "grants": [
-      "Executioner shotgun",
-      "Heavy stubber",
+      "Executioner shotgun"
+     ]
+    },
+    {
+     "text": "Arbites grenade launcher (instead of arbites combat shotgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "arbites combat shotgun",
+     "group": "000002685-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Heavy stubber (instead of arbites combat shotgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "arbites combat shotgun",
+     "group": "000002685-0",
+     "model": "",
+     "grants": [
+      "Heavy stubber"
+     ]
+    },
+    {
+     "text": "Webber (instead of arbites combat shotgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "arbites combat shotgun",
+     "group": "000002685-0",
+     "model": "",
+     "grants": [
       "Webber"
      ]
     },
@@ -2740,7 +2988,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "1 Kill Team Intercessor’s bolt rifle can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 hand flamer</li><li>1 plasma pistol</li><li>1 Astartes chainsword</li><li>1 Long Vigil melee weapon</li></ul>",
+     "text": "Hand flamer (instead of bolt rifle)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2748,10 +2996,52 @@
       "max": 1
      },
      "base": "bolt rifle",
+     "group": "000003825-0",
      "model": "",
      "grants": [
-      "Hand flamer",
-      "Astartes chainsword",
+      "Hand flamer"
+     ]
+    },
+    {
+     "text": "Plasma pistol (instead of bolt rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt rifle",
+     "group": "000003825-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Astartes chainsword (instead of bolt rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt rifle",
+     "group": "000003825-0",
+     "model": "",
+     "grants": [
+      "Astartes chainsword"
+     ]
+    },
+    {
+     "text": "Long Vigil melee weapon (instead of bolt rifle)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt rifle",
+     "group": "000003825-0",
+     "model": "",
+     "grants": [
       "Long Vigil melee weapon"
      ]
     },
@@ -2967,7 +3257,37 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "For every 5 models in this unit, 1 Grey Knights Terminator's storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator</li><li>1 psilencer</li><li>1 psycannon</li></ul>",
+     "text": "Incinerator (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "storm bolter",
+     "group": "000003813-0",
+     "model": "",
+     "grants": [
+      "Incinerator"
+     ]
+    },
+    {
+     "text": "Psilencer (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "storm bolter",
+     "group": "000003813-0",
+     "model": "",
+     "grants": [
+      "Psilencer"
+     ]
+    },
+    {
+     "text": "Psycannon (instead of storm bolter)",
      "cost": 5,
      "type": "wargear",
      "limit": {
@@ -2975,10 +3295,9 @@
       "n": 5
      },
      "base": "storm bolter",
+     "group": "000003813-0",
      "model": "",
      "grants": [
-      "Incinerator",
-      "Psilencer",
       "Psycannon"
      ]
     },
@@ -3298,7 +3617,7 @@
      ]
     },
     {
-     "text": "1 Navis Armsman’s Navis las-volley can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "text": "Meltagun (instead of navis las-volley)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3306,10 +3625,24 @@
       "max": 1
      },
      "base": "navis las-volley",
+     "group": "000002587-1",
      "model": "",
      "grants": [
       "Meltagun"
      ]
+    },
+    {
+     "text": "Plasma gun (instead of navis las-volley)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "navis las-volley",
+     "group": "000002587-1",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Navis Armsman's Navis shotgun can be replaced with 1 autopistol and 1 power weapon.",
@@ -5836,17 +6169,30 @@
      ]
     },
     {
-     "text": "Any number of Gun Servitors can each have their heavy bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 multi-melta</li><li>1 plasma cannon</li></ul>",
+     "text": "Multi-melta (instead of heavy bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "heavy bolter",
+     "group": "000002767-4",
      "model": "",
      "grants": [
       "Multi-melta"
      ]
+    },
+    {
+     "text": "Plasma cannon (instead of heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "heavy bolter",
+     "group": "000002767-4",
+     "model": "",
+     "grants": []
     },
     {
      "text": "<i>**The some model cannot be equipped with more than one of these wargear options.</i>",
@@ -6068,7 +6414,7 @@
      ]
     },
     {
-     "text": "This model’s multi-laser can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Heavy bolter*</li><li>1 Heavy flamer*</li></ul>",
+     "text": "Heavy bolter* (instead of multi-laser)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6076,9 +6422,24 @@
       "max": 1
      },
      "base": "multi-laser",
+     "group": "000003820-1",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer* (instead of multi-laser)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "multi-laser",
+     "group": "000003820-1",
+     "model": "",
+     "grants": [
       "Heavy flamer"
      ]
     },
@@ -7765,7 +8126,7 @@
      ]
     },
     {
-     "text": "Up to 3 models can each have their storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 assault cannon</li><li>1 heavy flamer</li><li>1 plasma cannon</li><li>1 cyclone missile launcher and 1 storm bolter (this model’s storm bolter cannot be replaced)</li></ul>",
+     "text": "Assault cannon (instead of storm bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7773,11 +8134,52 @@
       "max": 1
      },
      "base": "storm bolter",
+     "group": "000003824-5",
      "model": "",
      "grants": [
-      "Assault cannon",
+      "Assault cannon"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000003824-5",
+     "model": "",
+     "grants": [
       "Heavy flamer"
      ]
+    },
+    {
+     "text": "Plasma cannon (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000003824-5",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Cyclone missile launcher and 1 storm bolter (this model’s storm bolter cannot be replaced) (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000003824-5",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of Kill Team Terminator models can replace their power fist and storm bolter with one of the following:<ul style=\"list-style-type:circle\"><li>1 storm bolter and 1 power weapon</li><li>1 storm bolter and 1 chainfist</li><li>1 twin lightning claws</li><li>1 Terminator thunder hammer and 1 storm shield</li></ul>",
@@ -8451,7 +8853,23 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s immolation flamers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 twin multi-melta</li></ul>",
+     "text": "Twin heavy bolter (instead of immolation flamers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "immolation flamers",
+     "group": "000003819-0",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
+      "Twin heavy bolter"
+     ]
+    },
+    {
+     "text": "Twin multi-melta (instead of immolation flamers)",
      "cost": 15,
      "type": "wargear",
      "limit": {
@@ -8459,10 +8877,9 @@
       "max": 1
      },
      "base": "immolation flamers",
+     "group": "000003819-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
-      "Twin heavy bolter",
       "Twin multi-melta"
      ]
     },
@@ -8769,7 +9186,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Sister Superior’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 combi-weapon</li><li>1 condemnor boltgun</li><li>1 inferno pistol</li><li>1 Ministorum hand flamer</li><li>1 plasma pistol</li></ul>",
+     "text": "Bolt pistol (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -8777,14 +9194,84 @@
       "max": 1
      },
      "base": "boltgun",
+     "group": "000003818-0",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Combi-weapon",
-      "Condemnor boltgun",
-      "Inferno pistol",
+      "Bolt pistol"
+     ]
+    },
+    {
+     "text": "Combi-weapon (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003818-0",
+     "model": "",
+     "grants": [
+      "Combi-weapon"
+     ]
+    },
+    {
+     "text": "Condemnor boltgun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003818-0",
+     "model": "",
+     "grants": [
+      "Condemnor boltgun"
+     ]
+    },
+    {
+     "text": "Inferno pistol (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003818-0",
+     "model": "",
+     "grants": [
+      "Inferno pistol"
+     ]
+    },
+    {
+     "text": "Ministorum hand flamer (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003818-0",
+     "model": "",
+     "grants": [
       "Ministorum hand flamer"
      ]
+    },
+    {
+     "text": "Plasma pistol (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003818-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Sister Superior can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
@@ -8802,7 +9289,7 @@
      ]
     },
     {
-     "text": "1 Battle Sister’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li></ul>",
+     "text": "Artificer-crafted storm bolter (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -8810,15 +9297,44 @@
       "max": 1
      },
      "base": "boltgun",
+     "group": "000003818-2",
      "model": "",
      "grants": [
-      "Artificer-crafted storm bolter",
-      "Meltagun",
+      "Artificer-crafted storm bolter"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003818-2",
+     "model": "",
+     "grants": [
+      "Meltagun"
+     ]
+    },
+    {
+     "text": "Ministorum flamer (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003818-2",
+     "model": "",
+     "grants": [
       "Ministorum flamer"
      ]
     },
     {
-     "text": "1 Battle Sister’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 artificer-crafted storm bolter</li><li>1 heavy bolter</li><li>1 meltagun</li><li>1 Ministorum flamer</li><li>1 Ministorum heavy flamer</li><li>1 multi-melta</li></ul>",
+     "text": "Artificer-crafted storm bolter (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -8826,13 +9342,84 @@
       "max": 1
      },
      "base": "boltgun",
+     "group": "000003818-3",
      "model": "",
      "grants": [
-      "Artificer-crafted storm bolter",
-      "Heavy bolter",
-      "Meltagun",
-      "Ministorum flamer",
-      "Ministorum heavy flamer",
+      "Artificer-crafted storm bolter"
+     ]
+    },
+    {
+     "text": "Heavy bolter (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003818-3",
+     "model": "",
+     "grants": [
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003818-3",
+     "model": "",
+     "grants": [
+      "Meltagun"
+     ]
+    },
+    {
+     "text": "Ministorum flamer (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003818-3",
+     "model": "",
+     "grants": [
+      "Ministorum flamer"
+     ]
+    },
+    {
+     "text": "Ministorum heavy flamer (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003818-3",
+     "model": "",
+     "grants": [
+      "Ministorum heavy flamer"
+     ]
+    },
+    {
+     "text": "Multi-melta (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003818-3",
+     "model": "",
+     "grants": [
       "Multi-melta"
      ]
     },
@@ -9861,17 +10448,60 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Up to 2 Vigilants can each have their Arbites combat shotgun replaced with one of the following (duplicates are not allowed):<ul style=\"list-style-type:circle\"><li>1 executioner shotgun</li><li>1 Arbites grenade launcher</li><li>1 heavy stubber</li><li>1 webber</li></ul>",
+     "text": "Executioner shotgun (instead of arbites combat shotgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "arbites combat shotgun",
+     "group": "000002683-0",
      "model": "",
      "grants": [
-      "Executioner shotgun",
-      "Heavy stubber",
+      "Executioner shotgun"
+     ]
+    },
+    {
+     "text": "Arbites grenade launcher (instead of arbites combat shotgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "arbites combat shotgun",
+     "group": "000002683-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Heavy stubber (instead of arbites combat shotgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "arbites combat shotgun",
+     "group": "000002683-0",
+     "model": "",
+     "grants": [
+      "Heavy stubber"
+     ]
+    },
+    {
+     "text": "Webber (instead of arbites combat shotgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "arbites combat shotgun",
+     "group": "000002683-0",
+     "model": "",
+     "grants": [
       "Webber"
      ]
     },

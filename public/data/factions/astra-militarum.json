@@ -262,7 +262,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autocannon</li><li>1 multi-laser</li></ul>",
+     "text": "Autocannon (instead of heavy bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -270,9 +270,24 @@
       "max": 1
      },
      "base": "heavy bolter",
+     "group": "000000778-0",
      "model": "",
      "grants": [
-      "Autocannon",
+      "Autocannon"
+     ]
+    },
+    {
+     "text": "Multi-laser (instead of heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy bolter",
+     "group": "000000778-0",
+     "model": "",
+     "grants": [
       "Multi-laser"
      ]
     }
@@ -478,7 +493,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 7 multi-lasers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>7 heavy bolters</li><li>7 heavy flamers</li><li>7 lascannons</li></ul>",
+     "text": "Heavy bolters (instead of 7 multi-lasers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -486,10 +501,41 @@
       "max": 1
      },
      "base": "7 multi-lasers",
+     "group": "000000764-0",
      "model": "",
      "grants": [
       "Heavy bolter",
+      "Multi-laser"
+     ]
+    },
+    {
+     "text": "Heavy flamers (instead of 7 multi-lasers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "7 multi-lasers",
+     "group": "000000764-0",
+     "model": "",
+     "grants": [
       "Heavy flamer",
+      "Multi-laser"
+     ]
+    },
+    {
+     "text": "Lascannons (instead of 7 multi-lasers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "7 multi-lasers",
+     "group": "000000764-0",
+     "model": "",
+     "grants": [
       "Lascannon",
       "Multi-laser"
      ]
@@ -958,19 +1004,70 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their multi-laser replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autocannon</li><li>1 heavy flamer</li><li>1 lascannon</li><li>1 missile launcher</li><li>1 plasma cannon</li></ul>",
+     "text": "Autocannon (instead of multi-laser)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "multi-laser",
+     "group": "000000691-0",
      "model": "",
      "grants": [
-      "Autocannon",
-      "Heavy flamer",
+      "Autocannon"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of multi-laser)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "multi-laser",
+     "group": "000000691-0",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Lascannon (instead of multi-laser)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "multi-laser",
+     "group": "000000691-0",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
+    },
+    {
+     "text": "Missile launcher (instead of multi-laser)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "multi-laser",
+     "group": "000000691-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Plasma cannon (instead of multi-laser)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "multi-laser",
+     "group": "000000691-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of models can each be equipped with 1 Sentinel chainsaw.",
@@ -1143,7 +1240,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s heavy mortar can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 siege cannon</li><li>1 heavy quad launcher</li><li>1 multiple rocket launcher</li></ul>",
+     "text": "Siege cannon (instead of heavy mortar)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1151,11 +1248,40 @@
       "max": 1
      },
      "base": "heavy mortar",
+     "group": "000003896-0",
      "model": "",
      "grants": [
-      "Heavy quad launcher",
-      "Multiple rocket launcher",
       "Siege cannon"
+     ]
+    },
+    {
+     "text": "Heavy quad launcher (instead of heavy mortar)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy mortar",
+     "group": "000003896-0",
+     "model": "",
+     "grants": [
+      "Heavy quad launcher"
+     ]
+    },
+    {
+     "text": "Multiple rocket launcher (instead of heavy mortar)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy mortar",
+     "group": "000003896-0",
+     "model": "",
+     "grants": [
+      "Multiple rocket launcher"
      ]
     }
    ],
@@ -2930,7 +3056,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 boltgun and 1 close combat weapon</li><li>1 power fist</li><li>1 power weapon</li></ul>",
+     "text": "Boltgun and 1 close combat weapon (instead of chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2938,16 +3064,45 @@
       "max": 1
      },
      "base": "chainsword",
+     "group": "000002607-0",
      "model": "",
      "grants": [
       "Boltgun",
-      "Close combat weapon",
-      "Power fist",
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "chainsword",
+     "group": "000002607-0",
+     "model": "",
+     "grants": [
+      "Power fist"
+     ]
+    },
+    {
+     "text": "Power weapon (instead of chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "chainsword",
+     "group": "000002607-0",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     },
     {
-     "text": "This model’s laspistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li></ul>",
+     "text": "Bolt pistol (instead of laspistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2955,10 +3110,24 @@
       "max": 1
      },
      "base": "laspistol",
+     "group": "000002607-1",
      "model": "",
      "grants": [
       "Bolt pistol"
      ]
+    },
+    {
+     "text": "Plasma pistol (instead of laspistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "laspistol",
+     "group": "000002607-1",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3261,7 +3430,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "1 Cadian Veteran Guardsman’s lasgun and regimental standard can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grenade launcher</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "text": "Flamer (instead of lasgun and regimental standard)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3269,15 +3438,61 @@
       "max": 1
      },
      "base": "lasgun and regimental standard",
+     "group": "000002609-0",
      "model": "",
      "grants": [
       "Flamer",
+      "Lasgun"
+     ]
+    },
+    {
+     "text": "Grenade launcher (instead of lasgun and regimental standard)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "lasgun and regimental standard",
+     "group": "000002609-0",
+     "model": "",
+     "grants": [
+      "Lasgun"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of lasgun and regimental standard)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "lasgun and regimental standard",
+     "group": "000002609-0",
+     "model": "",
+     "grants": [
       "Lasgun",
       "Meltagun"
      ]
     },
     {
-     "text": "1 Cadian Veteran Guardsman’s laspistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li></ul>",
+     "text": "Plasma gun (instead of lasgun and regimental standard)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "lasgun and regimental standard",
+     "group": "000002609-0",
+     "model": "",
+     "grants": [
+      "Lasgun"
+     ]
+    },
+    {
+     "text": "Bolt pistol (instead of laspistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3285,13 +3500,14 @@
       "max": 1
      },
      "base": "laspistol",
+     "group": "000002609-1",
      "model": "",
      "grants": [
       "Bolt pistol"
      ]
     },
     {
-     "text": "The Cadian Commander’s laspistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li></ul>",
+     "text": "Plasma pistol (instead of laspistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3299,13 +3515,40 @@
       "max": 1
      },
      "base": "laspistol",
+     "group": "000002609-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Bolt pistol (instead of laspistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "laspistol",
+     "group": "000002609-2",
      "model": "",
      "grants": [
       "Bolt pistol"
      ]
     },
     {
-     "text": "1 Cadian Veteran Guardsman's chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer and 1 close combat weapon</li><li>1 grenade launcher and 1 close combat weapon</li><li>1 meltagun and 1 close combat weapon</li><li>1 plasma gun and 1 close combat weapon</li><li>1 power fist</li><li>1 power weapon</li></ul>",
+     "text": "Plasma pistol (instead of laspistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "laspistol",
+     "group": "000002609-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Flamer and 1 close combat weapon (instead of chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3313,17 +3556,91 @@
       "max": 1
      },
      "base": "chainsword",
+     "group": "000002609-3",
      "model": "",
      "grants": [
       "Flamer",
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Grenade launcher and 1 close combat weapon (instead of chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "chainsword",
+     "group": "000002609-3",
+     "model": "",
+     "grants": [
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Meltagun and 1 close combat weapon (instead of chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "chainsword",
+     "group": "000002609-3",
+     "model": "",
+     "grants": [
       "Meltagun",
-      "Close combat weapon",
-      "Power fist",
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Plasma gun and 1 close combat weapon (instead of chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "chainsword",
+     "group": "000002609-3",
+     "model": "",
+     "grants": [
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Power fist (instead of chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "chainsword",
+     "group": "000002609-3",
+     "model": "",
+     "grants": [
+      "Power fist"
+     ]
+    },
+    {
+     "text": "Power weapon (instead of chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "chainsword",
+     "group": "000002609-3",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     },
     {
-     "text": "The Cadian Commander’s chainsword can be  replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li></ul>",
+     "text": "Power fist (instead of chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3331,9 +3648,24 @@
       "max": 1
      },
      "base": "chainsword",
+     "group": "000002609-4",
      "model": "",
      "grants": [
-      "Power fist",
+      "Power fist"
+     ]
+    },
+    {
+     "text": "Power weapon (instead of chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "chainsword",
+     "group": "000002609-4",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     }
@@ -3509,17 +3841,56 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their heavy bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autocannon</li><li>1 lascannon</li><li>1 missile launcher</li><li>1 mortar</li></ul>",
+     "text": "Autocannon (instead of heavy bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "heavy bolter",
+     "group": "000000686-0",
      "model": "",
      "grants": [
-      "Autocannon",
-      "Lascannon",
+      "Autocannon"
+     ]
+    },
+    {
+     "text": "Lascannon (instead of heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "heavy bolter",
+     "group": "000000686-0",
+     "model": "",
+     "grants": [
+      "Lascannon"
+     ]
+    },
+    {
+     "text": "Missile launcher (instead of heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "heavy bolter",
+     "group": "000000686-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Mortar (instead of heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "heavy bolter",
+     "group": "000000686-0",
+     "model": "",
+     "grants": [
       "Mortar"
      ]
     }
@@ -3797,13 +4168,29 @@
      ]
     },
     {
-     "text": "You can select one of the following options:<ul style=\"list-style-type:circle\"><li>Up to one Recon Trooper can replace their lasgun with 1 long-las.</li><li>Up to two Recon Troopers each equipped with a lasgun can form a weapons team. If they do, one model’s lasgun is replaced with 1 laspistol, and one model’s lasgun is replaced with 1 missile launcher and 1 laspistol.</li></ul>",
+     "text": "Up to one Recon Trooper can replace their lasgun with 1 long-las (instead of lasgun with 1 long-las.  up to two recon troopers each equipped with a lasgun can form a weapons team. if they do, one model’s lasgun is)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "lasgun with 1 long-las.  up to two recon troopers each equipped with a lasgun can form a weapons team. if they do, one model’s lasgun is",
+     "group": "000004224-4",
+     "model": "",
+     "grants": [
+      "Lasgun",
+      "Long-las"
+     ]
+    },
+    {
+     "text": "Up to two Recon Troopers each equipped with a lasgun can form a weapons team. If they do, one model’s lasgun is replaced with 1 laspistol, and one model’s lasgun is replaced with 1 missile launcher and 1 laspistol (instead of lasgun with 1 long-las.  up to two recon troopers each equipped with a lasgun can form a weapons team. if they do, one model’s lasgun is)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "lasgun with 1 long-las.  up to two recon troopers each equipped with a lasgun can form a weapons team. if they do, one model’s lasgun is",
+     "group": "000004224-4",
      "model": "",
      "grants": [
       "Lasgun",
@@ -4044,7 +4431,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 10 models in this unit, up to 2 Shock Troopers can each have their lasgun replaced with one of the following*:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grenade launcher</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "text": "Flamer (instead of lasgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4052,11 +4439,52 @@
       "n": 10
      },
      "base": "lasgun",
+     "group": "000002612-0",
      "model": "",
      "grants": [
-      "Flamer",
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Grenade launcher (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 10
+     },
+     "base": "lasgun",
+     "group": "000002612-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Meltagun (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 10
+     },
+     "base": "lasgun",
+     "group": "000002612-0",
+     "model": "",
+     "grants": [
       "Meltagun"
      ]
+    },
+    {
+     "text": "Plasma gun (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 10
+     },
+     "base": "lasgun",
+     "group": "000002612-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "For every 10 models in this unit, 1 Shock Trooper equipped with a lasgun can be equipped with 1 vox-caster (that model’s lasgun cannot be replaced).",
@@ -4336,7 +4764,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s Carnodon twin autocannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Carnodon twin lascannon</li><li>1 Carnodon twin multi-laser</li><li>1 volkite culverin</li></ul>",
+     "text": "Carnodon twin lascannon (instead of carnodon twin autocannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4344,17 +4772,48 @@
       "max": 1
      },
      "base": "carnodon twin autocannon",
+     "group": "000001994-0",
      "model": "",
      "grants": [
       "Autocannon",
       "Carnodon twin lascannon",
-      "Carnodon twin multi-laser",
-      "Lascannon",
+      "Lascannon"
+     ]
+    },
+    {
+     "text": "Carnodon twin multi-laser (instead of carnodon twin autocannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "carnodon twin autocannon",
+     "group": "000001994-0",
+     "model": "",
+     "grants": [
+      "Autocannon",
+      "Carnodon twin multi-laser"
+     ]
+    },
+    {
+     "text": "Volkite culverin (instead of carnodon twin autocannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "carnodon twin autocannon",
+     "group": "000001994-0",
+     "model": "",
+     "grants": [
+      "Autocannon",
       "Volkite culverin"
      ]
     },
     {
-     "text": "This model’s 2 autocannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li><li>2 lascannons</li><li>2 Militarum multi-lasers</li><li>2 volkite calivers</li></ul>",
+     "text": "Heavy bolters (instead of 2 autocannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4362,13 +4821,74 @@
       "max": 1
      },
      "base": "2 autocannons",
+     "group": "000001994-1",
      "model": "",
      "grants": [
       "Autocannon",
-      "Heavy bolter",
-      "Heavy flamer",
-      "Lascannon",
-      "Militarum Multi-laser",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamers (instead of 2 autocannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 autocannons",
+     "group": "000001994-1",
+     "model": "",
+     "grants": [
+      "Autocannon",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Lascannons (instead of 2 autocannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 autocannons",
+     "group": "000001994-1",
+     "model": "",
+     "grants": [
+      "Autocannon",
+      "Lascannon"
+     ]
+    },
+    {
+     "text": "Militarum multi-lasers (instead of 2 autocannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 autocannons",
+     "group": "000001994-1",
+     "model": "",
+     "grants": [
+      "Autocannon",
+      "Militarum Multi-laser"
+     ]
+    },
+    {
+     "text": "Volkite calivers (instead of 2 autocannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 autocannons",
+     "group": "000001994-1",
+     "model": "",
+     "grants": [
+      "Autocannon",
       "Volkite caliver"
      ]
     },
@@ -4729,18 +5249,83 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Any number of Veteran Guardsmen can each have their lasgun replaced with one of the following*:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grenade launcher</li><li>1 heavy flamer</li><li>1 meltagun</li><li>1 plasma gun</li><li>1 sniper rifle</li></ul>",
+     "text": "Flamer (instead of lasgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "lasgun",
+     "group": "000003891-0",
+     "model": "",
+     "grants": [
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Grenade launcher (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "lasgun",
+     "group": "000003891-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Heavy flamer (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "lasgun",
+     "group": "000003891-0",
      "model": "",
      "grants": [
       "Flamer",
-      "Heavy flamer",
-      "Meltagun",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "lasgun",
+     "group": "000003891-0",
+     "model": "",
+     "grants": [
+      "Meltagun"
+     ]
+    },
+    {
+     "text": "Plasma gun (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "lasgun",
+     "group": "000003891-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Sniper rifle (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "lasgun",
+     "group": "000003891-0",
+     "model": "",
+     "grants": [
       "Sniper rifle"
      ]
     },
@@ -4807,7 +5392,7 @@
      "grants": []
     },
     {
-     "text": "The Catachan Commander’s laspistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li></ul>",
+     "text": "Bolt pistol (instead of laspistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4815,10 +5400,24 @@
       "max": 1
      },
      "base": "laspistol",
+     "group": "000003891-6",
      "model": "",
      "grants": [
       "Bolt pistol"
      ]
+    },
+    {
+     "text": "Plasma pistol (instead of laspistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "laspistol",
+     "group": "000003891-6",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Catachan Commander can be equipped with one of the following:<ul style=\"list-style-type:circle\"><li>1 boltgun</li><li>1 chainsword</li><li>1 power fist</li><li>1 power weapon</li></ul>",
@@ -5015,17 +5614,56 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their heavy bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autocannon</li><li>1 lascannon</li><li>1 missile launcher</li><li>1 mortar</li></ul>",
+     "text": "Autocannon (instead of heavy bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "heavy bolter",
+     "group": "000003894-0",
      "model": "",
      "grants": [
-      "Autocannon",
-      "Lascannon",
+      "Autocannon"
+     ]
+    },
+    {
+     "text": "Lascannon (instead of heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "heavy bolter",
+     "group": "000003894-0",
+     "model": "",
+     "grants": [
+      "Lascannon"
+     ]
+    },
+    {
+     "text": "Missile launcher (instead of heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "heavy bolter",
+     "group": "000003894-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Mortar (instead of heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "heavy bolter",
+     "group": "000003894-0",
+     "model": "",
+     "grants": [
       "Mortar"
      ]
     }
@@ -5668,7 +6306,7 @@
      ]
     },
     {
-     "text": "This model’s multi-laser can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter*</li><li>1 heavy flamer*</li></ul>",
+     "text": "Heavy bolter* (instead of multi-laser)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -5676,9 +6314,24 @@
       "max": 1
      },
      "base": "multi-laser",
+     "group": "000000692-1",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer* (instead of multi-laser)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "multi-laser",
+     "group": "000000692-1",
+     "model": "",
+     "grants": [
       "Heavy flamer"
      ]
     },
@@ -7115,18 +7768,88 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Up to 2 Grenadier models can each have their hot-shot lasgun replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grenade launcher</li><li>1 heavy stubber</li><li>1 meltagun</li><li>1 plasma gun</li><li>1 sniper rifle</li></ul>",
+     "text": "Flamer (instead of hot-shot lasgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "hot-shot lasgun",
+     "group": "000002374-0",
      "model": "",
      "grants": [
-      "Flamer",
-      "Heavy stubber",
-      "Meltagun",
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Grenade launcher (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "hot-shot lasgun",
+     "group": "000002374-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Heavy stubber (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "hot-shot lasgun",
+     "group": "000002374-0",
+     "model": "",
+     "grants": [
+      "Heavy stubber"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "hot-shot lasgun",
+     "group": "000002374-0",
+     "model": "",
+     "grants": [
+      "Meltagun"
+     ]
+    },
+    {
+     "text": "Plasma gun (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "hot-shot lasgun",
+     "group": "000002374-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Sniper rifle (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "hot-shot lasgun",
+     "group": "000002374-0",
+     "model": "",
+     "grants": [
       "Sniper rifle"
      ]
     }
@@ -7415,7 +8138,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 10 models in this unit, up to 2 Death Korps Troopers can each have their lasgun replaced with one of the following*:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grenade launcher</li><li>1 long-las</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "text": "Flamer (instead of lasgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7423,12 +8146,67 @@
       "n": 10
      },
      "base": "lasgun",
+     "group": "000002613-0",
      "model": "",
      "grants": [
-      "Flamer",
-      "Long-las",
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Grenade launcher (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 10
+     },
+     "base": "lasgun",
+     "group": "000002613-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Long-las (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 10
+     },
+     "base": "lasgun",
+     "group": "000002613-0",
+     "model": "",
+     "grants": [
+      "Long-las"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 10
+     },
+     "base": "lasgun",
+     "group": "000002613-0",
+     "model": "",
+     "grants": [
       "Meltagun"
      ]
+    },
+    {
+     "text": "Plasma gun (instead of lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 10
+     },
+     "base": "lasgun",
+     "group": "000002613-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "For every 10 models in this unit, 1 Death Korps Trooper equipped with a lasgun can be equipped with 1 Death Korps medi-pack (that model’s lasgun cannot be replaced)**.",
@@ -8178,7 +8956,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 autocannons</li><li>2 heavy flamers</li><li>2 lascannons</li></ul>",
+     "text": "Autocannons (instead of 2 heavy bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -8186,11 +8964,42 @@
       "max": 1
      },
      "base": "2 heavy bolters",
+     "group": "000000767-0",
      "model": "",
      "grants": [
       "Autocannon",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamers (instead of 2 heavy bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 heavy bolters",
+     "group": "000000767-0",
+     "model": "",
+     "grants": [
       "Heavy bolter",
-      "Heavy flamer",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Lascannons (instead of 2 heavy bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 heavy bolters",
+     "group": "000000767-0",
+     "model": "",
+     "grants": [
+      "Heavy bolter",
       "Lascannon"
      ]
     },
@@ -9106,16 +9915,30 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their malleus rocket launcher replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bombast field gun</li><li>1 heavy lascannon</li></ul>",
+     "text": "Bombast field gun (instead of malleus rocket launcher)",
      "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "malleus rocket launcher",
+     "group": "000003897-0",
      "model": "",
      "grants": [
-      "Bombast field gun",
+      "Bombast field gun"
+     ]
+    },
+    {
+     "text": "Heavy lascannon (instead of malleus rocket launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "malleus rocket launcher",
+     "group": "000003897-0",
+     "model": "",
+     "grants": [
       "Heavy lascannon"
      ]
     }
@@ -9518,7 +10341,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 Gorgon mortars can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>4 heavy bolters</li><li>4 heavy flamers</li><li>4 heavy stubbers</li></ul>",
+     "text": "Heavy bolters (instead of 2 gorgon mortars)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9526,11 +10349,42 @@
       "max": 1
      },
      "base": "2 gorgon mortars",
+     "group": "000000768-0",
      "model": "",
      "grants": [
       "Gorgon mortar",
-      "Heavy bolter",
-      "Heavy flamer",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamers (instead of 2 gorgon mortars)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 gorgon mortars",
+     "group": "000000768-0",
+     "model": "",
+     "grants": [
+      "Gorgon mortar",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Heavy stubbers (instead of 2 gorgon mortars)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 gorgon mortars",
+     "group": "000000768-0",
+     "model": "",
+     "grants": [
+      "Gorgon mortar",
       "Heavy stubber"
      ]
     },
@@ -10464,7 +11318,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s inferno cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chem cannon</li><li>1 melta cannon</li></ul>",
+     "text": "Chem cannon (instead of inferno cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -10472,14 +11326,29 @@
       "max": 1
      },
      "base": "inferno cannon",
+     "group": "000000694-0",
      "model": "",
      "grants": [
-      "Chem cannon",
+      "Chem cannon"
+     ]
+    },
+    {
+     "text": "Melta cannon (instead of inferno cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "inferno cannon",
+     "group": "000000694-0",
+     "model": "",
+     "grants": [
       "Melta cannon"
      ]
     },
     {
-     "text": "This model’s heavy flamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 multi-melta</li></ul>",
+     "text": "Heavy bolter (instead of heavy flamer)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -10487,9 +11356,24 @@
       "max": 1
      },
      "base": "heavy flamer",
+     "group": "000000694-1",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Multi-melta (instead of heavy flamer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy flamer",
+     "group": "000000694-1",
+     "model": "",
+     "grants": [
       "Multi-melta"
      ]
     },
@@ -10909,17 +11793,44 @@
      ]
     },
     {
-     "text": "Any number of models can each have their vigilator cannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chiron gatling cannon</li><li>1 lascannon</li><li>1 melta cannon</li></ul>",
+     "text": "Chiron gatling cannon (instead of vigilator cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "vigilator cannon",
+     "group": "000004219-1",
      "model": "",
      "grants": [
-      "Chiron gatling cannon",
-      "Lascannon",
+      "Chiron gatling cannon"
+     ]
+    },
+    {
+     "text": "Lascannon (instead of vigilator cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "vigilator cannon",
+     "group": "000004219-1",
+     "model": "",
+     "grants": [
+      "Lascannon"
+     ]
+    },
+    {
+     "text": "Melta cannon (instead of vigilator cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "vigilator cannon",
+     "group": "000004219-1",
+     "model": "",
+     "grants": [
       "Melta cannon"
      ]
     }
@@ -11510,19 +12421,75 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Up to 4 Kasrkin Troopers can each have their hot-shot lasgun replaced with one of the following:*<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grenade launcher</li><li>1 hot-shot volley gun</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "text": "Flamer (instead of hot-shot lasgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 4
      },
      "base": "hot-shot lasgun",
+     "group": "000002615-0",
      "model": "",
      "grants": [
-      "Flamer",
-      "Hot-shot volley gun",
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Grenade launcher (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "hot-shot lasgun",
+     "group": "000002615-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Hot-shot volley gun (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "hot-shot lasgun",
+     "group": "000002615-0",
+     "model": "",
+     "grants": [
+      "Hot-shot volley gun"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "hot-shot lasgun",
+     "group": "000002615-0",
+     "model": "",
+     "grants": [
       "Meltagun"
      ]
+    },
+    {
+     "text": "Plasma gun (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "hot-shot lasgun",
+     "group": "000002615-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Kasrkin Trooper’s hot-shot lasgun can be replaced with 1 hot-shot marksman rifle.",
@@ -11581,7 +12548,7 @@
      ]
     },
     {
-     "text": "The Kasrkin Sergeant’s hot-shot laspistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol.</li></ul>",
+     "text": "Bolt pistol (instead of hot-shot laspistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -11589,10 +12556,24 @@
       "max": 1
      },
      "base": "hot-shot laspistol",
+     "group": "000002615-5",
      "model": "",
      "grants": [
       "Bolt pistol"
      ]
+    },
+    {
+     "text": "Plasma pistol (instead of hot-shot laspistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "hot-shot laspistol",
+     "group": "000002615-5",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* You cannot select the same weapon from this list more than twice per unit.",
@@ -11895,7 +12876,7 @@
      ]
     },
     {
-     "text": "The Krieg Engineer Watchmaster’s autopistol can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 hand flamer</li><li>1 plasma pistol</li></ul>",
+     "text": "Bolt pistol (instead of autopistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -11903,15 +12884,43 @@
       "max": 1
      },
      "base": "autopistol",
+     "group": "000003893-3",
      "model": "",
      "grants": [
-      "Bolt pistol",
+      "Bolt pistol"
+     ]
+    },
+    {
+     "text": "Hand flamer (instead of autopistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "autopistol",
+     "group": "000003893-3",
+     "model": "",
+     "grants": [
       "Flamer",
       "Hand flamer"
      ]
     },
     {
-     "text": "The Krieg Engineer Watchmaster’s trench club can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
+     "text": "Plasma pistol (instead of autopistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "autopistol",
+     "group": "000003893-3",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Chainsword (instead of trench club)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -11919,9 +12928,24 @@
       "max": 1
      },
      "base": "trench club",
+     "group": "000003893-4",
      "model": "",
      "grants": [
-      "Chainsword",
+      "Chainsword"
+     ]
+    },
+    {
+     "text": "Power weapon (instead of trench club)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "trench club",
+     "group": "000003893-4",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     }
@@ -12255,7 +13279,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "1 Veteran Guardsman’s boltgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grenade launcher</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "text": "Flamer (instead of boltgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -12263,11 +13287,52 @@
       "max": 1
      },
      "base": "boltgun",
+     "group": "000003889-0",
      "model": "",
      "grants": [
-      "Flamer",
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Grenade launcher (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003889-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Meltagun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003889-0",
+     "model": "",
+     "grants": [
       "Meltagun"
      ]
+    },
+    {
+     "text": "Plasma gun (instead of boltgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "boltgun",
+     "group": "000003889-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "The Lord Commissar's power weapon can be replaced with 1 power fist.",
@@ -12296,7 +13361,7 @@
      "grants": []
     },
     {
-     "text": "1 Veteran Guardsman’s chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 trench club</li><li>1 power weapon</li></ul>",
+     "text": "Trench club (instead of chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -12304,10 +13369,25 @@
       "max": 1
      },
      "base": "chainsword",
+     "group": "000003889-3",
      "model": "",
      "grants": [
-      "Power weapon",
       "Trench club"
+     ]
+    },
+    {
+     "text": "Power weapon (instead of chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "chainsword",
+     "group": "000003889-3",
+     "model": "",
+     "grants": [
+      "Power weapon"
      ]
     },
     {
@@ -12477,16 +13557,30 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Any number of Heavy Weapons Gunners can each have their lascannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Krieg heavy flamer</li><li>1 twin Krieg heavy stubber</li></ul>",
+     "text": "Krieg heavy flamer (instead of lascannon)",
      "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "lascannon",
+     "group": "000003895-0",
      "model": "",
      "grants": [
-      "Krieg heavy flamer",
+      "Krieg heavy flamer"
+     ]
+    },
+    {
+     "text": "Twin Krieg heavy stubber (instead of lascannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "lascannon",
+     "group": "000003895-0",
+     "model": "",
+     "grants": [
       "Twin Krieg heavy stubber"
      ]
     }
@@ -12712,7 +13806,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s lascannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li></ul>",
+     "text": "Heavy bolter (instead of lascannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -12720,9 +13814,24 @@
       "max": 1
      },
      "base": "lascannon",
+     "group": "000000700-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of lascannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "lascannon",
+     "group": "000000700-0",
+     "model": "",
+     "grants": [
       "Heavy flamer"
      ]
     },
@@ -13069,7 +14178,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s Leman Russ battle cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 demolisher battle cannon</li><li>1 eradicator nova cannon</li><li>1 executioner plasma cannon</li><li>1 exterminator autocannon</li><li>1 punisher gatling cannon</li><li>1 vanquisher battle cannon</li></ul>",
+     "text": "Demolisher battle cannon (instead of leman russ battle cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -13077,17 +14186,87 @@
       "max": 1
      },
      "base": "leman russ battle cannon",
+     "group": "000000680-0",
      "model": "",
      "grants": [
-      "Demolisher battle cannon",
-      "Eradicator nova cannon",
-      "Exterminator autocannon",
-      "Punisher gatling cannon",
+      "Demolisher battle cannon"
+     ]
+    },
+    {
+     "text": "Eradicator nova cannon (instead of leman russ battle cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "leman russ battle cannon",
+     "group": "000000680-0",
+     "model": "",
+     "grants": [
+      "Eradicator nova cannon"
+     ]
+    },
+    {
+     "text": "Executioner plasma cannon (instead of leman russ battle cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "leman russ battle cannon",
+     "group": "000000680-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Exterminator autocannon (instead of leman russ battle cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "leman russ battle cannon",
+     "group": "000000680-0",
+     "model": "",
+     "grants": [
+      "Exterminator autocannon"
+     ]
+    },
+    {
+     "text": "Punisher gatling cannon (instead of leman russ battle cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "leman russ battle cannon",
+     "group": "000000680-0",
+     "model": "",
+     "grants": [
+      "Punisher gatling cannon"
+     ]
+    },
+    {
+     "text": "Vanquisher battle cannon (instead of leman russ battle cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "leman russ battle cannon",
+     "group": "000000680-0",
+     "model": "",
+     "grants": [
       "Vanquisher battle cannon"
      ]
     },
     {
-     "text": "This model’s lascannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li></ul>",
+     "text": "Heavy bolter (instead of lascannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -13095,9 +14274,24 @@
       "max": 1
      },
      "base": "lascannon",
+     "group": "000000680-1",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of lascannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "lascannon",
+     "group": "000000680-1",
+     "model": "",
+     "grants": [
       "Heavy flamer"
      ]
     },
@@ -13368,7 +14562,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s lascannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li></ul>",
+     "text": "Heavy bolter (instead of lascannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -13376,9 +14570,24 @@
       "max": 1
      },
      "base": "lascannon",
+     "group": "000000701-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of lascannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "lascannon",
+     "group": "000000701-0",
+     "model": "",
+     "grants": [
       "Heavy flamer"
      ]
     },
@@ -13649,7 +14858,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s lascannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li></ul>",
+     "text": "Heavy bolter (instead of lascannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -13657,9 +14866,24 @@
       "max": 1
      },
      "base": "lascannon",
+     "group": "000002741-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of lascannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "lascannon",
+     "group": "000002741-0",
+     "model": "",
+     "grants": [
       "Heavy flamer"
      ]
     },
@@ -13941,7 +15165,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s lascannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li></ul>",
+     "text": "Heavy bolter (instead of lascannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -13949,9 +15173,24 @@
       "max": 1
      },
      "base": "lascannon",
+     "group": "000002742-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of lascannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "lascannon",
+     "group": "000002742-0",
+     "model": "",
+     "grants": [
       "Heavy flamer"
      ]
     },
@@ -14222,7 +15461,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s lascannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li></ul>",
+     "text": "Heavy bolter (instead of lascannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -14230,9 +15469,24 @@
       "max": 1
      },
      "base": "lascannon",
+     "group": "000002743-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of lascannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "lascannon",
+     "group": "000002743-0",
+     "model": "",
+     "grants": [
       "Heavy flamer"
      ]
     },
@@ -14503,7 +15757,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s lascannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li></ul>",
+     "text": "Heavy bolter (instead of lascannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -14511,9 +15765,24 @@
       "max": 1
      },
      "base": "lascannon",
+     "group": "000002744-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of lascannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "lascannon",
+     "group": "000002744-0",
+     "model": "",
+     "grants": [
       "Heavy flamer"
      ]
     },
@@ -14784,7 +16053,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s lascannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li></ul>",
+     "text": "Heavy bolter (instead of lascannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -14792,9 +16061,24 @@
       "max": 1
      },
      "base": "lascannon",
+     "group": "000002745-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of lascannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "lascannon",
+     "group": "000002745-0",
+     "model": "",
+     "grants": [
       "Heavy flamer"
      ]
     },
@@ -15310,7 +16594,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 heavy stubbers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li></ul>",
+     "text": "Heavy bolters (instead of 2 heavy stubbers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -15318,9 +16602,25 @@
       "max": 1
      },
      "base": "2 heavy stubbers",
+     "group": "000000769-0",
      "model": "",
      "grants": [
       "Heavy bolter",
+      "Heavy stubber"
+     ]
+    },
+    {
+     "text": "Heavy flamers (instead of 2 heavy stubbers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 heavy stubbers",
+     "group": "000000769-0",
+     "model": "",
+     "grants": [
       "Heavy flamer",
       "Heavy stubber"
      ]
@@ -15769,7 +17069,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 heavy stubbers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li></ul>",
+     "text": "Heavy bolters (instead of 2 heavy stubbers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -15777,9 +17077,25 @@
       "max": 1
      },
      "base": "2 heavy stubbers",
+     "group": "000000771-0",
      "model": "",
      "grants": [
       "Heavy bolter",
+      "Heavy stubber"
+     ]
+    },
+    {
+     "text": "Heavy flamers (instead of 2 heavy stubbers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 heavy stubbers",
+     "group": "000000771-0",
+     "model": "",
+     "grants": [
       "Heavy flamer",
       "Heavy stubber"
      ]
@@ -15993,7 +17309,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 heavy stubbers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 heavy flamers</li></ul>",
+     "text": "Heavy bolters (instead of 2 heavy stubbers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -16001,9 +17317,25 @@
       "max": 1
      },
      "base": "2 heavy stubbers",
+     "group": "000000772-0",
      "model": "",
      "grants": [
       "Heavy bolter",
+      "Heavy stubber"
+     ]
+    },
+    {
+     "text": "Heavy flamers (instead of 2 heavy stubbers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 heavy stubbers",
+     "group": "000000772-0",
+     "model": "",
+     "grants": [
       "Heavy flamer",
       "Heavy stubber"
      ]
@@ -16218,7 +17550,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 autocannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 heavy bolters</li><li>2 lascannons</li></ul>",
+     "text": "Heavy bolters (instead of 2 autocannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -16226,15 +17558,31 @@
       "max": 1
      },
      "base": "2 autocannons",
+     "group": "000000753-0",
      "model": "",
      "grants": [
       "Autocannon",
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons (instead of 2 autocannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 autocannons",
+     "group": "000000753-0",
+     "model": "",
+     "grants": [
+      "Autocannon",
       "Lascannon"
      ]
     },
     {
-     "text": "This model’s heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autocannon</li><li>1 lascannon</li></ul>",
+     "text": "Autocannon (instead of heavy bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -16242,9 +17590,24 @@
       "max": 1
      },
      "base": "heavy bolter",
+     "group": "000000753-1",
      "model": "",
      "grants": [
-      "Autocannon",
+      "Autocannon"
+     ]
+    },
+    {
+     "text": "Lascannon (instead of heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy bolter",
+     "group": "000000753-1",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
     },
@@ -16468,7 +17831,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 autocannons</li><li>2 lascannons</li></ul>",
+     "text": "Autocannons (instead of 2 heavy bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -16476,9 +17839,25 @@
       "max": 1
      },
      "base": "2 heavy bolters",
+     "group": "000000751-0",
      "model": "",
      "grants": [
       "Autocannon",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons (instead of 2 heavy bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 heavy bolters",
+     "group": "000000751-0",
+     "model": "",
+     "grants": [
       "Heavy bolter",
       "Lascannon"
      ]
@@ -16692,7 +18071,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "2 of this model’s heavy bolters can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 autocannons</li><li>2 lascannons</li></ul>",
+     "text": "Autocannons (instead of heavy bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -16700,9 +18079,25 @@
       "max": 1
      },
      "base": "heavy bolters",
+     "group": "000000752-0",
      "model": "",
      "grants": [
       "Autocannon",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Lascannons (instead of heavy bolters)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy bolters",
+     "group": "000000752-0",
+     "model": "",
+     "grants": [
       "Heavy bolter",
       "Lascannon"
      ]
@@ -16927,7 +18322,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 heavy stubbers can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 autocannons</li><li>2 heavy bolters</li><li>2 heavy flamers</li><li>2 lascannons</li></ul>",
+     "text": "Autocannons (instead of 2 heavy stubbers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -16935,11 +18330,57 @@
       "max": 1
      },
      "base": "2 heavy stubbers",
+     "group": "000000754-0",
      "model": "",
      "grants": [
       "Autocannon",
+      "Heavy stubber"
+     ]
+    },
+    {
+     "text": "Heavy bolters (instead of 2 heavy stubbers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 heavy stubbers",
+     "group": "000000754-0",
+     "model": "",
+     "grants": [
       "Heavy bolter",
+      "Heavy stubber"
+     ]
+    },
+    {
+     "text": "Heavy flamers (instead of 2 heavy stubbers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 heavy stubbers",
+     "group": "000000754-0",
+     "model": "",
+     "grants": [
       "Heavy flamer",
+      "Heavy stubber"
+     ]
+    },
+    {
+     "text": "Lascannons (instead of 2 heavy stubbers)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 heavy stubbers",
+     "group": "000000754-0",
+     "model": "",
+     "grants": [
       "Heavy stubber",
       "Lascannon"
      ]
@@ -17991,19 +19432,70 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Any number of Tempestus Scions can each have their hot-shot lasgun replaced with one of the following*:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grenade launcher</li><li>1 hot-shot volley gun</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "text": "Flamer (instead of hot-shot lasgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "hot-shot lasgun",
+     "group": "000000719-0",
      "model": "",
      "grants": [
-      "Flamer",
-      "Hot-shot volley gun",
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Grenade launcher (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "hot-shot lasgun",
+     "group": "000000719-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Hot-shot volley gun (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "hot-shot lasgun",
+     "group": "000000719-0",
+     "model": "",
+     "grants": [
+      "Hot-shot volley gun"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "hot-shot lasgun",
+     "group": "000000719-0",
+     "model": "",
+     "grants": [
       "Meltagun"
      ]
+    },
+    {
+     "text": "Plasma gun (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "hot-shot lasgun",
+     "group": "000000719-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Tempestus Scion equipped with a hot-shot lasgun can be equipped with 1 regimental standard (that model’s hot-shot lasgun cannot be replaced).",
@@ -18034,7 +19526,7 @@
      ]
     },
     {
-     "text": "1 Tempestus Scion’s hot-shot lasgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 hot-shot laspistol and 1 medi-pack</li><li>1 hot-shot lasgun, 1 hot-shot laspistol and 1 medi-pack [that model's hot-shot lasgun cannot be replaced]</li></ul>",
+     "text": "Hot-shot laspistol and 1 medi-pack (instead of hot-shot lasgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -18042,13 +19534,29 @@
       "max": 1
      },
      "base": "hot-shot lasgun",
+     "group": "000000719-3",
      "model": "",
      "grants": [
       "Hot-shot laspistol"
      ]
     },
     {
-     "text": "The Tempestor Prime’s bolt pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 plasma pistol</li><li>1 command rod</li></ul>",
+     "text": "Hot-shot lasgun, 1 hot-shot laspistol and 1 medi-pack [that model's hot-shot lasgun cannot be replaced] (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "hot-shot lasgun",
+     "group": "000000719-3",
+     "model": "",
+     "grants": [
+      "Hot-shot laspistol"
+     ]
+    },
+    {
+     "text": "Plasma pistol (instead of bolt pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -18056,6 +19564,20 @@
       "max": 1
      },
      "base": "bolt pistol",
+     "group": "000000719-4",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Command rod (instead of bolt pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "bolt pistol",
+     "group": "000000719-4",
      "model": "",
      "grants": []
     },
@@ -18585,7 +20107,7 @@
      "grants": []
     },
     {
-     "text": "The Mukaali Rider Sergeant’s hunting lance can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li></ul>",
+     "text": "Chainsword (instead of hunting lance)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -18593,25 +20115,82 @@
       "max": 1
      },
      "base": "hunting lance",
+     "group": "000001383-1",
      "model": "",
      "grants": [
-      "Chainsword",
+      "Chainsword"
+     ]
+    },
+    {
+     "text": "Power weapon (instead of hunting lance)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "hunting lance",
+     "group": "000001383-1",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     },
     {
-     "text": "Up to 2 Mukaali Riders can each have their hunting lance replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grenade launcher</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "text": "Flamer (instead of hunting lance)",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "hunting lance",
+     "group": "000001383-2",
      "model": "",
      "grants": [
-      "Flamer",
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Grenade launcher (instead of hunting lance)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "hunting lance",
+     "group": "000001383-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Meltagun (instead of hunting lance)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "hunting lance",
+     "group": "000001383-2",
+     "model": "",
+     "grants": [
       "Meltagun"
      ]
+    },
+    {
+     "text": "Plasma gun (instead of hunting lance)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "hunting lance",
+     "group": "000001383-2",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -18761,18 +20340,47 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Up to 2 models can each have their Servitor’s servo-arm replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 multi-melta</li><li>1 plasma cannon</li></ul>",
+     "text": "Heavy bolter (instead of servitor’s servo-arm)",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "servitor’s servo-arm",
+     "group": "000001397-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Multi-melta (instead of servitor’s servo-arm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "servitor’s servo-arm",
+     "group": "000001397-0",
+     "model": "",
+     "grants": [
       "Multi-melta"
      ]
+    },
+    {
+     "text": "Plasma cannon (instead of servitor’s servo-arm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "servitor’s servo-arm",
+     "group": "000001397-0",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -19062,7 +20670,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s ripper gun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 grenadier gauntlet</li><li>1 Bullgryn maul</li></ul>",
+     "text": "Grenadier gauntlet (instead of ripper gun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -19070,14 +20678,29 @@
       "max": 1
      },
      "base": "ripper gun",
+     "group": "000001398-0",
      "model": "",
      "grants": [
-      "Grenadier gauntlet",
+      "Grenadier gauntlet"
+     ]
+    },
+    {
+     "text": "Bullgryn maul (instead of ripper gun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "ripper gun",
+     "group": "000001398-0",
+     "model": "",
+     "grants": [
       "Bullgryn maul"
      ]
     },
     {
-     "text": "This model’s huge knife can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 brute shield</li><li>1 slabshield</li></ul>",
+     "text": "Brute shield (instead of huge knife)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -19085,6 +20708,20 @@
       "max": 1
      },
      "base": "huge knife",
+     "group": "000001398-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Slabshield (instead of huge knife)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "huge knife",
+     "group": "000001398-1",
      "model": "",
      "grants": []
     }
@@ -21712,19 +23349,70 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their multi-laser replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 autocannon</li><li>1 heavy flamer</li><li>1 lascannon</li><li>1 missile launcher</li><li>1 plasma cannon</li></ul>",
+     "text": "Autocannon (instead of multi-laser)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "multi-laser",
+     "group": "000000690-0",
      "model": "",
      "grants": [
-      "Autocannon",
-      "Heavy flamer",
+      "Autocannon"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of multi-laser)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "multi-laser",
+     "group": "000000690-0",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Lascannon (instead of multi-laser)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "multi-laser",
+     "group": "000000690-0",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
+    },
+    {
+     "text": "Missile launcher (instead of multi-laser)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "multi-laser",
+     "group": "000000690-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Plasma cannon (instead of multi-laser)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "multi-laser",
+     "group": "000000690-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "Any number of models can each be equipped with 1 Sentinel chainsaw.",
@@ -24121,7 +25809,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s Taurox battle cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Taurox gatling cannon</li><li>1 Taurox missile launcher</li></ul>",
+     "text": "Taurox gatling cannon (instead of taurox battle cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -24129,10 +25817,24 @@
       "max": 1
      },
      "base": "taurox battle cannon",
+     "group": "000000721-0",
      "model": "",
      "grants": [
       "Taurox gatling cannon"
      ]
+    },
+    {
+     "text": "Taurox missile launcher (instead of taurox battle cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "taurox battle cannon",
+     "group": "000000721-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model’s twin Taurox hot-shot volley gun can be replaced with 1 twin autocannon.",
@@ -24559,7 +26261,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Tempestor Aquilon’s sentry flamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 sentry hot-shot volley gun</li><li>1 sentry grenade launcher</li></ul>",
+     "text": "Sentry hot-shot volley gun (instead of sentry flamer)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -24567,13 +26269,27 @@
       "max": 1
      },
      "base": "sentry flamer",
+     "group": "000003834-0",
      "model": "",
      "grants": [
       "Sentry hot-shot volley gun"
      ]
     },
     {
-     "text": "The Tempestor Aquilon’s hot-shot lascarbine can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 chainsword</li><li>1 power weapon</li><li>1 hot-shot laspistol</li></ul>",
+     "text": "Sentry grenade launcher (instead of sentry flamer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "sentry flamer",
+     "group": "000003834-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Chainsword (instead of hot-shot lascarbine)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -24581,11 +26297,40 @@
       "max": 1
      },
      "base": "hot-shot lascarbine",
+     "group": "000003834-1",
      "model": "",
      "grants": [
-      "Hot-shot laspistol",
-      "Chainsword",
+      "Chainsword"
+     ]
+    },
+    {
+     "text": "Power weapon (instead of hot-shot lascarbine)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "hot-shot lascarbine",
+     "group": "000003834-1",
+     "model": "",
+     "grants": [
       "Power weapon"
+     ]
+    },
+    {
+     "text": "Hot-shot laspistol (instead of hot-shot lascarbine)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "hot-shot lascarbine",
+     "group": "000003834-1",
+     "model": "",
+     "grants": [
+      "Hot-shot laspistol"
      ]
     },
     {
@@ -24952,7 +26697,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 5 models in this unit, up to two Tempestus Scions can each have their hot-shot lasgun replaced with one of the following*:<ul style=\"list-style-type:circle\"><li>1 flamer</li><li>1 grenade launcher</li><li>1 hot-shot volley gun</li><li>1 meltagun</li><li>1 plasma gun</li></ul>",
+     "text": "Flamer (instead of hot-shot lasgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -24960,12 +26705,67 @@
       "n": 5
      },
      "base": "hot-shot lasgun",
+     "group": "000002746-0",
      "model": "",
      "grants": [
-      "Flamer",
-      "Hot-shot volley gun",
+      "Flamer"
+     ]
+    },
+    {
+     "text": "Grenade launcher (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "hot-shot lasgun",
+     "group": "000002746-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Hot-shot volley gun (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "hot-shot lasgun",
+     "group": "000002746-0",
+     "model": "",
+     "grants": [
+      "Hot-shot volley gun"
+     ]
+    },
+    {
+     "text": "Meltagun (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "hot-shot lasgun",
+     "group": "000002746-0",
+     "model": "",
+     "grants": [
       "Meltagun"
      ]
+    },
+    {
+     "text": "Plasma gun (instead of hot-shot lasgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "hot-shot lasgun",
+     "group": "000002746-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "1 Tempestus Scion’s hot-shot lasgun can be replaced with 1 hot-shot laspistol and 1 vox-caster.",
@@ -24982,7 +26782,7 @@
      ]
     },
     {
-     "text": "The Tempestor’s chainsword can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 power weapon</li></ul>",
+     "text": "Power fist (instead of chainsword)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -24990,14 +26790,29 @@
       "max": 1
      },
      "base": "chainsword",
+     "group": "000002746-2",
      "model": "",
      "grants": [
-      "Power fist",
+      "Power fist"
+     ]
+    },
+    {
+     "text": "Power weapon (instead of chainsword)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "chainsword",
+     "group": "000002746-2",
+     "model": "",
+     "grants": [
       "Power weapon"
      ]
     },
     {
-     "text": "The Tempestor’s hot-shot laspistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bolt pistol</li><li>1 plasma pistol</li></ul>",
+     "text": "Bolt pistol (instead of hot-shot laspistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -25005,10 +26820,24 @@
       "max": 1
      },
      "base": "hot-shot laspistol",
+     "group": "000002746-3",
      "model": "",
      "grants": [
       "Bolt pistol"
      ]
+    },
+    {
+     "text": "Plasma pistol (instead of hot-shot laspistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "hot-shot laspistol",
+     "group": "000002746-3",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* You cannot select the same weapon from this list more than once per unit, unless this unit contains 10 models, in which case you cannot select the same weapon more than twice  per unit.",
@@ -25498,7 +27327,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s autocannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter</li><li>1 heavy flamer</li><li>1 lascannon</li></ul>",
+     "text": "Heavy bolter (instead of autocannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -25506,10 +27335,39 @@
       "max": 1
      },
      "base": "autocannon",
+     "group": "000000777-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
-      "Heavy flamer",
+      "Heavy bolter"
+     ]
+    },
+    {
+     "text": "Heavy flamer (instead of autocannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "autocannon",
+     "group": "000000777-0",
+     "model": "",
+     "grants": [
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Lascannon (instead of autocannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "autocannon",
+     "group": "000000777-0",
+     "model": "",
+     "grants": [
       "Lascannon"
      ]
     },

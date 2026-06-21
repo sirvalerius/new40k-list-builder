@@ -192,7 +192,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s Reaver gatling blaster can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Reaver laser blaster</li><li>1 Reaver melta cannon</li><li>1 Reaver volcano cannon</li><li>1 Reaver power fist</li></ul>",
+     "text": "Reaver laser blaster (instead of reaver gatling blaster)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -200,15 +200,57 @@
       "max": 1
      },
      "base": "reaver gatling blaster",
+     "group": "000000868-0",
      "model": "",
      "grants": [
-      "Reaver laser blaster",
-      "Reaver melta cannon",
+      "Reaver laser blaster"
+     ]
+    },
+    {
+     "text": "Reaver melta cannon (instead of reaver gatling blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "reaver gatling blaster",
+     "group": "000000868-0",
+     "model": "",
+     "grants": [
+      "Reaver melta cannon"
+     ]
+    },
+    {
+     "text": "Reaver volcano cannon (instead of reaver gatling blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "reaver gatling blaster",
+     "group": "000000868-0",
+     "model": "",
+     "grants": [
       "Reaver volcano cannon"
      ]
     },
     {
-     "text": "This model’s Reaver laser blaster can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Reaver gatling blaster</li><li>1 Reaver melta cannon</li><li>1 Reaver volcano cannon</li></ul>",
+     "text": "Reaver power fist (instead of reaver gatling blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "reaver gatling blaster",
+     "group": "000000868-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Reaver gatling blaster (instead of reaver laser blaster)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -216,10 +258,39 @@
       "max": 1
      },
      "base": "reaver laser blaster",
+     "group": "000000868-1",
      "model": "",
      "grants": [
-      "Reaver gatling blaster",
-      "Reaver melta cannon",
+      "Reaver gatling blaster"
+     ]
+    },
+    {
+     "text": "Reaver melta cannon (instead of reaver laser blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "reaver laser blaster",
+     "group": "000000868-1",
+     "model": "",
+     "grants": [
+      "Reaver melta cannon"
+     ]
+    },
+    {
+     "text": "Reaver volcano cannon (instead of reaver laser blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "reaver laser blaster",
+     "group": "000000868-1",
+     "model": "",
+     "grants": [
       "Reaver volcano cannon"
      ]
     }
@@ -435,7 +506,7 @@
      ]
     },
     {
-     "text": "This model’s Reaver gatling blaster can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Reaver laser blaster</li><li>1 Reaver melta cannon</li><li>1 Reaver volcano cannon</li></ul>",
+     "text": "Reaver laser blaster (instead of reaver gatling blaster)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -443,15 +514,44 @@
       "max": 1
      },
      "base": "reaver gatling blaster",
+     "group": "000002077-1",
      "model": "",
      "grants": [
-      "Reaver laser blaster",
-      "Reaver melta cannon",
+      "Reaver laser blaster"
+     ]
+    },
+    {
+     "text": "Reaver melta cannon (instead of reaver gatling blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "reaver gatling blaster",
+     "group": "000002077-1",
+     "model": "",
+     "grants": [
+      "Reaver melta cannon"
+     ]
+    },
+    {
+     "text": "Reaver volcano cannon (instead of reaver gatling blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "reaver gatling blaster",
+     "group": "000002077-1",
+     "model": "",
+     "grants": [
       "Reaver volcano cannon"
      ]
     },
     {
-     "text": "This model’s Reaver laser blaster can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Reaver gatling blaster</li><li>1 Reaver melta cannon</li><li>1 Reaver volcano cannon</li></ul>",
+     "text": "Reaver gatling blaster (instead of reaver laser blaster)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -459,10 +559,39 @@
       "max": 1
      },
      "base": "reaver laser blaster",
+     "group": "000002077-2",
      "model": "",
      "grants": [
-      "Reaver gatling blaster",
-      "Reaver melta cannon",
+      "Reaver gatling blaster"
+     ]
+    },
+    {
+     "text": "Reaver melta cannon (instead of reaver laser blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "reaver laser blaster",
+     "group": "000002077-2",
+     "model": "",
+     "grants": [
+      "Reaver melta cannon"
+     ]
+    },
+    {
+     "text": "Reaver volcano cannon (instead of reaver laser blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "reaver laser blaster",
+     "group": "000002077-2",
+     "model": "",
+     "grants": [
       "Reaver volcano cannon"
      ]
     }
@@ -630,7 +759,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s Warhound plasma blastgun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Warhound inferno gun</li><li>1 Warhound turbo-laser destructor</li><li>1 Warhound vulcan mega-bolter</li></ul>",
+     "text": "Warhound inferno gun (instead of warhound plasma blastgun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -638,15 +767,44 @@
       "max": 1
      },
      "base": "warhound plasma blastgun",
+     "group": "000000867-0",
      "model": "",
      "grants": [
-      "Warhound inferno gun",
-      "Warhound turbo-laser destructor",
+      "Warhound inferno gun"
+     ]
+    },
+    {
+     "text": "Warhound turbo-laser destructor (instead of warhound plasma blastgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "warhound plasma blastgun",
+     "group": "000000867-0",
+     "model": "",
+     "grants": [
+      "Warhound turbo-laser destructor"
+     ]
+    },
+    {
+     "text": "Warhound vulcan mega-bolter (instead of warhound plasma blastgun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "warhound plasma blastgun",
+     "group": "000000867-0",
+     "model": "",
+     "grants": [
       "Warhound vulcan mega-bolter"
      ]
     },
     {
-     "text": "This model’s Warhound vulcan mega-bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Warhound inferno gun</li><li>1 Warhound plasma blastgun</li><li>1 Warhound turbo-laser destructor</li></ul>",
+     "text": "Warhound inferno gun (instead of warhound vulcan mega-bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -654,9 +812,37 @@
       "max": 1
      },
      "base": "warhound vulcan mega-bolter",
+     "group": "000000867-1",
      "model": "",
      "grants": [
-      "Warhound inferno gun",
+      "Warhound inferno gun"
+     ]
+    },
+    {
+     "text": "Warhound plasma blastgun (instead of warhound vulcan mega-bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "warhound vulcan mega-bolter",
+     "group": "000000867-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Warhound turbo-laser destructor (instead of warhound vulcan mega-bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "warhound vulcan mega-bolter",
+     "group": "000000867-1",
+     "model": "",
+     "grants": [
       "Warhound turbo-laser destructor"
      ]
     }
@@ -917,7 +1103,7 @@
      ]
     },
     {
-     "text": "This model’s arioch power claw can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 belicosa volcano cannon</li><li>1 macro gatling blaster</li><li>1 mori quake cannon</li><li>1 sunfury plasma annihilator</li></ul>",
+     "text": "Belicosa volcano cannon (instead of arioch power claw)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -925,15 +1111,57 @@
       "max": 1
      },
      "base": "arioch power claw",
+     "group": "000000869-1",
      "model": "",
      "grants": [
-      "Belicosa volcano cannon",
-      "Macro gatling blaster",
+      "Belicosa volcano cannon"
+     ]
+    },
+    {
+     "text": "Macro gatling blaster (instead of arioch power claw)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "arioch power claw",
+     "group": "000000869-1",
+     "model": "",
+     "grants": [
+      "Macro gatling blaster"
+     ]
+    },
+    {
+     "text": "Mori quake cannon (instead of arioch power claw)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "arioch power claw",
+     "group": "000000869-1",
+     "model": "",
+     "grants": [
       "Mori quake cannon"
      ]
     },
     {
-     "text": "This model’s macro gatling blaster can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 arioch power claw</li><li>1 belicosa volcano cannon</li><li>1 mori quake cannon</li><li>1 sunfury plasma annihilator</li></ul>",
+     "text": "Sunfury plasma annihilator (instead of arioch power claw)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "arioch power claw",
+     "group": "000000869-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Arioch power claw (instead of macro gatling blaster)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -941,12 +1169,54 @@
       "max": 1
      },
      "base": "macro gatling blaster",
+     "group": "000000869-2",
      "model": "",
      "grants": [
-      "Arioch power claw",
-      "Belicosa volcano cannon",
+      "Arioch power claw"
+     ]
+    },
+    {
+     "text": "Belicosa volcano cannon (instead of macro gatling blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "macro gatling blaster",
+     "group": "000000869-2",
+     "model": "",
+     "grants": [
+      "Belicosa volcano cannon"
+     ]
+    },
+    {
+     "text": "Mori quake cannon (instead of macro gatling blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "macro gatling blaster",
+     "group": "000000869-2",
+     "model": "",
+     "grants": [
       "Mori quake cannon"
      ]
+    },
+    {
+     "text": "Sunfury plasma annihilator (instead of macro gatling blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "macro gatling blaster",
+     "group": "000000869-2",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",

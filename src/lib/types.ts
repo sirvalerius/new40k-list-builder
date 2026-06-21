@@ -101,6 +101,7 @@ export interface WeaponOption {
   type: 'wargear' | 'model';
   limit?: OptionLimit;
   base?: string;   // base weapon this option replaces (auto-scales as replacements are taken)
+  group?: string;  // options split from one "one of the following" list share a group cap
   model?: string;  // sub-model this option pertains to (normalized); '' = whole unit.
                    // For type 'model' this is the model it adds; for wargear it's the
                    // model that must be present (and caps the option by that model's count).

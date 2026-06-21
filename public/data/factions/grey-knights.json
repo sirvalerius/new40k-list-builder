@@ -168,7 +168,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator</li><li>1 psilencer</li><li>1 psycannon</li></ul>",
+     "text": "Incinerator (instead of storm bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -176,10 +176,39 @@
       "max": 1
      },
      "base": "storm bolter",
+     "group": "000000376-0",
      "model": "",
      "grants": [
-      "Incinerator",
-      "Psilencer",
+      "Incinerator"
+     ]
+    },
+    {
+     "text": "Psilencer (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000000376-0",
+     "model": "",
+     "grants": [
+      "Psilencer"
+     ]
+    },
+    {
+     "text": "Psycannon (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000000376-0",
+     "model": "",
+     "grants": [
       "Psycannon"
      ]
     }
@@ -1114,7 +1143,37 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 5 models in this unit, 1 Terminator’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator</li><li>1 psilencer</li><li>1 psycannon</li></ul>",
+     "text": "Incinerator (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "storm bolter",
+     "group": "000000382-0",
+     "model": "",
+     "grants": [
+      "Incinerator"
+     ]
+    },
+    {
+     "text": "Psilencer (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "storm bolter",
+     "group": "000000382-0",
+     "model": "",
+     "grants": [
+      "Psilencer"
+     ]
+    },
+    {
+     "text": "Psycannon (instead of storm bolter)",
      "cost": 5,
      "type": "wargear",
      "limit": {
@@ -1122,10 +1181,9 @@
       "n": 5
      },
      "base": "storm bolter",
+     "group": "000000382-0",
      "model": "",
      "grants": [
-      "Incinerator",
-      "Psilencer",
       "Psycannon"
      ]
     },
@@ -1144,7 +1202,7 @@
      ]
     },
     {
-     "text": "1 Terminator’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 Ancient’s banner</li><li>1 psilencer and 1 Ancient’s banner</li><li>1 psycannon and 1 Ancient’s banner</li><li>1 storm bolter and 1 Ancient’s banner*</li></ul>",
+     "text": "Incinerator and 1 Ancient’s banner (instead of storm bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1152,12 +1210,54 @@
       "max": 1
      },
      "base": "storm bolter",
+     "group": "000000382-2",
      "model": "",
      "grants": [
-      "Incinerator",
-      "Psilencer",
+      "Incinerator"
+     ]
+    },
+    {
+     "text": "Psilencer and 1 Ancient’s banner (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000000382-2",
+     "model": "",
+     "grants": [
+      "Psilencer"
+     ]
+    },
+    {
+     "text": "Psycannon and 1 Ancient’s banner (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000000382-2",
+     "model": "",
+     "grants": [
       "Psycannon"
      ]
+    },
+    {
+     "text": "Storm bolter and 1 Ancient’s banner* (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000000382-2",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* That model’s storm bolter cannot be replaced.",
@@ -1469,7 +1569,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator</li><li>1 psilencer</li><li>1 psycannon</li></ul>",
+     "text": "Incinerator (instead of storm bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1477,10 +1577,39 @@
       "max": 1
      },
      "base": "storm bolter",
+     "group": "000000375-0",
      "model": "",
      "grants": [
-      "Incinerator",
-      "Psilencer",
+      "Incinerator"
+     ]
+    },
+    {
+     "text": "Psilencer (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000000375-0",
+     "model": "",
+     "grants": [
+      "Psilencer"
+     ]
+    },
+    {
+     "text": "Psycannon (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000000375-0",
+     "model": "",
+     "grants": [
       "Psycannon"
      ]
     }
@@ -1718,7 +1847,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s dreadfists can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Nemesis daemon greathammer</li><li>1 Nemesis flail</li><li>1 Nemesis greatsword<br><li>1 Nemesis mace</li></ul>",
+     "text": "Nemesis daemon greathammer (instead of dreadfists)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1726,10 +1855,39 @@
       "max": 1
      },
      "base": "dreadfists",
+     "group": "000001360-0",
      "model": "",
      "grants": [
-      "Nemesis daemon greathammer",
-      "Nemesis flail",
+      "Nemesis daemon greathammer"
+     ]
+    },
+    {
+     "text": "Nemesis flail (instead of dreadfists)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "dreadfists",
+     "group": "000001360-0",
+     "model": "",
+     "grants": [
+      "Nemesis flail"
+     ]
+    },
+    {
+     "text": "Nemesis greatsword  1 Nemesis mace (instead of dreadfists)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "dreadfists",
+     "group": "000001360-0",
+     "model": "",
+     "grants": [
       "Nemesis mace"
      ]
     },
@@ -2160,7 +2318,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s assault cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy plasma cannon</li><li>1 multi-melta</li><li>1 twin lascannon</li></ul>",
+     "text": "Heavy plasma cannon (instead of assault cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2168,14 +2326,42 @@
       "max": 1
      },
      "base": "assault cannon",
+     "group": "000000390-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Multi-melta (instead of assault cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "assault cannon",
+     "group": "000000390-0",
      "model": "",
      "grants": [
-      "Multi-melta",
+      "Multi-melta"
+     ]
+    },
+    {
+     "text": "Twin lascannon (instead of assault cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "assault cannon",
+     "group": "000000390-0",
+     "model": "",
+     "grants": [
       "Twin lascannon"
      ]
     },
     {
-     "text": "This model’s assault cannon, storm bolter and Dreadnought combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy psycannon, 1 storm bolter and 1 Nemesis doomglaive</li><li>1 heavy psycannon, 1 incinerator and 1 Nemesis doomglaive</li></ul>",
+     "text": "Heavy psycannon, 1 storm bolter and 1 Nemesis doomglaive (instead of assault cannon, storm bolter and dreadnought combat weapon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2183,6 +2369,26 @@
       "max": 1
      },
      "base": "assault cannon, storm bolter and dreadnought combat weapon",
+     "group": "000000390-1",
+     "model": "",
+     "grants": [
+      "Assault cannon",
+      "Heavy psycannon",
+      "Storm bolter",
+      "Dreadnought combat weapon",
+      "Nemesis doomglaive"
+     ]
+    },
+    {
+     "text": "Heavy psycannon, 1 incinerator and 1 Nemesis doomglaive (instead of assault cannon, storm bolter and dreadnought combat weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "assault cannon, storm bolter and dreadnought combat weapon",
+     "group": "000000390-1",
      "model": "",
      "grants": [
       "Assault cannon",
@@ -2194,7 +2400,7 @@
      ]
     },
     {
-     "text": "This model’s storm bolter and Dreadnought combat weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 missile launcher and 1 armoured feet</li><li>1 heavy flamer and 1 Dreadnought combat weapon</li></ul>",
+     "text": "Missile launcher and 1 armoured feet (instead of storm bolter and dreadnought combat weapon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2202,11 +2408,28 @@
       "max": 1
      },
      "base": "storm bolter and dreadnought combat weapon",
+     "group": "000000390-2",
+     "model": "",
+     "grants": [
+      "Storm bolter",
+      "Armoured feet",
+      "Dreadnought combat weapon"
+     ]
+    },
+    {
+     "text": "Heavy flamer and 1 Dreadnought combat weapon (instead of storm bolter and dreadnought combat weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter and dreadnought combat weapon",
+     "group": "000000390-2",
      "model": "",
      "grants": [
       "Heavy flamer",
       "Storm bolter",
-      "Armoured feet",
       "Dreadnought combat weapon"
      ]
     }
@@ -2419,7 +2642,7 @@
      ]
     },
     {
-     "text": "This model’s twin heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 multi-melta</li><li>1 twin assault cannon</li><li>1 twin lascannon</li><li>1 twin psycannon</li></ul>",
+     "text": "Multi-melta (instead of twin heavy bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2427,11 +2650,54 @@
       "max": 1
      },
      "base": "twin heavy bolter",
+     "group": "000002768-2",
      "model": "",
      "grants": [
-      "Multi-melta",
-      "Twin assault cannon",
-      "Twin lascannon",
+      "Multi-melta"
+     ]
+    },
+    {
+     "text": "Twin assault cannon (instead of twin heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin heavy bolter",
+     "group": "000002768-2",
+     "model": "",
+     "grants": [
+      "Twin assault cannon"
+     ]
+    },
+    {
+     "text": "Twin lascannon (instead of twin heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin heavy bolter",
+     "group": "000002768-2",
+     "model": "",
+     "grants": [
+      "Twin lascannon"
+     ]
+    },
+    {
+     "text": "Twin psycannon (instead of twin heavy bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin heavy bolter",
+     "group": "000002768-2",
+     "model": "",
+     "grants": [
       "Twin psycannon"
      ]
     }
@@ -2817,7 +3083,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 5 models in this unit, 1 Interceptor’s storm bolter and Nemesis force weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 close combat weapon</li><li>1 psilencer and 1 close combat weapon</li><li>1 psycannon and 1 close combat weapon</li></ul>",
+     "text": "Incinerator and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2825,10 +3091,45 @@
       "n": 5
      },
      "base": "storm bolter and nemesis force weapon",
+     "group": "000000387-0",
      "model": "",
      "grants": [
       "Incinerator",
+      "Storm bolter",
+      "Close combat weapon",
+      "Nemesis force weapon"
+     ]
+    },
+    {
+     "text": "Psilencer and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "storm bolter and nemesis force weapon",
+     "group": "000000387-0",
+     "model": "",
+     "grants": [
       "Psilencer",
+      "Storm bolter",
+      "Close combat weapon",
+      "Nemesis force weapon"
+     ]
+    },
+    {
+     "text": "Psycannon and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "storm bolter and nemesis force weapon",
+     "group": "000000387-0",
+     "model": "",
+     "grants": [
       "Psycannon",
       "Storm bolter",
       "Close combat weapon",
@@ -3799,7 +4100,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s dreadfists can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Nemesis daemon greathammer</li><li>1 Nemesis greatsword</li></ul>",
+     "text": "Nemesis daemon greathammer (instead of dreadfists)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3807,10 +4108,24 @@
       "max": 1
      },
      "base": "dreadfists",
+     "group": "000000389-0",
      "model": "",
      "grants": [
       "Nemesis daemon greathammer"
      ]
+    },
+    {
+     "text": "Nemesis greatsword (instead of dreadfists)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "dreadfists",
+     "group": "000000389-0",
+     "model": "",
+     "grants": []
     },
     {
      "text": "This model can be equipped with up to two of the following, but cannot take duplicates:<ul style=\"list-style-type:circle\"><li>1 gatling psilencer</li><li>1 heavy incinerator</li><li>1 heavy psycannon</li></ul>",
@@ -4046,7 +4361,37 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 5 models in this unit, up to 2 Paladins can each have their storm bolter replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator</li><li>1 psilencer</li><li>1 psycannon</li></ul>",
+     "text": "Incinerator (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "storm bolter",
+     "group": "000000384-0",
+     "model": "",
+     "grants": [
+      "Incinerator"
+     ]
+    },
+    {
+     "text": "Psilencer (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "storm bolter",
+     "group": "000000384-0",
+     "model": "",
+     "grants": [
+      "Psilencer"
+     ]
+    },
+    {
+     "text": "Psycannon (instead of storm bolter)",
      "cost": 5,
      "type": "wargear",
      "limit": {
@@ -4054,10 +4399,9 @@
       "n": 5
      },
      "base": "storm bolter",
+     "group": "000000384-0",
      "model": "",
      "grants": [
-      "Incinerator",
-      "Psilencer",
       "Psycannon"
      ]
     },
@@ -4076,7 +4420,7 @@
      ]
     },
     {
-     "text": "1 Paladin’s storm bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 Ancient’s banner</li><li>1 psilencer and 1 Ancient’s banner</li><li>1 psycannon and 1 Ancient’s banner</li><li>1 storm bolter and 1 Ancient’s banner*</li></ul>",
+     "text": "Incinerator and 1 Ancient’s banner (instead of storm bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4084,12 +4428,54 @@
       "max": 1
      },
      "base": "storm bolter",
+     "group": "000000384-2",
      "model": "",
      "grants": [
-      "Incinerator",
-      "Psilencer",
+      "Incinerator"
+     ]
+    },
+    {
+     "text": "Psilencer and 1 Ancient’s banner (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000000384-2",
+     "model": "",
+     "grants": [
+      "Psilencer"
+     ]
+    },
+    {
+     "text": "Psycannon and 1 Ancient’s banner (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000000384-2",
+     "model": "",
+     "grants": [
       "Psycannon"
      ]
+    },
+    {
+     "text": "Storm bolter and 1 Ancient’s banner* (instead of storm bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "storm bolter",
+     "group": "000000384-2",
+     "model": "",
+     "grants": []
     },
     {
      "text": "* That model’s storm bolter cannot be replaced.",
@@ -4285,17 +4671,53 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Up to 4 Purgators can each have their storm bolter and Nemesis force weapon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 close combat weapon</li><li>1 psilencer and 1 close combat weapon</li><li>1 psycannon and 1 close combat weapon</li></ul>",
-     "cost": 5,
+     "text": "Incinerator and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
+     "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 4
      },
      "base": "storm bolter and nemesis force weapon",
+     "group": "000000388-0",
      "model": "",
      "grants": [
       "Incinerator",
+      "Storm bolter",
+      "Close combat weapon",
+      "Nemesis force weapon"
+     ]
+    },
+    {
+     "text": "Psilencer and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "storm bolter and nemesis force weapon",
+     "group": "000000388-0",
+     "model": "",
+     "grants": [
       "Psilencer",
+      "Storm bolter",
+      "Close combat weapon",
+      "Nemesis force weapon"
+     ]
+    },
+    {
+     "text": "Psycannon and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
+     "cost": 5,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "storm bolter and nemesis force weapon",
+     "group": "000000388-0",
+     "model": "",
+     "grants": [
       "Psycannon",
       "Storm bolter",
       "Close combat weapon",
@@ -4494,7 +4916,43 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 5 models in this unit, up to 2 Purifiers can each have their storm bolter and Nemesis force weapon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 close combat weapon</li><li>1 psilencer and 1 close combat weapon</li><li>1 psycannon and 1 close combat weapon</li></ul>",
+     "text": "Incinerator and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "storm bolter and nemesis force weapon",
+     "group": "000000383-0",
+     "model": "",
+     "grants": [
+      "Incinerator",
+      "Storm bolter",
+      "Close combat weapon",
+      "Nemesis force weapon"
+     ]
+    },
+    {
+     "text": "Psilencer and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "storm bolter and nemesis force weapon",
+     "group": "000000383-0",
+     "model": "",
+     "grants": [
+      "Psilencer",
+      "Storm bolter",
+      "Close combat weapon",
+      "Nemesis force weapon"
+     ]
+    },
+    {
+     "text": "Psycannon and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
      "cost": 5,
      "type": "wargear",
      "limit": {
@@ -4502,10 +4960,9 @@
       "n": 5
      },
      "base": "storm bolter and nemesis force weapon",
+     "group": "000000383-0",
      "model": "",
      "grants": [
-      "Incinerator",
-      "Psilencer",
       "Psycannon",
       "Storm bolter",
       "Close combat weapon",
@@ -5013,17 +5470,49 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Up to 2 models can each have their Servitor’s servo-arm replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy bolter and 1 Servitor’s tools</li><li>1 multi-melta and 1 Servitor’s tools</li><li>1 plasma cannon and 1 Servitor’s tools</li></ul>",
+     "text": "Heavy bolter and 1 Servitor’s tools (instead of servitor’s servo-arm)",
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 2
      },
      "base": "servitor’s servo-arm",
+     "group": "000000397-0",
      "model": "",
      "grants": [
       "Heavy bolter",
+      "Servitor’s tools"
+     ]
+    },
+    {
+     "text": "Multi-melta and 1 Servitor’s tools (instead of servitor’s servo-arm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "servitor’s servo-arm",
+     "group": "000000397-0",
+     "model": "",
+     "grants": [
       "Multi-melta",
+      "Servitor’s tools"
+     ]
+    },
+    {
+     "text": "Plasma cannon and 1 Servitor’s tools (instead of servitor’s servo-arm)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "servitor’s servo-arm",
+     "group": "000000397-0",
+     "model": "",
+     "grants": [
       "Servitor’s tools"
      ]
     }
@@ -5221,7 +5710,7 @@
      ]
     },
     {
-     "text": "This model’s skyhammer missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 typhoon missile launcher</li></ul>",
+     "text": "Twin heavy bolter (instead of skyhammer missile launcher)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -5229,10 +5718,24 @@
       "max": 1
      },
      "base": "skyhammer missile launcher",
+     "group": "000001363-1",
      "model": "",
      "grants": [
       "Twin heavy bolter"
      ]
+    },
+    {
+     "text": "Typhoon missile launcher (instead of skyhammer missile launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "skyhammer missile launcher",
+     "group": "000001363-1",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5470,7 +5973,7 @@
      ]
     },
     {
-     "text": "This model’s twin assault cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy plasma cannon</li><li>1 twin lascannon</li></ul>",
+     "text": "Twin heavy plasma cannon (instead of twin assault cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -5478,13 +5981,27 @@
       "max": 1
      },
      "base": "twin assault cannon",
+     "group": "000000398-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Twin lascannon (instead of twin assault cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin assault cannon",
+     "group": "000000398-1",
      "model": "",
      "grants": [
       "Twin lascannon"
      ]
     },
     {
-     "text": "This model’s typhoon missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 twin multi-melta</li></ul>",
+     "text": "Twin heavy bolter (instead of typhoon missile launcher)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -5492,9 +6009,24 @@
       "max": 1
      },
      "base": "typhoon missile launcher",
+     "group": "000000398-2",
      "model": "",
      "grants": [
-      "Twin heavy bolter",
+      "Twin heavy bolter"
+     ]
+    },
+    {
+     "text": "Twin multi-melta (instead of typhoon missile launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "typhoon missile launcher",
+     "group": "000000398-2",
+     "model": "",
+     "grants": [
       "Twin multi-melta"
      ]
     }
@@ -5665,7 +6197,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s skyhammer missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin heavy bolter</li><li>1 twin lascannon</li><li>1 typhoon missile launcher</li></ul>",
+     "text": "Twin heavy bolter (instead of skyhammer missile launcher)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -5673,11 +6205,39 @@
       "max": 1
      },
      "base": "skyhammer missile launcher",
+     "group": "000001364-0",
      "model": "",
      "grants": [
-      "Twin heavy bolter",
+      "Twin heavy bolter"
+     ]
+    },
+    {
+     "text": "Twin lascannon (instead of skyhammer missile launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "skyhammer missile launcher",
+     "group": "000001364-0",
+     "model": "",
+     "grants": [
       "Twin lascannon"
      ]
+    },
+    {
+     "text": "Typhoon missile launcher (instead of skyhammer missile launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "skyhammer missile launcher",
+     "group": "000001364-0",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5851,7 +6411,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "For every 5 models in this unit, 1 Grey Knight’s storm bolter and Nemesis force weapon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 incinerator and 1 close combat weapon</li><li>1 psilencer and 1 close combat weapon</li><li>1 psycannon and 1 close combat weapon</li></ul>",
+     "text": "Incinerator and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -5859,10 +6419,45 @@
       "n": 5
      },
      "base": "storm bolter and nemesis force weapon",
+     "group": "000000381-0",
      "model": "",
      "grants": [
       "Incinerator",
+      "Storm bolter",
+      "Close combat weapon",
+      "Nemesis force weapon"
+     ]
+    },
+    {
+     "text": "Psilencer and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "storm bolter and nemesis force weapon",
+     "group": "000000381-0",
+     "model": "",
+     "grants": [
       "Psilencer",
+      "Storm bolter",
+      "Close combat weapon",
+      "Nemesis force weapon"
+     ]
+    },
+    {
+     "text": "Psycannon and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 5
+     },
+     "base": "storm bolter and nemesis force weapon",
+     "group": "000000381-0",
+     "model": "",
+     "grants": [
       "Psycannon",
       "Storm bolter",
       "Close combat weapon",
@@ -6053,7 +6648,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s assault cannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy plasma cannon</li><li>1 twin lascannon</li></ul>",
+     "text": "Heavy plasma cannon (instead of assault cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6061,6 +6656,20 @@
       "max": 1
      },
      "base": "assault cannon",
+     "group": "000000400-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Twin lascannon (instead of assault cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "assault cannon",
+     "group": "000000400-0",
      "model": "",
      "grants": [
       "Twin lascannon"

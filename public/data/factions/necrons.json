@@ -6130,7 +6130,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s tachyon arrow and Overlord’s blade can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 staff of light</li><li>1 voidscythe</li></ul>",
+     "text": "Staff of light (instead of tachyon arrow and overlord’s blade)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6138,12 +6138,29 @@
       "max": 1
      },
      "base": "tachyon arrow and overlord’s blade",
+     "group": "000000523-0",
      "model": "",
      "grants": [
       "Staff of light",
       "Tachyon arrow",
       "Overlord’s blade",
-      "Staff of light",
+      "Staff of light"
+     ]
+    },
+    {
+     "text": "Voidscythe (instead of tachyon arrow and overlord’s blade)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "tachyon arrow and overlord’s blade",
+     "group": "000000523-0",
+     "model": "",
+     "grants": [
+      "Tachyon arrow",
+      "Overlord’s blade",
       "Voidscythe"
      ]
     },
@@ -6754,7 +6771,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s gauss exterminator can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 focused death ray</li><li>1 heat cannon</li></ul>",
+     "text": "Focused death ray (instead of gauss exterminator)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6762,9 +6779,24 @@
       "max": 1
      },
      "base": "gauss exterminator",
+     "group": "000000562-0",
      "model": "",
      "grants": [
-      "Focused death ray",
+      "Focused death ray"
+     ]
+    },
+    {
+     "text": "Heat cannon (instead of gauss exterminator)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "gauss exterminator",
+     "group": "000000562-0",
+     "model": "",
+     "grants": [
       "Heat cannon"
      ]
     }
@@ -7482,7 +7514,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 tesla cannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 gauss cannons</li><li>2 particle beamers</li></ul>",
+     "text": "Gauss cannons (instead of 2 tesla cannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7490,9 +7522,25 @@
       "max": 1
      },
      "base": "2 tesla cannons",
+     "group": "000000564-0",
      "model": "",
      "grants": [
       "Gauss cannon",
+      "Tesla cannon"
+     ]
+    },
+    {
+     "text": "Particle beamers (instead of 2 tesla cannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 tesla cannons",
+     "group": "000000564-0",
+     "model": "",
+     "grants": [
       "Particle beamer",
       "Tesla cannon"
      ]
@@ -8012,16 +8060,30 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their twin gauss blaster replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 particle beamer</li><li>1 twin tesla carbine</li></ul>",
+     "text": "Particle beamer (instead of twin gauss blaster)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "twin gauss blaster",
+     "group": "000000548-0",
      "model": "",
      "grants": [
-      "Particle beamer",
+      "Particle beamer"
+     ]
+    },
+    {
+     "text": "Twin tesla carbine (instead of twin gauss blaster)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "twin gauss blaster",
+     "group": "000000548-0",
+     "model": "",
+     "grants": [
       "Twin tesla carbine"
      ]
     },
@@ -8747,7 +8809,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s heat ray can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 particle shredder</li><li>1 heavy gauss cannon array</li></ul>",
+     "text": "Particle shredder (instead of heat ray)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -8755,9 +8817,24 @@
       "max": 1
      },
      "base": "heat ray",
+     "group": "000000540-0",
      "model": "",
      "grants": [
-      "Particle shredder",
+      "Particle shredder"
+     ]
+    },
+    {
+     "text": "Heavy gauss cannon array (instead of heat ray)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heat ray",
+     "group": "000000540-0",
+     "model": "",
+     "grants": [
       "Heavy gauss cannon array"
      ]
     }

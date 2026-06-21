@@ -1059,16 +1059,30 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their kannon replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 lobba</li><li>1 zzap gun</li></ul>",
+     "text": "Lobba (instead of kannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "kannon",
+     "group": "000000037-0",
      "model": "",
      "grants": [
-      "Lobba",
+      "Lobba"
+     ]
+    },
+    {
+     "text": "Zzap gun (instead of kannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "kannon",
+     "group": "000000037-0",
+     "model": "",
+     "grants": [
       "Zzap gun"
      ]
     }
@@ -1425,7 +1439,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s kustom-mega blasta can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 killsaw</li><li>1 kombi-weapon</li><li>1 kustom shoota</li></ul>",
+     "text": "Killsaw (instead of kustom-mega blasta)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1433,11 +1447,40 @@
       "max": 1
      },
      "base": "kustom-mega blasta",
+     "group": "000000006-0",
      "model": "",
      "grants": [
-      "Kombi-weapon",
-      "Kustom shoota",
       "Killsaw"
+     ]
+    },
+    {
+     "text": "Kombi-weapon (instead of kustom-mega blasta)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "kustom-mega blasta",
+     "group": "000000006-0",
+     "model": "",
+     "grants": [
+      "Kombi-weapon"
+     ]
+    },
+    {
+     "text": "Kustom shoota (instead of kustom-mega blasta)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "kustom-mega blasta",
+     "group": "000000006-0",
+     "model": "",
+     "grants": [
+      "Kustom shoota"
      ]
     },
     {
@@ -1704,7 +1747,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s slugga can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 shokk attack gun</li><li>1 kustom force field</li><li>1 kombi-weapon</li><li>1 kustom mega-blasta</li><li>1 kustom mega-slugga</li><li>1 rokkit launcha</li><li>1 big choppa</li><li>1 power klaw</li></ul>",
+     "text": "Shokk attack gun (instead of slugga)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1712,20 +1755,118 @@
       "max": 1
      },
      "base": "slugga",
+     "group": "000000007-0",
      "model": "",
      "grants": [
-      "Kombi-weapon",
-      "Kustom mega-blasta",
-      "Kustom mega-slugga",
-      "Rokkit launcha",
-      "Shokk attack gun",
+      "Shokk attack gun"
+     ]
+    },
+    {
+     "text": "Kustom force field (instead of slugga)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "slugga",
+     "group": "000000007-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Kombi-weapon (instead of slugga)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "slugga",
+     "group": "000000007-0",
+     "model": "",
+     "grants": [
+      "Kombi-weapon"
+     ]
+    },
+    {
+     "text": "Kustom mega-blasta (instead of slugga)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "slugga",
+     "group": "000000007-0",
+     "model": "",
+     "grants": [
+      "Kustom mega-blasta"
+     ]
+    },
+    {
+     "text": "Kustom mega-slugga (instead of slugga)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "slugga",
+     "group": "000000007-0",
+     "model": "",
+     "grants": [
+      "Kustom mega-slugga"
+     ]
+    },
+    {
+     "text": "Rokkit launcha (instead of slugga)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "slugga",
+     "group": "000000007-0",
+     "model": "",
+     "grants": [
+      "Rokkit launcha"
+     ]
+    },
+    {
+     "text": "Big choppa (instead of slugga)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "slugga",
+     "group": "000000007-0",
+     "model": "",
+     "grants": [
       "Big choppa",
-      "Choppa",
+      "Choppa"
+     ]
+    },
+    {
+     "text": "Power klaw (instead of slugga)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "slugga",
+     "group": "000000007-0",
+     "model": "",
+     "grants": [
       "Power klaw"
      ]
     },
     {
-     "text": "This model’s choppa can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 kombi-weapon</li><li>1 kustom mega-blasta</li><li>1 kustom mega-slugga</li><li>1 rokkit launcha</li><li>1 big choppa</li><li>1 killsaw</li><li>1 power klaw</li></ul>",
+     "text": "Kombi-weapon (instead of choppa)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1733,15 +1874,100 @@
       "max": 1
      },
      "base": "choppa",
+     "group": "000000007-1",
      "model": "",
      "grants": [
-      "Kombi-weapon",
-      "Kustom mega-blasta",
+      "Kombi-weapon"
+     ]
+    },
+    {
+     "text": "Kustom mega-blasta (instead of choppa)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "choppa",
+     "group": "000000007-1",
+     "model": "",
+     "grants": [
+      "Kustom mega-blasta"
+     ]
+    },
+    {
+     "text": "Kustom mega-slugga (instead of choppa)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "choppa",
+     "group": "000000007-1",
+     "model": "",
+     "grants": [
       "Kustom mega-slugga",
-      "Rokkit launcha",
-      "Slugga",
-      "Big choppa",
-      "Killsaw",
+      "Slugga"
+     ]
+    },
+    {
+     "text": "Rokkit launcha (instead of choppa)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "choppa",
+     "group": "000000007-1",
+     "model": "",
+     "grants": [
+      "Rokkit launcha"
+     ]
+    },
+    {
+     "text": "Big choppa (instead of choppa)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "choppa",
+     "group": "000000007-1",
+     "model": "",
+     "grants": [
+      "Big choppa"
+     ]
+    },
+    {
+     "text": "Killsaw (instead of choppa)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "choppa",
+     "group": "000000007-1",
+     "model": "",
+     "grants": [
+      "Killsaw"
+     ]
+    },
+    {
+     "text": "Power klaw (instead of choppa)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "choppa",
+     "group": "000000007-1",
+     "model": "",
+     "grants": [
       "Power klaw"
      ]
     }
@@ -3150,7 +3376,7 @@
      ]
     },
     {
-     "text": "For every 10 models in this unit, 1 Boy’s choppa and slugga can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 big shoota and 1 close combat weapon</li><li>1 rokkit launcha and 1 close combat weapon</li></ul>",
+     "text": "Big shoota and 1 close combat weapon (instead of choppa and slugga)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3158,11 +3384,29 @@
       "n": 10
      },
      "base": "choppa and slugga",
+     "group": "000000016-3",
      "model": "",
      "grants": [
       "Big shoota",
-      "Rokkit launcha",
       "Shoota",
+      "Slugga",
+      "Choppa",
+      "Close combat weapon"
+     ]
+    },
+    {
+     "text": "Rokkit launcha and 1 close combat weapon (instead of choppa and slugga)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "per_n",
+      "n": 10
+     },
+     "base": "choppa and slugga",
+     "group": "000000016-3",
+     "model": "",
+     "grants": [
+      "Rokkit launcha",
       "Slugga",
       "Choppa",
       "Close combat weapon"
@@ -3523,16 +3767,30 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of Spanners can each have their big shoota replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 kustom mega-blasta</li><li>1 rokkit launcha</li></ul>",
+     "text": "Kustom mega-blasta (instead of big shoota)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "big shoota",
+     "group": "000000019-0",
      "model": "",
      "grants": [
-      "Kustom mega-blasta",
+      "Kustom mega-blasta"
+     ]
+    },
+    {
+     "text": "Rokkit launcha (instead of big shoota)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "big shoota",
+     "group": "000000019-0",
+     "model": "",
+     "grants": [
       "Rokkit launcha"
      ]
     }
@@ -3882,7 +4140,7 @@
      "grants": []
     },
     {
-     "text": "This model’s big shoota can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 kustom mega-blasta</li><li>1 rokkit launcha</li><li>1 skorcha</li></ul>",
+     "text": "Kustom mega-blasta (instead of big shoota)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3890,10 +4148,39 @@
       "max": 1
      },
      "base": "big shoota",
+     "group": "000000057-1",
      "model": "",
      "grants": [
-      "Kustom mega-blasta",
-      "Rokkit launcha",
+      "Kustom mega-blasta"
+     ]
+    },
+    {
+     "text": "Rokkit launcha (instead of big shoota)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "big shoota",
+     "group": "000000057-1",
+     "model": "",
+     "grants": [
+      "Rokkit launcha"
+     ]
+    },
+    {
+     "text": "Skorcha (instead of big shoota)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "big shoota",
+     "group": "000000057-1",
+     "model": "",
+     "grants": [
       "Skorcha"
      ]
     },
@@ -4458,7 +4745,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s big shootas can each be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dread klaw</li><li>1 kustom-mega blasta</li><li>1 rokkit launcha</li><li>1 skorcha</li></ul>",
+     "text": "Dread klaw (instead of big shootas can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4466,17 +4753,63 @@
       "max": 1
      },
      "base": "big shootas can each be",
+     "group": "000000040-0",
      "model": "",
      "grants": [
       "Big shoota",
-      "Kustom mega-blasta",
-      "Rokkit launcha",
-      "Skorcha",
       "Dread klaw"
      ]
     },
     {
-     "text": "This model’s dread klaws can each be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 big shoota</li><li>1 kustom-mega blasta</li><li>1 rokkit launcha</li><li>1 skorcha</li></ul>",
+     "text": "Kustom-mega blasta (instead of big shootas can each be)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "big shootas can each be",
+     "group": "000000040-0",
+     "model": "",
+     "grants": [
+      "Big shoota",
+      "Kustom mega-blasta"
+     ]
+    },
+    {
+     "text": "Rokkit launcha (instead of big shootas can each be)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "big shootas can each be",
+     "group": "000000040-0",
+     "model": "",
+     "grants": [
+      "Big shoota",
+      "Rokkit launcha"
+     ]
+    },
+    {
+     "text": "Skorcha (instead of big shootas can each be)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "big shootas can each be",
+     "group": "000000040-0",
+     "model": "",
+     "grants": [
+      "Big shoota",
+      "Skorcha"
+     ]
+    },
+    {
+     "text": "Big shoota (instead of dread klaws can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4484,11 +4817,57 @@
       "max": 1
      },
      "base": "dread klaws can each be",
+     "group": "000000040-1",
      "model": "",
      "grants": [
       "Big shoota",
+      "Dread klaw"
+     ]
+    },
+    {
+     "text": "Kustom-mega blasta (instead of dread klaws can each be)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "dread klaws can each be",
+     "group": "000000040-1",
+     "model": "",
+     "grants": [
       "Kustom mega-blasta",
+      "Dread klaw"
+     ]
+    },
+    {
+     "text": "Rokkit launcha (instead of dread klaws can each be)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "dread klaws can each be",
+     "group": "000000040-1",
+     "model": "",
+     "grants": [
       "Rokkit launcha",
+      "Dread klaw"
+     ]
+    },
+    {
+     "text": "Skorcha (instead of dread klaws can each be)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "dread klaws can each be",
+     "group": "000000040-1",
+     "model": "",
+     "grants": [
       "Skorcha",
       "Dread klaw"
      ]
@@ -4704,7 +5083,7 @@
      ]
     },
     {
-     "text": "Each of this model’s zzap guns can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 lobba</li><li>1 kannon</li></ul>",
+     "text": "Lobba (instead of zzap guns)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4712,6 +5091,7 @@
       "max": 1
      },
      "base": "zzap guns",
+     "group": "000001388-1",
      "model": "",
      "grants": [
       "Lobba",
@@ -4719,7 +5099,22 @@
      ]
     },
     {
-     "text": "This model’s kannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 lobba</li><li>1 zzap gun</li></ul>",
+     "text": "Kannon (instead of zzap guns)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "zzap guns",
+     "group": "000001388-1",
+     "model": "",
+     "grants": [
+      "Zzap gun"
+     ]
+    },
+    {
+     "text": "Lobba (instead of kannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4727,14 +5122,29 @@
       "max": 1
      },
      "base": "kannon",
+     "group": "000001388-2",
      "model": "",
      "grants": [
-      "Lobba",
+      "Lobba"
+     ]
+    },
+    {
+     "text": "Zzap gun (instead of kannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "kannon",
+     "group": "000001388-2",
+     "model": "",
+     "grants": [
       "Zzap gun"
      ]
     },
     {
-     "text": "Each of this model’s twin big shootas can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 skorcha</li><li>1 rokkit launcha</li></ul>",
+     "text": "Skorcha (instead of twin big shootas)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4742,11 +5152,28 @@
       "max": 1
      },
      "base": "twin big shootas",
+     "group": "000001388-3",
+     "model": "",
+     "grants": [
+      "Big shoota",
+      "Skorcha",
+      "Twin big shoota"
+     ]
+    },
+    {
+     "text": "Rokkit launcha (instead of twin big shootas)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin big shootas",
+     "group": "000001388-3",
      "model": "",
      "grants": [
       "Big shoota",
       "Rokkit launcha",
-      "Skorcha",
       "Twin big shoota"
      ]
     }
@@ -5206,13 +5633,26 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their twin big shoota replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 kopta rockets</li><li>1 kustom mega-blasta</li></ul>",
+     "text": "Kopta rockets (instead of twin big shoota)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "twin big shoota",
+     "group": "000002736-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Kustom mega-blasta (instead of twin big shoota)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "twin big shoota",
+     "group": "000002736-0",
      "model": "",
      "grants": [
       "Kustom mega-blasta"
@@ -6478,7 +6918,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s twin big shoota can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin grotzooka</li><li>1 twin kustom mega-blasta</li><li>1 twin rokkit launcha</li><li>1 twin skorcha</li></ul>",
+     "text": "Twin grotzooka (instead of twin big shoota)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6486,16 +6926,59 @@
       "max": 1
      },
      "base": "twin big shoota",
+     "group": "000000050-0",
      "model": "",
      "grants": [
-      "Twin grotzooka",
-      "Twin kustom mega-blasta",
-      "Twin rokkit launcha",
+      "Twin grotzooka"
+     ]
+    },
+    {
+     "text": "Twin kustom mega-blasta (instead of twin big shoota)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin big shoota",
+     "group": "000000050-0",
+     "model": "",
+     "grants": [
+      "Twin kustom mega-blasta"
+     ]
+    },
+    {
+     "text": "Twin rokkit launcha (instead of twin big shoota)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin big shoota",
+     "group": "000000050-0",
+     "model": "",
+     "grants": [
+      "Twin rokkit launcha"
+     ]
+    },
+    {
+     "text": "Twin skorcha (instead of twin big shoota)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin big shoota",
+     "group": "000000050-0",
+     "model": "",
+     "grants": [
       "Twin skorcha"
      ]
     },
     {
-     "text": "This model’s twin grotzooka can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 twin big shoota</li><li>1 twin kustom mega-blasta</li><li>1 twin rokkit launcha</li><li>1 twin skorcha</li></ul>",
+     "text": "Twin big shoota (instead of twin grotzooka)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6503,11 +6986,54 @@
       "max": 1
      },
      "base": "twin grotzooka",
+     "group": "000000050-1",
      "model": "",
      "grants": [
-      "Twin big shoota",
-      "Twin kustom mega-blasta",
-      "Twin rokkit launcha",
+      "Twin big shoota"
+     ]
+    },
+    {
+     "text": "Twin kustom mega-blasta (instead of twin grotzooka)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin grotzooka",
+     "group": "000000050-1",
+     "model": "",
+     "grants": [
+      "Twin kustom mega-blasta"
+     ]
+    },
+    {
+     "text": "Twin rokkit launcha (instead of twin grotzooka)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin grotzooka",
+     "group": "000000050-1",
+     "model": "",
+     "grants": [
+      "Twin rokkit launcha"
+     ]
+    },
+    {
+     "text": "Twin skorcha (instead of twin grotzooka)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "twin grotzooka",
+     "group": "000000050-1",
+     "model": "",
+     "grants": [
       "Twin skorcha"
      ]
     }
@@ -6674,18 +7200,58 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their big shoota replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 grotzooka</li><li>1 kustom mega-blasta</li><li>1 rokkit launcha</li><li>1 skorcha</li></ul>",
+     "text": "Grotzooka (instead of big shoota)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "big shoota",
+     "group": "000000049-0",
      "model": "",
      "grants": [
-      "Grotzooka",
-      "Kustom mega-blasta",
-      "Rokkit launcha",
+      "Grotzooka"
+     ]
+    },
+    {
+     "text": "Kustom mega-blasta (instead of big shoota)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "big shoota",
+     "group": "000000049-0",
+     "model": "",
+     "grants": [
+      "Kustom mega-blasta"
+     ]
+    },
+    {
+     "text": "Rokkit launcha (instead of big shoota)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "big shoota",
+     "group": "000000049-0",
+     "model": "",
+     "grants": [
+      "Rokkit launcha"
+     ]
+    },
+    {
+     "text": "Skorcha (instead of big shoota)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "big shoota",
+     "group": "000000049-0",
+     "model": "",
+     "grants": [
       "Skorcha"
      ]
     },
@@ -7848,17 +8414,44 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Each Killa Kan’s Kan shoota can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 grotzooka</li><li>1 rokkit launcha</li><li>1 skorcha</li></ul>",
+     "text": "Grotzooka (instead of kan shoota)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "kan shoota",
+     "group": "000000041-0",
      "model": "",
      "grants": [
-      "Grotzooka",
-      "Rokkit launcha",
+      "Grotzooka"
+     ]
+    },
+    {
+     "text": "Rokkit launcha (instead of kan shoota)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "kan shoota",
+     "group": "000000041-0",
+     "model": "",
+     "grants": [
+      "Rokkit launcha"
+     ]
+    },
+    {
+     "text": "Skorcha (instead of kan shoota)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "kan shoota",
+     "group": "000000041-0",
+     "model": "",
+     "grants": [
       "Skorcha"
      ]
     }
@@ -8093,7 +8686,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "The Boss Nob’s choppa can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 big choppa</li><li>1 power klaw</li></ul>",
+     "text": "Big choppa (instead of choppa)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -8101,9 +8694,24 @@
       "max": 1
      },
      "base": "choppa",
+     "group": "000000025-0",
      "model": "",
      "grants": [
-      "Big choppa",
+      "Big choppa"
+     ]
+    },
+    {
+     "text": "Power klaw (instead of choppa)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "choppa",
+     "group": "000000025-0",
+     "model": "",
+     "grants": [
       "Power klaw"
      ]
     },
@@ -8709,16 +9317,30 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of Spanners can each have their big shoota replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 kustom mega-blasta</li><li>1 rokkit launcha</li></ul>",
+     "text": "Kustom mega-blasta (instead of big shoota)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "big shoota",
+     "group": "000000044-0",
      "model": "",
      "grants": [
-      "Kustom mega-blasta",
+      "Kustom mega-blasta"
+     ]
+    },
+    {
+     "text": "Rokkit launcha (instead of big shoota)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "big shoota",
+     "group": "000000044-0",
+     "model": "",
+     "grants": [
       "Rokkit launcha"
      ]
     }
@@ -9024,7 +9646,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s killkannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dread killsaw</li><li>1 dread rippa klaw</li></ul>",
+     "text": "Dread killsaw (instead of killkannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9032,14 +9654,29 @@
       "max": 1
      },
      "base": "killkannon",
+     "group": "000002453-0",
      "model": "",
      "grants": [
-      "Dread killsaw",
+      "Dread killsaw"
+     ]
+    },
+    {
+     "text": "Dread rippa klaw (instead of killkannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "killkannon",
+     "group": "000002453-0",
+     "model": "",
+     "grants": [
       "Dread rippa klaw"
      ]
     },
     {
-     "text": "This model’s dread rippa klaw can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dread killsaw</li><li>1 killkannon</li></ul>",
+     "text": "Dread killsaw (instead of dread rippa klaw)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9047,10 +9684,25 @@
       "max": 1
      },
      "base": "dread rippa klaw",
+     "group": "000002453-1",
      "model": "",
      "grants": [
-      "Killkannon",
       "Dread killsaw"
+     ]
+    },
+    {
+     "text": "Killkannon (instead of dread rippa klaw)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "dread rippa klaw",
+     "group": "000002453-1",
+     "model": "",
+     "grants": [
+      "Killkannon"
      ]
     }
    ],
@@ -9247,16 +9899,81 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Any number of models can each have their kustom shoota and power klaw replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 kombi-weapon and 1 power klaw</li><li>1 kombi-weapon and 1 killsaw</li><li>1 kustom shoota and 1 killsaw</li><li>1 killsaw and 1 power klaw</li><li>1 twin killsaw</li></ul>",
+     "text": "Kombi-weapon and 1 power klaw (instead of kustom shoota and power klaw)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "kustom shoota and power klaw",
+     "group": "000000024-0",
      "model": "",
      "grants": [
       "Kombi-weapon",
+      "Kustom shoota",
+      "Power klaw"
+     ]
+    },
+    {
+     "text": "Kombi-weapon and 1 killsaw (instead of kustom shoota and power klaw)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "kustom shoota and power klaw",
+     "group": "000000024-0",
+     "model": "",
+     "grants": [
+      "Kombi-weapon",
+      "Kustom shoota",
+      "Killsaw",
+      "Power klaw"
+     ]
+    },
+    {
+     "text": "Kustom shoota and 1 killsaw (instead of kustom shoota and power klaw)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "kustom shoota and power klaw",
+     "group": "000000024-0",
+     "model": "",
+     "grants": [
+      "Kustom shoota",
+      "Killsaw",
+      "Power klaw"
+     ]
+    },
+    {
+     "text": "Killsaw and 1 power klaw (instead of kustom shoota and power klaw)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "kustom shoota and power klaw",
+     "group": "000000024-0",
+     "model": "",
+     "grants": [
+      "Kustom shoota",
+      "Killsaw",
+      "Power klaw"
+     ]
+    },
+    {
+     "text": "Twin killsaw (instead of kustom shoota and power klaw)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "kustom shoota and power klaw",
+     "group": "000000024-0",
+     "model": "",
+     "grants": [
       "Kustom shoota",
       "Killsaw",
       "Power klaw",
@@ -9743,16 +10460,42 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Each model’s smasha gun can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 bubblechukka</li><li>1 kustom mega-kannon</li><li>1 traktor kannon</li></ul>",
+     "text": "Bubblechukka (instead of smasha gun)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "smasha gun",
+     "group": "000000038-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Kustom mega-kannon (instead of smasha gun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "smasha gun",
+     "group": "000000038-0",
      "model": "",
      "grants": [
-      "Kustom mega-kannon",
+      "Kustom mega-kannon"
+     ]
+    },
+    {
+     "text": "Traktor kannon (instead of smasha gun)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "smasha gun",
+     "group": "000000038-0",
+     "model": "",
+     "grants": [
       "Traktor kannon"
      ]
     }
@@ -9895,7 +10638,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s killkannon can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dread killsaw</li><li>1 dread rippa klaw</li></ul>",
+     "text": "Dread killsaw (instead of killkannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9903,14 +10646,29 @@
       "max": 1
      },
      "base": "killkannon",
+     "group": "000000052-0",
      "model": "",
      "grants": [
-      "Dread killsaw",
+      "Dread killsaw"
+     ]
+    },
+    {
+     "text": "Dread rippa klaw (instead of killkannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "killkannon",
+     "group": "000000052-0",
+     "model": "",
+     "grants": [
       "Dread rippa klaw"
      ]
     },
     {
-     "text": "This model’s dread rippa klaw can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 dread killsaw</li><li>1 killkannon</li></ul>",
+     "text": "Dread killsaw (instead of dread rippa klaw)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9918,10 +10676,25 @@
       "max": 1
      },
      "base": "dread rippa klaw",
+     "group": "000000052-1",
      "model": "",
      "grants": [
-      "Killkannon",
       "Dread killsaw"
+     ]
+    },
+    {
+     "text": "Killkannon (instead of dread rippa klaw)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "dread rippa klaw",
+     "group": "000000052-1",
+     "model": "",
+     "grants": [
+      "Killkannon"
      ]
     }
    ],
@@ -10877,20 +11650,73 @@
      ]
     },
     {
-     "text": "Any number of models can each have their choppa replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 big choppa</li><li>1 killsaw</li><li>1 power klaw</li><li>1 power stabba</li><li>1 slugga</li></ul>",
+     "text": "Big choppa (instead of choppa)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
      "base": "choppa",
+     "group": "000000023-1",
      "model": "",
      "grants": [
-      "Slugga",
-      "Big choppa",
-      "Killsaw",
-      "Power klaw",
+      "Big choppa"
+     ]
+    },
+    {
+     "text": "Killsaw (instead of choppa)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "choppa",
+     "group": "000000023-1",
+     "model": "",
+     "grants": [
+      "Killsaw"
+     ]
+    },
+    {
+     "text": "Power klaw (instead of choppa)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "choppa",
+     "group": "000000023-1",
+     "model": "",
+     "grants": [
+      "Power klaw"
+     ]
+    },
+    {
+     "text": "Power stabba (instead of choppa)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "choppa",
+     "group": "000000023-1",
+     "model": "",
+     "grants": [
       "Power stabba"
+     ]
+    },
+    {
+     "text": "Slugga (instead of choppa)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "choppa",
+     "group": "000000023-1",
+     "model": "",
+     "grants": [
+      "Slugga"
      ]
     }
    ],
@@ -13493,7 +14319,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s killsaw can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 big choppa</li><li>1 power klaw</li></ul>",
+     "text": "Big choppa (instead of killsaw)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -13501,9 +14327,24 @@
       "max": 1
      },
      "base": "killsaw",
+     "group": "000000003-0",
      "model": "",
      "grants": [
-      "Big choppa",
+      "Big choppa"
+     ]
+    },
+    {
+     "text": "Power klaw (instead of killsaw)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "killsaw",
+     "group": "000000003-0",
+     "model": "",
+     "grants": [
       "Power klaw"
      ]
     }

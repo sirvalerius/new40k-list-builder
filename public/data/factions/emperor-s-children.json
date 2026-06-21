@@ -655,7 +655,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "1 Chaos Terminator’s combi-bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer</li><li>1 reaper autocannon</li></ul>",
+     "text": "Heavy flamer (instead of combi-bolter)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -663,9 +663,24 @@
       "max": 1
      },
      "base": "combi-bolter",
+     "group": "000004081-0",
      "model": "",
      "grants": [
-      "Heavy flamer",
+      "Heavy flamer"
+     ]
+    },
+    {
+     "text": "Reaper autocannon (instead of combi-bolter)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "combi-bolter",
+     "group": "000004081-0",
+     "model": "",
+     "grants": [
       "Reaper autocannon"
      ]
     },
@@ -1422,7 +1437,7 @@
      ]
     },
     {
-     "text": "This model’s heavy baleflamer can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
+     "text": "Hades lascannon (instead of heavy baleflamer)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1430,15 +1445,44 @@
       "max": 1
      },
      "base": "heavy baleflamer",
+     "group": "000004208-2",
      "model": "",
      "grants": [
-      "Hades lascannon",
-      "Heavy reaper autocannon",
+      "Hades lascannon"
+     ]
+    },
+    {
+     "text": "Heavy reaper autocannon (instead of heavy baleflamer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy baleflamer",
+     "group": "000004208-2",
+     "model": "",
+     "grants": [
+      "Heavy reaper autocannon"
+     ]
+    },
+    {
+     "text": "Electroscourge (a model cannot be equipped with more than one electroscourge) (instead of heavy baleflamer)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy baleflamer",
+     "group": "000004208-2",
+     "model": "",
+     "grants": [
       "Electroscourge"
      ]
     },
     {
-     "text": " This model’s heavy missile launcher can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 Hades lascannon</li><li>1 heavy reaper autocannon</li><li>1 electroscourge (a model cannot be equipped with more than one electroscourge)</li></ul>",
+     "text": "Hades lascannon (instead of heavy missile launcher)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -1446,10 +1490,39 @@
       "max": 1
      },
      "base": "heavy missile launcher",
+     "group": "000004208-3",
      "model": "",
      "grants": [
-      "Hades lascannon",
-      "Heavy reaper autocannon",
+      "Hades lascannon"
+     ]
+    },
+    {
+     "text": "Heavy reaper autocannon (instead of heavy missile launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy missile launcher",
+     "group": "000004208-3",
+     "model": "",
+     "grants": [
+      "Heavy reaper autocannon"
+     ]
+    },
+    {
+     "text": "Electroscourge (a model cannot be equipped with more than one electroscourge) (instead of heavy missile launcher)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "heavy missile launcher",
+     "group": "000004208-3",
+     "model": "",
+     "grants": [
       "Electroscourge"
      ]
     }
@@ -2613,7 +2686,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s plasma pistol can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 power fist</li><li>1 rapture lash</li></ul>",
+     "text": "Power fist (instead of plasma pistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2621,14 +2694,29 @@
       "max": 1
      },
      "base": "plasma pistol",
+     "group": "000004078-0",
      "model": "",
      "grants": [
-      "Power fist",
+      "Power fist"
+     ]
+    },
+    {
+     "text": "Rapture lash (instead of plasma pistol)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "plasma pistol",
+     "group": "000004078-0",
+     "model": "",
+     "grants": [
       "Rapture lash"
      ]
     },
     {
-     "text": "This model’s Phoenix power spear can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 master-crafted power sword</li><li>1 screamer pistol</li></ul>",
+     "text": "Master-crafted power sword (instead of phoenix power spear)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2636,10 +2724,25 @@
       "max": 1
      },
      "base": "phoenix power spear",
+     "group": "000004078-1",
      "model": "",
      "grants": [
-      "Screamer pistol",
       "Master-crafted power sword"
+     ]
+    },
+    {
+     "text": "Screamer pistol (instead of phoenix power spear)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "phoenix power spear",
+     "group": "000004078-1",
+     "model": "",
+     "grants": [
+      "Screamer pistol"
      ]
     }
    ],

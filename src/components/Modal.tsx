@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { createPortal } from 'react-dom';
 
 export function Modal({
   title,
@@ -11,7 +12,10 @@ export function Modal({
   children: ReactNode;
   footer?: ReactNode;
 }) {
-  return (
+  // Render at <body> so the fixed-position backdrop is relative to the viewport.
+  // (A `backdrop-filter` ancestor — e.g. the topbar — would otherwise become the
+  // containing block and push the modal off-centre / above the page.)
+  return createPortal(
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <div className="row mb">
@@ -23,6 +27,7 @@ export function Modal({
         {children}
         {footer && <div className="mt">{footer}</div>}
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

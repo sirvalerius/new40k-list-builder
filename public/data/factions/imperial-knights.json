@@ -345,7 +345,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s 2 Acastus autocannons can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>2 lascannons</li><li>1 Acastus autocannon and 1 lascannon</li></ul>",
+     "text": "Lascannons (instead of 2 acastus autocannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -353,6 +353,23 @@
       "max": 1
      },
      "base": "2 acastus autocannons",
+     "group": "000000860-0",
+     "model": "",
+     "grants": [
+      "Acastus autocannon",
+      "Lascannon"
+     ]
+    },
+    {
+     "text": "Acastus autocannon and 1 lascannon (instead of 2 acastus autocannons)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "2 acastus autocannons",
+     "group": "000000860-0",
      "model": "",
      "grants": [
       "Acastus autocannon",
@@ -702,7 +719,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s volkite veuglaire can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 siege claw and 1 rad cleanser</li><li>1 graviton pulsar</li><li>1 lightning lock</li><li>1 conversion beam cannon</li></ul>",
+     "text": "Siege claw and 1 rad cleanser (instead of volkite veuglaire)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -710,17 +727,60 @@
       "max": 1
      },
      "base": "volkite veuglaire",
+     "group": "000002769-0",
      "model": "",
      "grants": [
-      "Conversion beam cannon",
-      "Graviton pulsar",
-      "Lightning lock",
       "Rad cleanser",
       "Siege claw"
      ]
     },
     {
-     "text": "This model’s graviton pulsar can be replaced with one of the following;<ul style=\"list-style-type:circle\"><li>1 siege claw and 1 rad cleanser</li><li>1 lightning lock</li><li>1 conversion beam cannon</li><li>1 volkite veuglaire</li></ul>",
+     "text": "Graviton pulsar (instead of volkite veuglaire)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "volkite veuglaire",
+     "group": "000002769-0",
+     "model": "",
+     "grants": [
+      "Graviton pulsar"
+     ]
+    },
+    {
+     "text": "Lightning lock (instead of volkite veuglaire)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "volkite veuglaire",
+     "group": "000002769-0",
+     "model": "",
+     "grants": [
+      "Lightning lock"
+     ]
+    },
+    {
+     "text": "Conversion beam cannon (instead of volkite veuglaire)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "volkite veuglaire",
+     "group": "000002769-0",
+     "model": "",
+     "grants": [
+      "Conversion beam cannon"
+     ]
+    },
+    {
+     "text": "Siege claw and 1 rad cleanser (instead of graviton pulsar)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -728,13 +788,56 @@
       "max": 1
      },
      "base": "graviton pulsar",
+     "group": "000002769-1",
      "model": "",
      "grants": [
-      "Conversion beam cannon",
-      "Lightning lock",
       "Rad cleanser",
-      "Volkite veuglaire",
       "Siege claw"
+     ]
+    },
+    {
+     "text": "Lightning lock (instead of graviton pulsar)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "graviton pulsar",
+     "group": "000002769-1",
+     "model": "",
+     "grants": [
+      "Lightning lock"
+     ]
+    },
+    {
+     "text": "Conversion beam cannon (instead of graviton pulsar)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "graviton pulsar",
+     "group": "000002769-1",
+     "model": "",
+     "grants": [
+      "Conversion beam cannon"
+     ]
+    },
+    {
+     "text": "Volkite veuglaire (instead of graviton pulsar)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "graviton pulsar",
+     "group": "000002769-1",
+     "model": "",
+     "grants": [
+      "Volkite veuglaire"
      ]
     }
    ],
@@ -2583,7 +2686,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s chastiser gatling cannon can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 bellatus reaper chainsword*</li><li>1 thundershock spear*</li></ul>",
+     "text": "Bellatus reaper chainsword* (instead of chastiser gatling cannon)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2591,11 +2694,25 @@
       "max": 1
      },
      "base": "chastiser gatling cannon",
+     "group": "000004213-0",
      "model": "",
      "grants": []
     },
     {
-     "text": "This model’s frag bombard can be replaced with one of the following:<br><ul style=\"list-style-type:circle\"><li>1 bellatus reaper chainsword*</li><li>1 thundershock spear*</li></ul>",
+     "text": "Thundershock spear* (instead of chastiser gatling cannon)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "chastiser gatling cannon",
+     "group": "000004213-0",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Bellatus reaper chainsword* (instead of frag bombard)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -2603,6 +2720,20 @@
       "max": 1
      },
      "base": "frag bombard",
+     "group": "000004213-1",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Thundershock spear* (instead of frag bombard)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "frag bombard",
+     "group": "000004213-1",
      "model": "",
      "grants": []
     },
@@ -3638,7 +3769,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s Questoris multi-laser can be replaced with one of the following<ul style=\"list-style-type:circle\"><li>1 meltagun</li><li>1 Questoris heavy stubber</li></ul>",
+     "text": "Meltagun (instead of questoris multi-laser)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -3646,9 +3777,24 @@
       "max": 1
      },
      "base": "questoris multi-laser",
+     "group": "000001483-0",
      "model": "",
      "grants": [
-      "Meltagun",
+      "Meltagun"
+     ]
+    },
+    {
+     "text": "Questoris heavy stubber (instead of questoris multi-laser)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 1
+     },
+     "base": "questoris multi-laser",
+     "group": "000001483-0",
+     "model": "",
+     "grants": [
       "Questoris heavy stubber"
      ]
     },

@@ -21,6 +21,8 @@ export default function App() {
 
   // Autosave debounce timer.
   const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // Latest edited list, so a bug report can attach the current list as context.
+  const currentList = useRef<ArmyList | null>(null);
 
   useEffect(() => {
     Promise.all([loadRules(), loadIndex()])
@@ -37,6 +39,7 @@ export default function App() {
   );
 
   const onListChange = useCallback((l: ArmyList) => {
+    currentList.current = l;
     if (saveTimer.current) clearTimeout(saveTimer.current);
     saveTimer.current = setTimeout(() => {
       saveList(l).catch(() => {});
@@ -45,11 +48,15 @@ export default function App() {
 
   async function openList(id: string) {
     const l = await getList(id);
-    if (l) setView({ kind: 'builder', list: l });
+    if (l) {
+      currentList.current = l;
+      setView({ kind: 'builder', list: l });
+    }
   }
 
   function createList(factionId: string, battleSizeId: string, name: string) {
     const l = emptyList(factionId, battleSizeId, name);
+    currentList.current = l;
     saveList(l).catch(() => {});
     setView({ kind: 'builder', list: l });
   }
@@ -96,7 +103,10 @@ export default function App() {
           <button
             className="ghost iconbtn"
             aria-label="Back"
-            onClick={() => setView({ kind: 'home' })}
+            onClick={() => {
+              currentList.current = null;
+              setView({ kind: 'home' });
+            }}
           >
             ←
           </button>
@@ -105,7 +115,10 @@ export default function App() {
           {title}
           <small>{subtitle}</small>
         </div>
-        <FeedbackButton context={`${title} — ${subtitle}`} />
+        <FeedbackButton
+          context={`${title} — ${subtitle}`}
+          getList={() => currentList.current}
+        />
       </header>
 
       <main className="content">
