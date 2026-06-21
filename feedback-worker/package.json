@@ -1,0 +1,13 @@
+{
+  "name": "new40k-feedback-worker",
+  "private": true,
+  "scripts": {
+    "login": "wrangler login",
+    "set-token": "wrangler secret put GITHUB_TOKEN",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^3.99.0"
+  }
+}

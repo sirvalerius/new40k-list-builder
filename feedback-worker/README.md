@@ -15,10 +15,10 @@ static site never exposes it and testers can submit anonymously.
 2. **Deploy the Worker** (needs a free Cloudflare account):
    ```bash
    cd feedback-worker
-   npm install -g wrangler        # or: npx wrangler ...
-   wrangler login                 # opens the browser once
-   wrangler secret put GITHUB_TOKEN   # paste the token from step 1
-   wrangler deploy
+   npm install
+   npm run login        # opens the browser, log in to Cloudflare (once)
+   npm run set-token    # paste the token from step 1
+   npm run deploy
    ```
    Wrangler prints the Worker URL, e.g. `https://new40k-feedback.<you>.workers.dev`.
 
