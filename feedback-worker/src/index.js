@@ -33,8 +33,9 @@ export default {
     const repo = env.GITHUB_REPO;
     const file = env.FEEDBACK_FILE || 'FEEDBACK.md';
     const api = `https://api.github.com/repos/${repo}/contents/${encodeURIComponent(file)}`;
+    const token = String(env.GITHUB_TOKEN || '').trim().replace(/^["'`]+|["'`]+$/g, '').trim();
     const gh = {
-      Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+      Authorization: `Bearer ${token}`,
       Accept: 'application/vnd.github+json',
       'User-Agent': 'new40k-feedback-worker',
     };
