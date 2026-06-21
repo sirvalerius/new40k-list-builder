@@ -47,6 +47,33 @@ h1, h2, h3, .topbar .title, .bunker-title {
   letter-spacing: 0.02em;
 }
 
+/* --- interaction & accessibility polish (impeccable checklist) --- */
+/* visible keyboard focus everywhere (gold ring) without showing it on mouse clicks */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 2px;
+}
+@media (hover: hover) {
+  button.ghost:hover,
+  button.small:hover { border-color: var(--border-gold); }
+  .card.tappable:hover { border-color: #3a4150; }
+  .tabs button:not(.active):hover { border-color: var(--border-gold); color: var(--bone); }
+  .star:hover { color: #e8c450; }
+}
+input:focus, select:focus, textarea:focus, .fb-text:focus {
+  outline: none;
+  border-color: var(--accent-2);
+  box-shadow: 0 0 0 2px rgba(201, 164, 58, 0.18);
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 button {
   font: inherit;
   color: inherit;
