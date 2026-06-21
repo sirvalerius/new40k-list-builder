@@ -444,6 +444,12 @@ function WeaponOptionsEditor({
           if (provCap != null) max = Math.min(max ?? Infinity, provCap);
           const needsModel = provCap === 0 ? titleCase(provModel!) : '';
           const q = Math.min(qtyOf(o.text), max ?? Infinity);
+          // Render as a checkbox when the option is intrinsically single-pick (its own limit
+          // is 1), regardless of how the shared pool has shrunk its current allowance — so a
+          // checkbox stays a checkbox (greyed) instead of becoming a "− 0 +" stepper.
+          const isCheckbox = rawMax === 1;
+          // Unavailable = nothing chosen and no remaining allowance (pool/sub-model used up).
+          const unavailable = q === 0 && (max ?? Infinity) <= 0;
           const limLabel = needsModel
             ? `richiede ${needsModel}`
             : o.limit?.kind === 'per_n'
@@ -454,7 +460,11 @@ function WeaponOptionsEditor({
                   ? `max ${max}`
                   : '';
           return (
-            <li className="row" key={i} style={{ gap: 8, alignItems: 'flex-start' }}>
+            <li
+              className="row"
+              key={i}
+              style={{ gap: 8, alignItems: 'flex-start', opacity: unavailable ? 0.45 : 1 }}
+            >
               <div style={{ flex: 1 }} className="small">
                 {stripHtml(o.text)}{' '}
                 {o.cost > 0 ? (
@@ -464,11 +474,12 @@ function WeaponOptionsEditor({
                 )}
                 {limLabel ? <span className="muted tiny"> · {limLabel}</span> : ''}
               </div>
-              {max === 1 ? (
+              {isCheckbox ? (
                 <input
                   type="checkbox"
                   className="opt-check"
                   checked={q === 1}
+                  disabled={unavailable}
                   onChange={(e) => setQty(o, e.target.checked ? 1 : 0)}
                 />
               ) : (
