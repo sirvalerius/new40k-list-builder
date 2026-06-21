@@ -45,7 +45,9 @@ body {
 h1, h2, h3, .topbar .title, .bunker-title {
   font-family: var(--font-display);
   letter-spacing: 0.02em;
+  text-wrap: balance;
 }
+.desc, .empty, p { text-wrap: pretty; }
 
 /* --- interaction & accessibility polish (impeccable checklist) --- */
 /* visible keyboard focus everywhere (gold ring) without showing it on mouse clicks */
