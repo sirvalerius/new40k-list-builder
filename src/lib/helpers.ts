@@ -267,6 +267,33 @@ export function emptyList(
   };
 }
 
+// ----- favourites (persisted in localStorage, keyed by kind: 'det' | 'ds') -----
+const FAV_KEY = 'new40k:favorites';
+function readFavs(): Record<string, string[]> {
+  try {
+    const v = JSON.parse(localStorage.getItem(FAV_KEY) || '{}');
+    return v && typeof v === 'object' ? v : {};
+  } catch {
+    return {};
+  }
+}
+export function getFavorites(kind: string): string[] {
+  return readFavs()[kind] ?? [];
+}
+export function toggleFavorite(kind: string, id: string): string[] {
+  const all = readFavs();
+  const cur = new Set(all[kind] ?? []);
+  if (cur.has(id)) cur.delete(id);
+  else cur.add(id);
+  all[kind] = [...cur];
+  try {
+    localStorage.setItem(FAV_KEY, JSON.stringify(all));
+  } catch {
+    /* ignore quota / private mode */
+  }
+  return all[kind];
+}
+
 /** Count current copies of a datasheet (for Rule-of-Three UI affordances). */
 export function copiesOf(list: ArmyList, datasheetId: string): number {
   return list.units.filter((u) => u.datasheetId === datasheetId).length;
@@ -324,11 +351,38 @@ export function stratagemAppliesTo(
   vocab: string[],
 ): boolean {
   const text = stripHtml(description).toUpperCase();
-  const target = (text.match(/TARGET:?\s*([\s\S]*?)(?:EFFECT:|WHEN:|RESTRICTIONS:|$)/)?.[1] ?? text);
+  let target = text.match(/TARGET:?\s*([\s\S]*?)(?:EFFECT:|WHEN:|RESTRICTIONS:|$)/)?.[1] ?? text;
+  // drop exclusion clauses so "excluding TERMINATOR" isn't read as a requirement
+  target = target.split(/EXCLUDING|OTHER THAN|THAT IS NOT|THAT ARE NOT|CANNOT/)[0];
   const kws = new Set(unitKeywords.map((k) => k.toUpperCase()));
-  const mentioned = vocab.filter((v) => v && target.includes(v.toUpperCase()));
-  if (!mentioned.length) return true; // no unit-type constraint -> general
-  return mentioned.some((v) => kws.has(v.toUpperCase()));
+
+  // Locate the keyword constraints in the target, longest-first so multi-word keywords
+  // ("ADEPTUS ASTARTES") match before their fragments and don't double-count.
+  const up = [...new Set(vocab.map((v) => v.toUpperCase()).filter((v) => v.length >= 3))].sort(
+    (a, b) => b.length - a.length,
+  );
+  const taken = new Array(target.length).fill(false);
+  const hits: { kw: string; start: number; end: number }[] = [];
+  for (const v of up) {
+    for (let i = target.indexOf(v); i !== -1; i = target.indexOf(v, i + 1)) {
+      if (taken.slice(i, i + v.length).some(Boolean)) continue;
+      hits.push({ kw: v, start: i, end: i + v.length });
+      for (let j = i; j < i + v.length; j++) taken[j] = true;
+    }
+  }
+  if (!hits.length) return true; // no unit-type constraint -> general
+  hits.sort((a, b) => a.start - b.start);
+
+  // Group the keywords: adjacency = AND (new group); "/", "," or "or" between them = OR
+  // (same group). A unit qualifies if EVERY AND-group holds at least one of its keywords —
+  // so "VEHICLE FLY" needs both, while "MONSTER/VEHICLE" needs either.
+  const groups: string[][] = [[hits[0].kw]];
+  for (let k = 1; k < hits.length; k++) {
+    const gap = target.slice(hits[k - 1].end, hits[k].start);
+    if (/[/,]|(^|\W)OR(\W|$)/.test(gap)) groups[groups.length - 1].push(hits[k].kw);
+    else groups.push([hits[k].kw]);
+  }
+  return groups.every((g) => g.some((kw) => kws.has(kw)));
 }
 
 /**

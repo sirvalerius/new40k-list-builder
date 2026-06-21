@@ -391,6 +391,51 @@ h3 { font-size: 0.98rem; }
 .strat .desc { margin-top: 4px; }
 
 /* feedback form textarea */
+/* favourites star + selected-detachment highlight */
+.star { min-width: 34px; width: 34px; height: 34px; font-size: 18px; color: var(--accent-2); padding: 0; }
+.card.det-selected { border-color: var(--accent); background: #1b1417; }
+.fav-head {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  margin: 6px 0 4px;
+}
+
+/* weapon stat table */
+.wpn-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.wpn-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+}
+.wpn-table th,
+.wpn-table td {
+  padding: 4px 6px;
+  text-align: center;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border);
+}
+.wpn-table th {
+  color: var(--text-dim);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+.wpn-table .wname { text-align: left; white-space: normal; font-weight: 600; }
+.wpn-table thead th { border-bottom: 1px solid var(--border); }
+.wpn-table .wpn-desc td {
+  text-align: left;
+  color: var(--text-dim);
+  font-size: 0.72rem;
+  padding-top: 0;
+  padding-bottom: 6px;
+  white-space: normal;
+  border-bottom: 1px solid var(--border);
+}
+
 .fb-text {
   font: inherit;
   color: var(--text);

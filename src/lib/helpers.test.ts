@@ -214,20 +214,32 @@ describe('Leader/Support attachment', () => {
   });
 });
 
-describe('stratagemAppliesTo (best-effort by keyword)', () => {
-  const vocab = ['ADEPTUS ASTARTES', 'INFANTRY', 'VEHICLE', 'TERMINATOR'];
-  it('applies when the unit shares a named target keyword', () => {
-    const s = 'WHEN: Your turn. TARGET: One ADEPTUS ASTARTES INFANTRY unit. EFFECT: +1.';
+describe('stratagemAppliesTo (keyword AND/OR matching)', () => {
+  const vocab = ['ADEPTUS ASTARTES', 'INFANTRY', 'VEHICLE', 'TERMINATOR', 'FLY', 'PSYKER', 'MONSTER'];
+  it('adjacent keywords are AND (needs all)', () => {
+    const s = 'TARGET: One ADEPTUS ASTARTES INFANTRY unit. EFFECT: +1.';
     expect(stratagemAppliesTo(s, ['ADEPTUS ASTARTES', 'INFANTRY'], vocab)).toBe(true);
-    expect(stratagemAppliesTo(s, ['ADEPTUS ASTARTES', 'VEHICLE'], vocab)).toBe(true); // shares ADEPTUS ASTARTES
+    // an Adeptus Astartes VEHICLE is not INFANTRY -> excluded
+    expect(stratagemAppliesTo(s, ['ADEPTUS ASTARTES', 'VEHICLE'], vocab)).toBe(false);
   });
-  it('excludes when the target names only keywords the unit lacks', () => {
-    const s = 'TARGET: One TERMINATOR unit. EFFECT: x.';
-    expect(stratagemAppliesTo(s, ['ADEPTUS ASTARTES', 'INFANTRY'], vocab)).toBe(false);
+  it('"VEHICLE FLY" needs both keywords', () => {
+    const s = 'TARGET: One VEHICLE FLY unit. EFFECT: x.';
+    expect(stratagemAppliesTo(s, ['VEHICLE', 'FLY'], vocab)).toBe(true);
+    expect(stratagemAppliesTo(s, ['VEHICLE'], vocab)).toBe(false); // grounded vehicle
   });
-  it('treats a stratagem with no unit-type keyword as general', () => {
-    const s = 'WHEN: Any. TARGET: One unit from your army. EFFECT: y.';
-    expect(stratagemAppliesTo(s, ['VEHICLE'], vocab)).toBe(true);
+  it('"MONSTER/VEHICLE" or "MONSTER or VEHICLE" needs either', () => {
+    expect(stratagemAppliesTo('TARGET: One MONSTER/VEHICLE unit.', ['VEHICLE'], vocab)).toBe(true);
+    expect(stratagemAppliesTo('TARGET: One MONSTER or VEHICLE unit.', ['MONSTER'], vocab)).toBe(true);
+    expect(stratagemAppliesTo('TARGET: One MONSTER/VEHICLE unit.', ['INFANTRY'], vocab)).toBe(false);
+  });
+  it('PSYKER requirement excludes non-psykers', () => {
+    const s = 'TARGET: One friendly PSYKER unit. EFFECT: cast.';
+    expect(stratagemAppliesTo(s, ['INFANTRY', 'PSYKER'], vocab)).toBe(true);
+    expect(stratagemAppliesTo(s, ['INFANTRY'], vocab)).toBe(false);
+  });
+  it('ignores "excluding" clauses and treats keyword-free targets as general', () => {
+    expect(stratagemAppliesTo('TARGET: One ADEPTUS ASTARTES unit (excluding TERMINATOR).', ['ADEPTUS ASTARTES'], vocab)).toBe(true);
+    expect(stratagemAppliesTo('TARGET: One unit from your army.', ['VEHICLE'], vocab)).toBe(true);
   });
 });
 

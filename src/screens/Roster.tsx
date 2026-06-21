@@ -17,10 +17,12 @@ import {
   bracketForCount,
   copiesOf,
   eligibleBodyguards,
+  getFavorites,
   intOf,
   optionMax,
   stripHtml,
   tierForPick,
+  toggleFavorite,
   unitGroup,
   unitTotal,
   unitVariants,
@@ -63,6 +65,7 @@ export function Roster({
   const [browsing, setBrowsing] = useState(false);
   const [adding, setAdding] = useState<Datasheet | null>(null);
   const [hideLegends, setHideLegends] = useState(true); // Legends hidden by default
+  const [favs, setFavs] = useState<string[]>(() => getFavorites('ds'));
 
   const dsById = useMemo(
     () => new Map(fd.datasheets.map((d) => [d.id, d])),
@@ -281,62 +284,77 @@ export function Roster({
             />
             <span className="small">Nascondi unità Legends</span>
           </label>
-          {ROLE_ORDER.map((bucket) => {
-            const inBucket = filtered.filter((d) => {
-              if (bucket === 'Epic Hero') return d.is_epic_hero;
-              if (bucket === 'Character') return d.is_character && !d.is_epic_hero;
-              if (bucket === 'Battleline')
-                return d.is_battleline && !d.is_character;
-              if (bucket === 'Infantry')
-                return (
-                  !d.is_character &&
-                  !d.is_battleline &&
-                  d.keywords.includes('Infantry')
-                );
+          {(() => {
+            const favSet = new Set(favs);
+            const renderRow = (d: Datasheet) => {
+              const have = copiesOf(list, d.id);
+              const lim = d.is_battleline ? blLimit : unitLimit;
+              const atLimit = lim > 0 && have >= lim;
+              const heroBlocked = d.is_epic_hero && have >= 1;
+              const fav = favSet.has(d.id);
               return (
-                !d.is_character &&
-                !d.is_battleline &&
-                !d.keywords.includes('Infantry')
+                <div key={d.id} className="row" style={{ gap: 6, alignItems: 'stretch' }}>
+                  <button
+                    className="ghost iconbtn star"
+                    aria-label="Preferito"
+                    onClick={() => setFavs(toggleFavorite('ds', d.id))}
+                  >
+                    {fav ? '★' : '☆'}
+                  </button>
+                  <button
+                    className="card tappable ghost list-tile"
+                    style={{ textAlign: 'left', height: 'auto', padding: 10, flex: 1 }}
+                    onClick={() => {
+                      setAdding(d);
+                      setBrowsing(false);
+                    }}
+                  >
+                    <div className="meta">
+                      <div className="name">{d.name}</div>
+                      <div className="muted tiny">
+                        {d.points[0]
+                          ? `from ${intOf(d.points[0].cost)} pts`
+                          : 'no points'}
+                        {have > 0 ? ` · ${have} in list` : ''}
+                        {atLimit || heroBlocked ? ' · at limit' : ''}
+                      </div>
+                    </div>
+                    <span aria-hidden>＋</span>
+                  </button>
+                </div>
               );
-            });
-            if (!inBucket.length) return null;
+            };
+            const favRows = filtered.filter((d) => favSet.has(d.id));
             return (
-              <div key={bucket} className="mb">
-                <h3 className="muted">{bucket}</h3>
-                <div className="col" style={{ gap: 6 }}>
-                  {inBucket.map((d) => {
-                    const have = copiesOf(list, d.id);
-                    const lim = d.is_battleline ? blLimit : unitLimit;
-                    const atLimit = lim > 0 && have >= lim;
-                    const heroBlocked = d.is_epic_hero && have >= 1;
-                    return (
-                      <button
-                        key={d.id}
-                        className="card tappable ghost list-tile"
-                        style={{ textAlign: 'left', height: 'auto', padding: 10 }}
-                        onClick={() => {
-                          setAdding(d);
-                          setBrowsing(false);
-                        }}
-                      >
-                        <div className="meta">
-                          <div className="name">{d.name}</div>
-                          <div className="muted tiny">
-                            {d.points[0]
-                              ? `from ${intOf(d.points[0].cost)} pts`
-                              : 'no points'}
-                            {have > 0 ? ` · ${have} in list` : ''}
-                            {atLimit || heroBlocked ? ' · at limit' : ''}
-                          </div>
-                        </div>
-                        <span aria-hidden>＋</span>
-                      </button>
-                    );
-                  })}
+              <>
+                {favRows.length > 0 && (
+                  <div className="mb">
+                    <h3 className="muted">★ Preferiti</h3>
+                    <div className="col" style={{ gap: 6 }}>{favRows.map(renderRow)}</div>
+                  </div>
+                )}
+                {ROLE_ORDER.map((bucket) => {
+                  const inBucket = filtered.filter((d) => {
+                    if (bucket === 'Epic Hero') return d.is_epic_hero;
+                    if (bucket === 'Character') return d.is_character && !d.is_epic_hero;
+                    if (bucket === 'Battleline') return d.is_battleline && !d.is_character;
+                    if (bucket === 'Infantry')
+                      return !d.is_character && !d.is_battleline && d.keywords.includes('Infantry');
+                    return !d.is_character && !d.is_battleline && !d.keywords.includes('Infantry');
+                  });
+                  if (!inBucket.length) return null;
+                  return (
+                    <div key={bucket} className="mb">
+                      <h3 className="muted">{bucket}</h3>
+                      <div className="col" style={{ gap: 6 }}>
+                        {inBucket.map(renderRow)}
                 </div>
               </div>
             );
-          })}
+                })}
+              </>
+            );
+          })()}
           {filtered.length === 0 && <div className="empty">No match.</div>}
         </Modal>
       )}

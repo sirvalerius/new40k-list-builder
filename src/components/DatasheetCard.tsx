@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import type { ChosenWargear, Datasheet } from '../lib/types';
 import { StatLine } from './StatLine';
 import { Collapsible } from './Collapsible';
@@ -36,27 +37,46 @@ export function DatasheetCard({ ds, selected }: { ds: Datasheet; selected?: Chos
 
       {weapons.length > 0 && (
         <Collapsible title={`Weapons (${weapons.length})`}>
-          <div className="col" style={{ gap: 6 }}>
-            {weapons.map((w, i) => {
-              const skill = w.type === 'Ranged' ? 'BS' : 'WS';
-              // BS_WS holds a target number (e.g. "3" -> "3+"); "N/A" for torrent/auto-hit.
-              const sk = /^\d+$/.test(String(w.BS_WS).trim())
-                ? `${skill} ${w.BS_WS}+`
-                : `${skill} ${w.BS_WS}`;
-              return (
-                <div key={i} className="small">
-                  <b>{w.name}</b>{' '}
-                  <span className="muted">
-                    [{w.type}
-                    {w.range && w.range !== 'Melee' ? ` ${w.range}"` : ''}] A{w.A} · {sk} ·
-                    S{w.S} · AP{w.AP} · D{w.D}
-                  </span>
-                  {w.description && (
-                    <span className="muted"> — {stripHtml(w.description)}</span>
-                  )}
-                </div>
-              );
-            })}
+          <div className="wpn-scroll">
+            <table className="wpn-table">
+              <thead>
+                <tr>
+                  <th className="wname">Weapon</th>
+                  <th>Range</th>
+                  <th>A</th>
+                  <th>BS/WS</th>
+                  <th>S</th>
+                  <th>AP</th>
+                  <th>D</th>
+                </tr>
+              </thead>
+              <tbody>
+                {weapons.map((w, i) => {
+                  const num = /^\d+$/.test(String(w.BS_WS).trim());
+                  const sk = num ? `${w.BS_WS}+` : w.BS_WS;
+                  const range = w.range && w.range !== 'Melee' ? `${w.range}"` : 'Melee';
+                  const desc = w.description ? stripHtml(w.description) : '';
+                  return (
+                    <Fragment key={i}>
+                      <tr>
+                        <td className="wname">{w.name}</td>
+                        <td>{range}</td>
+                        <td>{w.A}</td>
+                        <td>{sk}</td>
+                        <td>{w.S}</td>
+                        <td>{w.AP}</td>
+                        <td>{w.D}</td>
+                      </tr>
+                      {desc && (
+                        <tr className="wpn-desc">
+                          <td colSpan={7}>{desc}</td>
+                        </tr>
+                      )}
+                    </Fragment>
+                  );
+                })}
+              </tbody>
+            </table>
           </div>
         </Collapsible>
       )}
