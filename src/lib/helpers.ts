@@ -351,16 +351,25 @@ export function stratagemAppliesTo(
   vocab: string[],
 ): boolean {
   const text = stripHtml(description).toUpperCase();
-  let target = text.match(/TARGET:?\s*([\s\S]*?)(?:EFFECT:|WHEN:|RESTRICTIONS:|$)/)?.[1] ?? text;
-  // drop exclusion clauses so "excluding TERMINATOR" isn't read as a requirement
-  target = target.split(/EXCLUDING|OTHER THAN|THAT IS NOT|THAT ARE NOT|CANNOT/)[0];
   const kws = new Set(unitKeywords.map((k) => k.toUpperCase()));
-
-  // Locate the keyword constraints in the target, longest-first so multi-word keywords
-  // ("ADEPTUS ASTARTES") match before their fragments and don't double-count.
+  // vocab keywords, longest-first so multi-word ones ("ADEPTUS ASTARTES") match before fragments
   const up = [...new Set(vocab.map((v) => v.toUpperCase()).filter((v) => v.length >= 3))].sort(
     (a, b) => b.length - a.length,
   );
+
+  // Exclusion clauses anywhere in the rule ("excluding X", "cannot select an X", "other than
+  // X"): a unit holding an excluded keyword is never a legal target — e.g. Rapid Ingress
+  // "cannot select an Aircraft" must not appear on AIRCRAFT units.
+  const exRe = /EXCLUDING|OTHER THAN|CANNOT SELECT|CANNOT INCLUDE|CANNOT TARGET|THAT IS NOT|THAT ARE NOT/g;
+  for (let m = exRe.exec(text); m; m = exRe.exec(text)) {
+    const win = text.slice(m.index, m.index + 60);
+    if (up.some((v) => win.includes(v) && kws.has(v))) return false;
+  }
+
+  let target = text.match(/TARGET:?\s*([\s\S]*?)(?:EFFECT:|WHEN:|RESTRICTIONS:|$)/)?.[1] ?? text;
+  // drop exclusion clauses so "excluding TERMINATOR" isn't read as a requirement
+  target = target.split(/EXCLUDING|OTHER THAN|THAT IS NOT|THAT ARE NOT|CANNOT/)[0];
+
   const taken = new Array(target.length).fill(false);
   const hits: { kw: string; start: number; end: number }[] = [];
   for (const v of up) {

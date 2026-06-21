@@ -24,6 +24,27 @@ export default function App() {
   // Latest edited list, so a bug report can attach the current list as context.
   const currentList = useRef<ArmyList | null>(null);
 
+  // Keep fixed contextual controls (FAB, summary bar) pinned to the VISUAL viewport during
+  // pinch-zoom on mobile, so they stay reachable and constant-size instead of drifting/scaling
+  // with the zoom. No-op (identity transform) at normal zoom and where visualViewport is absent.
+  useEffect(() => {
+    const vv = window.visualViewport;
+    if (!vv) return;
+    const root = document.documentElement;
+    const update = () => {
+      root.style.setProperty('--vv-dx', `${vv.offsetLeft + vv.width - window.innerWidth}px`);
+      root.style.setProperty('--vv-dy', `${vv.offsetTop + vv.height - window.innerHeight}px`);
+      root.style.setProperty('--vv-scale', `${1 / vv.scale}`);
+    };
+    update();
+    vv.addEventListener('resize', update);
+    vv.addEventListener('scroll', update);
+    return () => {
+      vv.removeEventListener('resize', update);
+      vv.removeEventListener('scroll', update);
+    };
+  }, []);
+
   useEffect(() => {
     Promise.all([loadRules(), loadIndex()])
       .then(([r, idx]) => {

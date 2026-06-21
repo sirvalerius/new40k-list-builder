@@ -203,6 +203,9 @@ h3 { font-size: 0.98rem; }
   background: rgba(13, 15, 20, 0.96);
   backdrop-filter: blur(10px);
   border-top: 1px solid var(--border);
+  /* stay pinned to the visual viewport bottom during pinch-zoom */
+  transform: translate(var(--vv-dx, 0px), var(--vv-dy, 0px)) scale(var(--vv-scale, 1));
+  transform-origin: right bottom;
 }
 .summary .grid {
   max-width: 680px;
@@ -355,6 +358,9 @@ h3 { font-size: 0.98rem; }
   display: flex;
   align-items: center;
   justify-content: center;
+  /* pin to the visual viewport during pinch-zoom (identity at normal zoom) */
+  transform: translate(var(--vv-dx, 0px), var(--vv-dy, 0px)) scale(var(--vv-scale, 1));
+  transform-origin: right bottom;
 }
 .fab:active { background: #a52a2a; }
 
@@ -391,6 +397,8 @@ h3 { font-size: 0.98rem; }
 .strat .desc { margin-top: 4px; }
 
 /* feedback form textarea */
+.wpn-profile { margin-top: 2px; line-height: 1.35; font-variant-numeric: tabular-nums; }
+
 /* favourites star + selected-detachment highlight */
 .star { min-width: 34px; width: 34px; height: 34px; font-size: 18px; color: var(--accent-2); padding: 0; }
 .card.det-selected { border-color: var(--accent); background: #1b1417; }

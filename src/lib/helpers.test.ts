@@ -237,9 +237,17 @@ describe('stratagemAppliesTo (keyword AND/OR matching)', () => {
     expect(stratagemAppliesTo(s, ['INFANTRY', 'PSYKER'], vocab)).toBe(true);
     expect(stratagemAppliesTo(s, ['INFANTRY'], vocab)).toBe(false);
   });
-  it('ignores "excluding" clauses and treats keyword-free targets as general', () => {
-    expect(stratagemAppliesTo('TARGET: One ADEPTUS ASTARTES unit (excluding TERMINATOR).', ['ADEPTUS ASTARTES'], vocab)).toBe(true);
+  it('ignores "excluding" clauses for the requirement but excludes named keywords', () => {
+    const s = 'TARGET: One ADEPTUS ASTARTES unit (excluding TERMINATOR).';
+    expect(stratagemAppliesTo(s, ['ADEPTUS ASTARTES'], vocab)).toBe(true);
+    expect(stratagemAppliesTo(s, ['ADEPTUS ASTARTES', 'TERMINATOR'], vocab)).toBe(false);
     expect(stratagemAppliesTo('TARGET: One unit from your army.', ['VEHICLE'], vocab)).toBe(true);
+  });
+  it('Rapid Ingress: general target but excludes AIRCRAFT', () => {
+    const s = 'TARGET: One friendly unit in Strategic Reserves. EFFECT: Ingress. RESTRICTIONS: cannot select an Aircraft.';
+    const voc = [...vocab, 'AIRCRAFT'];
+    expect(stratagemAppliesTo(s, ['INFANTRY'], voc)).toBe(true);
+    expect(stratagemAppliesTo(s, ['VEHICLE', 'AIRCRAFT', 'FLY'], voc)).toBe(false);
   });
 });
 

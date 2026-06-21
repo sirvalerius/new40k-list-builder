@@ -6,6 +6,7 @@ import type {
   Datasheet,
   FactionData,
   PointsOption,
+  Weapon,
   WeaponOption,
 } from '../lib/types';
 import { DatasheetCard } from '../components/DatasheetCard';
@@ -216,6 +217,7 @@ export function Roster({
         {ds && (ds.weapon_options?.length ?? 0) > 0 && (
           <WeaponOptionsEditor
             options={ds.weapon_options!}
+            weapons={ds.weapons ?? []}
             chosen={u.wargearCosts ?? []}
             modelCount={u.modelCount ?? ds.model_max ?? 1}
             onChange={(wc) => onSetWargear(u.uid, wc)}
@@ -378,11 +380,13 @@ export function Roster({
 
 function WeaponOptionsEditor({
   options,
+  weapons,
   chosen,
   modelCount,
   onChange,
 }: {
   options: WeaponOption[];
+  weapons: Weapon[];
   chosen: ChosenWargear[];
   modelCount: number;
   onChange: (wc: ChosenWargear[]) => void;
@@ -424,6 +428,26 @@ function WeaponOptionsEditor({
     if (o.type === 'model' && o.model) providerQty.set(o.model, qtyOf(o.text));
   const titleCase = (s: string) =>
     s.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
+
+  // Stat profile of the weapon(s) an option adds, so the player sees what they'd gain.
+  const fmtWeapon = (w: Weapon) => {
+    const num = /^\d+$/.test(String(w.BS_WS).trim());
+    const sk = `${w.type === 'Ranged' ? 'BS' : 'WS'} ${num ? `${w.BS_WS}+` : w.BS_WS}`;
+    const rng = w.range && w.range !== 'Melee' ? `${w.range}"` : 'Melee';
+    return `${rng} · A${w.A} · ${sk} · S${w.S} · AP${w.AP} · D${w.D}`;
+  };
+  const grantedProfiles = (o: WeaponOption): Weapon[] => {
+    const out: Weapon[] = [];
+    for (const g of o.grants ?? []) {
+      const gn = g.toLowerCase().trim();
+      for (const w of weapons) {
+        const wn = w.name.toLowerCase();
+        // exact, or a multi-profile weapon ("grenade launcher – frag/krak")
+        if ((wn === gn || wn.startsWith(gn + ' ')) && !out.includes(w)) out.push(w);
+      }
+    }
+    return out;
+  };
 
   return (
     <details style={{ marginTop: 8 }}>
@@ -491,6 +515,12 @@ function WeaponOptionsEditor({
                   <span className="muted tiny">free</span>
                 )}
                 {limLabel ? <span className="muted tiny"> · {limLabel}</span> : ''}
+                {grantedProfiles(o).map((w, j) => (
+                  <div key={j} className="muted tiny wpn-profile">
+                    ⮡ <b>{w.name}</b> — {fmtWeapon(w)}
+                    {w.description ? ` · ${stripHtml(w.description)}` : ''}
+                  </div>
+                ))}
               </div>
               {isCheckbox ? (
                 <input
