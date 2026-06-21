@@ -418,11 +418,16 @@ function WeaponOptionsEditor({
   // (e.g. up to 4) is independent of other same-base single options.
   const capPool = new Map<string, number>();
   const capUsed = new Map<string, number>();
-  const capKey = (o: WeaponOption) => o.group || o.base || '';
+  // Couple options only when they genuinely share weapons: a split "one of the following"
+  // list (same `group`), or several "any number can replace their X" lines drawing from the
+  // same physical base pool. Separate per-model allowances ("for every 5, 1 → meltagun" AND
+  // "for every 5, 1 → plasma gun") are INDEPENDENT — each keeps its own limit.
+  const sharesBase = (o: WeaponOption) => !!o.base && o.limit?.kind === 'all';
+  const capKey = (o: WeaponOption) => o.group || (sharesBase(o) ? o.base! : '');
   for (const o of options) {
-    if (o.base) {
-      basePool.set(o.base, Math.max(basePool.get(o.base) ?? 0, optionMax(o.limit, modelCount) ?? 0));
-      baseUsed.set(o.base, (baseUsed.get(o.base) ?? 0) + qtyOf(o.text));
+    if (sharesBase(o)) {
+      basePool.set(o.base!, Math.max(basePool.get(o.base!) ?? 0, optionMax(o.limit, modelCount) ?? 0));
+      baseUsed.set(o.base!, (baseUsed.get(o.base!) ?? 0) + qtyOf(o.text));
     }
     const key = capKey(o);
     if (key) {
