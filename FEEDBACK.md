@@ -1886,3 +1886,162 @@ La barra assoluta di riassunto di punti dp ed enanchements su cellulare sfora in
 }
 ```
 </details>
+
+---
+### 2026-06-21T20:24:40.673Z
+
+_Space Marines list — Space Marines · Strike Force · Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
+
+Non c'è visibilità delle unità a cui le unità possono unirsi con leader o come support. Non c'è controllo sulle unità che sono già unite ad una unità. L'unità a cui non ci si può aggiungere dovrebbe essere grigia ed indicare quale altro character occupa quello slot. Ricorda che ogni unità può avere un leader ed un supporto. Alle unità dovrebbe essere possibile aggiungere un nome custom e nel caso di leader e supporto allegati dovrebbe essere usato il nome custom come indicazione di slot già occupato nella lista
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqnridxkdhsrk52",
+  "name": "Space Marines list",
+  "factionId": "SM",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000001119",
+    "000900007"
+  ],
+  "units": [
+    {
+      "uid": "mqnrjjmvfu9nrhg",
+      "datasheetId": "000004167",
+      "name": "Suboden Khan",
+      "pointsCost": 100,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "attachedToUid": "mqnrk20y9lpiilo"
+    },
+    {
+      "uid": "mqnrk20y9lpiilo",
+      "datasheetId": "000002712",
+      "name": "Outrider Squad",
+      "pointsCost": 140,
+      "pointsLabel": "6 models",
+      "variantKey": "6 models",
+      "modelCount": 6,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "1 Invader ATV",
+          "cost": 60,
+          "qty": 1
+        },
+        {
+          "name": "An Invader ATV’s onslaught gatling cannon can be replaced with 1 multi-melta.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqnrl62f4b4ah4i",
+      "datasheetId": "000002255",
+      "name": "Sternguard Veteran Squad",
+      "pointsCost": 100,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": []
+    },
+    {
+      "uid": "mqo5gasz8et531q",
+      "datasheetId": "000001191",
+      "name": "Stormraven Gunship",
+      "pointsCost": 280,
+      "pointsLabel": "1 model (1st unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": []
+    },
+    {
+      "uid": "mqo8e4g7i1p74og",
+      "datasheetId": "000001157",
+      "name": "Intercessor Squad",
+      "pointsCost": 150,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo8ein0o0o1txz",
+      "datasheetId": "000002773",
+      "name": "Apothecary",
+      "pointsCost": 40,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "attachedToUid": "mqo8e4g7i1p74og"
+    },
+    {
+      "uid": "mqo8em2r3upgciv",
+      "datasheetId": "000002775",
+      "name": "Ancient",
+      "pointsCost": 40,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "attachedToUid": "mqo8e4g7i1p74og"
+    },
+    {
+      "uid": "mqo8eyeihad7iuv",
+      "datasheetId": "000000073",
+      "name": "Captain",
+      "pointsCost": 80,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "attachedToUid": "mqo8e4g7i1p74og"
+    }
+  ],
+  "createdAt": 1782044880392,
+  "updatedAt": 1782073298761,
+  "subFaction": "White Scars"
+}
+```
+</details>
