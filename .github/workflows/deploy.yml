@@ -43,11 +43,18 @@ jobs:
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history so the commit count (= version minor) is correct
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
       - run: npm ci
+      - name: Compute version (minor = commit count on main) and date
+        id: ver
+        run: |
+          echo "version=v1.$(git rev-list --count HEAD)" >> "$GITHUB_OUTPUT"
+          echo "date=$(git log -1 --format=%cd --date=short)" >> "$GITHUB_OUTPUT"
       - name: Build (with Pages sub-path)
         run: npm run build
         env:
@@ -55,6 +62,8 @@ jobs:
           # set once after deploying the feedback Worker (repo → Settings →
           # Variables → Actions → FEEDBACK_URL). Empty = feedback button hidden.
           VITE_FEEDBACK_URL: ${{ vars.FEEDBACK_URL }}
+          VITE_APP_VERSION: ${{ steps.ver.outputs.version }}
+          VITE_BUILD_DATE: ${{ steps.ver.outputs.date }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -51,6 +51,18 @@ export default defineConfig({
               expiration: { maxEntries: 60, maxAgeSeconds: 60 * 60 * 24 * 30 },
             },
           },
+          {
+            // cache the gothic display font so it survives offline after first load
+            urlPattern: ({ url }) =>
+              url.origin === 'https://fonts.googleapis.com' ||
+              url.origin === 'https://fonts.gstatic.com',
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'new40k-fonts',
+              expiration: { maxEntries: 12, maxAgeSeconds: 60 * 60 * 24 * 365 },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
         ],
       },
     }),

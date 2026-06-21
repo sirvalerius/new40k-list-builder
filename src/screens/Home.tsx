@@ -102,9 +102,9 @@ export function Home({
       {lists === null && <div className="spin" />}
       {lists && lists.length === 0 && (
         <div className="empty">
-          No saved lists yet.
+          No armies muster in the archives yet.
           <br />
-          Tap <b>New list</b> to start building.
+          Tap <b>+ New list</b> to begin the crusade.
         </div>
       )}
       {lists &&

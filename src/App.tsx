@@ -8,6 +8,10 @@ import { NewListWizard } from './screens/NewListWizard';
 import { Builder } from './screens/Builder';
 import { FeedbackButton } from './components/FeedbackButton';
 
+// Injected at build time by CI (minor = commit count on main); 'dev' locally.
+const APP_VERSION = (import.meta.env.VITE_APP_VERSION as string | undefined) ?? 'dev';
+const BUILD_DATE = import.meta.env.VITE_BUILD_DATE as string | undefined;
+
 type View =
   | { kind: 'home' }
   | { kind: 'wizard' }
@@ -97,7 +101,7 @@ export default function App() {
       <div className="app">
         <div className="content">
           <div className="spin" />
-          <div className="center muted">Loading data…</div>
+          <div className="center muted">Consulting the archives…</div>
         </div>
       </div>
     );
@@ -132,6 +136,9 @@ export default function App() {
             ←
           </button>
         )}
+        <span className="aquila" aria-hidden>
+          ✠
+        </span>
         <div className="title">
           {title}
           <small>{subtitle}</small>
@@ -185,6 +192,10 @@ export default function App() {
               of Games Workshop Ltd.
             </div>
             <div>{rules.attribution}</div>
+            <div className="version">
+              {APP_VERSION}
+              {BUILD_DATE ? ` · aggiornata il ${BUILD_DATE}` : ''}
+            </div>
           </footer>
         )}
       </main>

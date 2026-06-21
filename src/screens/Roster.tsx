@@ -242,7 +242,7 @@ export function Roster({
       </div>
 
       {list.units.length === 0 && (
-        <div className="empty">No units yet. Tap the + button.</div>
+        <div className="empty">The muster is empty — summon your forces with the ✠ seal.</div>
       )}
 
       {/* units grouped by sub-type: Epic Heroes / Leaders & Supports / Battleline / Other */}
