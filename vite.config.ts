@@ -2,8 +2,13 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
+// On GitHub Pages the app is served from a project sub-path (/<repo>/). The CI sets
+// VITE_BASE to that path; locally it stays at the root so `npm run dev` is unaffected.
+const base = process.env.VITE_BASE || '/';
+
 // https://vite.dev/config/
 export default defineConfig({
+  base,
   plugins: [
     react(),
     VitePWA({
@@ -18,7 +23,8 @@ export default defineConfig({
         background_color: '#0d0f14',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: '/',
+        scope: base,
+        start_url: base,
         icons: [
           { src: 'pwa-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'pwa-512.png', sizes: '512x512', type: 'image/png' },
@@ -37,7 +43,8 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         runtimeCaching: [
           {
-            urlPattern: ({ url }) => url.pathname.startsWith('/data/'),
+            // base-agnostic: matches /data/ under any deploy sub-path
+            urlPattern: ({ url }) => url.pathname.includes('/data/'),
             handler: 'StaleWhileRevalidate',
             options: {
               cacheName: 'new40k-data',

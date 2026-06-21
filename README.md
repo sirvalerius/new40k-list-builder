@@ -70,6 +70,31 @@ npm run test     # vitest run
 A placeholder test wires up the runner (`src/lib/rules.placeholder.test.ts`);
 real rule-engine specs are added separately.
 
+## Deploy (GitHub Pages + CI)
+
+The live site testers use is published automatically by GitHub Actions
+(`.github/workflows/deploy.yml`):
+
+- **Every push and pull request** runs CI — `npm ci`, `npm test`, `npm run build`.
+  Open feature branches with descriptive names and the build/tests are validated
+  before merge.
+- **Push to `main`** additionally builds with the Pages sub-path
+  (`VITE_BASE=/new40k-list-builder/`) and deploys to GitHub Pages.
+
+Live URL: `https://sirvalerius.github.io/new40k-list-builder/`
+
+The pre-built game data is committed under `public/data/`, so CI needs only
+Node (no Python). To regenerate the data after editing the source CSVs, run
+`python ../tools/build_app_data.py` from this folder's parent.
+
+### Suggested workflow
+```bash
+git switch -c feat/<descriptive-name>   # work on a branch
+# …commit…
+git push -u origin feat/<descriptive-name>
+# open a PR → CI runs → merge to main → auto-deploy
+```
+
 ## Docker
 
 Multi-stage build (Node build → nginx static serve with SPA fallback + gzip):
