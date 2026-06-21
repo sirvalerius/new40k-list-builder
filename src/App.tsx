@@ -6,6 +6,7 @@ import { getList, saveList } from './lib/db';
 import { Home } from './screens/Home';
 import { NewListWizard } from './screens/NewListWizard';
 import { Builder } from './screens/Builder';
+import { FeedbackButton } from './components/FeedbackButton';
 
 type View =
   | { kind: 'home' }
@@ -104,6 +105,7 @@ export default function App() {
           {title}
           <small>{subtitle}</small>
         </div>
+        <FeedbackButton context={`${title} — ${subtitle}`} />
       </header>
 
       <main className="content">

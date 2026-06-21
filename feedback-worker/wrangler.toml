@@ -1,0 +1,10 @@
+name = "new40k-feedback"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+# Public, non-secret config. The GitHub token is a SECRET, set with:
+#   wrangler secret put GITHUB_TOKEN
+[vars]
+GITHUB_REPO = "sirvalerius/new40k-list-builder"
+FEEDBACK_FILE = "FEEDBACK.md"
+ALLOWED_ORIGIN = "https://sirvalerius.github.io"

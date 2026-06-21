@@ -383,3 +383,16 @@ h3 { font-size: 0.98rem; }
   padding-top: 10px;
 }
 .strat .desc { margin-top: 4px; }
+
+/* feedback form textarea */
+.fb-text {
+  font: inherit;
+  color: var(--text);
+  background: var(--bg-elev2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  width: 100%;
+  min-height: 130px;
+  resize: vertical;
+}

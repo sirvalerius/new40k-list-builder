@@ -52,6 +52,9 @@ jobs:
         run: npm run build
         env:
           VITE_BASE: /new40k-list-builder/
+          # set once after deploying the feedback Worker (repo → Settings →
+          # Variables → Actions → FEEDBACK_URL). Empty = feedback button hidden.
+          VITE_FEEDBACK_URL: ${{ vars.FEEDBACK_URL }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
