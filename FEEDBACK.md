@@ -215,3 +215,115 @@ Gli stratagemmi applicati sono sbagliati, non tengono conto del requisito di psy
 }
 ```
 </details>
+
+---
+### 2026-06-21T17:29:33.392Z
+
+_Space Marines list — Space Marines · Strike Force · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
+
+le sezioni weapons dovrebbero essere formattate come delle tabelle più leggibili
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqo1yakixzjtept",
+  "name": "Space Marines list",
+  "factionId": "SM",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000001119",
+    "000000994"
+  ],
+  "units": [
+    {
+      "uid": "mqo20aqvezef4em",
+      "datasheetId": "000001191",
+      "name": "Stormraven Gunship",
+      "pointsCost": 280,
+      "pointsLabel": "1 model (1st unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo21ztqy5fezl8",
+      "datasheetId": "000001606",
+      "name": "Assault Intercessor Squad",
+      "pointsCost": 75,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo22j6uiok7avs",
+      "datasheetId": "000002266",
+      "name": "Librarian",
+      "pointsCost": 60,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqo27y85fsnuz1k",
+      "datasheetId": "000004167",
+      "name": "Suboden Khan",
+      "pointsCost": 100,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "attachedToUid": "mqo282vyrv708ym"
+    },
+    {
+      "uid": "mqo282vyrv708ym",
+      "datasheetId": "000002712",
+      "name": "Outrider Squad",
+      "pointsCost": 140,
+      "pointsLabel": "6 models",
+      "variantKey": "6 models",
+      "modelCount": 6,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "1 Invader ATV",
+          "cost": 60,
+          "qty": 1
+        },
+        {
+          "name": "An Invader ATV’s onslaught gatling cannon can be replaced with 1 multi-melta.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    }
+  ],
+  "createdAt": 1782062418690,
+  "updatedAt": 1782062893240,
+  "subFaction": "White Scars"
+}
+```
+</details>
