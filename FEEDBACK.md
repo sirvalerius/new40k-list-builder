@@ -3310,3 +3310,103 @@ Non sono sicuro che i punti spesi per gli alleati siano stati controllati ed in 
 }
 ```
 </details>
+
+---
+### 2026-06-22T10:39:43.720Z
+
+_Emperor’s Children list — Emperor’s Children · Strike Force · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
+
+Sia i cannoni laser che gli autocannon hanno un costo per essere aggiunti
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqp30ywcxy4byvb",
+  "name": "Emperor’s Children list",
+  "factionId": "EC",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000001037"
+  ],
+  "units": [
+    {
+      "uid": "mqp319ikyxuatza",
+      "datasheetId": "000004077",
+      "name": "Fulgrim",
+      "pointsCost": 350,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqp31dt8wrgd9ol",
+      "datasheetId": "000004087",
+      "name": "Daemon Prince of Slaanesh with Wings",
+      "pointsCost": 205,
+      "pointsLabel": "1 model (1st unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqp31ey4l9fk4uk",
+      "datasheetId": "000004087",
+      "name": "Daemon Prince of Slaanesh with Wings",
+      "pointsCost": 235,
+      "pointsLabel": "1 model (2nd+ unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqp31moj6uagi7v",
+      "datasheetId": "000004208",
+      "name": "Defiler",
+      "pointsCost": 290,
+      "pointsLabel": "1 model (1st unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Hades lascannon (instead of heavy baleflamer)",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "Hades lascannon (instead of heavy missile launcher)",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "This model’s Hades battle cannon can be replaced with 1 ectoplasma destructor.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    }
+  ],
+  "createdAt": 1782124689324,
+  "updatedAt": 1782124758044
+}
+```
+</details>
