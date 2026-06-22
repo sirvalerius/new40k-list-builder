@@ -3410,3 +3410,298 @@ Sia i cannoni laser che gli autocannon hanno un costo per essere aggiunti
 }
 ```
 </details>
+
+---
+### 2026-06-22T10:51:32.391Z
+
+_Emperor’s Children list — Emperor’s Children · Strike Force · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
+
+e' possibile equipaggiare un defiler con due Electroscourge
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqp30ywcxy4byvb",
+  "name": "Emperor’s Children list",
+  "factionId": "EC",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000001037"
+  ],
+  "units": [
+    {
+      "uid": "mqp319ikyxuatza",
+      "datasheetId": "000004077",
+      "name": "Fulgrim",
+      "pointsCost": 350,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": true
+    },
+    {
+      "uid": "mqp31dt8wrgd9ol",
+      "datasheetId": "000004087",
+      "name": "Daemon Prince of Slaanesh with Wings",
+      "pointsCost": 205,
+      "pointsLabel": "1 model (1st unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "enhancementName": "Pledge of Unholy Fortune",
+      "enhancementCost": 30
+    },
+    {
+      "uid": "mqp31ey4l9fk4uk",
+      "datasheetId": "000004087",
+      "name": "Daemon Prince of Slaanesh with Wings",
+      "pointsCost": 235,
+      "pointsLabel": "1 model (2nd+ unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "enhancementName": "Pledge of Eternal Servitude",
+      "enhancementCost": 25
+    },
+    {
+      "uid": "mqp31moj6uagi7v",
+      "datasheetId": "000004208",
+      "name": "Defiler",
+      "pointsCost": 290,
+      "pointsLabel": "1 model (1st unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "This model’s Hades battle cannon can be replaced with 1 ectoplasma destructor.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "Electroscourge (a model cannot be equipped with more than one electroscourge) (instead of heavy missile launcher)",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqp33md0g3fpjyi",
+      "datasheetId": "000004080",
+      "name": "Infractors",
+      "pointsCost": 85,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "The Obsessionist’s bolt pistol can be replaced with 1 plasma pistol.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "The Obsessionist’s power sword can be replaced with 1 rapture lash.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqp35jks4udeql2",
+      "datasheetId": "000004080",
+      "name": "Infractors",
+      "pointsCost": 85,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "The Obsessionist’s bolt pistol can be replaced with 1 plasma pistol.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "The Obsessionist’s power sword can be replaced with 1 rapture lash.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqp33ov8lgz9ytc",
+      "datasheetId": "000004079",
+      "name": "Tormentors",
+      "pointsCost": 80,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "The Obsessionist’s bolt pistol can be replaced with 1 plasma pistol.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "1 Tormentor can be equipped with 1 icon of excess.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "For every 5 models in this unit, 1 Tormentor’s boltgun can be replaced with 1 meltagun.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "For every 5 models in this unit, 1 Tormentor’s boltgun can be replaced with 1 plasma gun.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqp33tc4qrwx2p5",
+      "datasheetId": "000004078",
+      "name": "Lord Exultant",
+      "pointsCost": 80,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqp33xvog5omatp",
+      "datasheetId": "000004078",
+      "name": "Lord Exultant",
+      "pointsCost": 80,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqp359w4k9awtbo",
+      "datasheetId": "000004088",
+      "name": "Noise Marines",
+      "pointsCost": 145,
+      "pointsLabel": "6 models (1st-2nd unit)",
+      "variantKey": "6 models",
+      "modelCount": 6,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "The Disharmonist’s sonic blaster can be replaced with 1 screamer pistol and 1 power sword.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "Up to 2 Noise Marines can each replace their sonic blaster with 1 blastmaster.",
+          "cost": 0,
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "uid": "mqp36hubf43j4tx",
+      "datasheetId": "000004088",
+      "name": "Noise Marines",
+      "pointsCost": 145,
+      "pointsLabel": "6 models (1st-2nd unit)",
+      "variantKey": "6 models",
+      "modelCount": 6,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "The Disharmonist’s sonic blaster can be replaced with 1 screamer pistol and 1 power sword.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "Up to 2 Noise Marines can each replace their sonic blaster with 1 blastmaster.",
+          "cost": 0,
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "uid": "mqp35f4sxenptmd",
+      "datasheetId": "000004093",
+      "name": "Chaos Rhino",
+      "pointsCost": 80,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqp36nkc5ldcxab",
+      "datasheetId": "000004093",
+      "name": "Chaos Rhino",
+      "pointsCost": 80,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    }
+  ],
+  "createdAt": 1782124689324,
+  "updatedAt": 1782125472084
+}
+```
+</details>
