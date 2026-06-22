@@ -2160,3 +2160,119 @@ La card delle sternguard mi pare non abbiano il profilo del loro fucile base
 }
 ```
 </details>
+
+---
+### 2026-06-22T06:58:52.003Z
+
+_Space Marines list — Space Marines · Strike Force · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
+
+In datasheet oltre a armi e regole speciali aggiungi due sezioni per i datasheet per cui sono non vuote: Leader e support, con le unita per cui quell'unità può unirsi rispettivamente come leader o come support
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqouzem6l15b85j",
+  "name": "Space Marines list",
+  "factionId": "SM",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000001119",
+    "000000994"
+  ],
+  "units": [
+    {
+      "uid": "mqov21e6yx7yo3j",
+      "datasheetId": "000004167",
+      "name": "Suboden Khan",
+      "pointsCost": 100,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqov24o6nolz8ay",
+      "datasheetId": "000002709",
+      "name": "Kor’sarro Khan",
+      "pointsCost": 55,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqov2dke8pnz0as",
+      "datasheetId": "000002266",
+      "name": "Librarian",
+      "pointsCost": 60,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "attachedToUid": "mqov3625uyapoyg"
+    },
+    {
+      "uid": "mqov2ofhokq2t5x",
+      "datasheetId": "000002773",
+      "name": "Apothecary",
+      "pointsCost": 40,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "attachedToUid": "mqov3625uyapoyg"
+    },
+    {
+      "uid": "mqov3625uyapoyg",
+      "datasheetId": "000001157",
+      "name": "Intercessor Squad",
+      "pointsCost": 80,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "customName": "Joey's"
+    },
+    {
+      "uid": "mqov3k9am6g5dsp",
+      "datasheetId": "000002775",
+      "name": "Ancient",
+      "pointsCost": 40,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    }
+  ],
+  "createdAt": 1782111179454,
+  "updatedAt": 1782111399430,
+  "subFaction": "White Scars"
+}
+```
+</details>
