@@ -93,11 +93,12 @@ export interface Datasheet {
 
 // A weapon/wargear option line in datasheet order; cost 0 = free, >0 = paid (MFM).
 export interface OptionLimit {
-  kind: 'note' | 'per_n' | 'slots' | 'all' | 'fixed';
+  kind: 'note' | 'per_n' | 'slots' | 'all' | 'fixed' | 'subpop';
   n?: number;      // per_n: 1 per N models
   per?: number;    // per_n: how many per N ("for every 5 models, up to 3" -> per 3); default 1
   slots?: number;  // slots: up to K per model (Crisis)
   max?: number;    // fixed: absolute max
+  counts?: Record<string, number>; // subpop: sub-population size per total model count (Crusader: Neophytes 10->4, 20->8)
 }
 export interface WeaponOption {
   text: string;

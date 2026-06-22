@@ -15449,7 +15449,11 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "subpop",
+      "counts": {
+       "10": 4,
+       "20": 8
+      }
      },
      "base": "bolt pistol and astartes chainsword",
      "model": "",
@@ -15465,7 +15469,11 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "subpop",
+      "counts": {
+       "10": 5,
+       "20": 11
+      }
      },
      "base": "bolt rifle",
      "model": "",
@@ -16044,7 +16052,12 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "subpop",
+      "counts": {
+       "5": 4,
+       "10": 4,
+       "20": 9
+      }
      },
      "base": "boltgun",
      "model": "",

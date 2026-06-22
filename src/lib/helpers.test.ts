@@ -351,6 +351,12 @@ describe('optionMax (weapon option limits)', () => {
     expect(optionMax({ kind: 'per_n', n: 5, per: 2 }, 5)).toBe(2);
     expect(optionMax({ kind: 'per_n', n: 5, per: 2 }, 10)).toBe(4);
   });
+  it('subpop = the named sub-population size at this model count (Crusader Neophytes)', () => {
+    const lim = { kind: 'subpop', counts: { '10': 4, '20': 8 } };
+    expect(optionMax(lim, 10)).toBe(4);
+    expect(optionMax(lim, 20)).toBe(8);
+    expect(optionMax(lim, 15)).toBe(8); // off-bracket -> the largest known size
+  });
   it('all = one per model', () => {
     expect(optionMax({ kind: 'all' }, 6)).toBe(6);
   });
