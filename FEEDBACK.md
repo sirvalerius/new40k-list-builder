@@ -2276,3 +2276,10 @@ In datasheet oltre a armi e regole speciali aggiungi due sezioni per i datasheet
 }
 ```
 </details>
+
+---
+### 2026-06-22T08:15:56.809Z
+
+_New40k List Builder — 11th edition · #new40k · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0_
+
+Solo per verificare che funzioni <3
