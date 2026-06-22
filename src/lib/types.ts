@@ -74,7 +74,8 @@ export interface Datasheet {
   keywords: string[];
   faction_keywords: string[];
   can_lead: string[];
-  can_lead_names?: string[]; // bodyguard unit names this Character can join as a Leader
+  can_lead_names?: string[]; // bodyguard unit names this Character can join
+  attach_type?: 'leader' | 'support' | ''; // how it attaches in 11e ('' = doesn't attach)
   chapter?: string;            // SM sub-faction this datasheet belongs to ('' = generic)
   requires_detachment?: string;// unit only legal if this detachment is taken ('' = none)
   is_character: boolean;
