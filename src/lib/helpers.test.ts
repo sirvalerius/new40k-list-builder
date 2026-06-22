@@ -320,6 +320,11 @@ describe('optionMax (weapon option limits)', () => {
     expect(optionMax({ kind: 'per_n', n: 10 }, 9)).toBe(0);
     expect(optionMax({ kind: 'per_n', n: 5 }, 12)).toBe(2);
   });
+  it('per_n with a "per K" multiplier ("for every 5, up to 3")', () => {
+    expect(optionMax({ kind: 'per_n', n: 5, per: 3 }, 10)).toBe(6);
+    expect(optionMax({ kind: 'per_n', n: 5, per: 2 }, 5)).toBe(2);
+    expect(optionMax({ kind: 'per_n', n: 5, per: 2 }, 10)).toBe(4);
+  });
   it('all = one per model', () => {
     expect(optionMax({ kind: 'all' }, 6)).toBe(6);
   });

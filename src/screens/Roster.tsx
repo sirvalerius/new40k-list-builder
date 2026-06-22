@@ -557,7 +557,7 @@ function WeaponOptionsEditor({
           const limLabel = needsModel
             ? `needs ${needsModel}`
             : o.limit?.kind === 'per_n'
-              ? `max ${max} (1 / ${o.limit.n})`
+              ? `max ${max} (${o.limit.per ?? 1} / ${o.limit.n})`
               : o.limit?.kind === 'slots'
                 ? `up to ${o.limit.slots}/model`
                 : max != null

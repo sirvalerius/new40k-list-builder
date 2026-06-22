@@ -93,6 +93,7 @@ export interface Datasheet {
 export interface OptionLimit {
   kind: 'note' | 'per_n' | 'slots' | 'all' | 'fixed';
   n?: number;      // per_n: 1 per N models
+  per?: number;    // per_n: how many per N ("for every 5 models, up to 3" -> per 3); default 1
   slots?: number;  // slots: up to K per model (Crisis)
   max?: number;    // fixed: absolute max
 }

@@ -114,13 +114,13 @@ export function clampLoadout(unit: ListUnit, ds: Datasheet): ChosenWargear[] {
 /** Max copies of a weapon option allowed for a unit of `modelCount` models.
  *  per_n = 1 per N (floor); all/slots/fixed per the limit; null = unbounded. */
 export function optionMax(
-  limit: { kind: string; n?: number; slots?: number; max?: number } | undefined,
+  limit: { kind: string; n?: number; per?: number; slots?: number; max?: number } | undefined,
   modelCount: number,
 ): number | null {
   if (!limit) return null;
   switch (limit.kind) {
     case 'per_n':
-      return limit.n ? Math.floor(modelCount / limit.n) : modelCount;
+      return limit.n ? (limit.per ?? 1) * Math.floor(modelCount / limit.n) : modelCount;
     case 'slots':
       return modelCount * (limit.slots ?? 1); // aggregate per-model slots (Crisis)
     case 'fixed':
