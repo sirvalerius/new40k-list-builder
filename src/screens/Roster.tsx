@@ -477,7 +477,8 @@ function WeaponOptionsEditor({
     }
     const key = capKey(o);
     if (key) {
-      capPool.set(key, Math.max(capPool.get(key) ?? 0, optionMax(o.limit, modelCount) ?? 0));
+      // group_max (mixed-unit sub-types) overrides the usual max-of-option-limits group cap
+      capPool.set(key, Math.max(capPool.get(key) ?? 0, o.group_max ?? optionMax(o.limit, modelCount) ?? 0));
       capUsed.set(key, (capUsed.get(key) ?? 0) + qtyOf(o.text));
     }
   }

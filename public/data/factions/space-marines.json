@@ -26430,6 +26430,71 @@
       "Superfrag rocket launcher",
       "Superkrak rocket launcher"
      ]
+    },
+    {
+     "text": "Kill Team Intercessors with plasma incinerators",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "",
+     "group": "000002780-subtype",
+     "group_max": 7,
+     "model": "",
+     "grants": [
+      "Plasma incinerator – standard",
+      "Plasma incinerator – supercharge"
+     ]
+    },
+    {
+     "text": "Kill Team Intercessors with heavy bolt pistols",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "",
+     "group": "000002780-subtype",
+     "group_max": 7,
+     "model": "",
+     "grants": [
+      "Heavy bolt pistol"
+     ]
+    },
+    {
+     "text": "Kill Team Intercessors with pyreblasters",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "",
+     "group": "000002780-subtype",
+     "group_max": 7,
+     "model": "",
+     "grants": [
+      "Pyreblaster"
+     ]
+    },
+    {
+     "text": "Kill Team Intercessors with superfrag rocket launchers",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "",
+     "group": "000002780-subtype",
+     "group_max": 7,
+     "model": "",
+     "grants": [
+      "Superfrag rocket launcher"
+     ]
     }
    ],
    "chapter": "Deathwatch",
@@ -30759,6 +30824,38 @@
      "grants": [
       "Auto boltstorm gauntlets",
       "Fragstorm grenade launcher"
+     ]
+    },
+    {
+     "text": "Kill Team Heavy Intercessors with power fists",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 3
+     },
+     "base": "",
+     "group": "000002781-subtype",
+     "group_max": 7,
+     "model": "",
+     "grants": [
+      "Twin power fists"
+     ]
+    },
+    {
+     "text": "Kill Team Heavy Intercessors with melta rifles",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 3
+     },
+     "base": "",
+     "group": "000002781-subtype",
+     "group_max": 7,
+     "model": "",
+     "grants": [
+      "Melta rifle"
      ]
     }
    ],
@@ -53175,6 +53272,52 @@
       "Close combat weapon",
       "Combat knife"
      ]
+    },
+    {
+     "text": "Kill Team Infiltrators with bolt sniper rifles",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 3
+     },
+     "base": "",
+     "group": "000002779-subtype",
+     "group_max": 7,
+     "model": "",
+     "grants": [
+      "Bolt sniper rifle"
+     ]
+    },
+    {
+     "text": "Kill Team Infiltrators with Deathwatch occulus bolt carbines",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "",
+     "group": "000002779-subtype",
+     "group_max": 7,
+     "model": "",
+     "grants": [
+      "Deathwatch occulus bolt carbine"
+     ]
+    },
+    {
+     "text": "Kill Team Infiltrators with combat knives",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "",
+     "group": "000002779-subtype",
+     "group_max": 7,
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Deathwatch",
@@ -57438,6 +57581,20 @@
       "kind": "all"
      },
      "base": "assault bolters",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Kill Team Heavy Intercessors with Jump Packs",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 5
+     },
+     "base": "",
+     "group": "000003874-subtype",
+     "group_max": 7,
      "model": "",
      "grants": []
     }

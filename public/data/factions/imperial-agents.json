@@ -3136,6 +3136,39 @@
      "base": "bolt pistol",
      "model": "KILL TEAM INTERCESSORS WITH PLASMA INCINERATORS",
      "grants": []
+    },
+    {
+     "text": "Kill Team Intercessors with plasma incinerators",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "",
+     "group": "000003825-subtype",
+     "group_max": 5,
+     "model": "",
+     "grants": [
+      "Plasma incinerator – standard",
+      "Plasma incinerator – supercharge"
+     ]
+    },
+    {
+     "text": "Kill Team Intercessors with heavy bolt pistols",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "",
+     "group": "000003825-subtype",
+     "group_max": 5,
+     "model": "",
+     "grants": [
+      "Heavy bolt pistol"
+     ]
     }
    ],
    "chapter": "",
@@ -4225,6 +4258,52 @@
       "kind": "all"
      },
      "base": "assault bolters",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Kill Team Heavy Intercessors with power fists",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "",
+     "group": "000003826-subtype",
+     "group_max": 5,
+     "model": "",
+     "grants": [
+      "Power fists"
+     ]
+    },
+    {
+     "text": "Kill Team Heavy Intercessors with melta rifles",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "",
+     "group": "000003826-subtype",
+     "group_max": 5,
+     "model": "",
+     "grants": [
+      "Melta rifle"
+     ]
+    },
+    {
+     "text": "Kill Team Heavy Intercessors with jump packs",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "",
+     "group": "000003826-subtype",
+     "group_max": 5,
      "model": "",
      "grants": []
     }
@@ -8505,6 +8584,20 @@
      "grants": [
       "Terminator thunder hammer"
      ]
+    },
+    {
+     "text": "Kill Team Veterans with Jump Packs",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "",
+     "group": "000003824-subtype",
+     "group_max": 5,
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -10123,6 +10216,66 @@
       "kind": "note"
      },
      "base": "",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Kill Team Infiltrators with bolt sniper rifles",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "",
+     "group": "000003827-subtype",
+     "group_max": 5,
+     "model": "",
+     "grants": [
+      "Bolt sniper rifle"
+     ]
+    },
+    {
+     "text": "Kill Team Infiltrators with jump packs",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "",
+     "group": "000003827-subtype",
+     "group_max": 5,
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Kill Team Infiltrators with occulus bolt carbines",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "",
+     "group": "000003827-subtype",
+     "group_max": 5,
+     "model": "",
+     "grants": [
+      "Occulus bolt carbine"
+     ]
+    },
+    {
+     "text": "Kill Team Infiltrators with combat knives",
+     "cost": 0,
+     "type": "model",
+     "limit": {
+      "kind": "fixed",
+      "max": 4
+     },
+     "base": "",
+     "group": "000003827-subtype",
+     "group_max": 5,
      "model": "",
      "grants": []
     }

@@ -138,6 +138,22 @@ export function clampLoadout(unit: ListUnit, ds: Datasheet): ChosenWargear[] {
       return q !== w.qty ? { ...w, qty: q } : w;
     });
   }
+  // group_max: mixed-unit sub-types (Kill Teams) share a slot pool — total ≤ group_max.
+  const groupBudget = new Map<string, number>();
+  for (const o of opts) if (o.group && o.group_max != null) groupBudget.set(o.group, o.group_max);
+  if (groupBudget.size) {
+    const used = new Map<string, number>();
+    wargear = wargear.map((w) => {
+      const o = opts.find((op) => op.text === w.name);
+      if (o?.group && groupBudget.has(o.group)) {
+        const u = used.get(o.group) ?? 0;
+        const q = Math.min(w.qty, Math.max(0, groupBudget.get(o.group)! - u));
+        used.set(o.group, u + q);
+        return q !== w.qty ? { ...w, qty: q } : w;
+      }
+      return w;
+    });
+  }
   return wargear.filter((w) => w.qty > 0);
 }
 
