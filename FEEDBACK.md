@@ -3002,7 +3002,7 @@ Forse puoi indicare nel menu dell'unità quante volte al massimo può essere pre
 
 _Il mio regno per un cavallo — Adeptus Custodes · Strike Force · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0_
 
-Non sono sicuro che i punti spesi per gli alleati siano stati controllati
+Non sono sicuro che i punti spesi per gli alleati siano stati controllati ed in generale se sia stato controllata la validità della lista 
 
 
 <details><summary>Current list</summary>
