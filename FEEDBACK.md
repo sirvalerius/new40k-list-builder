@@ -2626,3 +2626,59 @@ Forse potresti inserire un tag che indichi, Epic Hero, Warlord, ecc
 }
 ```
 </details>
+
+---
+### 2026-06-22T08:51:05.551Z
+
+_Aeldari list — Aeldari · Strike Force · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0_
+
+Non viene controllata la presenza o meno dei personaggi richiedi dal detachment. Non viene controllato il fatto che epic eroes non ynnari non possono essere presi assieme a yvraine o Yennad
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqoz0hxhfckff3y",
+  "name": "Aeldari list",
+  "factionId": "AE",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000001022",
+    "000900025"
+  ],
+  "units": [
+    {
+      "uid": "mqoz5ou3zq26rxp",
+      "datasheetId": "000002542",
+      "name": "Yvraine",
+      "pointsCost": 100,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqoz5ryzu7vbb8w",
+      "datasheetId": "000000571",
+      "name": "Asurmen",
+      "pointsCost": 135,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    }
+  ],
+  "createdAt": 1782117948869,
+  "updatedAt": 1782118195163
+}
+```
+</details>
