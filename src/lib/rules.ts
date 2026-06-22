@@ -42,6 +42,7 @@ export function validateList(
   list: ArmyList,
   rules: Rules,
   detachments: Detachment[],
+  dsById?: Map<string, { keywords: string[] }>,
 ): ValidationResult {
   const v: Violation[] = [];
   const bs = getBattleSize(rules, list.battleSizeId);
@@ -158,6 +159,18 @@ export function validateList(
         .reduce((s, u) => s + unitCost(u), 0);
       if (used > cap)
         v.push({ level: 'error', code: 'ALLY_CAP', message: `Alleati ${rule.allied_keyword}: ${used} pt oltre il cap ${cap}.` });
+    }
+  }
+
+  // --- Ynnari: a non-Ynnari Epic Hero cannot be fielded alongside an Ynnari Epic Hero
+  // (Yvraine / The Yncarne / The Visarch). Needs datasheet keywords, so only runs when provided.
+  if (dsById) {
+    const heroes = list.units.filter((u) => u.isEpicHero);
+    const isYnnari = (u: { datasheetId: string }) =>
+      (dsById.get(u.datasheetId)?.keywords ?? []).includes('Ynnari');
+    if (heroes.some(isYnnari)) {
+      for (const u of heroes.filter((u) => !isYnnari(u)))
+        v.push({ level: 'error', code: 'YNNARI', message: `${u.name}: un Epic Hero non-Ynnari non può essere schierato con Yvraine / The Yncarne / The Visarch.` });
     }
   }
 

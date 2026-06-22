@@ -448,6 +448,37 @@ describe('enhancements', () => {
   });
 });
 
+describe('Ynnari epic-hero restriction (YNNARI)', () => {
+  const dsById = new Map<string, { keywords: string[] }>([
+    ['yvraine', { keywords: ['Aeldari', 'Ynnari', 'Epic Hero', 'Character'] }],
+    ['avatar', { keywords: ['Aeldari', 'Asuryani', 'Epic Hero', 'Monster'] }],
+  ]);
+  it('a non-Ynnari Epic Hero alongside an Ynnari Epic Hero => YNNARI', () => {
+    const list = makeList({
+      units: [
+        warlordChar({ datasheetId: 'yvraine', name: 'Yvraine', isEpicHero: true }),
+        makeUnit({ datasheetId: 'avatar', name: 'Avatar of Khaine', isCharacter: true, isEpicHero: true }),
+      ],
+    });
+    const res = validateList(list, makeRules(), [makeDetachment()], dsById);
+    expect(codes(res)).toContain('YNNARI');
+    expect(res.ok).toBe(false);
+  });
+  it('no Ynnari Epic Hero present => no YNNARI', () => {
+    const list = makeList({ units: [warlordChar({ datasheetId: 'avatar', name: 'Avatar', isEpicHero: true })] });
+    expect(codes(validateList(list, makeRules(), [makeDetachment()], dsById))).not.toContain('YNNARI');
+  });
+  it('without a datasheet map the check is skipped (no false error)', () => {
+    const list = makeList({
+      units: [
+        warlordChar({ datasheetId: 'yvraine', name: 'Yvraine', isEpicHero: true }),
+        makeUnit({ datasheetId: 'avatar', name: 'Avatar', isCharacter: true, isEpicHero: true }),
+      ],
+    });
+    expect(codes(validateList(list, makeRules(), [makeDetachment()]))).not.toContain('YNNARI');
+  });
+});
+
 // ---------------------------------------------------------------------------
 // 8. Ally caps (ALLY_CAP)
 // ---------------------------------------------------------------------------

@@ -78,8 +78,8 @@ export function Builder({
   );
 
   const result = useMemo(
-    () => validateList(list, rules, detachments),
-    [list, rules, detachments],
+    () => validateList(list, rules, detachments, fd ? datasheetMap(fd) : undefined),
+    [list, rules, detachments, fd],
   );
 
   if (!fd || !battleSize) {
