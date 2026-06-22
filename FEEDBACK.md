@@ -2632,7 +2632,7 @@ Forse potresti inserire un tag che indichi, Epic Hero, Warlord, ecc
 
 _Aeldari list — Aeldari · Strike Force · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0_
 
-Non viene controllata la presenza o meno dei personaggi richiedi dal detachment. Non viene controllato il fatto che epic eroes non ynnari non possono essere presi assieme a yvraine o Yennad
+Non viene controllata la presenza o meno dei personaggi richiedi dal detachment. Non viene controllato il fatto che epic eroes non ynnari non possono essere presi assieme a yvraine o Yncarne
 
 
 <details><summary>Current list</summary>
