@@ -1121,7 +1121,7 @@
      "limit": {
       "kind": "all"
      },
-     "base": "kannon",
+     "base": "Kannon",
      "group": "000000037-0",
      "model": "",
      "grants": [
@@ -1135,7 +1135,7 @@
      "limit": {
       "kind": "all"
      },
-     "base": "kannon",
+     "base": "Kannon",
      "group": "000000037-0",
      "model": "",
      "grants": [
@@ -4276,10 +4276,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 deffguns",
+     "base": "Deffgun",
      "model": "",
      "grants": [
-      "Deffgun",
       "Rattler kannon"
      ]
     }
@@ -5174,12 +5173,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "zzap guns",
+     "base": "Zzap gun",
      "group": "000001388-1",
      "model": "",
      "grants": [
-      "Lobba",
-      "Zzap gun"
+      "Lobba"
      ]
     },
     {
@@ -5190,12 +5188,10 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "zzap guns",
+     "base": "Zzap gun",
      "group": "000001388-1",
      "model": "",
-     "grants": [
-      "Zzap gun"
-     ]
+     "grants": []
     },
     {
      "text": "Lobba (instead of kannon)",
@@ -5205,7 +5201,7 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "kannon",
+     "base": "Kannon",
      "group": "000001388-2",
      "model": "",
      "grants": [
@@ -5220,7 +5216,7 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "kannon",
+     "base": "Kannon",
      "group": "000001388-2",
      "model": "",
      "grants": [
@@ -5235,13 +5231,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin big shootas",
+     "base": "Twin big shoota",
      "group": "000001388-3",
      "model": "",
      "grants": [
       "Big shoota",
-      "Skorcha",
-      "Twin big shoota"
+      "Skorcha"
      ]
     },
     {
@@ -5252,13 +5247,12 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "twin big shootas",
+     "base": "Twin big shoota",
      "group": "000001388-3",
      "model": "",
      "grants": [
       "Big shoota",
-      "Rokkit launcha",
-      "Twin big shoota"
+      "Rokkit launcha"
      ]
     }
    ],
@@ -13670,10 +13664,9 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "rokkit pistols",
+     "base": "Rokkit pistol",
      "model": "",
      "grants": [
-      "Rokkit pistol",
       "Smash hammer"
      ]
     },

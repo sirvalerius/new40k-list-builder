@@ -54,12 +54,15 @@ export function equippedWeapons(ds: Datasheet, selected?: ChosenWargear[]): Weap
     }
   }
 
+  // "Heavy plasma cannon – standard/– supercharge" are firing modes of one weapon; a swap names
+  // the weapon without the mode, so match the mode-stripped name too.
+  const modeBase = (name: string) => normName(name.split(/\s+[–-]\s+/)[0]);
   return weapons.filter((w) => {
     const n = normName(w.name);
     const requiresAddon = addonForWeapon.get(n);
     if (requiresAddon && !addonTaken.has(requiresAddon)) return grantedNow.has(n);
     if (grantedAll.has(n)) return grantedNow.has(n);   // optional/upgrade weapon
-    if (replacedNow.has(n)) return false;              // replaced base
+    if (replacedNow.has(n) || replacedNow.has(modeBase(w.name))) return false; // replaced base
     return true;                                       // standard kit
   });
 }
