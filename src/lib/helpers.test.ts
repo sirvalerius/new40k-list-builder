@@ -271,6 +271,22 @@ describe('enhancementAllowed ("X model only" keyword requirement)', () => {
     expect(enhancementAllowed(d, ['ASTRA MILITARUM', 'INFANTRY', 'PLATOON'], v2)).toBe(true);
     expect(enhancementAllowed(d, ['ASTRA MILITARUM', 'INFANTRY'], v2)).toBe(false);
   });
+  it('matches across curly apostrophes', () => {
+    const v = ["EMPEROR’S CHILDREN", 'INFANTRY'];
+    expect(enhancementAllowed('Emperor’s Children model only. +1 A.', ["Emperor's Children"], v)).toBe(true);
+    expect(enhancementAllowed('Emperor’s Children model only. +1 A.', ['INFANTRY'], v)).toBe(false);
+  });
+  it('matches "<unit name> only" without the word model/unit', () => {
+    const v = ['BIOLOGUS PUTRIFIER', 'INFANTRY'];
+    expect(enhancementAllowed('Biologus Putrifier only. Re-roll.', ['Biologus Putrifier'], v)).toBe(true);
+    expect(enhancementAllowed('Biologus Putrifier only. Re-roll.', ['INFANTRY'], v)).toBe(false);
+  });
+  it('ignores "(excluding …)" parentheticals in the requirement', () => {
+    const v = ['HERETIC ASTARTES', 'DAMNED', 'INFANTRY'];
+    const d = 'Heretic Astartes model (excluding Damned models) only. +1 D.';
+    expect(enhancementAllowed(d, ['HERETIC ASTARTES'], v)).toBe(true);
+    expect(enhancementAllowed(d, ['INFANTRY'], v)).toBe(false);
+  });
   it('no "model/unit only" clause -> allowed', () => {
     expect(enhancementAllowed('Add 1 to wound rolls.', ['INFANTRY'], vocab)).toBe(true);
   });

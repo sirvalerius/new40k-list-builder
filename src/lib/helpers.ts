@@ -354,15 +354,19 @@ export function attachedLeaders(bodyguardUid: string, list: ArmyList): ListUnit[
  * target names none of them it is treated as general (applies to any unit); otherwise
  * it applies only when the unit shares at least one named keyword.
  */
+// Uppercase + fold the various apostrophes to a straight one, so "Emperor's Children" matches
+// regardless of whether the source used ’ ‘ ` or '.
+const kwNorm = (s: string) => (s || '').toUpperCase().replace(/[’‘`´]/g, "'");
+
 export function stratagemAppliesTo(
   description: string,
   unitKeywords: string[],
   vocab: string[],
 ): boolean {
-  const text = stripHtml(description).toUpperCase();
-  const kws = new Set(unitKeywords.map((k) => k.toUpperCase()));
+  const text = kwNorm(stripHtml(description));
+  const kws = new Set(unitKeywords.map(kwNorm));
   // vocab keywords, longest-first so multi-word ones ("ADEPTUS ASTARTES") match before fragments
-  const up = [...new Set(vocab.map((v) => v.toUpperCase()).filter((v) => v.length >= 3))].sort(
+  const up = [...new Set(vocab.map(kwNorm).filter((v) => v.length >= 3))].sort(
     (a, b) => b.length - a.length,
   );
 
@@ -418,13 +422,16 @@ export function enhancementAllowed(
   unitKeywords: string[],
   vocab: string[],
 ): boolean {
-  const text = stripHtml(description).toUpperCase();
-  // "<KEYWORDS> model only" (Characters) OR "<KEYWORDS> unit only" (Upgrade enhancements on
-  // non-Character units). Both forms must be enforced.
-  const m = text.match(/(?:^|\.\s*)([A-Z][A-Z0-9 '/\-]*?)\s+(?:MODELS?|UNITS?)\s+ONLY/);
+  // Drop parentheticals ("(excluding Damned models)") so they don't break the requirement.
+  const text = kwNorm(stripHtml(description)).replace(/\([^)]*\)/g, ' ');
+  // The opening restriction: "<KEYWORDS> [model|unit] only" — the word model/unit is optional
+  // (some read just "Biologus Putrifier only"). Anchored to a sentence start.
+  // anchored to the start — the keyword restriction is always the opening clause, so we never
+  // mistake an "only" deeper in the effect text for a requirement.
+  const m = text.match(/^\s*([A-Z][A-Z0-9 ,'/\-]*?)\s+(?:MODELS?\s+|UNITS?\s+)?ONLY(?:[.\s]|$)/);
   if (!m) return true;
-  const kws = new Set(unitKeywords.map((k) => k.toUpperCase()));
-  const up = [...new Set(vocab.map((v) => v.toUpperCase()).filter((v) => v.length >= 3))].sort(
+  const kws = new Set(unitKeywords.map(kwNorm));
+  const up = [...new Set(vocab.map(kwNorm).filter((v) => v.length >= 3))].sort(
     (a, b) => b.length - a.length,
   );
   return matchKeywordExpr(m[1], kws, up);
