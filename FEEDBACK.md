@@ -3793,3 +3793,259 @@ Ti mando anche questa perché mi "suscita ilarità"!
 }
 ```
 </details>
+
+---
+### 2026-06-22T18:08:57.522Z
+
+_World Eaters list — World Eaters · Strike Force · Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36_
+
+Nelle opzioni di arma dei terminator, anche se imposto l'unità da 10, considera il limite massimo delle varie armi come se l'unità fosse ancora da 5
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqnrv212tskc3bo",
+  "name": "World Eaters list",
+  "factionId": "WE",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000900014",
+    "000001043"
+  ],
+  "units": [
+    {
+      "uid": "mqnrvt1yeoou9er",
+      "datasheetId": "000002626",
+      "name": "Master of Executions",
+      "pointsCost": 60,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": true,
+      "enhancementName": "Icon of War",
+      "enhancementCost": 25
+    },
+    {
+      "uid": "mqnrvv1s3aaxnki",
+      "datasheetId": "000002626",
+      "name": "Master of Executions",
+      "pointsCost": 60,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "enhancementName": "Blood-forged Armour",
+      "enhancementCost": 20
+    },
+    {
+      "uid": "mqnrw49cvfg8hj0",
+      "datasheetId": "000004104",
+      "name": "Skarbrand",
+      "pointsCost": 315,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "requiresDetachment": "Khorne Daemonkin",
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqnrwatn3agcvvi",
+      "datasheetId": "000004106",
+      "name": "Bloodletters",
+      "pointsCost": 90,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "requiresDetachment": "Khorne Daemonkin",
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqnrwcrv8jff9zt",
+      "datasheetId": "000004106",
+      "name": "Bloodletters",
+      "pointsCost": 90,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "requiresDetachment": "Khorne Daemonkin",
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqnrwcg9u85p9l6",
+      "datasheetId": "000004106",
+      "name": "Bloodletters",
+      "pointsCost": 90,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "requiresDetachment": "Khorne Daemonkin",
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqnrwlp8xw6zvs2",
+      "datasheetId": "000002628",
+      "name": "Jakhals",
+      "pointsCost": 65,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Any number of Dishonoured models can each have their paired manglers replaced with 1 skullsmasher and mangler.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "For every 10 models in this unit, 1 Jakhal’s chainblades can be replaced with 1 mauler chainblade.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "For every 10 models in this unit, 1 Jakhal can be equipped with 1 icon of Khorne.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqnrx7x260oa1cl",
+      "datasheetId": "000004076",
+      "name": "Goremongers",
+      "pointsCost": 75,
+      "pointsLabel": "8 models",
+      "variantKey": "8 models",
+      "modelCount": 8,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "1 Goremonger’s chainblade can be replaced with 1 blood harpoon.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mqnrxk7ih9oq7c7",
+      "datasheetId": "000004108",
+      "name": "Flesh Hounds",
+      "pointsCost": 75,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "requiresDetachment": "Khorne Daemonkin",
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqnrxlkeek9ai3z",
+      "datasheetId": "000004108",
+      "name": "Flesh Hounds",
+      "pointsCost": 75,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "requiresDetachment": "Khorne Daemonkin",
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqns31ztxs7utw9",
+      "datasheetId": "000002633",
+      "name": "Chaos Spawn",
+      "pointsCost": 95,
+      "pointsLabel": "2 models",
+      "variantKey": "2 models",
+      "modelCount": 2,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqns33dliaj2x30",
+      "datasheetId": "000002633",
+      "name": "Chaos Spawn",
+      "pointsCost": 95,
+      "pointsLabel": "2 models",
+      "variantKey": "2 models",
+      "modelCount": 2,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqpj2jk9epylssp",
+      "datasheetId": "000002629",
+      "name": "Chaos Terminators",
+      "pointsCost": 350,
+      "pointsLabel": "10 models (1st-2nd unit)",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "For every 5 models in this unit, 1 Chaos Terminator’s combi-bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 heavy flamer</li><li>1 reaper autocannon</li></ul>",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "For every 5 models in this unit, 1 model’s combi-bolter and accursed weapon can be replaced with 1 paired accursed weapons.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    }
+  ],
+  "createdAt": 1782045471494,
+  "updatedAt": 1782151674105
+}
+```
+</details>
