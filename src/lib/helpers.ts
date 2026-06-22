@@ -419,7 +419,9 @@ export function enhancementAllowed(
   vocab: string[],
 ): boolean {
   const text = stripHtml(description).toUpperCase();
-  const m = text.match(/(?:^|\.\s*)([A-Z][A-Z0-9 '/\-]*?)\s+MODELS?\s+ONLY/);
+  // "<KEYWORDS> model only" (Characters) OR "<KEYWORDS> unit only" (Upgrade enhancements on
+  // non-Character units). Both forms must be enforced.
+  const m = text.match(/(?:^|\.\s*)([A-Z][A-Z0-9 '/\-]*?)\s+(?:MODELS?|UNITS?)\s+ONLY/);
   if (!m) return true;
   const kws = new Set(unitKeywords.map((k) => k.toUpperCase()));
   const up = [...new Set(vocab.map((v) => v.toUpperCase()).filter((v) => v.length >= 3))].sort(

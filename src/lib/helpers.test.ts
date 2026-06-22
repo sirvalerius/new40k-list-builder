@@ -262,7 +262,16 @@ describe('enhancementAllowed ("X model only" keyword requirement)', () => {
     expect(enhancementAllowed(d, ['TECHMARINE'], vocab)).toBe(true);
     expect(enhancementAllowed(d, ['CAPTAIN'], vocab)).toBe(false);
   });
-  it('no "model only" clause -> allowed', () => {
+  it('enforces "<keyword> unit only" (Upgrade enhancements), not just "model only"', () => {
+    const v2 = [...vocab, 'RANGERS', 'ASTRA MILITARUM', 'PLATOON'];
+    expect(enhancementAllowed('RANGERS unit only. Infiltrators.', ['RANGERS'], v2)).toBe(true);
+    expect(enhancementAllowed('RANGERS unit only. Infiltrators.', ['INFANTRY'], v2)).toBe(false);
+    // multi-keyword AND requirement
+    const d = 'ASTRA MILITARUM INFANTRY PLATOON unit only. Move.';
+    expect(enhancementAllowed(d, ['ASTRA MILITARUM', 'INFANTRY', 'PLATOON'], v2)).toBe(true);
+    expect(enhancementAllowed(d, ['ASTRA MILITARUM', 'INFANTRY'], v2)).toBe(false);
+  });
+  it('no "model/unit only" clause -> allowed', () => {
     expect(enhancementAllowed('Add 1 to wound rolls.', ['INFANTRY'], vocab)).toBe(true);
   });
   it('fails open when the required keyword is not in the vocab', () => {
