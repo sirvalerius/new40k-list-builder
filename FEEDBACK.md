@@ -3705,3 +3705,91 @@ e' possibile equipaggiare un defiler con due Electroscourge
 }
 ```
 </details>
+
+---
+### 2026-06-22T14:13:42.693Z
+
+_Il mio regno per un cavallo — Adeptus Custodes · Strike Force · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0_
+
+Ti mando anche questa perché mi "suscita ilarità"!
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqoxzgdrja4ru5j",
+  "name": "Il mio regno per un cavallo",
+  "factionId": "AC",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000900047",
+    "000000863"
+  ],
+  "units": [
+    {
+      "uid": "mqpal5kbrgs7ef8",
+      "datasheetId": "000002518",
+      "name": "Blade Champion",
+      "pointsCost": 110,
+      "pointsLabel": "1 model (1st unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": true,
+      "enhancementName": "Martial Philosopher",
+      "enhancementCost": 30
+    },
+    {
+      "uid": "mqpalumtutiey18",
+      "datasheetId": "000001563",
+      "name": "Sagittarum Custodians",
+      "pointsCost": 225,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqpamb257yzud7d",
+      "datasheetId": "000003830",
+      "name": "Imperial Rhino",
+      "pointsCost": 75,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqpanza3q20vd4g",
+      "datasheetId": "000004174",
+      "name": "Aquila Kill Team",
+      "pointsCost": 100,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    }
+  ],
+  "createdAt": 1782116220591,
+  "updatedAt": 1782137563906
+}
+```
+</details>
