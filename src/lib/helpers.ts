@@ -383,6 +383,10 @@ export function stratagemAppliesTo(
   }
 
   let target = text.match(/TARGET:?\s*([\s\S]*?)(?:EFFECT:|WHEN:|RESTRICTIONS:|$)/)?.[1] ?? text;
+  // The target unit's keywords come before "from your army"; everything after is a condition or
+  // location ("embarked within a TRANSPORT", "that disembarked from a TRANSPORT") or a second
+  // target — keywords there must NOT be read as requirements on this unit.
+  target = target.split('FROM YOUR ARMY')[0];
   // drop exclusion clauses so "excluding TERMINATOR" isn't read as a requirement
   target = target.split(/EXCLUDING|OTHER THAN|THAT IS NOT|THAT ARE NOT|CANNOT/)[0];
   return matchKeywordExpr(target, kws, up);

@@ -243,6 +243,15 @@ describe('stratagemAppliesTo (keyword AND/OR matching)', () => {
     expect(stratagemAppliesTo(s, ['ADEPTUS ASTARTES', 'TERMINATOR'], vocab)).toBe(false);
     expect(stratagemAppliesTo('TARGET: One unit from your army.', ['VEHICLE'], vocab)).toBe(true);
   });
+  it('ignores location/condition keywords after "from your army"', () => {
+    // "embarked within a TRANSPORT" must not require the unit itself to BE a Transport
+    const s = 'WHEN: Command phase. TARGET: One INFANTRY unit from your army embarked within a TRANSPORT. EFFECT: x.';
+    expect(stratagemAppliesTo(s, ['INFANTRY'], vocab)).toBe(true);
+    // a disembark stratagem still only requires the leading keywords
+    const d = 'TARGET: One INFANTRY unit from your army that disembarked from a VEHICLE.';
+    expect(stratagemAppliesTo(d, ['INFANTRY'], vocab)).toBe(true);
+    expect(stratagemAppliesTo(d, ['VEHICLE'], vocab)).toBe(false);
+  });
   it('Rapid Ingress: general target but excludes AIRCRAFT', () => {
     const s = 'TARGET: One friendly unit in Strategic Reserves. EFFECT: Ingress. RESTRICTIONS: cannot select an Aircraft.';
     const voc = [...vocab, 'AIRCRAFT'];
