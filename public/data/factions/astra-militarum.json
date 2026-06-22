@@ -4246,7 +4246,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "",
      "model": "",
@@ -4260,7 +4261,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "",
      "group": "000004224-1",
@@ -4272,7 +4274,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "",
      "group": "000004224-1",
@@ -4301,7 +4304,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "lasgun cannot be",
      "model": "",
@@ -4310,36 +4314,19 @@
      ]
     },
     {
-     "text": "Up to one Recon Trooper can replace their lasgun with 1 long-las (instead of lasgun with 1 long-las.  up to two recon troopers each equipped with a lasgun can form a weapons team. if they do, one model’s lasgun is)",
+     "text": "Weapons team: two Recon Troopers replace their lasguns with 1 laspistol and 1 missile launcher (+1 laspistol)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "lasgun with 1 long-las.  up to two recon troopers each equipped with a lasgun can form a weapons team. if they do, one model’s lasgun is",
-     "group": "000004224-4",
+     "base": "",
      "model": "",
      "grants": [
-      "Lasgun",
-      "Long-las"
-     ]
-    },
-    {
-     "text": "Up to two Recon Troopers each equipped with a lasgun can form a weapons team. If they do, one model’s lasgun is replaced with 1 laspistol, and one model’s lasgun is replaced with 1 missile launcher and 1 laspistol (instead of lasgun with 1 long-las.  up to two recon troopers each equipped with a lasgun can form a weapons team. if they do, one model’s lasgun is)",
-     "cost": 0,
-     "type": "wargear",
-     "limit": {
-      "kind": "fixed",
-      "max": 1
-     },
-     "base": "lasgun with 1 long-las.  up to two recon troopers each equipped with a lasgun can form a weapons team. if they do, one model’s lasgun is",
-     "group": "000004224-4",
-     "model": "",
-     "grants": [
-      "Lasgun",
       "Laspistol",
-      "Long-las"
+      "Missile launcher – frag",
+      "Missile launcher – krak"
      ]
     }
    ],
@@ -27816,7 +27803,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "hot‑shot lascarbine",
      "group": "000003834-3",
@@ -27830,7 +27818,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "hot‑shot lascarbine",
      "group": "000003834-3",
@@ -27842,7 +27831,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "hot-shot lascarbine",
      "model": "",
@@ -27855,7 +27845,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "hot-shot lascarbine",
      "model": "",

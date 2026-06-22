@@ -1913,7 +1913,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "condemnor bolt pistol and null mace",
      "model": "",
@@ -1928,7 +1929,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "condemnor bolt pistol",
      "model": "",
@@ -1939,7 +1941,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "condemnor bolt pistol cannot be",
      "model": "",

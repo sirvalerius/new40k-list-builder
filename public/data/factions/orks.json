@@ -3745,7 +3745,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "smash hammer",
      "model": "",
@@ -3758,7 +3759,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "smash hammer",
      "model": "",
@@ -13897,7 +13899,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "",
      "group": "000000020-1",
@@ -13909,7 +13912,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "",
      "group": "000000020-1",
