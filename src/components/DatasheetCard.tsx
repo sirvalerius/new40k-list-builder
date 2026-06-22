@@ -114,6 +114,20 @@ export function DatasheetCard({ ds, selected }: { ds: Datasheet; selected?: Chos
         </Collapsible>
       )}
 
+      {/* Leader: bodyguard units this Character can attach to. (Support is a separate slot in
+          11e but the source data doesn't distinguish it yet, so that section stays hidden.) */}
+      {(ds.can_lead_names?.length ?? 0) > 0 && (
+        <Collapsible title={`Leader — can join (${ds.can_lead_names!.length})`}>
+          <ul className="col" style={{ gap: 2, margin: 0, paddingLeft: 18 }}>
+            {ds.can_lead_names!.map((n) => (
+              <li key={n} className="small">
+                {n}
+              </li>
+            ))}
+          </ul>
+        </Collapsible>
+      )}
+
       {ds.keywords.length > 0 && (
         <div>
           {ds.keywords.map((k) => (
