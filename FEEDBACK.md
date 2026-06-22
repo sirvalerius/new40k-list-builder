@@ -2682,3 +2682,317 @@ Non viene controllata la presenza o meno dei personaggi richiedi dal detachment.
 }
 ```
 </details>
+
+---
+### 2026-06-22T08:52:34.507Z
+
+_Il mio regno per un cavallo — Adeptus Custodes · Strike Force · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0_
+
+Forse puoi indicare nel menu dell'unità quante volte al massimo può essere presa. Es Damned Legionaires (max 4)
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqoxzgdrja4ru5j",
+  "name": "Il mio regno per un cavallo",
+  "factionId": "AC",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000900047",
+    "000000863"
+  ],
+  "units": [
+    {
+      "uid": "mqoz1on3xnaa9b7",
+      "datasheetId": "000000870",
+      "name": "Vindicare Assassin",
+      "pointsCost": 110,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM",
+      "customName": "Vindicare Assassin"
+    },
+    {
+      "uid": "mqoz1r1h2arfrkm",
+      "datasheetId": "000003828",
+      "name": "Daemonhost",
+      "pointsCost": 40,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz1tu90owlfci",
+      "datasheetId": "000004174",
+      "name": "Aquila Kill Team",
+      "pointsCost": 100,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz1ut1vt07wd8",
+      "datasheetId": "000004174",
+      "name": "Aquila Kill Team",
+      "pointsCost": 100,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": true,
+      "isCharacter": false,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz1w9376p46jh",
+      "datasheetId": "000000871",
+      "name": "Callidus Assassin",
+      "pointsCost": 100,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz206lwpsn6yu",
+      "datasheetId": "000000873",
+      "name": "Culexus Assassin",
+      "pointsCost": 85,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz290nlvyou3a",
+      "datasheetId": "000003826",
+      "name": "Indomitor Kill Team",
+      "pointsCost": 120,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz2dvnvnp173c",
+      "datasheetId": "000000875",
+      "name": "Inquisitor Karamazov",
+      "pointsCost": 140,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": true,
+      "warlord": true,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz2g9dw25fvqn",
+      "datasheetId": "000002765",
+      "name": "Navigator",
+      "pointsCost": 60,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz2i5jmy02m54",
+      "datasheetId": "000002765",
+      "name": "Navigator",
+      "pointsCost": 60,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz2j1aoxfkkaa",
+      "datasheetId": "000002765",
+      "name": "Navigator",
+      "pointsCost": 60,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz2nrr6ivyrmq",
+      "datasheetId": "000003827",
+      "name": "Spectrus Kill Team",
+      "pointsCost": 90,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz2papc633y3i",
+      "datasheetId": "000003827",
+      "name": "Spectrus Kill Team",
+      "pointsCost": 90,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz2ta88o3fe3q",
+      "datasheetId": "000003824",
+      "name": "Proteus Kill Team",
+      "pointsCost": 160,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz3326ejrhb9b",
+      "datasheetId": "000003828",
+      "name": "Daemonhost",
+      "pointsCost": 40,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz5sgfjqb58w8",
+      "datasheetId": "000002761",
+      "name": "Damned Legionnaires",
+      "pointsCost": 180,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz6cdkrswaihm",
+      "datasheetId": "000002761",
+      "name": "Damned Legionnaires",
+      "pointsCost": 180,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz6h63xq979lw",
+      "datasheetId": "000002761",
+      "name": "Damned Legionnaires",
+      "pointsCost": 180,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    },
+    {
+      "uid": "mqoz70wefb8npmx",
+      "datasheetId": "000003815",
+      "name": "Watch Master",
+      "pointsCost": 95,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": true,
+      "warlord": false,
+      "allyKeyword": "AGENTS OF THE IMPERIUM"
+    }
+  ],
+  "createdAt": 1782116220591,
+  "updatedAt": 1782118275493
+}
+```
+</details>
