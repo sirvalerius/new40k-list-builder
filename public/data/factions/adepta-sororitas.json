@@ -4834,7 +4834,7 @@
      "grants": []
     },
     {
-     "text": "Heavy bolter and 1 Mortifier flamer (instead of 2 heavy bolters)",
+     "text": "Heavy bolter and 1 Mortifier flamer (instead of heavy bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -4848,7 +4848,7 @@
      ]
     },
     {
-     "text": "Mortifier flamers (instead of 2 heavy bolters)",
+     "text": "Mortifier flamers (instead of heavy bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -6820,7 +6820,7 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "",
+     "base": "Plasma gun",
      "model": "",
      "grants": [
       "Meltagun"
@@ -6848,12 +6848,11 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "",
+     "base": "sanctifier melee weapon",
      "model": "",
      "grants": [
       "Ministorum hand flamer",
-      "Close combat weapon",
-      "Sanctifier melee weapon"
+      "Close combat weapon"
      ]
     },
     {
@@ -6864,11 +6863,10 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "",
+     "base": "sanctifier melee weapon",
      "model": "",
      "grants": [
-      "Close combat weapon",
-      "Sanctifier melee weapon"
+      "Close combat weapon"
      ]
     }
    ],
@@ -7078,7 +7076,7 @@
    "countable": true,
    "weapon_options": [
     {
-     "text": "Inferno pistols (instead of 2 bolt pistols)",
+     "text": "Inferno pistols (instead of bolt pistols)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7094,7 +7092,7 @@
      ]
     },
     {
-     "text": "Ministorum hand flamers (instead of 2 bolt pistols)",
+     "text": "Ministorum hand flamers (instead of bolt pistols)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7110,7 +7108,7 @@
      ]
     },
     {
-     "text": "Bolt pistol and 1 chainsword (instead of 2 bolt pistols)",
+     "text": "Bolt pistol and 1 chainsword (instead of bolt pistols)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7125,7 +7123,7 @@
      ]
     },
     {
-     "text": "Bolt pistol and 1 plasma pistol (instead of 2 bolt pistols)",
+     "text": "Bolt pistol and 1 plasma pistol (instead of bolt pistols)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7138,7 +7136,7 @@
      "grants": []
     },
     {
-     "text": "Bolt pistol and 1 power weapon (instead of 2 bolt pistols)",
+     "text": "Bolt pistol and 1 power weapon (instead of bolt pistols)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7153,7 +7151,7 @@
      ]
     },
     {
-     "text": "Plasma pistol and 1 chainsword (instead of 2 bolt pistols)",
+     "text": "Plasma pistol and 1 chainsword (instead of bolt pistols)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -7168,7 +7166,7 @@
      ]
     },
     {
-     "text": "Plasma pistol and 1 power weapon (instead of 2 bolt pistols)",
+     "text": "Plasma pistol and 1 power weapon (instead of bolt pistols)",
      "cost": 0,
      "type": "wargear",
      "limit": {

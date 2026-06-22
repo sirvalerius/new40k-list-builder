@@ -5924,11 +5924,10 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "boltgun cannot be",
+     "base": "accursed weapon",
      "model": "",
      "grants": [
       "Boltgun",
-      "Accursed weapon",
       "Power fist"
      ]
     },
@@ -8979,7 +8978,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Laser destroyers (instead of 2 quad lascannons)",
+     "text": "Laser destroyers (instead of quad lascannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -8994,7 +8993,7 @@
      ]
     },
     {
-     "text": "Quad heavy bolters (instead of 2 quad lascannons)",
+     "text": "Quad heavy bolters (instead of quad lascannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -9539,7 +9538,7 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin hellstrike missile launchers",
+     "base": "twin hellstrike missile launchers",
      "model": "",
      "grants": [
       "Twin lascannon"
@@ -15933,7 +15932,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Heavy bolters (instead of 2 heavy flamers)",
+     "text": "Heavy bolters (instead of heavy flamers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -15948,7 +15947,7 @@
      ]
     },
     {
-     "text": "Lascannons (instead of 2 heavy flamers)",
+     "text": "Lascannons (instead of heavy flamers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -15963,7 +15962,7 @@
      ]
     },
     {
-     "text": "Volkite culverins (instead of 2 heavy flamers)",
+     "text": "Volkite culverins (instead of heavy flamers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -15978,7 +15977,7 @@
      ]
     },
     {
-     "text": "Heavy bolters (instead of 2 lascannons)",
+     "text": "Heavy bolters (instead of lascannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -15993,7 +15992,7 @@
      ]
     },
     {
-     "text": "Heavy flamers (instead of 2 lascannons)",
+     "text": "Heavy flamers (instead of lascannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -16008,7 +16007,7 @@
      ]
     },
     {
-     "text": "Volkite culverins (instead of 2 lascannons)",
+     "text": "Volkite culverins (instead of lascannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -20227,70 +20226,76 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Autocannon",
+     "text": "Autocannon (instead of heavy stubbers can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "",
+     "base": "heavy stubbers can each be",
      "group": "000002732-0",
      "model": "",
      "grants": [
-      "Autocannon"
+      "Autocannon",
+      "Heavy stubber"
      ]
     },
     {
-     "text": "Heavy bolter",
+     "text": "Heavy bolter (instead of heavy stubbers can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "",
+     "base": "heavy stubbers can each be",
      "group": "000002732-0",
      "model": "",
      "grants": [
-      "Heavy bolter"
+      "Heavy bolter",
+      "Heavy stubber"
      ]
     },
     {
-     "text": "Lascannon",
+     "text": "Lascannon (instead of heavy stubbers can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "",
+     "base": "heavy stubbers can each be",
      "group": "000002732-0",
      "model": "",
      "grants": [
+      "Heavy stubber",
       "Lascannon"
      ]
     },
     {
-     "text": "Missile launcher",
+     "text": "Missile launcher (instead of heavy stubbers can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "",
-     "group": "000002732-0",
-     "model": "",
-     "grants": []
-    },
-    {
-     "text": "Mortar",
-     "cost": 0,
-     "type": "wargear",
-     "limit": {
-      "kind": "all"
-     },
-     "base": "",
+     "base": "heavy stubbers can each be",
      "group": "000002732-0",
      "model": "",
      "grants": [
+      "Heavy stubber"
+     ]
+    },
+    {
+     "text": "Mortar (instead of heavy stubbers can each be)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "heavy stubbers can each be",
+     "group": "000002732-0",
+     "model": "",
+     "grants": [
+      "Heavy stubber",
       "Mortar"
      ]
     }
@@ -24195,7 +24200,7 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 twin hellstrike missile launchers",
+     "base": "twin hellstrike missile launchers",
      "model": "",
      "grants": [
       "Twin lascannon"
@@ -24374,7 +24379,7 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Heavy flamers (instead of 2 combi-bolters)",
+     "text": "Heavy flamers (instead of combi-bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {
@@ -24389,7 +24394,7 @@
      ]
     },
     {
-     "text": "Twin volkite chargers (instead of 2 combi-bolters)",
+     "text": "Twin volkite chargers (instead of combi-bolters)",
      "cost": 0,
      "type": "wargear",
      "limit": {

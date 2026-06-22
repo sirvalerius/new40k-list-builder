@@ -487,14 +487,14 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Lascannons (instead of 2 acastus autocannons can each be)",
+     "text": "Lascannons (instead of acastus autocannons can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 acastus autocannons can each be",
+     "base": "acastus autocannons can each be",
      "group": "000001099-0",
      "model": "",
      "grants": [
@@ -503,14 +503,14 @@
      ]
     },
     {
-     "text": "Acastus autocannon and 1 lascannon (instead of 2 acastus autocannons can each be)",
+     "text": "Acastus autocannon and 1 lascannon (instead of acastus autocannons can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 acastus autocannons can each be",
+     "base": "acastus autocannons can each be",
      "group": "000001099-0",
      "model": "",
      "grants": [
@@ -4037,7 +4037,7 @@
       "kind": "fixed",
       "max": 1
      },
-     "base": "2 gheiststrike missile launchers and twin desecrator cannon",
+     "base": "gheiststrike missile launchers and twin desecrator cannon",
      "model": "",
      "grants": [
       "Gheiststrike missile launcher",
@@ -4743,70 +4743,76 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Autocannon",
+     "text": "Autocannon (instead of heavy stubbers can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "",
+     "base": "heavy stubbers can each be",
      "group": "000003857-0",
      "model": "",
      "grants": [
-      "Autocannon"
+      "Autocannon",
+      "Heavy stubber"
      ]
     },
     {
-     "text": "Heavy bolter",
+     "text": "Heavy bolter (instead of heavy stubbers can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "",
+     "base": "heavy stubbers can each be",
      "group": "000003857-0",
      "model": "",
      "grants": [
-      "Heavy bolter"
+      "Heavy bolter",
+      "Heavy stubber"
      ]
     },
     {
-     "text": "Lascannon",
+     "text": "Lascannon (instead of heavy stubbers can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "",
+     "base": "heavy stubbers can each be",
      "group": "000003857-0",
      "model": "",
      "grants": [
+      "Heavy stubber",
       "Lascannon"
      ]
     },
     {
-     "text": "Missile launcher",
+     "text": "Missile launcher (instead of heavy stubbers can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "",
-     "group": "000003857-0",
-     "model": "",
-     "grants": []
-    },
-    {
-     "text": "Mortar",
-     "cost": 0,
-     "type": "wargear",
-     "limit": {
-      "kind": "all"
-     },
-     "base": "",
+     "base": "heavy stubbers can each be",
      "group": "000003857-0",
      "model": "",
      "grants": [
+      "Heavy stubber"
+     ]
+    },
+    {
+     "text": "Mortar (instead of heavy stubbers can each be)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "heavy stubbers can each be",
+     "group": "000003857-0",
+     "model": "",
+     "grants": [
+      "Heavy stubber",
       "Mortar"
      ]
     }

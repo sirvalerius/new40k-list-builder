@@ -5041,10 +5041,9 @@
       "kind": "per_n",
       "n": 5
      },
-     "base": "boltgun cannot be",
+     "base": "accursed weapon",
      "model": "",
      "grants": [
-      "Accursed weapon",
       "Power fist",
       "Boltgun"
      ]
@@ -14656,70 +14655,76 @@
    "countable": false,
    "weapon_options": [
     {
-     "text": "Autocannon",
+     "text": "Autocannon (instead of heavy stubbers can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "",
+     "base": "heavy stubbers can each be",
      "group": "000004058-0",
      "model": "",
      "grants": [
+      "Heavy stubber",
       "Autocannon"
      ]
     },
     {
-     "text": "Heavy bolter",
+     "text": "Heavy bolter (instead of heavy stubbers can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "",
+     "base": "heavy stubbers can each be",
      "group": "000004058-0",
      "model": "",
      "grants": [
+      "Heavy stubber",
       "Heavy bolter"
      ]
     },
     {
-     "text": "Lascannon",
+     "text": "Lascannon (instead of heavy stubbers can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "",
+     "base": "heavy stubbers can each be",
      "group": "000004058-0",
      "model": "",
      "grants": [
-      "Lascannon"
+      "Lascannon",
+      "Heavy stubber"
      ]
     },
     {
-     "text": "Missile launcher",
+     "text": "Missile launcher (instead of heavy stubbers can each be)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "",
-     "group": "000004058-0",
-     "model": "",
-     "grants": []
-    },
-    {
-     "text": "Mortar",
-     "cost": 0,
-     "type": "wargear",
-     "limit": {
-      "kind": "all"
-     },
-     "base": "",
+     "base": "heavy stubbers can each be",
      "group": "000004058-0",
      "model": "",
      "grants": [
+      "Heavy stubber"
+     ]
+    },
+    {
+     "text": "Mortar (instead of heavy stubbers can each be)",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "heavy stubbers can each be",
+     "group": "000004058-0",
+     "model": "",
+     "grants": [
+      "Heavy stubber",
       "Mortar"
      ]
     }
