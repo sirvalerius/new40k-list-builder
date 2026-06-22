@@ -6178,7 +6178,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "",
      "model": "",
@@ -9157,7 +9158,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "",
      "model": "",
@@ -9168,7 +9170,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "",
      "model": "",
@@ -11933,8 +11936,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "per_n",
-      "n": 5
+      "kind": "fixed",
+      "max": 1
      },
      "base": "",
      "model": "",
@@ -13357,8 +13360,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "per_n",
-      "n": 3
+      "kind": "fixed",
+      "max": 1
      },
      "base": "",
      "model": "",

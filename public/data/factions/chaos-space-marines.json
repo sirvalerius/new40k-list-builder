@@ -5921,15 +5921,11 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "per_n",
-      "n": 5
+      "kind": "note"
      },
-     "base": "accursed weapon",
+     "base": "",
      "model": "",
-     "grants": [
-      "Boltgun",
-      "Power fist"
-     ]
+     "grants": []
     },
     {
      "text": "1 model can be equipped with 1 Chaos icon.",
@@ -18041,14 +18037,11 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "fixed",
-      "max": 1
+      "kind": "note"
      },
-     "base": "boltgun cannot be",
+     "base": "",
      "model": "",
-     "grants": [
-      "Boltgun"
-     ]
+     "grants": []
     }
    ],
    "chapter": "",

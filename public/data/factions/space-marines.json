@@ -9142,15 +9142,11 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "fixed",
-      "max": 1
+      "kind": "note"
      },
-     "base": "heavy bolt pistol and astartes chainsword cannot be",
+     "base": "",
      "model": "",
-     "grants": [
-      "Heavy bolt pistol",
-      "Astartes chainsword"
-     ]
+     "grants": []
     }
    ],
    "chapter": "",
@@ -20734,7 +20730,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "",
      "model": "",
@@ -20948,7 +20945,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "",
      "model": "",
@@ -21497,7 +21495,8 @@
      "cost": 0,
      "type": "wargear",
      "limit": {
-      "kind": "all"
+      "kind": "fixed",
+      "max": 1
      },
      "base": "",
      "model": "",
