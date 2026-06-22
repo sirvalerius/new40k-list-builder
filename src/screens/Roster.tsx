@@ -196,19 +196,16 @@ export function Roster({
                 </button>
               </div>
             )}
-            {/* only state the group header doesn't already imply (type badges would be
-                redundant with the sub-type section the card sits under) */}
-            {(u.warlord ||
-              u.isAlly ||
-              (u.requiresDetachment && !chosenDetNames.has(u.requiresDetachment))) && (
-              <div className="row wrap mt" style={{ gap: 4 }}>
-                {u.warlord && <span className="badge warlord">Warlord</span>}
-                {u.isAlly && <span className="badge ally">Ally</span>}
-                {u.requiresDetachment && !chosenDetNames.has(u.requiresDetachment) && (
-                  <span className="badge bad">needs {u.requiresDetachment}</span>
-                )}
-              </div>
-            )}
+            <div className="row wrap mt" style={{ gap: 4 }}>
+              {u.warlord && <span className="badge warlord">Warlord</span>}
+              {u.isEpicHero && <span className="badge epic">Epic Hero</span>}
+              {u.isCharacter && !u.isEpicHero && <span className="badge char">Character</span>}
+              {u.isBattleline && <span className="badge">Battleline</span>}
+              {u.isAlly && <span className="badge ally">Ally</span>}
+              {u.requiresDetachment && !chosenDetNames.has(u.requiresDetachment) && (
+                <span className="badge bad">needs {u.requiresDetachment}</span>
+              )}
+            </div>
             {/* leaders/supports joined to this (bodyguard) unit */}
             {leaders.length > 0 && (
               <div className="row wrap mt" style={{ gap: 4, alignItems: 'center' }}>
@@ -348,6 +345,7 @@ export function Roster({
             const renderRow = (d: Datasheet) => {
               const have = copiesOf(list, d.id);
               const lim = d.is_battleline ? blLimit : unitLimit;
+              const maxN = d.is_epic_hero ? 1 : lim; // Rule of Three (×2 for Battleline); Epic Hero = 1
               const atLimit = lim > 0 && have >= lim;
               const heroBlocked = d.is_epic_hero && have >= 1;
               const fav = favSet.has(d.id);
@@ -374,6 +372,7 @@ export function Roster({
                         {d.points[0]
                           ? `from ${intOf(d.points[0].cost)} pts`
                           : 'no points'}
+                        {maxN > 0 ? ` · max ${maxN}` : ''}
                         {have > 0 ? ` · ${have} in list` : ''}
                         {atLimit || heroBlocked ? ' · at limit' : ''}
                       </div>

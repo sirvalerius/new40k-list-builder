@@ -247,6 +247,7 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 .badge.warlord { color: #fff; background: var(--accent); border-color: var(--accent); }
 .badge.ally { color: #fff; background: #355e8c; border-color: #355e8c; }
 .badge.char { color: #d8b4fe; border-color: #4a3a66; }
+.badge.epic { color: var(--bg); background: var(--accent-2); border-color: var(--accent-2); font-weight: 700; }
 
 .kw {
   display: inline-block;
