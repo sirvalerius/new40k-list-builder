@@ -482,6 +482,25 @@ function WeaponOptionsEditor({
     }
   }
 
+  // Per-weapon caps from "a model cannot be equipped with more than N <weapon>". These span
+  // option groups, so a weapon offered in two "one of the following" lists (e.g. the Defiler's
+  // Electroscourge) is capped across both — not once per group.
+  const nrm = (s: string) => stripHtml(s).toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+  const WORDNUM: Record<string, number> = { one: 1, two: 2, three: 3, four: 4 };
+  const weaponCap = new Map<string, number>();
+  for (const o of options) {
+    const m = stripHtml(o.text).match(
+      /cannot be equipped with more than (one|two|three|four|\d+)\s+([a-z][a-z '-]+)/i,
+    );
+    if (m) weaponCap.set(nrm(m[2]), WORDNUM[m[1].toLowerCase()] ?? parseInt(m[1], 10));
+  }
+  const weaponUsed = new Map<string, number>();
+  if (weaponCap.size)
+    for (const o of options)
+      for (const g of o.grants ?? [])
+        if (weaponCap.has(nrm(g)))
+          weaponUsed.set(nrm(g), (weaponUsed.get(nrm(g)) ?? 0) + qtyOf(o.text));
+
   // Sub-model provider counts: an option that pertains to an optional sub-model (e.g. the
   // Invader ATV's gun) can only be taken as many times as that model is actually in the unit.
   const providerQty = new Map<string, number>();
@@ -541,6 +560,12 @@ function WeaponOptionsEditor({
             key && rawMax != null
               ? Math.min(rawMax, (capPool.get(key) ?? rawMax) - ((capUsed.get(key) ?? 0) - qtyOf(o.text)))
               : rawMax;
+          // tighten by any per-weapon cap on the weapons this option grants (cross-group)
+          for (const g of o.grants ?? []) {
+            const cap = weaponCap.get(nrm(g));
+            if (cap != null)
+              max = Math.min(max ?? Infinity, cap - ((weaponUsed.get(nrm(g)) ?? 0) - qtyOf(o.text)));
+          }
           // cap by the count of the optional sub-model this option pertains to
           const provModel = o.type !== 'model' ? o.model : '';
           const provCap = provModel && providerQty.has(provModel) ? providerQty.get(provModel)! : null;

@@ -111,6 +111,33 @@ export function clampLoadout(unit: ListUnit, ds: Datasheet): ChosenWargear[] {
     }
     return w;
   });
+  // Per-weapon caps from "cannot be equipped with more than N <weapon>" — span option groups,
+  // so a weapon offered in two lists (Defiler Electroscourge, Hive Tyrant heavy venom cannon)
+  // can't exceed N in total.
+  const nrm = (s: string) => stripHtml(s).toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+  const WORDNUM: Record<string, number> = { one: 1, two: 2, three: 3, four: 4 };
+  const wCap = new Map<string, number>();
+  for (const o of opts) {
+    const m = stripHtml(o.text).match(
+      /cannot be equipped with more than (one|two|three|four|\d+)\s+([a-z][a-z '-]+)/i,
+    );
+    if (m) wCap.set(nrm(m[2]), WORDNUM[m[1].toLowerCase()] ?? parseInt(m[1], 10));
+  }
+  if (wCap.size) {
+    const remaining = new Map(wCap);
+    wargear = wargear.map((w) => {
+      const o = opts.find((op) => op.text === w.name);
+      let q = w.qty;
+      for (const g of o?.grants ?? []) {
+        const cap = remaining.get(nrm(g));
+        if (cap != null) {
+          q = Math.min(q, Math.max(0, cap));
+          remaining.set(nrm(g), cap - q);
+        }
+      }
+      return q !== w.qty ? { ...w, qty: q } : w;
+    });
+  }
   return wargear.filter((w) => w.qty > 0);
 }
 

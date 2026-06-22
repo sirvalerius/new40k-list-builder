@@ -177,6 +177,23 @@ describe('clampLoadout drops sub-model options when the model is removed', () =>
     const out = clampLoadout(unit, outriders);
     expect(out.find((x) => x.name === MM)?.qty).toBe(1);
   });
+  it('caps a weapon offered in two groups by "cannot be equipped with more than one"', () => {
+    const defiler = ds({
+      id: 'def', name: 'Defiler', model_min: 1, model_max: 1,
+      weapons: [w('Electroscourge'), w('Heavy baleflamer'), w('Heavy missile launcher')],
+      weapon_options: [
+        { text: 'Electroscourge (a model cannot be equipped with more than one electroscourge) (instead of heavy baleflamer)',
+          cost: 0, type: 'wargear', limit: { kind: 'fixed', max: 1 }, base: 'heavy baleflamer', group: 'g2', grants: ['Electroscourge'] },
+        { text: 'Electroscourge (a model cannot be equipped with more than one electroscourge) (instead of heavy missile launcher)',
+          cost: 0, type: 'wargear', limit: { kind: 'fixed', max: 1 }, base: 'heavy missile launcher', group: 'g3', grants: ['Electroscourge'] },
+      ],
+    });
+    const [a, b] = defiler.weapon_options!;
+    const unit = { ...buildListUnit(defiler, defiler.points[0] ?? { description: '', cost: '0' }, 1),
+      wargearCosts: [{ name: a.text, cost: 0, qty: 1 }, { name: b.text, cost: 0, qty: 1 }] as ChosenWargear[] };
+    const out = clampLoadout(unit, defiler);
+    expect(out.reduce((s, x) => s + x.qty, 0)).toBe(1); // only one Electroscourge total
+  });
 });
 
 describe('unitGroup (roster sub-type)', () => {
