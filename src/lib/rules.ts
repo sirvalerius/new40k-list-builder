@@ -113,6 +113,7 @@ export function validateList(
   // --- Enhancements ---
   // Upgrade-tag enhancements applied to non-Character units count as a single choice when shared by name.
   const upgradeNames = new Map<string, number>();   // name -> count of non-character bearers
+  const standardNames = new Map<string, number>();  // name -> count of bearers (must stay 1)
   let nonUpgradeChoices = 0;
   for (const u of list.units) {
     if (!u.enhancementName) continue;
@@ -125,12 +126,17 @@ export function validateList(
       upgradeNames.set(u.enhancementName, (upgradeNames.get(u.enhancementName) ?? 0) + 1);
     } else {
       nonUpgradeChoices += 1;
+      standardNames.set(u.enhancementName, (standardNames.get(u.enhancementName) ?? 0) + 1);
       if (!u.isCharacter)
         v.push({ level: 'error', code: 'ENH_CHAR', message: `${u.name}: enhancement solo su CHARACTER (o Upgrade su non-Character).` });
     }
   }
   for (const [name, n] of upgradeNames) {
     if (n > 3) v.push({ level: 'error', code: 'UPGRADE_3', message: `Enhancement "${name}" su ${n} unità (max 3 per Upgrade).` });
+  }
+  // standard (non-Upgrade) enhancements are unique: each may be given to only one model.
+  for (const [name, n] of standardNames) {
+    if (n > 1) v.push({ level: 'error', code: 'ENH_DUP', message: `Enhancement "${name}" assegnato a ${n} unità (ogni enhancement è unico).` });
   }
   const enhancementsUsed = nonUpgradeChoices + upgradeNames.size;  // each shared Upgrade = 1 choice
   if (enhancementLimit && enhancementsUsed > enhancementLimit)

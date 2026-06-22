@@ -434,6 +434,18 @@ describe('enhancements', () => {
     expect(res.totals.enhancementsUsed).toBe(1);
     expect(res.ok).toBe(false);
   });
+
+  it('the same standard enhancement on two characters => ENH_DUP', () => {
+    const units = [
+      warlordChar({ enhancementName: 'Relic' }),
+      makeUnit({ datasheetId: 'c2', name: 'Char 2', isCharacter: true, enhancementName: 'Relic' }),
+    ];
+    const res = validateList(makeList({ units }), makeRules(), [
+      makeDetachment({ enhancements: [makeEnhancement({ name: 'Relic', is_upgrade: false })] }),
+    ]);
+    expect(codes(res)).toContain('ENH_DUP');
+    expect(res.ok).toBe(false);
+  });
 });
 
 // ---------------------------------------------------------------------------
