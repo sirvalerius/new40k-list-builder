@@ -4049,3 +4049,135 @@ Nelle opzioni di arma dei terminator, anche se imposto l'unità da 10, considera
 }
 ```
 </details>
+
+---
+### 2026-06-27T14:47:57.933Z
+
+_Space Marines list — Space Marines · Strike Force · Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
+
+I veicoli da trasporto non indicano quanti posti hanno e cosa possono trasportare. Non trovo il datasheet del land speeder. Credo manchino tutti I datasheet presenti nel PDF degli space marine della 11th edizione
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqwcvarkyeunhfk",
+  "name": "Space Marines list",
+  "factionId": "SM",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000000994",
+    "000001119"
+  ],
+  "units": [
+    {
+      "uid": "mqwczhvebl3jhdk",
+      "datasheetId": "000004167",
+      "name": "Suboden Khan",
+      "pointsCost": 100,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqwd03o2fqvbf1j",
+      "datasheetId": "000000079",
+      "name": "Librarian In Terminator Armour",
+      "pointsCost": 75,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "attachedToUid": "mqwd2a79092bssd"
+    },
+    {
+      "uid": "mqwd0897ye7p6th",
+      "datasheetId": "000002266",
+      "name": "Librarian",
+      "pointsCost": 60,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "attachedToUid": "mqwd11pg7kr2ivv",
+      "enhancementName": "Fusillade",
+      "enhancementCost": 20
+    },
+    {
+      "uid": "mqwd11pg7kr2ivv",
+      "datasheetId": "000002255",
+      "name": "Sternguard Veteran Squad",
+      "pointsCost": 190,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": []
+    },
+    {
+      "uid": "mqwd2a79092bssd",
+      "datasheetId": "000000118",
+      "name": "Terminator Assault Squad",
+      "pointsCost": 155,
+      "pointsLabel": "5 models",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqwh2ksurjt1wou",
+      "datasheetId": "000002722",
+      "name": "Repulsor Executioner",
+      "pointsCost": 240,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqwh2rz6nfoas5z",
+      "datasheetId": "000002721",
+      "name": "Repulsor",
+      "pointsCost": 170,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    }
+  ],
+  "createdAt": 1782564484159,
+  "updatedAt": 1782571551523,
+  "subFaction": "White Scars"
+}
+```
+</details>
