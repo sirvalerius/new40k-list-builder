@@ -6,7 +6,21 @@ import { equippedWeapons, stripHtml } from '../lib/helpers';
 
 // When `selected` is given (a unit in the list), only the chosen weapon options are shown;
 // otherwise (browsing) every option is listed.
-export function DatasheetCard({ ds, selected }: { ds: Datasheet; selected?: ChosenWargear[] }) {
+export function DatasheetCard({
+  ds,
+  selected,
+  subFaction,
+}: {
+  ds: Datasheet;
+  selected?: ChosenWargear[];
+  subFaction?: string;
+}) {
+  // "can join" units, chapter-filtered: a Chapter-specific bodyguard only shows when that Chapter
+  // is the selected sub-faction. A generic Space Marines army (no Chapter chosen) can't field
+  // Blood Angels / Dark Angels / … units, so they're hidden until that Chapter is picked.
+  const canJoin = (ds.can_lead_entries ?? [])
+    .filter((e) => !e.chapter || e.chapter === subFaction)
+    .map((e) => e.name);
   const tags: string[] = [];
   if (ds.is_character) tags.push('Character');
   if (ds.is_battleline) tags.push('Battleline');
@@ -115,15 +129,13 @@ export function DatasheetCard({ ds, selected }: { ds: Datasheet; selected?: Chos
       )}
 
       {/* Bodyguard units this Character can attach to, labelled by its 11e attach type
-          (Leader vs Support, from the faction-pack errata). */}
-      {(ds.can_lead_names?.length ?? 0) > 0 && (
+          (Leader vs Support, from the faction-pack errata) and chapter-filtered. */}
+      {canJoin.length > 0 && (
         <Collapsible
-          title={`${ds.attach_type === 'support' ? 'Support' : 'Leader'} — can join (${
-            ds.can_lead_names!.length
-          })`}
+          title={`${ds.attach_type === 'support' ? 'Support' : 'Leader'} — can join (${canJoin.length})`}
         >
           <ul className="col" style={{ gap: 2, margin: 0, paddingLeft: 18 }}>
-            {ds.can_lead_names!.map((n) => (
+            {canJoin.map((n) => (
               <li key={n} className="small">
                 {n}
               </li>

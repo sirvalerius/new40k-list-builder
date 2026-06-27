@@ -169,6 +169,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -358,6 +359,7 @@
    "is_dedicated_transport": true,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -502,6 +504,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -685,6 +688,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -915,6 +919,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -1058,6 +1063,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -1181,6 +1187,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -1446,6 +1453,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -1674,6 +1682,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -1786,6 +1795,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -1964,6 +1974,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -2094,6 +2105,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -2283,6 +2295,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -2507,6 +2520,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -2768,6 +2782,16 @@
     "Infractors",
     "Tormentors"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Infractors",
+     "chapter": ""
+    },
+    {
+     "name": "Tormentors",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": true,
@@ -2965,6 +2989,16 @@
     "Chaos Terminators",
     "Noise Marines"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Chaos Terminators",
+     "chapter": ""
+    },
+    {
+     "name": "Noise Marines",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -3114,6 +3148,12 @@
    "can_lead_names": [
     "Flawless Blades"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Flawless Blades",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -3246,6 +3286,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -3420,6 +3461,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -3591,6 +3633,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -3775,6 +3818,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -3922,6 +3966,20 @@
     "Infractors",
     "Noise Marines",
     "Tormentors"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Infractors",
+     "chapter": ""
+    },
+    {
+     "name": "Noise Marines",
+     "chapter": ""
+    },
+    {
+     "name": "Tormentors",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": false,
@@ -4143,6 +4201,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,

@@ -281,7 +281,7 @@ export function Roster({
           <details style={{ marginTop: 8 }}>
             <summary className="muted small">Datasheet</summary>
             <div className="mt">
-              <DatasheetCard ds={ds} selected={u.wargearCosts ?? []} />
+              <DatasheetCard ds={ds} selected={u.wargearCosts ?? []} subFaction={subFaction} />
             </div>
           </details>
         )}
@@ -776,7 +776,7 @@ function AddUnitModal({
       )}
 
       <div className="mt">
-        <DatasheetCard ds={ds} />
+        <DatasheetCard ds={ds} subFaction={list.subFaction ?? ''} />
       </div>
     </Modal>
   );

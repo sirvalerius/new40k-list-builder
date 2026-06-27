@@ -179,6 +179,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -314,6 +315,20 @@
     "Breacher Team",
     "Kroot Carnivores",
     "Strike Team"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Breacher Team",
+     "chapter": ""
+    },
+    {
+     "name": "Kroot Carnivores",
+     "chapter": ""
+    },
+    {
+     "name": "Strike Team",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": true,
@@ -458,6 +473,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -677,6 +693,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -868,6 +885,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -1126,6 +1144,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -1384,6 +1403,16 @@
     "Breacher Team",
     "Strike Team"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Breacher Team",
+     "chapter": ""
+    },
+    {
+     "name": "Strike Team",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -1572,6 +1601,20 @@
     "Crisis Fireknife Battlesuits",
     "Crisis Starscythe Battlesuits",
     "Crisis Sunforge Battlesuits"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Crisis Fireknife Battlesuits",
+     "chapter": ""
+    },
+    {
+     "name": "Crisis Starscythe Battlesuits",
+     "chapter": ""
+    },
+    {
+     "name": "Crisis Sunforge Battlesuits",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": false,
@@ -1808,6 +1851,20 @@
     "Crisis Fireknife Battlesuits",
     "Crisis Starscythe Battlesuits",
     "Crisis Sunforge Battlesuits"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Crisis Fireknife Battlesuits",
+     "chapter": ""
+    },
+    {
+     "name": "Crisis Starscythe Battlesuits",
+     "chapter": ""
+    },
+    {
+     "name": "Crisis Sunforge Battlesuits",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": false,
@@ -2384,6 +2441,24 @@
     "Crisis Starscythe Battlesuits",
     "Crisis Sunforge Battlesuits"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Crisis Battlesuits",
+     "chapter": ""
+    },
+    {
+     "name": "Crisis Fireknife Battlesuits",
+     "chapter": ""
+    },
+    {
+     "name": "Crisis Starscythe Battlesuits",
+     "chapter": ""
+    },
+    {
+     "name": "Crisis Sunforge Battlesuits",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": true,
    "has_order_tiers": false,
@@ -2929,6 +3004,20 @@
     "Crisis Starscythe Battlesuits",
     "Crisis Sunforge Battlesuits"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Crisis Fireknife Battlesuits",
+     "chapter": ""
+    },
+    {
+     "name": "Crisis Starscythe Battlesuits",
+     "chapter": ""
+    },
+    {
+     "name": "Crisis Sunforge Battlesuits",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -3429,6 +3518,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -3649,6 +3739,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -4112,6 +4203,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -4319,6 +4411,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -4507,6 +4600,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -4679,6 +4773,12 @@
    "can_lead_names": [
     "Pathfinder Team"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Pathfinder Team",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -4831,6 +4931,7 @@
    "is_dedicated_transport": true,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -4992,6 +5093,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -5155,6 +5257,16 @@
    "can_lead_names": [
     "Breacher Team",
     "Strike Team"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Breacher Team",
+     "chapter": ""
+    },
+    {
+     "name": "Strike Team",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": false,
@@ -5342,6 +5454,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -5556,6 +5669,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -5760,6 +5874,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -6004,6 +6119,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -6176,6 +6292,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -6312,6 +6429,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -6484,6 +6602,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -6720,6 +6839,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -6913,6 +7033,16 @@
     "Kroot Carnivores",
     "Kroot Farstalkers"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Kroot Carnivores",
+     "chapter": ""
+    },
+    {
+     "name": "Kroot Farstalkers",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -7024,6 +7154,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -7180,6 +7311,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -7329,6 +7461,16 @@
    "can_lead_names": [
     "Kroot Carnivores",
     "Kroot Farstalkers"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Kroot Carnivores",
+     "chapter": ""
+    },
+    {
+     "name": "Kroot Farstalkers",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": false,
@@ -7488,6 +7630,16 @@
     "Kroot Carnivores",
     "Kroot Farstalkers"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Kroot Carnivores",
+     "chapter": ""
+    },
+    {
+     "name": "Kroot Farstalkers",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -7641,6 +7793,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -7784,6 +7937,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -7996,6 +8150,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -8240,6 +8395,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -8382,6 +8538,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -8604,6 +8761,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -8918,6 +9076,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -9106,6 +9265,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -9255,6 +9415,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -9365,6 +9526,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -9566,6 +9728,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -9745,6 +9908,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -9905,6 +10069,12 @@
    "is_leader": true,
    "can_lead_names": [
     "Xv9 Hazard Battlesuits"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Xv9 Hazard Battlesuits",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": true,
@@ -10068,6 +10238,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -10259,6 +10430,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -10545,6 +10717,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -10736,6 +10909,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -10963,6 +11137,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -11092,6 +11267,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -11320,6 +11496,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -11503,6 +11680,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -11731,6 +11909,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -11856,6 +12035,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -11975,6 +12155,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -12100,6 +12281,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -12346,6 +12528,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -12567,6 +12750,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -12765,6 +12949,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -12946,6 +13131,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -13235,6 +13421,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,

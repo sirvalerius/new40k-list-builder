@@ -111,6 +111,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -258,6 +259,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -491,6 +493,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -751,6 +754,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -1033,6 +1037,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -1271,6 +1276,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -1419,6 +1425,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -1577,6 +1584,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -1803,6 +1811,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -1960,6 +1969,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -2153,6 +2163,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -2355,6 +2366,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -2550,6 +2562,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -2752,6 +2765,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -2936,6 +2950,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -3169,6 +3184,16 @@
    "can_lead_names": [
     "Cadian Shock Troops",
     "Kasrkin"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Cadian Shock Troops",
+     "chapter": ""
+    },
+    {
+     "name": "Kasrkin",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": false,
@@ -3547,6 +3572,12 @@
    "is_leader": true,
    "can_lead_names": [
     "Cadian Shock Troops"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Cadian Shock Troops",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": false,
@@ -3961,6 +3992,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -4234,6 +4266,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -4556,6 +4589,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -4895,6 +4929,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -5379,6 +5414,12 @@
    "can_lead_names": [
     "Catachan Jungle Fighters"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Catachan Jungle Fighters",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -5789,6 +5830,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -5991,6 +6033,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -6144,6 +6187,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -6273,6 +6317,7 @@
    "is_dedicated_transport": true,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -6475,6 +6520,7 @@
    "is_dedicated_transport": true,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -6721,6 +6767,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -6938,6 +6985,32 @@
     "Krieg Combat Engineers",
     "Tempestus Scions"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Cadian Shock Troops",
+     "chapter": ""
+    },
+    {
+     "name": "Catachan Jungle Fighters",
+     "chapter": ""
+    },
+    {
+     "name": "Death Korps Of Krieg",
+     "chapter": ""
+    },
+    {
+     "name": "Kasrkin",
+     "chapter": ""
+    },
+    {
+     "name": "Krieg Combat Engineers",
+     "chapter": ""
+    },
+    {
+     "name": "Tempestus Scions",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -7130,6 +7203,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -7285,6 +7359,32 @@
     "Kasrkin",
     "Krieg Combat Engineers",
     "Tempestus Scions"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Cadian Shock Troops",
+     "chapter": ""
+    },
+    {
+     "name": "Catachan Jungle Fighters",
+     "chapter": ""
+    },
+    {
+     "name": "Death Korps Of Krieg",
+     "chapter": ""
+    },
+    {
+     "name": "Kasrkin",
+     "chapter": ""
+    },
+    {
+     "name": "Krieg Combat Engineers",
+     "chapter": ""
+    },
+    {
+     "name": "Tempestus Scions",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": false,
@@ -7488,6 +7588,32 @@
     "Krieg Combat Engineers",
     "Tempestus Scions"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Cadian Shock Troops",
+     "chapter": ""
+    },
+    {
+     "name": "Catachan Jungle Fighters",
+     "chapter": ""
+    },
+    {
+     "name": "Death Korps Of Krieg",
+     "chapter": ""
+    },
+    {
+     "name": "Kasrkin",
+     "chapter": ""
+    },
+    {
+     "name": "Krieg Combat Engineers",
+     "chapter": ""
+    },
+    {
+     "name": "Tempestus Scions",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -7629,6 +7755,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -7773,6 +7900,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -8033,6 +8161,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -8405,6 +8534,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -8728,6 +8858,12 @@
    "can_lead_names": [
     "Death Riders"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Death Riders",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": true,
    "has_order_tiers": false,
@@ -8869,6 +9005,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -9030,6 +9167,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -9250,6 +9388,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -9495,6 +9634,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -9643,6 +9783,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -9772,6 +9913,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -9938,6 +10080,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -10106,6 +10249,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -10263,6 +10407,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -10524,6 +10669,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -10693,6 +10839,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -10905,6 +11052,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -11043,6 +11191,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -11162,6 +11311,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -11281,6 +11431,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -11474,6 +11625,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -11709,6 +11861,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -11995,6 +12148,12 @@
    "can_lead_names": [
     "Cadian Shock Troops"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Cadian Shock Troops",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": true,
    "has_order_tiers": false,
@@ -12177,6 +12336,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -12379,6 +12539,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -12525,6 +12686,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -12824,6 +12986,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -13232,6 +13395,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -13689,6 +13853,16 @@
     "Death Korps Of Krieg",
     "Krieg Combat Engineers"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Death Korps Of Krieg",
+     "chapter": ""
+    },
+    {
+     "name": "Krieg Combat Engineers",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -13982,6 +14156,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -14233,6 +14408,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -14664,6 +14840,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -15107,6 +15284,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -15462,6 +15640,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -15828,6 +16007,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -16183,6 +16363,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -16538,6 +16719,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -16893,6 +17075,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -17171,6 +17354,12 @@
    "can_lead_names": [
     "Death Riders"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Death Riders",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -17326,6 +17515,36 @@
     "Death Riders",
     "Kasrkin",
     "Krieg Combat Engineers"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Attilan Rough Riders",
+     "chapter": ""
+    },
+    {
+     "name": "Cadian Shock Troops",
+     "chapter": ""
+    },
+    {
+     "name": "Catachan Jungle Fighters",
+     "chapter": ""
+    },
+    {
+     "name": "Death Korps Of Krieg",
+     "chapter": ""
+    },
+    {
+     "name": "Death Riders",
+     "chapter": ""
+    },
+    {
+     "name": "Kasrkin",
+     "chapter": ""
+    },
+    {
+     "name": "Krieg Combat Engineers",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": false,
@@ -17507,6 +17726,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -17773,6 +17993,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -18043,6 +18264,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -18298,6 +18520,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -18554,6 +18777,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -18850,6 +19074,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -19105,6 +19330,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -19371,6 +19597,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -19631,6 +19858,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -19777,6 +20005,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -19913,6 +20142,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -20066,6 +20296,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -20182,6 +20413,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -20506,6 +20738,12 @@
    "can_lead_names": [
     "Tempestus Scions"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Tempestus Scions",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": true,
@@ -20816,6 +21054,32 @@
     "Krieg Combat Engineers",
     "Tempestus Scions"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Cadian Shock Troops",
+     "chapter": ""
+    },
+    {
+     "name": "Catachan Jungle Fighters",
+     "chapter": ""
+    },
+    {
+     "name": "Death Korps Of Krieg",
+     "chapter": ""
+    },
+    {
+     "name": "Kasrkin",
+     "chapter": ""
+    },
+    {
+     "name": "Krieg Combat Engineers",
+     "chapter": ""
+    },
+    {
+     "name": "Tempestus Scions",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -20940,6 +21204,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -21182,6 +21447,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -21429,6 +21695,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -21592,6 +21859,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -21763,6 +22031,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -21935,6 +22204,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -22097,6 +22367,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -22274,6 +22545,32 @@
     "Krieg Combat Engineers",
     "Tempestus Scions"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Cadian Shock Troops",
+     "chapter": ""
+    },
+    {
+     "name": "Catachan Jungle Fighters",
+     "chapter": ""
+    },
+    {
+     "name": "Death Korps Of Krieg",
+     "chapter": ""
+    },
+    {
+     "name": "Kasrkin",
+     "chapter": ""
+    },
+    {
+     "name": "Krieg Combat Engineers",
+     "chapter": ""
+    },
+    {
+     "name": "Tempestus Scions",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": false,
    "has_order_tiers": false,
@@ -22402,6 +22699,12 @@
    "is_leader": true,
    "can_lead_names": [
     "Ratlings"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Ratlings",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": true,
@@ -22558,6 +22861,16 @@
     "Death Korps Grenadier Squad",
     "Death Korps Of Krieg"
    ],
+   "can_lead_entries": [
+    {
+     "name": "Death Korps Grenadier Squad",
+     "chapter": ""
+    },
+    {
+     "name": "Death Korps Of Krieg",
+     "chapter": ""
+    }
+   ],
    "attach_type": "leader",
    "is_legends": true,
    "has_order_tiers": false,
@@ -22687,6 +23000,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -22842,6 +23156,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -23006,6 +23321,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -23171,6 +23487,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -23388,6 +23705,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -23692,6 +24010,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -23932,6 +24251,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -24149,6 +24469,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -24357,6 +24678,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -24631,6 +24953,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -24821,6 +25144,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -24974,6 +25298,12 @@
    "is_leader": true,
    "can_lead_names": [
     "Catachan Jungle Fighters"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Catachan Jungle Fighters",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": true,
@@ -25135,6 +25465,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -25312,6 +25643,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -25489,6 +25821,7 @@
    "is_dedicated_transport": true,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -25740,6 +26073,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -25997,6 +26331,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -26192,6 +26527,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -26385,6 +26721,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -26561,6 +26898,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -26727,6 +27065,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -26889,6 +27228,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -27036,6 +27376,7 @@
    "is_dedicated_transport": true,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -27226,6 +27567,7 @@
    "is_dedicated_transport": true,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -27422,6 +27764,28 @@
     "Death Korps Of Krieg",
     "Kasrkin",
     "Krieg Combat Engineers"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Cadian Shock Troops",
+     "chapter": ""
+    },
+    {
+     "name": "Catachan Jungle Fighters",
+     "chapter": ""
+    },
+    {
+     "name": "Death Korps Of Krieg",
+     "chapter": ""
+    },
+    {
+     "name": "Kasrkin",
+     "chapter": ""
+    },
+    {
+     "name": "Krieg Combat Engineers",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": false,
@@ -27688,6 +28052,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": false,
@@ -28158,6 +28523,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -28453,6 +28819,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -28610,6 +28977,16 @@
    "can_lead_names": [
     "Cadian Shock Troops",
     "Kasrkin"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Cadian Shock Troops",
+     "chapter": ""
+    },
+    {
+     "name": "Kasrkin",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": false,
@@ -28802,6 +29179,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -29059,6 +29437,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -29237,6 +29616,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -29388,6 +29768,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -29534,6 +29915,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -29694,6 +30076,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": true,
    "has_order_tiers": false,
@@ -29866,6 +30249,7 @@
    "is_dedicated_transport": false,
    "is_leader": false,
    "can_lead_names": [],
+   "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
    "has_order_tiers": true,
@@ -30052,6 +30436,12 @@
    "is_leader": true,
    "can_lead_names": [
     "Catachan Jungle Fighters"
+   ],
+   "can_lead_entries": [
+    {
+     "name": "Catachan Jungle Fighters",
+     "chapter": ""
+    }
    ],
    "attach_type": "leader",
    "is_legends": true,
