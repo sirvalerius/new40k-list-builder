@@ -49,6 +49,13 @@ export function DatasheetCard({
 
       {ds.stats[0] && <StatLine stat={ds.stats[0]} />}
 
+      {ds.transport && ds.transport.trim() && (
+        <div className="banner ok" style={{ background: 'var(--bg-elev)', borderColor: 'var(--border)', color: 'var(--text)' }}>
+          <b>🚛 Transport: </b>
+          <span className="small">{stripHtml(ds.transport)}</span>
+        </div>
+      )}
+
       {weapons.length > 0 && (
         <Collapsible title={`Weapons (${weapons.length})`}>
           <div className="wpn-scroll">

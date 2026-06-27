@@ -65,6 +65,7 @@ export interface Datasheet {
   name: string;
   role: string;
   legend: string;
+  transport?: string;          // transport capacity + restrictions ('' if not a transport)
   stats: Stat[];
   weapons: Weapon[];
   abilities: Ability[];
