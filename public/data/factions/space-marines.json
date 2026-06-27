@@ -39512,27 +39512,27 @@
     {
      "name": "Land Speeder",
      "M": "14\"",
-     "T": "7",
+     "T": "8",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
-     "W": "6",
+     "W": "9",
      "Ld": "6+",
-     "OC": "2",
+     "OC": "3",
      "base_size": "60mm flying base"
     }
    ],
    "weapons": [
     {
-     "name": "Heavy bolter",
+     "name": "Heavy flamer",
      "type": "Ranged",
-     "range": "36",
-     "A": "3",
-     "BS_WS": "3",
+     "range": "12",
+     "A": "D6",
+     "BS_WS": "N/A",
      "S": "5",
      "AP": "-1",
-     "D": "2",
-     "description": "sustained hits 1"
+     "D": "1",
+     "description": "[TORRENT, IGNORES COVER]"
     },
     {
      "name": "Multi-melta",
@@ -39543,13 +39543,35 @@
      "S": "9",
      "AP": "-4",
      "D": "D6",
-     "description": "melta 2"
+     "description": "[MELTA 2]"
     },
     {
-     "name": "Close combat weapon",
+     "name": "Onslaught gatling cannon",
+     "type": "Ranged",
+     "range": "24",
+     "A": "8",
+     "BS_WS": "3",
+     "S": "5",
+     "AP": "0",
+     "D": "1",
+     "description": "[DEVASTATING WOUNDS]"
+    },
+    {
+     "name": "Stormfury missile launcher",
+     "type": "Ranged",
+     "range": "48",
+     "A": "1",
+     "BS_WS": "3",
+     "S": "12",
+     "AP": "-3",
+     "D": "D6+1",
+     "description": ""
+    },
+    {
+     "name": "Close-combat weapon",
      "type": "Melee",
      "range": "Melee",
-     "A": "3",
+     "A": "4",
      "BS_WS": "3",
      "S": "4",
      "AP": "0",
@@ -39561,33 +39583,27 @@
     {
      "name": "",
      "type": "Core",
-     "parameter": "1",
-     "description": ""
-    },
-    {
-     "name": "",
-     "type": "Core",
      "parameter": "",
-     "description": ""
+     "description": "Deep Strike"
     },
     {
      "name": "",
      "type": "Faction",
      "parameter": "",
-     "description": ""
+     "description": "Oath of Moment"
     },
     {
-     "name": "Target Sighted",
+     "name": "Purgation Run",
      "type": "Datasheet",
      "parameter": "",
-     "description": "At the start of your Shooting phase, select one enemy unit that is visible to this model. Until the end of the phase, each time a friendly Adeptus Astartes model makes an attack with a Blast weapon that targets that enemy unit, add 1 to the Hit roll and that attack has the [IGNORES COVER] ability."
+     "description": "In your Shooting phase, after this unit has shot, it can make a Normal move of up to D6\". If it does, until the end of the turn, this unit is not eligible to declare a charge."
     }
    ],
    "composition": [
     "1 Land Speeder"
    ],
    "options": [
-    "This model’s heavy bolter can be replaced with 1 multi-melta."
+    "This model can have its 1 onslaught gatling cannon replaced with 1 heavy flamer."
    ],
    "points": [
     {
@@ -39626,24 +39642,24 @@
    "can_lead_names": [],
    "can_lead_entries": [],
    "attach_type": "",
-   "is_legends": true,
+   "is_legends": false,
    "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
    "countable": false,
    "weapon_options": [
     {
-     "text": "This model’s heavy bolter can be replaced with 1 multi-melta.",
+     "text": "This model can have its 1 onslaught gatling cannon replaced with 1 heavy flamer.",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "heavy bolter",
+     "base": "onslaught gatling cannon",
      "model": "",
      "grants": [
-      "Multi-melta"
+      "Heavy flamer"
      ]
     }
    ],
