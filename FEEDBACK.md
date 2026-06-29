@@ -4181,3 +4181,59 @@ I veicoli da trasporto non indicano quanti posti hanno e cosa possono trasportar
 }
 ```
 </details>
+
+---
+### 2026-06-29T13:38:11.947Z
+
+_T’au Empire list — T’au Empire · Strike Force · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36_
+
+The roster permits to take farsight with etereals. Special sules that enforce list compositions are not enforced
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqz9e5ukbm4ejxk",
+  "name": "T’au Empire list",
+  "factionId": "TAU",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000900006",
+    "000000846"
+  ],
+  "units": [
+    {
+      "uid": "mqz9h9asnl1ym7m",
+      "datasheetId": "000000406",
+      "name": "Commander Farsight",
+      "pointsCost": 80,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mqz9hbykzwmp46p",
+      "datasheetId": "000004203",
+      "name": "The Twin Lance",
+      "pointsCost": 205,
+      "pointsLabel": "2 models",
+      "variantKey": "2 models",
+      "modelCount": 2,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    }
+  ],
+  "createdAt": 1782740044316,
+  "updatedAt": 1782740206958
+}
+```
+</details>
