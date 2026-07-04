@@ -15,11 +15,13 @@ export function Dispositions({
 }) {
   const sorted = [...factions].sort((a, b) => a.name.localeCompare(b.name));
   const [slug, setSlug] = useState(sorted[0]?.slug ?? '');
+  const [sub, setSub] = useState(''); // Chapter filter ('' = any)
   const [fd, setFd] = useState<FactionData | null>(null);
 
   useEffect(() => {
     let alive = true;
     setFd(null);
+    setSub('');
     if (slug) loadFaction(slug).then((d) => alive && setFd(d));
     return () => {
       alive = false;
@@ -39,6 +41,20 @@ export function Dispositions({
         </select>
       </div>
 
+      {fd && (fd.faction.sub_factions?.length ?? 0) > 0 && (
+        <div className="row mb" style={{ gap: 8, alignItems: 'center' }}>
+          <span className="muted small">Chapter:</span>
+          <select value={sub} onChange={(e) => setSub(e.target.value)}>
+            <option value="">Any / Codex</option>
+            {fd.faction.sub_factions!.map((c) => (
+              <option key={c} value={c}>
+                {c}
+              </option>
+            ))}
+          </select>
+        </div>
+      )}
+
       {!fd ? (
         <SkeletonList count={4} label="Loading faction…" />
       ) : (
@@ -53,7 +69,8 @@ export function Dispositions({
             </thead>
             <tbody>
               {fd.detachments
-                .filter((d) => !d.boarding_actions)
+                // same Chapter rule as the builder: hide detachments bound to another Chapter
+                .filter((d) => !d.boarding_actions && (!sub || !d.restricted_chapter || d.restricted_chapter === sub))
                 .map((d) => (
                   <tr key={d.id}>
                     <td className="wname">{d.name}</td>
