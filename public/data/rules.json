@@ -458,5 +458,97 @@
    "description": "WHEN: Fight step of your opponent's Fight phase, just after an enemy unit has resolved its attacks. TARGET: One friendly unit eligible to fight. EFFECT: Until the end of the phase, your unit has the Fights First ability and must be the next unit you select to fight."
   }
  ],
+ "disposition_matchups": [
+  {
+   "a": "TAKE AND HOLD",
+   "b": "TAKE AND HOLD",
+   "mission_a": "Battlefield Dominance",
+   "mission_b": "Battlefield Dominance"
+  },
+  {
+   "a": "TAKE AND HOLD",
+   "b": "PURGE THE FOE",
+   "mission_a": "Immovable Object",
+   "mission_b": "Unstoppable Force"
+  },
+  {
+   "a": "TAKE AND HOLD",
+   "b": "DISRUPTION",
+   "mission_a": "Determined Acquisition",
+   "mission_b": "Death Trap"
+  },
+  {
+   "a": "TAKE AND HOLD",
+   "b": "RECONNAISSANCE",
+   "mission_a": "Purge and Secure",
+   "mission_b": "Reconnaissance Sweep"
+  },
+  {
+   "a": "TAKE AND HOLD",
+   "b": "PRIORITY ASSETS",
+   "mission_a": "Inescapable Dominion",
+   "mission_b": "Secure Asset"
+  },
+  {
+   "a": "PURGE THE FOE",
+   "b": "PURGE THE FOE",
+   "mission_a": "Meatgrinder",
+   "mission_b": "Meatgrinder"
+  },
+  {
+   "a": "PURGE THE FOE",
+   "b": "DISRUPTION",
+   "mission_a": "Punishment",
+   "mission_b": "Delaying Action"
+  },
+  {
+   "a": "PURGE THE FOE",
+   "b": "RECONNAISSANCE",
+   "mission_a": "Consecrate",
+   "mission_b": "Triangulation"
+  },
+  {
+   "a": "PURGE THE FOE",
+   "b": "PRIORITY ASSETS",
+   "mission_a": "Destroyer's Wrath",
+   "mission_b": "Vital Link"
+  },
+  {
+   "a": "DISRUPTION",
+   "b": "DISRUPTION",
+   "mission_a": "Outmanoeuvre",
+   "mission_b": "Outmanoeuvre"
+  },
+  {
+   "a": "DISRUPTION",
+   "b": "RECONNAISSANCE",
+   "mission_a": "Smoke and Mirrors",
+   "mission_b": "Surveil the Foe"
+  },
+  {
+   "a": "DISRUPTION",
+   "b": "PRIORITY ASSETS",
+   "mission_a": "Locate and Deny",
+   "mission_b": "Extract Relic"
+  },
+  {
+   "a": "RECONNAISSANCE",
+   "b": "RECONNAISSANCE",
+   "mission_a": "Gather Intel",
+   "mission_b": "Gather Intel"
+  },
+  {
+   "a": "RECONNAISSANCE",
+   "b": "PRIORITY ASSETS",
+   "mission_a": "Search and Scour",
+   "mission_b": "Vanguard Operation"
+  },
+  {
+   "a": "PRIORITY ASSETS",
+   "b": "PRIORITY ASSETS",
+   "mission_a": "Sabotage",
+   "mission_b": "Sabotage"
+  }
+ ],
  "attribution": "Powered by Wahapedia"
 }

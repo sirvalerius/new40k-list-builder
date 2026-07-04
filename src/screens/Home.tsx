@@ -13,11 +13,15 @@ export function Home({
   factionName,
   onNew,
   onOpen,
+  onDispositions,
+  onMissions,
 }: {
   rules: Rules;
   factionName: (id: string) => string;
   onNew: () => void;
   onOpen: (id: string) => void;
+  onDispositions: () => void;
+  onMissions: () => void;
 }) {
   const [lists, setLists] = useState<ArmyList[] | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
@@ -80,6 +84,15 @@ export function Home({
       <button className="primary" style={{ width: '100%' }} onClick={onNew}>
         + New list
       </button>
+
+      <div className="row mt">
+        <button className="ghost small" onClick={onDispositions}>
+          ⚔ Detachments &amp; Dispositions
+        </button>
+        <button className="ghost small" onClick={onMissions}>
+          🗺 Missions
+        </button>
+      </div>
 
       <div className="row mt mb">
         <button className="ghost small" onClick={exportBackup}>

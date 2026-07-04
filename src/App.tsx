@@ -6,6 +6,8 @@ import { getList, saveList } from './lib/db';
 import { Home } from './screens/Home';
 import { NewListWizard } from './screens/NewListWizard';
 import { Builder } from './screens/Builder';
+import { Dispositions } from './screens/Dispositions';
+import { Missions } from './screens/Missions';
 import { FeedbackButton } from './components/FeedbackButton';
 
 // Injected at build time by CI (minor = commit count on main); 'dev' locally.
@@ -15,7 +17,9 @@ const BUILD_DATE = import.meta.env.VITE_BUILD_DATE as string | undefined;
 type View =
   | { kind: 'home' }
   | { kind: 'wizard' }
-  | { kind: 'builder'; list: ArmyList };
+  | { kind: 'builder'; list: ArmyList }
+  | { kind: 'dispositions' }
+  | { kind: 'missions'; disposition?: string };
 
 export default function App() {
   const [rules, setRules] = useState<Rules | null>(null);
@@ -115,6 +119,10 @@ export default function App() {
       ? view.list.name
       : view.kind === 'wizard'
       ? 'New list'
+      : view.kind === 'dispositions'
+      ? 'Detachments & Dispositions'
+      : view.kind === 'missions'
+      ? 'Missions'
       : 'New40k List Builder';
   const subtitle =
     view.kind === 'builder'
@@ -133,7 +141,12 @@ export default function App() {
             aria-label="Back"
             onClick={() => {
               currentList.current = null;
-              setView({ kind: 'home' });
+              // missions opened from the dispositions table goes back there, not home
+              setView(
+                view.kind === 'missions' && view.disposition
+                  ? { kind: 'dispositions' }
+                  : { kind: 'home' },
+              );
             }}
           >
             ←
@@ -159,8 +172,17 @@ export default function App() {
             factionName={factionName}
             onNew={() => setView({ kind: 'wizard' })}
             onOpen={openList}
+            onDispositions={() => setView({ kind: 'dispositions' })}
+            onMissions={() => setView({ kind: 'missions' })}
           />
         )}
+        {view.kind === 'dispositions' && (
+          <Dispositions
+            factions={factions}
+            onOpenMissions={(disposition) => setView({ kind: 'missions', disposition })}
+          />
+        )}
+        {view.kind === 'missions' && <Missions rules={rules} initial={view.disposition} />}
         {view.kind === 'wizard' && (
           <NewListWizard
             rules={rules}

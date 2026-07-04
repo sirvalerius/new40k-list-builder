@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import type { ArmyList, Detachment } from '../lib/types';
 import { Collapsible } from '../components/Collapsible';
+import { DispositionIcon } from '../components/DispositionIcon';
 import { getFavorites, stripHtml, toggleFavorite } from '../lib/helpers';
 
 export function DetachmentPicker({
@@ -69,7 +70,12 @@ export function DetachmentPicker({
                 <div style={{ fontWeight: 700 }}>{d.name}</div>
                 <div className="muted small">
                   {d.dp_cost} DP
-                  {d.force_disposition ? ` · ${d.force_disposition}` : ''}
+                  {d.force_disposition ? (
+                    <>
+                      {' · '}
+                      <DispositionIcon name={d.force_disposition} />
+                    </>
+                  ) : null}
                   {d.exclusive_tag ? ` · ${d.exclusive_tag}` : ''}
                   {d.restricted_chapter ? ` · ${d.restricted_chapter}` : ''}
                 </div>

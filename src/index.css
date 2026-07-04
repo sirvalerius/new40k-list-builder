@@ -513,6 +513,10 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 }
 .chip-x:hover { border-color: var(--accent-2); color: var(--bone); }
 
+/* Force Disposition badge (icon + text share the disposition's color) */
+.disp { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; }
+.disp-name { font-size: 0.85em; letter-spacing: 0.02em; }
+
 .field-label {
   display: block;
   font-size: 0.72rem;

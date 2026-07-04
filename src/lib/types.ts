@@ -36,6 +36,7 @@ export interface Rules {
   faction_supers: FactionSuper[];
   force_dispositions: string[];
   core_stratagems?: Stratagem[]; // rulebook stratagems available to every army
+  disposition_matchups?: DispositionMatchup[]; // mission pairing per disposition matchup
   attribution: string;
 }
 
@@ -120,6 +121,8 @@ export interface DetachmentRule { name: string; description: string; }
 // "Friendly A/B/C units have the X keyword" — units holding any `when` keyword gain `grant`.
 export interface KeywordGrant { when: string[]; grant: string; }
 export interface Stratagem { name: string; cp_cost: string; type: string; description: string; }
+// Missions each side plays when disposition `a` meets disposition `b` (Event Companion).
+export interface DispositionMatchup { a: string; b: string; mission_a: string; mission_b: string; }
 
 export interface Detachment {
   id: string;
