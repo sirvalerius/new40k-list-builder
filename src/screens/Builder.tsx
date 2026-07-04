@@ -116,8 +116,20 @@ export function Builder({
             : u,
         );
       }
-      return { ...l, detachmentIds, units, subFaction };
+      // the army disposition must belong to a chosen detachment; unset it if stale
+      let disposition = l.disposition;
+      if (disposition && fd) {
+        const offered = new Set(
+          fd.detachments.filter((d) => detachmentIds.includes(d.id)).map((d) => d.force_disposition),
+        );
+        if (!offered.has(disposition)) disposition = undefined;
+      }
+      return { ...l, detachmentIds, units, subFaction, disposition };
     });
+  }
+
+  function setDisposition(disposition: string) {
+    update((l) => ({ ...l, disposition: disposition || undefined }));
   }
 
   function addUnit(ds: Datasheet, tier: PointsOption, modelCount?: number) {
@@ -358,6 +370,8 @@ export function Builder({
           onSetModelCount={setModelCount}
           onAttach={attachUnit}
           onRename={renameUnit}
+          detachments={detachments}
+          onSetDisposition={setDisposition}
         />
       )}
       {tab === 'enh' && (

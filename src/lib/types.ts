@@ -177,6 +177,7 @@ export interface ArmyList {
   battleSizeId: string;
   subFaction?: string;         // chosen Chapter/sub-faction ('' = any)
   detachmentIds: string[];     // chosen detachments (DP budget)
+  disposition?: string;        // army Force Disposition (one of the chosen detachments')
   units: ListUnit[];
   createdAt: number;
   updatedAt: number;

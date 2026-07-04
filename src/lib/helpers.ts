@@ -544,6 +544,7 @@ export function exportListText(
   );
   const dets = detachments.filter((d) => list.detachmentIds.includes(d.id));
   if (dets.length) lines.push(`Detachments: ${dets.map((d) => d.name).join(', ')}`);
+  if (list.disposition) lines.push(`Force Disposition: ${list.disposition}`);
   lines.push('');
 
   const warlord = list.units.find((u) => u.warlord);

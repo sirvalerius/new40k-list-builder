@@ -9,7 +9,9 @@ import type {
   Weapon,
   WeaponOption,
 } from '../lib/types';
+import type { Detachment } from '../lib/types';
 import { DatasheetCard } from '../components/DatasheetCard';
+import { DispositionIcon } from '../components/DispositionIcon';
 import { Modal } from '../components/Modal';
 import {
   GROUP_LABEL,
@@ -58,6 +60,8 @@ export function Roster({
   onSetModelCount,
   onAttach,
   onRename,
+  detachments,
+  onSetDisposition,
 }: {
   list: ArmyList;
   fd: FactionData;
@@ -71,6 +75,8 @@ export function Roster({
   onSetModelCount: (uid: string, count: number) => void;
   onAttach: (uid: string, toUid: string | null) => void;
   onRename: (uid: string, name: string) => void;
+  detachments: Detachment[];
+  onSetDisposition: (disposition: string) => void;
 }) {
   const [query, setQuery] = useState('');
   const [browsing, setBrowsing] = useState(false);
@@ -289,11 +295,36 @@ export function Roster({
     );
   };
 
+  // army disposition: pick one among the chosen detachments' dispositions
+  const dispOptions = [
+    ...new Set(
+      detachments
+        .filter((d) => list.detachmentIds.includes(d.id))
+        .map((d) => d.force_disposition)
+        .filter(Boolean),
+    ),
+  ];
+
   return (
     <div>
       <div className="mb muted small">
         {list.units.length} unit{list.units.length === 1 ? '' : 's'} in roster
       </div>
+
+      {dispOptions.length > 0 && (
+        <div className="row wrap mb" style={{ gap: 6, alignItems: 'center' }}>
+          <span className="muted small">Disposition:</span>
+          {dispOptions.map((d) => (
+            <button
+              key={d}
+              className={list.disposition === d ? 'primary small' : 'ghost small'}
+              onClick={() => onSetDisposition(list.disposition === d ? '' : d)}
+            >
+              <DispositionIcon name={d} />
+            </button>
+          ))}
+        </div>
+      )}
 
       {list.units.length === 0 && (
         <div className="empty">The muster is empty — summon your forces with the ✠ seal.</div>
