@@ -37,6 +37,8 @@ export function Missions({ rules, initial }: { rules: Rules; initial?: string })
         ))}
       </div>
 
+      <div className="muted small mb">{DISPOSITIONS[mine]?.tagline}</div>
+
       <div className="col" style={{ gap: 8 }}>
         {names.map((opp) => {
           const r = rowFor(opp);
