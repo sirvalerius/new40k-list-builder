@@ -1,6 +1,33 @@
-import { useState } from 'react';
-import type { Rules } from '../lib/types';
+import { Fragment, useState } from 'react';
+import type { Mission, Rules } from '../lib/types';
+import { Collapsible } from '../components/Collapsible';
 import { DISPOSITIONS, DispositionIcon } from '../components/DispositionIcon';
+
+// **bold** spans in card text → <b>
+function md(text: string) {
+  return text.split(/\*\*/).map((part, i) => (i % 2 ? <b key={i}>{part}</b> : <Fragment key={i}>{part}</Fragment>));
+}
+
+function MissionCard({ m }: { m: Mission }) {
+  return (
+    <div className="col" style={{ gap: 8 }}>
+      {m.sections.map((s, i) => (
+        <div key={i} className="small">
+          <div style={{ fontWeight: 700 }}>{s.when}</div>
+          <div className="muted tiny mb">{s.trigger}</div>
+          {s.tiers.map((t, j) => (
+            <div key={j} className="row" style={{ gap: 8, alignItems: 'baseline' }}>
+              <b style={{ whiteSpace: 'nowrap' }}>
+                {t.cumulative ? '+' : ''}{t.vp} VP{t.perUnit ? ' each' : ''}
+              </b>
+              <span>{md(t.text)}</span>
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+}
 
 // Mission viewer: pick YOUR Force Disposition and see, for every opponent disposition,
 // the mission you play next to the mission the opponent plays in that matchup.
@@ -10,6 +37,7 @@ export function Missions({ rules, initial }: { rules: Rules; initial?: string })
   const [mine, setMine] = useState(initial ?? 'TAKE AND HOLD');
   const matchups = rules.disposition_matchups ?? [];
   const names = Object.keys(DISPOSITIONS);
+  const byName = (n: string) => (rules.missions ?? []).find((m) => m.name === n);
 
   // matchup rows are stored one-way; flip when my disposition is on the "b" side
   const rowFor = (opp: string) => {
@@ -49,23 +77,21 @@ export function Missions({ rules, initial }: { rules: Rules; initial?: string })
               <div className="mb" style={{ fontWeight: 600 }}>
                 <DispositionIcon name={opp} />
               </div>
-              <div className="row" style={{ gap: 12, alignItems: 'stretch' }}>
-                <div style={{ flex: 1 }}>
-                  <div className="muted tiny">You play</div>
-                  <b>{r.my}</b>
-                </div>
-                <div style={{ flex: 1 }}>
-                  <div className="muted tiny">Opponent plays</div>
-                  <b>{r.their}</b>
-                </div>
+              <div className="col" style={{ gap: 6 }}>
+                <Collapsible title={<>You play: <b>{r.my}</b></>} defaultOpen>
+                  {byName(r.my) ? <MissionCard m={byName(r.my)!} /> : <span className="muted small">{r.my}</span>}
+                </Collapsible>
+                <Collapsible title={<>Opponent plays: <b>{r.their}</b></>}>
+                  {byName(r.their) ? <MissionCard m={byName(r.their)!} /> : <span className="muted small">{r.their}</span>}
+                </Collapsible>
               </div>
             </div>
           );
         })}
       </div>
       <div className="muted tiny mt">
-        Each matchup is played on battlefield layout A, B or C (Event Companion). Full
-        mission rules are on the mission cards.
+        Each matchup is played on battlefield layout A, B or C (Event Companion). Card
+        texts via gdmissions.app.
       </div>
     </div>
   );

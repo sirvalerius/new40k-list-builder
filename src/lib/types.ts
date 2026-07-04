@@ -37,6 +37,7 @@ export interface Rules {
   force_dispositions: string[];
   core_stratagems?: Stratagem[]; // rulebook stratagems available to every army
   disposition_matchups?: DispositionMatchup[]; // mission pairing per disposition matchup
+  missions?: Mission[]; // full primary-mission card texts
   attribution: string;
 }
 
@@ -123,6 +124,10 @@ export interface KeywordGrant { when: string[]; grant: string; }
 export interface Stratagem { name: string; cp_cost: string; type: string; description: string; }
 // Missions each side plays when disposition `a` meets disposition `b` (Event Companion).
 export interface DispositionMatchup { a: string; b: string; mission_a: string; mission_b: string; }
+// A primary-mission card: scoring sections with VP tiers (**bold** in text is markdown-style).
+export interface MissionTier { text: string; vp: number; perUnit?: boolean; cumulative?: boolean; }
+export interface MissionSection { when: string; trigger: string; tiers: MissionTier[]; }
+export interface Mission { name: string; deck: string; vs: string; sections: MissionSection[]; }
 
 export interface Detachment {
   id: string;

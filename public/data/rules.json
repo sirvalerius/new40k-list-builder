@@ -550,5 +550,1074 @@
    "mission_b": "Sabotage"
   }
  ],
+ "missions": [
+  {
+   "name": "Battlefield Dominance",
+   "deck": "take-and-hold",
+   "vs": "take-and-hold",
+   "sections": [
+    {
+     "when": "FIRST & SECOND BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You control more **objectives** than your opponent.",
+       "vp": 2
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "For each **objective** you control.",
+       "vp": 3,
+       "perUnit": true
+      },
+      {
+       "text": "For each of those **objectives** (excluding your **home objective**) if you control your **home objective**.",
+       "vp": 2,
+       "perUnit": true,
+       "cumulative": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Determined Acquisition",
+   "deck": "take-and-hold",
+   "vs": "disruption",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "For each **objective** you control that you did not control at the start of the turn (excluding your **home objective**).",
+       "vp": 2,
+       "perUnit": true
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "For each **objective** you control.",
+       "vp": 3,
+       "perUnit": true
+      },
+      {
+       "text": "For each of those **objectives** that is within your opponent's territory.",
+       "vp": 3,
+       "perUnit": true,
+       "cumulative": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Immovable Object",
+   "deck": "take-and-hold",
+   "vs": "purge-the-foe",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You control one or more **central objectives**.",
+       "vp": 3
+      }
+     ]
+    },
+    {
+     "when": "SECOND TO FOURTH BATTLE ROUND",
+     "trigger": "End of your Command phase",
+     "tiers": [
+      {
+       "text": "For each **objective** you control (excluding your **home objective**).",
+       "vp": 5,
+       "perUnit": true
+      }
+     ]
+    },
+    {
+     "when": "FIFTH BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "For each **objective** you control (excluding your **home objective**).",
+       "vp": 5,
+       "perUnit": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Inescapable Dominion",
+   "deck": "take-and-hold",
+   "vs": "priority-assets",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You control **three or more objectives**.",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control **two or more objectives**.",
+       "vp": 5
+      },
+      {
+       "text": "You control more **objectives** than your opponent.",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "END OF BATTLE",
+     "headerKind": "eob",
+     "tiers": [
+      {
+       "text": "You control your opponent's **home objective**.",
+       "vp": 5,
+       "kind": "eob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Purge and Secure",
+   "deck": "take-and-hold",
+   "vs": "reconnaissance",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "One or more enemy units were **destroyed** this turn by a friendly unit that was within range of one or more **objectives**.",
+       "vp": 3
+      },
+      {
+       "text": "One or more enemy units that started the turn within range of one or more **objectives** were **destroyed** this turn.",
+       "vp": 3,
+       "or": true
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "For each **objective** you control (excluding your **home objective**).",
+       "vp": 4,
+       "perUnit": true
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** you did not control at the start of the turn (excluding your **home objective**).",
+       "vp": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Consecrate",
+   "deck": "purge-the-foe",
+   "vs": "reconnaissance",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "**One or two** objectives are **consecrated**.",
+       "vp": 3
+      },
+      {
+       "text": "**Three or more** objectives are **consecrated**.",
+       "vp": 6,
+       "or": true
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      },
+      {
+       "text": "You control **more** objectives than your opponent.",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "END OF BATTLE",
+     "headerKind": "eob",
+     "tiers": [
+      {
+       "text": "The enemy **home objective** has been **consecrated**.",
+       "vp": 5,
+       "kind": "eob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Destroyer's Wrath",
+   "deck": "purge-the-foe",
+   "vs": "priority-assets",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "One or more enemy units were **destroyed** this turn.",
+       "vp": 3
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      },
+      {
+       "text": "You control more **objectives** than your opponent.",
+       "vp": 6
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "More enemy units were **destroyed** this turn than friendly units were **destroyed** in the previous turn.",
+       "vp": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Meatgrinder",
+   "deck": "purge-the-foe",
+   "vs": "purge-the-foe",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "One or more enemy units were **destroyed** this turn.",
+       "vp": 3
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "More enemy units were **destroyed** this turn than friendly units were **destroyed** in the previous turn.",
+       "vp": 5
+      },
+      {
+       "text": "You control your opponent's **home objective**.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Punishment",
+   "deck": "purge-the-foe",
+   "vs": "disruption",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of a turn",
+     "tiers": [
+      {
+       "text": "One or more **condemned** enemy units left the battlefield this turn.",
+       "vp": 5
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      },
+      {
+       "text": "You control more **objectives** than your opponent.",
+       "vp": 5
+      }
+     ]
+    },
+    {
+     "when": "END OF BATTLE",
+     "headerKind": "eob",
+     "tiers": [
+      {
+       "text": "You control your opponent's **home objective**.",
+       "vp": 8,
+       "kind": "eob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Unstoppable Force",
+   "deck": "purge-the-foe",
+   "vs": "take-and-hold",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "One or more enemy units were **destroyed** this turn.",
+       "vp": 3
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "For each **objective** you control (excluding your **home objective**).",
+       "vp": 4,
+       "perUnit": true
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** you did not control at the start of the turn (excluding your **home objective**).",
+       "vp": 3
+      }
+     ]
+    },
+    {
+     "when": "END OF BATTLE",
+     "headerKind": "eob",
+     "tiers": [
+      {
+       "text": "You control one or more **central objectives**.",
+       "vp": 5,
+       "kind": "eob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Death Trap",
+   "deck": "disruption",
+   "vs": "take-and-hold",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "For each terrain area **trapped** this turn (see reverse).",
+       "vp": 2,
+       "perUnit": true
+      },
+      {
+       "text": "For each of those **terrain areas** that is an **objective**.",
+       "vp": 3,
+       "perUnit": true,
+       "cumulative": true
+      }
+     ]
+    },
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "One or more enemy units that started the turn within a terrain area were destroyed, if that terrain area is **trapped**.",
+       "vp": 3
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Delaying Action",
+   "deck": "disruption",
+   "vs": "purge-the-foe",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "For each enemy unit **destroyed** this turn.",
+       "vp": 2,
+       "perUnit": true
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding **home objectives**).",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You control one or more **central objectives** and one or more **expansion objectives**.",
+       "vp": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Locate and Deny",
+   "deck": "disruption",
+   "vs": "priority-assets",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "One or more enemy units that started the turn within range of one or more **objectives** are **destroyed**.",
+       "vp": 4
+      },
+      {
+       "text": "Only one of your operation markers remains (see reverse), with a unit of yours in that terrain area and no enemy units there.",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "END OF BATTLE",
+     "headerKind": "eob",
+     "tiers": [
+      {
+       "text": "Only one of your operation markers remains, with a unit of yours in that terrain area and no enemy units there.",
+       "vp": 5,
+       "kind": "eob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Outmanoeuvre",
+   "deck": "disruption",
+   "vs": "disruption",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You control the enemy **home objective**.",
+       "vp": 10
+      }
+     ]
+    },
+    {
+     "when": "FIRST BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "For each **objective** you control (excluding your **home objective**).",
+       "vp": 4,
+       "perUnit": true
+      }
+     ]
+    },
+    {
+     "when": "SECOND & THIRD BATTLE ROUND",
+     "trigger": "End of your Command phase",
+     "tiers": [
+      {
+       "text": "For each **objective** you control (excluding your **home objective**).",
+       "vp": 5,
+       "perUnit": true
+      }
+     ]
+    },
+    {
+     "when": "FOURTH BATTLE ROUND ONWARDS",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "For each **objective** you control (excluding your **home objective**).",
+       "vp": 6,
+       "perUnit": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Smoke and Mirrors",
+   "deck": "disruption",
+   "vs": "reconnaissance",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "For each **objective** that is **decoyed** (see reverse).",
+       "vp": 2,
+       "perUnit": true
+      },
+      {
+       "text": "For each of those **objectives** that is within your opponent's territory.",
+       "vp": 2,
+       "perUnit": true,
+       "cumulative": true
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "END OF BATTLE",
+     "headerKind": "eob",
+     "tiers": [
+      {
+       "text": "**Four or more objectives** are **decoyed**.",
+       "vp": 10,
+       "kind": "eob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Gather Intel",
+   "deck": "reconnaissance",
+   "vs": "reconnaissance",
+   "sections": [
+    {
+     "when": "FIRST BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You control one or more **central objectives**.",
+       "vp": 6
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "For each friendly unit that **extracted intelligence** this turn (see reverse).",
+       "vp": 7,
+       "perUnit": true
+      }
+     ]
+    },
+    {
+     "when": "END OF BATTLE",
+     "headerKind": "eob",
+     "tiers": [
+      {
+       "text": "Three or more of your **operation markers** are on the battlefield.",
+       "vp": 5,
+       "kind": "eob"
+      },
+      {
+       "text": "One of your **operation markers** is within range of your opponent's **home objective**.",
+       "vp": 5,
+       "kind": "eob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Reconnaissance Sweep",
+   "deck": "reconnaissance",
+   "vs": "take-and-hold",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "Three or more friendly units are wholly within three different table quarters and not within 6\" of the centre of the battlefield.",
+       "vp": 3
+      },
+      {
+       "text": "Four or more friendly units are wholly within four different table quarters and not within 6\" of the centre of the battlefield.",
+       "vp": 6,
+       "or": true
+      }
+     ]
+    },
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "For each enemy unit **destroyed** this turn.",
+       "vp": 1,
+       "perUnit": true
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Search and Scour",
+   "deck": "reconnaissance",
+   "vs": "priority-assets",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You control one or more **central objectives**.",
+       "vp": 3
+      },
+      {
+       "text": "One or more enemy units that started the turn within a **terrain area** are **destroyed**.",
+       "vp": 2
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "For each **objective** you control (excluding your **home objective**).",
+       "vp": 4,
+       "perUnit": true
+      }
+     ]
+    },
+    {
+     "when": "END OF BATTLE",
+     "headerKind": "eob",
+     "tiers": [
+      {
+       "text": "No enemy units are wholly within your territory.",
+       "vp": 5,
+       "kind": "eob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Surveil the Foe",
+   "deck": "reconnaissance",
+   "vs": "disruption",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "One or more enemy units were **surveilled** this turn (see reverse), unless each of those units is within range of one or more **objectives** that have one or more **operation markers** within range of them.",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      },
+      {
+       "text": "You control more **objectives** than your opponent.",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "No enemy **operation markers** are on the battlefield.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Triangulation",
+   "deck": "reconnaissance",
+   "vs": "purge-the-foe",
+   "sections": [
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "One **objective** is **triangulated** (see reverse).",
+       "vp": 3
+      },
+      {
+       "text": "Two **objectives** are **triangulated**.",
+       "vp": 6,
+       "or": true
+      },
+      {
+       "text": "Three or more **objectives** are **triangulated**.",
+       "vp": 10,
+       "or": true
+      }
+     ]
+    },
+    {
+     "when": "END OF BATTLE",
+     "headerKind": "eob",
+     "tiers": [
+      {
+       "text": "You control **four or more objectives**.",
+       "vp": 10,
+       "kind": "eob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Extract Relic",
+   "deck": "priority-assets",
+   "vs": "disruption",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "A friendly unit performed a **sensor sweep** this turn (see reverse).",
+       "vp": 4
+      },
+      {
+       "text": "One or more enemy units that started the turn within range of one or more **objectives** are **destroyed**.",
+       "vp": 3
+      },
+      {
+       "text": "Only one of your opponent's **operation markers** is on the battlefield, if one or more of your units are within the same terrain area as that **operation marker**, and no enemy units are within that terrain area.",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "END OF BATTLE",
+     "headerKind": "eob",
+     "tiers": [
+      {
+       "text": "Only one of your opponent's **operation markers** is on the battlefield, if one or more of your units are within the same terrain area as that **operation marker**, and no enemy units are within that terrain area.",
+       "vp": 5,
+       "kind": "eob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Sabotage",
+   "deck": "priority-assets",
+   "vs": "priority-assets",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "For each friendly unit that **committed sabotage** this turn (see reverse).",
+       "vp": 3,
+       "perUnit": true
+      },
+      {
+       "text": "For each of those **units** that is within range of one or more **objectives** in your opponent's territory.",
+       "vp": 2,
+       "perUnit": true,
+       "cumulative": true
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Secure Asset",
+   "deck": "priority-assets",
+   "vs": "take-and-hold",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "A friendly unit **secured the asset** this turn (see reverse).",
+       "vp": 4
+      },
+      {
+       "text": "One or more enemy units that started the turn within range of one or more **central objectives** are **destroyed**.",
+       "vp": 2
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      },
+      {
+       "text": "You control **three or more objectives**.",
+       "vp": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Vanguard Operation",
+   "deck": "priority-assets",
+   "vs": "reconnaissance",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "A friendly unit performed a **vanguard operation** this turn (see reverse).",
+       "vp": 4
+      },
+      {
+       "text": "One or more enemy units were **destroyed** this turn.",
+       "vp": 2
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "END OF BATTLE",
+     "headerKind": "eob",
+     "tiers": [
+      {
+       "text": "You control your opponent's **home objective**.",
+       "vp": 10,
+       "kind": "eob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Vital Link",
+   "deck": "priority-assets",
+   "vs": "purge-the-foe",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You control one or more **central objectives**.",
+       "vp": 2
+      },
+      {
+       "text": "For each of your **operation markers** within range of one of those **objectives** (see reverse).",
+       "vp": 1,
+       "perUnit": true,
+       "cumulative": true
+      }
+     ]
+    },
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "trigger": "End of your Command phase (or the end of your turn in the fifth battle round)",
+     "tiers": [
+      {
+       "text": "You control one or more **objectives** (excluding your **home objective**).",
+       "vp": 4
+      },
+      {
+       "text": "One or more of those **objectives** is a **central objective**.",
+       "vp": 4,
+       "cumulative": true
+      }
+     ]
+    },
+    {
+     "when": "END OF BATTLE",
+     "headerKind": "eob",
+     "tiers": [
+      {
+       "text": "You control your opponent's **home objective**.",
+       "vp": 10,
+       "kind": "eob"
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "attribution": "Powered by Wahapedia"
 }
