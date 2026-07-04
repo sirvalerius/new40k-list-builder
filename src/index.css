@@ -32,6 +32,8 @@ html, body, #root {
 }
 
 body {
+  /* readable baseline for dense small text on a dark ground */
+  line-height: 1.5;
   /* grimdark vignette: light bleeds from the centre, edges fall into shadow */
   background:
     radial-gradient(120% 80% at 50% -10%, rgba(201, 164, 58, 0.05), transparent 60%),
@@ -194,7 +196,7 @@ h3.muted {
   color: var(--accent-2);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 600;
 }
 /* the ✠ is a deliberate marker on the roster's main sub-type dividers only —
@@ -210,8 +212,8 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 .col { display: flex; flex-direction: column; gap: 10px; }
 .spacer { flex: 1; }
 .muted { color: var(--text-dim); }
-.small { font-size: 0.85rem; }
-.tiny { font-size: 0.75rem; }
+.small { font-size: 0.875rem; }
+.tiny { font-size: 0.78rem; }
 .center { text-align: center; }
 .mt { margin-top: 12px; }
 .mb { margin-bottom: 12px; }
@@ -234,7 +236,7 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 
 .badge {
   display: inline-block;
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   padding: 2px 7px;
@@ -251,7 +253,7 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 
 .kw {
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   color: var(--text-dim);
   background: var(--bg-elev2);
   border-radius: 6px;
@@ -272,10 +274,11 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 
 .desc {
   white-space: pre-wrap;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--text-dim);
-  line-height: 1.4;
+  line-height: 1.55;
   margin-top: 6px;
+  text-wrap: pretty;
 }
 
 /* sticky bottom summary bar */
@@ -303,7 +306,7 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 }
 .summary .metric { font-variant-numeric: tabular-nums; }
 .summary .metric .v { font-size: 1.05rem; font-weight: 700; }
-.summary .metric .l { font-size: 0.64rem; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.04em; }
+.summary .metric .l { font-size: 0.68rem; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.04em; }
 .summary .v.bad { color: var(--err); }
 .summary .v.ok { color: var(--ok); }
 
@@ -372,7 +375,7 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 .footer {
   text-align: center;
   color: var(--text-dim);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   padding: 20px 14px calc(140px + var(--safe-bottom));
   line-height: 1.6;
 }
@@ -542,19 +545,23 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 .wpn-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-variant-numeric: tabular-nums;
 }
 .wpn-table th,
 .wpn-table td {
-  padding: 4px 6px;
+  padding: 6px 7px;
   text-align: center;
   white-space: nowrap;
   border-bottom: 1px solid var(--border);
 }
+/* zebra rows: scanning stat lines across columns without a ruler.
+   Desc rows opt out below so a weapon and its own note never stripe apart. */
+.wpn-table tbody tr:nth-child(odd) td { background: rgba(255, 255, 255, 0.02); }
+.wpn-table tbody tr.wpn-desc td { background: transparent; }
 .wpn-table th {
   color: var(--text-dim);
-  font-size: 0.66rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   font-weight: 600;
@@ -564,7 +571,7 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 .wpn-table .wpn-desc td {
   text-align: left;
   color: var(--text-dim);
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   padding-top: 0;
   padding-bottom: 6px;
   white-space: normal;
