@@ -1,12 +1,11 @@
-// Force Disposition badge: color-coded icon + text, used wherever a disposition appears.
-// ponytail: colors are our own coding (the official card colors aren't in the PDFs);
-// swap the hex values here if someone checks the physical deck.
+// Force Disposition badge: icon + text in the official card colors
+// (green / red / blue / turquoise / yellow), tuned to stay legible on the dark theme.
 export const DISPOSITIONS: Record<string, { icon: string; color: string; tagline: string }> = {
-  'TAKE AND HOLD': { icon: '⚑', color: '#c9a43a', tagline: 'Hold the most objective markers across the battlefield.' },
-  'PURGE THE FOE': { icon: '☠', color: '#c14444', tagline: 'Destroy the enemy and dominate the battlefield through force.' },
-  'DISRUPTION': { icon: '⚡', color: '#9d6bce', tagline: 'Disrupt the enemy battle plan and deny them the field.' },
-  'RECONNAISSANCE': { icon: '◉', color: '#5aa860', tagline: 'Scout the battlefield and seize key intelligence positions.' },
-  'PRIORITY ASSETS': { icon: '◆', color: '#4a90d9', tagline: 'Capture and hold the high value assets scattered across the field.' },
+  'TAKE AND HOLD': { icon: '⚑', color: '#57b45f', tagline: 'Hold the most objective markers across the battlefield.' },
+  'PURGE THE FOE': { icon: '☠', color: '#d05050', tagline: 'Destroy the enemy and dominate the battlefield through force.' },
+  'DISRUPTION': { icon: '⚡', color: '#5b8fd9', tagline: 'Disrupt the enemy battle plan and deny them the field.' },
+  'RECONNAISSANCE': { icon: '◉', color: '#3fc1b0', tagline: 'Scout the battlefield and seize key intelligence positions.' },
+  'PRIORITY ASSETS': { icon: '◆', color: '#e0c23f', tagline: 'Capture and hold the high value assets scattered across the field.' },
 };
 
 export function DispositionIcon({ name, iconOnly }: { name: string; iconOnly?: boolean }) {
