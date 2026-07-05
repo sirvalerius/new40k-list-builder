@@ -4237,3 +4237,425 @@ The roster permits to take farsight with etereals. Special sules that enforce li
 }
 ```
 </details>
+
+---
+### 2026-07-05T21:54:49.004Z
+
+_T’au Empire list — T’au Empire · Strike Force · Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36_
+
+The starting missile pod in the crisis fireknight unit point cost doesn't get added to unit cost. Of course if the option gets changed for another the point cost must no longer be added. Check if other unit starting equipment is not added. To get this mechanism more robust set cost 0 to wathever free item if it's not this and add Always all equipments costs
+
+
+<details><summary>Current list</summary>
+
+```json
+{
+  "id": "mqys8d1jmlk2w9i",
+  "name": "T’au Empire list",
+  "factionId": "TAU",
+  "battleSizeId": "2",
+  "detachmentIds": [
+    "000900006",
+    "000000846"
+  ],
+  "units": [
+    {
+      "uid": "mr8bgbc9njhu2zn",
+      "datasheetId": "000000406",
+      "name": "Commander Farsight",
+      "pointsCost": 80,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": true,
+      "attachedToUid": "mr8bi1tbg7zhej1"
+    },
+    {
+      "uid": "mr8bgdhw2zm8p2w",
+      "datasheetId": "000004203",
+      "name": "The Twin Lance",
+      "pointsCost": 205,
+      "pointsLabel": "2 models",
+      "variantKey": "2 models",
+      "modelCount": 2,
+      "isEpicHero": true,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mr8bgi2rr57ycku",
+      "datasheetId": "000000402",
+      "name": "Commander In Coldstar Battlesuit",
+      "pointsCost": 95,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Burst cannon",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "Cyclic ion blaster*",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "Weapon support system*",
+          "cost": 0,
+          "qty": 1
+        }
+      ],
+      "attachedToUid": "mr8bhzyrva351re",
+      "enhancementName": "Prototype Weapon System",
+      "enhancementCost": 15
+    },
+    {
+      "uid": "mr8bgl3s9634s5z",
+      "datasheetId": "000001478",
+      "name": "Commander In Enforcer Battlesuit",
+      "pointsCost": 80,
+      "pointsLabel": "1 model",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": true,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Fusion blaster (instead of burst cannon)",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "Fusion blaster",
+          "cost": 0,
+          "qty": 3
+        }
+      ],
+      "attachedToUid": "mr8bmogj66re43c",
+      "enhancementName": "Starflare Ignition System",
+      "enhancementCost": 20
+    },
+    {
+      "uid": "mr8bgu8rcmhth9h",
+      "datasheetId": "000000413",
+      "name": "Kroot Carnivores",
+      "pointsCost": 65,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "For every 10 models in this unit, one Kroot Carnivore’s Kroot rifle can be replaced with 1 Tanglebomb launcher.",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mr8bh57zaatnhbp",
+      "datasheetId": "000000433",
+      "name": "Broadside Battlesuits",
+      "pointsCost": 75,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Seeker missile",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "Shield drone",
+          "cost": 0,
+          "qty": 2
+        },
+        {
+          "name": "Weapon support system",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mr8bhex54xi17wd",
+      "datasheetId": "000000420",
+      "name": "Ghostkeel Battlesuit",
+      "pointsCost": 150,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "This model’s fusion collider can be replaced with 1 cyclic ion raker.",
+          "cost": 10,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mr8bhltrfogjrrl",
+      "datasheetId": "000000421",
+      "name": "Riptide Battlesuit",
+      "pointsCost": 180,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "This model’s heavy burst cannon can be replaced with 1 ion accelerator.",
+          "cost": 20,
+          "qty": 1
+        },
+        {
+          "name": "This model can be equipped with up to 2 missile drones.",
+          "cost": 0,
+          "qty": 2
+        },
+        {
+          "name": "Twin fusion blaster (instead of twin plasma rifles)",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mr8bhqcli4mdlh5",
+      "datasheetId": "000000421",
+      "name": "Riptide Battlesuit",
+      "pointsCost": 180,
+      "pointsLabel": "1 model (1st-2nd unit)",
+      "variantKey": "1 model",
+      "modelCount": 1,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "This model’s heavy burst cannon can be replaced with 1 ion accelerator.",
+          "cost": 20,
+          "qty": 1
+        },
+        {
+          "name": "Twin fusion blaster (instead of twin plasma rifles)",
+          "cost": 0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "uid": "mr8bhwtpaixdn8h",
+      "datasheetId": "000003700",
+      "name": "Crisis Fireknife Battlesuits",
+      "pointsCost": 100,
+      "pointsLabel": "3 models (1st-2nd unit)",
+      "variantKey": "3 models",
+      "modelCount": 3,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Any number of models can each have their plasma rifle replaced with 1 missile pod.",
+          "cost": 5,
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "uid": "mr8bhzyrva351re",
+      "datasheetId": "000003701",
+      "name": "Crisis Starscythe Battlesuits",
+      "pointsCost": 90,
+      "pointsLabel": "3 models (1st-2nd unit)",
+      "variantKey": "3 models",
+      "modelCount": 3,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mr8bi1tbg7zhej1",
+      "datasheetId": "000003699",
+      "name": "Crisis Sunforge Battlesuits",
+      "pointsCost": 125,
+      "pointsLabel": "3 models (1st-2nd unit)",
+      "variantKey": "3 models",
+      "modelCount": 3,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mr8bmogj66re43c",
+      "datasheetId": "000003699",
+      "name": "Crisis Sunforge Battlesuits",
+      "pointsCost": 125,
+      "pointsLabel": "3 models (1st-2nd unit)",
+      "variantKey": "3 models",
+      "modelCount": 3,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false
+    },
+    {
+      "uid": "mr8biatcmxt3tl9",
+      "datasheetId": "000000417",
+      "name": "Stealth Battlesuits",
+      "pointsCost": 100,
+      "pointsLabel": "5 models (1st-2nd unit)",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "The Stealth Shas’vre can be equipped with 1 gun drone.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "The Stealth Shas’vre can be equipped with 1 marker drone.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "The Stealth Shas’vre can be equipped with 1 pulse pistol.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": " 1 Stealth Shas’ui can be equipped with 1 homing beacon.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "2 models can each have their burst cannon replaced with 1 fusion blaster.",
+          "cost": 0,
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "uid": "mr8bidx7ex1mmhy",
+      "datasheetId": "000000417",
+      "name": "Stealth Battlesuits",
+      "pointsCost": 100,
+      "pointsLabel": "5 models (1st-2nd unit)",
+      "variantKey": "5 models",
+      "modelCount": 5,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "The Stealth Shas’vre can be equipped with 1 gun drone.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "The Stealth Shas’vre can be equipped with 1 marker drone.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "The Stealth Shas’vre can be equipped with 1 pulse pistol.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": " 1 Stealth Shas’ui can be equipped with 1 homing beacon.",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "2 models can each have their burst cannon replaced with 1 fusion blaster.",
+          "cost": 0,
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "uid": "mr8bilds41jrhu6",
+      "datasheetId": "000000422",
+      "name": "Pathfinder Team",
+      "pointsCost": 80,
+      "pointsLabel": "10 models",
+      "variantKey": "10 models",
+      "modelCount": 10,
+      "isEpicHero": false,
+      "isBattleline": false,
+      "isCharacter": false,
+      "isAlly": false,
+      "warlord": false,
+      "wargearCosts": [
+        {
+          "name": "Recon drone",
+          "cost": 0,
+          "qty": 1
+        },
+        {
+          "name": "Ion rifle (instead of pulse carbine)",
+          "cost": 5,
+          "qty": 3
+        }
+      ]
+    }
+  ],
+  "createdAt": 1782711220230,
+  "updatedAt": 1783288210620,
+  "disposition": "RECONNAISSANCE"
+}
+```
+</details>
