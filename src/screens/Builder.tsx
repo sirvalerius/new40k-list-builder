@@ -48,7 +48,30 @@ export function Builder({
   useEffect(() => {
     let alive = true;
     loadFactionById(initial.factionId).then((d) => {
-      if (alive && d) setFd(d);
+      if (!alive || !d) return;
+      setFd(d);
+      // Reconcile mandatory stock-weapon costs (ds.default_wargear) for units already in
+      // a saved list: buildListUnit only seeds them at creation, so a unit added before
+      // this datasheet got a default_wargear entry (or never touched since) would
+      // otherwise keep undercharging for its standard loadout forever.
+      const dsMap = datasheetMap(d);
+      setList((prev) => {
+        let changed = false;
+        const units = prev.units.map((u) => {
+          const ds = dsMap.get(u.datasheetId);
+          if (!ds) return u;
+          const wargearCosts = clampLoadout(u, ds);
+          const before = JSON.stringify(u.wargearCosts ?? []);
+          const after = JSON.stringify(wargearCosts);
+          if (before === after) return u;
+          changed = true;
+          return { ...u, wargearCosts };
+        });
+        if (!changed) return prev;
+        const next = { ...prev, units };
+        onChange(next);
+        return next;
+      });
     });
     return () => {
       alive = false;
