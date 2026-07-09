@@ -130,7 +130,17 @@ export interface DispositionMatchup { a: string; b: string; mission_a: string; m
 // A primary-mission card: scoring sections with VP tiers (**bold** in text is markdown-style).
 export interface MissionTier { text: string; vp: number; perUnit?: boolean; cumulative?: boolean; }
 export interface MissionSection { when: string; trigger: string; tiers: MissionTier[]; }
-export interface Mission { name: string; deck: string; vs: string; sections: MissionSection[]; }
+// The Objective Action printed on the reverse of the mission card (some missions have none).
+export interface MissionAction {
+  name: string;
+  starts: string;
+  units: string;
+  useLimit: string;
+  completes: string;
+  effect: string;
+  restriction?: string;
+}
+export interface Mission { name: string; deck: string; vs: string; sections: MissionSection[]; action?: MissionAction; }
 
 export interface Detachment {
   id: string;

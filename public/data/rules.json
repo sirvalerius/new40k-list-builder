@@ -968,6 +968,14 @@
    "name": "Death Trap",
    "deck": "disruption",
    "vs": "take-and-hold",
+   "action": {
+    "name": "Booby Trap",
+    "starts": "Your Shooting phase.",
+    "units": "One friendly unit within range of one objective (excluding your home objective) or within one terrain area that is not within your deployment zone, that you have not yet trapped (see below).",
+    "useLimit": "Unlimited. Each unit that starts this action this phase must be within a different terrain area.",
+    "completes": "Immediately.",
+    "effect": "That terrain area is trapped: place one of your operation markers within that terrain area."
+   },
    "sections": [
     {
      "when": "ANY BATTLE ROUND",
@@ -1050,6 +1058,15 @@
    "name": "Locate and Deny",
    "deck": "disruption",
    "vs": "priority-assets",
+   "action": {
+    "name": "Sensor Sweep",
+    "starts": "Your Shooting phase.",
+    "units": "One friendly unit within range of one central objective.",
+    "useLimit": "Once per turn.",
+    "completes": "End of your turn, if your unit controls that objective.",
+    "effect": "Your unit performs a sensor sweep: remove one operation marker from the battlefield.",
+    "restriction": "A unit cannot start this action if there is only one operation marker on the battlefield."
+   },
    "sections": [
     {
      "when": "ANY BATTLE ROUND",
@@ -1142,6 +1159,14 @@
    "name": "Smoke and Mirrors",
    "deck": "disruption",
    "vs": "reconnaissance",
+   "action": {
+    "name": "Decoy",
+    "starts": "Your Shooting phase.",
+    "units": "One friendly unit within range of one objective (excluding your home objective) that is not decoyed (see below).",
+    "useLimit": "Unlimited. Each unit that starts this action this phase must be within range of a different objective.",
+    "completes": "End of your turn, if your unit controls that objective.",
+    "effect": "That objective is decoyed: place one of your operation markers within range of that objective."
+   },
    "sections": [
     {
      "when": "ANY BATTLE ROUND",
@@ -1187,6 +1212,14 @@
    "name": "Gather Intel",
    "deck": "reconnaissance",
    "vs": "reconnaissance",
+   "action": {
+    "name": "Extract Intelligence",
+    "starts": "Your Shooting phase, from the second battle round onwards.",
+    "units": "One unit within range of one objective (excluding your home objective) that does not have any of your operation markers within range of it.",
+    "useLimit": "Unlimited. Each unit that starts this action this phase must be within range of a different objective.",
+    "completes": "End of your turn, if your unit controls that objective.",
+    "effect": "Place one of your operation markers within range of that objective."
+   },
    "sections": [
     {
      "when": "FIRST BATTLE ROUND",
@@ -1327,6 +1360,14 @@
    "name": "Surveil the Foe",
    "deck": "reconnaissance",
    "vs": "disruption",
+   "action": {
+    "name": "Surveil the Foe",
+    "starts": "Your Shooting phase.",
+    "units": "One friendly unit.",
+    "useLimit": "Unlimited.",
+    "completes": "Immediately.",
+    "effect": "Select one enemy unit within 18\" of and visible to your unit that has not been surveilled this turn: until the end of the turn, that enemy unit is surveilled."
+   },
    "sections": [
     {
      "when": "ANY BATTLE ROUND",
@@ -1368,6 +1409,14 @@
    "name": "Triangulation",
    "deck": "reconnaissance",
    "vs": "purge-the-foe",
+   "action": {
+    "name": "Triangulate",
+    "starts": "Your Shooting phase, from the second battle round onwards.",
+    "units": "One friendly unit within range of one objective (excluding your home objective).",
+    "useLimit": "Once per turn.",
+    "completes": "End of your turn, if your unit controls that objective.",
+    "effect": "That objective is triangulated: place one of your operation markers within range of that objective."
+   },
    "sections": [
     {
      "when": "SECOND BATTLE ROUND ONWARDS",
@@ -1416,6 +1465,15 @@
    "name": "Extract Relic",
    "deck": "priority-assets",
    "vs": "disruption",
+   "action": {
+    "name": "Sensor Sweep",
+    "starts": "Your Shooting phase.",
+    "units": "One friendly unit within range of one central objective.",
+    "useLimit": "Once per turn.",
+    "completes": "End of your turn, if your unit controls that objective.",
+    "effect": "Your unit performs a sensor sweep: remove one operation marker from the battlefield.",
+    "restriction": "A unit cannot start this action if there is only one operation marker on the battlefield."
+   },
    "sections": [
     {
      "when": "ANY BATTLE ROUND",
@@ -1462,6 +1520,14 @@
    "name": "Sabotage",
    "deck": "priority-assets",
    "vs": "priority-assets",
+   "action": {
+    "name": "Sabotage",
+    "starts": "Your Shooting phase.",
+    "units": "One unit within range of one objective (excluding your home objective).",
+    "useLimit": "Unlimited. Each unit that starts this action this phase must be within range of a different objective.",
+    "completes": "End of your turn, if that unit controls that objective.",
+    "effect": "Your unit commits sabotage."
+   },
    "sections": [
     {
      "when": "ANY BATTLE ROUND",
@@ -1496,6 +1562,14 @@
    "name": "Secure Asset",
    "deck": "priority-assets",
    "vs": "take-and-hold",
+   "action": {
+    "name": "Secure Asset",
+    "starts": "Your Shooting phase.",
+    "units": "One friendly unit within range of one objective (excluding your home objective).",
+    "useLimit": "Once per turn.",
+    "completes": "End of your turn, if your unit controls that objective.",
+    "effect": "Your unit secures the asset."
+   },
    "sections": [
     {
      "when": "ANY BATTLE ROUND",
@@ -1531,6 +1605,14 @@
    "name": "Vanguard Operation",
    "deck": "priority-assets",
    "vs": "reconnaissance",
+   "action": {
+    "name": "Vanguard Operation",
+    "starts": "Your Shooting phase.",
+    "units": "One friendly unit within one terrain area that is within your opponent's territory.",
+    "useLimit": "Once per turn.",
+    "completes": "End of your turn, if no enemy units are within that terrain area.",
+    "effect": "Your unit performs a vanguard operation."
+   },
    "sections": [
     {
      "when": "ANY BATTLE ROUND",
@@ -1573,6 +1655,14 @@
    "name": "Vital Link",
    "deck": "priority-assets",
    "vs": "purge-the-foe",
+   "action": {
+    "name": "Maintain Control",
+    "starts": "Your Shooting phase.",
+    "units": "One friendly unit within range of one central objective.",
+    "useLimit": "Once per turn.",
+    "completes": "End of your turn, if your unit controls that objective.",
+    "effect": "Place one of your operation markers within range of that objective."
+   },
    "sections": [
     {
      "when": "ANY BATTLE ROUND",

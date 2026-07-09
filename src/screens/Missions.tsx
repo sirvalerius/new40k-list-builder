@@ -9,6 +9,7 @@ function md(text: string) {
 }
 
 function MissionCard({ m }: { m: Mission }) {
+  const a = m.action;
   return (
     <div className="col" style={{ gap: 8 }}>
       {m.sections.map((s, i) => (
@@ -25,14 +26,23 @@ function MissionCard({ m }: { m: Mission }) {
           ))}
         </div>
       ))}
+      {a && (
+        <div className="small" style={{ borderTop: '1px solid var(--border)', paddingTop: 8 }}>
+          <div style={{ fontWeight: 700 }}>Objective Action — {a.name}</div>
+          <div><b className="muted tiny">STARTS </b>{a.starts}</div>
+          <div><b className="muted tiny">UNITS </b>{md(a.units)}</div>
+          <div><b className="muted tiny">USE LIMIT </b>{a.useLimit}</div>
+          <div><b className="muted tiny">COMPLETES </b>{a.completes}</div>
+          <div><b className="muted tiny">EFFECT </b>{md(a.effect)}</div>
+          {a.restriction && <div><b className="muted tiny">RESTRICTION </b>{a.restriction}</div>}
+        </div>
+      )}
     </div>
   );
 }
 
 // Mission viewer: pick YOUR Force Disposition and see, for every opponent disposition,
 // the mission you play next to the mission the opponent plays in that matchup.
-// ponytail: mission names + matchups only — the full mission rules live on the physical
-// card deck, not in any PDF we have; add texts here if a source appears.
 export function Missions({ rules, initial }: { rules: Rules; initial?: string }) {
   const [mine, setMine] = useState(initial ?? 'TAKE AND HOLD');
   const matchups = rules.disposition_matchups ?? [];
