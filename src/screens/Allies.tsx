@@ -10,7 +10,7 @@ import type {
 } from '../lib/types';
 import { allyCap } from '../lib/rules';
 import { loadIndex, loadFaction } from '../lib/data';
-import { intOf } from '../lib/helpers';
+import { intOf, unitTotal } from '../lib/helpers';
 import { Modal } from '../components/Modal';
 import { DatasheetCard } from '../components/DatasheetCard';
 
@@ -124,7 +124,7 @@ function AllyRuleBlock({
     .filter(
       (u) => u.isAlly && (u as { allyKeyword?: string }).allyKeyword === rule.allied_keyword,
     )
-    .reduce((s, u) => s + intOf(u.pointsCost) + intOf(u.enhancementCost), 0);
+    .reduce((s, u) => s + unitTotal(u), 0);
 
   async function ensureLoaded() {
     if (fd || loading) return;
