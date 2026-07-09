@@ -88,13 +88,27 @@ export const wargearTotal = (u: ListUnit): number =>
 export const unitTotal = (u: ListUnit): number =>
   intOf(u.pointsCost) + intOf(u.enhancementCost) + wargearTotal(u);
 
+/** Reconcile a unit's mandatory stock-weapon costs (`ds.default_wargear`) to its current
+ *  model count: added at qty 0, kept in sync as the count changes. Not a player choice —
+ *  just points the MFM attaches to a weapon the unit always fields (e.g. Tau Crisis suits'
+ *  standard Missile pod), so they must always be present alongside the paid options. */
+function withDefaultWargear(wargear: ChosenWargear[], ds: Datasheet, count: number): ChosenWargear[] {
+  let out = wargear;
+  for (const d of ds.default_wargear ?? []) {
+    const i = out.findIndex((w) => w.name === d.name);
+    if (i === -1) out = [...out, { name: d.name, cost: d.cost, qty: count }];
+    else if (out[i].qty !== count) out = out.map((w, j) => (j === i ? { ...w, qty: count } : w));
+  }
+  return out;
+}
+
 /** Clamp a unit's chosen weapon-option quantities to their per-option limits
  *  for the unit's current model count (used when the model count changes). */
 export function clampLoadout(unit: ListUnit, ds: Datasheet): ChosenWargear[] {
   const count = unit.modelCount ?? ds.model_max ?? 1;
   const opts = ds.weapon_options ?? [];
   const limitOf = new Map(opts.map((o) => [o.text, o.limit]));
-  let wargear = (unit.wargearCosts ?? []).map((w) => {
+  let wargear = withDefaultWargear(unit.wargearCosts ?? [], ds, count).map((w) => {
     const max = optionMax(limitOf.get(w.name), count);
     return max != null && w.qty > max ? { ...w, qty: max } : w;
   });
@@ -206,6 +220,12 @@ export function buildListUnit(
   tier: PointsOption,
   modelCount?: number,
 ): ListUnit {
+  const mc = modelCount ?? tier.models ?? undefined;
+  const defaults = (ds.default_wargear ?? []).map((d) => ({
+    name: d.name,
+    cost: d.cost,
+    qty: mc ?? ds.model_max ?? 1,
+  }));
   return {
     uid: uid(),
     datasheetId: ds.id,
@@ -213,13 +233,14 @@ export function buildListUnit(
     pointsCost: intOf(tier.cost),
     pointsLabel: tier.description,
     variantKey: tier.variant ?? tier.description,
-    modelCount: modelCount ?? tier.models ?? undefined,
+    modelCount: mc,
     requiresDetachment: ds.requires_detachment || undefined,
     isEpicHero: ds.is_epic_hero,
     isBattleline: ds.is_battleline,
     isCharacter: ds.is_character,
     isAlly: false,
     warlord: false,
+    wargearCosts: defaults.length ? defaults : undefined,
   };
 }
 

@@ -92,6 +92,9 @@ export interface Datasheet {
   model_max?: number | null;   // largest legal model count (largest cost bracket)
   countable?: boolean;         // true if the unit has a model-count range (multiple size brackets)
   weapon_options?: WeaponOption[];  // ordered options (free + paid) with inline cost
+  default_wargear?: { name: string; cost: number }[]; // stock weapons the MFM prices even
+    // though they're not a choice (e.g. Tau Crisis suits' standard Missile pod) — seeded
+    // into every new unit's wargearCosts so the base loadout is never undercharged.
 }
 
 // A weapon/wargear option line in datasheet order; cost 0 = free, >0 = paid (MFM).

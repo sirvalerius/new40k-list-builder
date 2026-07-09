@@ -4172,6 +4172,12 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "default_wargear": [
+    {
+     "name": "Missile pod",
+     "cost": 5
+    }
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their plasma rifle replaced with 1 missile pod.",
@@ -4188,7 +4194,7 @@
     },
     {
      "text": "Any number of models can each have their missile pod replaced with 1 plasma rifle.",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "all"

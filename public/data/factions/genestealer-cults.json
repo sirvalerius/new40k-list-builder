@@ -445,10 +445,16 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "default_wargear": [
+    {
+     "name": "Heavy mining laser",
+     "cost": 10
+    }
+   ],
    "weapon_options": [
     {
      "text": "Achilles missile launcher (instead of heavy mining laser)",
-     "cost": 0,
+     "cost": -10,
      "type": "wargear",
      "limit": {
       "kind": "all"
@@ -462,7 +468,7 @@
     },
     {
      "text": "Heavy mortar (instead of heavy mining laser)",
-     "cost": 0,
+     "cost": -10,
      "type": "wargear",
      "limit": {
       "kind": "all"
@@ -497,19 +503,6 @@
      "group": "000001573-1",
      "model": "",
      "grants": []
-    },
-    {
-     "text": "Equip Heavy mining laser",
-     "cost": 10,
-     "type": "wargear",
-     "limit": {
-      "kind": "all"
-     },
-     "base": "",
-     "model": "",
-     "grants": [
-      "Heavy mining laser"
-     ]
     }
    ],
    "chapter": "",
