@@ -12,6 +12,11 @@ function MissionCard({ m }: { m: Mission }) {
   const a = m.action;
   return (
     <div className="col" style={{ gap: 8 }}>
+      {m.note && (
+        <div className="small muted" style={{ borderLeft: '3px solid var(--border)', paddingLeft: 8 }}>
+          {md(m.note)}
+        </div>
+      )}
       {m.sections.map((s, i) => (
         <div key={i} className="small">
           <div style={{ fontWeight: 700 }}>{s.when}</div>

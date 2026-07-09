@@ -140,7 +140,14 @@ export interface MissionAction {
   effect: string;
   restriction?: string;
 }
-export interface Mission { name: string; deck: string; vs: string; sections: MissionSection[]; action?: MissionAction; }
+export interface Mission {
+  name: string;
+  deck: string;
+  vs: string;
+  sections: MissionSection[];
+  action?: MissionAction;
+  note?: string; // rule box printed above the scoring sections (setup step or a persistent mechanic)
+}
 
 export interface Detachment {
   id: string;

@@ -748,6 +748,7 @@
    "name": "Consecrate",
    "deck": "purge-the-foe",
    "vs": "reconnaissance",
+   "note": "Each time a friendly unit destroys a unit, that friendly unit becomes a consecration unit. At the end of your turn, for each of your consecration units, you can select one objective it is within range of (excluding your home objective) that has not been consecrated. If you do, place one of your operation markers within range of that objective – that objective is consecrated and that unit is no longer a consecration unit.",
    "sections": [
     {
      "when": "ANY BATTLE ROUND",
@@ -877,6 +878,7 @@
    "name": "Punishment",
    "deck": "purge-the-foe",
    "vs": "disruption",
+   "note": "START OF YOUR TURN: Select one to three enemy units that are on the battlefield and within range of objectives and/or that destroyed one or more friendly units in the previous turn. If you cannot, select one enemy unit that is on the battlefield. Until the start of your next turn, those units are condemned.",
    "sections": [
     {
      "when": "ANY BATTLE ROUND",
@@ -1058,6 +1060,7 @@
    "name": "Locate and Deny",
    "deck": "disruption",
    "vs": "priority-assets",
+   "note": "START OF THE BATTLE: Select five terrain areas not within your deployment zone; for each one, place one of your operation markers within it. If you cannot, do so for each terrain area that is not within your deployment zone.",
    "action": {
     "name": "Sensor Sweep",
     "starts": "Your Shooting phase.",
@@ -1360,6 +1363,7 @@
    "name": "Surveil the Foe",
    "deck": "reconnaissance",
    "vs": "disruption",
+   "note": "Each time a friendly unit ends a move within range of one objective that has any of your opponent's operation markers within range of it, remove those operation markers from the battlefield.",
    "action": {
     "name": "Surveil the Foe",
     "starts": "Your Shooting phase.",
