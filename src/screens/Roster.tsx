@@ -142,7 +142,16 @@ export function Roster({
     const eligible = ds?.is_leader ? eligibleBodyguards(ds, list, dsById) : [];
     return (
       <div className="card" key={u.uid}>
-        <div className="row">
+        <div className="row" style={{ gap: 8 }}>
+          {ds?.icon && (
+            <img
+              src={`${import.meta.env.BASE_URL}data/${ds.icon}`}
+              alt=""
+              width={40}
+              height={40}
+              style={{ borderRadius: '50%', border: '1px solid var(--border)', flexShrink: 0 }}
+            />
+          )}
           <div style={{ flex: 1 }}>
             {renaming === u.uid ? (
               <input
@@ -397,6 +406,15 @@ export function Roster({
                       setBrowsing(false);
                     }}
                   >
+                    {d.icon && (
+                      <img
+                        src={`${import.meta.env.BASE_URL}data/${d.icon}`}
+                        alt=""
+                        width={40}
+                        height={40}
+                        style={{ borderRadius: '50%', border: '1px solid var(--border)', flexShrink: 0 }}
+                      />
+                    )}
                     <div className="meta">
                       <div className="name">{d.name}</div>
                       <div className="muted tiny">
