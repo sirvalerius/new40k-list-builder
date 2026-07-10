@@ -37,9 +37,13 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Precache the shell; cache the per-faction JSON on first fetch so the
-        // app keeps working offline once a faction has been opened.
+        // Precache the shell; cache the per-faction JSON (and unit icons) on first
+        // fetch so the app keeps working offline once a faction has been opened.
+        // Unit icons are excluded from precache — there can be hundreds of them
+        // across factions, and eagerly downloading all of them on first visit
+        // would bloat load time for players who never open that faction.
         globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2}'],
+        globIgnores: ['**/data/icons/**'],
         maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         runtimeCaching: [
           {

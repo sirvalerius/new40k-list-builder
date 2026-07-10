@@ -95,6 +95,7 @@ export interface Datasheet {
   default_wargear?: { name: string; cost: number }[]; // stock weapons the MFM prices even
     // though they're not a choice (e.g. Tau Crisis suits' standard Missile pod) — seeded
     // into every new unit's wargearCosts so the base loadout is never undercharged.
+  icon?: string; // relative path under /data (e.g. "icons/tau/000000406.png")
 }
 
 // A weapon/wargear option line in datasheet order; cost 0 = free, >0 = paid (MFM).

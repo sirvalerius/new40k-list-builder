@@ -37,8 +37,24 @@ export function DatasheetCard({
   );
 
   return (
-    <div className="col" style={{ gap: 8 }}>
-      <div className="row wrap" style={{ gap: 6 }}>
+    <div className="col" style={{ gap: 8, position: 'relative' }}>
+      {ds.icon && (
+        <img
+          src={`${import.meta.env.BASE_URL}data/${ds.icon}`}
+          alt=""
+          width={56}
+          height={56}
+          style={{
+            position: 'absolute',
+            top: 0,
+            right: 0,
+            borderRadius: '50%',
+            border: '2px solid var(--border)',
+            background: 'var(--bg-elev)',
+          }}
+        />
+      )}
+      <div className="row wrap" style={{ gap: 6, paddingRight: ds.icon ? 64 : 0 }}>
         {ds.role && <span className="badge role">{ds.role}</span>}
         {tags.map((t) => (
           <span className="badge" key={t}>
