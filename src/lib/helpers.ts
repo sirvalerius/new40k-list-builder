@@ -83,6 +83,36 @@ export function equippedWeapons(ds: Datasheet, selected?: ChosenWargear[], model
   });
 }
 
+/**
+ * Abilities a unit's card should list, given its chosen loadout (`selected`).
+ * - Faction-type (the army-wide rule, e.g. Oath of Moment) is excluded: shown once, army-wide,
+ *   in the bunker view's Army rules card — repeating it on every unit's card is just clutter.
+ * - "Wargear profile"-type entries are glossary text for a weapon keyword (e.g. Seeker missile's
+ *   "one shot") that's already shown inline under that weapon's row; excluded as a duplicate.
+ * - Wargear-type entries (e.g. a Homing Beacon or drone accessory) describe what a specific
+ *   piece of wargear does, so only show while that option is actually taken — matched loosely
+ *   (substring, either direction) against the chosen option's text, since options are often a
+ *   full sentence ("...can be equipped with 1 homing beacon") rather than just the item's name.
+ * - Everything else (Core rules like Stealth/Infiltrators, and the unit's own Datasheet-type
+ *   special rules) is innate and always shown. When `selected` is undefined (browsing), every
+ *   Wargear-type entry is shown too, same as `equippedWeapons`.
+ */
+export function unitAbilities(ds: Datasheet, selected?: ChosenWargear[]): Ability[] {
+  const chosenNames = (selected ?? [])
+    .filter((s) => s.qty > 0)
+    .map((s) => normName(s.name));
+  return (ds.abilities ?? []).filter((a) => {
+    if (!a.name && !a.description) return false;
+    if (a.type === 'Faction' || a.type === 'Wargear profile') return false;
+    if (a.type === 'Wargear') {
+      if (selected == null) return true;
+      const an = normName(a.name);
+      return chosenNames.some((cn) => cn.includes(an) || an.includes(cn));
+    }
+    return true;
+  });
+}
+
 export function uid(): string {
   // Good-enough unique id without external deps.
   return (

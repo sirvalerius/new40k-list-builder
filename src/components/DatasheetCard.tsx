@@ -2,7 +2,7 @@ import { Fragment, useState } from 'react';
 import type { ChosenWargear, Datasheet, Weapon } from '../lib/types';
 import { StatLine } from './StatLine';
 import { Collapsible } from './Collapsible';
-import { equippedWeapons, stripHtml } from '../lib/helpers';
+import { equippedWeapons, stripHtml, unitAbilities } from '../lib/helpers';
 
 export function WeaponTable({ weapons }: { weapons: Weapon[] }) {
   return (
@@ -85,7 +85,7 @@ export function DatasheetCard({
     (wpnTabPick === 'ranged' && ranged.length) || (wpnTabPick === 'melee' && melee.length)
       ? wpnTabPick
       : defaultWpnTab;
-  const abilities = ds.abilities.filter((a) => a.name || a.description);
+  const abilities = unitAbilities(ds, selected);
   const selQty = selected
     ? new Map(selected.filter((s) => s.qty > 0).map((s) => [s.name, s.qty]))
     : null;
@@ -174,7 +174,7 @@ export function DatasheetCard({
           <div className="col" style={{ gap: 8 }}>
             {abilities.map((a, i) => (
               <div key={i} className="small">
-                {a.name && <b>{a.name}: </b>}
+                {a.name && <b>{a.name}{a.parameter ? ` ${a.parameter}` : ''}: </b>}
                 <span className="desc" style={{ display: 'inline' }}>
                   {stripHtml(a.description)}
                 </span>

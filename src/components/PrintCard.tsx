@@ -1,7 +1,7 @@
 import type { Datasheet, ListUnit } from '../lib/types';
 import { StatLine } from './StatLine';
 import { WeaponTable } from './DatasheetCard';
-import { displayName, equippedWeapons, intOf, stripHtml, unitTotal } from '../lib/helpers';
+import { displayName, equippedWeapons, intOf, stripHtml, unitAbilities, unitTotal } from '../lib/helpers';
 
 // Compact, always-expanded datacard for the printed reference sheet: no collapsibles or
 // sub-tabs (nothing to click on paper), ranged + melee weapons in one table, and only the
@@ -9,7 +9,7 @@ import { displayName, equippedWeapons, intOf, stripHtml, unitTotal } from '../li
 // "can join" list) that matter when building the list, not when playing it.
 function PrintMember({ ds, unit }: { ds: Datasheet; unit: ListUnit }) {
   const weapons = equippedWeapons(ds, unit.wargearCosts ?? [], unit.modelCount);
-  const abilities = ds.abilities.filter((a) => a.name || a.description);
+  const abilities = unitAbilities(ds, unit.wargearCosts ?? []);
   const loadout = (unit.wargearCosts ?? []).filter((w) => w.qty > 0);
   const tags = [
     unit.warlord ? 'Warlord' : '',
@@ -39,7 +39,7 @@ function PrintMember({ ds, unit }: { ds: Datasheet; unit: ListUnit }) {
         <div className="tiny">
           {abilities.map((a, i) => (
             <div key={i}>
-              {a.name && <b>{a.name}: </b>}
+              {a.name && <b>{a.name}{a.parameter ? ` ${a.parameter}` : ''}: </b>}
               {stripHtml(a.description)}
             </div>
           ))}

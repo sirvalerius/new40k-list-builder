@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed, armyRules } from './helpers';
+import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed, armyRules, unitAbilities } from './helpers';
 import type { ArmyList, ChosenWargear, Datasheet, Detachment, FactionData, ListUnit, PointsOption, Weapon } from './types';
 
 function ds(partial: Partial<Datasheet>): Datasheet {
@@ -282,6 +282,31 @@ describe('armyRules (Faction-type ability, deduped, per-datasheet override wins)
   it('dedupes when every unit shares the same rule', () => {
     const list = { units: [u('int'), u('int')] } as ArmyList;
     expect(armyRules(list, dsMap)).toHaveLength(1);
+  });
+});
+
+describe('unitAbilities (innate rules always shown; wargear-gated only when taken)', () => {
+  const stealth = { name: 'Stealth', type: 'Core', parameter: '', description: '-1 to hit.' };
+  const armyRule = { name: 'For the Greater Good', type: 'Faction', parameter: '', description: 'Spotting.' };
+  const special = { name: 'Forward Observers', type: 'Datasheet', parameter: '', description: 'Re-roll.' };
+  const beacon = { name: 'Homing Beacon', type: 'Wargear', parameter: '', description: 'Free Rapid Ingress.' };
+  const oneShot = { name: 'One Shot', type: 'Wargear profile', parameter: '', description: 'Once per battle.' };
+  const suit = ds({ id: 'st', name: 'Stealth Battlesuits',
+    abilities: [stealth, armyRule, special, beacon, oneShot] });
+  // matches the real data shape: the option's text is a full sentence, not just the item name
+  const BEACON_OPT = "1 Stealth Shas'ui can be equipped with 1 homing beacon.";
+
+  it('browsing (no selected loadout) shows everything except Faction and Wargear profile', () => {
+    const names = unitAbilities(suit, undefined).map((a) => a.name);
+    expect(names).toEqual(['Stealth', 'Forward Observers', 'Homing Beacon']);
+  });
+  it('Wargear-type ability is hidden until its option is actually taken', () => {
+    const names = unitAbilities(suit, []).map((a) => a.name);
+    expect(names).toEqual(['Stealth', 'Forward Observers']);
+  });
+  it('Wargear-type ability appears once its option is chosen, matched loosely against the full option text', () => {
+    const names = unitAbilities(suit, [{ name: BEACON_OPT, cost: 0, qty: 1 }]).map((a) => a.name);
+    expect(names).toContain('Homing Beacon');
   });
 });
 
