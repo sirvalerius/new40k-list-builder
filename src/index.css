@@ -486,14 +486,14 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 /* bunker (in-game) cards */
 .unit-index {
   position: sticky;
-  top: 56px; /* docks right below the sticky .topbar */
+  top: 72px; /* .topbar is ~65px tall; a few extra px of breathing room so chips aren't clipped */
   z-index: 15;
   display: flex;
   gap: 6px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 8px 2px;
-  margin: -4px 0 12px;
+  padding: 10px 2px;
+  margin: 4px 0 12px;
   background: linear-gradient(180deg, rgba(19, 21, 28, 0.97), rgba(19, 21, 28, 0.92));
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--border-gold);
@@ -514,7 +514,7 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 }
 .unit-index a:hover { border-color: var(--border-gold); color: var(--bone); }
 
-.card.bunker { border-color: #3a4658; scroll-margin-top: 104px; }
+.card.bunker { border-color: #3a4658; scroll-margin-top: 132px; }
 .bunker-title {
   font-weight: 700;
   font-size: 1rem;
