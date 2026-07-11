@@ -296,7 +296,7 @@ export function Roster({
           <details style={{ marginTop: 8 }}>
             <summary className="muted small">Datasheet</summary>
             <div className="mt">
-              <DatasheetCard ds={ds} selected={u.wargearCosts ?? []} subFaction={subFaction} />
+              <DatasheetCard ds={ds} selected={u.wargearCosts ?? []} subFaction={subFaction} modelCount={u.modelCount} />
             </div>
           </details>
         )}

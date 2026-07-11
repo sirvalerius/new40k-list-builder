@@ -8,7 +8,7 @@ import { displayName, equippedWeapons, intOf, stripHtml, unitTotal } from '../li
 // information a player actually checks mid-game — not the browsing aids (keyword chips,
 // "can join" list) that matter when building the list, not when playing it.
 function PrintMember({ ds, unit }: { ds: Datasheet; unit: ListUnit }) {
-  const weapons = equippedWeapons(ds, unit.wargearCosts ?? []);
+  const weapons = equippedWeapons(ds, unit.wargearCosts ?? [], unit.modelCount);
   const abilities = ds.abilities.filter((a) => a.name || a.description);
   const loadout = (unit.wargearCosts ?? []).filter((w) => w.qty > 0);
   const tags = [

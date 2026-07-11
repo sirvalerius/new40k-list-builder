@@ -165,6 +165,35 @@ describe('equippedWeapons (show only what the unit fields)', () => {
   });
 });
 
+// Pathfinder-style: 10 models with a stock weapon, up to 3 may swap it for a special weapon —
+// the base should stay listed until every model has swapped it away (bug: it used to vanish
+// the instant any single model swapped).
+const pathfinders = ds({
+  id: 'pf', name: 'Pathfinder Team', model_min: 10, model_max: 10,
+  weapons: [w('Pulse carbine'), w('Rail rifle')],
+  weapon_options: [
+    { text: 'Rail rifle (instead of pulse carbine)', cost: 0, type: 'wargear',
+      limit: { kind: 'fixed', max: 3 }, base: 'pulse carbine', model: '', grants: ['Rail rifle'] },
+  ],
+});
+const RAIL = 'Rail rifle (instead of pulse carbine)';
+
+describe('equippedWeapons (squad-wide partial swaps keep the base weapon)', () => {
+  it('1 of 10 swapped: keeps the base weapon alongside the swap', () => {
+    const eq = names(equippedWeapons(pathfinders, [{ name: RAIL, cost: 0, qty: 1 }], 10));
+    expect(eq).toContain('Pulse carbine');
+    expect(eq).toContain('Rail rifle');
+  });
+  it('3 of 10 swapped (the option max): base still fielded by the other 7', () => {
+    const eq = names(equippedWeapons(pathfinders, [{ name: RAIL, cost: 0, qty: 3 }], 10));
+    expect(eq).toContain('Pulse carbine');
+  });
+  it('every model swapped: base finally disappears', () => {
+    const eq = names(equippedWeapons(pathfinders, [{ name: RAIL, cost: 0, qty: 3 }], 3));
+    expect(eq).not.toContain('Pulse carbine');
+  });
+});
+
 describe('clampLoadout drops sub-model options when the model is removed', () => {
   it('removing the ATV drops its multi-melta', () => {
     const unit = { ...buildListUnit(outriders, outriders.points[0] ?? { description: '', cost: '0' }, 6),

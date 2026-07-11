@@ -162,7 +162,7 @@ export function BunkerMode({
                       {displayName(m)}
                       {tags.length ? <span className="muted small"> · {tags.join(' · ')}</span> : null}
                     </div>
-                    <DatasheetCard ds={ds} selected={m.wargearCosts ?? []} subFaction={list.subFaction ?? ''} />
+                    <DatasheetCard ds={ds} selected={m.wargearCosts ?? []} subFaction={list.subFaction ?? ''} modelCount={m.modelCount} />
                   </div>
                 );
               })}

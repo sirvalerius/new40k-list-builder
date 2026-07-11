@@ -17,16 +17,21 @@ const normName = (s: string): string =>
 /**
  * Weapon profiles a unit actually fields, given its chosen loadout (`selected`).
  * Hides: upgrade weapons whose option wasn't taken; weapons that belong only to an
- * optional sub-model (e.g. an Invader ATV) that wasn't purchased; base weapons that a
- * chosen single-model replacement swapped away. When `selected` is undefined (browsing),
- * every weapon is shown.
+ * optional sub-model (e.g. an Invader ATV) that wasn't purchased; a base weapon that
+ * EVERY model carrying it has swapped away. A squad-wide "up to N models may replace X"
+ * option (e.g. Pathfinders' pulse carbine, max 3 of 10) only removes the base once the
+ * chosen quantity reaches the model count — until then most models still carry it, so it
+ * stays listed alongside the swapped-in weapon. `modelCount` defaults to the datasheet max.
+ * When `selected` is undefined (browsing), every weapon is shown.
  */
-export function equippedWeapons(ds: Datasheet, selected?: ChosenWargear[]): Weapon[] {
+export function equippedWeapons(ds: Datasheet, selected?: ChosenWargear[], modelCount?: number): Weapon[] {
   const weapons = (ds.weapons ?? []).filter((w) => w.name);
   const opts = ds.weapon_options ?? [];
   if (selected == null || !opts.length) return weapons;
 
-  const chosen = new Set(selected.filter((s) => s.qty > 0).map((s) => s.name));
+  const chosenQty = new Map(selected.filter((s) => s.qty > 0).map((s) => [s.name, s.qty]));
+  const chosen = new Set(chosenQty.keys());
+  const count = modelCount ?? ds.model_max ?? 1;
   const addonModels = new Set(
     opts.filter((o) => o.type === 'model' && o.model).map((o) => o.model as string),
   );
@@ -36,8 +41,9 @@ export function equippedWeapons(ds: Datasheet, selected?: ChosenWargear[]): Weap
 
   const grantedAll = new Set<string>();        // a weapon some option can add
   const grantedNow = new Set<string>();        // a weapon a CHOSEN option adds
-  const replacedNow = new Set<string>();       // base swapped away by a chosen single-model option
+  const replacedNow = new Set<string>();       // base swapped away by every model that carried it
   const addonForWeapon = new Map<string, string>(); // weapon -> the sub-model it belongs to
+  const swappedByBase = new Map<string, number>();  // base -> total models swapped off it (squad-wide options)
   for (const o of opts) {
     // Constraint notes ("* X cannot be replaced") are informational — they neither grant nor
     // replace a weapon. Skipping them stops a named base weapon (e.g. the Sternguard bolt rifle)
@@ -49,10 +55,18 @@ export function equippedWeapons(ds: Datasheet, selected?: ChosenWargear[]): Weap
     }
     if (o.base) {
       const onAddon = !!o.model && addonModels.has(o.model);
-      if (onAddon) addonForWeapon.set(normName(o.base), o.model as string);
-      // a single-model replacement (sub-model or fixed-1) removes its base entirely
-      if (chosen.has(o.text) && (onAddon || o.limit?.kind === 'fixed')) replacedNow.add(normName(o.base));
+      if (onAddon) {
+        addonForWeapon.set(normName(o.base), o.model as string);
+        // a named sub-model's own weapon is unique to it, so a chosen swap removes it outright
+        if (chosen.has(o.text)) replacedNow.add(normName(o.base));
+      } else if (o.limit?.kind === 'fixed' && chosen.has(o.text)) {
+        const n = normName(o.base);
+        swappedByBase.set(n, (swappedByBase.get(n) ?? 0) + (chosenQty.get(o.text) ?? 0));
+      }
     }
+  }
+  for (const [base, qty] of swappedByBase) {
+    if (qty >= count) replacedNow.add(base); // only every model swapping hides the base
   }
 
   // "Heavy plasma cannon – standard/– supercharge" are firing modes of one weapon; a swap names

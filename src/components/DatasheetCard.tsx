@@ -56,10 +56,12 @@ export function DatasheetCard({
   ds,
   selected,
   subFaction,
+  modelCount,
 }: {
   ds: Datasheet;
   selected?: ChosenWargear[];
   subFaction?: string;
+  modelCount?: number;
 }) {
   // "can join" units, chapter-filtered: a Chapter-specific bodyguard only shows when that Chapter
   // is the selected sub-faction. A generic Space Marines army (no Chapter chosen) can't field
@@ -73,7 +75,7 @@ export function DatasheetCard({
   if (ds.is_epic_hero) tags.push('Epic Hero');
   if (ds.is_dedicated_transport) tags.push('Transport');
 
-  const weapons = equippedWeapons(ds, selected);
+  const weapons = equippedWeapons(ds, selected, modelCount);
   const ranged = weapons.filter((w) => w.type === 'Ranged');
   const melee = weapons.filter((w) => w.type !== 'Ranged');
   const defaultWpnTab = ranged.length ? 'ranged' : 'melee';
