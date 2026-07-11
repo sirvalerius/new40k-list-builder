@@ -31,6 +31,8 @@ html, body, #root {
   min-height: 100%;
 }
 
+html { scroll-behavior: smooth; }
+
 body {
   /* readable baseline for dense small text on a dark ground */
   line-height: 1.5;
@@ -482,7 +484,37 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 }
 
 /* bunker (in-game) cards */
-.card.bunker { border-color: #3a4658; }
+.unit-index {
+  position: sticky;
+  top: 56px; /* docks right below the sticky .topbar */
+  z-index: 15;
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px 2px;
+  margin: -4px 0 12px;
+  background: linear-gradient(180deg, rgba(19, 21, 28, 0.97), rgba(19, 21, 28, 0.92));
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border-gold);
+}
+.unit-index a {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-elev2);
+  color: var(--text);
+  font-size: 0.8rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.unit-index a:hover { border-color: var(--border-gold); color: var(--bone); }
+
+.card.bunker { border-color: #3a4658; scroll-margin-top: 104px; }
 .bunker-title {
   font-weight: 700;
   font-size: 1rem;

@@ -103,6 +103,16 @@ export function BunkerMode({
         )}
       </div>
 
+      {groups.length > 0 && (
+        <nav className="unit-index" aria-label="Jump to unit">
+          {groups.map(({ anchor, title }) => (
+            <a key={anchor.uid} href={`#unit-${anchor.uid}`} title={title}>
+              {displayName(anchor)}
+            </a>
+          ))}
+        </nav>
+      )}
+
       {detachmentRules.length > 0 && (
         <div className="card">
           <Collapsible title={`Detachment rules (${detachmentRules.length})`} defaultOpen>
@@ -136,7 +146,7 @@ export function BunkerMode({
           );
 
           return (
-            <div className="card bunker" key={anchor.uid}>
+            <div className="card bunker" key={anchor.uid} id={`unit-${anchor.uid}`}>
               <div className="bunker-title">{title}</div>
 
               {members.map((m) => {
