@@ -172,14 +172,25 @@ export function DatasheetCard({
       {abilities.length > 0 && (
         <Collapsible title={`Abilities (${abilities.length})`}>
           <div className="col" style={{ gap: 8 }}>
-            {abilities.map((a, i) => (
-              <div key={i} className="small">
-                {a.name && <b>{a.name}{a.parameter ? ` ${a.parameter}` : ''}: </b>}
-                <span className="desc" style={{ display: 'inline' }}>
-                  {stripHtml(a.description)}
-                </span>
-              </div>
-            ))}
+            {abilities.map((a, i) =>
+              // Core rules (Stealth, Infiltrators, Scouts, ...) are the long glossary text every
+              // player already knows by name — collapsed to just the name by default, arrow to
+              // expand. Unit-specific rules stay expanded since there's usually only one or two.
+              a.type === 'Core' ? (
+                <Collapsible key={i} title={<b>{a.name}{a.parameter ? ` ${a.parameter}` : ''}</b>}>
+                  <span className="desc small" style={{ display: 'inline' }}>
+                    {stripHtml(a.description)}
+                  </span>
+                </Collapsible>
+              ) : (
+                <div key={i} className="small">
+                  {a.name && <b>{a.name}{a.parameter ? ` ${a.parameter}` : ''}: </b>}
+                  <span className="desc" style={{ display: 'inline' }}>
+                    {stripHtml(a.description)}
+                  </span>
+                </div>
+              ),
+            )}
           </div>
         </Collapsible>
       )}
