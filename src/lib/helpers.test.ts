@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed } from './helpers';
+import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed, armyRules } from './helpers';
 import type { ArmyList, ChosenWargear, Datasheet, Detachment, FactionData, ListUnit, PointsOption, Weapon } from './types';
 
 function ds(partial: Partial<Datasheet>): Datasheet {
@@ -257,6 +257,31 @@ describe('Leader/Support attachment', () => {
     const cap = u({ uid: 'c1', datasheetId: 'cap', name: 'Captain', isCharacter: true, isBattleline: false, attachedToUid: 's1' });
     const list = { units: [sq, cap] } as ArmyList;
     expect(attachedLeaders('s1', list).map((x) => x.uid)).toEqual(['c1']);
+  });
+});
+
+describe('armyRules (Faction-type ability, deduped, per-datasheet override wins)', () => {
+  const oath = { name: 'Oath of Moment', type: 'Faction', parameter: '', description: 'Pick a target.' };
+  const vows = { name: 'Templar Vows', type: 'Faction', parameter: '', description: 'Pick a vow.' };
+  const core = { name: '', type: 'Core', parameter: '7"', description: '' }; // blank Core ability: never surfaced
+  const intercessors = ds({ id: 'int', name: 'Intercessor Squad', abilities: [oath, core] });
+  const emperorsChampion = ds({ id: 'ec', name: "Emperor's Champion", abilities: [vows, core] });
+  const dsMap = datasheetMap({ datasheets: [intercessors, emperorsChampion] } as unknown as FactionData);
+  const u = (datasheetId: string): ListUnit =>
+    ({ uid: Math.random().toString(36), datasheetId, name: 'X', pointsCost: 0, pointsLabel: '',
+       isEpicHero: false, isBattleline: false, isCharacter: false, isAlly: false, warlord: false });
+
+  it('surfaces the army rule off the fielded datasheet, not a hardcoded faction default', () => {
+    const list = { units: [u('int')] } as ArmyList;
+    expect(armyRules(list, dsMap).map((r) => r.name)).toEqual(['Oath of Moment']);
+  });
+  it('a Black Templars-keyword datasheet brings its own override instead', () => {
+    const list = { units: [u('ec')] } as ArmyList;
+    expect(armyRules(list, dsMap).map((r) => r.name)).toEqual(['Templar Vows']);
+  });
+  it('dedupes when every unit shares the same rule', () => {
+    const list = { units: [u('int'), u('int')] } as ArmyList;
+    expect(armyRules(list, dsMap)).toHaveLength(1);
   });
 });
 

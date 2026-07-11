@@ -1,5 +1,6 @@
 // Misc pure helpers used across the UI.
 import type {
+  Ability,
   ArmyList,
   ChosenWargear,
   Datasheet,
@@ -394,6 +395,22 @@ export function copiesOf(list: ArmyList, datasheetId: string): number {
 /** Datasheets indexed by id, for fast lookup from saved ListUnits. */
 export function datasheetMap(fd: FactionData): Map<string, Datasheet> {
   return new Map(fd.datasheets.map((d) => [d.id, d]));
+}
+
+/** The army-wide rule(s) (e.g. Oath of Moment, For the Greater Good) in play, read off the
+ *  fielded units' own datasheets rather than hardcoded per faction — a Chapter-specific
+ *  override (Black Templars' Templar Vows replacing Oath of Moment) is just a different
+ *  Faction-type ability on that unit's datasheet, so it surfaces correctly with no special
+ *  casing. Deduped by name, since normally every fielded unit shares the same one. */
+export function armyRules(list: ArmyList, dsById: Map<string, Datasheet>): Ability[] {
+  const seen = new Map<string, Ability>();
+  for (const u of list.units) {
+    const ds = dsById.get(u.datasheetId);
+    for (const a of ds?.abilities ?? []) {
+      if (a.type === 'Faction' && a.name && !seen.has(a.name)) seen.set(a.name, a);
+    }
+  }
+  return [...seen.values()];
 }
 
 // ----- roster grouping by sub-type -----

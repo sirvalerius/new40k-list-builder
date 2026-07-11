@@ -493,7 +493,7 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding: 10px 2px;
-  margin: 4px 0 12px;
+  margin: 4px 0 0;
   background: linear-gradient(180deg, rgba(19, 21, 28, 0.97), rgba(19, 21, 28, 0.92));
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--border-gold);
@@ -514,7 +514,19 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 }
 .unit-index a:hover { border-color: var(--border-gold); color: var(--bone); }
 
-.card.bunker { border-color: #3a4658; scroll-margin-top: 132px; }
+.unit-search {
+  position: sticky;
+  top: 138px; /* docks directly under .unit-index (72px top + its ~66px height) once both are stuck */
+  z-index: 15;
+  padding: 8px 2px;
+  margin: 0 0 12px;
+  background: linear-gradient(180deg, rgba(19, 21, 28, 0.97), rgba(19, 21, 28, 0.92));
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border);
+}
+.unit-search input { width: 100%; }
+
+.card.bunker { border-color: #3a4658; scroll-margin-top: 206px; }
 .bunker-title {
   font-weight: 700;
   font-size: 1rem;

@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import type { ArmyList, FactionData, Rules } from '../lib/types';
 import { DatasheetCard } from '../components/DatasheetCard';
 import { Collapsible } from '../components/Collapsible';
 import { DISPOSITIONS, DispositionIcon } from '../components/DispositionIcon';
 import { MissionCard } from '../components/MissionCard';
 import {
+  armyRules,
   datasheetMap,
   displayName,
   effectiveKeywords,
@@ -41,6 +43,7 @@ export function BunkerMode({
   const detachmentRules = chosenDet.flatMap((d) =>
     d.rules.map((r) => ({ ...r, detach: d.name })),
   );
+  const rulesOfArmy = armyRules(list, dsById);
 
   const byMissionName = (n: string) => (rules.missions ?? []).find((m) => m.name === n);
   const matchup =
@@ -49,6 +52,14 @@ export function BunkerMode({
       : null;
 
   const groups = mergedUnitGroups(list);
+
+  const [filter, setFilter] = useState('');
+  const q = filter.trim().toLowerCase();
+  const filteredGroups = q
+    ? groups.filter(({ members }) =>
+        members.some((m) => m.name.toLowerCase().includes(q) || (m.customName ?? '').toLowerCase().includes(q)),
+      )
+    : groups;
 
   return (
     <div>
@@ -103,6 +114,21 @@ export function BunkerMode({
         )}
       </div>
 
+      {rulesOfArmy.length > 0 && (
+        <div className="card">
+          <Collapsible title={`Army rules (${rulesOfArmy.length})`} defaultOpen>
+            <div className="col" style={{ gap: 8 }}>
+              {rulesOfArmy.map((r, i) => (
+                <div key={i} className="small">
+                  <b>{r.name}</b>
+                  <div className="desc">{stripHtml(r.description)}</div>
+                </div>
+              ))}
+            </div>
+          </Collapsible>
+        </div>
+      )}
+
       {detachmentRules.length > 0 && (
         <div className="card">
           <Collapsible title={`Detachment rules (${detachmentRules.length})`} defaultOpen>
@@ -120,19 +146,31 @@ export function BunkerMode({
       )}
 
       {groups.length > 0 && (
-        <nav className="unit-index" aria-label="Jump to unit">
-          {groups.map(({ anchor, title }) => (
-            <a key={anchor.uid} href={`#unit-${anchor.uid}`} title={title}>
-              {displayName(anchor)}
-            </a>
-          ))}
-        </nav>
+        <>
+          <nav className="unit-index" aria-label="Jump to unit">
+            {filteredGroups.map(({ anchor, title }) => (
+              <a key={anchor.uid} href={`#unit-${anchor.uid}`} title={title}>
+                {displayName(anchor)}
+              </a>
+            ))}
+          </nav>
+          <div className="unit-search">
+            <input
+              type="search"
+              placeholder="Filter units…"
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+            />
+          </div>
+        </>
       )}
 
       {!list.units.length ? (
         <div className="empty">Add units to use the in-game reference.</div>
+      ) : filteredGroups.length === 0 ? (
+        <div className="empty">No units match “{filter}”.</div>
       ) : (
-        groups.map(({ anchor, members, title }) => {
+        filteredGroups.map(({ anchor, members, title }) => {
           const baseKws = new Set<string>();
           for (const m of members) {
             const ds = dsById.get(m.datasheetId);
