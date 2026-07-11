@@ -7,6 +7,7 @@ import type {
   FactionData,
   ListUnit,
   PointsOption,
+  Rules,
   Weapon,
 } from './types';
 
@@ -400,6 +401,37 @@ export function unitGroup(u: ListUnit): UnitGroup {
 /** Name to show for a unit: the user's custom name if set, else the datasheet name. */
 export function displayName(u: ListUnit): string {
   return u.customName?.trim() || u.name;
+}
+
+export interface MergedUnitGroup { anchor: ListUnit; members: ListUnit[]; title: string; }
+/**
+ * Fielded units merged for a reference card: a Leader/Support and its bodyguard share one
+ * card (used by both the in-game "bunker" view and the print sheet). Unattached units get
+ * a group of one.
+ */
+export function mergedUnitGroups(list: ArmyList): MergedUnitGroup[] {
+  const primaries = list.units.filter((u) => !u.attachedToUid);
+  return primaries.map((u) => {
+    const joined = list.units.filter((x) => x.attachedToUid === u.uid);
+    const members = [...joined, u]; // leaders/supports first, bodyguard last
+    return { anchor: u, members, title: members.map((m) => displayName(m)).join(' + ') };
+  });
+}
+
+/** The mission pair for a Force Disposition matchup, from your side's perspective
+ *  (matchup rows are stored one-way in the data, so flip when `mine` is on the "b" side). */
+export function missionMatchup(
+  rules: Rules,
+  mine: string,
+  opponent: string,
+): { my: string; their: string } | null {
+  const m = (rules.disposition_matchups ?? []).find(
+    (x) => (x.a === mine && x.b === opponent) || (x.a === opponent && x.b === mine),
+  );
+  if (!m) return null;
+  return m.a === mine
+    ? { my: m.mission_a, their: m.mission_b }
+    : { my: m.mission_b, their: m.mission_a };
 }
 
 // ----- Leader / Support attachment -----

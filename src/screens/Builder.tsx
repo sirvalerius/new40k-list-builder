@@ -27,9 +27,10 @@ import { Roster } from './Roster';
 import { Enhancements } from './Enhancements';
 import { Allies, type AllyAddition } from './Allies';
 import { BunkerMode } from './BunkerMode';
+import { PrintView } from './PrintView';
 import { SkeletonList } from '../components/Skeleton';
 
-type Tab = 'detach' | 'roster' | 'enh' | 'allies' | 'bunker';
+type Tab = 'detach' | 'roster' | 'enh' | 'allies' | 'bunker' | 'print';
 
 export function Builder({
   initial,
@@ -153,6 +154,10 @@ export function Builder({
 
   function setDisposition(disposition: string) {
     update((l) => ({ ...l, disposition: disposition || undefined }));
+  }
+
+  function setVsDisposition(disposition: string) {
+    update((l) => ({ ...l, vsDisposition: disposition || undefined }));
   }
 
   function addUnit(ds: Datasheet, tier: PointsOption, modelCount?: number) {
@@ -313,62 +318,70 @@ export function Builder({
 
   return (
     <div>
-      <ValidationBanner result={result} />
+      <div className="no-print">
+        <ValidationBanner result={result} />
 
-      <div className="row mb" style={{ gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
-        {(fd.faction.sub_factions?.length ?? 0) > 0 && (
-          <>
-            <span className="muted small">Chapter:</span>
-            <select
-              value={list.subFaction ?? ''}
-              onChange={(e) => setSubFaction(e.target.value)}
-            >
-              <option value="">Any / Codex</option>
-              {fd.faction.sub_factions!.map((c) => (
-                <option key={c} value={c}>
-                  {c}
-                </option>
-              ))}
-            </select>
-          </>
-        )}
-        <div className="spacer" />
-        <button className="ghost small" onClick={exportText}>
-          ⤓ Export as text
-        </button>
-      </div>
+        <div className="row mb" style={{ gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+          {(fd.faction.sub_factions?.length ?? 0) > 0 && (
+            <>
+              <span className="muted small">Chapter:</span>
+              <select
+                value={list.subFaction ?? ''}
+                onChange={(e) => setSubFaction(e.target.value)}
+              >
+                <option value="">Any / Codex</option>
+                {fd.faction.sub_factions!.map((c) => (
+                  <option key={c} value={c}>
+                    {c}
+                  </option>
+                ))}
+              </select>
+            </>
+          )}
+          <div className="spacer" />
+          <button className="ghost small" onClick={exportText}>
+            ⤓ Export as text
+          </button>
+        </div>
 
-      <div className="tabs">
-        <button
-          className={tab === 'detach' ? 'active' : ''}
-          onClick={() => setTab('detach')}
-        >
-          Detachments ({list.detachmentIds.length})
-        </button>
-        <button
-          className={tab === 'roster' ? 'active' : ''}
-          onClick={() => setTab('roster')}
-        >
-          Roster ({list.units.filter((u) => !u.isAlly).length})
-        </button>
-        <button
-          className={tab === 'enh' ? 'active' : ''}
-          onClick={() => setTab('enh')}
-        >
-          Enhancements
-        </button>
-        <button
-          className={tab === 'allies' ? 'active' : ''}
-          onClick={() => setTab('allies')}
-        >
-          Allies ({list.units.filter((u) => u.isAlly).length})
-        </button>
-        <button
-          className={tab === 'bunker' ? 'active' : ''}
-          onClick={() => setTab('bunker')}
-        >
-          🛡 In-game
-        </button>
+        <div className="tabs">
+          <button
+            className={tab === 'detach' ? 'active' : ''}
+            onClick={() => setTab('detach')}
+          >
+            Detachments ({list.detachmentIds.length})
+          </button>
+          <button
+            className={tab === 'roster' ? 'active' : ''}
+            onClick={() => setTab('roster')}
+          >
+            Roster ({list.units.filter((u) => !u.isAlly).length})
+          </button>
+          <button
+            className={tab === 'enh' ? 'active' : ''}
+            onClick={() => setTab('enh')}
+          >
+            Enhancements
+          </button>
+          <button
+            className={tab === 'allies' ? 'active' : ''}
+            onClick={() => setTab('allies')}
+          >
+            Allies ({list.units.filter((u) => u.isAlly).length})
+          </button>
+          <button
+            className={tab === 'bunker' ? 'active' : ''}
+            onClick={() => setTab('bunker')}
+          >
+            🛡 In-game
+          </button>
+          <button
+            className={tab === 'print' ? 'active' : ''}
+            onClick={() => setTab('print')}
+          >
+            🖶 Print
+          </button>
+        </div>
       </div>
 
       {tab === 'detach' && (
@@ -417,9 +430,23 @@ export function Builder({
           onRemove={removeUnit}
         />
       )}
-      {tab === 'bunker' && <BunkerMode list={list} fd={fd} rules={rules} />}
+      {tab === 'bunker' && (
+        <BunkerMode list={list} fd={fd} rules={rules} onSetVsDisposition={setVsDisposition} />
+      )}
+      {tab === 'print' && (
+        <PrintView
+          list={list}
+          fd={fd}
+          detachments={detachments}
+          battleSizeName={bs.name}
+          pointsTotal={result.totals.points}
+          pointsLimit={result.totals.pointsLimit}
+        />
+      )}
 
-      <SummaryBar result={result} />
+      <div className="no-print">
+        <SummaryBar result={result} />
+      </div>
     </div>
   );
 }

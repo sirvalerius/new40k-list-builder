@@ -134,7 +134,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <header className="topbar">
+      <header className="topbar no-print">
         {view.kind !== 'home' && (
           <button
             className="ghost iconbtn"

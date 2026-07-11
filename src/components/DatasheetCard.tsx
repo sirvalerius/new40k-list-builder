@@ -1,8 +1,54 @@
-import { Fragment } from 'react';
-import type { ChosenWargear, Datasheet } from '../lib/types';
+import { Fragment, useState } from 'react';
+import type { ChosenWargear, Datasheet, Weapon } from '../lib/types';
 import { StatLine } from './StatLine';
 import { Collapsible } from './Collapsible';
 import { equippedWeapons, stripHtml } from '../lib/helpers';
+
+export function WeaponTable({ weapons }: { weapons: Weapon[] }) {
+  return (
+    <div className="wpn-scroll">
+      <table className="wpn-table">
+        <thead>
+          <tr>
+            <th className="wname">Weapon</th>
+            <th>Range</th>
+            <th>A</th>
+            <th>BS/WS</th>
+            <th>S</th>
+            <th>AP</th>
+            <th>D</th>
+          </tr>
+        </thead>
+        <tbody>
+          {weapons.map((w, i) => {
+            const num = /^\d+$/.test(String(w.BS_WS).trim());
+            const sk = num ? `${w.BS_WS}+` : w.BS_WS;
+            const range = w.range && w.range !== 'Melee' ? `${w.range}"` : 'Melee';
+            const desc = w.description ? stripHtml(w.description) : '';
+            return (
+              <Fragment key={i}>
+                <tr>
+                  <td className="wname">{w.name}</td>
+                  <td>{range}</td>
+                  <td>{w.A}</td>
+                  <td>{sk}</td>
+                  <td>{w.S}</td>
+                  <td>{w.AP}</td>
+                  <td>{w.D}</td>
+                </tr>
+                {desc && (
+                  <tr className="wpn-desc">
+                    <td colSpan={7}>{desc}</td>
+                  </tr>
+                )}
+              </Fragment>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+}
 
 // When `selected` is given (a unit in the list), only the chosen weapon options are shown;
 // otherwise (browsing) every option is listed.
@@ -28,6 +74,15 @@ export function DatasheetCard({
   if (ds.is_dedicated_transport) tags.push('Transport');
 
   const weapons = equippedWeapons(ds, selected);
+  const ranged = weapons.filter((w) => w.type === 'Ranged');
+  const melee = weapons.filter((w) => w.type !== 'Ranged');
+  const defaultWpnTab = ranged.length ? 'ranged' : 'melee';
+  const [wpnTabPick, setWpnTabPick] = useState<'ranged' | 'melee'>(defaultWpnTab);
+  // fall back if the loadout no longer has any weapon of the picked type
+  const wpnTab =
+    (wpnTabPick === 'ranged' && ranged.length) || (wpnTabPick === 'melee' && melee.length)
+      ? wpnTabPick
+      : defaultWpnTab;
   const abilities = ds.abilities.filter((a) => a.name || a.description);
   const selQty = selected
     ? new Map(selected.filter((s) => s.qty > 0).map((s) => [s.name, s.qty]))
@@ -74,47 +129,23 @@ export function DatasheetCard({
 
       {weapons.length > 0 && (
         <Collapsible title={`Weapons (${weapons.length})`}>
-          <div className="wpn-scroll">
-            <table className="wpn-table">
-              <thead>
-                <tr>
-                  <th className="wname">Weapon</th>
-                  <th>Range</th>
-                  <th>A</th>
-                  <th>BS/WS</th>
-                  <th>S</th>
-                  <th>AP</th>
-                  <th>D</th>
-                </tr>
-              </thead>
-              <tbody>
-                {weapons.map((w, i) => {
-                  const num = /^\d+$/.test(String(w.BS_WS).trim());
-                  const sk = num ? `${w.BS_WS}+` : w.BS_WS;
-                  const range = w.range && w.range !== 'Melee' ? `${w.range}"` : 'Melee';
-                  const desc = w.description ? stripHtml(w.description) : '';
-                  return (
-                    <Fragment key={i}>
-                      <tr>
-                        <td className="wname">{w.name}</td>
-                        <td>{range}</td>
-                        <td>{w.A}</td>
-                        <td>{sk}</td>
-                        <td>{w.S}</td>
-                        <td>{w.AP}</td>
-                        <td>{w.D}</td>
-                      </tr>
-                      {desc && (
-                        <tr className="wpn-desc">
-                          <td colSpan={7}>{desc}</td>
-                        </tr>
-                      )}
-                    </Fragment>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
+          {ranged.length > 0 && melee.length > 0 && (
+            <div className="subtabs mb">
+              <button
+                className={wpnTab === 'ranged' ? 'active' : ''}
+                onClick={() => setWpnTabPick('ranged')}
+              >
+                Ranged ({ranged.length})
+              </button>
+              <button
+                className={wpnTab === 'melee' ? 'active' : ''}
+                onClick={() => setWpnTabPick('melee')}
+              >
+                Melee ({melee.length})
+              </button>
+            </div>
+          )}
+          <WeaponTable weapons={wpnTab === 'ranged' ? ranged : melee} />
         </Collapsible>
       )}
 

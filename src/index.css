@@ -589,3 +589,76 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
   min-height: 130px;
   resize: vertical;
 }
+
+/* --- weapon Ranged/Melee sub-tabs (a lighter-weight variant of .tabs) --- */
+.subtabs { display: flex; gap: 4px; }
+.subtabs button {
+  flex: 0 0 auto;
+  min-height: 30px;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  border-radius: 999px;
+}
+.subtabs button.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* --- print sheet: all fielded datacards, packed as densely as page height allows --- */
+.no-print { /* toggled off entirely under @media print, see below */ }
+
+.print-toolbar { display: flex; justify-content: flex-end; margin-bottom: 10px; }
+
+.print-sheet {
+  font-size: 0.78rem;
+  line-height: 1.3;
+}
+.print-sheet .card { padding: 8px 10px; margin-bottom: 8px; }
+.print-sheet .statline { gap: 8px; font-size: 0.76rem; }
+.print-sheet .wpn-table { font-size: 0.72rem; }
+.print-sheet .wpn-table th,
+.print-sheet .wpn-table td { padding: 3px 5px; }
+.print-sheet .bunker-member + .bunker-member { margin-top: 6px; padding-top: 6px; border-top: 1px dashed var(--border); }
+
+@media print {
+  .no-print { display: none !important; }
+
+  @page { size: A4; margin: 10mm; }
+
+  html, body, #root, .app, .content { background: #fff !important; }
+  .content { padding: 0; }
+  /* the app shell is capped at a phone-friendly width for the on-screen UI; printing on a
+     physical page should use the page's actual width instead, so the column layout below
+     has real estate to pack cards into (this is what keeps the page count down). */
+  .app { max-width: none; margin: 0; }
+
+  /* Force a light, ink-friendly palette for the printed sheet only — the on-screen
+     preview keeps the app's dark theme; only the physical printout needs to flip. */
+  .print-sheet {
+    --bg: #fff;
+    --bg-elev: #fff;
+    --bg-elev2: #f2f2f2;
+    --border: #999;
+    --border-gold: #999;
+    --text: #000;
+    --text-dim: #444;
+    --bone: #000;
+    --accent: #000;
+    --accent-2: #333;
+    color: #000;
+  }
+  .print-sheet .card { box-shadow: none; border: 1px solid #999; }
+  .print-sheet .badge { border-color: #999; }
+
+  /* Multi-column flow packs cards as tightly as the page allows instead of one big
+     column with wasted trailing whitespace per page — this is what keeps the page
+     count minimal. Each datacard opts out of splitting across a column/page break. */
+  .print-sheet .print-cards {
+    column-count: 2;
+    column-gap: 12px;
+  }
+  .print-sheet .print-card {
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
