@@ -445,6 +445,22 @@ export function emptyList(
   };
 }
 
+/** Deep-clones a saved list under a new id, "<name> (copy)", ready to save and open. Unit
+ *  uids are regenerated too (not just the list id), with attachedToUid remapped to match —
+ *  keeps Leader/Bodyguard attachments intact while guaranteeing the copy shares no id with
+ *  the original at any level. */
+export function duplicateList(list: ArmyList): ArmyList {
+  const now = Date.now();
+  const idMap = new Map(list.units.map((u) => [u.uid, uid()]));
+  const units = list.units.map((u) => ({
+    ...u,
+    uid: idMap.get(u.uid)!,
+    attachedToUid: u.attachedToUid ? idMap.get(u.attachedToUid) : undefined,
+    wargearCosts: u.wargearCosts?.map((w) => ({ ...w })),
+  }));
+  return { ...list, id: uid(), name: `${list.name} (copy)`, units, createdAt: now, updatedAt: now };
+}
+
 // ----- favourites (persisted in localStorage, keyed by kind: 'det' | 'ds') -----
 const FAV_KEY = 'new40k:favorites';
 function readFavs(): Record<string, string[]> {
@@ -737,6 +753,11 @@ export function exportListText(
   lines.push('');
   lines.push('Built with New40k List Builder by Alhazred.sh — Powered by Wahapedia (unofficial).');
   return lines.join('\n');
+}
+
+/** Today's date as YYYYMMDD (no separators), for filenames. */
+export function dateStamp(d = new Date()): string {
+  return d.toISOString().slice(0, 10).replace(/-/g, '');
 }
 
 export function download(filename: string, content: string, mime = 'application/json') {

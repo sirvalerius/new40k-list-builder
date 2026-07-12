@@ -13,6 +13,7 @@ import {
   buildListUnit,
   clampLoadout,
   datasheetMap,
+  dateStamp,
   download,
   exportListText,
   intOf,
@@ -36,10 +37,12 @@ export function Builder({
   initial,
   rules,
   onChange,
+  onDuplicate,
 }: {
   initial: ArmyList;
   rules: Rules;
   onChange: (l: ArmyList) => void;
+  onDuplicate: (l: ArmyList) => void;
 }) {
   const [list, setList] = useState<ArmyList>(initial);
   const [fd, setFd] = useState<FactionData | null>(null);
@@ -303,7 +306,7 @@ export function Builder({
 
   function exportText() {
     download(
-      `${list.name.replace(/[^\w-]+/g, '_')}.txt`,
+      `${list.name.replace(/[^\w-]+/g, '_')}_${dateStamp()}.txt`,
       exportListText(
         list,
         faction,
@@ -339,6 +342,9 @@ export function Builder({
             </>
           )}
           <div className="spacer" />
+          <button className="ghost small" onClick={() => onDuplicate(list)}>
+            ⧉ Duplicate list
+          </button>
           <button className="ghost small" onClick={exportText}>
             ⤓ Export as text
           </button>

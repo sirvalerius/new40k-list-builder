@@ -13,6 +13,7 @@ export function Home({
   factionName,
   onNew,
   onOpen,
+  onDuplicate,
   onDispositions,
   onMissions,
 }: {
@@ -20,6 +21,7 @@ export function Home({
   factionName: (id: string) => string;
   onNew: () => void;
   onOpen: (id: string) => void;
+  onDuplicate: (id: string) => void;
   onDispositions: () => void;
   onMissions: () => void;
 }) {
@@ -142,6 +144,14 @@ export function Home({
             </div>
             <button className="ghost small" onClick={() => onOpen(l.id)}>
               Open
+            </button>
+            <button
+              className="ghost small iconbtn"
+              onClick={() => onDuplicate(l.id)}
+              aria-label="Duplicate"
+              title="Duplicate"
+            >
+              ⧉
             </button>
             <button
               className="ghost small danger iconbtn"

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { ArmyList, FactionIndexEntry, Rules } from './lib/types';
 import { loadIndex, loadRules } from './lib/data';
-import { emptyList } from './lib/helpers';
+import { dateStamp, duplicateList, emptyList } from './lib/helpers';
 import { getList, saveList } from './lib/db';
 import { Home } from './screens/Home';
 import { NewListWizard } from './screens/NewListWizard';
@@ -65,6 +65,14 @@ export default function App() {
       .catch((e) => setError(String(e)));
   }, []);
 
+  // The browser's "Save as PDF" (from the print tab) and "Save Page As" suggest a filename
+  // from document.title — otherwise always the static app name, regardless of which list is
+  // open. Include the list name + date while a list is open so that suggestion is useful.
+  useEffect(() => {
+    document.title =
+      view.kind === 'builder' ? `${view.list.name} ${dateStamp()}` : 'New40k List Builder';
+  }, [view]);
+
   const factionName = useCallback(
     (id: string) => factions?.find((f) => f.id === id)?.name ?? id,
     [factions],
@@ -91,6 +99,21 @@ export default function App() {
     currentList.current = l;
     saveList(l).catch(() => {});
     setView({ kind: 'builder', list: l });
+  }
+
+  // Saves a copy of `l` under a new id and opens it — the copy is built from whatever `l`
+  // the caller passes (Builder passes its own live in-memory state so an unsaved edit isn't
+  // lost to the ~400ms autosave debounce; Home passes what's already in the DB).
+  function duplicateAndOpen(l: ArmyList) {
+    const copy = duplicateList(l);
+    currentList.current = copy;
+    saveList(copy).catch(() => {});
+    setView({ kind: 'builder', list: copy });
+  }
+
+  async function duplicateListById(id: string) {
+    const l = await getList(id);
+    if (l) duplicateAndOpen(l);
   }
 
   if (error) {
@@ -172,6 +195,7 @@ export default function App() {
             factionName={factionName}
             onNew={() => setView({ kind: 'wizard' })}
             onOpen={openList}
+            onDuplicate={duplicateListById}
             onDispositions={() => setView({ kind: 'dispositions' })}
             onMissions={() => setView({ kind: 'missions' })}
           />
@@ -197,6 +221,7 @@ export default function App() {
             initial={view.list}
             rules={rules}
             onChange={onListChange}
+            onDuplicate={duplicateAndOpen}
           />
         )}
 

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed, enhancementCoreRules, enhancementFor, armyRules, unitAbilities } from './helpers';
+import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed, enhancementCoreRules, enhancementFor, armyRules, unitAbilities, duplicateList } from './helpers';
 import type { ArmyList, ChosenWargear, Datasheet, Detachment, FactionData, ListUnit, PointsOption, Weapon } from './types';
 
 function ds(partial: Partial<Datasheet>): Datasheet {
@@ -511,5 +511,42 @@ describe('optionMax (weapon option limits)', () => {
     expect(optionMax({ kind: 'fixed', max: 1 }, 10)).toBe(1);
     expect(optionMax({ kind: 'note' }, 10)).toBeNull();
     expect(optionMax(undefined, 10)).toBeNull();
+  });
+});
+
+describe('duplicateList (clone under a new id, ready to save and open)', () => {
+  const u = (over: Partial<ListUnit>): ListUnit =>
+    ({ uid: 'x', datasheetId: 'squad', name: 'Intercessors', pointsCost: 0,
+       pointsLabel: '', isEpicHero: false, isBattleline: true, isCharacter: false, isAlly: false,
+       warlord: false, ...over });
+  const original: ArmyList = {
+    id: 'list-1', name: 'My Crusade', factionId: 'SM', battleSizeId: '2', detachmentIds: ['d1'],
+    units: [
+      u({ uid: 's1', wargearCosts: [{ name: 'Meltagun', cost: 5, qty: 1 }] }),
+      u({ uid: 'c1', datasheetId: 'cap', name: 'Captain', isCharacter: true, isBattleline: false,
+          attachedToUid: 's1' }),
+    ],
+    createdAt: 1, updatedAt: 1,
+  };
+
+  it('gets a new list id and a "(copy)" name, distinct from the original', () => {
+    const copy = duplicateList(original);
+    expect(copy.id).not.toBe(original.id);
+    expect(copy.name).toBe('My Crusade (copy)');
+    expect(copy.detachmentIds).toEqual(['d1']); // everything else carried over
+  });
+
+  it('regenerates every unit uid, remapping attachedToUid to match', () => {
+    const copy = duplicateList(original);
+    const [sq, cap] = copy.units;
+    expect(sq.uid).not.toBe('s1');
+    expect(cap.uid).not.toBe('c1');
+    expect(cap.attachedToUid).toBe(sq.uid); // still points at the (renamed) bodyguard
+  });
+
+  it('deep-clones wargearCosts so editing the copy cannot mutate the original', () => {
+    const copy = duplicateList(original);
+    copy.units[0].wargearCosts![0].qty = 99;
+    expect(original.units[0].wargearCosts![0].qty).toBe(1);
   });
 });
