@@ -10,6 +10,14 @@ import { displayName, equippedWeapons, intOf, stripHtml, unitAbilities, unitTota
 function PrintMember({ ds, unit }: { ds: Datasheet; unit: ListUnit }) {
   const weapons = equippedWeapons(ds, unit.wargearCosts ?? [], unit.modelCount);
   const abilities = unitAbilities(ds, unit.wargearCosts ?? []);
+  // Core rules (Deep Strike, Stealth, ...) are the long glossary text every player already
+  // knows by name; some run long enough to blow up this card's break-inside:avoid block and
+  // wreck the page's column packing. Name-only here — PrintView prints the full text once,
+  // deduped, in a shared rules block at the end of the sheet.
+  const coreNames = abilities
+    .filter((a) => a.type === 'Core')
+    .map((a) => `${a.name}${a.parameter ? ` ${a.parameter}` : ''}`);
+  const otherAbilities = abilities.filter((a) => a.type !== 'Core');
   const loadout = (unit.wargearCosts ?? []).filter((w) => w.qty > 0);
   const tags = [
     unit.warlord ? 'Warlord' : '',
@@ -35,9 +43,12 @@ function PrintMember({ ds, unit }: { ds: Datasheet; unit: ListUnit }) {
           {loadout.map((w) => `${w.qty}× ${w.name}${intOf(w.cost) ? ` (+${intOf(w.cost) * w.qty})` : ''}`).join(' · ')}
         </div>
       )}
-      {abilities.length > 0 && (
+      {coreNames.length > 0 && (
+        <div className="tiny muted">{coreNames.join(' · ')}</div>
+      )}
+      {otherAbilities.length > 0 && (
         <div className="tiny">
-          {abilities.map((a, i) => (
+          {otherAbilities.map((a, i) => (
             <div key={i}>
               {a.name && <b>{a.name}{a.parameter ? ` ${a.parameter}` : ''}: </b>}
               {stripHtml(a.description)}

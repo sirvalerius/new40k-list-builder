@@ -1,6 +1,6 @@
-import type { ArmyList, Detachment, FactionData } from '../lib/types';
+import type { Ability, ArmyList, Detachment, FactionData } from '../lib/types';
 import { PrintCard } from '../components/PrintCard';
-import { datasheetMap, mergedUnitGroups } from '../lib/helpers';
+import { datasheetMap, mergedUnitGroups, stripHtml, unitAbilities } from '../lib/helpers';
 
 // Printable reference sheet: every fielded unit (Leader/Support merged with its bodyguard,
 // same grouping as the in-game tab) as a compact, always-expanded datacard. Packed via
@@ -29,6 +29,20 @@ export function PrintView({
     return <div className="empty">Add units to print a reference sheet.</div>;
   }
 
+  // Core rules (Deep Strike, Stealth, ...) are name-only on each unit's card (see PrintCard) —
+  // some run long enough to blow up a card's break-inside:avoid block and wreck the page's
+  // column packing. Collect the full text once per distinct rule, printed as a single shared
+  // block below the cards instead of repeated on every unit that has it.
+  const coreRules = new Map<string, Ability>();
+  for (const u of list.units) {
+    const ds = dsById.get(u.datasheetId);
+    if (!ds) continue;
+    for (const a of unitAbilities(ds, u.wargearCosts ?? [])) {
+      if (a.type === 'Core' && a.name) coreRules.set(a.name, a);
+    }
+  }
+  const sortedCoreRules = [...coreRules.values()].sort((a, b) => a.name.localeCompare(b.name));
+
   return (
     <div className="print-sheet">
       <div className="print-toolbar no-print">
@@ -50,6 +64,20 @@ export function PrintView({
           <PrintCard key={anchor.uid} title={title} members={members} dsById={dsById} />
         ))}
       </div>
+
+      {sortedCoreRules.length > 0 && (
+        <div className="card small print-core-rules">
+          <b>Universal Special Rules</b>
+          <div className="col" style={{ gap: 4, marginTop: 4 }}>
+            {sortedCoreRules.map((a) => (
+              <div key={a.name} className="tiny">
+                <b>{a.name}{a.parameter ? ` ${a.parameter}` : ''}: </b>
+                {stripHtml(a.description)}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
