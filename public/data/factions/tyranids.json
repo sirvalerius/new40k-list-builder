@@ -114,6 +114,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bio-cannon",
+    "Hierodule scything talons"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -236,10 +240,13 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Barblauncher",
+    "Chitinous claws and teeth"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002686.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000491",
@@ -361,10 +368,13 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Chitin-barbed limbs",
+    "Spore Mine launcher"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000491.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000463",
@@ -488,10 +498,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Broodlord claws and talons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000463.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000490",
@@ -698,6 +710,11 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Carnifex extra scything talons",
+    "Carnifex scything talons",
+    "Chitinous claws and teeth"
+   ],
    "weapon_options": [
     {
      "text": "Deathspitters with slimer maggots (instead of carnifex extra scything talons)",
@@ -839,8 +856,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000490.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000479",
@@ -968,10 +984,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lictor claws and talons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000479.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000500",
@@ -1068,6 +1086,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Massive scything sickle-talons"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -1196,10 +1217,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bio-plasmic cannon",
+    "Powerful limbs"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000495.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000484",
@@ -1317,10 +1341,13 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Blinding venom",
+    "Fleshborer"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000484.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000467",
@@ -1440,10 +1467,12 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Genestealer claws and talons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000467.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000485",
@@ -1582,6 +1611,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Scything wings",
+    "Stinger salvoes",
+    "Twin stranglethorn cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s twin stranglethorn cannon can be replaced with 1 twin heavy venom cannon.",
@@ -1599,8 +1633,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000485.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000504",
@@ -1726,6 +1759,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Dire bio-cannon",
+    "Gargantuan scything talons"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -1740,8 +1777,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000504.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000478",
@@ -1867,10 +1903,14 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Grasping tongue",
+    "Ravenous maw",
+    "Shovelling claws"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000478.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000505",
@@ -2017,6 +2057,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bio-plasma torrent",
+    "Dire bio-cannon",
+    "Lashwhip pods",
+    "Titanic scything talons"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -2031,8 +2077,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000505.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000486",
@@ -2180,10 +2225,16 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Drool cannon",
+    "Scything wings",
+    "Stinger salvoes",
+    "Tentaclids",
+    "Thorax spur"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000486.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000472",
@@ -2320,6 +2371,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Chitinous claws and teeth",
+    "Shockcannon"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their shockcannon replaced with 1 impaler cannon.",
@@ -2336,8 +2391,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000472.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000460",
@@ -2497,6 +2551,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Monstrous bonesword and lash whip",
+    "Monstrous scything talons"
+   ],
    "weapon_options": [
     {
      "text": "Heavy venom cannon (instead of monstrous bonesword and lash whip)",
@@ -2586,8 +2644,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000460.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000469",
@@ -2686,10 +2743,12 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Hormagaunt talons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000469.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004117",
@@ -2856,10 +2915,14 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Prime claws and talons",
+    "Ravener heavy claws and talons",
+    "Venom bolt"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000004117.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000473",
@@ -2979,10 +3042,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lictor claws and talons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000473.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000499",
@@ -3107,6 +3172,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Grasping tail"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -3254,10 +3322,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Psychic overload"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000474.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000494",
@@ -3365,10 +3435,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Distensible jaw",
+    "Mawloc scything talons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000494.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000487",
@@ -3478,10 +3551,10 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000487.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002687",
@@ -3580,10 +3653,12 @@
    "model_min": 11,
    "model_max": 22,
    "countable": true,
+   "stock_weapons": [
+    "Chitinous claws and teeth"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002687.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002753",
@@ -3718,10 +3793,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Piercing claws and talons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002753.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002688",
@@ -3868,6 +3945,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Neurotyrant claws and lashes",
+    "Psychic scream"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -3882,8 +3963,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002688.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002752",
@@ -4028,10 +4108,14 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Monstrous scything talons",
+    "Toxinjector Harpoon",
+    "Toxinjector harpoon"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002752.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002751",
@@ -4192,10 +4276,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Monstrous rending claws",
+    "Monstrous scything talons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002751.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000462",
@@ -4322,10 +4409,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000462.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002529",
@@ -4453,10 +4540,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Barbed ovipositor",
+    "Clawed limbs"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002529.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002689",
@@ -4576,10 +4666,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Psychoclastic torrent",
+    "Talons and betentacled maw"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002689.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000477",
@@ -4726,10 +4819,13 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Chitin-barbed limbs",
+    "Flamespurt"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000477.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000482",
@@ -4836,6 +4932,9 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Ravener claws and talons"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -4850,8 +4949,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000482.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000470",
@@ -4976,6 +5074,9 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Chitinous claws and teeth"
+   ],
    "weapon_options": [
     {
      "text": "All models in this unit can each be equipped with 1 spinemaws.",
@@ -4992,8 +5093,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000470.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002690",
@@ -5107,10 +5207,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bio-plasmic scream",
+    "Screamer-killer talons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002690.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000506",
@@ -5218,6 +5321,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bio-acid spray",
+    "Hierodule scything talons"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -5341,6 +5448,9 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Claws and teeth"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each be equipped with 1 spinemaws.",
@@ -5467,10 +5577,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000488.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000498",
@@ -5582,10 +5692,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Flensing whips",
+    "Sporocyst bio-weapons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000498.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000468",
@@ -5756,6 +5869,10 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Chitinous claws and teeth",
+    "Fleshborer"
+   ],
    "weapon_options": [
     {
      "text": "All models in this unit can each have their fleshborer replaced with 1 Termagant devourer.",
@@ -5827,8 +5944,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000468.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000465",
@@ -5973,6 +6089,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Stinger salvoes"
+   ],
    "weapon_options": [
     {
      "text": "This model’s massive scything talons can be replaced with 1 massive crushing claws.",
@@ -5990,8 +6109,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000465.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004225",
@@ -6115,6 +6233,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Gaping maw",
+    "Scything talons"
+   ],
    "weapon_options": [
     {
      "text": "None.",
@@ -6129,8 +6251,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000004225.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000461",
@@ -6272,10 +6393,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bone sabres",
+    "Synaptic pulse"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000461.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000497",
@@ -6387,10 +6511,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Massive toxic lashes"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000497.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000493",
@@ -6498,10 +6624,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bio-electric pulse",
+    "Trygon scything talons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000493.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004202",
@@ -6656,6 +6785,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lash whip",
+    "Rending claw",
+    "Scything talons"
+   ],
    "weapon_options": [
     {
      "text": "None.",
@@ -6670,8 +6804,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000004202.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002691",
@@ -6776,10 +6909,12 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Tyranid Warrior claws and talons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002691.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002692",
@@ -6943,6 +7078,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Devourer",
+    "Tyranid Warrior claws and talons"
+   ],
    "weapon_options": [
     {
      "text": "Deathspitter (instead of devourer)",
@@ -7002,8 +7141,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002692.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000489",
@@ -7119,10 +7257,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Flensing whips",
+    "Tyrannocyte bio-weapons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000489.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000496",
@@ -7271,6 +7412,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Fleshborer hive",
+    "Powerful limbs",
+    "Stinger salvoes"
+   ],
    "weapon_options": [
     {
      "text": "Acid spray (instead of fleshborer hive)",
@@ -7304,8 +7450,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000496.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000471",
@@ -7426,6 +7571,9 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Scything talons and rending claws"
+   ],
    "weapon_options": [
     {
      "text": "Bone cleaver, lash whip and rending claws (instead of scything talons and rending claws)",
@@ -7457,8 +7605,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000471.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000476",
@@ -7562,10 +7709,12 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Toxic lashes"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000476.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002693",
@@ -7681,10 +7830,12 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Leaper’s talons"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002693.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002528",
@@ -7849,6 +8000,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Monstrous bonesword and lash whip",
+    "Tyrant talons"
+   ],
    "weapon_options": [
     {
      "text": "Heavy venom cannon (instead of monstrous bonesword and lash whip)",
@@ -7897,8 +8052,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002528.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002694",
@@ -8034,6 +8188,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Prime talons"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8048,8 +8205,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000002694.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000475",
@@ -8184,10 +8340,12 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Chitinous claws and teeth"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tyranids/000000475.png"
+   "requires_detachment": ""
   }
  ],
  "detachments": [

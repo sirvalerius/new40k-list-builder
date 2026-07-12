@@ -92,6 +92,12 @@ export interface Datasheet {
   model_max?: number | null;   // largest legal model count (largest cost bracket)
   countable?: boolean;         // true if the unit has a model-count range (multiple size brackets)
   weapon_options?: WeaponOption[];  // ordered options (free + paid) with inline cost
+  stock_weapons?: string[]; // weapon names literally in the datasheet's own "<Role> is
+    // equipped with: ..." text — authoritative default loadout, union across every sub-role.
+    // The single source of truth equippedWeapons uses to decide "is this weapon shown by
+    // default": a weapon can be one role's stock item AND another slot's optional swap-in
+    // target at once (e.g. a Chimera hull heavy bolter vs. the turret's heavy bolter option),
+    // so "never mentioned in any option's grants" is not a safe way to infer this.
   default_wargear?: { name: string; cost: number }[]; // stock weapons the MFM prices even
     // though they're not a choice (e.g. Tau Crisis suits' standard Missile pod) — seeded
     // into every new unit's wargearCosts so the base loadout is never undercharged.

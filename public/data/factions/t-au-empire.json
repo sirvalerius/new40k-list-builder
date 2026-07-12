@@ -185,6 +185,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Burst cannon",
+    "Missile pod",
+    "Twin heavy rail cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with up to 6 seeker missiles.",
@@ -214,8 +220,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000455.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000408",
@@ -331,6 +336,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Fidelity"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -474,6 +482,10 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Supreme honour blade"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -693,6 +705,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Long-barrelled burst cannon",
+    "Missile pod",
+    "Swiftstrike burst cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 long-barrelled burst cannons can be replaced with 2 cyclic ion blasters.",
@@ -884,6 +902,11 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Pulse blaster",
+    "Pulse pistol"
+   ],
    "weapon_options": [
     {
      "text": "Guardian drone (it cannot take duplicates of this piece of wargear)",
@@ -939,8 +962,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000412.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000433",
@@ -1143,6 +1165,10 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Crushing bulk",
+    "Heavy rail rifle"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their heavy rail rifle replaced with 1 high-yield missile pods.",
@@ -1280,8 +1306,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000433.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000405",
@@ -1408,6 +1433,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Fireblade pulse rifle"
+   ],
    "weapon_options": [
     {
      "text": "Gun drone",
@@ -1450,8 +1479,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000405.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000406",
@@ -1607,10 +1635,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "High-intensity plasma rifle"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000406.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000402",
@@ -1853,6 +1883,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Battlesuit fists",
+    "Burst cannon",
+    "High-output burst cannon"
+   ],
    "weapon_options": [
     {
      "text": "Airbursting fragmentation projector* (instead of high-output burst cannon)",
@@ -1866,8 +1901,7 @@
      "group": "000000402-0",
      "model": "",
      "grants": [
-      "Airbursting fragmentation projector",
-      "Burst cannon"
+      "Airbursting fragmentation projector"
      ]
     },
     {
@@ -1881,9 +1915,7 @@
      "base": "high-output burst cannon",
      "group": "000000402-0",
      "model": "",
-     "grants": [
-      "Burst cannon"
-     ]
+     "grants": []
     },
     {
      "text": "Burst cannon (instead of high-output burst cannon)",
@@ -1896,9 +1928,7 @@
      "base": "high-output burst cannon",
      "group": "000000402-0",
      "model": "",
-     "grants": [
-      "Burst cannon"
-     ]
+     "grants": []
     },
     {
      "text": "Cyclic ion blaster* (instead of high-output burst cannon)",
@@ -1911,9 +1941,7 @@
      "base": "high-output burst cannon",
      "group": "000000402-0",
      "model": "",
-     "grants": [
-      "Burst cannon"
-     ]
+     "grants": []
     },
     {
      "text": "Fusion blaster (instead of high-output burst cannon)",
@@ -1927,7 +1955,6 @@
      "group": "000000402-0",
      "model": "",
      "grants": [
-      "Burst cannon",
       "Fusion blaster"
      ]
     },
@@ -1943,7 +1970,6 @@
      "group": "000000402-0",
      "model": "",
      "grants": [
-      "Burst cannon",
       "Missile pod"
      ]
     },
@@ -1959,7 +1985,6 @@
      "group": "000000402-0",
      "model": "",
      "grants": [
-      "Burst cannon",
       "Plasma rifle"
      ]
     },
@@ -1974,9 +1999,7 @@
      "base": "high-output burst cannon",
      "group": "000000402-0",
      "model": "",
-     "grants": [
-      "Burst cannon"
-     ]
+     "grants": []
     },
     {
      "text": "T’au flamer (instead of high-output burst cannon)",
@@ -1990,7 +2013,6 @@
      "group": "000000402-0",
      "model": "",
      "grants": [
-      "Burst cannon",
       "T’au flamer"
      ]
     },
@@ -2005,9 +2027,7 @@
      "base": "high-output burst cannon",
      "group": "000000402-0",
      "model": "",
-     "grants": [
-      "Burst cannon"
-     ]
+     "grants": []
     },
     {
      "text": "Gun drone",
@@ -2203,8 +2223,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000402.png"
+   "requires_detachment": ""
   },
   {
    "id": "000001477",
@@ -2441,6 +2460,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Battlesuit fists",
+    "Burst cannon"
+   ],
    "weapon_options": [
     {
      "text": "Airbursting fragmentation projector* (instead of burst cannon)",
@@ -2995,6 +3018,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Battlesuit fists",
+    "Burst cannon"
+   ],
    "weapon_options": [
     {
      "text": "Airbursting fragmentation projector* (instead of burst cannon)",
@@ -3317,8 +3344,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000001478.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000407",
@@ -3496,10 +3522,16 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Battlesuit fists",
+    "Flechette launcher",
+    "High-energy fusion blaster",
+    "Light missile pod",
+    "Pulse pistol"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000407.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000418",
@@ -3717,6 +3749,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Battlesuit fists",
+    "Burst cannon"
+   ],
    "weapon_options": [
     {
      "text": "Airbursting fragmentation projector* (instead of burst cannon)",
@@ -4186,6 +4222,11 @@
      "cost": 5
     }
    ],
+   "stock_weapons": [
+    "Battlesuit fists",
+    "Missile pod",
+    "Plasma rifle"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their plasma rifle replaced with 1 missile pod.",
@@ -4254,8 +4295,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000003700.png"
+   "requires_detachment": ""
   },
   {
    "id": "000003701",
@@ -4394,6 +4434,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Battlesuit fists",
+    "Burst cannon",
+    "T’au flamer"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their burst cannon replaced with 1 T’au flamer.",
@@ -4462,8 +4507,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000003701.png"
+   "requires_detachment": ""
   },
   {
    "id": "000003699",
@@ -4583,6 +4627,10 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Battlesuit fists",
+    "Fusion blaster"
+   ],
    "weapon_options": [
     {
      "text": "Gun drone",
@@ -4625,8 +4673,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000003699.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000410",
@@ -4759,10 +4806,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shade"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000410.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000424",
@@ -4912,6 +4962,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Accelerator burst cannon",
+    "Armoured hull",
+    "Twin pulse carbine"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin pulse carbines can be replaced with 2 smart missile systems.",
@@ -4943,8 +4998,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000424.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000459",
@@ -5074,6 +5128,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Twin plasma rifle"
+   ],
    "weapon_options": [
     {
      "text": "Twin burst cannon (instead of twin plasma rifle)",
@@ -5244,6 +5301,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Honour stave"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hover drone.",
@@ -5298,8 +5358,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000404.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000428",
@@ -5431,6 +5490,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapons",
+    "Longshot pulse rifles",
+    "Pulse pistol"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -5445,8 +5509,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000428.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000420",
@@ -5646,6 +5709,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Fusion collider",
+    "Ghostkeel fists",
+    "Twin T’au flamer"
+   ],
    "weapon_options": [
     {
      "text": "This model’s fusion collider can be replaced with 1 cyclic ion raker.",
@@ -5703,8 +5771,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000420.png"
+   "requires_detachment": ""
   },
   {
    "id": "000001392",
@@ -5851,6 +5918,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Great Knarloc beak and talons"
+   ],
    "weapon_options": [
     {
      "text": "Kroot bolt thrower and 1 Kroot rifle",
@@ -6095,6 +6165,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Railgun",
+    "Twin pulse carbine"
+   ],
    "weapon_options": [
     {
      "text": "This model’s railgun can be replaced with 1 ion cannon.",
@@ -6154,8 +6229,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000432.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000449",
@@ -6268,6 +6342,10 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Burst cannon",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their burst cannon and markerlight replaced with 1 twin burst cannon.",
@@ -6279,7 +6357,6 @@
      "base": "burst cannon and markerlight",
      "model": "",
      "grants": [
-      "Burst cannon",
       "Twin burst cannon"
      ]
     }
@@ -6404,6 +6481,10 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Knarloc beak and talons",
+    "Kroot rifle"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -6576,6 +6657,11 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Kroot pistol",
+    "Kroot rifle"
+   ],
    "weapon_options": [
     {
      "text": "The Long-quill’s Kroot rifle can be replaced with 1 Kroot carbine.",
@@ -6607,8 +6693,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000413.png"
+   "requires_detachment": ""
   },
   {
    "id": "000002588",
@@ -6813,6 +6898,13 @@
    "model_min": 12,
    "model_max": 12,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Farstalker firearm",
+    "Kroot pistol",
+    "Ripping fangs",
+    "Ritual blade"
+   ],
    "weapon_options": [
     {
      "text": "The Kroot Kill-broker’s Farstalker firearm can be replaced with 1 T’au-tech rifle.",
@@ -6874,8 +6966,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000002588.png"
+   "requires_detachment": ""
   },
   {
    "id": "000003704",
@@ -7013,10 +7104,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Kroot scattergun",
+    "Twin ritualistic blades"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000003704.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000415",
@@ -7125,10 +7219,12 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Ripping fangs"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000415.png"
+   "requires_detachment": ""
   },
   {
    "id": "000003705",
@@ -7282,6 +7378,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Kalamandra’s bite",
+    "Kroot long gun"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Kroot long gun can be replaced with 1 blast javelin and 1 hunting javelin.",
@@ -7300,8 +7401,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000003705.png"
+   "requires_detachment": ""
   },
   {
    "id": "000003702",
@@ -7439,10 +7539,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Kroot rifle",
+    "Shaper’s blade"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000003702.png"
+   "requires_detachment": ""
   },
   {
    "id": "000003703",
@@ -7604,6 +7707,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Dart-bow and tri-blade",
+    "Kroot pistol",
+    "Shaper’s blade"
+   ],
    "weapon_options": [
     {
      "text": "This model’s dart-bow and tri-bade can be replaced with 1 bladestave and prey-hook.",
@@ -7621,8 +7729,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000003703.png"
+   "requires_detachment": ""
   },
   {
    "id": "000003706",
@@ -7758,10 +7865,12 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Kroot pistol and hunting javelins"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000003706.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000414",
@@ -7902,6 +8011,11 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Krootox fists",
+    "Repeater cannon"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their repeater cannon replaced with 1 tanglecannon.",
@@ -7918,8 +8032,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000414.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000431",
@@ -8115,6 +8228,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Railgun",
+    "Twin pulse carbine"
+   ],
    "weapon_options": [
     {
      "text": "This model’s railgun can be replaced with 1 ion cannon.",
@@ -8359,6 +8477,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Heavy rail cannon",
+    "Long-barrelled burst cannon array",
+    "Missile pod",
+    "Seeker missile"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8373,8 +8498,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000457.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000456",
@@ -8502,6 +8626,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Long-barrelled burst cannon",
+    "Missile pod"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8724,6 +8853,11 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Pulse carbine",
+    "Pulse pistol"
+   ],
    "weapon_options": [
     {
      "text": "Grav-inhibitor drone",
@@ -8844,8 +8978,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000422.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000423",
@@ -9039,6 +9172,11 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Armoured hull",
+    "Piranha burst cannon",
+    "Twin pulse carbine"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their Piranha burst cannon can be replaced with 1 Piranha fusion blaster.",
@@ -9068,8 +9206,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000423.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000425",
@@ -9228,6 +9365,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Accelerator burst cannon",
+    "Armoured hull",
+    "Seeker missile"
+   ],
    "weapon_options": [
     {
      "text": "This model’s accelerator burst cannon can be replaced with 1 missile pod.",
@@ -9245,8 +9387,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000425.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000452",
@@ -9378,6 +9519,11 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Remora seeker missile",
+    "Twin long-barrelled burst cannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -9488,6 +9634,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "None",
@@ -9689,6 +9836,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Heavy burst cannon",
+    "Riptide fists",
+    "Twin plasma rifle"
+   ],
    "weapon_options": [
     {
      "text": "This model’s heavy burst cannon can be replaced with 1 ion accelerator.",
@@ -9746,8 +9898,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000421.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000445",
@@ -9869,6 +10020,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Battlesuit fists",
+    "Pulse submunitions cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with up to 2 missile drones.",
@@ -10033,6 +10188,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Battlesuit fists"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10195,6 +10353,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Seeker missile rack",
+    "Twin pulse carbine"
+   ],
    "weapon_options": [
     {
      "text": "Accelerator burst cannons (instead of twin pulse carbines)",
@@ -10228,8 +10391,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000430.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000417",
@@ -10387,6 +10549,10 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Battlesuit fists",
+    "Burst cannon"
+   ],
    "weapon_options": [
     {
      "text": "The Stealth Shas’vre can be equipped with 1 gun drone.",
@@ -10454,8 +10620,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000417.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000434",
@@ -10674,6 +10839,14 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Cluster rocket system",
+    "Destroyer missiles",
+    "Pulse driver cannon",
+    "Thunderous footfalls",
+    "Twin T’au flamer",
+    "Twin smart missile system"
+   ],
    "weapon_options": [
     {
      "text": "This model’s pulse driver cannon can be replaced with 1 pulse blast cannon.",
@@ -10719,8 +10892,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000434.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000411",
@@ -10866,6 +11038,11 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Pulse pistol",
+    "Pulse rifle"
+   ],
    "weapon_options": [
     {
      "text": "Guardian drone (it cannot take duplicates of this piece of wargear)",
@@ -10934,8 +11111,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000411.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000426",
@@ -11094,6 +11270,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Missile pod",
+    "Seeker missile"
+   ],
    "weapon_options": [
     {
      "text": "This model’s missile pod can be replaced with 1 twin missile pod.",
@@ -11111,8 +11292,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000426.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000403",
@@ -11224,6 +11404,10 @@
    "model_min": 4,
    "model_max": 12,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Twin pulse carbine"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -11452,6 +11636,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Burst cannon",
+    "Crushing feet",
+    "Fusion eradicator",
+    "Pulse ordnance driver",
+    "Smart missile system"
+   ],
    "weapon_options": [
     {
      "text": "This model’s tri-axis ion cannon can be replaced with 1 fusion eradicator.",
@@ -11512,8 +11703,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000446.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000447",
@@ -11636,6 +11826,10 @@
    "model_min": 2,
    "model_max": 4,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapons",
+    "Pulse rifle"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -11864,6 +12058,12 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Fusion eliminator",
+    "Ion scattercannon",
+    "Shardstorm burst system",
+    "XV pulse pistol"
+   ],
    "weapon_options": [
     {
      "text": "None.",
@@ -11878,8 +12078,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000004203.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000435",
@@ -11990,6 +12189,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Drone defenders"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -12004,8 +12206,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000435.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000437",
@@ -12110,6 +12311,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Supremacy railgun"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -12124,8 +12328,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000437.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000436",
@@ -12236,6 +12439,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 Tidewall defence platform.",
@@ -12251,8 +12455,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000436.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000454",
@@ -12483,6 +12686,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Burst cannon",
+    "Missile pod"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 burst cannons can be replaced with 2 cyclic ion blasters.",
@@ -12557,8 +12765,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000454.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000448",
@@ -12705,6 +12912,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Plasma rifle"
+   ],
    "weapon_options": [
     {
      "text": "Fusion blasters (instead of plasma rifles)",
@@ -12903,6 +13114,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Neutron blaster",
+    "Stingwing claws"
+   ],
    "weapon_options": [
     {
      "text": "If this unit contains 10 models:<ul style=\"list-style-type:circle\"><li>The Vespid Strain Leader can be equipped with 1 Oversight Drone.</li><li>1 Vespid Stingwing can replace its neutron blaster with 1 T’au flamer</li><li>1 Vespid Stingwing can replace its neutron blaster with 1 neutron grenade launcher</li><li>1 Vespid Stingwing can replace its neutron blaster with 1 neutron rail rifle.</li></ul>",
@@ -12923,8 +13138,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/tau/000000427.png"
+   "requires_detachment": ""
   },
   {
    "id": "000000443",
@@ -13085,6 +13299,11 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Battlesuit fists",
+    "Fusion cascade",
+    "Twin hazard burst cannon"
+   ],
    "weapon_options": [
     {
      "text": "Phased ion gun (instead of fusion cascade)",
@@ -13374,6 +13593,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Battlesuit fists",
+    "Flechette pod",
+    "Phased plasma-flamer"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with up to 2 missile drones.",

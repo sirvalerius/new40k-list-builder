@@ -12,7 +12,7 @@ import type {
   Weapon,
 } from './types';
 
-const normName = (s: string): string =>
+export const normName = (s: string): string =>
   (s || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
 
 /**
@@ -24,6 +24,14 @@ const normName = (s: string): string =>
  * chosen quantity reaches the model count — until then most models still carry it, so it
  * stays listed alongside the swapped-in weapon. `modelCount` defaults to the datasheet max.
  * When `selected` is undefined (browsing), every weapon is shown.
+ *
+ * "Is this weapon shown by default" is decided from `ds.stock_weapons` — the datasheet's own
+ * "<Role> is equipped with: ..." text, parsed once at build time — NOT from whether some
+ * option's `grants` mentions it. A weapon can be simultaneously one role's default (a Chimera
+ * hull heavy bolter, a Crusader Squad Sword Brother's heavy bolt pistol) and a different
+ * slot/role's optional swap-in target (the Chimera turret's heavy bolter option, an Initiate's
+ * bolt-rifle swap); inferring "default" from absence-in-grants collapses that distinction and
+ * hides the default copy the instant ANY option can also grant that name.
  */
 export function equippedWeapons(ds: Datasheet, selected?: ChosenWargear[], modelCount?: number): Weapon[] {
   const weapons = (ds.weapons ?? []).filter((w) => w.name);
@@ -40,7 +48,7 @@ export function equippedWeapons(ds: Datasheet, selected?: ChosenWargear[], model
     opts.filter((o) => o.type === 'model' && o.model && chosen.has(o.text)).map((o) => o.model as string),
   );
 
-  const grantedAll = new Set<string>();        // a weapon some option can add
+  const grantedAll = new Set<string>();        // a weapon some option can add (fallback only, see below)
   const grantedNow = new Set<string>();        // a weapon a CHOSEN option adds
   const replacedNow = new Set<string>();       // base swapped away by every model that carried it
   const addonForWeapon = new Map<string, string>(); // weapon -> the sub-model it belongs to
@@ -55,20 +63,32 @@ export function equippedWeapons(ds: Datasheet, selected?: ChosenWargear[], model
       if (chosen.has(o.text)) grantedNow.add(normName(g));
     }
     if (o.base) {
+      // A combo base ("combi-bolter and accursed weapon" -> 1 paired accursed weapons") names
+      // more than one weapon; treat each as its own base so a chosen swap hides all of them,
+      // not just a phrase that never matches any single weapon's name.
+      const bases = o.base.split(/\s*(?:,|&|\band\b)\s*/i).map(normName).filter(Boolean);
       const onAddon = !!o.model && addonModels.has(o.model);
       if (onAddon) {
-        addonForWeapon.set(normName(o.base), o.model as string);
+        for (const b of bases) addonForWeapon.set(b, o.model as string);
         // a named sub-model's own weapon is unique to it, so a chosen swap removes it outright
-        if (chosen.has(o.text)) replacedNow.add(normName(o.base));
+        if (chosen.has(o.text)) for (const b of bases) replacedNow.add(b);
       } else if (o.limit?.kind === 'fixed' && chosen.has(o.text)) {
-        const n = normName(o.base);
-        swappedByBase.set(n, (swappedByBase.get(n) ?? 0) + (chosenQty.get(o.text) ?? 0));
+        const qty = chosenQty.get(o.text) ?? 0;
+        for (const b of bases) swappedByBase.set(b, (swappedByBase.get(b) ?? 0) + qty);
       }
     }
   }
   for (const [base, qty] of swappedByBase) {
     if (qty >= count) replacedNow.add(base); // only every model swapping hides the base
   }
+
+  // Authoritative default-loadout set. A handful of datasheets have no parseable "equipped
+  // with" text (e.g. Kill Team Cassius) — fall back to the old inference (never mentioned in
+  // any option's grants = stock) so those aren't left with an empty default loadout.
+  const stockFromLoadout = new Set((ds.stock_weapons ?? []).map(normName));
+  const stockWeapons = stockFromLoadout.size
+    ? stockFromLoadout
+    : new Set(weapons.map((w) => normName(w.name)).filter((n) => !grantedAll.has(n)));
 
   // "Heavy plasma cannon – standard/– supercharge" are firing modes of one weapon; a swap names
   // the weapon without the mode, so match the mode-stripped name too.
@@ -77,9 +97,9 @@ export function equippedWeapons(ds: Datasheet, selected?: ChosenWargear[], model
     const n = normName(w.name);
     const requiresAddon = addonForWeapon.get(n);
     if (requiresAddon && !addonTaken.has(requiresAddon)) return grantedNow.has(n);
-    if (grantedAll.has(n)) return grantedNow.has(n);   // optional/upgrade weapon
     if (replacedNow.has(n) || replacedNow.has(modeBase(w.name))) return false; // replaced base
-    return true;                                       // standard kit
+    if (stockWeapons.has(n)) return true;              // authoritative default loadout
+    return grantedNow.has(n);                          // pure upgrade: shown only once chosen
   });
 }
 

@@ -164,6 +164,10 @@
    "model_min": 8,
    "model_max": 16,
    "countable": true,
+   "stock_weapons": [
+    "Blasphemous appendages",
+    "Hideous mutations"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -316,6 +320,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Staff of cataclysm",
+    "Warpfire talons"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -467,6 +475,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bloodlash"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -601,6 +612,9 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Putrid appendages"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -793,6 +807,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "None",
@@ -956,6 +971,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Hellblade",
+    "Juggernaut’s bladed horn"
+   ],
    "weapon_options": [
     {
      "text": "1 Bloodcrusher that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
@@ -1098,6 +1117,9 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Hellblade"
+   ],
    "weapon_options": [
     {
      "text": "1 Bloodletter that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
@@ -1245,6 +1267,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Blade of blood"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -1453,6 +1478,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "Bloodflail (instead of great axe of khorne)",
@@ -1640,6 +1666,12 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Blue claws",
+    "Coruscating Blue Flames",
+    "Coruscating Yellow Flames",
+    "Yellow claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -1788,6 +1820,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Flamer mouths",
+    "Screamer bites"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -1950,6 +1986,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Herald combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -2168,6 +2207,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Daemon hammer"
+   ],
    "weapon_options": [
     {
      "text": "Accursed weapon (instead of daemon hammer)",
@@ -2432,6 +2474,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Combi-bolter",
+    "Exalted weapon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s combi-bolter can be replaced with 1 combi-weapon.",
@@ -2488,8 +2534,6 @@
      "base": "combi-bolter and exalted weapon",
      "model": "",
      "grants": [
-      "Exalted weapon",
-      "Combi-bolter",
       "Paired accursed weapons"
      ]
     }
@@ -2789,6 +2833,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Bolt pistol",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -2933,8 +2982,6 @@
      "model": "",
      "grants": [
       "Accursed weapon",
-      "Bolt pistol",
-      "Astartes chainsword",
       "Paired accursed weapons"
      ]
     }
@@ -3216,6 +3263,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Bladed horn",
+    "Bolt pistol",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -3360,8 +3413,6 @@
      "model": "",
      "grants": [
       "Paired accursed weapons",
-      "Astartes chainsword",
-      "Bolt pistol",
       "Accursed weapon"
      ]
     }
@@ -3655,6 +3706,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Bolt pistol",
+    "Close combat weapon",
+    "Nurgling’s claws and teeth"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -3799,8 +3856,6 @@
      "model": "",
      "grants": [
       "Paired accursed weapons",
-      "Astartes chainsword",
-      "Bolt pistol",
       "Accursed weapon"
      ]
     }
@@ -4082,6 +4137,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Bolt pistol",
+    "Close combat weapon",
+    "Lashing tongue"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -4225,8 +4286,6 @@
      "base": "bolt pistol and astartes chainsword",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Astartes chainsword",
       "Accursed weapon",
       "Paired accursed weapons"
      ]
@@ -4467,6 +4526,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Accursed weapon",
+    "Bolt pistol"
+   ],
    "weapon_options": [
     {
      "text": "This model's bolt pistol can be replaced with 1 plasma pistol.",
@@ -4505,9 +4568,7 @@
      "base": "bolt pistol and accursed weapon",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Twin lightning claws",
-      "Accursed weapon"
+      "Twin lightning claws"
      ]
     }
    ],
@@ -4721,6 +4782,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Accursed weapon",
+    "Combi-bolter"
+   ],
    "weapon_options": [
     {
      "text": "Heavy flamer (instead of combi-bolter)",
@@ -4776,9 +4841,7 @@
      "base": "combi-bolter and accursed weapon",
      "model": "",
      "grants": [
-      "Paired accursed weapons",
-      "Accursed weapon",
-      "Combi-bolter"
+      "Paired accursed weapons"
      ]
     },
     {
@@ -5021,6 +5084,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Accursed weapon",
+    "Bolt pistol",
+    "Boltgun"
+   ],
    "weapon_options": [
     {
      "text": "For every 5 models in this unit, up to 2 models can each have their bolt pistol replaced with 1 plasma pistol.",
@@ -5061,8 +5129,6 @@
      "base": "boltgun and accursed weapon",
      "model": "",
      "grants": [
-      "Accursed weapon",
-      "Boltgun",
       "Paired accursed weapons"
      ]
     },
@@ -5228,6 +5294,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Coiled tentacles",
+    "Ravaging claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -5412,6 +5482,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Balefire pike",
+    "Close combat weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5582,6 +5656,10 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Autopistol",
+    "Brutal assault weapon"
+   ],
    "weapon_options": [
     {
      "text": "The Cultist Champion’s autopistol can be replaced with 1 bolt pistol.",
@@ -5837,6 +5915,10 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Autopistol",
+    "Brutal assault weapon"
+   ],
    "weapon_options": [
     {
      "text": "The Cultist Champion’s autopistol can be replaced with 1 bolt pistol.",
@@ -5862,10 +5944,8 @@
      "base": "autogun and close combat weapon",
      "model": "",
      "grants": [
-      "Close combat weapon",
       "Autopistol",
-      "Brutal assault weapon",
-      "Autogun"
+      "Brutal assault weapon"
      ]
     },
     {
@@ -6075,6 +6155,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Infernal cannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -6259,6 +6342,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Infernal cannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -6394,6 +6480,9 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Slashing claws"
+   ],
    "weapon_options": [
     {
      "text": "1 Daemonette that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
@@ -6618,6 +6707,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Accursed crozius",
+    "Bolt pistol",
+    "Close combat weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6887,6 +6981,12 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Autopistol",
+    "Close combat weapon",
+    "Commune blade",
+    "Commune stave"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -7009,6 +7109,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Balesword and Nurgling attendants"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -7172,6 +7275,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Flamer mouths"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -7308,6 +7414,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Exalted Seeker tongues",
+    "Lashes of torment",
+    "Slashing claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -7477,6 +7588,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Herald combat weapon",
+    "Screamer bites"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -7603,6 +7718,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "None",
@@ -7832,6 +7948,12 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Autopistol",
+    "Bolt pistol",
+    "Chainsword",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "The Fellgor Champion’s bolt pistol can be replaced with 1 plasma pistol.",
@@ -7985,6 +8107,9 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Barbed tail and dissecting claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8120,6 +8245,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Flamer mouths",
+    "Flickering Flames"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8260,6 +8389,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Burning roar",
+    "Gore-drenched fangs"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8423,6 +8556,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Herald combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8551,6 +8687,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Daemonic claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8730,6 +8869,11 @@
    "model_min": 7,
    "model_max": 7,
    "countable": false,
+   "stock_weapons": [
+    "Belly-flamer",
+    "Brutal weapons",
+    "Hideous mutations"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8878,6 +9022,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Churning fangs and claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -9088,6 +9235,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Plague flail",
+    "Putrid vomit"
+   ],
    "weapon_options": [
     {
      "text": "This model’s plague flail can be replaced with 1 bileblade.",
@@ -9402,6 +9553,13 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Close combat weapon",
+    "Flamer",
+    "Havoc autocannon",
+    "Havoc lascannon"
+   ],
    "weapon_options": [
     {
      "text": "Accursed weapon (instead of astartes chainsword)",
@@ -9529,10 +9687,7 @@
      "base": "havoc autocannon or havoc lascannon",
      "group": "000004063-2",
      "model": "",
-     "grants": [
-      "Havoc autocannon",
-      "Havoc lascannon"
-     ]
+     "grants": []
     },
     {
      "text": "Havoc heavy bolter (instead of havoc autocannon or havoc lascannon)",
@@ -9545,9 +9700,7 @@
      "group": "000004063-2",
      "model": "",
      "grants": [
-      "Havoc heavy bolter",
-      "Havoc autocannon",
-      "Havoc lascannon"
+      "Havoc heavy bolter"
      ]
     },
     {
@@ -9560,10 +9713,7 @@
      "base": "havoc autocannon or havoc lascannon",
      "group": "000004063-2",
      "model": "",
-     "grants": [
-      "Havoc autocannon",
-      "Havoc lascannon"
-     ]
+     "grants": []
     },
     {
      "text": "Havoc missile launcher (instead of havoc autocannon or havoc lascannon)",
@@ -9575,10 +9725,7 @@
      "base": "havoc autocannon or havoc lascannon",
      "group": "000004063-2",
      "model": "",
-     "grants": [
-      "Havoc autocannon",
-      "Havoc lascannon"
-     ]
+     "grants": []
     },
     {
      "text": "Havoc reaper chaincannon (instead of havoc autocannon or havoc lascannon)",
@@ -9591,9 +9738,7 @@
      "group": "000004063-2",
      "model": "",
      "grants": [
-      "Havoc reaper chaincannon",
-      "Havoc autocannon",
-      "Havoc lascannon"
+      "Havoc reaper chaincannon"
      ]
     }
    ],
@@ -9739,6 +9884,12 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Bladed axle",
+    "Lashes of torment",
+    "Seeker tongues",
+    "Slashing claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -9894,6 +10045,11 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Lashes of torment",
+    "Seeker tongues",
+    "Slashing claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10046,6 +10202,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lashing tongue",
+    "Ravaging claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10191,6 +10351,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Acidic maw",
+    "Lopping shears"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10353,6 +10517,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Ravaging claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10510,6 +10677,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Staff of Tomorrow"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10661,6 +10831,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Scalding roar",
+    "Soul-rending fangs"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10801,6 +10975,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Soul-rending fangs"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -11004,6 +11181,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Snapping claws",
+    "Witstealer sword"
+   ],
    "weapon_options": [
     {
      "text": "Living whip",
@@ -11394,6 +11575,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Boltgun",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol* (instead of boltgun)",
@@ -11881,6 +12067,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Staff of Tzeentch"
+   ],
    "weapon_options": [
     {
      "text": "Rod of sorcery",
@@ -12098,6 +12287,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Staff of possession"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -12230,6 +12423,9 @@
    "model_min": 16,
    "model_max": 16,
    "countable": false,
+   "stock_weapons": [
+    "Diseased claws and fangs"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -12369,6 +12565,9 @@
    "model_min": 4,
    "model_max": 4,
    "countable": false,
+   "stock_weapons": [
+    "Electro-goads"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -12498,6 +12697,9 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Diseased claws and teeth"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -12702,6 +12904,14 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Blue claws",
+    "Coruscating Blue Flames",
+    "Coruscating Pink Flames",
+    "Coruscating Yellow Flames",
+    "Pink claws",
+    "Yellow claws"
+   ],
    "weapon_options": [
     {
      "text": "1 Pink Horror that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
@@ -12874,6 +13084,11 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Death’s heads",
+    "Foul mouthparts",
+    "Plaguesword"
+   ],
    "weapon_options": [
     {
      "text": "1 Plague Drone that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
@@ -13018,6 +13233,10 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Grasping tongue",
+    "Yawning maw"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -13147,6 +13366,9 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Plaguesword"
+   ],
    "weapon_options": [
     {
      "text": "1 Plaguebearer that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
@@ -13302,6 +13524,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Hideous mutations"
+   ],
    "weapon_options": [
     {
      "text": "1 model can be equipped with 1 Chaos icon.",
@@ -13458,6 +13683,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Grasping tongue",
+    "Pox Rider plaguesword",
+    "Yawning maw"
+   ],
    "weapon_options": [
     {
      "text": "1 Pox Rider that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
@@ -13612,6 +13842,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Foul balesword"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -13911,6 +14144,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Bolt pistol"
+   ],
    "weapon_options": [
     {
      "text": "The Raptor Champion’s bolt pistol can be replaced with 1 plasma pistol.",
@@ -14221,6 +14458,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Attendants’ hellblades",
+    "Blade of blood"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -14463,6 +14704,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Enforcer melee weapon",
+    "Enforcer pistol"
+   ],
    "weapon_options": [
     {
      "text": "Autogun (instead of enforcer pistol)",
@@ -14759,6 +15004,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapons",
+    "Heavy stubber",
+    "Renegade firearm"
+   ],
    "weapon_options": [
     {
      "text": "Autocannon (instead of heavy stubbers can each be)",
@@ -14771,7 +15021,6 @@
      "group": "000004058-0",
      "model": "",
      "grants": [
-      "Heavy stubber",
       "Autocannon"
      ]
     },
@@ -14786,7 +15035,6 @@
      "group": "000004058-0",
      "model": "",
      "grants": [
-      "Heavy stubber",
       "Heavy bolter"
      ]
     },
@@ -14801,8 +15049,7 @@
      "group": "000004058-0",
      "model": "",
      "grants": [
-      "Lascannon",
-      "Heavy stubber"
+      "Lascannon"
      ]
     },
     {
@@ -14815,9 +15062,7 @@
      "base": "heavy stubbers can each be",
      "group": "000004058-0",
      "model": "",
-     "grants": [
-      "Heavy stubber"
-     ]
+     "grants": []
     },
     {
      "text": "Mortar (instead of heavy stubbers can each be)",
@@ -14830,7 +15075,6 @@
      "group": "000004058-0",
      "model": "",
      "grants": [
-      "Heavy stubber",
       "Mortar"
      ]
     }
@@ -14981,6 +15225,10 @@
    "model_min": 4,
    "model_max": 7,
    "countable": true,
+   "stock_weapons": [
+    "Befouled claws and fangs",
+    "Mauler goad and ripper claw"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -15125,6 +15373,9 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Ogryn weapon"
+   ],
    "weapon_options": [
     {
      "text": "One model’s Ogryn weapon can be replaced with 1 Ogryn power drill.",
@@ -15278,6 +15529,9 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Ogryn plague claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -15491,6 +15745,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Chaos stave",
+    "Laspistol"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -15653,6 +15911,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Streams of brackish filth"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -15809,6 +16070,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Putrid vomit"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -15932,6 +16196,9 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Lamprey bite"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -16076,6 +16343,11 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Lashes of torment",
+    "Seeker tongues",
+    "Slashing claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -16229,6 +16501,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Lashing tongue",
+    "Slashing claws"
+   ],
    "weapon_options": [
     {
      "text": "1 Seeker that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
@@ -16420,6 +16696,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lash of Slaanesh",
+    "Snapping claws",
+    "Soulpiercer"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -16575,6 +16856,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bellow of endless fury"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -16701,6 +16985,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "None",
@@ -16837,6 +17122,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Attendants’ hellblades",
+    "Biting maw",
+    "Skull cannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -16982,6 +17272,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Blade of blood",
+    "Juggernaut’s bladed horn"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -17116,6 +17410,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "The Slayer Sword"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -17250,6 +17547,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Marotter"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -17456,6 +17756,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Force weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -17671,6 +17975,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Combi-bolter",
+    "Force weapon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s combi-bolter can be replaced with 1 combi-weapon.",
@@ -18022,6 +18330,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Force weapon"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -18427,6 +18739,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Force weapon",
+    "Nurgling’s claws and teeth"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -18803,6 +19120,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Force weapon",
+    "Lashing tongue"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -19091,6 +19413,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Harvester cannon",
+    "Iron claw",
+    "Warpsword"
+   ],
    "weapon_options": [
     {
      "text": "This model’s warpsword can be replaced with 1 warpclaw.",
@@ -19236,6 +19563,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Jagged claws and tusked maw"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -19381,6 +19711,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Disgusting sneezes",
+    "Plaguesword and distended maw"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -19560,6 +19894,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Axe of Dominion",
+    "Scourging whip"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -19688,6 +20026,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Sharp quills"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -19844,6 +20185,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "The Trickster’s Staff"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -19978,6 +20322,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Serrated claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -20145,6 +20492,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lashes of torment",
+    "Seeker tongues",
+    "Slashing claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -20289,6 +20641,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Exalted Seeker tongues",
+    "Lashes of torment",
+    "Ravaging claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -20494,6 +20851,11 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Ogryn weapons",
+    "Power fist"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -20767,6 +21129,11 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Corrupted pistol",
+    "Lasgun"
+   ],
    "weapon_options": [
     {
      "text": "Cultist grenade launcher (instead of lasgun)",
@@ -21012,6 +21379,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Ravaging claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -21193,6 +21563,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Warp claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -21354,6 +21727,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Snapping claws",
+    "Souleater blade"
+   ],
    "weapon_options": [
     {
      "text": "None",

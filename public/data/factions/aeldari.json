@@ -137,6 +137,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Power blade",
+    "Ranger long rifle"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -275,6 +279,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bloody Twins",
+    "Sword of Asur"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -514,6 +522,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Shuriken pistol",
+    "Star glaive"
+   ],
    "weapon_options": [
     {
      "text": "Death spinner (instead of shuriken pistol)",
@@ -773,6 +785,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Laser lance",
+    "Twin shuriken catapult"
+   ],
    "weapon_options": [
     {
      "text": "Dragon fusion gun (instead of laser lance)",
@@ -1020,6 +1037,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Shuriken pistol",
+    "Star glaive"
+   ],
    "weapon_options": [
     {
      "text": "Death spinner (instead of shuriken pistol)",
@@ -1237,6 +1258,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -1371,6 +1393,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Fury of the Tempest",
+    "Shining Blade"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -1501,6 +1527,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Psytronome shaper"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -1691,6 +1720,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "D-impaler",
+    "Shuriken cannon",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "Aeldari missile launcher (instead of shuriken cannon)",
@@ -1969,6 +2003,11 @@
    "model_min": 3,
    "model_max": 7,
    "countable": true,
+   "stock_weapons": [
+    "Brace of pistols",
+    "Close combat weapon",
+    "Twin shuriken catapult"
+   ],
    "weapon_options": [
     {
      "text": "Dark lance (instead of twin shuriken catapult)",
@@ -2358,6 +2397,11 @@
    "model_min": 5,
    "model_max": 11,
    "countable": true,
+   "stock_weapons": [
+    "Brace of pistols",
+    "Close combat weapon",
+    "Corsair firearm"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their Corsair firearm replaced with 1 spar-glaive.",
@@ -2832,6 +2876,11 @@
    "model_min": 5,
    "model_max": 11,
    "countable": true,
+   "stock_weapons": [
+    "Brace of pistols",
+    "Close combat weapon",
+    "Corsair firearm"
+   ],
    "weapon_options": [
     {
      "text": "Shardcarbine (instead of corsair firearm)",
@@ -3259,6 +3308,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Corsair blade",
+    "Shuriken pistol"
+   ],
    "weapon_options": [
     {
      "text": "Blast pistol",
@@ -3304,8 +3357,6 @@
      "model": "",
      "grants": [
       "Blaster",
-      "Shuriken pistol",
-      "Corsair blade",
       "Close combat weapon"
      ]
     },
@@ -3323,8 +3374,6 @@
      "model": "",
      "grants": [
       "Flamer",
-      "Shuriken pistol",
-      "Corsair blade",
       "Close combat weapon"
      ]
     },
@@ -3342,8 +3391,6 @@
      "model": "",
      "grants": [
       "Fusion gun",
-      "Shuriken pistol",
-      "Corsair blade",
       "Close combat weapon"
      ]
     },
@@ -3361,8 +3408,6 @@
      "model": "",
      "grants": [
       "Shredder",
-      "Shuriken pistol",
-      "Corsair blade",
       "Close combat weapon"
      ]
     },
@@ -3586,6 +3631,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Power sword",
+    "Shuriken pistol"
+   ],
    "weapon_options": [
     {
      "text": "Neuro disruptor (instead of shuriken pistol)",
@@ -3639,9 +3689,7 @@
      "base": "shuriken pistol and power sword",
      "model": "",
      "grants": [
-      "Shuriken pistol",
-      "Shuriken rifle",
-      "Power sword"
+      "Shuriken rifle"
      ]
     },
     {
@@ -3656,9 +3704,7 @@
      "group": "000002531-3",
      "model": "",
      "grants": [
-      "Blaster",
-      "Shuriken rifle",
-      "Power sword"
+      "Blaster"
      ]
     },
     {
@@ -3673,9 +3719,7 @@
      "group": "000002531-3",
      "model": "",
      "grants": [
-      "Shredder",
-      "Shuriken rifle",
-      "Power sword"
+      "Shredder"
      ]
     },
     {
@@ -3989,6 +4033,14 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Executioner",
+    "Paired Hekatarii blades",
+    "Power sword",
+    "Shuriken pistol",
+    "Witch staff"
+   ],
    "weapon_options": [
     {
      "text": "Any number of Corsair Voidscarred can each have their shuriken pistol and power sword replaced with 1 shuriken rifle.",
@@ -4000,9 +4052,7 @@
      "base": "shuriken pistol and power sword",
      "model": "",
      "grants": [
-      "Shuriken pistol",
-      "Shuriken rifle",
-      "Power sword"
+      "Shuriken rifle"
      ]
     },
     {
@@ -4305,6 +4355,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Pulse laser",
+    "Starcannon",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 starcannons can be replaced with 2 bright lances.",
@@ -4448,6 +4503,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "D-cannon",
+    "Shuriken catapult"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -4636,6 +4696,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Missile launcher (instead of reaper launcher)",
@@ -4825,6 +4888,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Jester’s blade",
+    "Shrieker cannon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5000,6 +5067,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Avenger shuriken catapult",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Diresword (instead of avenger shuriken catapult)",
@@ -5215,6 +5286,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Mind War",
+    "Shuriken pistol",
+    "Staff of Ulthamar and witchblade"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5411,6 +5487,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Pulse laser",
+    "Scatter laser",
+    "Twin shuriken catapult",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "Missile launcher (instead of scatter laser)",
@@ -5652,6 +5734,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Eldritch Storm",
+    "Shuriken pistol",
+    "Witchblade"
+   ],
    "weapon_options": [
     {
      "text": "This model’s witchblade can be replaced with 1 singing spear.",
@@ -5839,6 +5926,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Eldritch Storm",
+    "Shuriken pistol",
+    "Twin shuriken catapult",
+    "Witchblade"
+   ],
    "weapon_options": [
     {
      "text": "This model’s witchblade can be replaced with 1 singing spear.",
@@ -6060,6 +6153,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Dragon fusion gun",
+    "Exarch’s Dragon fusion gun"
+   ],
    "weapon_options": [
     {
      "text": "Dragon’s breath flamer (instead of exarch’s dragon fusion gun)",
@@ -6073,7 +6171,6 @@
      "group": "000000596-0",
      "model": "",
      "grants": [
-      "Dragon fusion gun",
       "Dragon’s breath flamer"
      ]
     },
@@ -6089,7 +6186,6 @@
      "group": "000000596-0",
      "model": "",
      "grants": [
-      "Dragon fusion gun",
       "Dragon fusion pistol",
       "Dragon axe"
      ]
@@ -6106,7 +6202,6 @@
      "group": "000000596-0",
      "model": "",
      "grants": [
-      "Dragon fusion gun",
       "Firepike"
      ]
     },
@@ -6272,6 +6367,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Twin shuriken catapult",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "This model’s twin shuriken catapult can be replaced with 1 shuriken cannon.",
@@ -6419,6 +6518,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Firestorm scatter laser",
+    "Twin shuriken catapult",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "This model’s twin shuriken catapult can be replaced with 1 shuriken cannon.",
@@ -6571,6 +6675,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Fire Axe"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6763,6 +6870,11 @@
    "model_min": 11,
    "model_max": 11,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shuriken cannon",
+    "Shuriken catapult"
+   ],
    "weapon_options": [
     {
      "text": "Missile launcher (instead of shuriken cannon)",
@@ -6922,6 +7034,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Heavy D-scythe",
+    "Wraithbone hull"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -7099,6 +7215,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Hornet pulse laser",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "Aeldari missile launcher (instead of hornet pulse lasers)",
@@ -7357,6 +7477,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Banshee blade",
+    "Shuriken pistol"
+   ],
    "weapon_options": [
     {
      "text": "Executioner (instead of banshee blade)",
@@ -7400,8 +7524,6 @@
      "base": "shuriken pistol and banshee blade",
      "model": "",
      "grants": [
-      "Shuriken pistol",
-      "Banshee blade",
       "Mirrorswords"
      ]
     },
@@ -7565,6 +7687,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Aeldari power sword",
+    "Shuriken pistol",
+    "Voidbringer"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -7717,6 +7844,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Spear of Starlight"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -7860,6 +7990,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Blade of Destruction",
+    "Silent Death"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8009,6 +8143,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Arhra’s Bane",
+    "Isirmathil"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8159,6 +8297,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Dread of the Deep Void",
+    "Waystave"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8315,6 +8457,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Brood Twain",
+    "Spider’s Fangs",
+    "Weaverender"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8492,6 +8639,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lynx pulsar",
+    "Shuriken cannon",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "Aeldari missile launcher (instead of shuriken cannon)",
@@ -8676,6 +8828,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Maugetar"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8817,6 +8972,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Doomweaver",
+    "Twin shuriken catapult",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "This model's twin shuriken catapult can be replaced with 1 shuriken cannon.",
@@ -8955,6 +9115,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Twin bright lance",
+    "Twin shuriken cannon",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -9161,6 +9326,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "D-bombard",
+    "Phantom feet",
+    "Phantom pulsar",
+    "Phantom starcannon",
+    "Voidstorm missile launcher"
+   ],
    "weapon_options": [
     {
      "text": "Phantom starcannons and 1 wraith glaive (instead of d-bombard)",
@@ -9432,6 +9604,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Phoenix missile array",
+    "Phoenix pulse laser",
+    "Twin shuriken cannon",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -9592,6 +9770,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Eye of Wrath",
+    "Shuriken pistol",
+    "Spear of Twilight"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -9744,6 +9927,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "The Eye of Wrath",
+    "The Spear of Twilight"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -9891,6 +10078,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Long rifle",
+    "Shuriken pistol"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10053,6 +10245,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Cloudburst missile launcher",
+    "Revenant feet",
+    "Revenant pulsar",
+    "Sonic lance"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Revenant pulsar can be replaced with 1 sonic lance.",
@@ -10260,6 +10458,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Shuriken cannon",
+    "Twin Scorpion pulsar",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "Aeldari missile launcher (instead of shuriken cannon)",
@@ -10477,6 +10680,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10621,6 +10827,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shadow weaver",
+    "Shuriken catapult"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -10782,6 +10993,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Miststave",
+    "Shuriken pistol"
+   ],
    "weapon_options": [
     {
      "text": "This model’s shuriken pistol can be replaced with 1 neuro disruptor.",
@@ -10987,6 +11202,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Laser lance",
+    "Twin shuriken catapult"
+   ],
    "weapon_options": [
     {
      "text": "Paragon sabre (instead of laser lance)",
@@ -11190,6 +11409,12 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Long rifle",
+    "Scatter laser",
+    "Shuriken pistol"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -11379,6 +11604,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Inferno lance",
+    "Titanic feet"
+   ],
    "weapon_options": [
     {
      "text": "Scatter laser",
@@ -11619,6 +11848,11 @@
    "model_min": 2,
    "model_max": 4,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shuriken cannon",
+    "Star bolas"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their shuriken cannon replaced with 1 Skyweaver haywire cannon.",
@@ -11781,6 +12015,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Solitaire weapons"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -11903,6 +12140,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Shuriken pistol",
+    "Witch staff"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -12042,6 +12283,11 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Disintegrator cannon",
+    "Starfang grenade launcher",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -12178,6 +12424,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shuriken cannon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -12345,6 +12595,10 @@
    "model_min": 11,
    "model_max": 11,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shuriken pistol"
+   ],
    "weapon_options": [
     {
      "text": "Up to 2 Storm Guardians can each have their shuriken pistol replaced with 1 flamer.",
@@ -12583,6 +12837,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Scorpion chainsword",
+    "Scorpion’s claw",
+    "Shuriken pistol"
+   ],
    "weapon_options": [
     {
      "text": "Biting blade and 1 shuriken pistol (instead of shuriken pistol, scorpion chainsword and scorpion’s claw)",
@@ -12596,10 +12855,7 @@
      "group": "000000595-0",
      "model": "",
      "grants": [
-      "Shuriken pistol",
-      "Biting blade",
-      "Scorpion chainsword",
-      "Scorpion’s claw"
+      "Biting blade"
      ]
     },
     {
@@ -12615,10 +12871,7 @@
      "model": "",
      "grants": [
       "Chainsabres",
-      "Shuriken pistol",
-      "Chainsabres",
-      "Scorpion chainsword",
-      "Scorpion’s claw"
+      "Chainsabres"
      ]
     },
     {
@@ -12846,6 +13099,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Hawk’s talon",
+    "Lasblaster"
+   ],
    "weapon_options": [
     {
      "text": "Exarch’s lasblaster (instead of hawk’s talon)",
@@ -13082,6 +13340,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -13230,6 +13489,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Swirling soul energy"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -13419,6 +13681,10 @@
    "model_min": 5,
    "model_max": 12,
    "countable": true,
+   "stock_weapons": [
+    "Harlequin’s blade",
+    "Shuriken pistol"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their Harlequin’s blade replaced with 1 Harlequin’s special weapon.",
@@ -13654,6 +13920,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Shuriken pistol",
+    "Troupe Master’s blade"
+   ],
    "weapon_options": [
     {
      "text": "Fusion pistol (instead of shuriken pistol)",
@@ -13840,6 +14110,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Scatter laser",
+    "Twin Vampire pulsar",
+    "Twin pulse laser",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -13983,6 +14259,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Scatter laser",
+    "Twin pulse laser",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -14115,6 +14396,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shuriken catapult",
+    "Vibro cannon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -14271,6 +14557,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shuriken cannon",
+    "Voidweaver haywire cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Voidweaver haywire cannon can be replaced with 1 prismatic cannon.",
@@ -14459,6 +14750,11 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Bright lance",
+    "Shuriken cannon",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "Scatter laser (instead of bright lance)",
@@ -14673,6 +14969,10 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Shuriken cannon",
+    "War Walker feet"
+   ],
    "weapon_options": [
     {
      "text": "Missile launcher",
@@ -14891,6 +15191,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Destructor",
+    "Shuriken pistol",
+    "Witchblade"
+   ],
    "weapon_options": [
     {
      "text": "This model’s witchblade can be replaced with 1 singing spear.",
@@ -15066,6 +15371,11 @@
    "model_min": 2,
    "model_max": 4,
    "countable": true,
+   "stock_weapons": [
+    "Destructor",
+    "Shuriken pistol",
+    "Witchblade"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their witchblade replaced with 1 singing spear.",
@@ -15252,6 +15562,12 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Destructor",
+    "Shuriken pistol",
+    "Twin shuriken catapult",
+    "Witchblade"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their witchblade replaced with 1 singing spear.",
@@ -15411,6 +15727,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Twin shuriken catapult",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "This model’s twin shuriken catapult can be replaced with 1 shuriken cannon.",
@@ -15638,6 +15958,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Death spinner",
+    "Exarch’s death spinner"
+   ],
    "weapon_options": [
     {
      "text": "Spinneret rifle and 1 death weavers (instead of exarch’s death spinner)",
@@ -15651,7 +15976,6 @@
      "group": "000000601-0",
      "model": "",
      "grants": [
-      "Death spinner",
       "Death weavers",
       "Spinneret rifle"
      ]
@@ -15668,7 +15992,6 @@
      "group": "000000601-0",
      "model": "",
      "grants": [
-      "Death spinner",
       "Death weavers",
       "Powerblades"
      ]
@@ -15685,7 +16008,6 @@
      "group": "000000601-0",
      "model": "",
      "grants": [
-      "Death spinner",
       "Powerblade array"
      ]
     },
@@ -15869,6 +16191,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Scatter laser",
+    "Shuriken cannon",
+    "Wasp feet"
+   ],
    "weapon_options": [
     {
      "text": "Aeldari missile launcher (instead of scatter laser)",
@@ -16177,6 +16504,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Shuriken cannon",
+    "Twin shuriken cannon",
+    "Twin shuriken catapult",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "Twin missile launcher (instead of twin shuriken cannon)",
@@ -16189,9 +16522,7 @@
      "base": "twin shuriken cannon",
      "group": "000000599-0",
      "model": "",
-     "grants": [
-      "Shuriken cannon"
-     ]
+     "grants": []
     },
     {
      "text": "Twin bright lance (instead of twin shuriken cannon)",
@@ -16205,7 +16536,6 @@
      "group": "000000599-0",
      "model": "",
      "grants": [
-      "Shuriken cannon",
       "Twin bright lance"
      ]
     },
@@ -16221,7 +16551,6 @@
      "group": "000000599-0",
      "model": "",
      "grants": [
-      "Shuriken cannon",
       "Twin scatter laser"
      ]
     },
@@ -16237,7 +16566,6 @@
      "group": "000000599-0",
      "model": "",
      "grants": [
-      "Shuriken cannon",
       "Twin starcannon"
      ]
     },
@@ -16366,6 +16694,7 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "None",
@@ -16513,6 +16842,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Twin shuriken catapult"
+   ],
    "weapon_options": [
     {
      "text": "Scatter laser (instead of twin shuriken catapult)",
@@ -16653,6 +16986,9 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Ghostswords"
+   ],
    "weapon_options": [
     {
      "text": "All of the models in this unit can each have their ghostswords replaced with 1 ghostaxe and 1 forceshield.",
@@ -16783,6 +17119,10 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Wraithcannon"
+   ],
    "weapon_options": [
     {
      "text": "All of the models in this unit can each have their wraithcannon replaced with 1 D-scythe.",
@@ -16977,6 +17317,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Suncannon",
+    "Titanic feet"
+   ],
    "weapon_options": [
     {
      "text": "This model's suncannon can be replaced with 1 heavy wraithcannon.",
@@ -17224,6 +17568,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "This model’s scattershield can be replaced with 1 heavy wraithcannon.",
@@ -17497,6 +17842,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Shuriken catapult",
+    "Wraithbone fists"
+   ],
    "weapon_options": [
     {
      "text": "Each of this model's shuriken catapults can be replaced with 1 flamer.",
@@ -17798,6 +18147,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Destructor"
+   ],
    "weapon_options": [
     {
      "text": "Aeldari missile launcher",
@@ -18039,6 +18391,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Huskblade",
+    "Splinter pistol"
+   ],
    "weapon_options": [
     {
      "text": "This model’s splinter pistol can be replaced with 1 blast pistol.",
@@ -18212,6 +18568,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Klaive"
+   ],
    "weapon_options": [
     {
      "text": "The Klaivex’s klaive can be replaced with 1 demilklaives.",
@@ -18426,6 +18785,10 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Splinter rifle"
+   ],
    "weapon_options": [
     {
      "text": "The Sybarite’s close combat weapon can be replaced with 1 Sybarite weapon.",
@@ -18681,6 +19044,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bladevanes",
+    "Dark lance"
+   ],
    "weapon_options": [
     {
      "text": "This model’s dark lance can be replaced with 1 disintegrator cannon.",
@@ -18874,6 +19241,11 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Bladevanes",
+    "Splinter pistol",
+    "Splinter rifle"
+   ],
    "weapon_options": [
     {
      "text": "The Arena Champion can be equipped with 1 agoniser.",
@@ -19086,6 +19458,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Succubus weapons"
+   ],
    "weapon_options": [
     {
      "text": "Blast pistol",
@@ -19265,6 +19640,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bladevanes",
+    "Splinter cannon",
+    "Twin splinter rifle"
+   ],
    "weapon_options": [
     {
      "text": "This model’s twin splinter rifle can be replaced with 1 splinter cannon.",
@@ -19404,6 +19784,10 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Hekatarii blade",
+    "Splinter pistol"
+   ],
    "weapon_options": [
     {
      "text": "The Hekatrix’s splinter pistol can be replaced with 1 blast pistol.",
@@ -19585,6 +19969,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Kha-vir",
+    "Storm of Whispers"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""

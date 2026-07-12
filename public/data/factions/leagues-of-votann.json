@@ -146,6 +146,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -288,6 +291,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Warforge Gauntlets"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -514,6 +520,15 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Autoch-pattern bolt pistol",
+    "Close combat weapon",
+    "Graviton hammer",
+    "Graviton rifle",
+    "Las-beam cutter",
+    "Manipulator arms",
+    "Plasma torch"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -672,6 +687,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Bolt cannon",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "All models in this unit can each have their bolt cannon replaced with 1 graviton blast cannon.",
@@ -831,6 +850,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Autoch-pattern bolt pistol"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -980,6 +1002,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Heavy plasma axe"
+   ],
    "weapon_options": [
     {
      "text": "All models in this unit can each have their heavy plasma axe replaced with 1 concussion maul.",
@@ -1006,8 +1031,6 @@
      "model": "",
      "grants": [
       "Mole grenade launcher",
-      "Concussion maul",
-      "Heavy plasma axe",
       "Twin concussion gauntlet"
      ]
     },
@@ -1170,6 +1193,11 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Autoch-pattern bolt pistol",
+    "Breacher ordnance",
+    "Plasma picks"
+   ],
    "weapon_options": [
     {
      "text": "All models in this unit can each have their breacher ordnance replaced with 1 tremor shells.",
@@ -1332,6 +1360,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Autoch-pattern combi-bolter",
+    "Mass hammer"
+   ],
    "weapon_options": [
     {
      "text": "This model’s mass hammer can be replaced with 1 darkstar axe.",
@@ -1547,6 +1579,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Concussion gauntlet",
+    "EtaCarn plasma gun",
+    "Exoarmour grenade launcher"
+   ],
    "weapon_options": [
     {
      "text": "All models in this unit can each have their EtaCarn plasma gun replaced with 1 volkanite disintegrator.",
@@ -1585,9 +1622,7 @@
      "base": "concussion gauntlet or plasma blade gauntlet",
      "model": "",
      "grants": [
-      "Concussion gauntlet",
-      "Graviton hammer",
-      "Plasma blade gauntlet"
+      "Graviton hammer"
      ]
     },
     {
@@ -1770,6 +1805,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Ancestral ward stave",
+    "Autoch-pattern bolter",
+    "Close combat weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2019,6 +2059,11 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Autoch-pattern bolt pistol",
+    "Autoch-pattern bolter",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Any number of Hearthkyn Warriors can each have their Autoch-pattern bolter replaced with 1 ion blaster.",
@@ -2045,9 +2090,7 @@
      "group": "000002598-1",
      "model": "",
      "grants": [
-      "Autoch-pattern bolter",
-      "HYLas auto rifle",
-      "Ion blaster"
+      "HYLas auto rifle"
      ]
     },
     {
@@ -2062,9 +2105,7 @@
      "group": "000002598-1",
      "model": "",
      "grants": [
-      "Autoch-pattern bolter",
-      "HYLas rotary cannon",
-      "Ion blaster"
+      "HYLas rotary cannon"
      ]
     },
     {
@@ -2078,10 +2119,7 @@
      "base": "autoch-pattern bolter or ion blaster",
      "group": "000002598-1",
      "model": "",
-     "grants": [
-      "Autoch-pattern bolter",
-      "Ion blaster"
-     ]
+     "grants": []
     },
     {
      "text": "EtaCarn plasma beamer (instead of autoch-pattern bolter or ion blaster)",
@@ -2095,9 +2133,7 @@
      "group": "000002598-1",
      "model": "",
      "grants": [
-      "Autoch-pattern bolter",
-      "EtaCarn plasma beamer",
-      "Ion blaster"
+      "EtaCarn plasma beamer"
      ]
     },
     {
@@ -2112,8 +2148,6 @@
      "group": "000002598-1",
      "model": "",
      "grants": [
-      "Autoch-pattern bolter",
-      "Ion blaster",
       "Magna-rail rifle"
      ]
     },
@@ -2128,8 +2162,6 @@
      "base": "autoch-pattern bolter or ion blaster",
      "model": "",
      "grants": [
-      "Autoch-pattern bolter",
-      "Ion blaster",
       "Plasma knife"
      ]
     },
@@ -2381,6 +2413,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured wheels",
+    "Cyclic ion cannon",
+    "MATR autocannon",
+    "Twin bolt cannon "
+   ],
    "weapon_options": [
     {
      "text": "Twin bolt cannon and 1 twin ion beamer (instead of twin bolt cannons)",
@@ -2658,6 +2696,12 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Bolt revolver",
+    "Bolt shotgun",
+    "Magna-coil autocannon",
+    "Plasma knife"
+   ],
    "weapon_options": [
     {
      "text": "HYLas rotary cannon",
@@ -2903,6 +2947,10 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Bolt shotgun",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "All models in this unit can each have their bolt shotgun replaced with 1 bolt revolver and 1 plasma knife.",
@@ -2929,10 +2977,7 @@
      "base": "bolt revolver and plasma knife or its bolt shotgun",
      "model": "",
      "grants": [
-      "Bolt revolver",
-      "Bolt shotgun",
-      "Magna-coil rifle",
-      "Plasma knife"
+      "Magna-coil rifle"
      ]
     },
     {
@@ -2946,10 +2991,7 @@
      "base": "bolt revolver and plasma knife or its bolt shotgun",
      "model": "",
      "grants": [
-      "APM launcher",
-      "Bolt revolver",
-      "Bolt shotgun",
-      "Plasma knife"
+      "APM launcher"
      ]
     }
    ],
@@ -3109,6 +3151,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Heavy volkanite disintegrator",
+    "Plasma knife"
+   ],
    "weapon_options": [
     {
      "text": "The Steeljack Theyn’s heavy volkanite disintegrator and plasma knife can be replaced with 1 Autoch-pattern bolter and 1 plasma sword.",
@@ -3122,8 +3168,6 @@
      "model": "",
      "grants": [
       "Autoch-pattern bolter",
-      "Heavy volkanite disintegrator",
-      "Plasma knife",
       "Plasma sword"
      ]
     }
@@ -3273,6 +3317,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Autoch-pattern bolter",
+    "Plasma sword"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models in this unit can each have their plasma sword replaced with 1 concussion gauntlet.",
@@ -3430,6 +3478,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Magna-coil autocannon",
+    "Twin magna-coil autocannon"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 smoke launcher.",
@@ -3598,6 +3651,11 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Armoured hull",
+    "Magna-rail cannon",
+    "Twin magna-coil autocannon"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models in this unit can each have their magna-rail cannon replaced with 1 HYLas rotary cannon.",
@@ -3787,6 +3845,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Autoch-pattern combi-bolter",
+    "Forgewrought plasma axe"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Autoch-pattem combi-bolter can be replaced with 1 volkanite disintegrator.",
@@ -3954,6 +4016,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Autoch-pattern bolt pistol",
+    "Close combat weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -4120,6 +4186,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured wheels",
+    "HYLas beam cannon",
+    "Twin bolt cannon"
+   ],
    "weapon_options": [
     {
      "text": "L7 missile launcher and 1 Sagitaur missile launcher (instead of hylas beam cannon)",
@@ -4285,6 +4356,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Blade of the Ancestors",
+    "Volkanite disintegrator"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""

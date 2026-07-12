@@ -352,6 +352,16 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Close combat weapon",
+    "Deathwatch marksman bolt carbine",
+    "Heavy thunder hammer",
+    "Power weapon",
+    "Special-issue bolt pistol",
+    "Stalker bolt rifle",
+    "Xenophase blade"
+   ],
    "weapon_options": [
     {
      "text": "Frag cannon (instead of infernus heavy bolter)",
@@ -564,6 +574,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Neural shredder",
+    "Phase sword and poison blades"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -751,6 +765,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Blackstar rocket launcher",
+    "Twin assault cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s twin assault cannon can be replaced with 1 twin lascannon.",
@@ -968,6 +987,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Animus speculum",
+    "Life-draining touch"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -1101,6 +1124,10 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Unholy gaze",
+    "Warp grasp"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -1357,6 +1384,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Boltgun",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Bolt pistol and 1 power weapon (instead of boltgun)",
@@ -1736,6 +1767,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Boltgun",
+    "Power weapon"
+   ],
    "weapon_options": [
     {
      "text": "Boltgun and 1 Astartes shield (instead of boltgun and power weapon)",
@@ -1749,10 +1784,7 @@
      "base": "boltgun and power weapon",
      "group": "000003816-0",
      "model": "",
-     "grants": [
-      "Boltgun",
-      "Power weapon"
-     ]
+     "grants": []
     },
     {
      "text": "Power weapon and 1 Astartes shield (instead of boltgun and power weapon)",
@@ -1766,10 +1798,7 @@
      "base": "boltgun and power weapon",
      "group": "000003816-0",
      "model": "",
-     "grants": [
-      "Boltgun",
-      "Power weapon"
-     ]
+     "grants": []
     },
     {
      "text": "For every 5 models in this unit, up to 2 models can each have their boltgun and power weapon replaced with 1 Deathwatch thunder hammer.",
@@ -1783,9 +1812,7 @@
      "base": "boltgun and power weapon",
      "model": "",
      "grants": [
-      "Boltgun",
-      "Deathwatch thunder hammer",
-      "Power weapon"
+      "Deathwatch thunder hammer"
      ]
     },
     {
@@ -1799,10 +1826,8 @@
      "base": "boltgun and power weapon",
      "model": "",
      "grants": [
-      "Boltgun",
       "Stalker-pattern boltgun",
-      "Close combat weapon",
-      "Power weapon"
+      "Close combat weapon"
      ]
     },
     {
@@ -1817,10 +1842,8 @@
      "base": "boltgun and power weapon",
      "model": "",
      "grants": [
-      "Boltgun",
       "Deathwatch shotgun",
-      "Close combat weapon",
-      "Power weapon"
+      "Close combat weapon"
      ]
     },
     {
@@ -1834,10 +1857,8 @@
      "base": "boltgun and power weapon",
      "model": "",
      "grants": [
-      "Boltgun",
       "Frag cannon",
-      "Close combat weapon",
-      "Power weapon"
+      "Close combat weapon"
      ]
     },
     {
@@ -1851,9 +1872,7 @@
      "base": "boltgun and power weapon",
      "model": "",
      "grants": [
-      "Boltgun",
-      "Close combat weapon",
-      "Power weapon"
+      "Close combat weapon"
      ]
     },
     {
@@ -1867,9 +1886,7 @@
      "base": "boltgun and power weapon",
      "model": "",
      "grants": [
-      "Boltgun",
-      "Black Shield blades",
-      "Power weapon"
+      "Black Shield blades"
      ]
     },
     {
@@ -2152,6 +2169,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Power fist",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "Assault cannon (instead of storm bolter)",
@@ -2220,8 +2241,6 @@
      "group": "000003822-1",
      "model": "",
      "grants": [
-      "Storm bolter",
-      "Power fist",
       "Power weapon"
      ]
     },
@@ -2236,9 +2255,7 @@
      "group": "000003822-1",
      "model": "",
      "grants": [
-      "Storm bolter",
-      "Chainfist",
-      "Power fist"
+      "Chainfist"
      ]
     },
     {
@@ -2252,8 +2269,6 @@
      "group": "000003822-1",
      "model": "",
      "grants": [
-      "Storm bolter",
-      "Power fist",
       "Twin lightning claws"
      ]
     },
@@ -2268,8 +2283,6 @@
      "group": "000003822-1",
      "model": "",
      "grants": [
-      "Storm bolter",
-      "Power fist",
       "Thunder hammer"
      ]
     }
@@ -2409,6 +2422,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Executioner pistol",
+    "Power sword and neuro gauntlet"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2629,6 +2646,12 @@
    "model_min": 11,
    "model_max": 11,
    "countable": false,
+   "stock_weapons": [
+    "Arbites combat shotgun",
+    "Arbites shotpistol",
+    "Close combat weapon",
+    "Mechanical bite"
+   ],
    "weapon_options": [
     {
      "text": "Executioner shotgun (instead of arbites combat shotgun)",
@@ -3029,6 +3052,14 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Bolt pistol",
+    "Bolt rifle",
+    "Close combat weapon",
+    "Heavy bolt pistol",
+    "Twin bolt rifle"
+   ],
    "weapon_options": [
     {
      "text": "Hand flamer (instead of bolt rifle)",
@@ -3346,6 +3377,10 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Nemesis force weapon",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "Incinerator (instead of storm bolter)",
@@ -3688,6 +3723,12 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Navis heavy shotgun",
+    "Navis las-volley",
+    "Navis shotgun"
+   ],
    "weapon_options": [
     {
      "text": "Autopistol and 1 chainsword (instead of navis shotgun)",
@@ -3929,6 +3970,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -4213,6 +4258,15 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Assault bolters",
+    "Bolt pistol",
+    "Close combat weapon",
+    "Flamestorm gauntlets",
+    "Heavy bolt rifle",
+    "Melta rifle",
+    "Power fists"
+   ],
    "weapon_options": [
     {
      "text": "For every 5 models in this unit, 1 model equipped with a heavy bolt rifle can have its heavy bolt rifle replaced with 1 heavy bolter.",
@@ -4574,6 +4628,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Inquisitorial melee weapon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s bolt pistol can be replaced with 1 combi-weapon.",
@@ -4845,6 +4903,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Nemesis daemon hammer",
+    "Psychic Blast"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5063,6 +5126,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Dirgesinger",
+    "Power fist",
+    "Psychic Tempest"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5304,6 +5372,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "None",
@@ -5544,6 +5613,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Castigation",
+    "Condemnor stake"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5834,6 +5907,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Inquisitorial melee weapon",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model’s storm bolter can be replaced with 1 combi-weapon.",
@@ -6012,6 +6089,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Master-crafted multi-melta",
+    "Master-crafted power sword"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -6173,6 +6254,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Butcher blade",
+    "Garralisk's claws and teeth",
+    "Jindarii tox-cycler",
+    "Stubcarbine"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -6432,6 +6519,11 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Hydraulic vox-ram",
+    "Inferno pistol",
+    "Power sword"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -6664,6 +6756,11 @@
    "model_min": 6,
    "model_max": 12,
    "countable": true,
+   "stock_weapons": [
+    "Agent firearm",
+    "Agent melee weapon",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "For every 5 Inquisitorial Agents in this unit, it can be equipped with 1 Tome-skull.",
@@ -6949,6 +7046,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Lasgun array",
+    "Multi-laser"
+   ],
    "weapon_options": [
     {
      "text": "This model’s heavy bolter can be replaced with 1 heavy flamer.",
@@ -7187,6 +7290,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Heirloom pistol",
+    "Monomolecular rapier"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -7340,6 +7447,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -7668,6 +7778,7 @@
    "model_min": 11,
    "model_max": 11,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "Chaplain Cassius is equipped with: artificer crozius; bolt pistol.",
@@ -8004,6 +8115,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Zealot's vindictor",
+    "Zealot’s vindictor"
+   ],
    "weapon_options": [
     {
      "text": "This model’s zealot’s vindictor can be replaced with 1 holy pistol and 1 power weapon",
@@ -8149,6 +8264,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Force-orb cane",
+    "Laspistol"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8287,6 +8406,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Negotiator pistol"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8689,6 +8812,14 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Boltgun",
+    "Close combat weapon",
+    "Long Vigil melee weapon",
+    "Power fist",
+    "Storm bolter",
+    "Twin boltgun"
+   ],
    "weapon_options": [
     {
      "text": "Any number of Kill Team Veterans can replace their boltgun and Long Vigil melee weapon with:<ul style=\"list-style-type:circle\"><li>1 Long Vigil ranged weapon</li><li>1 boltgun and 1 Astartes shield</li><li>1 Long Vigil melee weapon and 1 Astartes shield</li></ul>",
@@ -9128,6 +9259,15 @@
    "model_min": 4,
    "model_max": 4,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Dartmask",
+    "Death Cult power blade",
+    "Household pistol",
+    "Laspistol",
+    "Monomolecular cane-rapier",
+    "Voltaic pistol"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -9365,6 +9505,15 @@
    "model_min": 9,
    "model_max": 9,
    "countable": false,
+   "stock_weapons": [
+    "Burning hands",
+    "Close combat weapon",
+    "Death Cult blades",
+    "Holy fire",
+    "Ministorum flamer",
+    "Ministorum hand flamer",
+    "Sanctifier melee weapon"
+   ],
    "weapon_options": [
     {
      "text": "1 Missionary model can have its 1 plasma gun replaced with 1 meltagun.",
@@ -9588,6 +9737,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Immolation flamers"
+   ],
    "weapon_options": [
     {
      "text": "Twin heavy bolter (instead of immolation flamers)",
@@ -9923,6 +10077,11 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Boltgun",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Bolt pistol (instead of boltgun)",
@@ -10187,9 +10346,7 @@
      },
      "base": "boltgun cannot be",
      "model": "",
-     "grants": [
-      "Boltgun"
-     ]
+     "grants": []
     }
    ],
    "chapter": "",
@@ -10466,6 +10623,18 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Accelerator autocannon",
+    "Bolt carbine",
+    "Bolt pistol",
+    "Bolt sniper rifle",
+    "Close combat weapon",
+    "Combat knife",
+    "Marksman bolt carbine",
+    "Occulus bolt carbine",
+    "Paired combat blades",
+    "Special-issue bolt pistol"
+   ],
    "weapon_options": [
     {
      "text": "One model equipped with a marksman bolt carbine can be equipped with 1 helix gauntlet.*",
@@ -10740,6 +10909,11 @@
    "model_min": 11,
    "model_max": 11,
    "countable": false,
+   "stock_weapons": [
+    "Arbites shotpistol",
+    "Mechanical bite",
+    "Shock maul"
+   ],
    "weapon_options": [
     {
      "text": "The Proctor-Subductor can be equipped with 1 nuncio aquila.",
@@ -10871,6 +11045,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Mk 1 assault weapon",
+    "Power claw"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -11051,6 +11229,11 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Close combat weapon",
+    "Twin boltgun"
+   ],
    "weapon_options": [
     {
      "text": "Long Vigil ranged weapon",
@@ -11317,6 +11500,12 @@
    "model_min": 11,
    "model_max": 11,
    "countable": false,
+   "stock_weapons": [
+    "Arbites combat shotgun",
+    "Arbites shotpistol",
+    "Close combat weapon",
+    "Mechanical bite"
+   ],
    "weapon_options": [
     {
      "text": "Executioner shotgun (instead of arbites combat shotgun)",
@@ -11535,6 +11724,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Exitus pistol",
+    "Exitus rifle",
+    "Vindicare combat knife"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -11692,6 +11886,14 @@
    "model_min": 6,
    "model_max": 6,
    "countable": false,
+   "stock_weapons": [
+    "Artificer shotgun",
+    "Close combat weapon",
+    "Lasgun",
+    "Laspistol",
+    "Vicious bite",
+    "Voidsman rotor cannon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -11859,6 +12061,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Hellfire Extremis",
+    "Master-crafted power weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -12019,6 +12225,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Vigil spear"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""

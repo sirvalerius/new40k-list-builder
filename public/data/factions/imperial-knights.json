@@ -162,6 +162,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Asterius volkite culverin",
+    "Karacnos mortar battery",
+    "Titanic feet",
+    "Twin conversion beam cannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -347,6 +353,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Acastus autocannon",
+    "Acastus ironstorm missile pod",
+    "Lascannon",
+    "Titanic feet",
+    "Twin magna lascannon"
+   ],
    "weapon_options": [
     {
      "text": "Lascannons (instead of acastus autocannons)",
@@ -526,6 +539,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armiger autocannon",
+    "Armoured feet",
+    "Questoris heavy stubber"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Questoris heavy stubber can be replaced with 1 meltagun.",
@@ -723,6 +741,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured feet",
+    "Graviton pulsar",
+    "Volkite veuglaire"
+   ],
    "weapon_options": [
     {
      "text": "Siege claw and 1 rad cleanser (instead of volkite veuglaire)",
@@ -991,6 +1014,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Questoris heavy stubber",
+    "Thermal spear"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Questoris heavy stubber can be replaced with 1 meltagun.",
@@ -1165,6 +1192,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Questoris multi-laser"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -1322,6 +1352,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Acheron flame cannon",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -1513,6 +1547,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "None",
@@ -1671,6 +1706,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Castigator bolt cannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -1829,6 +1867,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Cerastus shock lance"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -2031,6 +2072,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Shieldbreaker missile launcher",
+    "Titanic feet",
+    "Twin meltagun",
+    "Twin siegebreaker cannon",
+    "Volcano lance"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 shieldbreaker missile launchers and twin siegebreaker cannon can be replaced with 1 shieldbreaker missile launcher and 2 twin siegebreaker cannons.",
@@ -2042,10 +2090,7 @@
      },
      "base": "shieldbreaker missile launchers and twin siegebreaker cannon",
      "model": "",
-     "grants": [
-      "Shieldbreaker missile launcher",
-      "Twin siegebreaker cannon"
-     ]
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2272,6 +2317,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Avenger gatling cannon",
+    "Heavy flamer",
+    "Meltagun",
+    "Thermal cannon",
+    "Titanic feet"
+   ],
    "weapon_options": [
     {
      "text": "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
@@ -2530,6 +2582,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Conversion beam obliterator",
+    "Phosphor blaster",
+    "Titanic feet",
+    "Twin incendine combustor"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2739,6 +2797,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Chastiser gatling cannon",
+    "Frag bombard",
+    "Questoris heavy stubber",
+    "Titanic feet"
+   ],
    "weapon_options": [
     {
      "text": "Bellatus reaper chainsword* (instead of chastiser gatling cannon)",
@@ -3028,6 +3092,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Meltagun",
+    "Thermal cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
@@ -3313,6 +3381,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Meltagun"
+   ],
    "weapon_options": [
     {
      "text": "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
@@ -3598,6 +3669,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Meltagun",
+    "Questoris heavy stubber"
+   ],
    "weapon_options": [
     {
      "text": "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
@@ -3917,6 +3992,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "Meltagun (instead of questoris multi-laser)",
@@ -4184,6 +4260,14 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Conflagration cannon",
+    "Shieldbreaker missile launcher",
+    "Thundercoil harpoon",
+    "Titanic feet",
+    "Twin meltagun",
+    "Twin siegebreaker cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 shieldbreaker missile launchers and twin siegebreaker cannon can be replaced with 1 shieldbreaker missile launcher and 2 twin siegebreaker cannons.",
@@ -4195,10 +4279,7 @@
      },
      "base": "shieldbreaker missile launchers and twin siegebreaker cannon",
      "model": "",
-     "grants": [
-      "Shieldbreaker missile launcher",
-      "Twin siegebreaker cannon"
-     ]
+     "grants": []
     }
    ],
    "chapter": "",
@@ -4436,6 +4517,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Avenger gatling cannon",
+    "Heavy flamer",
+    "Meltagun"
+   ],
    "weapon_options": [
     {
      "text": "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
@@ -4698,6 +4784,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lightning cannon",
+    "Phased plasma-fusil"
+   ],
    "weapon_options": [
     {
      "text": "This model’s reaper chainsword can be replaced with 1 hekaton siege claw and 1 twin rad cleanser.",
@@ -4903,6 +4993,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Graviton crusher",
+    "Volkite chierovile"
+   ],
    "weapon_options": [
     {
      "text": "This model’s reaper chainsword can be replaced with 1 hekaton siege claw and 1 twin rad cleanser.",
@@ -5047,6 +5141,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Control stave",
+    "Mechanicus pistol"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5245,6 +5343,10 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Galvanic rifle"
+   ],
    "weapon_options": [
     {
      "text": "The Skitarii Ranger Alpha can be equipped with 1 Alpha combat weapon.",
@@ -5543,6 +5645,10 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Radium carbine"
+   ],
    "weapon_options": [
     {
      "text": "The Skitarii Vanguard Alpha can be equipped with 1 Alpha combat weapon.",
@@ -5826,6 +5932,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Macrostubber",
+    "Omnissian axe",
+    "Volkite blaster"
+   ],
    "weapon_options": [
     {
      "text": "This model’s macrostubber can be replaced with 1 phosphor serpenta.",
@@ -5996,6 +6107,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Magnarail lance",
+    "Omnissian staff"
+   ],
    "weapon_options": [
     {
      "text": "This model’s magnarail lance can be replaced with 1 transonic cannon.",

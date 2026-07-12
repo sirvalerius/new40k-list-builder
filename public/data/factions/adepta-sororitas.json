@@ -185,6 +185,11 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Blade of Vigil",
+    "Bolt pistol",
+    "Scribe’s staff"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -291,6 +296,9 @@
    "model_min": 3,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Arco-flails"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -401,6 +409,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -689,6 +698,11 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Boltgun",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Bolt pistol (instead of boltgun)",
@@ -953,9 +967,7 @@
      },
      "base": "boltgun cannot be",
      "model": "",
-     "grants": [
-      "Boltgun"
-     ]
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1210,6 +1222,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Hallowed Chainsword"
+   ],
    "weapon_options": [
     {
      "text": "Condemnor boltgun (instead of bolt pistol)",
@@ -1486,6 +1502,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Blessed halberd"
+   ],
    "weapon_options": [
     {
      "text": "Holy eviscerator (instead of blessed halberd)",
@@ -1689,6 +1708,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Castigator autocannons",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Castigator autocannons can be replaced with 1 Castigator battle cannon.",
@@ -1911,6 +1935,10 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Condemnor bolt pistol",
+    "Null mace"
+   ],
    "weapon_options": [
     {
      "text": "The Celestian Insidiant Superior’s condemnor bolt pistol can be replaced with 1 inferno pistol.",
@@ -1951,9 +1979,7 @@
      "base": "condemnor bolt pistol and null mace",
      "model": "",
      "grants": [
-      "Condemnor bolt pistol",
-      "Blessed sword",
-      "Null mace"
+      "Blessed sword"
      ]
     },
     {
@@ -1967,8 +1993,6 @@
      "base": "condemnor bolt pistol and null mace",
      "model": "",
      "grants": [
-      "Condemnor bolt pistol",
-      "Null mace",
       "Virge of admonition"
      ]
     },
@@ -1994,9 +2018,7 @@
      },
      "base": "condemnor bolt pistol cannot be",
      "model": "",
-     "grants": [
-      "Condemnor bolt pistol"
-     ]
+     "grants": []
     }
    ],
    "chapter": "",
@@ -2123,6 +2145,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Ministorum hand flamer",
+    "The Thorn of the White Rose"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -2333,6 +2359,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Hallowed mace"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their hallowed mace replaced with 1 anointed halberd.",
@@ -2511,6 +2541,9 @@
    "model_min": 2,
    "model_max": 4,
    "countable": true,
+   "stock_weapons": [
+    "Power weapon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -2676,6 +2709,11 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Sanctity",
+    "The Outcast’s Weapons"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2795,6 +2833,9 @@
    "model_min": 2,
    "model_max": 4,
    "countable": true,
+   "stock_weapons": [
+    "Death Cult power blades"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -2959,6 +3000,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Dialogus staff"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3107,6 +3152,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Mace of the righteous"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3380,6 +3429,11 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Boltgun",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Bolt pistol (instead of boltgun)",
@@ -3554,9 +3608,7 @@
      },
      "base": "boltgun cannot be",
      "model": "",
-     "grants": [
-      "Boltgun"
-     ]
+     "grants": []
     }
    ],
    "chapter": "",
@@ -3717,6 +3769,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Exorcist missile launcher",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -3906,6 +3963,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Chirurgeon’s tools"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -4065,6 +4126,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Boltgun",
+    "Close combat weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -4237,6 +4303,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Immolation flamers"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -4442,6 +4513,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Heavy bolter",
+    "Mace of Saint Praxedes",
+    "Melta missile array",
+    "Ministorum heavy flamer",
+    "Throne of Blame"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -4614,6 +4692,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Mace of Castigation",
+    "Twin Ministorum heavy flamer"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -4797,6 +4879,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Zealot’s vindictor"
+   ],
    "weapon_options": [
     {
      "text": "This model’s zealot’s vindictor can be replaced with 1 holy pistol and 1 power weapon.",
@@ -4991,6 +5076,11 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Heavy bolter",
+    "Penitent buzz-blade",
+    "Twin penitent buzz-blades"
+   ],
    "weapon_options": [
     {
      "text": "1 model can be equipped with 1 anchorite sarcophagus.",
@@ -5043,7 +5133,6 @@
      "group": "000002067-2",
      "model": "",
      "grants": [
-      "Penitent buzz-blade",
       "Penitent flail",
       "Twin penitent flails"
      ]
@@ -5059,7 +5148,6 @@
      "group": "000002067-2",
      "model": "",
      "grants": [
-      "Penitent buzz-blade",
       "Penitent flail"
      ]
     }
@@ -5232,6 +5320,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Fidelis"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5409,6 +5500,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Palatine blade"
+   ],
    "weapon_options": [
     {
      "text": "This model’s bolt pistol can be replaced with 1 plasma pistol.",
@@ -5605,6 +5700,12 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Heavy bolter",
+    "Paragon storm bolters",
+    "Paragon war blade"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their Paragon storm bolters replaced with 1 Paragon grenade launchers.",
@@ -5819,6 +5920,11 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Penitent buzz-blade",
+    "Penitent flamers",
+    "Twin penitent buzz-blades"
+   ],
    "weapon_options": [
     {
      "text": "Penitent buzz-blade and 1 penitent flail (instead of twin penitent buzz-blades)",
@@ -5831,7 +5937,6 @@
      "group": "000000897-0",
      "model": "",
      "grants": [
-      "Penitent buzz-blade",
       "Penitent flail"
      ]
     },
@@ -5846,7 +5951,6 @@
      "group": "000000897-0",
      "model": "",
      "grants": [
-      "Penitent buzz-blade",
       "Penitent flail",
       "Twin penitent flails"
      ]
@@ -5993,6 +6097,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Neural whips",
+    "Penitent eviscerator"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6152,6 +6261,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Dozer ram",
+    "Heavy flamer",
+    "Repressor twin heavy flamer",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -6451,6 +6566,12 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Boltgun",
+    "Close combat weapon",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "Bolt pistol (instead of boltgun)",
@@ -6776,6 +6897,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Power weapon",
+    "The Ardent Blade"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -7012,6 +7138,15 @@
    "model_min": 9,
    "model_max": 9,
    "countable": false,
+   "stock_weapons": [
+    "Burning hands",
+    "Close combat weapon",
+    "Death Cult blades",
+    "Holy fire",
+    "Ministorum flamer",
+    "Ministorum hand flamer",
+    "Sanctifier melee weapon"
+   ],
    "weapon_options": [
     {
      "text": "1 Missionary model can have its 1 plasma gun replaced with 1 meltagun.",
@@ -7275,6 +7410,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Inferno pistols (instead of bolt pistols)",
@@ -7609,6 +7748,13 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Autogun",
+    "Autopistol",
+    "Bolt pistol",
+    "Boltgun",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Bolt pistol and 1 power weapon (instead of bolt pistol and boltgun)",
@@ -7622,8 +7768,6 @@
      "group": "000002507-0",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Boltgun",
       "Power weapon"
      ]
     },
@@ -7639,8 +7783,6 @@
      "group": "000002507-0",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Boltgun",
       "Power weapon"
      ]
     },
@@ -7692,8 +7834,6 @@
      "base": "autogun and close combat weapon",
      "model": "",
      "grants": [
-      "Autogun",
-      "Close combat weapon",
       "Novitiate melee weapons"
      ]
     }
@@ -7833,6 +7973,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -8013,6 +8157,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistols",
+    "Relic weapons"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8164,6 +8312,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Power weapon"
+   ],
    "weapon_options": [
     {
      "text": "The Zephyrim Superior can be equipped with 1 sacred banner.",

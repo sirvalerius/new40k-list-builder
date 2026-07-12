@@ -134,6 +134,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Aberrant weapons"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -259,6 +262,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Power sledgehammer"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -450,6 +456,11 @@
      "name": "Heavy mining laser",
      "cost": 10
     }
+   ],
+   "stock_weapons": [
+    "Armoured hull",
+    "Heavy mining laser",
+    "Twin heavy stubber"
    ],
    "weapon_options": [
     {
@@ -656,6 +667,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Autopistol",
+    "Cult claws and knife"
+   ],
    "weapon_options": [
     {
      "text": "One Acolyte Hybrid’s autopistol can be replaced with 1 cult icon.",
@@ -681,8 +696,6 @@
      "base": "autopistol and cult claws and knife",
      "model": "",
      "grants": [
-      "Autopistol",
-      "Cult claws and knife",
       "Heavy mining tool"
      ]
     },
@@ -858,6 +871,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Cult claws and knife",
+    "Hand flamer"
+   ],
    "weapon_options": [
     {
      "text": "One Acolyte Hybrid’s hand flamer can be replaced with 1 cult icon.",
@@ -1044,6 +1061,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Autopistol",
+    "Cult claws"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -1156,6 +1177,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "None",
@@ -1371,6 +1393,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Lascannon",
+    "Multi-laser",
+    "Stormhammer cannon",
+    "Twin battle cannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters (instead of multi-lasers)",
@@ -1632,6 +1661,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Medusa siege cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s heavy bolter can be replaced with 1 heavy flamer.",
@@ -1915,6 +1949,10 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Multi-laser"
+   ],
    "weapon_options": [
     {
      "text": "Autocannon (instead of multi-laser)",
@@ -2154,6 +2192,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Crew close combat weapons",
+    "Heavy mortar",
+    "Lasgun"
+   ],
    "weapon_options": [
     {
      "text": "Siege cannon (instead of heavy mortar)",
@@ -2428,6 +2471,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Atalan small arms",
+    "Close combat weapon",
+    "Heavy stubber"
+   ],
    "weapon_options": [
     {
      "text": "For every 4 Atalan Jackals in this unit, up to 2 Atalan Jackals' close combat weapons can each be replaced with 1 Atalan power weapon.",
@@ -2441,8 +2489,7 @@
      "base": "close combat weapons can each be",
      "model": "",
      "grants": [
-      "Atalan power weapon",
-      "Close combat weapon"
+      "Atalan power weapon"
      ]
     },
     {
@@ -2632,6 +2679,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -2843,6 +2894,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Lasgun",
+    "Laspistol",
+    "Steed’s hooves"
+   ],
    "weapon_options": [
     {
      "text": "For every 5 models in this unit, 1 model’s hunting lance can be replaced with 1 goad lance.",
@@ -3046,6 +3102,16 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Baneblade cannon",
+    "Coaxial autocannon",
+    "Demolisher cannon",
+    "Heavy stubber",
+    "Lascannon",
+    "Twin heavy bolter",
+    "Twin heavy flamer"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin heavy flamers can be replaced with 2 twin heavy bolters.",
@@ -3241,6 +3307,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Lascannon",
+    "Tremor cannon",
+    "Twin heavy bolter",
+    "Twin heavy flamer"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin heavy flamers can be replaced with 2 twin heavy bolters.",
@@ -3429,6 +3502,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Lascannon",
+    "Quake cannon",
+    "Twin heavy bolter",
+    "Twin heavy flamer"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin heavy flamers can be replaced with 2 twin heavy bolters.",
@@ -3624,6 +3704,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Earthshaker cannon",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model’s heavy bolter can be replaced with 1 heavy flamer.",
@@ -3802,6 +3887,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3961,6 +4049,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Autopistol",
+    "Chemical vials",
+    "Injector goad"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -4182,6 +4275,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Chainsword",
+    "Laspistol"
+   ],
    "weapon_options": [
     {
      "text": "Boltgun and 1 close combat weapon (instead of chainsword)",
@@ -4580,6 +4677,12 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Chainsword",
+    "Close combat weapon",
+    "Lasgun",
+    "Laspistol"
+   ],
    "weapon_options": [
     {
      "text": "Flamer (instead of lasgun and regimental standard)",
@@ -4593,7 +4696,6 @@
      "group": "000003939-0",
      "model": "",
      "grants": [
-      "Lasgun",
       "Flamer"
      ]
     },
@@ -4608,9 +4710,7 @@
      "base": "lasgun and regimental standard",
      "group": "000003939-0",
      "model": "",
-     "grants": [
-      "Lasgun"
-     ]
+     "grants": []
     },
     {
      "text": "Meltagun (instead of lasgun and regimental standard)",
@@ -4624,7 +4724,6 @@
      "group": "000003939-0",
      "model": "",
      "grants": [
-      "Lasgun",
       "Meltagun"
      ]
     },
@@ -4639,9 +4738,7 @@
      "base": "lasgun and regimental standard",
      "group": "000003939-0",
      "model": "",
-     "grants": [
-      "Lasgun"
-     ]
+     "grants": []
     },
     {
      "text": "Bolt pistol (instead of laspistol)",
@@ -4994,6 +5091,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Heavy bolter",
+    "Laspistol",
+    "Weapons team close combat weapons"
+   ],
    "weapon_options": [
     {
      "text": "Autocannon (instead of heavy bolter)",
@@ -5283,6 +5385,12 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Chainsword",
+    "Close combat weapon",
+    "Lasgun",
+    "Laspistol"
+   ],
    "weapon_options": [
     {
      "text": "Flamer (instead of lasgun)",
@@ -5354,9 +5462,7 @@
      },
      "base": "lasgun cannot be",
      "model": "",
-     "grants": [
-      "Lasgun"
-     ]
+     "grants": []
     },
     {
      "text": "Any number of Shock Trooper Sergeants can each have their laspistol replaced with 1 bolt pistol.",
@@ -5381,9 +5487,7 @@
      "base": "laspistol and chainsword",
      "model": "",
      "grants": [
-      "Laspistol",
       "Sergeant's autogun",
-      "Chainsword",
       "Close combat weapon"
      ]
     },
@@ -5623,6 +5727,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Autocannon",
+    "Carnodon twin autocannon"
+   ],
    "weapon_options": [
     {
      "text": "Carnodon twin lascannon (instead of carnodon twin autocannon)",
@@ -5637,7 +5746,6 @@
      "model": "",
      "grants": [
       "Carnodon twin lascannon",
-      "Autocannon",
       "Lascannon"
      ]
     },
@@ -5653,8 +5761,7 @@
      "group": "000003997-0",
      "model": "",
      "grants": [
-      "Carnodon twin multi-laser",
-      "Autocannon"
+      "Carnodon twin multi-laser"
      ]
     },
     {
@@ -5669,7 +5776,6 @@
      "group": "000003997-0",
      "model": "",
      "grants": [
-      "Autocannon",
       "Volkite culverin"
      ]
     },
@@ -6149,6 +6255,11 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Lasgun",
+    "Laspistol"
+   ],
    "weapon_options": [
     {
      "text": "Flamer (instead of lasgun)",
@@ -6560,6 +6671,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Heavy bolter",
+    "Lasgun",
+    "Weapons team close combat weapons"
+   ],
    "weapon_options": [
     {
      "text": "Autocannon (instead of heavy bolter)",
@@ -6763,6 +6879,11 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Lasgun",
+    "Laspistol"
+   ],
    "weapon_options": [
     {
      "text": "For every 5 models in this unit, 1 Jungle Fighter’s lasgun can be replaced with 1 flamer.",
@@ -6788,9 +6909,7 @@
      },
      "base": "lasgun cannot be",
      "model": "",
-     "grants": [
-      "Lasgun"
-     ]
+     "grants": []
     }
    ],
    "chapter": "",
@@ -6917,6 +7036,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy stubber"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -7047,6 +7170,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Pintle-mounted heavy stubber"
+   ],
    "weapon_options": [
     {
      "text": "None.",
@@ -7250,6 +7377,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Lasgun array",
+    "Multi-laser"
+   ],
    "weapon_options": [
     {
      "text": "This model’s heavy bolter can be replaced with 1 heavy flamer.",
@@ -7487,6 +7620,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Autopistol",
+    "Close combat weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -7634,6 +7771,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Colossus siege mortar"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -7809,6 +7950,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "Heavy stubber",
@@ -7946,6 +8091,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "None",
@@ -8207,6 +8353,14 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Flamer",
+    "Heavy flamer",
+    "Hot-shot lasgun",
+    "Sergeant’s close combat weapon",
+    "Sergeant’s pistol"
+   ],
    "weapon_options": [
     {
      "text": "Flamer (instead of hot-shot lasgun)",
@@ -8613,6 +8767,12 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Chainsword",
+    "Close combat weapon",
+    "Lasgun",
+    "Laspistol"
+   ],
    "weapon_options": [
     {
      "text": "Flamer (instead of lasgun)",
@@ -8700,9 +8860,7 @@
      },
      "base": "lasgun cannot be",
      "model": "",
-     "grants": [
-      "Lasgun"
-     ]
+     "grants": []
     },
     {
      "text": "For every 10 models in this unit, 1 Death Korps Trooper equipped with a lasgun can be equipped with 1 vox-caster (that model’s lasgun cannot be replaced).**",
@@ -8714,9 +8872,7 @@
      },
      "base": "lasgun cannot be",
      "model": "",
-     "grants": [
-      "Lasgun"
-     ]
+     "grants": []
     },
     {
      "text": "Any number of Death Korps Watchmasters can each replace their laspistol and chainsword with 1 boltgun and 1 close combat weapon.",
@@ -8934,6 +9090,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Commissar’s close combat weapon",
+    "Commissar’s pistol",
+    "Savage claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -9076,6 +9237,12 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Death Rider lascarbine",
+    "Frag lance",
+    "Power sabre",
+    "Steed's savage claws"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -9207,6 +9374,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lictor claws and talons"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -9361,6 +9531,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Deathstrike missile",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model’s heavy bolter can be replaced with 1 heavy flamer.",
@@ -9582,6 +9757,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Dominus triple bombard",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "Autocannons (instead of heavy bolters)",
@@ -9820,6 +10000,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Lascannon",
+    "Magma cannon",
+    "Twin heavy bolter",
+    "Twin heavy flamer"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin heavy flamers can be replaced with 2 twin heavy bolters.",
@@ -9969,6 +10156,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Battery close combat weapons",
+    "Earthshaker cannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10099,6 +10290,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapons",
+    "Earthshaker cannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10266,6 +10461,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -10435,6 +10634,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Lasgun",
+    "Sniper rifle"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10593,6 +10797,12 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Battery close combat weapons",
+    "Lasgun",
+    "Laspistol",
+    "Malleus rocket launcher"
+   ],
    "weapon_options": [
     {
      "text": "Bombast field gun (instead of malleus rocket launcher)",
@@ -10743,6 +10953,10 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Blinding venom",
+    "Fleshborer"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -10906,6 +11120,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Demolition charge cache",
+    "Drilldozer blade",
+    "Heavy mining laser",
+    "Heavy stubber"
+   ],
    "weapon_options": [
     {
      "text": "Clearance incinerator (instead of heavy mining laser)",
@@ -11069,6 +11289,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Demolition charge cache",
+    "Heavy stubber",
+    "Twin autocannon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -11239,6 +11465,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Gorgon mortar",
+    "Heavy stubber",
+    "Landing ramp",
+    "Twin heavy stubber"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters (instead of gorgon mortars)",
@@ -11452,6 +11684,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Griffon heavy mortar",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model’s heavy bolter can be replaced with 1 heavy flamer.",
@@ -11591,6 +11828,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Melta-cutter drill"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -11711,6 +11951,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapons",
+    "Heavy mortar"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -11831,6 +12075,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapons",
+    "Heavy quad launcher"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -12017,6 +12265,16 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Coaxial autocannon",
+    "Demolisher cannon",
+    "Heavy stubber",
+    "Hellhammer cannon",
+    "Lascannon",
+    "Twin heavy bolter",
+    "Twin heavy flamer"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin heavy flamers can be replaced with 2 twin heavy bolters.",
@@ -12245,6 +12503,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy flamer",
+    "Inferno cannon"
+   ],
    "weapon_options": [
     {
      "text": "Chem cannon (instead of inferno cannon)",
@@ -12529,6 +12792,15 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Close combat weapon",
+    "Demolitions",
+    "Dirk",
+    "Hot-shot laspistol",
+    "Meltagun",
+    "Power weapon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -12712,6 +12984,11 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Armoured hull",
+    "Heavy stubber",
+    "Vigilator cannon"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their heavy stubber replaced with 1 meltagun.",
@@ -12956,6 +13233,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Autopistol",
+    "Leader’s bio-weapons"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their autopistol replaced with 1 hand flamer.",
@@ -13129,6 +13410,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Hydra autocannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s heavy bolter can be replaced with 1 heavy flamer.",
@@ -13276,6 +13562,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapons",
+    "Hydra quad autocannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -13450,6 +13740,11 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Prime claws and talons",
+    "Ravener heavy claws and talons",
+    "Venom bolt"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -13590,6 +13885,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Autopistol",
+    "Close combat weapon",
+    "Cult sniper rifle"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -13892,6 +14192,12 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Chainsword",
+    "Close combat weapon",
+    "Hot-shot lasgun",
+    "Hot-shot laspistol"
+   ],
    "weapon_options": [
     {
      "text": "Flamer (instead of hot-shot lasgun)",
@@ -14002,9 +14308,7 @@
      },
      "base": "hot-shot lasgun cannot be",
      "model": "",
-     "grants": [
-      "Hot-shot lasgun"
-     ]
+     "grants": []
     },
     {
      "text": "The Kasrkin Sergeant’s chainsword can be replaced with 1 power weapon.",
@@ -14174,6 +14478,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Liberator autostubs"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -14422,6 +14730,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Autopistol",
+    "Trench club"
+   ],
    "weapon_options": [
     {
      "text": "1 Krieg Combat Engineer's autopistol and trench club can be replaced with 1 flamer and 1 close combat weapon.",
@@ -14435,8 +14747,6 @@
      "model": "",
      "grants": [
       "Close combat weapon",
-      "Trench club",
-      "Autopistol",
       "Flamer"
      ]
     },
@@ -14451,9 +14761,7 @@
      "base": "autopistol and trench club",
      "model": "",
      "grants": [
-      "Close combat weapon",
-      "Trench club",
-      "Autopistol"
+      "Close combat weapon"
      ]
     },
     {
@@ -14467,8 +14775,6 @@
      "model": "",
      "grants": [
       "Close combat weapon",
-      "Trench club",
-      "Autopistol",
       "Combat shotgun"
      ]
     },
@@ -14913,6 +15219,14 @@
    "model_min": 6,
    "model_max": 6,
    "countable": false,
+   "stock_weapons": [
+    "Boltgun",
+    "Chainsword",
+    "Close combat weapon",
+    "Lasgun",
+    "Laspistol",
+    "Power weapon"
+   ],
    "weapon_options": [
     {
      "text": "Flamer (instead of boltgun)",
@@ -15207,6 +15521,11 @@
    "model_min": 4,
    "model_max": 4,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Lascannon",
+    "Laspistol"
+   ],
    "weapon_options": [
     {
      "text": "Krieg heavy flamer (instead of lascannon)",
@@ -15451,6 +15770,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Lascannon",
+    "Leman Russ battle cannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
@@ -15946,6 +16270,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Lascannon",
+    "Leman Russ battle cannon"
+   ],
    "weapon_options": [
     {
      "text": "Demolisher battle cannon (instead of leman russ battle cannon)",
@@ -16382,6 +16711,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Demolisher battle cannon",
+    "Lascannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
@@ -16730,6 +17064,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Eradicator nova cannon",
+    "Lascannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
@@ -17089,6 +17428,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Lascannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
@@ -17437,6 +17780,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Exterminator autocannon",
+    "Lascannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
@@ -17785,6 +18133,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Lascannon",
+    "Punisher gatling cannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
@@ -18133,6 +18486,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Lascannon",
+    "Vanquisher battle cannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
@@ -18389,6 +18747,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lictor claws and talons"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -18521,6 +18882,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Locus blades"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -18702,6 +19066,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy stubber",
+    "Macharius twin battle cannon",
+    "Twin heavy stubber"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters (instead of heavy stubbers)",
@@ -18969,6 +19339,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks"
+   ],
    "weapon_options": [
     {
      "text": "Autocannons",
@@ -19240,6 +19613,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy stubber",
+    "Macharius twin vanquisher cannon",
+    "Twin heavy stubber"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters (instead of heavy stubbers)",
@@ -19496,6 +19875,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "Heavy bolters (instead of heavy stubbers)",
@@ -19715,6 +20095,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Autopistol",
+    "Magus stave"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -19897,6 +20281,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Autocannon",
+    "Heavy bolter",
+    "Malcador battle cannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters (instead of autocannons)",
@@ -20194,6 +20584,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Demolisher cannon",
+    "Heavy bolter",
+    "Lascannon",
+    "Malcador twin lascannon"
+   ],
    "weapon_options": [
     {
      "text": "Autocannons (instead of heavy bolters)",
@@ -20450,6 +20847,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Demolisher cannon",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "Autocannons (instead of heavy bolters)",
@@ -20717,6 +21119,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy stubber",
+    "Inferno gun"
+   ],
    "weapon_options": [
     {
      "text": "Autocannons (instead of heavy stubbers)",
@@ -20970,6 +21377,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Storm eagle rockets"
+   ],
    "weapon_options": [
     {
      "text": "This model’s heavy bolter can be replaced with 1 heavy flamer.",
@@ -21117,6 +21529,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapons",
+    "Storm eagle rockets"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -21255,6 +21671,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Distensible jaw",
+    "Mawloc scything talons"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -21357,6 +21777,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Battery close combat weapons",
+    "Medusa siege cannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -21478,6 +21902,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Minotaur twin earthshaker cannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -21721,6 +22149,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Hunting lance",
+    "Laspistol",
+    "Stomping feet"
+   ],
    "weapon_options": [
     {
      "text": "The Mukaali Rider Sergeant’s laspistol can be replaced with 1 plasma pistol.",
@@ -21969,6 +22402,9 @@
    "model_min": 4,
    "model_max": 4,
    "countable": false,
+   "stock_weapons": [
+    "Servitor’s servo-arm"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of servitor’s servo-arm)",
@@ -22265,6 +22701,11 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Autopistol",
+    "Close combat weapon",
+    "Hybrid firearm"
+   ],
    "weapon_options": [
     {
      "text": "One Neophyte Hybrid equipped with a Hybrid firearm can be equipped with 1 cult icon.",
@@ -22387,9 +22828,7 @@
      "model": "",
      "grants": [
       "Anointed pistol",
-      "Hybrid firearm",
-      "Chainsword",
-      "Close combat weapon"
+      "Chainsword"
      ]
     },
     {
@@ -22405,9 +22844,7 @@
      "model": "",
      "grants": [
       "Anointed pistol",
-      "Hybrid firearm",
-      "Power weapon",
-      "Close combat weapon"
+      "Power weapon"
      ]
     },
     {
@@ -22551,6 +22988,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Piercing claws and talons"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -22688,6 +23128,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Autopistol",
+    "Close combat weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -22819,6 +23263,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Barbed ovipositor",
+    "Clawed limbs"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -22949,6 +23397,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Patriarch’s claws"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -23100,6 +23551,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "Heavy stubber",
@@ -23291,6 +23743,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Force weapon",
+    "Laspistol"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -23439,6 +23895,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Cult bonesword",
+    "Scoped needle pistol",
+    "Toxin injector claw"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -23566,6 +24027,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Cult claws and talons"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -23716,6 +24180,10 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Quartermaster’s close combat weapon",
+    "Quartermaster’s pistol"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -23846,6 +24314,10 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Laser destroyer"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -23960,6 +24432,9 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Ravener claws and talons"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -24128,6 +24603,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Autopistol",
+    "Close combat weapon",
+    "Demolition charges",
+    "Remote explosives"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -24257,6 +24738,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Astropath’s stave",
+    "Close combat weapon",
+    "Laspistol"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -24467,6 +24953,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Castigator gatling cannon",
+    "Heavy stubber",
+    "Twin battle cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s twin battle cannon can be replaced with 1 oppressor cannon and 1 coaxial autocannon.",
@@ -24769,6 +25261,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Castigator gatling cannon",
+    "Heavy stubber",
+    "Twin battle cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model's twin battle cannon can be replaced with 1 oppressor cannon and 1 coaxial autocannon.",
@@ -25010,6 +25508,10 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "Defence searchlight (instead of twin heavy bolters can each be)",
@@ -25021,9 +25523,7 @@
      "base": "twin heavy bolters can each be",
      "group": "000003959-0",
      "model": "",
-     "grants": [
-      "Twin heavy bolter"
-     ]
+     "grants": []
     },
     {
      "text": "Twin autocannon (instead of twin heavy bolters can each be)",
@@ -25036,7 +25536,6 @@
      "group": "000003959-0",
      "model": "",
      "grants": [
-      "Twin heavy bolter",
       "Twin autocannon"
      ]
     },
@@ -25051,7 +25550,6 @@
      "group": "000003959-0",
      "model": "",
      "grants": [
-      "Twin heavy bolter",
       "Twin heavy stubber"
      ]
     },
@@ -25066,7 +25564,6 @@
      "group": "000003959-0",
      "model": "",
      "grants": [
-      "Twin heavy bolter",
       "Twin lascannon"
      ]
     }
@@ -25228,6 +25725,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Heavy flamer"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -25437,6 +25939,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Autocannon",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -25628,6 +26135,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Sanctus bio-dagger"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Sanctus bio-dagger can be replaced with 1 cult sniper rifle and 1 close combat weapon.",
@@ -25874,6 +26384,10 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Multi-laser"
+   ],
    "weapon_options": [
     {
      "text": "Autocannon (instead of multi-laser)",
@@ -26065,6 +26579,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Powerlifter"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -26218,6 +26735,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Lascannon",
+    "Twin heavy bolter",
+    "Twin heavy flamer",
+    "Volcano cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin heavy flamers can be replaced with 2 twin heavy bolters.",
@@ -26443,6 +26967,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Autocannon",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model’s heavy bolter can be replaced with 1 heavy flamer.",
@@ -26695,6 +27224,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Lascannon",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin heavy bolters can be replaced with 2 twin heavy flamers.",
@@ -26945,6 +27479,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "This model’s 2 twin heavy flamers can be replaced with 2 twin heavy bolters.",
@@ -27133,6 +27668,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Lascannon",
+    "Stormsword siege cannon",
+    "Twin heavy bolter",
+    "Twin heavy flamer"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin heavy flamers can be replaced with 2 twin heavy bolters.",
@@ -27327,6 +27869,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Stygies laser destroyer"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -27504,6 +28050,10 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their twin heavy bolter replaced with 1 twin lascannon.",
@@ -27671,6 +28221,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured frame",
+    "Heavy flamer"
+   ],
    "weapon_options": [
     {
      "text": "This model’s heavy flamer can be replaced with 1 Tauros grenade launcher.",
@@ -27834,6 +28388,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured frame",
+    "Twin multi-laser"
+   ],
    "weapon_options": [
     {
      "text": "This model’s twin multi-laser can be replaced with 1 twin lascannon.",
@@ -27982,6 +28540,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Twin autocannon"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 storm bolter.",
@@ -28173,6 +28735,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Taurox battle cannon",
+    "Twin Taurox hot-shot volley gun"
+   ],
    "weapon_options": [
     {
      "text": "Taurox gatling cannon (instead of taurox battle cannon)",
@@ -28341,6 +28908,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Fragdrill"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -28480,6 +29050,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Gaping maw",
+    "Scything talons"
+   ],
    "weapon_options": [
     {
      "text": "None.",
@@ -28628,6 +29202,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model’s heavy bolter can be replaced with 1 heavy flamer.",
@@ -28783,6 +29361,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bio-electric pulse",
+    "Trygon scything talons"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -28902,6 +29484,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Flensing whips",
+    "Tyrannocyte bio-weapons"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -29094,6 +29680,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Autocannon",
+    "Valdor neutron laser"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of autocannon)",
@@ -29303,6 +29894,9 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Leaper’s talons"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -29471,6 +30065,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Monstrous bonesword and lash whip",
+    "Tyrant talons"
+   ],
    "weapon_options": [
     {
      "text": "Heavy venom cannon (instead of monstrous bonesword and lash whip)",
@@ -29646,6 +30244,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Prime talons"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -29806,6 +30407,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Wyvern quad stormshard mortar"
+   ],
    "weapon_options": [
     {
      "text": "This model’s heavy bolter can be replaced with 1 heavy flamer.",

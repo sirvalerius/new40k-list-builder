@@ -193,6 +193,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Huskblade",
+    "Splinter pistol"
+   ],
    "weapon_options": [
     {
      "text": "Blast pistol (instead of splinter pistol)",
@@ -444,6 +448,12 @@
    "model_min": 7,
    "model_max": 7,
    "countable": false,
+   "stock_weapons": [
+    "Agoniser",
+    "Khymerae talons",
+    "Razorwing feathers",
+    "Splinter pods"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -676,6 +686,11 @@
    "model_min": 3,
    "model_max": 7,
    "countable": true,
+   "stock_weapons": [
+    "Brace of pistols",
+    "Close combat weapon",
+    "Twin shuriken catapult"
+   ],
    "weapon_options": [
     {
      "text": "Dark lance (instead of twin shuriken catapult)",
@@ -1066,6 +1081,11 @@
    "model_min": 5,
    "model_max": 11,
    "countable": true,
+   "stock_weapons": [
+    "Brace of pistols",
+    "Close combat weapon",
+    "Corsair firearm"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their Corsair firearm replaced with 1 spar-glaive.",
@@ -1541,6 +1561,11 @@
    "model_min": 5,
    "model_max": 11,
    "countable": true,
+   "stock_weapons": [
+    "Brace of pistols",
+    "Close combat weapon",
+    "Corsair firearm"
+   ],
    "weapon_options": [
     {
      "text": "Shardcarbine (instead of corsair firearm)",
@@ -1953,6 +1978,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Corsair blade",
+    "Shuriken pistol"
+   ],
    "weapon_options": [
     {
      "text": "Blast pistol",
@@ -1998,8 +2027,6 @@
      "model": "",
      "grants": [
       "Blaster",
-      "Shuriken pistol",
-      "Corsair blade",
       "Close combat weapon"
      ]
     },
@@ -2017,8 +2044,6 @@
      "model": "",
      "grants": [
       "Flamer",
-      "Shuriken pistol",
-      "Corsair blade",
       "Close combat weapon"
      ]
     },
@@ -2036,8 +2061,6 @@
      "model": "",
      "grants": [
       "Fusion gun",
-      "Shuriken pistol",
-      "Corsair blade",
       "Close combat weapon"
      ]
     },
@@ -2055,8 +2078,6 @@
      "model": "",
      "grants": [
       "Shredder",
-      "Shuriken pistol",
-      "Corsair blade",
       "Close combat weapon"
      ]
     },
@@ -2281,6 +2302,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Power sword",
+    "Shuriken pistol"
+   ],
    "weapon_options": [
     {
      "text": "Neuro disruptor (instead of shuriken pistol)",
@@ -2334,9 +2360,7 @@
      "base": "shuriken pistol and power sword",
      "model": "",
      "grants": [
-      "Power sword",
-      "Shuriken rifle",
-      "Shuriken pistol"
+      "Shuriken rifle"
      ]
     },
     {
@@ -2351,8 +2375,6 @@
      "group": "000004168-3",
      "model": "",
      "grants": [
-      "Power sword",
-      "Shuriken rifle",
       "Blaster"
      ]
     },
@@ -2368,9 +2390,7 @@
      "group": "000004168-3",
      "model": "",
      "grants": [
-      "Power sword",
-      "Shredder",
-      "Shuriken rifle"
+      "Shredder"
      ]
     },
     {
@@ -2685,6 +2705,14 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Executioner",
+    "Paired Hekatarii blades",
+    "Power sword",
+    "Shuriken pistol",
+    "Witch staff"
+   ],
    "weapon_options": [
     {
      "text": "Any number of Corsair Voidscarred can each have their shuriken pistol and power sword replaced with 1 shuriken rifle.",
@@ -2696,9 +2724,7 @@
      "base": "shuriken pistol and power sword",
      "model": "",
      "grants": [
-      "Power sword",
-      "Shuriken rifle",
-      "Shuriken pistol"
+      "Shuriken rifle"
      ]
     },
     {
@@ -3053,6 +3079,15 @@
    "model_min": 4,
    "model_max": 4,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Eyeburst",
+    "Shaimeshi blade",
+    "Shardcarbine",
+    "Splinter pistol",
+    "Sslyth battle-blade",
+    "Ur-ghul talons"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -3208,6 +3243,10 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Spirit syphon",
+    "Spirit-leech tentacles"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each be equipped with 1 spirit vortex.",
@@ -3356,6 +3395,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Jester’s blade",
+    "Shrieker cannon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3486,6 +3529,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3628,6 +3672,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Monstrous weapons",
+    "Paired monstrous weapons"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each replace their paired monstrous weapons with 1 monstrous weapon and 1 liquifier gun.",
@@ -3779,6 +3827,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Haemonculus tools and scissorhands",
+    "Stinger pistol"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -4052,6 +4104,10 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Splinter rifle"
+   ],
    "weapon_options": [
     {
      "text": "The Kabalite Archsybarite’s close combat weapon can be replaced with 1 power weapon.",
@@ -4435,6 +4491,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Hellglaive",
+    "Splinter pods"
+   ],
    "weapon_options": [
     {
      "text": "The Helliarch can be equipped with 1 phantasm grenade launcher.",
@@ -4490,8 +4550,7 @@
      "base": "hellglaive cannot be",
      "model": "",
      "grants": [
-      "Splinter pistol",
-      "Hellglaive"
+      "Splinter pistol"
      ]
     }
    ],
@@ -4660,6 +4719,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Klaive"
+   ],
    "weapon_options": [
     {
      "text": "The Klaivex’s klaive can be replaced with 1 demiklaives.",
@@ -4893,6 +4955,10 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Splinter rifle"
+   ],
    "weapon_options": [
     {
      "text": "The Sybarite’s close combat weapon can be replaced with 1 power weapon.",
@@ -5159,6 +5225,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Dread of the Deep Void",
+    "Waystave"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -5318,6 +5388,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lady’s Blade",
+    "Razor fan"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5444,6 +5518,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lelith’s blades"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5596,6 +5673,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Baleblast",
+    "Glimmersteel blade"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5745,6 +5826,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Eye of Wrath",
+    "Shuriken pistol",
+    "Spear of Twilight"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -5923,6 +6009,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bladevanes and chainsnares",
+    "Dark lance"
+   ],
    "weapon_options": [
     {
      "text": "This model’s dark lance can be replaced with 1 disintegrator cannon.",
@@ -6081,6 +6171,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bladevanes",
+    "Dark lance"
+   ],
    "weapon_options": [
     {
      "text": "Any number of this model’s dark lances can each be replaced with 1 disintegrator cannon.",
@@ -6093,7 +6187,6 @@
      "base": "dark lances can each be",
      "model": "",
      "grants": [
-      "Dark lance",
       "Disintegrator cannon"
      ]
     },
@@ -6245,6 +6338,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bladed wings",
+    "Dark lance",
+    "Splinterstorm cannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -6448,6 +6546,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bladed wings",
+    "Dark Lance",
+    "Twin splinter rifle"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 dark lances can be replaced with 2 disintegrator cannons.",
@@ -6623,6 +6726,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bladevanes",
+    "Prow blade"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -6818,6 +6925,11 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Bladevanes",
+    "Splinter pistol",
+    "Splinter rifle"
+   ],
    "weapon_options": [
     {
      "text": "Blaster (instead of splinter rifle)",
@@ -7105,6 +7217,11 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shardcarbine",
+    "Splinter cannon"
+   ],
    "weapon_options": [
     {
      "text": "Blast pistol and 1 power weapon (instead of shardcarbine)",
@@ -7395,6 +7512,10 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shardcarbine"
+   ],
    "weapon_options": [
     {
      "text": "Blast pistol and 1 power weapon (instead of shardcarbine)",
@@ -7620,6 +7741,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Miststave",
+    "Shuriken pistol"
+   ],
    "weapon_options": [
     {
      "text": "This model’s shuriken pistol can be replaced with 1 neuro disruptor.",
@@ -7790,6 +7915,11 @@
    "model_min": 2,
    "model_max": 4,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shuriken cannon",
+    "Star bolas"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their shuriken cannon replaced with 1 Skyweaver haywire cannon.",
@@ -7953,6 +8083,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Solitaire weapons"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8093,6 +8226,11 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Disintegrator cannon",
+    "Starfang grenade launcher",
+    "Wraithbone hull"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8230,6 +8368,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shuriken cannon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8348,6 +8490,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Archite glaive and agoniser"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8581,6 +8726,10 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Macro-scalpel",
+    "Twin splinter cannon"
+   ],
    "weapon_options": [
     {
      "text": "Stinger pod",
@@ -8810,6 +8959,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Dire scythe blades",
+    "Pulse disintegrators"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -9012,6 +9165,10 @@
    "model_min": 5,
    "model_max": 12,
    "countable": true,
+   "stock_weapons": [
+    "Harlequin’s blade",
+    "Shuriken pistol"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their Harlequin’s blade replaced with 1 Harlequin’s special weapon.",
@@ -9248,6 +9405,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Shuriken pistol",
+    "Troupe Master’s blade"
+   ],
    "weapon_options": [
     {
      "text": "Fusion pistol (instead of shuriken pistol)",
@@ -9438,6 +9599,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Casket of Flensing",
+    "Haemonculus tools and scissorhands"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -9598,6 +9763,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bladevanes",
+    "Splinter cannon",
+    "Twin splinter rifle"
+   ],
    "weapon_options": [
     {
      "text": "This model’s twin splinter rifle can be replaced with 1 splinter cannon.",
@@ -9771,6 +9941,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bladed wings",
+    "Void lance"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 Voidraven missiles.",
@@ -9955,6 +10129,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shuriken cannon",
+    "Voidweaver haywire cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Voidweaver haywire cannon can be replaced with 1 prismatic cannon.",
@@ -10154,6 +10333,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Torturer’s tools",
+    "Twin torturer’s tools"
+   ],
    "weapon_options": [
     {
      "text": "For every 5 models in this unit:<ul style=\"list-style-type:circle\"><li>1 model’s twin torturer’s tools can be replaced with 1 hexrifle and 1 torturer’s tool</li><li>1 model’s twin torturer’s tools can be replaced with 1 liquifier gun and 1 torturer’s tool</li><li>1 model’s twin torturer’s tools can be replaced with 1 ossefactor and 1 torturer’s tool</li><li>1 model’s twin torturer’s tools can be replaced with 1 stinger pistol and 1 torturer’s tool</li></ul>",
@@ -10169,8 +10352,7 @@
       "Hexrifle",
       "Liquifier gun",
       "Ossefactor",
-      "Stinger pistol",
-      "Torturer’s tools"
+      "Stinger pistol"
      ]
     },
     {
@@ -10184,8 +10366,7 @@
      "base": "twin torturer’s tools",
      "model": "",
      "grants": [
-      "Power weapon",
-      "Torturer’s tools"
+      "Power weapon"
      ]
     },
     {
@@ -10350,6 +10531,10 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Hekatarii blade",
+    "Splinter pistol"
+   ],
    "weapon_options": [
     {
      "text": "The Hekatrix’s splinter pistol can be replaced with 1 blast pistol.",
@@ -10390,9 +10575,7 @@
      "base": "splinter pistol and hekatarii blade",
      "model": "",
      "grants": [
-      "Splinter pistol",
-      "Gladiatorial weapons",
-      "Hekatarii blade"
+      "Gladiatorial weapons"
      ]
     }
    ],

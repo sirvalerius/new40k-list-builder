@@ -177,6 +177,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Nemesis force weapon",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "Incinerator (instead of storm bolter)",
@@ -361,6 +365,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Nemesis force sword",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -508,6 +516,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Nemesis force weapon",
+    "Storm bolter"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -643,6 +655,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Crozius arcanum",
+    "Storm bolter"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -810,6 +826,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Nemesis force weapon",
+    "Vortex of Doom"
+   ],
    "weapon_options": [
     {
      "text": "Combi-weapon",
@@ -1009,6 +1029,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Forge bolter",
+    "Grav-pistol",
+    "Omnissian power axe"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -1228,6 +1253,10 @@
    "model_min": 4,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Nemesis force weapon",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "Incinerator (instead of storm bolter)",
@@ -1497,6 +1526,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Black Blade of Antwyr",
+    "Purifying Flame",
+    "Storm bolter"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -1668,6 +1702,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Nemesis force weapon",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "Incinerator (instead of storm bolter)",
@@ -1948,6 +1986,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Dreadfists"
+   ],
    "weapon_options": [
     {
      "text": "Nemesis daemon greathammer (instead of dreadfists)",
@@ -2215,6 +2256,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Malleus Argyrum",
+    "Searing Purity",
+    "Storm bolter"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2462,6 +2508,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Assault cannon",
+    "Dreadnought combat weapon",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "Heavy plasma cannon (instead of assault cannon)",
@@ -2518,10 +2569,7 @@
      "group": "000000390-1",
      "model": "",
      "grants": [
-      "Assault cannon",
       "Heavy psycannon",
-      "Storm bolter",
-      "Dreadnought combat weapon",
       "Nemesis doomglaive"
      ]
     },
@@ -2537,11 +2585,8 @@
      "group": "000000390-1",
      "model": "",
      "grants": [
-      "Assault cannon",
       "Heavy psycannon",
       "Incinerator",
-      "Storm bolter",
-      "Dreadnought combat weapon",
       "Nemesis doomglaive"
      ]
     },
@@ -2557,9 +2602,7 @@
      "group": "000000390-2",
      "model": "",
      "grants": [
-      "Storm bolter",
-      "Armoured feet",
-      "Dreadnought combat weapon"
+      "Armoured feet"
      ]
     },
     {
@@ -2574,9 +2617,7 @@
      "group": "000000390-2",
      "model": "",
      "grants": [
-      "Heavy flamer",
-      "Storm bolter",
-      "Dreadnought combat weapon"
+      "Heavy flamer"
      ]
     }
    ],
@@ -2760,6 +2801,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -3022,6 +3067,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Lascannon",
+    "Thunderhawk heavy cannon",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Thunderhawk cluster bombs can be replaced with 1 hellstrike missile battery.",
@@ -3233,6 +3284,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Nemesis force weapon",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "Incinerator and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
@@ -3247,9 +3302,7 @@
      "model": "",
      "grants": [
       "Incinerator",
-      "Storm bolter",
-      "Close combat weapon",
-      "Nemesis force weapon"
+      "Close combat weapon"
      ]
     },
     {
@@ -3265,9 +3318,7 @@
      "model": "",
      "grants": [
       "Psilencer",
-      "Storm bolter",
-      "Close combat weapon",
-      "Nemesis force weapon"
+      "Close combat weapon"
      ]
     },
     {
@@ -3283,9 +3334,7 @@
      "model": "",
      "grants": [
       "Psycannon",
-      "Storm bolter",
-      "Close combat weapon",
-      "Nemesis force weapon"
+      "Close combat weapon"
      ]
     }
    ],
@@ -3444,6 +3493,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Scourging",
+    "Storm bolter",
+    "The Titansword"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -3622,6 +3676,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Godhammer lascannon",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -3833,6 +3892,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Hurricane bolter",
+    "Twin assault cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -4044,6 +4108,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Flamestorm cannon",
+    "Twin assault cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -4269,6 +4338,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Dreadfists"
+   ],
    "weapon_options": [
     {
      "text": "Nemesis daemon greathammer (instead of dreadfists)",
@@ -4561,6 +4633,10 @@
    "model_min": 4,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Nemesis force weapon",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "Incinerator (instead of storm bolter)",
@@ -4872,6 +4948,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Nemesis force weapon",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "Incinerator and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
@@ -4886,9 +4966,7 @@
      "model": "",
      "grants": [
       "Incinerator",
-      "Storm bolter",
-      "Close combat weapon",
-      "Nemesis force weapon"
+      "Close combat weapon"
      ]
     },
     {
@@ -4904,9 +4982,7 @@
      "model": "",
      "grants": [
       "Psilencer",
-      "Storm bolter",
-      "Close combat weapon",
-      "Nemesis force weapon"
+      "Close combat weapon"
      ]
     },
     {
@@ -4922,9 +4998,7 @@
      "model": "",
      "grants": [
       "Psycannon",
-      "Storm bolter",
-      "Close combat weapon",
-      "Nemesis force weapon"
+      "Close combat weapon"
      ]
     }
    ],
@@ -5119,6 +5193,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Nemesis force weapon",
+    "Purifying Flame",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "Incinerator and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
@@ -5134,9 +5213,7 @@
      "model": "",
      "grants": [
       "Incinerator",
-      "Storm bolter",
-      "Close combat weapon",
-      "Nemesis force weapon"
+      "Close combat weapon"
      ]
     },
     {
@@ -5153,9 +5230,7 @@
      "model": "",
      "grants": [
       "Psilencer",
-      "Storm bolter",
-      "Close combat weapon",
-      "Nemesis force weapon"
+      "Close combat weapon"
      ]
     },
     {
@@ -5172,9 +5247,7 @@
      "model": "",
      "grants": [
       "Psycannon",
-      "Storm bolter",
-      "Close combat weapon",
-      "Nemesis force weapon"
+      "Close combat weapon"
      ]
     }
    ],
@@ -5325,6 +5398,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -5499,6 +5576,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -5682,6 +5763,9 @@
    "model_min": 4,
    "model_max": 4,
    "countable": false,
+   "stock_weapons": [
+    "Servitor’s servo-arm"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolter and 1 Servitor’s tools (instead of servitor’s servo-arm)",
@@ -5910,6 +5994,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Las-talon",
+    "Skyhammer missile launcher",
+    "Twin assault cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s las-talon can be replaced with 1 icarus stormcannon.",
@@ -6175,6 +6265,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Stormstrike missile launcher",
+    "Twin assault cannon"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 2 hurricane bolters.",
@@ -6415,6 +6510,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Skyhammer missile launcher",
+    "Twin assault cannon"
+   ],
    "weapon_options": [
     {
      "text": "Twin heavy bolter (instead of skyhammer missile launcher)",
@@ -6631,6 +6731,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Nemesis force weapon",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "Incinerator and 1 close combat weapon (instead of storm bolter and nemesis force weapon)",
@@ -6645,9 +6749,7 @@
      "model": "",
      "grants": [
       "Incinerator",
-      "Storm bolter",
-      "Close combat weapon",
-      "Nemesis force weapon"
+      "Close combat weapon"
      ]
     },
     {
@@ -6663,9 +6765,7 @@
      "model": "",
      "grants": [
       "Psilencer",
-      "Storm bolter",
-      "Close combat weapon",
-      "Nemesis force weapon"
+      "Close combat weapon"
      ]
     },
     {
@@ -6681,9 +6781,7 @@
      "model": "",
      "grants": [
       "Psycannon",
-      "Storm bolter",
-      "Close combat weapon",
-      "Nemesis force weapon"
+      "Close combat weapon"
      ]
     }
    ],
@@ -6870,6 +6968,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Assault cannon",
+    "Dreadnought combat weapon",
+    "Storm bolter"
+   ],
    "weapon_options": [
     {
      "text": "Heavy plasma cannon (instead of assault cannon)",

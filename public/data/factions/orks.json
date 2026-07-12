@@ -133,6 +133,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Twin big shoota"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 wing missiles.",
@@ -362,6 +366,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Tracks and wheels"
+   ],
    "weapon_options": [
     {
      "text": "Kannon",
@@ -657,6 +664,11 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Choppa",
+    "Power snappa",
+    "Slugga"
+   ],
    "weapon_options": [
     {
      "text": "For every 10 models in this unit, 1 Beast Snagga Boy’s slugga and choppa can be replaced with 1 thump gun and 1 close combat weapon.",
@@ -669,9 +681,7 @@
      "base": "slugga and choppa",
      "model": "",
      "grants": [
-      "Slugga",
       "Thump gun",
-      "Choppa",
       "Close combat weapon"
      ]
     }
@@ -815,6 +825,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Beast Snagga klaw",
+    "Beastchoppa",
+    "Shoota"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -968,6 +983,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Beastchoppa",
+    "Slugga",
+    "Squigosaur’s jaws"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 thump gun.",
@@ -1135,6 +1155,9 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapons"
+   ],
    "weapon_options": [
     {
      "text": "Lobba (instead of kannon)",
@@ -1337,6 +1360,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Power klaw"
+   ],
    "weapon_options": [
     {
      "text": "This model’s kustom mega-blasta can be replaced with 1 traktor blasta.",
@@ -1549,6 +1575,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Power klaw"
+   ],
    "weapon_options": [
     {
      "text": "Killsaw (instead of kustom-mega blasta)",
@@ -1878,6 +1907,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Choppa",
+    "Close combat weapon",
+    "Slugga",
+    "Twin dakkagun"
+   ],
    "weapon_options": [
     {
      "text": "Shokk attack gun (instead of slugga)",
@@ -2261,6 +2296,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Choppa",
+    "Slugga"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 grot helper.",
@@ -2438,6 +2477,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Shokk attack gun"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 grot assistant.",
@@ -2611,6 +2654,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Big shoota"
+   ],
    "weapon_options": [
     {
      "text": "Kannon",
@@ -2778,6 +2825,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Big shoota"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with up to 3 additional big shootas.",
@@ -2914,6 +2964,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Big shoota",
+    "Twin supa-shoota"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3045,6 +3100,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Big shoota",
+    "Grot blasta",
+    "Mek speshul",
+    "Spiked wheels"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3187,6 +3248,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Mork’s Teeth",
+    "Slugga"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3325,6 +3390,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Da Vulcha’s Klaws and choppa",
+    "Slugga"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -3550,6 +3619,11 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Big choppa",
+    "Choppa",
+    "Slugga"
+   ],
    "weapon_options": [
     {
      "text": "The Boss Nob’s big choppa can be replaced with 1 power klaw.",
@@ -3562,7 +3636,6 @@
      "base": "big choppa",
      "model": "",
      "grants": [
-      "Choppa",
       "Power klaw"
      ]
     },
@@ -3578,9 +3651,6 @@
      "model": "",
      "grants": [
       "Kombi-weapon",
-      "Slugga",
-      "Big choppa",
-      "Choppa",
       "Close combat weapon"
      ]
     },
@@ -3595,8 +3665,6 @@
      "model": "",
      "grants": [
       "Shoota",
-      "Slugga",
-      "Choppa",
       "Close combat weapon"
      ]
     },
@@ -3614,8 +3682,6 @@
      "grants": [
       "Big shoota",
       "Shoota",
-      "Slugga",
-      "Choppa",
       "Close combat weapon"
      ]
     },
@@ -3632,8 +3698,6 @@
      "model": "",
      "grants": [
       "Rokkit launcha",
-      "Slugga",
-      "Choppa",
       "Close combat weapon"
      ]
     }
@@ -3797,6 +3861,11 @@
    "model_min": 6,
    "model_max": 6,
    "countable": false,
+   "stock_weapons": [
+    "Choppa",
+    "Rokkit pistol",
+    "Smash hammer"
+   ],
    "weapon_options": [
     {
      "text": "The Boss Nob’s smash hammer can be replaced with 1 rokkit pistol.",
@@ -3996,6 +4065,12 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Big shoota",
+    "Burna",
+    "Close combat weapon",
+    "Cuttin’ flames"
+   ],
    "weapon_options": [
     {
      "text": "Kustom mega-blasta (instead of big shoota)",
@@ -4159,6 +4234,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Twin big shoota",
+    "Twin supa-shoota"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 skorcha missile rack.",
@@ -4361,6 +4441,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Big shoota",
+    "Deffgun"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with up to 2 big bomms.",
@@ -4559,6 +4644,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Icon of da Revolushun",
+    "Kustom grot blasta"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -4694,6 +4783,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Tinboy's kustom shoota",
+    "Tinboy’s klaw"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -4806,6 +4899,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Twin supa-shoota"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 additional twin supa-shoota.",
@@ -4990,6 +5087,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Big shoota",
+    "Dread klaw",
+    "Stompy feet"
+   ],
    "weapon_options": [
     {
      "text": "Dread klaw (instead of big shootas can each be)",
@@ -5003,7 +5105,6 @@
      "group": "000000040-0",
      "model": "",
      "grants": [
-      "Big shoota",
       "Dread klaw"
      ]
     },
@@ -5019,7 +5120,6 @@
      "group": "000000040-0",
      "model": "",
      "grants": [
-      "Big shoota",
       "Kustom mega-blasta"
      ]
     },
@@ -5035,7 +5135,6 @@
      "group": "000000040-0",
      "model": "",
      "grants": [
-      "Big shoota",
       "Rokkit launcha"
      ]
     },
@@ -5051,7 +5150,6 @@
      "group": "000000040-0",
      "model": "",
      "grants": [
-      "Big shoota",
       "Skorcha"
      ]
     },
@@ -5067,8 +5165,7 @@
      "group": "000000040-1",
      "model": "",
      "grants": [
-      "Big shoota",
-      "Dread klaw"
+      "Big shoota"
      ]
     },
     {
@@ -5083,8 +5180,7 @@
      "group": "000000040-1",
      "model": "",
      "grants": [
-      "Kustom mega-blasta",
-      "Dread klaw"
+      "Kustom mega-blasta"
      ]
     },
     {
@@ -5099,8 +5195,7 @@
      "group": "000000040-1",
      "model": "",
      "grants": [
-      "Rokkit launcha",
-      "Dread klaw"
+      "Rokkit launcha"
      ]
     },
     {
@@ -5115,8 +5210,7 @@
      "group": "000000040-1",
      "model": "",
      "grants": [
-      "Skorcha",
-      "Dread klaw"
+      "Skorcha"
      ]
     }
    ],
@@ -5316,6 +5410,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Big shoota",
+    "Deff rolla",
+    "Twin big shoota",
+    "Zzap gun"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with up to 5 big shootas.",
@@ -5401,7 +5501,6 @@
      "group": "000001388-3",
      "model": "",
      "grants": [
-      "Big shoota",
       "Skorcha"
      ]
     },
@@ -5417,7 +5516,6 @@
      "group": "000001388-3",
      "model": "",
      "grants": [
-      "Big shoota",
       "Rokkit launcha"
      ]
     }
@@ -5572,6 +5670,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Snagga klaw"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5714,6 +5815,11 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Kopta rokkits",
+    "Slugga",
+    "Spinnin’ blades"
+   ],
    "weapon_options": [
     {
      "text": "For every 3 models in this unit, 1 Deffkopta can have its kopta rokkits replaced with 1 kustom mega-blasta.",
@@ -5885,6 +5991,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Slugga",
+    "Spinnin’ blades",
+    "Twin big shoota"
+   ],
    "weapon_options": [
     {
      "text": "Kopta rockets (instead of twin big shoota)",
@@ -6071,6 +6182,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Twin big shoota"
+   ],
    "weapon_options": [
     {
      "text": "Grot-guided bomms",
@@ -6250,6 +6365,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Choppa",
+    "Snazzgun"
+   ],
    "weapon_options": [
     {
      "text": "This unit can be equipped with 1 ammo runt.",
@@ -6428,6 +6547,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "Kannon",
@@ -6636,6 +6756,10 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Makari’s stabba",
+    "Mork’s Roar"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6805,6 +6929,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Deffstorm mega-shoota",
+    "Rokkit launcha",
+    "Skorcha",
+    "Twin big shoota"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6957,6 +7087,12 @@
    "model_min": 11,
    "model_max": 22,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Grot blasta",
+    "Runtherd tools",
+    "Slugga"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -7068,6 +7204,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Grot-guided bomms",
+    "Spiked wheel"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -7246,6 +7386,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Mega-tank weapons",
+    "Twin big shoota",
+    "Twin grotzooka"
+   ],
    "weapon_options": [
     {
      "text": "Twin grotzooka (instead of twin big shoota)",
@@ -7530,6 +7676,10 @@
    "model_min": 4,
    "model_max": 8,
    "countable": true,
+   "stock_weapons": [
+    "Grot tank shoota",
+    "Ramshackle hull"
+   ],
    "weapon_options": [
     {
      "text": "Grotzooka (instead of big shoota)",
@@ -7817,6 +7967,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Butcha boyz",
+    "Savage horns and hooves",
+    "Saw blades",
+    "Stikka kannon",
+    "’Eavy lobba"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -7955,6 +8112,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Spiked ram"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with up to 3 big shootas.",
@@ -8116,6 +8276,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Choppa",
+    "Slugga"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8290,6 +8454,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Tracks and wheels"
+   ],
    "weapon_options": [
     {
      "text": "Twin big shoota",
@@ -8547,6 +8714,14 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Butcha boyz",
+    "Savage horns and hooves",
+    "Saw blades",
+    "Stikka kannon",
+    "Wurrtower",
+    "’Eavy lobba"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8691,6 +8866,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bursta kannon",
+    "Reinforced ram",
+    "Skorcha",
+    "Twin big shoota"
+   ],
    "weapon_options": [
     {
      "text": "This model’s bursta kannon can be replaced with 1 giga shoota.",
@@ -8874,6 +9055,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Kan klaw",
+    "Kan shoota"
+   ],
    "weapon_options": [
     {
      "text": "Grotzooka (instead of kan shoota)",
@@ -9148,6 +9333,10 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Choppa",
+    "Slugga"
+   ],
    "weapon_options": [
     {
      "text": "Big choppa (instead of choppa)",
@@ -9191,8 +9380,6 @@
      "model": "",
      "grants": [
       "Speshul Kommando shoota",
-      "Slugga",
-      "Choppa",
       "Close combat weapon"
      ]
     },
@@ -9207,9 +9394,7 @@
      "base": "slugga and choppa",
      "model": "",
      "grants": [
-      "Slugga",
-      "Breacha ram",
-      "Choppa"
+      "Breacha ram"
      ]
     },
     {
@@ -9224,8 +9409,6 @@
      "model": "",
      "grants": [
       "Burna",
-      "Slugga",
-      "Choppa",
       "Close combat weapon"
      ]
     },
@@ -9241,8 +9424,6 @@
      "model": "",
      "grants": [
       "Rokkit launcha",
-      "Slugga",
-      "Choppa",
       "Close combat weapon"
      ]
     },
@@ -9401,6 +9582,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Burna exhausts",
+    "Grot blasta",
+    "Rivet kannon",
+    "Spiked ram"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -9568,6 +9755,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lifta-droppa",
+    "Tracks and wheels"
+   ],
    "weapon_options": [
     {
      "text": "This model’s tracks and wheels can be replaced with 1 deff rolla.",
@@ -9848,6 +10039,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Big shoota",
+    "Close combat weapon",
+    "Deffgun"
+   ],
    "weapon_options": [
     {
      "text": "Kustom mega-blasta (instead of big shoota)",
@@ -10044,6 +10240,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Power klaw",
+    "Slugga",
+    "’Urty syringe"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10206,6 +10407,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Boombits",
+    "Dread rippa klaw",
+    "Killkannon",
+    "Stompy feet"
+   ],
    "weapon_options": [
     {
      "text": "Dread killsaw (instead of killkannon)",
@@ -10461,6 +10668,10 @@
    "model_min": 2,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Kustom shoota",
+    "Power klaw"
+   ],
    "weapon_options": [
     {
      "text": "Kombi-weapon and 1 power klaw (instead of kustom shoota and power klaw)",
@@ -10473,9 +10684,7 @@
      "group": "000000024-0",
      "model": "",
      "grants": [
-      "Kombi-weapon",
-      "Kustom shoota",
-      "Power klaw"
+      "Kombi-weapon"
      ]
     },
     {
@@ -10490,9 +10699,7 @@
      "model": "",
      "grants": [
       "Kombi-weapon",
-      "Kustom shoota",
-      "Killsaw",
-      "Power klaw"
+      "Killsaw"
      ]
     },
     {
@@ -10506,9 +10713,7 @@
      "group": "000000024-0",
      "model": "",
      "grants": [
-      "Kustom shoota",
-      "Killsaw",
-      "Power klaw"
+      "Killsaw"
      ]
     },
     {
@@ -10522,9 +10727,7 @@
      "group": "000000024-0",
      "model": "",
      "grants": [
-      "Kustom shoota",
-      "Killsaw",
-      "Power klaw"
+      "Killsaw"
      ]
     },
     {
@@ -10538,9 +10741,7 @@
      "group": "000000024-0",
      "model": "",
      "grants": [
-      "Kustom shoota",
       "Killsaw",
-      "Power klaw",
       "Twin killsaw"
      ]
     }
@@ -10674,6 +10875,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Nose drill",
+    "Rokkit kannon",
+    "Twin big shoota",
+    "Wing missiles"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -10833,6 +11040,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Kustom mega-slugga",
+    "Wrench"
+   ],
    "weapon_options": [
     {
      "text": "This model’s wrench can be replaced with 1 killsaw.",
@@ -11053,6 +11264,10 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Grot crew",
+    "Smasha gun"
+   ],
    "weapon_options": [
     {
      "text": "Bubblechukka (instead of smasha gun)",
@@ -11233,6 +11448,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Dread rippa klaw",
+    "Killkannon",
+    "Stompy feet"
+   ],
    "weapon_options": [
     {
      "text": "Dread killsaw (instead of killkannon)",
@@ -11405,6 +11625,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "None",
@@ -11586,6 +11807,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Kustom mega-blasta",
+    "Kustom mega-zappa",
+    "Rokkit launcha",
+    "Twin big shoota"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -11727,6 +11954,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Big Chompa’s jaws",
+    "Gutrippa",
+    "Thump gun"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -11860,6 +12092,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Kustom shoota",
+    "Waaagh! banner"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -12042,6 +12278,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Big choppa",
+    "Slugga"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their big choppa replaced with 1 power klaw.",
@@ -12067,8 +12307,6 @@
      "model": "",
      "grants": [
       "Kombi-weapon",
-      "Slugga",
-      "Big choppa",
       "Close combat weapon"
      ]
     },
@@ -12262,6 +12500,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Choppa",
+    "Close combat weapon",
+    "Twin dakkagun"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each be equipped with 1 slugga.",
@@ -12471,6 +12714,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Beast Snagga klaw"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 grot orderly.",
@@ -12638,6 +12884,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Power klaw",
+    "’Urty syringe"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 grot orderly.",
@@ -12797,6 +13047,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Power klaw",
+    "Twin dakkagun",
+    "’Urty syringe"
+   ],
    "weapon_options": [
     {
      "text": "This model’s power klaw can be replaced with 1 killsaw.",
@@ -12937,6 +13192,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Saw blades",
+    "Sawn-off shotgun",
+    "Squig launchas"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -13056,6 +13316,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Kustom shokk rifle",
+    "Rokkit launcha",
+    "Saw blades"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -13174,6 +13439,10 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Skorcha",
+    "Spiked wheel"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -13324,6 +13593,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 kannon.",
@@ -13519,6 +13789,13 @@
    "model_min": 4,
    "model_max": 8,
    "countable": true,
+   "stock_weapons": [
+    "Big Choppa",
+    "Saddlegit weapons",
+    "Slugga",
+    "Squig jaws",
+    "Stikka"
+   ],
    "weapon_options": [
     {
      "text": "For every 3 models in this unit, this unit can be equipped with 1 bomb squig.",
@@ -13723,6 +14000,14 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Big shoota",
+    "Deffkannon",
+    "Skorcha",
+    "Supa-gatler",
+    "Supa-rokkits",
+    "Twin big shoota"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -13867,6 +14152,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Choppa",
+    "Slugga"
+   ],
    "weapon_options": [
     {
      "text": "The Boss Nob’s choppa can be replaced with 1 power klaw.",
@@ -14047,6 +14336,12 @@
    "model_min": 6,
    "model_max": 6,
    "countable": false,
+   "stock_weapons": [
+    "Choppa",
+    "Close combat weapon",
+    "Rokkit launcha",
+    "Rokkit pistol"
+   ],
    "weapon_options": [
     {
      "text": "1 of the Boss Nob’s rokkit pistols can be replaced with 1 smash hammer.",
@@ -14218,6 +14513,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Big shoota",
+    "Spiked wheels"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 wreckin’ ball.",
@@ -14380,6 +14679,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Princess’ jaws",
+    "Shokk rifle",
+    "Snazzhammer"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -14563,6 +14867,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Twin dakkagun"
+   ],
    "weapon_options": [
     {
      "text": "Slugga",
@@ -14806,6 +15114,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Big choppa",
+    "Kombi-weapon",
+    "Twin slugga"
+   ],
    "weapon_options": [
     {
      "text": "This model’s big choppa can be replaced with 1 power klaw.",
@@ -14958,6 +15271,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Big shoota",
+    "’Uge choppa"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -15110,6 +15427,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Killsaw",
+    "Twin dakkagun"
+   ],
    "weapon_options": [
     {
      "text": "Big choppa (instead of killsaw)",
@@ -15270,6 +15591,10 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Spiked wheels",
+    "Twin big shoota"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their twin big shoota replaced with 1 rack of rokkits.",
@@ -15413,6 +15738,10 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Spiked wheel",
+    "Twin big shoota"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their twin big shoota replaced with 1 rack of rokkits.",
@@ -15581,6 +15910,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Smasha gun",
+    "Twin wazbom mega-kannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s twin wazbom mega-kannon can be replaced with 1 twin tellyport mega-blasta.",
@@ -15809,6 +16143,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Fixit’s wrench",
+    "Grabba dragga",
+    "Psyko-gatler",
+    "Speeding bulk and flaming exhaust"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -15942,6 +16282,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Weirdboy staff",
+    "’Eadbanger"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -16077,6 +16421,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Eyez of Mork"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -16205,6 +16553,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Da Grabzappa",
+    "Slugga"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""

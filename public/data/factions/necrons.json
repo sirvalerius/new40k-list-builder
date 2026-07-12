@@ -136,6 +136,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured bulk",
+    "Gauss cannon",
+    "Twin tesla destructor"
+   ],
    "weapon_options": [
     {
      "text": "This model’s gauss cannon can be replaced with 1 tesla cannon.",
@@ -282,6 +287,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Tachyon arrow",
+    "Warscythe"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -413,6 +422,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Cutting beam",
+    "Voidblade"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -545,6 +558,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Doomsday blaster",
+    "Doomstalker limbs",
+    "Twin gauss flayer"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -692,6 +710,10 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Claws",
+    "Gauss scalpel"
+   ],
    "weapon_options": [
     {
      "text": "All models in this unit can each have their gauss scalpel replaced with 1 tesla caster.",
@@ -717,9 +739,7 @@
      "base": "gauss scalpel or tesla caster",
      "model": "",
      "grants": [
-      "Atomiser beam",
-      "Gauss scalpel",
-      "Tesla caster"
+      "Atomiser beam"
      ]
     },
     {
@@ -732,10 +752,7 @@
      },
      "base": "gauss scalpel or tesla caster",
      "model": "",
-     "grants": [
-      "Gauss scalpel",
-      "Tesla caster"
-     ]
+     "grants": []
     }
    ],
    "chapter": "",
@@ -846,6 +863,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Atomiser beam",
+    "Reanimator’s claws"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -952,6 +973,9 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Feeder mandibles"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -1085,6 +1109,9 @@
    "model_min": 1,
    "model_max": 2,
    "countable": true,
+   "stock_weapons": [
+    "Automaton claws"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each be equipped with 2 particle beamers.",
@@ -1242,6 +1269,10 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Claws",
+    "Twin gauss reaper"
+   ],
    "weapon_options": [
     {
      "text": "1 model’s twin gauss reaper can be replaced with 1 transdimensional isolator.",
@@ -1373,6 +1404,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Exile cannon",
+    "Tomb Sentinel claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -1501,6 +1536,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Gauss slicers",
+    "Tomb Stalker claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -1665,6 +1704,9 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Vicious claws"
+   ],
    "weapon_options": [
     {
      "text": "Particle caster",
@@ -1865,6 +1907,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Gauss cannon",
+    "Staff of light"
+   ],
    "weapon_options": [
     {
      "text": "This model’s gauss cannon can be replaced with 1 tesla cannon.",
@@ -2041,6 +2087,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Aeonstave"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2166,6 +2215,9 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Transdimensional abductor"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2279,6 +2331,10 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Scouring eye",
+    "Scythed limbs"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2419,6 +2475,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Cosmic insanity",
+    "Golden fists"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2564,6 +2624,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Gaze of death"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2731,6 +2794,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Canoptek tail blades",
+    "Spear of the Void Dragon",
+    "Voltaic storm"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2862,6 +2930,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Synaptic disintegrator"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2982,6 +3054,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured bulk",
+    "Heavy death ray",
+    "Twin tesla destructor"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3109,6 +3186,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured bulk",
+    "Doomsday cannon",
+    "Gauss flayer array"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3219,6 +3301,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Flayer claws"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3341,6 +3426,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Gauss annihilator",
+    "Tesla arc"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3490,6 +3579,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Tremorglaive"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3600,6 +3692,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured bulk",
+    "Gauss flayer array"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3721,6 +3817,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Enmitic disintegrator pistols"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3854,6 +3954,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Eldritch lance",
+    "Impaling legs"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -3977,6 +4081,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Gauss blaster"
+   ],
    "weapon_options": [
     {
      "text": "All models in this unit can each have their gauss blaster replaced with 1 tesla carbine.",
@@ -4135,6 +4243,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Gauntlet of Fire",
+    "Staff of the Destroyer"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -4294,6 +4406,10 @@
    "model_min": 1,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Gauss cannon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -4450,6 +4566,10 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Gauss destructor"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their gauss destructor replaced with 1 enmitic exterminator.",
@@ -4618,6 +4738,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Staff of light"
+   ],
    "weapon_options": [
     {
      "text": "This model’s staff of light can be replaced with 1 Lord’s blade.",
@@ -4811,6 +4934,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Staff of light"
+   ],
    "weapon_options": [
     {
      "text": "This model’s staff of light can be replaced with 1 Lord’s blade.",
@@ -4955,6 +5081,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Warscythe"
+   ],
    "weapon_options": [
     {
      "text": "All models in this unit can each have their warscythe replaced with 1 hyperphase sword and 1 dispersion shield.",
@@ -5117,6 +5246,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Gauss flux arc",
+    "Particle whip",
+    "Portal of exile"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 4 gauss flux arcs can be replaced with 4 death rays.",
@@ -5255,6 +5389,10 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Gauss flayer"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their gauss flayer replaced with 1 gauss reaper.",
@@ -5414,6 +5552,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Blade tail and whip coils",
+    "Enmitic disintegrators",
+    "Unmaker Gauntlet"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5547,6 +5690,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Staff of light"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5669,6 +5815,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured bulk",
+    "Twin tesla destructor"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5778,6 +5928,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5902,6 +6053,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured bulk",
+    "Tesla sphere"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6031,6 +6186,9 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Ophydian hyperphase weapons"
+   ],
    "weapon_options": [
     {
      "text": "For every 3 models in this unit, this unit can have 1 Plasmacyte.",
@@ -6162,6 +6320,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Staff of Tomorrow"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6342,6 +6503,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Overlord’s blade",
+    "Tachyon arrow"
+   ],
    "weapon_options": [
     {
      "text": "Staff of light (instead of tachyon arrow and overlord’s blade)",
@@ -6356,8 +6521,6 @@
      "model": "",
      "grants": [
       "Staff of light",
-      "Tachyon arrow",
-      "Overlord’s blade",
       "Staff of light"
      ]
     },
@@ -6373,8 +6536,6 @@
      "group": "000000523-0",
      "model": "",
      "grants": [
-      "Tachyon arrow",
-      "Overlord’s blade",
       "Voidscythe"
      ]
     },
@@ -6520,6 +6681,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Overlord's blade"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6647,6 +6811,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Plasmic lance"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6774,6 +6941,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Abyssal lance"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6900,6 +7070,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Relic gauss blaster"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -7033,6 +7207,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Gauss exterminator"
+   ],
    "weapon_options": [
     {
      "text": "Focused death ray (instead of gauss exterminator)",
@@ -7223,6 +7400,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Singularity generator"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 singularity generators can be replaced with 2 synaptic obliterators and 2 transdimensional projectors.",
@@ -7362,6 +7542,9 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Skorpekh hyperphase weapons"
+   ],
    "weapon_options": [
     {
      "text": "For every 3 models in this unit, this unit can have 1 Plasmacyte.",
@@ -7508,6 +7691,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Enmitic annihilator",
+    "Flensing claw",
+    "Hyperphase harvester"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -7649,6 +7837,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Staff of light"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -7803,6 +7994,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured bulk",
+    "Tesla cannon"
+   ],
    "weapon_options": [
     {
      "text": "Gauss cannons (instead of tesla cannons)",
@@ -7985,6 +8180,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured bulk",
+    "Tesla spheres"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8177,6 +8376,13 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Annihilator beam",
+    "Armoured bulk",
+    "Sceptre of Eternal Glory",
+    "Staff of Stars",
+    "Weapons of the Final Triarch"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8353,6 +8559,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Twin gauss blaster"
+   ],
    "weapon_options": [
     {
      "text": "Particle beamer (instead of twin gauss blaster)",
@@ -8540,6 +8750,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "Gauss exterminator and 1 twin tesla destructor",
@@ -8731,6 +8942,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Crackling tendrils",
+    "Seismic assault"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8853,6 +9068,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Empathic Obliterator"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8994,6 +9212,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Rod of covenant"
+   ],
    "weapon_options": [
     {
      "text": "All models in this unit can each have their rod of covenant replaced with 1 particle caster and 1 voidblade.",
@@ -9167,6 +9388,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Stalker’s forelimbs"
+   ],
    "weapon_options": [
     {
      "text": "Particle shredder (instead of heat ray)",
@@ -9319,6 +9543,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Warscythe"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""

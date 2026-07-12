@@ -175,6 +175,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Soulshatter lascannon",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "Combi-bolter",
@@ -222,8 +227,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004082.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004093",
@@ -365,6 +369,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Combi-bolter"
+   ],
    "weapon_options": [
     {
      "text": "Combi-bolter",
@@ -413,8 +421,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004093.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004090",
@@ -510,10 +517,12 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Hideous mutations"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004090.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004081",
@@ -694,6 +703,10 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Accursed weapon",
+    "Combi-bolter"
+   ],
    "weapon_options": [
     {
      "text": "Heavy flamer (instead of combi-bolter)",
@@ -749,8 +762,6 @@
      "base": "combi-bolter and accursed weapon",
      "model": "",
      "grants": [
-      "Combi-bolter",
-      "Accursed weapon",
       "Paired accursed weapons"
      ]
     },
@@ -784,8 +795,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004081.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004086",
@@ -925,10 +935,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Infernal cannon"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004086.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004087",
@@ -1069,10 +1081,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Infernal cannon"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004087.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004095",
@@ -1193,6 +1207,9 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Slashing claws"
+   ],
    "weapon_options": [
     {
      "text": "1 Daemonette that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
@@ -1220,8 +1237,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "Carnival of Excess",
-   "icon": "icons/emperor-s-children/000004095.png"
+   "requires_detachment": "Carnival of Excess"
   },
   {
    "id": "000004208",
@@ -1459,6 +1475,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "This model’s Hades battle cannon can be replaced with 1 ectoplasma destructor.",
@@ -1580,8 +1597,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004208.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004096",
@@ -1688,10 +1704,12 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Barbed tail and dissecting claws"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "Carnival of Excess",
-   "icon": "icons/emperor-s-children/000004096.png"
+   "requires_detachment": "Carnival of Excess"
   },
   {
    "id": "000004089",
@@ -1801,10 +1819,13 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Blissblade",
+    "Bolt pistol"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004089.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004077",
@@ -1980,10 +2001,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Malefic lash",
+    "Serpentine tail"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004077.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004092",
@@ -2111,6 +2135,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Hades autocannon",
+    "Heldrake claws"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Hades autocannon can be replaced with 1 baleflamer.",
@@ -2128,8 +2156,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004092.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004080",
@@ -2301,6 +2328,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Duelling sabre",
+    "Power sword"
+   ],
    "weapon_options": [
     {
      "text": "The Obsessionist’s bolt pistol can be replaced with 1 plasma pistol.",
@@ -2342,8 +2374,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004080.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004097",
@@ -2526,6 +2557,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Snapping claws",
+    "Witstealer sword"
+   ],
    "weapon_options": [
     {
      "text": "Living whip",
@@ -2572,8 +2607,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "Carnival of Excess",
-   "icon": "icons/emperor-s-children/000004097.png"
+   "requires_detachment": "Carnival of Excess"
   },
   {
    "id": "000004078",
@@ -2794,6 +2828,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Close combat weapon",
+    "Phoenix power spear"
+   ],
    "weapon_options": [
     {
      "text": "Power fist (instead of plasma pistol)",
@@ -2857,8 +2896,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004078.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004084",
@@ -2998,6 +3036,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Power sword",
+    "Screamer pistol"
+   ],
    "weapon_options": [
     {
      "text": "This model’s power sword can be replaced with 1 screamer pistol and 1 close combat weapon.",
@@ -3016,8 +3058,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004084.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004083",
@@ -3151,10 +3192,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Blade of the Laer",
+    "Lash of Torment"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004083.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004091",
@@ -3284,6 +3328,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lasher tendrils",
+    "Maulerfiend fists"
+   ],
    "weapon_options": [
     {
      "text": "This model’s lasher tendrils can be replaced with 2 magma cutters.",
@@ -3301,8 +3349,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004091.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004088",
@@ -3459,6 +3506,10 @@
    "model_min": 6,
    "model_max": 6,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Sonic blaster"
+   ],
    "weapon_options": [
     {
      "text": "The Disharmonist’s sonic blaster can be replaced with 1 screamer pistol and 1 power sword.",
@@ -3491,8 +3542,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004088.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004098",
@@ -3631,6 +3681,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Lashing tongue",
+    "Slashing claws"
+   ],
    "weapon_options": [
     {
      "text": "1 Seeker that is not equipped with a daemonic icon can be equipped with 1 instrument of Chaos.",
@@ -3658,8 +3712,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "Carnival of Excess",
-   "icon": "icons/emperor-s-children/000004098.png"
+   "requires_detachment": "Carnival of Excess"
   },
   {
    "id": "000004094",
@@ -3816,10 +3869,14 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lash of Slaanesh",
+    "Snapping claws",
+    "Soulpiercer"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "Carnival of Excess",
-   "icon": "icons/emperor-s-children/000004094.png"
+   "requires_detachment": "Carnival of Excess"
   },
   {
    "id": "000004085",
@@ -3974,10 +4031,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Force weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004085.png"
+   "requires_detachment": ""
   },
   {
    "id": "000004079",
@@ -4195,6 +4255,12 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Boltgun",
+    "Close combat weapon",
+    "Power sword"
+   ],
    "weapon_options": [
     {
      "text": "The Obsessionist’s bolt pistol can be replaced with 1 plasma pistol.",
@@ -4262,8 +4328,7 @@
     }
    ],
    "chapter": "",
-   "requires_detachment": "",
-   "icon": "icons/emperor-s-children/000004079.png"
+   "requires_detachment": ""
   }
  ],
  "detachments": [

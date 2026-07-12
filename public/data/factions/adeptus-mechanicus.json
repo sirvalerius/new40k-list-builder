@@ -137,6 +137,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Cognis heavy stubber array"
+   ],
    "weapon_options": [
     {
      "text": "This model’s command uplink can be replaced with 1 chaff launcher.",
@@ -303,6 +307,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Cognis heavy stubber",
+    "Heavy phosphor blaster",
+    "Twin cognis lascannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s command uplink can be replaced with 1 chaff launcher.",
@@ -454,6 +464,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Cognis heavy stubber array"
+   ],
    "weapon_options": [
     {
      "text": "This model’s command uplink can be replaced with 1 chaff launcher.",
@@ -631,6 +645,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Arc scourge",
+    "Cawl’s Omnissian axe",
+    "Mechadendrite hive",
+    "Solar atomiser"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -749,6 +769,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Electrostatic gauntlets"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -867,6 +890,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Mechanicus pistol",
+    "Power fist"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -974,6 +1001,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Electroleech stave"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -1128,6 +1158,11 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Close-combat weapon",
+    "Hastarii arc blaster",
+    "Power weapon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -1283,6 +1318,12 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Close-combat weapon",
+    "Hastarii phosphor blaster",
+    "Neutron fusil",
+    "Power weapon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -1465,6 +1506,10 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Ironstrider feet",
+    "Twin cognis autocannon"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their twin cognis autocannon replaced with 1 twin cognis lascannon.",
@@ -1677,6 +1722,11 @@
    "model_min": 2,
    "model_max": 4,
    "countable": true,
+   "stock_weapons": [
+    "Incendine combustor",
+    "Kastelan fist",
+    "Twin Kastelan fist"
+   ],
    "weapon_options": [
     {
      "text": "Kastelan phosphor blaster and 1 Kastelan fist (instead of twin kastelan fist)",
@@ -1689,8 +1739,7 @@
      "group": "000000845-0",
      "model": "",
      "grants": [
-      "Kastelan phosphor blaster",
-      "Kastelan fist"
+      "Kastelan phosphor blaster"
      ]
     },
     {
@@ -1706,8 +1755,7 @@
      "grants": [
       "Kastelan phosphor blaster",
       "Twin Kastelan phosphor blaster",
-      "Close combat weapon",
-      "Kastelan fist"
+      "Close combat weapon"
      ]
     },
     {
@@ -1860,6 +1908,10 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Arc claw",
+    "Heavy arc rifle"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their heavy arc rifle replaced with 1 torsion cannon.",
@@ -2046,6 +2098,11 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Heavy grav-cannon",
+    "Phosphor blaster"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their heavy grav-cannon replaced with 1 Kataphron plasma culverin.",
@@ -2264,6 +2321,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Dunecrawler legs"
+   ],
    "weapon_options": [
     {
      "text": "Daedalus missile launcher and 1 Icarus array (instead of eradication beamer)",
@@ -2498,6 +2558,12 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Flechette blaster",
+    "Flechette carbine",
+    "Taser goad"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2657,6 +2723,12 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Flechette blaster",
+    "Phosphor torch",
+    "Pteraxii talons",
+    "Taser goad"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -2813,6 +2885,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Arc lance"
+   ],
    "weapon_options": [
     {
      "text": "The Hoplite Alpha’s arc lance can be replaced with 1 Archeotech pistol.",
@@ -3035,6 +3110,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "The Peltast Alpha’s arc lance can be replaced with 1 Archeotech pistol.",
@@ -3228,6 +3306,11 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Cavalry sabre and clawed limbs",
+    "Galvanic carbine",
+    "Mechanicus pistol"
+   ],
    "weapon_options": [
     {
      "text": "1 Serberys Raider can be equipped with 1 enhanced data-tether.",
@@ -3399,6 +3482,13 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Cavalry arc maul",
+    "Clawed limbs",
+    "Mechanicus pistol",
+    "Phosphor pistol",
+    "Sulphur breath"
+   ],
    "weapon_options": [
     {
      "text": "For every 3 models in this unit, 1 Serberys Sulphurhound’s 2 phosphor pistols can be replaced with 1 phosphor blast carbine and 1 phosphor pistol.",
@@ -3607,6 +3697,14 @@
    "model_min": 9,
    "model_max": 9,
    "countable": false,
+   "stock_weapons": [
+    "Dataspikes",
+    "Heavy arc rifle",
+    "Heavy bolter",
+    "Mechanicus pistol",
+    "Phosphor blaster",
+    "Servo-claw"
+   ],
    "weapon_options": [
     {
      "text": "1 Combat Servitor model can have its 1 phosphor blaster replaced with 1 meltagun.",
@@ -3791,6 +3889,9 @@
    "model_min": 4,
    "model_max": 4,
    "countable": false,
+   "stock_weapons": [
+    "Servitor’s servo-arm"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolter and 1 Servitor’s tools (instead of servitor’s servo-arm)",
@@ -4010,6 +4111,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Power weapon",
+    "Stubcarbine"
+   ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their stubcarbine and power weapon replaced with 1 flechette blaster and 1 taser goad.",
@@ -4022,8 +4127,6 @@
      "model": "",
      "grants": [
       "Flechette blaster",
-      "Stubcarbine",
-      "Power weapon",
       "Taser goad"
      ]
     }
@@ -4176,6 +4279,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Transonic razor and chordclaw"
+   ],
    "weapon_options": [
     {
      "text": "Any number of Sicarian Ruststalkers can each have their transonic razor and chordclaw replaced with 1 transonic blades.",
@@ -4343,6 +4449,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Control stave",
+    "Mechanicus pistol"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -4540,6 +4650,10 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Galvanic rifle"
+   ],
    "weapon_options": [
     {
      "text": "The Skitarii Ranger Alpha can be equipped with 1 Alpha combat weapon.",
@@ -4837,6 +4951,10 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Radium carbine"
+   ],
    "weapon_options": [
     {
      "text": "The Skitarii Vanguard Alpha can be equipped with 1 Alpha combat weapon.",
@@ -5094,6 +5212,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Belleros energy cannon",
+    "Cognis heavy stubber",
+    "Disruptor missile launcher"
+   ],
    "weapon_options": [
     {
      "text": "This model’s belleros energy cannon can be replaced with 1 ferrumite cannon.",
@@ -5233,6 +5357,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Cognis heavy stubber array"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5384,6 +5512,11 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Ironstrider feet",
+    "Phosphor serpenta",
+    "Radium jezzail"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5524,6 +5657,10 @@
    "model_min": 1,
    "model_max": 3,
    "countable": true,
+   "stock_weapons": [
+    "Phosphor serpenta",
+    "Taser lance"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -5677,6 +5814,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Mechanicus pistol",
+    "Radium jezzail",
+    "Sydonian feet"
+   ],
    "weapon_options": [
     {
      "text": "This model’s radium jezzail can be replaced with 1 Skatros transuranic arquebus.",
@@ -5903,6 +6045,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Macrostubber",
+    "Omnissian axe",
+    "Volkite blaster"
+   ],
    "weapon_options": [
     {
      "text": "This model’s macrostubber can be replaced with 1 phosphor serpenta.",
@@ -6111,6 +6258,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Mechanicus pistol",
+    "Omnissian axe",
+    "Servo-arm"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6288,6 +6440,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Magnarail lance",
+    "Omnissian staff"
+   ],
    "weapon_options": [
     {
      "text": "This model’s magnarail lance can be replaced with 1 transonic cannon.",
@@ -6467,6 +6623,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Mechanicus pistol",
+    "Servo-arc claw"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6618,6 +6778,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Combi-bolter",
+    "Termite drill",
+    "Terrax melta cutter"
+   ],
    "weapon_options": [
     {
      "text": "Heavy flamers (instead of combi-bolters)",
@@ -6819,6 +6984,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6938,6 +7104,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Grav-gun",
+    "Hydraulic claw"
+   ],
    "weapon_options": [
     {
      "text": "None",

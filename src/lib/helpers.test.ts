@@ -194,6 +194,35 @@ describe('equippedWeapons (squad-wide partial swaps keep the base weapon)', () =
   });
 });
 
+// Chaos Terminators-style: a combo base ("combi-bolter and accursed weapon" replaced by 1
+// paired accursed weapons) names two weapons in one phrase — bug: the phrase never matched
+// either weapon's own name, so both leaked into `grants` and were permanently hidden even
+// with nothing chosen, and choosing the swap never actually hid them either.
+const terminators = ds({
+  id: 'term', name: 'Chaos Terminators', model_min: 5, model_max: 5,
+  weapons: [w('Combi-bolter'), w('Accursed weapon'), w('Paired accursed weapons')],
+  weapon_options: [
+    { text: "1 model's combi-bolter and accursed weapon can be replaced with 1 paired accursed weapons.",
+      cost: 0, type: 'wargear', limit: { kind: 'fixed', max: 1 }, base: 'combi-bolter and accursed weapon',
+      model: '', grants: ['Paired accursed weapons'] },
+  ],
+});
+const PAIRED = "1 model's combi-bolter and accursed weapon can be replaced with 1 paired accursed weapons.";
+
+describe('equippedWeapons (combo base names two weapons in one phrase)', () => {
+  it('nothing chosen: both base weapons still show', () => {
+    const eq = names(equippedWeapons(terminators, [], 5));
+    expect(eq).toContain('Combi-bolter');
+    expect(eq).toContain('Accursed weapon');
+  });
+  it('1 of 5 swapped: the other 4 still carry both bases alongside the swap', () => {
+    const eq = names(equippedWeapons(terminators, [{ name: PAIRED, cost: 0, qty: 1 }], 5));
+    expect(eq).toContain('Combi-bolter');
+    expect(eq).toContain('Accursed weapon');
+    expect(eq).toContain('Paired accursed weapons');
+  });
+});
+
 describe('clampLoadout drops sub-model options when the model is removed', () => {
   it('removing the ATV drops its multi-melta', () => {
     const unit = { ...buildListUnit(outriders, outriders.points[0] ?? { description: '', cost: '0' }, 6),

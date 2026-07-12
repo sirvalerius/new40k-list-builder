@@ -178,6 +178,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Drach’nyen",
+    "Talon of Horus"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -330,6 +334,10 @@
    "model_min": 8,
    "model_max": 16,
    "countable": true,
+   "stock_weapons": [
+    "Blasphemous appendages",
+    "Hideous mutations"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -460,6 +468,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Impaler harpoon",
+    "Slaughter blade"
+   ],
    "weapon_options": [
     {
      "text": "This model’s impaler harpoon and slaughter blade can be replaced with 1 twin slaughter blade.",
@@ -472,8 +484,6 @@
      "base": "impaler harpoon and slaughter blade",
      "model": "",
      "grants": [
-      "Impaler harpoon",
-      "Slaughter blade",
       "Twin slaughter blade"
      ]
     }
@@ -656,6 +666,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Cerberus neutron pulse array"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters",
@@ -991,6 +1005,11 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Close combat weapon",
+    "Combi-bolter"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -1343,6 +1362,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks"
+   ],
    "weapon_options": [
     {
      "text": "Conversion beam cannon (instead of plasma destroyer)",
@@ -1627,6 +1649,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Soulshatter lascannon",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "Combi-bolter",
@@ -1857,6 +1884,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Daemon hammer"
+   ],
    "weapon_options": [
     {
      "text": "Accursed weapon (instead of daemon hammer)",
@@ -2078,6 +2108,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Combi-bolter",
+    "Exalted weapon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s combi-bolter can be replaced with 1 combi-weapon.",
@@ -2134,8 +2168,6 @@
      "base": "combi-bolter and exalted weapon",
      "model": "",
      "grants": [
-      "Combi-bolter",
-      "Exalted weapon",
       "Paired accursed weapons"
      ]
     }
@@ -2354,6 +2386,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Bolt pistol",
+    "Close combat weapon",
+    "Combi-bolter"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -2482,9 +2520,7 @@
      "base": "bolt pistol and astartes chainsword",
      "model": "",
      "grants": [
-      "Bolt pistol",
       "Accursed weapon",
-      "Astartes chainsword",
       "Paired accursed weapons"
      ]
     }
@@ -2726,6 +2762,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Bolt pistol",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -2869,9 +2910,7 @@
      "base": "bolt pistol and astartes chainsword",
      "model": "",
      "grants": [
-      "Bolt pistol",
       "Accursed weapon",
-      "Astartes chainsword",
       "Paired accursed weapons"
      ]
     }
@@ -3108,6 +3147,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Bladed horn",
+    "Bolt pistol",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -3251,9 +3296,7 @@
      "base": "bolt pistol and astartes chainsword",
      "model": "",
      "grants": [
-      "Bolt pistol",
       "Accursed weapon",
-      "Astartes chainsword",
       "Paired accursed weapons"
      ]
     }
@@ -3505,6 +3548,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Bolt pistol",
+    "Close combat weapon",
+    "Nurgling’s claws and teeth"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -3648,9 +3697,7 @@
      "base": "bolt pistol and astartes chainsword",
      "model": "",
      "grants": [
-      "Bolt pistol",
       "Accursed weapon",
-      "Astartes chainsword",
       "Paired accursed weapons"
      ]
     }
@@ -3882,6 +3929,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Bolt pistol",
+    "Close combat weapon",
+    "Lashing tongue"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -4025,9 +4078,7 @@
      "base": "bolt pistol and astartes chainsword",
      "model": "",
      "grants": [
-      "Bolt pistol",
       "Accursed weapon",
-      "Astartes chainsword",
       "Paired accursed weapons"
      ]
     }
@@ -4210,6 +4261,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Accursed weapon",
+    "Bolt pistol"
+   ],
    "weapon_options": [
     {
      "text": "This model's bolt pistol can be replaced with 1 plasma pistol.",
@@ -4248,8 +4303,6 @@
      "base": "bolt pistol and accursed weapon",
      "model": "",
      "grants": [
-      "Bolt pistol",
-      "Accursed weapon",
       "Twin lightning claws"
      ]
     }
@@ -4429,6 +4482,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Lascannon",
+    "Predator twin lascannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters",
@@ -4680,6 +4738,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Predator autocannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters",
@@ -4897,6 +4959,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Combi-bolter"
+   ],
    "weapon_options": [
     {
      "text": "Combi-bolter",
@@ -5042,6 +5108,9 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Hideous mutations"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -5244,6 +5313,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Accursed weapon",
+    "Combi-bolter"
+   ],
    "weapon_options": [
     {
      "text": "Heavy flamer (instead of combi-bolter)",
@@ -5299,8 +5372,6 @@
      "base": "combi-bolter and accursed weapon",
      "model": "",
      "grants": [
-      "Combi-bolter",
-      "Accursed weapon",
       "Paired accursed weapons"
      ]
     },
@@ -5504,6 +5575,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Lascannon",
+    "Thunderhawk heavy cannon",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Thunderhawk heavy cannon can be replaced with 1 turbo-laser destructor.",
@@ -5686,6 +5763,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Demolisher cannon"
+   ],
    "weapon_options": [
     {
      "text": "Combi-bolter",
@@ -5937,6 +6018,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Accursed weapon",
+    "Bolt pistol",
+    "Boltgun"
+   ],
    "weapon_options": [
     {
      "text": "For every 5 models in this unit, up to 2 models can each have their bolt pistol replaced with 1 plasma pistol.",
@@ -5977,8 +6063,6 @@
      "base": "boltgun and accursed weapon",
      "model": "",
      "grants": [
-      "Boltgun",
-      "Accursed weapon",
       "Paired accursed weapons"
      ]
     },
@@ -6142,6 +6226,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Balefire pike",
+    "Close combat weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6269,6 +6357,10 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Autopistol",
+    "Brutal assault weapon"
+   ],
    "weapon_options": [
     {
      "text": "The Cultist Champion’s autopistol can be replaced with 1 bolt pistol.",
@@ -6481,6 +6573,10 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Autopistol",
+    "Brutal assault weapon"
+   ],
    "weapon_options": [
     {
      "text": "The Cultist Champion’s autopistol can be replaced with 1 bolt pistol.",
@@ -6506,10 +6602,8 @@
      "base": "autogun and close combat weapon",
      "model": "",
      "grants": [
-      "Autogun",
       "Autopistol",
-      "Brutal assault weapon",
-      "Close combat weapon"
+      "Brutal assault weapon"
      ]
     },
     {
@@ -6691,6 +6785,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Cypher’s bolt pistol",
+    "Cypher’s plasma pistol"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -6869,6 +6967,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Accursed crozius",
+    "Bolt pistol",
+    "Close combat weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -7073,6 +7176,12 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Autopistol",
+    "Close combat weapon",
+    "Commune blade",
+    "Commune stave"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -7258,6 +7367,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured feet",
+    "Decimator butcher cannon"
+   ],
    "weapon_options": [
     {
      "text": "Decimator conversion beamer (instead of decimator butcher cannons)",
@@ -7574,6 +7687,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Excruciator cannon",
+    "Hades battle cannon",
+    "Heavy baleflamer"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Hades battle cannon can be replaced with 1 ectoplasma destructor.",
@@ -7932,6 +8050,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Anvilus autocannon battery",
+    "Armoured feet",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "Arachnus heavy lascannon battery (instead of anvilus autocannon battery)",
@@ -8127,6 +8250,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Blade struts"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8290,6 +8416,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Combi-weapon",
+    "Exalted weapon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -8493,6 +8624,12 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Chirurgeon",
+    "Rod of Torment",
+    "Surgeon Acolyte’s tools",
+    "Xyclos Needler"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -8715,6 +8852,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Quad lascannon",
+    "Twin Falchion volcano cannon",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 quad lascannons can be replaced with 2 laser destroyers.",
@@ -8742,8 +8886,7 @@
      "model": "",
      "grants": [
       "Twin heavy flamer",
-      "Heavy flamer",
-      "Heavy bolter"
+      "Heavy flamer"
      ]
     },
     {
@@ -9095,6 +9238,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Demolisher cannon",
+    "Heavy bolter",
+    "Quad lascannon",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "Laser destroyers (instead of quad lascannons)",
@@ -9139,7 +9289,6 @@
      "model": "",
      "grants": [
       "Twin heavy flamer",
-      "Heavy bolter",
       "Heavy flamer"
      ]
     },
@@ -9418,6 +9567,12 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Autopistol",
+    "Bolt pistol",
+    "Chainsword",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "The Fellgor Champion’s bolt pistol can be replaced with 1 plasma pistol.",
@@ -9648,6 +9803,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "This model’s 2 twin hellstrike missile launchers can be replaced with 2 twin lascannons",
@@ -9820,6 +9976,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Forgefiend jaws",
+    "Hades autocannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 Hades autocannons can be replaced with 2 ectoplasma cannons.",
@@ -9986,6 +10146,11 @@
    "model_min": 7,
    "model_max": 7,
    "countable": false,
+   "stock_weapons": [
+    "Belly-flamer",
+    "Brutal weapons",
+    "Hideous mutations"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10128,6 +10293,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bile maw",
+    "Blightreaper cannon",
+    "Greater plague probe"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10293,6 +10463,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Demolisher cannon",
+    "Hellmaw flame cannons",
+    "Scorpion cannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -10448,6 +10623,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Helspear",
+    "Herald’s Talon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -10728,6 +10907,13 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Close combat weapon",
+    "Flamer",
+    "Havoc autocannon",
+    "Havoc lascannon"
+   ],
    "weapon_options": [
     {
      "text": "Accursed weapon (instead of astartes chainsword)",
@@ -10855,10 +11041,7 @@
      "base": "havoc autocannon or havoc lascannon",
      "group": "000000966-2",
      "model": "",
-     "grants": [
-      "Havoc autocannon",
-      "Havoc lascannon"
-     ]
+     "grants": []
     },
     {
      "text": "Havoc heavy bolter (instead of havoc autocannon or havoc lascannon)",
@@ -10871,9 +11054,7 @@
      "group": "000000966-2",
      "model": "",
      "grants": [
-      "Havoc autocannon",
-      "Havoc heavy bolter",
-      "Havoc lascannon"
+      "Havoc heavy bolter"
      ]
     },
     {
@@ -10886,10 +11067,7 @@
      "base": "havoc autocannon or havoc lascannon",
      "group": "000000966-2",
      "model": "",
-     "grants": [
-      "Havoc autocannon",
-      "Havoc lascannon"
-     ]
+     "grants": []
     },
     {
      "text": "Havoc missile launcher (instead of havoc autocannon or havoc lascannon)",
@@ -10901,10 +11079,7 @@
      "base": "havoc autocannon or havoc lascannon",
      "group": "000000966-2",
      "model": "",
-     "grants": [
-      "Havoc autocannon",
-      "Havoc lascannon"
-     ]
+     "grants": []
     },
     {
      "text": "Havoc reaper chaincannon (instead of havoc autocannon or havoc lascannon)",
@@ -10917,8 +11092,6 @@
      "group": "000000966-2",
      "model": "",
      "grants": [
-      "Havoc autocannon",
-      "Havoc lascannon",
       "Havoc reaper chaincannon"
      ]
     }
@@ -11162,6 +11335,7 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "Helbrute plasma cannon (instead of multi-melta)",
@@ -11443,6 +11617,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Hades autocannon",
+    "Heldrake claws"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Hades autocannon can be replaced with 1 baleflamer.",
@@ -11581,6 +11759,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Twin autocannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin autocannons can be replaced with 2 twin lascannons.",
@@ -11730,6 +11912,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Autocannon",
+    "Twin lascannon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s autocannon can be replaced with 1 havoc launcher.",
@@ -11908,6 +12095,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Infernal cannon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -12072,6 +12262,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Infernal cannon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -12230,6 +12423,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Tyrant’s Claw and exalted power weapon",
+    "Tyrant’s Claw heavy flamer"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -12383,6 +12580,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Blade struts",
+    "Melta array"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -12554,6 +12755,10 @@
    "model_min": 10,
    "model_max": 20,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Chainblade"
+   ],
    "weapon_options": [
     {
      "text": "The Khorne Berzerker Champion’s bolt pistol can be replaced with 1 plasma pistol.",
@@ -12783,6 +12988,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Gorestorm cannon",
+    "Hades gatling cannon"
+   ],
    "weapon_options": [
     {
      "text": "Daemongore cannon (instead of gorestorm cannon)",
@@ -13115,6 +13324,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Autocannon",
+    "Heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "Melta blast-gun (instead of kratos battle cannon)",
@@ -13510,6 +13724,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Baleflamer",
+    "Combi-bolter",
+    "Last Argument and power fist",
+    "Servo-harness"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -13653,6 +13873,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Kytan gatling cannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -13860,6 +14083,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Twin volkite culverin"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin volkite culverins can be replaced with 2 twin multi-melta",
@@ -14116,6 +14343,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Twin lascannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolter",
@@ -14533,6 +14764,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Boltgun",
+    "Close combat weapon"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol* (instead of boltgun)",
@@ -15090,6 +15326,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured feet",
+    "Grav-flux bombard",
+    "Heavy flamer"
+   ],
    "weapon_options": [
     {
      "text": "Cyclonic melta lance (instead of grav-flux bombards)",
@@ -15349,6 +15590,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bladed limbs",
+    "Bolt pistol",
+    "Helstalker autocannon",
+    "Impaler chainglaive",
+    "Techno-virus injector"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Helstalker autocannon can be replaced with 1 baleflamer.",
@@ -15516,6 +15764,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Axe of dismemberment",
+    "Bolt pistol"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -15681,6 +15933,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Staff of possession"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -15909,6 +16165,18 @@
    "model_min": 5,
    "model_max": 5,
    "countable": false,
+   "stock_weapons": [
+    "Absolvor bolt pistol",
+    "Axe of Ending",
+    "Bionic gauntlet",
+    "Bolt pistol",
+    "Force stave",
+    "Laspistol",
+    "Londaxi maimer",
+    "Mind Wrench",
+    "Power sabre",
+    "Reductor array"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -16108,6 +16376,13 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy flamer",
+    "Lascannon",
+    "Siege melta array",
+    "Skyreaper battery"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters (instead of heavy flamers)",
@@ -16322,6 +16597,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lasher tendrils",
+    "Maulerfiend fists"
+   ],
    "weapon_options": [
     {
      "text": "This model’s lasher tendrils can be replaced with 2 magma cutters.",
@@ -16467,6 +16746,7 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "None",
@@ -16596,6 +16876,7 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [],
    "weapon_options": [
     {
      "text": "None",
@@ -16709,6 +16990,9 @@
    "model_min": 16,
    "model_max": 16,
    "countable": false,
+   "stock_weapons": [
+    "Diseased claws and fangs"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -16827,6 +17111,9 @@
    "model_min": 4,
    "model_max": 4,
    "countable": false,
+   "stock_weapons": [
+    "Electro-goads"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -17153,6 +17440,12 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Boltgun",
+    "Close combat weapon",
+    "Nostraman chainblade"
+   ],
    "weapon_options": [
     {
      "text": "The Visionary’s bolt pistol can be replaced with 1 plasma pistol.",
@@ -17448,6 +17741,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Lashing warp energies"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -17600,6 +17896,10 @@
    "model_min": 6,
    "model_max": 6,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Sonic blaster"
+   ],
    "weapon_options": [
     {
      "text": "The Disharmonist’s sonic blaster can be replaced with 1 screamer pistol and 1 power sword.",
@@ -17769,6 +18069,9 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Crushing fists"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -18039,6 +18342,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Boltgun",
+    "Plague knives"
+   ],
    "weapon_options": [
     {
      "text": "Bolt pistol (instead of boltgun)",
@@ -18348,6 +18655,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Hideous mutations"
+   ],
    "weapon_options": [
     {
      "text": "1 model can be equipped with 1 Chaos icon.",
@@ -18533,6 +18843,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Boltgun",
+    "Close combat weapon",
+    "Quad heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "Graviton cannon (instead of quad heavy bolter)",
@@ -18837,6 +19152,10 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Astartes chainsword",
+    "Bolt pistol"
+   ],
    "weapon_options": [
     {
      "text": "The Raptor Champion’s bolt pistol can be replaced with 1 plasma pistol.",
@@ -19206,6 +19525,11 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Boltgun",
+    "Reaver’s blade"
+   ],
    "weapon_options": [
     {
      "text": "The Red Corsairs Raider Champion’s bolt pistol can be replaced with 1 hand flamer.",
@@ -19416,6 +19740,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Power sword"
+   ],
    "weapon_options": [
     {
      "text": "This model’s power sword can be replaced with 1 power maul.",
@@ -19775,6 +20103,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured feet"
+   ],
    "weapon_options": [
     {
      "text": "Conversion beam cannon (instead of heavy plasma cannons)",
@@ -20155,6 +20486,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Enforcer melee weapon",
+    "Enforcer pistol"
+   ],
    "weapon_options": [
     {
      "text": "Autogun (instead of enforcer pistol)",
@@ -20420,6 +20755,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapons",
+    "Heavy stubber",
+    "Renegade firearm"
+   ],
    "weapon_options": [
     {
      "text": "Autocannon (instead of heavy stubbers can each be)",
@@ -20432,8 +20772,7 @@
      "group": "000002732-0",
      "model": "",
      "grants": [
-      "Autocannon",
-      "Heavy stubber"
+      "Autocannon"
      ]
     },
     {
@@ -20447,8 +20786,7 @@
      "group": "000002732-0",
      "model": "",
      "grants": [
-      "Heavy bolter",
-      "Heavy stubber"
+      "Heavy bolter"
      ]
     },
     {
@@ -20462,7 +20800,6 @@
      "group": "000002732-0",
      "model": "",
      "grants": [
-      "Heavy stubber",
       "Lascannon"
      ]
     },
@@ -20476,9 +20813,7 @@
      "base": "heavy stubbers can each be",
      "group": "000002732-0",
      "model": "",
-     "grants": [
-      "Heavy stubber"
-     ]
+     "grants": []
     },
     {
      "text": "Mortar (instead of heavy stubbers can each be)",
@@ -20491,7 +20826,6 @@
      "group": "000002732-0",
      "model": "",
      "grants": [
-      "Heavy stubber",
       "Mortar"
      ]
     }
@@ -20621,6 +20955,10 @@
    "model_min": 4,
    "model_max": 7,
    "countable": true,
+   "stock_weapons": [
+    "Befouled claws and fangs",
+    "Mauler goad and ripper claw"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -20744,6 +21082,9 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Ogryn weapon"
+   ],
    "weapon_options": [
     {
      "text": "One model’s Ogryn weapon can be replaced with 1 Ogryn power drill.",
@@ -20866,6 +21207,9 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "stock_weapons": [
+    "Ogryn plague claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -21036,6 +21380,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Chaos stave",
+    "Laspistol"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -21253,6 +21601,13 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Force weapon",
+    "Inferno bolt pistol",
+    "Inferno boltgun",
+    "Malefic Curse"
+   ],
    "weapon_options": [
     {
      "text": "The Aspiring Sorcerer’s inferno bolt pistol can be replaced with 1 warpflame pistol.",
@@ -21482,6 +21837,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Herakles-pattern autocannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters",
@@ -21716,6 +22076,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Punisher rotary cannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters",
@@ -21950,6 +22315,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Venator neutron laser"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters",
@@ -22200,6 +22570,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Hellstrike missile battery",
+    "Twin heavy bolter",
+    "Twin lascannon"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -22373,6 +22749,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Force weapon"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -22545,6 +22925,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Combi-bolter",
+    "Force weapon"
+   ],
    "weapon_options": [
     {
      "text": "This model’s combi-bolter can be replaced with 1 combi-weapon.",
@@ -22797,6 +23181,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Combi-bolter",
+    "Force weapon"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -23134,6 +23523,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Force weapon"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -23481,6 +23874,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Force weapon",
+    "Nurgling’s claws and teeth"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -23807,6 +24205,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Force weapon",
+    "Lashing tongue"
+   ],
    "weapon_options": [
     {
      "text": "Plasma pistol (instead of bolt pistol)",
@@ -24107,6 +24510,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Quad lascannon",
+    "Twin heavy bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 quad lascannons can be replaced with 2 laser destroyers.",
@@ -24134,8 +24543,7 @@
      "model": "",
      "grants": [
       "Twin heavy flamer",
-      "Heavy flamer",
-      "Heavy bolter"
+      "Heavy flamer"
      ]
     },
     {
@@ -24420,6 +24828,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Twin heavy bolter",
+    "Twin hellstrike launcher",
+    "Vengeance launcher"
+   ],
    "weapon_options": [
     {
      "text": "Twin multi-melta (instead of twin heavy bolter)",
@@ -24634,6 +25048,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Combi-bolter",
+    "Termite drill",
+    "Terrax melta cutter"
+   ],
    "weapon_options": [
     {
      "text": "Heavy flamers (instead of combi-bolters)",
@@ -24815,6 +25234,11 @@
    "model_min": 2,
    "model_max": 2,
    "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Ogryn weapons",
+    "Power fist"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -25057,6 +25481,11 @@
    "model_min": 10,
    "model_max": 10,
    "countable": false,
+   "stock_weapons": [
+    "Close combat weapon",
+    "Corrupted pistol",
+    "Lasgun"
+   ],
    "weapon_options": [
     {
      "text": "Cultist grenade launcher (instead of lasgun)",
@@ -25352,6 +25781,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Dreadhammer siege cannon"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters",
@@ -25584,6 +26017,9 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Vashtorr’s claw"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -25702,6 +26138,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Excruciator cannon",
+    "Soulflayer tendrils and claws"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -25830,6 +26270,9 @@
    "model_min": 5,
    "model_max": 10,
    "countable": true,
+   "stock_weapons": [
+    "Warp claws"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -26024,6 +26467,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Flamer tendril",
+    "Forge weapon",
+    "Melta tendril"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -26176,6 +26624,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured tracks",
+    "Scorpius multi-launcher"
+   ],
    "weapon_options": [
     {
      "text": "This model can be equipped with 1 hunter-killer missile.",
@@ -26353,6 +26805,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "stock_weapons": [
+    "Armoured hull",
+    "Twin lascannon",
+    "Xiphon missile battery"
+   ],
    "weapon_options": [
     {
      "text": "None",
