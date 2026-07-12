@@ -23,6 +23,7 @@ import {
 import { loadFactionById } from '../lib/data';
 import { SummaryBar } from '../components/SummaryBar';
 import { ValidationBanner } from '../components/ValidationBanner';
+import { Modal } from '../components/Modal';
 import { DetachmentPicker } from './DetachmentPicker';
 import { Roster } from './Roster';
 import { Enhancements } from './Enhancements';
@@ -47,6 +48,7 @@ export function Builder({
   const [list, setList] = useState<ArmyList>(initial);
   const [fd, setFd] = useState<FactionData | null>(null);
   const [tab, setTab] = useState<Tab>('detach');
+  const [editingSettings, setEditingSettings] = useState(false);
 
   // Load the faction's full data (lazy, cached).
   useEffect(() => {
@@ -153,6 +155,14 @@ export function Builder({
       }
       return { ...l, detachmentIds, units, subFaction, disposition };
     });
+  }
+
+  // Name + battle size can only be picked once, in NewListWizard, with no way back to them —
+  // this is that way back. Doesn't auto-correct anything a smaller battle size now makes
+  // illegal (over points/DP/enhancements): same as toggling a detachment, that's left to the
+  // validation banner to flag so the user fixes it deliberately.
+  function updateListSettings(name: string, battleSizeId: string) {
+    update((l) => ({ ...l, name: name.trim() || l.name, battleSizeId }));
   }
 
   function setDisposition(disposition: string) {
@@ -342,6 +352,9 @@ export function Builder({
             </>
           )}
           <div className="spacer" />
+          <button className="ghost small" onClick={() => setEditingSettings(true)}>
+            ✎ Edit list
+          </button>
           <button className="ghost small" onClick={() => onDuplicate(list)}>
             ⧉ Duplicate list
           </button>
@@ -349,6 +362,18 @@ export function Builder({
             ⤓ Export as text
           </button>
         </div>
+
+        {editingSettings && (
+          <ListSettingsModal
+            list={list}
+            rules={rules}
+            onSave={(name, battleSizeId) => {
+              updateListSettings(name, battleSizeId);
+              setEditingSettings(false);
+            }}
+            onClose={() => setEditingSettings(false)}
+          />
+        )}
 
         <div className="tabs">
           <button
@@ -454,5 +479,61 @@ export function Builder({
         <SummaryBar result={result} />
       </div>
     </div>
+  );
+}
+
+// Name + battle size, editable after creation (NewListWizard only offers them once, at
+// creation) — same fields, same picker layout, so switching battle size still reads like a
+// deliberate choice rather than a generic settings form.
+function ListSettingsModal({
+  list,
+  rules,
+  onSave,
+  onClose,
+}: {
+  list: ArmyList;
+  rules: Rules;
+  onSave: (name: string, battleSizeId: string) => void;
+  onClose: () => void;
+}) {
+  const [name, setName] = useState(list.name);
+  const [battleSizeId, setBattleSizeId] = useState(list.battleSizeId);
+  return (
+    <Modal title="Edit list" onClose={onClose}>
+      <label className="field-label">List name</label>
+      <input value={name} onChange={(e) => setName(e.target.value)} className="mb" />
+
+      <label className="field-label">Battle size</label>
+      <div className="col" style={{ gap: 8 }}>
+        {rules.battle_sizes.map((b) => (
+          <button
+            key={b.id}
+            className={`card tappable ${battleSizeId === b.id ? 'primary' : 'ghost'}`}
+            style={{ textAlign: 'left', display: 'block', height: 'auto', padding: 14 }}
+            onClick={() => setBattleSizeId(b.id)}
+          >
+            <div style={{ fontWeight: 700, fontSize: '1.05rem' }}>
+              {b.name} — {intOf(b.points)} pts
+            </div>
+            <div className="small" style={{ opacity: 0.85, marginTop: 4 }}>
+              {intOf(b.detachment_points)} Detachment Points ·{' '}
+              {intOf(b.enhancement_limit)} enhancements · Rule of{' '}
+              {intOf(b.unit_limit)} ({intOf(b.battleline_limit)} battleline)
+              {b.confirmed === 'provisional' ? ' · provisional' : ''}
+            </div>
+          </button>
+        ))}
+      </div>
+
+      <div className="row mt">
+        <button className="ghost" onClick={onClose}>
+          Cancel
+        </button>
+        <div className="spacer" />
+        <button className="primary" onClick={() => onSave(name, battleSizeId)}>
+          Save
+        </button>
+      </div>
+    </Modal>
   );
 }

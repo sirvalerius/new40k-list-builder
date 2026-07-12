@@ -80,6 +80,12 @@ export default function App() {
 
   const onListChange = useCallback((l: ArmyList) => {
     currentList.current = l;
+    // Keep view.list synced so the header title/subtitle (name, faction/battle-size) and the
+    // document.title effect below reflect edits made inside Builder — name and battle size
+    // used to be frozen at whatever they were when the list was opened, since Builder keeps
+    // its own internal state and this callback previously only updated the ref. Builder is
+    // keyed by list.id (stable across a rename), so this re-render doesn't reset or remount it.
+    setView((v) => (v.kind === 'builder' ? { kind: 'builder', list: l } : v));
     if (saveTimer.current) clearTimeout(saveTimer.current);
     saveTimer.current = setTimeout(() => {
       saveList(l).catch(() => {});
