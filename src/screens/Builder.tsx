@@ -12,6 +12,7 @@ import { getBattleSize, validateList } from '../lib/rules';
 import {
   buildListUnit,
   clampLoadout,
+  closestBattleSize,
   datasheetMap,
   dateStamp,
   download,
@@ -24,6 +25,7 @@ import { loadFactionById } from '../lib/data';
 import { SummaryBar } from '../components/SummaryBar';
 import { ValidationBanner } from '../components/ValidationBanner';
 import { Modal } from '../components/Modal';
+import { BattleSizeFields } from '../components/BattleSizeFields';
 import { DetachmentPicker } from './DetachmentPicker';
 import { Roster } from './Roster';
 import { Enhancements } from './Enhancements';
@@ -74,9 +76,7 @@ export function Builder({
           return { ...u, wargearCosts };
         });
         if (!changed) return prev;
-        const next = { ...prev, units };
-        onChange(next);
-        return next;
+        return { ...prev, units };
       });
     });
     return () => {
@@ -84,18 +84,24 @@ export function Builder({
     };
   }, [initial.factionId]);
 
+  // Bubbles every list change up (autosave + the header title/tab title, see App.onListChange)
+  // AFTER the state update commits, not from inside the setList updater above/below — React
+  // (rightly) flags a parent setState called synchronously from within a child's updater as
+  // "updating a component while rendering a different component".
+  useEffect(() => {
+    onChange(list);
+  }, [list, onChange]);
+
   const battleSize = getBattleSize(rules, list.battleSizeId);
 
-  // Mutate helper: updates timestamp and bubbles up for autosave.
+  // Mutate helper: updates timestamp; the effect above bubbles the result up for autosave.
   function update(mut: (l: ArmyList) => ArmyList) {
     setList((prev) => {
       const mutated = mut(prev);
       // Re-apply pick-order pricing (2nd+/3rd+) after every change so escalating
       // unit costs stay correct as copies are added or removed.
       const units = fd ? reconcileTiers(mutated.units, datasheetMap(fd)) : mutated.units;
-      const next = { ...mutated, units, updatedAt: Date.now() };
-      onChange(next);
-      return next;
+      return { ...mutated, units, updatedAt: Date.now() };
     });
   }
 
@@ -483,8 +489,8 @@ export function Builder({
 }
 
 // Name + battle size, editable after creation (NewListWizard only offers them once, at
-// creation) — same fields, same picker layout, so switching battle size still reads like a
-// deliberate choice rather than a generic settings form.
+// creation) — BattleSizeFields is the exact same component the wizard uses, so this can't
+// drift from it (it was missing the "Max points" field entirely before this shared it).
 function ListSettingsModal({
   list,
   rules,
@@ -498,32 +504,32 @@ function ListSettingsModal({
 }) {
   const [name, setName] = useState(list.name);
   const [battleSizeId, setBattleSizeId] = useState(list.battleSizeId);
+  const [maxPoints, setMaxPoints] = useState(
+    intOf(rules.battle_sizes.find((b) => b.id === list.battleSizeId)?.points ?? 0),
+  );
+
+  function onMaxPoints(v: number) {
+    setMaxPoints(v);
+    setBattleSizeId(closestBattleSize(rules, v));
+  }
+  function onBattleSize(id: string) {
+    setBattleSizeId(id);
+    const b = rules.battle_sizes.find((x) => x.id === id);
+    if (b) setMaxPoints(intOf(b.points));
+  }
+
   return (
     <Modal title="Edit list" onClose={onClose}>
       <label className="field-label">List name</label>
       <input value={name} onChange={(e) => setName(e.target.value)} className="mb" />
 
-      <label className="field-label">Battle size</label>
-      <div className="col" style={{ gap: 8 }}>
-        {rules.battle_sizes.map((b) => (
-          <button
-            key={b.id}
-            className={`card tappable ${battleSizeId === b.id ? 'primary' : 'ghost'}`}
-            style={{ textAlign: 'left', display: 'block', height: 'auto', padding: 14 }}
-            onClick={() => setBattleSizeId(b.id)}
-          >
-            <div style={{ fontWeight: 700, fontSize: '1.05rem' }}>
-              {b.name} — {intOf(b.points)} pts
-            </div>
-            <div className="small" style={{ opacity: 0.85, marginTop: 4 }}>
-              {intOf(b.detachment_points)} Detachment Points ·{' '}
-              {intOf(b.enhancement_limit)} enhancements · Rule of{' '}
-              {intOf(b.unit_limit)} ({intOf(b.battleline_limit)} battleline)
-              {b.confirmed === 'provisional' ? ' · provisional' : ''}
-            </div>
-          </button>
-        ))}
-      </div>
+      <BattleSizeFields
+        rules={rules}
+        maxPoints={maxPoints}
+        battleSizeId={battleSizeId}
+        onMaxPoints={onMaxPoints}
+        onBattleSize={onBattleSize}
+      />
 
       <div className="row mt">
         <button className="ghost" onClick={onClose}>

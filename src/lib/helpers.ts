@@ -760,6 +760,14 @@ export function dateStamp(d = new Date()): string {
   return d.toISOString().slice(0, 10).replace(/-/g, '');
 }
 
+/** Battle size whose preset points are closest to `points` — auto-picks a battle size when
+ *  the user free-types a "max points" target (NewListWizard, Builder's list-settings edit). */
+export function closestBattleSize(rules: Rules, points: number): string {
+  return [...rules.battle_sizes].sort(
+    (a, b) => Math.abs(intOf(a.points) - points) - Math.abs(intOf(b.points) - points),
+  )[0]?.id ?? '';
+}
+
 export function download(filename: string, content: string, mime = 'application/json') {
   const blob = new Blob([content], { type: mime });
   const url = URL.createObjectURL(blob);
