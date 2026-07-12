@@ -21,6 +21,8 @@ import {
   copiesOf,
   displayName,
   eligibleBodyguards,
+  enhancementCoreRules,
+  enhancementFor,
   getFavorites,
   intOf,
   optionMax,
@@ -140,6 +142,7 @@ export function Roster({
     const ds = dsById.get(u.datasheetId);
     const leaders = attachedLeaders(u.uid, list);
     const eligible = ds?.is_leader ? eligibleBodyguards(ds, list, dsById) : [];
+    const enhancement = enhancementFor(detachments, u.enhancementName);
     return (
       <div className="card" key={u.uid}>
         <div className="row" style={{ gap: 8 }}>
@@ -296,7 +299,22 @@ export function Roster({
           <details style={{ marginTop: 8 }}>
             <summary className="muted small">Datasheet</summary>
             <div className="mt">
-              <DatasheetCard ds={ds} selected={u.wargearCosts ?? []} subFaction={subFaction} modelCount={u.modelCount} />
+              <DatasheetCard
+                ds={ds}
+                selected={u.wargearCosts ?? []}
+                subFaction={subFaction}
+                modelCount={u.modelCount}
+                enhancement={enhancement}
+                enhancementCoreRules={
+                  enhancement
+                    ? enhancementCoreRules(
+                        enhancement.description,
+                        fd,
+                        ds.abilities?.filter((a) => a.type === 'Core') ?? [],
+                      )
+                    : undefined
+                }
+              />
             </div>
           </details>
         )}

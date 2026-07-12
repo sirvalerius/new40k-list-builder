@@ -1,6 +1,13 @@
 import type { Ability, ArmyList, Detachment, FactionData } from '../lib/types';
 import { PrintCard } from '../components/PrintCard';
-import { datasheetMap, mergedUnitGroups, stripHtml, unitAbilities } from '../lib/helpers';
+import {
+  datasheetMap,
+  enhancementCoreRules,
+  enhancementFor,
+  mergedUnitGroups,
+  stripHtml,
+  unitAbilities,
+} from '../lib/helpers';
 
 // Printable reference sheet: every fielded unit (Leader/Support merged with its bodyguard,
 // same grouping as the in-game tab) as a compact, always-expanded datacard. Packed via
@@ -31,14 +38,20 @@ export function PrintView({
 
   // Core rules (Deep Strike, Stealth, ...) are name-only on each unit's card (see PrintCard) —
   // some run long enough to blow up a card's break-inside:avoid block and wreck the page's
-  // column packing. Collect the full text once per distinct rule, printed as a single shared
+  // column packing. Collect the full text once per distinct rule — from the unit's own
+  // abilities AND from any enhancement's text that grants one — printed as a single shared
   // block below the cards instead of repeated on every unit that has it.
   const coreRules = new Map<string, Ability>();
   for (const u of list.units) {
     const ds = dsById.get(u.datasheetId);
     if (!ds) continue;
-    for (const a of unitAbilities(ds, u.wargearCosts ?? [])) {
+    const own = unitAbilities(ds, u.wargearCosts ?? []);
+    for (const a of own) {
       if (a.type === 'Core' && a.name) coreRules.set(a.name, a);
+    }
+    const enh = enhancementFor(detachments, u.enhancementName);
+    if (enh) {
+      for (const a of enhancementCoreRules(enh.description, fd, own)) coreRules.set(a.name, a);
     }
   }
   const sortedCoreRules = [...coreRules.values()].sort((a, b) => a.name.localeCompare(b.name));
@@ -61,7 +74,14 @@ export function PrintView({
 
       <div className="print-cards">
         {groups.map(({ anchor, members, title }) => (
-          <PrintCard key={anchor.uid} title={title} members={members} dsById={dsById} />
+          <PrintCard
+            key={anchor.uid}
+            title={title}
+            members={members}
+            dsById={dsById}
+            fd={fd}
+            detachments={detachments}
+          />
         ))}
       </div>
 

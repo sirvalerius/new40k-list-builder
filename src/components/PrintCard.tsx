@@ -1,15 +1,40 @@
-import type { Datasheet, ListUnit } from '../lib/types';
+import type { Ability, Datasheet, Detachment, Enhancement, FactionData, ListUnit } from '../lib/types';
 import { StatLine } from './StatLine';
 import { WeaponTable } from './DatasheetCard';
-import { displayName, equippedWeapons, intOf, stripHtml, unitAbilities, unitTotal } from '../lib/helpers';
+import {
+  displayName,
+  enhancementCoreRules,
+  enhancementFor,
+  equippedWeapons,
+  intOf,
+  stripHtml,
+  unitAbilities,
+  unitTotal,
+} from '../lib/helpers';
 
 // Compact, always-expanded datacard for the printed reference sheet: no collapsibles or
 // sub-tabs (nothing to click on paper), ranged + melee weapons in one table, and only the
 // information a player actually checks mid-game — not the browsing aids (keyword chips,
 // "can join" list) that matter when building the list, not when playing it.
-function PrintMember({ ds, unit }: { ds: Datasheet; unit: ListUnit }) {
+function PrintMember({
+  ds,
+  unit,
+  enhancement,
+  enhancementCoreRules: enhCoreRules,
+}: {
+  ds: Datasheet;
+  unit: ListUnit;
+  enhancement?: Enhancement;
+  enhancementCoreRules?: Ability[];
+}) {
   const weapons = equippedWeapons(ds, unit.wargearCosts ?? [], unit.modelCount);
-  const abilities = unitAbilities(ds, unit.wargearCosts ?? []);
+  // The enhancement's own effect text is shown like a unit-specific rule; its Core-rule mentions
+  // (enhCoreRules, resolved by the caller) fold into the same name-only treatment as the unit's
+  // own Core rules just below.
+  const enhancementAbility: Ability | null = enhancement
+    ? { name: enhancement.name, type: 'Enhancement', parameter: `(+${enhancement.cost} pts)`, description: enhancement.description }
+    : null;
+  const abilities = [...unitAbilities(ds, unit.wargearCosts ?? []), ...(enhCoreRules ?? [])];
   // Core rules (Deep Strike, Stealth, ...) are the long glossary text every player already
   // knows by name; some run long enough to blow up this card's break-inside:avoid block and
   // wreck the page's column packing. Name-only here — PrintView prints the full text once,
@@ -17,7 +42,10 @@ function PrintMember({ ds, unit }: { ds: Datasheet; unit: ListUnit }) {
   const coreNames = abilities
     .filter((a) => a.type === 'Core')
     .map((a) => `${a.name}${a.parameter ? ` ${a.parameter}` : ''}`);
-  const otherAbilities = abilities.filter((a) => a.type !== 'Core');
+  const otherAbilities = [
+    ...(enhancementAbility ? [enhancementAbility] : []),
+    ...abilities.filter((a) => a.type !== 'Core'),
+  ];
   const loadout = (unit.wargearCosts ?? []).filter((w) => w.qty > 0);
   const tags = [
     unit.warlord ? 'Warlord' : '',
@@ -69,10 +97,14 @@ export function PrintCard({
   title,
   members,
   dsById,
+  fd,
+  detachments,
 }: {
   title: string;
   members: ListUnit[];
   dsById: Map<string, Datasheet>;
+  fd: FactionData;
+  detachments: Detachment[];
 }) {
   return (
     <div className="card bunker print-card">
@@ -80,9 +112,23 @@ export function PrintCard({
       {members.map((m) => {
         const ds = dsById.get(m.datasheetId);
         if (!ds) return null;
+        const enhancement = enhancementFor(detachments, m.enhancementName);
         return (
           <div key={m.uid} className="bunker-member">
-            <PrintMember ds={ds} unit={m} />
+            <PrintMember
+              ds={ds}
+              unit={m}
+              enhancement={enhancement}
+              enhancementCoreRules={
+                enhancement
+                  ? enhancementCoreRules(
+                      enhancement.description,
+                      fd,
+                      unitAbilities(ds, m.wargearCosts ?? []),
+                    )
+                  : undefined
+              }
+            />
           </div>
         );
       })}

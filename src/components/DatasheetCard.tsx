@@ -1,5 +1,5 @@
 import { Fragment, useState } from 'react';
-import type { ChosenWargear, Datasheet, Weapon } from '../lib/types';
+import type { Ability, ChosenWargear, Datasheet, Enhancement, Weapon } from '../lib/types';
 import { StatLine } from './StatLine';
 import { Collapsible } from './Collapsible';
 import { equippedWeapons, stripHtml, unitAbilities } from '../lib/helpers';
@@ -57,11 +57,19 @@ export function DatasheetCard({
   selected,
   subFaction,
   modelCount,
+  enhancement,
+  enhancementCoreRules,
 }: {
   ds: Datasheet;
   selected?: ChosenWargear[];
   subFaction?: string;
   modelCount?: number;
+  enhancement?: Enhancement;
+  // Core rules (Deep Strike, Stealth, ...) the enhancement's own text grants/references —
+  // resolved by the caller (helpers.enhancementCoreRules) against the wider faction data, since
+  // this component only sees one datasheet and the enhancement's text just names them rather
+  // than repeating the glossary entry.
+  enhancementCoreRules?: Ability[];
 }) {
   // "can join" units, chapter-filtered: a Chapter-specific bodyguard only shows when that Chapter
   // is the selected sub-faction. A generic Space Marines army (no Chapter chosen) can't field
@@ -85,7 +93,16 @@ export function DatasheetCard({
     (wpnTabPick === 'ranged' && ranged.length) || (wpnTabPick === 'melee' && melee.length)
       ? wpnTabPick
       : defaultWpnTab;
-  const abilities = unitAbilities(ds, selected);
+  // The unit's own abilities, plus (if it has one) its enhancement — shown in full like a
+  // unit-specific rule — and any Core rules that enhancement grants but the datasheet doesn't
+  // already list (so a rule like Stealth isn't shown twice when the unit has it innately too).
+  const abilities: Ability[] = [
+    ...(enhancement
+      ? [{ name: enhancement.name, type: 'Enhancement', parameter: `(+${enhancement.cost} pts)`, description: enhancement.description }]
+      : []),
+    ...unitAbilities(ds, selected),
+    ...(enhancementCoreRules ?? []),
+  ];
   const selQty = selected
     ? new Map(selected.filter((s) => s.qty > 0).map((s) => [s.name, s.qty]))
     : null;

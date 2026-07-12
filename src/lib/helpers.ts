@@ -5,6 +5,7 @@ import type {
   ChosenWargear,
   Datasheet,
   Detachment,
+  Enhancement,
   FactionData,
   ListUnit,
   PointsOption,
@@ -131,6 +132,40 @@ export function unitAbilities(ds: Datasheet, selected?: ChosenWargear[]): Abilit
     }
     return true;
   });
+}
+
+/** The Enhancement object for a unit's `enhancementName` — enhancements are detachment-scoped,
+ *  not datasheet-scoped, so this is resolved against the list's chosen detachments. */
+export function enhancementFor(detachments: Detachment[], name?: string): Enhancement | undefined {
+  if (!name) return undefined;
+  for (const d of detachments) {
+    const e = d.enhancements.find((e) => e.name === name);
+    if (e) return e;
+  }
+  return undefined;
+}
+
+/** Core rules (Deep Strike, Stealth, ...) an enhancement's own text grants/references, resolved
+ * against the Core abilities already present somewhere in this faction's datasheets — the
+ * canonical source for their full wording, since an enhancement's text just names the rule
+ * rather than repeating its glossary entry. `already` (the unit's own abilities) is excluded so
+ * a rule the unit already has innately isn't listed a second time. */
+export function enhancementCoreRules(
+  description: string,
+  fd: FactionData,
+  already: Ability[] = [],
+): Ability[] {
+  const known = new Map<string, Ability>();
+  for (const ds of fd.datasheets) {
+    for (const a of ds.abilities ?? []) {
+      if (a.type === 'Core' && a.name && !known.has(a.name)) known.set(a.name, a);
+    }
+  }
+  const seen = new Set(already.filter((a) => a.type === 'Core').map((a) => a.name));
+  const text = ` ${normName(stripHtml(description))} `;
+  return [...known.values()].filter(
+    (a) => !seen.has(a.name) && text.includes(` ${normName(a.name)} `),
+  );
 }
 
 export function uid(): string {

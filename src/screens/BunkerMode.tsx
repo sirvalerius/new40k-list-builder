@@ -9,6 +9,8 @@ import {
   datasheetMap,
   displayName,
   effectiveKeywords,
+  enhancementCoreRules,
+  enhancementFor,
   factionKeywordVocab,
   mergedUnitGroups,
   missionMatchup,
@@ -194,13 +196,24 @@ export function BunkerMode({
                   m.warlord ? 'Warlord' : '',
                   m.enhancementName ? `+${m.enhancementName}` : '',
                 ].filter(Boolean);
+                const enhancement = enhancementFor(chosenDet, m.enhancementName);
+                const unitCore = ds.abilities?.filter((a) => a.type === 'Core') ?? [];
                 return (
                   <div key={m.uid} className="bunker-member">
                     <div className="bunker-member-name">
                       {displayName(m)}
                       {tags.length ? <span className="muted small"> · {tags.join(' · ')}</span> : null}
                     </div>
-                    <DatasheetCard ds={ds} selected={m.wargearCosts ?? []} subFaction={list.subFaction ?? ''} modelCount={m.modelCount} />
+                    <DatasheetCard
+                      ds={ds}
+                      selected={m.wargearCosts ?? []}
+                      subFaction={list.subFaction ?? ''}
+                      modelCount={m.modelCount}
+                      enhancement={enhancement}
+                      enhancementCoreRules={
+                        enhancement ? enhancementCoreRules(enhancement.description, fd, unitCore) : undefined
+                      }
+                    />
                   </div>
                 );
               })}

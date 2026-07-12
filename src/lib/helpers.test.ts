@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed, armyRules, unitAbilities } from './helpers';
+import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed, enhancementCoreRules, enhancementFor, armyRules, unitAbilities } from './helpers';
 import type { ArmyList, ChosenWargear, Datasheet, Detachment, FactionData, ListUnit, PointsOption, Weapon } from './types';
 
 function ds(partial: Partial<Datasheet>): Datasheet {
@@ -336,6 +336,41 @@ describe('unitAbilities (innate rules always shown; wargear-gated only when take
   it('Wargear-type ability appears once its option is chosen, matched loosely against the full option text', () => {
     const names = unitAbilities(suit, [{ name: BEACON_OPT, cost: 0, qty: 1 }]).map((a) => a.name);
     expect(names).toContain('Homing Beacon');
+  });
+});
+
+describe('enhancementFor / enhancementCoreRules', () => {
+  const stealth = { name: 'Stealth', type: 'Core', parameter: '', description: '-1 to hit.' };
+  const leader = { name: 'Leader', type: 'Core', parameter: '', description: 'Can attach to a unit.' };
+  const hasStealth = ds({ id: 'hs', name: 'Has Stealth', abilities: [stealth, leader] });
+  const plain = ds({ id: 'pl', name: 'Plain', abilities: [] });
+  const fd = { datasheets: [hasStealth, plain] } as unknown as FactionData;
+  const cloak = { name: 'Shroud Cloak', cost: '15', is_upgrade: false,
+    description: 'This model has the Stealth ability.' };
+  const det = { id: 'd1', name: 'Det', legend: '', dp_cost: 0, force_disposition: '', exclusive_tag: '',
+    restriction: '', rules: [], enhancements: [cloak], stratagems: [] } as unknown as Detachment;
+
+  it('enhancementFor finds the enhancement by name across detachments', () => {
+    expect(enhancementFor([det], 'Shroud Cloak')).toBe(cloak);
+    expect(enhancementFor([det], 'Nonexistent')).toBeUndefined();
+    expect(enhancementFor([det], undefined)).toBeUndefined();
+  });
+
+  it('enhancementCoreRules resolves a Core rule the enhancement text names, from anywhere in fd', () => {
+    const found = enhancementCoreRules(cloak.description, fd, []);
+    expect(found.map((a) => a.name)).toEqual(['Stealth']);
+    expect(found[0].description).toBe('-1 to hit.');
+  });
+
+  it('enhancementCoreRules excludes a rule the unit already has innately', () => {
+    const found = enhancementCoreRules(cloak.description, fd, [stealth]);
+    expect(found).toEqual([]);
+  });
+
+  it('enhancementCoreRules requires a whole-word match, not a substring of a longer word', () => {
+    // "Leadership" contains "Leader" as a raw substring — must not match the Leader Core rule.
+    const found = enhancementCoreRules("Add 1 to this model's Leadership characteristic.", fd, []);
+    expect(found.map((a) => a.name)).not.toContain('Leader');
   });
 });
 
