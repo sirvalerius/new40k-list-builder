@@ -26,36 +26,41 @@ function PrintMember({ ds, unit }: { ds: Datasheet; unit: ListUnit }) {
 
   return (
     <div className="col" style={{ gap: 4 }}>
-      <div className="row wrap" style={{ gap: 6, alignItems: 'baseline' }}>
-        <b>{displayName(unit)}</b>
-        <span className="muted tiny">
-          {unit.pointsLabel} · {unitTotal(unit)} pts
-          {tags.length ? ` · ${tags.join(' · ')}` : ''}
-        </span>
+      {/* The compact "core" (name/stats/weapons/loadout) is its own break-inside:avoid block,
+          separate from the ability paragraphs below — a long unit-specific rule (see
+          print-ability below) can then flow onto a fresh page/column on its own without
+          dragging this always-small block down with it, and without being dragged down itself. */}
+      <div className="col print-core" style={{ gap: 4 }}>
+        <div className="row wrap" style={{ gap: 6, alignItems: 'baseline' }}>
+          <b>{displayName(unit)}</b>
+          <span className="muted tiny">
+            {unit.pointsLabel} · {unitTotal(unit)} pts
+            {tags.length ? ` · ${tags.join(' · ')}` : ''}
+          </span>
+        </div>
+        {ds.stats[0] && <StatLine stat={ds.stats[0]} />}
+        {ds.transport && ds.transport.trim() && (
+          <div className="tiny muted">🚛 {stripHtml(ds.transport)}</div>
+        )}
+        {weapons.length > 0 && <WeaponTable weapons={weapons} />}
+        {loadout.length > 0 && (
+          <div className="tiny muted">
+            {loadout.map((w) => `${w.qty}× ${w.name}${intOf(w.cost) ? ` (+${intOf(w.cost) * w.qty})` : ''}`).join(' · ')}
+          </div>
+        )}
+        {coreNames.length > 0 && (
+          <div className="tiny muted">{coreNames.join(' · ')}</div>
+        )}
       </div>
-      {ds.stats[0] && <StatLine stat={ds.stats[0]} />}
-      {ds.transport && ds.transport.trim() && (
-        <div className="tiny muted">🚛 {stripHtml(ds.transport)}</div>
-      )}
-      {weapons.length > 0 && <WeaponTable weapons={weapons} />}
-      {loadout.length > 0 && (
-        <div className="tiny muted">
-          {loadout.map((w) => `${w.qty}× ${w.name}${intOf(w.cost) ? ` (+${intOf(w.cost) * w.qty})` : ''}`).join(' · ')}
+      {otherAbilities.map((a, i) => (
+        // Each ability is its own break-inside:avoid block (not one shared block) so the page
+        // can break BETWEEN abilities instead of either dragging the whole card along or
+        // splitting a single ability's text mid-sentence.
+        <div key={i} className="tiny print-ability">
+          {a.name && <b>{a.name}{a.parameter ? ` ${a.parameter}` : ''}: </b>}
+          {stripHtml(a.description)}
         </div>
-      )}
-      {coreNames.length > 0 && (
-        <div className="tiny muted">{coreNames.join(' · ')}</div>
-      )}
-      {otherAbilities.length > 0 && (
-        <div className="tiny">
-          {otherAbilities.map((a, i) => (
-            <div key={i}>
-              {a.name && <b>{a.name}{a.parameter ? ` ${a.parameter}` : ''}: </b>}
-              {stripHtml(a.description)}
-            </div>
-          ))}
-        </div>
-      )}
+      ))}
     </div>
   );
 }

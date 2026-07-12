@@ -672,6 +672,11 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
      physical page should use the page's actual width instead, so the column layout below
      has real estate to pack cards into (this is what keeps the page count down). */
   .app { max-width: none; margin: 0; }
+  /* .app's on-screen flex column + min-height:100vh (a single-viewport app-shell frame with a
+     sticky footer) fights CSS pagination: once printed content is taller than one page, Chrome
+     tries to satisfy that min-height on the FIRST page fragment and dumps a blank page before
+     any real content — undo both for print, there's no viewport or footer to fill on paper. */
+  .app { min-height: 0; display: block; }
 
   /* Force a light, ink-friendly palette for the printed sheet only — the on-screen
      preview keeps the app's dark theme; only the physical printout needs to flip. */
@@ -693,16 +698,28 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 
   /* Multi-column flow packs cards as tightly as the page allows instead of one big
      column with wasted trailing whitespace per page — this is what keeps the page
-     count minimal. Each datacard opts out of splitting across a column/page break. */
+     count minimal. The whole card does NOT opt out of breaking (a long special rule can
+     make a card taller than a column, and forcing the entire thing to avoid breaking just
+     pushes it whole to the next column/page or overflows anyway): only its compact "core"
+     (name/stats/weapons) and each individual ability paragraph do, so a break can only land
+     between those pieces — never mid-table or mid-sentence. */
   .print-sheet .print-cards {
     column-count: 2;
     column-gap: 12px;
+    /* default 'balance' tries to even out both columns against the TOTAL remaining content
+       (which spans many pages), and Chrome's paginator can miscalculate that into "nothing
+       fits on this page" — an entire blank page before the first card. 'auto' fills column 1
+       to the page bottom, then column 2, then moves on; simple and reliable across pages. */
+    column-fill: auto;
   }
   .print-sheet .print-card {
-    break-inside: avoid;
-    -webkit-column-break-inside: avoid;
     display: inline-block;
     width: 100%;
     vertical-align: top;
+  }
+  .print-sheet .print-core,
+  .print-sheet .print-ability {
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
   }
 }
