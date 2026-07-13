@@ -55,6 +55,9 @@ export function PrintView({
     }
   }
   const sortedCoreRules = [...coreRules.values()].sort((a, b) => a.name.localeCompare(b.name));
+  // Actual origin + base path, not a hardcoded URL — correct on GitHub Pages, a future custom
+  // domain, or a local dev/preview server alike.
+  const appUrl = `${window.location.origin}${import.meta.env.BASE_URL}`;
 
   return (
     <div className="print-sheet">
@@ -98,6 +101,10 @@ export function PrintView({
           </div>
         </div>
       )}
+
+      <div className="tiny muted center mt">
+        Generated with New40k List Builder — {appUrl}
+      </div>
     </div>
   );
 }
