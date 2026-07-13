@@ -2909,7 +2909,15 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "Excruciator cannon",
+    "Hades battle cannon",
+    "Heavy baleflamer",
+    "Heavy missile launcher – frag",
+    "Heavy missile launcher – krak",
+    "Shearing claws – strike",
+    "Shearing claws – sweep"
+   ],
    "weapon_options": [
     {
      "text": "This model’s Hades battle cannon can be replaced with 1 ectoplasma destructor.",
@@ -4321,6 +4329,8 @@
    "stock_weapons": [
     "Armoured tracks",
     "Demolisher cannon",
+    "Fellblade accelerator cannon – AP shells",
+    "Fellblade accelerator cannon – HE shells",
     "Heavy bolter",
     "Quad lascannon",
     "Twin heavy bolter"
@@ -4649,7 +4659,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "Armoured hull",
+    "Twin autocannon",
+    "Twin avenger bolt cannon",
+    "Twin hellstrike launcher"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin hellstrike missile launchers can be replaced with 2 twin lascannons",
@@ -5213,6 +5228,8 @@
    "countable": false,
    "stock_weapons": [
     "Close combat weapon",
+    "Missile launcher – frag",
+    "Missile launcher – krak",
     "Multi-melta"
    ],
    "weapon_options": [
@@ -5992,6 +6009,8 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
+    "Fires of the Abyss – focused witchfire",
+    "Fires of the Abyss – witchfire",
     "Force weapon",
     "Inferno bolt pistol"
    ],
@@ -6134,6 +6153,8 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
+    "Infernal Gateway – focused witchfire",
+    "Infernal Gateway – witchfire",
     "Staff of Tomorrow"
    ],
    "weapon_options": [],
@@ -6424,7 +6445,9 @@
    "stock_weapons": [
     "Armoured tracks",
     "Autocannon",
-    "Heavy bolter"
+    "Heavy bolter",
+    "Kratos battle cannon – AP",
+    "Kratos battle cannon – HE"
    ],
    "weapon_options": [
     {
@@ -6847,6 +6870,8 @@
    "countable": false,
    "stock_weapons": [
     "Armoured tracks",
+    "Quad launcher – shatter shells",
+    "Quad launcher – thunderfire shells",
     "Twin volkite culverin"
    ],
    "weapon_options": [
@@ -7722,6 +7747,8 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
+    "Bolt of Change – focused witchfire",
+    "Bolt of Change – witchfire",
     "Staff of Tzeentch"
    ],
    "weapon_options": [
@@ -7929,6 +7956,8 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
+    "Blade of Magnus – strike",
+    "Blade of Magnus – sweep",
     "Gaze of Magnus",
     "Tzeentch’s Firestorm"
    ],
@@ -8533,7 +8562,10 @@
    "countable": false,
    "stock_weapons": [
     "Betentacled maw",
-    "Mutalith claws"
+    "Mutalith claws",
+    "Warp vortex – beam",
+    "Warp vortex – blast",
+    "Warp vortex – torrent"
    ],
    "weapon_options": [],
    "chapter": "",
@@ -9315,7 +9347,9 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
-    "Armoured feet"
+    "Armoured feet",
+    "Heavy plasma cannon – standard",
+    "Heavy plasma cannon – supercharge"
    ],
    "weapon_options": [
     {

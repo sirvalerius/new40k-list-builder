@@ -1369,7 +1369,9 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
-    "Armoured tracks"
+    "Armoured tracks",
+    "Plasma destroyer – standard",
+    "Plasma destroyer – supercharge"
    ],
    "weapon_options": [
     {
@@ -1891,7 +1893,9 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
-    "Daemon hammer"
+    "Daemon hammer",
+    "Plasma pistol – standard",
+    "Plasma pistol – supercharge"
    ],
    "weapon_options": [
     {
@@ -7225,7 +7229,9 @@
     "Autopistol",
     "Close combat weapon",
     "Commune blade",
-    "Commune stave"
+    "Commune stave",
+    "Warp Curse – focused witchfire",
+    "Warp Curse – witchfire"
    ],
    "weapon_options": [],
    "chapter": "",
@@ -7490,7 +7496,8 @@
      "model": "",
      "grants": [
       "Hellflamer",
-      "Decimator claw"
+      "Decimator claw",
+      "Twin Decimator claws"
      ]
     }
    ],
@@ -7735,7 +7742,11 @@
    "stock_weapons": [
     "Excruciator cannon",
     "Hades battle cannon",
-    "Heavy baleflamer"
+    "Heavy baleflamer",
+    "Heavy missile launcher – frag",
+    "Heavy missile launcher – krak",
+    "Shearing claws – strike",
+    "Shearing claws – sweep"
    ],
    "weapon_options": [
     {
@@ -9286,6 +9297,8 @@
    "stock_weapons": [
     "Armoured tracks",
     "Demolisher cannon",
+    "Fellblade accelerator cannon – AP shells",
+    "Fellblade accelerator cannon – HE shells",
     "Heavy bolter",
     "Quad lascannon",
     "Twin heavy bolter"
@@ -9851,7 +9864,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "Armoured hull",
+    "Twin autocannon",
+    "Twin avenger bolt cannon",
+    "Twin hellstrike launcher"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin hellstrike missile launchers can be replaced with 2 twin lascannons",
@@ -10513,6 +10531,8 @@
    "countable": false,
    "stock_weapons": [
     "Demolisher cannon",
+    "Hellcrusher claws – strike",
+    "Hellcrusher claws – sweep",
     "Hellmaw flame cannons",
     "Scorpion cannon"
    ],
@@ -11392,7 +11412,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "Close combat weapon",
+    "Missile launcher – frag",
+    "Missile launcher – krak",
+    "Multi-melta"
+   ],
    "weapon_options": [
     {
      "text": "Helbrute plasma cannon (instead of multi-melta)",
@@ -12153,6 +12178,8 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
+    "Hellforged weapons – strike",
+    "Hellforged weapons – sweep",
     "Infernal cannon"
    ],
    "weapon_options": [],
@@ -12320,6 +12347,8 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
+    "Hellforged weapons – strike",
+    "Hellforged weapons – sweep",
     "Infernal cannon"
    ],
    "weapon_options": [],
@@ -12639,6 +12668,8 @@
    "countable": false,
    "stock_weapons": [
     "Blade struts",
+    "Kharybdis storm launcher – frag",
+    "Kharybdis storm launcher – krak",
     "Melta array"
    ],
    "weapon_options": [
@@ -13053,6 +13084,8 @@
    "countable": false,
    "stock_weapons": [
     "Gorestorm cannon",
+    "Great cleaver of Khorne – strike",
+    "Great cleaver of Khorne – sweep",
     "Hades gatling cannon"
    ],
    "weapon_options": [
@@ -13390,7 +13423,9 @@
    "stock_weapons": [
     "Armoured tracks",
     "Autocannon",
-    "Heavy bolter"
+    "Heavy bolter",
+    "Kratos battle cannon – AP",
+    "Kratos battle cannon – HE"
    ],
    "weapon_options": [
     {
@@ -13937,6 +13972,8 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
+    "Kytan cleaver – strike",
+    "Kytan cleaver – sweep",
     "Kytan gatling cannon"
    ],
    "weapon_options": [
@@ -14148,6 +14185,8 @@
    "countable": false,
    "stock_weapons": [
     "Armoured tracks",
+    "Quad launcher – shatter shells",
+    "Quad launcher – thunderfire shells",
     "Twin volkite culverin"
    ],
    "weapon_options": [
@@ -16012,6 +16051,8 @@
    "countable": false,
    "stock_weapons": [
     "Bolt pistol",
+    "Rite of Possession – focused witchfire",
+    "Rite of Possession – witchfire",
     "Staff of possession"
    ],
    "weapon_options": [],
@@ -16823,7 +16864,11 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "Fleshmetal weapons - clawed sweeps",
+    "Fleshmetal weapons - rending strikes",
+    "Fleshmetal weapons - thunderous blows"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -16953,7 +16998,10 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "Fleshmetal weapons – strike",
+    "Fleshmetal weapons – sweep"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -18158,7 +18206,10 @@
    "model_max": 2,
    "countable": false,
    "stock_weapons": [
-    "Crushing fists"
+    "Crushing fists",
+    "Fleshmetal guns – focused malice",
+    "Fleshmetal guns – ruinous salvo",
+    "Fleshmetal guns – warp hail"
    ],
    "weapon_options": [],
    "chapter": "",
@@ -20216,7 +20267,9 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
-    "Armoured feet"
+    "Armoured feet",
+    "Heavy plasma cannon – standard",
+    "Heavy plasma cannon – supercharge"
    ],
    "weapon_options": [
     {
@@ -21503,7 +21556,9 @@
    "countable": false,
    "stock_weapons": [
     "Chaos stave",
-    "Laspistol"
+    "Laspistol",
+    "Psychic Strike – focused witchfire",
+    "Psychic Strike – witchfire"
    ],
    "weapon_options": [
     {
@@ -22872,7 +22927,9 @@
    "countable": false,
    "stock_weapons": [
     "Bolt pistol",
-    "Force weapon"
+    "Force weapon",
+    "Infernal Gaze – focused witchfire",
+    "Infernal Gaze – witchfire"
    ],
    "weapon_options": [],
    "chapter": "",
@@ -23048,7 +23105,9 @@
    "countable": false,
    "stock_weapons": [
     "Combi-bolter",
-    "Force weapon"
+    "Force weapon",
+    "Infernal Gaze – focused witchfire",
+    "Infernal Gaze – witchfire"
    ],
    "weapon_options": [
     {
@@ -23305,7 +23364,9 @@
    "stock_weapons": [
     "Bolt pistol",
     "Combi-bolter",
-    "Force weapon"
+    "Force weapon",
+    "Infernal Gaze – focused witchfire",
+    "Infernal Gaze – witchfire"
    ],
    "weapon_options": [
     {
@@ -23649,7 +23710,9 @@
    "countable": false,
    "stock_weapons": [
     "Bolt pistol",
-    "Force weapon"
+    "Force weapon",
+    "Infernal Gaze – focused witchfire",
+    "Infernal Gaze – witchfire"
    ],
    "weapon_options": [
     {
@@ -24004,6 +24067,8 @@
    "stock_weapons": [
     "Bolt pistol",
     "Force weapon",
+    "Infernal Gaze – focused witchfire",
+    "Infernal Gaze – witchfire",
     "Nurgling’s claws and teeth"
    ],
    "weapon_options": [
@@ -24338,6 +24403,8 @@
    "stock_weapons": [
     "Bolt pistol",
     "Force weapon",
+    "Infernal Gaze – focused witchfire",
+    "Infernal Gaze – witchfire",
     "Lashing tongue"
    ],
    "weapon_options": [
@@ -26160,7 +26227,9 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
-    "Vashtorr’s claw"
+    "Vashtorr’s claw",
+    "Vashtorr’s hammer – strike",
+    "Vashtorr’s hammer – sweep"
    ],
    "weapon_options": [],
    "chapter": "",
@@ -26612,7 +26681,9 @@
    "stock_weapons": [
     "Flamer tendril",
     "Forge weapon",
-    "Melta tendril"
+    "Melta tendril",
+    "Plasma pistol – standard",
+    "Plasma pistol – supercharge"
    ],
    "weapon_options": [],
    "chapter": "",

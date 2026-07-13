@@ -1264,7 +1264,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "The Wailing Doom",
+    "The Wailing Doom – strike",
+    "The Wailing Doom – sweep"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -4712,7 +4716,9 @@
    "model_max": 10,
    "countable": true,
    "stock_weapons": [
-    "Close combat weapon"
+    "Close combat weapon",
+    "Reaper launcher – starshot",
+    "Reaper launcher – starswarm"
    ],
    "weapon_options": [
     {
@@ -6389,6 +6395,8 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
+    "Prism cannon – dispersed pulse",
+    "Prism cannon – focused lances",
     "Twin shuriken catapult",
     "Wraithbone hull"
    ],
@@ -6697,7 +6705,9 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
-    "Fire Axe"
+    "Fire Axe",
+    "Searsong – beam",
+    "Searsong – lance"
    ],
    "weapon_options": [],
    "chapter": "",
@@ -10726,7 +10736,9 @@
    "model_max": 10,
    "countable": true,
    "stock_weapons": [
-    "Close combat weapon"
+    "Close combat weapon",
+    "Prism rifle – dispersed",
+    "Prism rifle – focused"
    ],
    "weapon_options": [
     {
@@ -13391,7 +13403,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "Asu-var – duellist stance",
+    "Asu-var – mythic stance",
+    "Asu-var – quicksilver stance"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
@@ -13541,7 +13557,9 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
-    "Swirling soul energy"
+    "Swirling soul energy",
+    "Vilith-zhar – strike",
+    "Vilith-zhar – sweep"
    ],
    "weapon_options": [],
    "chapter": "",
@@ -15788,6 +15806,8 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
+    "D-flail – blast",
+    "D-flail – rift",
     "Twin shuriken catapult",
     "Wraithbone hull"
    ],
@@ -16068,7 +16088,8 @@
      "group": "000000601-0",
      "model": "",
      "grants": [
-      "Powerblade array"
+      "Powerblade array",
+      "Powerblades"
      ]
     },
     {
@@ -17637,7 +17658,10 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "Titanic ghostglaive – strike",
+    "Titanic ghostglaive – sweep"
+   ],
    "weapon_options": [
     {
      "text": "This model’s scattershield can be replaced with 1 heavy wraithcannon.",
@@ -18223,7 +18247,9 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
-    "Destructor"
+    "Destructor",
+    "Ghostspear – strike",
+    "Ghostspear – sweep"
    ],
    "weapon_options": [
     {

@@ -1160,6 +1160,8 @@
    "countable": false,
    "stock_weapons": [
     "Close-combat weapon",
+    "Eradication caster – dissipated",
+    "Eradication caster – focused",
     "Hastarii arc blaster",
     "Power weapon"
    ],
@@ -2325,7 +2327,9 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
-    "Dunecrawler legs"
+    "Dunecrawler legs",
+    "Eradication beamer – dissipated",
+    "Eradication beamer – focused"
    ],
    "weapon_options": [
     {
@@ -3114,7 +3118,9 @@
    "model_max": 10,
    "countable": true,
    "stock_weapons": [
-    "Close combat weapon"
+    "Close combat weapon",
+    "Galvanic caster – flechette",
+    "Galvanic caster – hammershot"
    ],
    "weapon_options": [
     {
@@ -6998,7 +7004,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "Jericho-class conversion resonator – shockwave",
+    "Jericho-class conversion resonator – titanic impact",
+    "Rod of the War Forge – strike",
+    "Rod of the War Forge – sweep"
+   ],
    "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""

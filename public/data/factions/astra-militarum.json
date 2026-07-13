@@ -1849,6 +1849,8 @@
    "model_max": 10,
    "countable": true,
    "stock_weapons": [
+    "Hunting lance – frag tip",
+    "Hunting lance – melta tip",
     "Lasgun",
     "Laspistol",
     "Steed’s hooves"
@@ -16334,7 +16336,11 @@
    "countable": false,
    "stock_weapons": [
     "Armoured tracks",
-    "Lascannon"
+    "Executioner plasma cannon – standard",
+    "Executioner plasma cannon – supercharge",
+    "Lascannon",
+    "Plasma cannon – standard",
+    "Plasma cannon – supercharge"
    ],
    "weapon_options": [
     {
@@ -18349,7 +18355,9 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
-    "Armoured tracks"
+    "Armoured tracks",
+    "Omega-pattern plasma blastgun – standard",
+    "Omega-pattern plasma blastgun – supercharge"
    ],
    "weapon_options": [
     {
@@ -18882,7 +18890,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy stubber",
+    "Macharius vulcan mega-bolter",
+    "Twin heavy stubber"
+   ],
    "weapon_options": [
     {
      "text": "Heavy bolters (instead of heavy stubbers)",
@@ -22802,7 +22815,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy bolter",
+    "Praetor launcher – firestorm",
+    "Praetor launcher – foehammer"
+   ],
    "weapon_options": [
     {
      "text": "Heavy stubber",
@@ -23000,7 +23018,9 @@
    "countable": false,
    "stock_weapons": [
     "Force weapon",
-    "Laspistol"
+    "Laspistol",
+    "Psychic Maelstrom – focused witchfire",
+    "Psychic Maelstrom – witchfire"
    ],
    "weapon_options": [],
    "chapter": "",
@@ -23300,6 +23320,7 @@
    "model_max": 5,
    "countable": false,
    "stock_weapons": [
+    "Medical scalpels",
     "Quartermaster’s close combat weapon",
     "Quartermaster’s pistol"
    ],
@@ -26564,6 +26585,8 @@
    "stock_weapons": [
     "Armoured tracks",
     "Lascannon",
+    "Stormblade plasma blastgun – standard",
+    "Stormblade plasma blastgun – supercharge",
     "Twin heavy bolter"
    ],
    "weapon_options": [
@@ -26823,7 +26846,14 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "Armoured tracks",
+    "Heavy stubber",
+    "Lascannon",
+    "Twin heavy bolter",
+    "Twin heavy flamer",
+    "Vulcan mega-bolter"
+   ],
    "weapon_options": [
     {
      "text": "This model’s 2 twin heavy flamers can be replaced with 2 twin heavy bolters.",
@@ -31015,7 +31045,9 @@
    "countable": false,
    "stock_weapons": [
     "Auto shotgun",
-    "Bionic arm with devil’s claw"
+    "Bionic arm with devil’s claw",
+    "Plasma pistol – standard",
+    "Plasma pistol – supercharge"
    ],
    "weapon_options": [
     {

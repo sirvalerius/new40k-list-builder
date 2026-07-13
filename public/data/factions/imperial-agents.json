@@ -357,6 +357,10 @@
     "Close combat weapon",
     "Deathwatch marksman bolt carbine",
     "Heavy thunder hammer",
+    "Infernus heavy bolter – heavy bolter",
+    "Infernus heavy bolter – heavy flamer",
+    "Plasma pistol – standard",
+    "Plasma pistol – supercharge",
     "Power weapon",
     "Special-issue bolt pistol",
     "Stalker bolt rifle",
@@ -3081,6 +3085,8 @@
     "Bolt rifle",
     "Close combat weapon",
     "Heavy bolt pistol",
+    "Plasma incinerator – standard",
+    "Plasma incinerator – supercharge",
     "Twin bolt rifle"
    ],
    "weapon_options": [
@@ -5409,7 +5415,11 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
-   "stock_weapons": [],
+   "stock_weapons": [
+    "Artificer bolt pistol",
+    "Mind Assault",
+    "Runestaff and Barbarisater"
+   ],
    "weapon_options": [
     {
      "text": "None",
@@ -7491,7 +7501,9 @@
    "model_max": 1,
    "countable": false,
    "stock_weapons": [
-    "Close combat weapon"
+    "Close combat weapon",
+    "Jokaero weapons – focused",
+    "Jokaero weapons – scattered"
    ],
    "weapon_options": [
     {
@@ -9564,6 +9576,8 @@
     "Holy fire",
     "Ministorum flamer",
     "Ministorum hand flamer",
+    "Plasma gun – standard",
+    "Plasma gun – supercharge",
     "Sanctifier melee weapon"
    ],
    "weapon_options": [
