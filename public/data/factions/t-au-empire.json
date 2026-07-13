@@ -4434,6 +4434,12 @@
    "model_min": 3,
    "model_max": 3,
    "countable": false,
+   "default_wargear": [
+    {
+     "name": "T'au flamer",
+     "cost": 5
+    }
+   ],
    "stock_weapons": [
     "Battlesuit fists",
     "Burst cannon",
@@ -4455,7 +4461,7 @@
     },
     {
      "text": "Any number of models can each have their T’au flamer replaced with 1 burst cannon.",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "all"
