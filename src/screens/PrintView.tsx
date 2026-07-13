@@ -102,7 +102,9 @@ export function PrintView({
         </div>
       )}
 
-      <div className="tiny muted center mt">
+      {/* print-footer: position:fixed in print media repeats this on every page (index.css) —
+          on screen it's just a normal line at the end of the sheet. */}
+      <div className="tiny muted center mt print-footer">
         Generated with New40k List Builder — {appUrl}
       </div>
     </div>

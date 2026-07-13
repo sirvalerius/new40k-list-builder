@@ -664,7 +664,9 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 @media print {
   .no-print { display: none !important; }
 
-  @page { size: A4; margin: 10mm; }
+  /* Extra bottom margin reserves room for .print-footer (position:fixed, see below) so it
+     doesn't overlap the last line of real content on any page. */
+  @page { size: A4; margin: 10mm 10mm 14mm 10mm; }
 
   html, body, #root, .app, .content { background: #fff !important; }
   .content { padding: 0; }
@@ -721,5 +723,18 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
   .print-sheet .print-ability {
     break-inside: avoid;
     -webkit-column-break-inside: avoid;
+  }
+
+  /* position:fixed repeats an element on every printed page in Chrome's print engine (the
+     same mechanism that used to paste a cookie-consent banner onto every page of a website
+     PDF export) — used deliberately here to put the credit line in every page's footer
+     instead of once at the end of the document. */
+  .print-sheet .print-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background: #fff;
   }
 }
