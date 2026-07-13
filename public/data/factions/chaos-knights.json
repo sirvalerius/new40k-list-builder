@@ -504,14 +504,14 @@
    ],
    "weapon_options": [
     {
-     "text": "Lascannons (instead of acastus autocannons can each be)",
+     "text": "Lascannons (instead of acastus autocannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "acastus autocannons can each be",
+     "base": "Acastus Autocannon",
      "group": "000001099-0",
      "model": "",
      "grants": [
@@ -519,14 +519,14 @@
      ]
     },
     {
-     "text": "Acastus autocannon and 1 lascannon (instead of acastus autocannons can each be)",
+     "text": "Acastus autocannon and 1 lascannon (instead of acastus autocannons)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "acastus autocannons can each be",
+     "base": "Acastus Autocannon",
      "group": "000001099-0",
      "model": "",
      "grants": [
@@ -1440,7 +1440,9 @@
      "base": "Reaper chainsword",
      "model": "",
      "grants": [
-      "Twin rad cleanser"
+      "Twin rad cleanser",
+      "Hekaton siege claw – strike",
+      "Hekaton siege claw – sweep"
      ]
     }
    ],
@@ -1649,7 +1651,9 @@
      "base": "Reaper chainsword",
      "model": "",
      "grants": [
-      "Twin rad cleanser"
+      "Twin rad cleanser",
+      "Hekaton siege claw – strike",
+      "Hekaton siege claw – sweep"
      ]
     }
    ],
@@ -2202,7 +2206,10 @@
      },
      "base": "autogun",
      "model": "",
-     "grants": []
+     "grants": [
+      "Grenade launcher – frag",
+      "Grenade launcher – krak"
+     ]
     }
    ],
    "chapter": "",
@@ -2611,7 +2618,10 @@
      },
      "base": "bolt pistol",
      "model": "",
-     "grants": []
+     "grants": [
+      "Plasma pistol – supercharge",
+      "Plasma pistol – standard"
+     ]
     },
     {
      "text": "1 Fellgor Beastman’s close combat weapon can be replaced with 1 great weapon.",
@@ -3152,7 +3162,10 @@
      },
      "base": "Reaper chainsword",
      "model": "",
-     "grants": []
+     "grants": [
+      "Warpstrike claw – strike",
+      "Warpstrike claw – sweep"
+     ]
     }
    ],
    "chapter": "",
@@ -4154,6 +4167,8 @@
      "model": "",
      "grants": [
       "Darkflame cannon",
+      "Ectoplasma decimator – standard",
+      "Ectoplasma decimator – supercharge",
       "Warpshock harpoon"
      ]
     }
@@ -4861,13 +4876,13 @@
    ],
    "weapon_options": [
     {
-     "text": "Autocannon (instead of heavy stubbers can each be)",
+     "text": "Autocannon (instead of heavy stubbers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "heavy stubbers can each be",
+     "base": "Heavy stubber",
      "group": "000003857-0",
      "model": "",
      "grants": [
@@ -4875,13 +4890,13 @@
      ]
     },
     {
-     "text": "Heavy bolter (instead of heavy stubbers can each be)",
+     "text": "Heavy bolter (instead of heavy stubbers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "heavy stubbers can each be",
+     "base": "Heavy stubber",
      "group": "000003857-0",
      "model": "",
      "grants": [
@@ -4889,13 +4904,13 @@
      ]
     },
     {
-     "text": "Lascannon (instead of heavy stubbers can each be)",
+     "text": "Lascannon (instead of heavy stubbers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "heavy stubbers can each be",
+     "base": "Heavy stubber",
      "group": "000003857-0",
      "model": "",
      "grants": [
@@ -4903,25 +4918,28 @@
      ]
     },
     {
-     "text": "Missile launcher (instead of heavy stubbers can each be)",
+     "text": "Missile launcher (instead of heavy stubbers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "heavy stubbers can each be",
+     "base": "Heavy stubber",
      "group": "000003857-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Missile launcher – frag",
+      "Missile launcher – krak"
+     ]
     },
     {
-     "text": "Mortar (instead of heavy stubbers can each be)",
+     "text": "Mortar (instead of heavy stubbers)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
      },
-     "base": "heavy stubbers can each be",
+     "base": "Heavy stubber",
      "group": "000003857-0",
      "model": "",
      "grants": [
@@ -5915,7 +5933,10 @@
      "base": "lasgun",
      "group": "000003853-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Cultist grenade launcher – frag",
+      "Cultist grenade launcher – krak"
+     ]
     },
     {
      "text": "Flamer (instead of lasgun)",
@@ -5958,7 +5979,10 @@
      "base": "lasgun",
      "group": "000003853-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Plasma gun – supercharge",
+      "Plasma gun – standard"
+     ]
     },
     {
      "text": "Cultist sniper rifle (instead of lasgun)",
@@ -7186,7 +7210,10 @@
      },
      "base": "slaughterclaw",
      "model": "",
-     "grants": []
+     "grants": [
+      "Reaper chaintalon – strike",
+      "Reaper chaintalon – sweep"
+     ]
     }
    ],
    "chapter": "",

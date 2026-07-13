@@ -1111,7 +1111,10 @@
      "base": "corsair firearm",
      "group": "000004171-1",
      "model": "",
-     "grants": []
+     "grants": [
+      "Aeldari missile launcher – starshot ",
+      "Aeldari missile launcher – sunburst"
+     ]
     },
     {
      "text": "Blaster (instead of corsair firearm)",
@@ -1620,7 +1623,10 @@
      "base": "corsair firearm",
      "group": "000004172-1",
      "model": "",
-     "grants": []
+     "grants": [
+      "Aeldari missile launcher – sunburst",
+      "Aeldari missile launcher – starshot"
+     ]
     },
     {
      "text": "Blaster (instead of corsair firearm)",
@@ -4733,7 +4739,10 @@
      },
      "base": "klaive",
      "model": "",
-     "grants": []
+     "grants": [
+      "Demiklaives – single blade",
+      "Demiklaives – dual blades"
+     ]
     },
     {
      "text": "For every 5 models in this unit, it can be equipped with 1 Incubi Shrine token.",
@@ -6171,6 +6180,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "default_wargear": [
+    {
+     "name": "Dark lance",
+     "cost": 5
+    }
+   ],
    "stock_weapons": [
     "Bladevanes",
     "Dark lance"
@@ -6178,29 +6193,16 @@
    "weapon_options": [
     {
      "text": "Any number of this model’s dark lances can each be replaced with 1 disintegrator cannon.",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "dark lances can each be",
+     "base": "Dark lance",
      "model": "",
      "grants": [
       "Disintegrator cannon"
-     ]
-    },
-    {
-     "text": "Equip Dark lance",
-     "cost": 5,
-     "type": "wargear",
-     "limit": {
-      "kind": "all"
-     },
-     "base": "",
-     "model": "",
-     "grants": [
-      "Dark lance"
      ]
     }
    ],
@@ -9956,7 +9958,10 @@
      },
      "base": "",
      "model": "",
-     "grants": []
+     "grants": [
+      "Voidraven missiles – implosion missiles",
+      "Voidraven missiles – shatterfield missiles"
+     ]
     },
     {
      "text": "This model’s 2 void lances can be replaced with 2 dark scythes.",
@@ -10145,7 +10150,10 @@
      },
      "base": "voidweaver haywire cannon",
      "model": "",
-     "grants": []
+     "grants": [
+      "Prismatic cannon – focused lances",
+      "Prismatic cannon – dispersed pulse"
+     ]
     }
    ],
    "chapter": "",

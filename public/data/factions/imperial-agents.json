@@ -390,6 +390,8 @@
      "group": "000004174-0",
      "model": "",
      "grants": [
+      "Astartes grenade launcher – frag",
+      "Astartes grenade launcher – krak",
       "Hellstorm bolt rifle"
      ]
     },
@@ -417,7 +419,10 @@
      },
      "base": "stalker bolt rifle",
      "model": "",
-     "grants": []
+     "grants": [
+      "Plasma incinerator – standard",
+      "Plasma incinerator – supercharge"
+     ]
     },
     {
      "text": "For every 5 models in the unit, up to 1 model’s Deathwatch marksman bolt carbine can be replaced with 1 combat knife.",
@@ -1417,6 +1422,8 @@
      "group": "000002761-0",
      "model": "",
      "grants": [
+      "Plasma pistol – standard",
+      "Plasma pistol – supercharge",
       "Power weapon"
      ]
     },
@@ -1448,6 +1455,8 @@
      "group": "000002761-0",
      "model": "",
      "grants": [
+      "Plasma pistol – standard",
+      "Plasma pistol – supercharge",
       "Astartes chainsword"
      ]
     },
@@ -1523,7 +1532,10 @@
      "base": "boltgun",
      "group": "000002761-2",
      "model": "",
-     "grants": []
+     "grants": [
+      "Plasma gun – standard",
+      "Plasma gun – supercharge"
+     ]
     }
    ],
    "chapter": "",
@@ -1872,6 +1884,8 @@
      "base": "boltgun and power weapon",
      "model": "",
      "grants": [
+      "Infernus heavy bolter – heavy bolter",
+      "Infernus heavy bolter – heavy flamer",
       "Close combat weapon"
      ]
     },
@@ -2215,7 +2229,10 @@
      "base": "storm bolter",
      "group": "000003822-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Plasma cannon – standard",
+      "Plasma cannon – supercharge"
+     ]
     },
     {
      "text": "Cyclone missile launcher and 1 storm bolter (this model’s storm bolter cannot be replaced) (instead of storm bolter)",
@@ -2228,7 +2245,10 @@
      "base": "storm bolter",
      "group": "000003822-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Cyclone missile launcher – frag",
+      "Cyclone missile launcher – krak"
+     ]
     },
     {
      "text": "Storm bolter and 1 power weapon (instead of power fist and storm bolter)",
@@ -2679,7 +2699,10 @@
      "base": "arbites combat shotgun",
      "group": "000002685-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Arbites grenade launcher – krak",
+      "Arbites grenade launcher – frag"
+     ]
     },
     {
      "text": "Heavy stubber (instead of arbites combat shotgun)",
@@ -3087,7 +3110,10 @@
      "base": "bolt rifle",
      "group": "000003825-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Plasma pistol – standard",
+      "Plasma pistol – supercharge"
+     ]
     },
     {
      "text": "Astartes chainsword (instead of bolt rifle)",
@@ -3172,7 +3198,12 @@
      },
      "base": "bolt pistol",
      "model": "KILL TEAM INTERCESSORS WITH PLASMA INCINERATORS",
-     "grants": []
+     "grants": [
+      "Plasma pistol – standard",
+      "Plasma pistol – supercharge",
+      "Plasma incinerator – standard",
+      "Plasma incinerator – supercharge"
+     ]
     },
     {
      "text": "Kill Team Intercessors with plasma incinerators",
@@ -3788,7 +3819,10 @@
      "base": "navis las-volley",
      "group": "000002587-1",
      "model": "",
-     "grants": []
+     "grants": [
+      "Plasma gun – standard",
+      "Plasma gun – supercharge"
+     ]
     },
     {
      "text": "1 Navis Armsman's Navis shotgun can be replaced with 1 autopistol and 1 power weapon.",
@@ -4319,7 +4353,10 @@
      },
      "base": "assault bolters",
      "model": "",
-     "grants": []
+     "grants": [
+      "Plasma exterminators – standard",
+      "Plasma exterminators – supercharge"
+     ]
     },
     {
      "text": "Kill Team Heavy Intercessors with power fists",
@@ -6784,7 +6821,10 @@
      },
      "base": "",
      "model": "",
-     "grants": []
+     "grants": [
+      "Plasma pistol – standard",
+      "Plasma pistol – supercharge"
+     ]
     },
     {
      "text": "For every 5 Inquisitorial Agents in this unit, 1 Inquisitorial Agent can be equipped with 1 eviscerator.**",
@@ -6838,7 +6878,10 @@
      "base": "heavy bolter",
      "group": "000002767-4",
      "model": "",
-     "grants": []
+     "grants": [
+      "Plasma cannon – standard",
+      "Plasma cannon – supercharge"
+     ]
     },
     {
      "text": "<i>**The some model cannot be equipped with more than one of these wargear options.</i>",
@@ -8881,7 +8924,10 @@
      "base": "",
      "group": "000003824-2",
      "model": "",
-     "grants": []
+     "grants": [
+      "Infernus heavy bolter – heavy bolter",
+      "Infernus heavy bolter – heavy flamer"
+     ]
     },
     {
      "text": "Bolt pistol",
@@ -8967,7 +9013,10 @@
      "base": "storm bolter",
      "group": "000003824-5",
      "model": "",
-     "grants": []
+     "grants": [
+      "Plasma cannon – standard",
+      "Plasma cannon – supercharge"
+     ]
     },
     {
      "text": "Cyclone missile launcher and 1 storm bolter (this model’s storm bolter cannot be replaced) (instead of storm bolter)",
@@ -8980,7 +9029,10 @@
      "base": "storm bolter",
      "group": "000003824-5",
      "model": "",
-     "grants": []
+     "grants": [
+      "Cyclone missile launcher – frag",
+      "Cyclone missile launcher – krak"
+     ]
     },
     {
      "text": "Storm bolter and 1 power weapon",
@@ -9540,7 +9592,9 @@
      "base": "plasma gun cannot be",
      "model": "",
      "grants": [
-      "Holy fire"
+      "Holy fire",
+      "Plasma gun – standard",
+      "Plasma gun – supercharge"
      ]
     },
     {
@@ -10169,7 +10223,10 @@
      "base": "boltgun",
      "group": "000003818-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Plasma pistol - standard",
+      "Plasma pistol - supercharge"
+     ]
     },
     {
      "text": "Chainsword",
@@ -11533,7 +11590,10 @@
      "base": "arbites combat shotgun",
      "group": "000002683-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Arbites grenade launcher – frag",
+      "Arbites grenade launcher – krak"
+     ]
     },
     {
      "text": "Heavy stubber (instead of arbites combat shotgun)",

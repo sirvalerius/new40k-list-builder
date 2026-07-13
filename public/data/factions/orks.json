@@ -381,7 +381,10 @@
      "base": "",
      "group": "000000039-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Kannon – frag",
+      "Kannon – shell"
+     ]
     },
     {
      "text": "Killkannon",
@@ -395,6 +398,8 @@
      "group": "000000039-0",
      "model": "",
      "grants": [
+      "Kannon – frag",
+      "Kannon – shell",
       "Killkannon"
      ]
     },
@@ -2670,7 +2675,10 @@
      "base": "",
      "group": "000000054-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Kannon – frag",
+      "Kannon – shell"
+     ]
     },
     {
      "text": "Supa-kannon",
@@ -2683,7 +2691,12 @@
      "base": "",
      "group": "000000054-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Kannon – frag",
+      "Kannon – shell",
+      "Supa-kannon – frag",
+      "Supa-kannon – shell"
+     ]
     }
    ],
    "chapter": "",
@@ -5094,14 +5107,14 @@
    ],
    "weapon_options": [
     {
-     "text": "Dread klaw (instead of big shootas can each be)",
+     "text": "Dread klaw (instead of big shootas)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "big shootas can each be",
+     "base": "Big shoota",
      "group": "000000040-0",
      "model": "",
      "grants": [
@@ -5109,14 +5122,14 @@
      ]
     },
     {
-     "text": "Kustom-mega blasta (instead of big shootas can each be)",
+     "text": "Kustom-mega blasta (instead of big shootas)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "big shootas can each be",
+     "base": "Big shoota",
      "group": "000000040-0",
      "model": "",
      "grants": [
@@ -5124,14 +5137,14 @@
      ]
     },
     {
-     "text": "Rokkit launcha (instead of big shootas can each be)",
+     "text": "Rokkit launcha (instead of big shootas)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "big shootas can each be",
+     "base": "Big shoota",
      "group": "000000040-0",
      "model": "",
      "grants": [
@@ -5139,14 +5152,14 @@
      ]
     },
     {
-     "text": "Skorcha (instead of big shootas can each be)",
+     "text": "Skorcha (instead of big shootas)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "big shootas can each be",
+     "base": "Big shoota",
      "group": "000000040-0",
      "model": "",
      "grants": [
@@ -5154,14 +5167,14 @@
      ]
     },
     {
-     "text": "Big shoota (instead of dread klaws can each be)",
+     "text": "Big shoota (instead of dread klaws)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "dread klaws can each be",
+     "base": "Dread klaw",
      "group": "000000040-1",
      "model": "",
      "grants": [
@@ -5169,14 +5182,14 @@
      ]
     },
     {
-     "text": "Kustom-mega blasta (instead of dread klaws can each be)",
+     "text": "Kustom-mega blasta (instead of dread klaws)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "dread klaws can each be",
+     "base": "Dread klaw",
      "group": "000000040-1",
      "model": "",
      "grants": [
@@ -5184,14 +5197,14 @@
      ]
     },
     {
-     "text": "Rokkit launcha (instead of dread klaws can each be)",
+     "text": "Rokkit launcha (instead of dread klaws)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "dread klaws can each be",
+     "base": "Dread klaw",
      "group": "000000040-1",
      "model": "",
      "grants": [
@@ -5199,14 +5212,14 @@
      ]
     },
     {
-     "text": "Skorcha (instead of dread klaws can each be)",
+     "text": "Skorcha (instead of dread klaws)",
      "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
       "max": 1
      },
-     "base": "dread klaws can each be",
+     "base": "Dread klaw",
      "group": "000000040-1",
      "model": "",
      "grants": [
@@ -5457,7 +5470,10 @@
      "base": "Zzap gun",
      "group": "000001388-1",
      "model": "",
-     "grants": []
+     "grants": [
+      "Kannon – frag",
+      "Kannon – shell"
+     ]
     },
     {
      "text": "Lobba (instead of kannon)",
@@ -6560,7 +6576,10 @@
      "base": "",
      "group": "000000059-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Kannon – frag",
+      "Kannon – shell"
+     ]
     },
     {
      "text": "Supa-kannon",
@@ -6574,6 +6593,8 @@
      "group": "000000059-0",
      "model": "",
      "grants": [
+      "Kannon – frag",
+      "Kannon – shell",
       "Supa-kannon"
      ]
     }
@@ -11279,7 +11300,11 @@
      "base": "smasha gun",
      "group": "000000038-0",
      "model": "",
-     "grants": []
+     "grants": [
+      "Bubblechukka – big bubble",
+      "Bubblechukka – wobbly bubble",
+      "Bubblechukka – dense bubble"
+     ]
     },
     {
      "text": "Kustom mega-kannon (instead of smasha gun)",
@@ -13605,7 +13630,10 @@
      },
      "base": "",
      "model": "",
-     "grants": []
+     "grants": [
+      "Kannon – frag",
+      "Kannon – shell"
+     ]
     }
    ],
    "chapter": "",
