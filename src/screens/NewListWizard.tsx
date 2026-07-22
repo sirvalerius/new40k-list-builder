@@ -1,7 +1,14 @@
-import { useState } from 'react';
-import type { FactionIndexEntry, Rules } from '../lib/types';
-import { closestBattleSize, intOf } from '../lib/helpers';
+import { Fragment, useState } from 'react';
+import type { ChangelogEntry, FactionIndexEntry, Rules } from '../lib/types';
+import { closestBattleSize, intOf, isRecentChange } from '../lib/helpers';
 import { BattleSizeFields } from '../components/BattleSizeFields';
+import { Modal } from '../components/Modal';
+import { loadFaction } from '../lib/data';
+
+// **bold** spans in changelog text → <b> (same convention as MissionCard's `md`).
+function md(text: string) {
+  return text.split(/\*\*/).map((part, i) => (i % 2 ? <b key={i}>{part}</b> : <Fragment key={i}>{part}</Fragment>));
+}
 
 export function NewListWizard({
   rules,
@@ -20,6 +27,14 @@ export function NewListWizard({
   const [battleSizeId, setBattleSizeId] = useState<string>(() => closestBattleSize(rules, 2000));
   const [query, setQuery] = useState('');
   const [factionId, setFactionId] = useState('');
+  const [changelogFor, setChangelogFor] = useState<FactionIndexEntry | null>(null);
+  const [changelog, setChangelog] = useState<ChangelogEntry[] | null>(null);
+
+  function openChangelog(f: FactionIndexEntry) {
+    setChangelogFor(f);
+    setChangelog(null);
+    loadFaction(f.slug).then((fd) => setChangelog(fd.faction.changelog ?? []));
+  }
 
   // Editing max points pre-selects the matching battle size (the user can still override).
   function onMaxPoints(v: number) {
@@ -89,24 +104,61 @@ export function NewListWizard({
       />
       <div className="col" style={{ gap: 8 }}>
         {filtered.map((f) => (
-          <button
+          <div
             key={f.id}
-            className={`card tappable list-tile ${factionId === f.id ? 'det-selected' : 'ghost'}`}
-            style={{ textAlign: 'left', height: 'auto', padding: 12 }}
-            onClick={() => setFactionId(f.id)}
+            className={`card list-tile ${factionId === f.id ? 'det-selected' : 'ghost'}`}
+            style={{ padding: 12 }}
           >
-            <div className="meta">
+            <div
+              className="meta tappable"
+              style={{ cursor: 'pointer' }}
+              onClick={() => setFactionId(f.id)}
+            >
               <div className="name">{f.name}</div>
               <div className="muted small">
                 {f.super_keywords.join(' · ')} · {f.unit_count} units ·{' '}
                 {f.detachment_count} detachments
+                {f.changelog_last_update && ` · updated ${f.changelog_last_update}`}
               </div>
             </div>
-            <span aria-hidden>{factionId === f.id ? '✓' : '→'}</span>
-          </button>
+            {isRecentChange(f.changelog_last_update) && (
+              <button
+                className="ghost small iconbtn"
+                onClick={() => openChangelog(f)}
+                aria-label={`Recent changes for ${f.name}`}
+                title="Recent changes (last 30 days)"
+              >
+                🆕
+              </button>
+            )}
+            <span aria-hidden onClick={() => setFactionId(f.id)} style={{ cursor: 'pointer' }}>
+              {factionId === f.id ? '✓' : '→'}
+            </span>
+          </div>
         ))}
         {filtered.length === 0 && <div className="empty">No match.</div>}
       </div>
+
+      {changelogFor && (
+        <Modal title={`${changelogFor.name} — recent changes`} onClose={() => setChangelogFor(null)}>
+          {changelog === null && <div className="muted">Loading…</div>}
+          {changelog && changelog.length === 0 && (
+            <div className="muted">No changelog recorded for this faction.</div>
+          )}
+          {changelog?.map((entry) => (
+            <div key={entry.date} className="mb">
+              <div className="muted small" style={{ fontWeight: 600 }}>
+                {entry.date}
+              </div>
+              <ul style={{ margin: '4px 0 0', paddingLeft: 20 }}>
+                {entry.items.map((item, i) => (
+                  <li key={i}>{md(item)}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </Modal>
+      )}
       <div className="row mt">
         <button className="ghost" onClick={() => setStep(1)}>
           ← Back

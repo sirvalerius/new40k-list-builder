@@ -48,7 +48,10 @@ export interface FactionIndexEntry {
   super_keywords: string[];
   unit_count: number;
   detachment_count: number;
+  changelog_last_update?: string; // ISO date (YYYY-MM-DD) of the latest changelog entry, if any
 }
+
+export interface ChangelogEntry { date: string; items: string[]; }
 
 export interface Stat { name: string; M: string; T: string; Sv: string; inv_sv: string; W: string; Ld: string; OC: string; base_size: string; }
 export interface Weapon { name: string; type: string; range: string; A: string; BS_WS: string; S: string; AP: string; D: string; description: string; }
@@ -173,7 +176,7 @@ export interface Detachment {
 }
 
 export interface FactionData {
-  faction: { id: string; name: string; super_keywords: string[]; sub_factions?: string[] };
+  faction: { id: string; name: string; super_keywords: string[]; sub_factions?: string[]; changelog?: ChangelogEntry[] };
   last_update: string;
   unit_count: number;
   datasheets: Datasheet[];

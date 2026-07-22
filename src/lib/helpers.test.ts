@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed, enhancementCoreRules, enhancementFor, armyRules, unitAbilities, duplicateList } from './helpers';
+import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed, enhancementCoreRules, enhancementFor, armyRules, unitAbilities, duplicateList, isRecentChange } from './helpers';
 import type { ArmyList, ChosenWargear, Datasheet, Detachment, FactionData, ListUnit, PointsOption, Weapon } from './types';
 
 function ds(partial: Partial<Datasheet>): Datasheet {
@@ -548,5 +548,16 @@ describe('duplicateList (clone under a new id, ready to save and open)', () => {
     const copy = duplicateList(original);
     copy.units[0].wargearCosts![0].qty = 99;
     expect(original.units[0].wargearCosts![0].qty).toBe(1);
+  });
+});
+
+describe('isRecentChange', () => {
+  it('is true for today and false for over a month ago', () => {
+    const today = new Date().toISOString().slice(0, 10);
+    const old = new Date(Date.now() - 60 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+    expect(isRecentChange(today)).toBe(true);
+    expect(isRecentChange(old)).toBe(false);
+    expect(isRecentChange('')).toBe(false);
+    expect(isRecentChange(undefined)).toBe(false);
   });
 });

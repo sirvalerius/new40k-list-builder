@@ -760,6 +760,14 @@ export function dateStamp(d = new Date()): string {
   return d.toISOString().slice(0, 10).replace(/-/g, '');
 }
 
+/** True if an ISO date (YYYY-MM-DD) is within the last `days` days (default 30). */
+export function isRecentChange(dateIso: string | undefined, days = 30): boolean {
+  if (!dateIso) return false;
+  const then = new Date(dateIso).getTime();
+  if (Number.isNaN(then)) return false;
+  return Date.now() - then <= days * 24 * 60 * 60 * 1000;
+}
+
 /** Battle size whose preset points are closest to `points` — auto-picks a battle size when
  *  the user free-types a "max points" target (NewListWizard, Builder's list-settings edit). */
 export function closestBattleSize(rules: Rules, points: number): string {
