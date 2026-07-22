@@ -13901,7 +13901,7 @@
      "description": "<b>WHEN:</b> Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One <span class=\"kwb\">THOUSAND</span> <span class=\"kwb\">SONS</span> unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6, adding 1 to the result if your unit is wholly within your army’s Flow of Magic: on a 4+, do not remove it from play. That destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play."
     }
    ],
-   "dp_cost": 2,
+   "dp_cost": 3,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
@@ -13954,7 +13954,7 @@
     }
    ],
    "dp_cost": 1,
-   "force_disposition": "PURGE THE FOE",
+   "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -14088,7 +14088,7 @@
     }
    ],
    "dp_cost": 1,
-   "force_disposition": "PRIORITY ASSETS",
+   "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -14229,7 +14229,7 @@
     }
    ],
    "dp_cost": 2,
-   "force_disposition": "DISRUPTION",
+   "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
