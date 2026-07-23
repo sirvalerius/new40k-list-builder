@@ -134,7 +134,7 @@
   ]
  },
  "last_update": "2026-06-13 12:02:41",
- "unit_count": 298,
+ "unit_count": 299,
  "datasheets": [
   {
    "id": "000002100",
@@ -1980,7 +1980,8 @@
     "000000103",
     "000002781",
     "000002099",
-    "000001177"
+    "000001177",
+    "000004228"
    ],
    "is_character": true,
    "is_battleline": false,
@@ -1994,6 +1995,10 @@
     },
     {
      "name": "Eradicator Squad",
+     "chapter": ""
+    },
+    {
+     "name": "Eradicator Squad with Heavy Bolters",
      "chapter": ""
     },
     {
@@ -8973,7 +8978,8 @@
     "000002781",
     "000001177",
     "000000103",
-    "000002099"
+    "000002099",
+    "000004228"
    ],
    "is_character": true,
    "is_battleline": false,
@@ -8987,6 +8993,10 @@
     },
     {
      "name": "Eradicator Squad",
+     "chapter": ""
+    },
+    {
+     "name": "Eradicator Squad with Heavy Bolters",
      "chapter": ""
     },
     {
@@ -26188,6 +26198,127 @@
    "requires_detachment": ""
   },
   {
+   "id": "000004228",
+   "name": "Eradicator Squad with Heavy Bolters",
+   "role": "Other",
+   "legend": "The heavy Mk X Gravis armour of these fire support specialists allows them to weather storms of incoming projectiles. Standing firm, they return fire with their brutal heavy bolters, scything down enemy infantry and blowing apart the foe's light armoured vehicles with well-placed shots to weak spots in their targets' hulls.",
+   "loadout": "<b>Every model is equipped with:</b> bolt pistol; heavy bolter; close combat weapon.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Eradicator Squad with Heavy Bolters",
+     "M": "5\"",
+     "T": "6",
+     "Sv": "3+",
+     "inv_sv": "-",
+     "inv_sv_descr": "",
+     "W": "3",
+     "Ld": "6+",
+     "OC": "1",
+     "base_size": "40mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Bolt pistol",
+     "type": "Ranged",
+     "range": "12",
+     "A": "1",
+     "BS_WS": "3",
+     "S": "4",
+     "AP": "0",
+     "D": "1",
+     "description": "pistol"
+    },
+    {
+     "name": "Heavy bolter",
+     "type": "Ranged",
+     "range": "36",
+     "A": "3",
+     "BS_WS": "3",
+     "S": "5",
+     "AP": "-1",
+     "D": "2",
+     "description": "heavy, sustained hits 1"
+    },
+    {
+     "name": "Close combat weapon",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "3",
+     "BS_WS": "3",
+     "S": "4",
+     "AP": "0",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "Oath of Moment",
+     "type": "Faction",
+     "parameter": "",
+     "description": "If your Army Faction is <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">ASTARTES</span>, at the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, that enemy unit is your Oath of Moment target. Each time a model with this ability makes an attack that targets your Oath of Moment target:<br><ul><li>You can re-roll the Hit roll.</li><li>If you are using a <i>Codex: Space Marines</i> Detachment and your army does not include one or more units with the Black Templars, Blood Angels, Dark Angels, Deathwatch or Space Wolves keywords, add 1 to the Wound roll as well.</li></ul>"
+    },
+    {
+     "name": "Overlapping Detonations",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "In your Shooting phase, when this unit is selected to shoot you can select one non-<span class=\"kwb\">MONSTER</span>/<span class=\"kwb\">VEHICLE</span> enemy unit visible to it. While making attacks, this unit's heavy bolters that targeted that selected unit have [BLAST 1]."
+    }
+   ],
+   "composition": [
+    "1 Eradicator Sergeant",
+    "2 Eradicators"
+   ],
+   "options": [],
+   "points": [
+    {
+     "description": "3 models",
+     "cost": "80",
+     "variant": "3 models",
+     "tier_min": null,
+     "tier_max": null,
+     "models": 3
+    }
+   ],
+   "keywords": [
+    "Infantry",
+    "Imperium",
+    "Gravis",
+    "Eradicator Squad",
+    "Eradicator Squad with Heavy Bolters"
+   ],
+   "faction_keywords": [
+    "Adeptus Astartes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false,
+   "is_leader": false,
+   "can_lead_entries": [],
+   "attach_type": "",
+   "is_legends": false,
+   "has_order_tiers": false,
+   "model_min": 3,
+   "model_max": 3,
+   "countable": false,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Close combat weapon",
+    "Heavy bolter"
+   ],
+   "weapon_options": [],
+   "chapter": "",
+   "requires_detachment": ""
+  },
+  {
    "id": "000004135",
    "name": "Execrator",
    "role": "Characters",
@@ -34581,7 +34712,8 @@
     "000000103",
     "000002781",
     "000002099",
-    "000001177"
+    "000001177",
+    "000004228"
    ],
    "is_character": true,
    "is_battleline": false,
@@ -34595,6 +34727,10 @@
     },
     {
      "name": "Eradicator Squad",
+     "chapter": ""
+    },
+    {
+     "name": "Eradicator Squad with Heavy Bolters",
      "chapter": ""
     },
     {
@@ -45167,7 +45303,8 @@
     "000002798",
     "000002772",
     "000002781",
-    "000000118"
+    "000000118",
+    "000004228"
    ],
    "is_character": true,
    "is_battleline": false,
@@ -45233,6 +45370,10 @@
     },
     {
      "name": "Eradicator Squad",
+     "chapter": ""
+    },
+    {
+     "name": "Eradicator Squad with Heavy Bolters",
      "chapter": ""
     },
     {
@@ -64683,7 +64824,8 @@
     "000002099",
     "000000103",
     "000001177",
-    "000002781"
+    "000002781",
+    "000004228"
    ],
    "is_character": true,
    "is_battleline": false,
@@ -64697,6 +64839,10 @@
     },
     {
      "name": "Eradicator Squad",
+     "chapter": ""
+    },
+    {
+     "name": "Eradicator Squad with Heavy Bolters",
      "chapter": ""
     },
     {

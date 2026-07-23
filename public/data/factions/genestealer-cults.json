@@ -10,6 +10,10 @@
    {
     "date": "2026-07-23",
     "items": [
+     "**Atalan Jackals** (5 models (1st-2nd unit)): 90 → 85 pts.",
+     "**Atalan Jackals** (10 models (1st-2nd unit)): 160 → 150 pts.",
+     "**Atalan Jackals** (5 models (3rd+ unit)): 100 → 95 pts.",
+     "**Atalan Jackals** (10 models (3rd+ unit)): 170 → 160 pts.",
      "**Aberrants** (5 models (1st-2nd unit)): 150 → 140 pts.",
      "**Aberrants** (10 models (1st-2nd unit)): 300 → 280 pts.",
      "**Aberrants** (5 models (3rd+ unit)): 160 → 150 pts.",
@@ -2451,7 +2455,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "90",
+     "cost": "85",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -2459,7 +2463,7 @@
     },
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "160",
+     "cost": "150",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -2467,7 +2471,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "100",
+     "cost": "95",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -2475,11 +2479,27 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "170",
+     "cost": "160",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
      "models": 10
+    },
+    {
+     "description": "9 models (1st-2nd unit)",
+     "cost": "160",
+     "variant": "9 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 9
+    },
+    {
+     "description": "9 models (3rd+ unit)",
+     "cost": "170",
+     "variant": "9 models",
+     "tier_min": 3,
+     "tier_max": null,
+     "models": 9
     }
    ],
    "keywords": [

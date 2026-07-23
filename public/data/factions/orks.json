@@ -28,7 +28,7 @@
   ]
  },
  "last_update": "2026-06-13 12:02:41",
- "unit_count": 87,
+ "unit_count": 88,
  "datasheets": [
   {
    "id": "000001386",
@@ -1422,6 +1422,125 @@
      ]
     }
    ],
+   "chapter": "",
+   "requires_detachment": ""
+  },
+  {
+   "id": "000004227",
+   "name": "Big Mek Dakkarig",
+   "role": "Other",
+   "legend": "Dakkarigs are ridden into battle by Big Meks, and provide a stable firing platform for some really heavy firepower. Lumbering relentlessly forward, they unleash corkscrewing hails of rokkits, and hurricanes of dakka from their screaming blitzkannons, all while their gleeful pilot is protected from return fire by a crackling kustom force field.",
+   "loadout": "<b>This model is equipped with:</b> 1 blitzkannon; 1 rokkit launcha; 1 stompy feet.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Big Mek Dakkarig",
+     "M": "8\"",
+     "T": "8",
+     "Sv": "3+",
+     "inv_sv": "5+",
+     "inv_sv_descr": "",
+     "W": "11",
+     "Ld": "7+",
+     "OC": "3",
+     "base_size": "90mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Blitzkannon",
+     "type": "Ranged",
+     "range": "24",
+     "A": "8",
+     "BS_WS": "5",
+     "S": "7",
+     "AP": "-2",
+     "D": "2",
+     "description": "heavy, sustained hits 1"
+    },
+    {
+     "name": "Rokkit launcha",
+     "type": "Ranged",
+     "range": "24",
+     "A": "6",
+     "BS_WS": "5",
+     "S": "10",
+     "AP": "-2",
+     "D": "3",
+     "description": "heavy"
+    },
+    {
+     "name": "Stompy feet",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "4",
+     "BS_WS": "3",
+     "S": "6",
+     "AP": "-1",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "Waaagh!",
+     "type": "Faction",
+     "parameter": "",
+     "description": "If your Army Faction is <span class=\"kwb\">ORKS</span>, once per battle, at the start of your Command phase, you can call a Waaagh!. If you do, until the start of your next Command phase, the Waaagh! is active for your army and:<br><ul><li>Units from your army with this ability are eligible to declare a charge in a turn in which they Advanced.</li><li>Add 1 to the Strength and Attacks characteristics of melee weapons equipped by models from your army with this ability.</li><li>Models from your army with this ability have a 5+ invulnerable save.</li></ul>"
+    },
+    {
+     "name": "Dakkablitz",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "In your Shooting phase, while making attacks with this unit, if its blitzkannon targeted a non-<span class=\"kwb\">MONSTER</span>/<span class=\"kwb\">VEHICLE</span> unit, that weapon has +6 A."
+    }
+   ],
+   "composition": [
+    "1 Big Mek Dakkarig"
+   ],
+   "options": [],
+   "points": [
+    {
+     "description": "1 model",
+     "cost": "115",
+     "variant": "1 model",
+     "tier_min": null,
+     "tier_max": null,
+     "models": 1
+    }
+   ],
+   "keywords": [
+    "Vehicle",
+    "Walker",
+    "Big Mek",
+    "Dakkarig"
+   ],
+   "faction_keywords": [
+    "Orks"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false,
+   "is_leader": false,
+   "can_lead_entries": [],
+   "attach_type": "",
+   "is_legends": false,
+   "has_order_tiers": false,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false,
+   "stock_weapons": [
+    "Blitzkannon",
+    "Rokkit launcha",
+    "Stompy feet"
+   ],
+   "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
   },
