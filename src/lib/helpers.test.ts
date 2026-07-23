@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { reconcileTiers, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed, enhancementCoreRules, enhancementFor, armyRules, unitAbilities, duplicateList, isRecentChange } from './helpers';
+import { reconcileTiers, reconcileWargearAndEnhancementCosts, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed, enhancementCoreRules, enhancementFor, armyRules, unitAbilities, duplicateList, isRecentChange } from './helpers';
 import type { ArmyList, ChosenWargear, Datasheet, Detachment, FactionData, ListUnit, PointsOption, Weapon } from './types';
 
 function ds(partial: Partial<Datasheet>): Datasheet {
@@ -75,6 +75,53 @@ describe('reconcileTiers', () => {
   it('leaves non-tiered datasheets untouched', () => {
     const units = [mk(flat, '1 model'), mk(flat, '1 model')];
     expect(reconcileTiers(units, map).map((u) => u.pointsCost)).toEqual([100, 100]);
+  });
+});
+
+describe('reconcileWargearAndEnhancementCosts (a points update must reach saved lists, not just newly-added units)', () => {
+  const armed = ds({
+    id: 'armed', name: 'Armed', points: [opt('1 model', '100', '1 model', null, null, 1)],
+    default_wargear: [{ name: 'Stock gun', cost: 5 }],
+    weapon_options: [{ text: 'Big gun', cost: 10, type: 'wargear' }],
+  } as unknown as Partial<Datasheet>);
+  const armedMap = datasheetMap({ datasheets: [armed] } as unknown as FactionData);
+  const enh = { name: 'Relic Blade', cost: '15', is_upgrade: false, description: '' };
+  const det = { id: 'd1', name: 'Det', legend: '', dp_cost: 0, force_disposition: '', exclusive_tag: '',
+    restriction: '', rules: [], enhancements: [enh], stratagems: [] } as unknown as Detachment;
+
+  it('refreshes a stale paid-wargear cost to the current datasheet price', () => {
+    const unit = { ...mk(armed, '1 model'), wargearCosts: [{ name: 'Big gun', cost: 999, qty: 1 } as ChosenWargear] };
+    const [out] = reconcileWargearAndEnhancementCosts([unit], armedMap, []);
+    expect(out.wargearCosts).toEqual([{ name: 'Big gun', cost: 10, qty: 1 }]);
+  });
+
+  it('refreshes a stale default_wargear (mandatory stock weapon) cost too', () => {
+    const unit = { ...mk(armed, '1 model'), wargearCosts: [{ name: 'Stock gun', cost: 0, qty: 1 } as ChosenWargear] };
+    const [out] = reconcileWargearAndEnhancementCosts([unit], armedMap, []);
+    expect(out.wargearCosts).toEqual([{ name: 'Stock gun', cost: 5, qty: 1 }]);
+  });
+
+  it('leaves qty and unmatched entries untouched', () => {
+    const unit = { ...mk(armed, '1 model'),
+      wargearCosts: [{ name: 'Big gun', cost: 10, qty: 3 } as ChosenWargear, { name: 'Removed from datasheet', cost: 7, qty: 1 } as ChosenWargear] };
+    const [out] = reconcileWargearAndEnhancementCosts([unit], armedMap, []);
+    expect(out.wargearCosts).toEqual([
+      { name: 'Big gun', cost: 10, qty: 3 },
+      { name: 'Removed from datasheet', cost: 7, qty: 1 },
+    ]);
+  });
+
+  it('refreshes a stale enhancement cost by name', () => {
+    const unit = { ...mk(armed, '1 model'), enhancementName: 'Relic Blade', enhancementCost: 999 };
+    const [out] = reconcileWargearAndEnhancementCosts([unit], armedMap, [det]);
+    expect(out.enhancementCost).toBe(15);
+  });
+
+  it('is a no-op (same object) when nothing is stale', () => {
+    const unit = { ...mk(armed, '1 model'), wargearCosts: [{ name: 'Big gun', cost: 10, qty: 1 } as ChosenWargear],
+      enhancementName: 'Relic Blade', enhancementCost: 15 };
+    const [out] = reconcileWargearAndEnhancementCosts([unit], armedMap, [det]);
+    expect(out).toBe(unit);
   });
 });
 

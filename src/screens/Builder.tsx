@@ -19,6 +19,7 @@ import {
   exportListText,
   intOf,
   reconcileTiers,
+  reconcileWargearAndEnhancementCosts,
   uid as uid_,
 } from '../lib/helpers';
 import { loadFactionById } from '../lib/data';
@@ -58,24 +59,22 @@ export function Builder({
     loadFactionById(initial.factionId).then((d) => {
       if (!alive || !d) return;
       setFd(d);
-      // Reconcile mandatory stock-weapon costs (ds.default_wargear) for units already in
-      // a saved list: buildListUnit only seeds them at creation, so a unit added before
-      // this datasheet got a default_wargear entry (or never touched since) would
-      // otherwise keep undercharging for its standard loadout forever.
+      // Reconcile every stored cost for units already in a saved list against this (possibly
+      // newer) datasheet/detachment data — base price, paid wargear, mandatory stock-weapon
+      // costs (ds.default_wargear) and enhancement cost. Without this, a unit costed at
+      // whatever was true the day it was added stays that way forever, silently drifting from
+      // the game's actual current points as the data gets updated. Same reconciliation the
+      // `update()` helper below re-applies after every edit, just also run once on load.
       const dsMap = datasheetMap(d);
       setList((prev) => {
-        let changed = false;
-        const units = prev.units.map((u) => {
+        const withDefaults = prev.units.map((u) => {
           const ds = dsMap.get(u.datasheetId);
-          if (!ds) return u;
-          const wargearCosts = clampLoadout(u, ds);
-          const before = JSON.stringify(u.wargearCosts ?? []);
-          const after = JSON.stringify(wargearCosts);
-          if (before === after) return u;
-          changed = true;
-          return { ...u, wargearCosts };
+          return ds ? { ...u, wargearCosts: clampLoadout(u, ds) } : u;
         });
-        if (!changed) return prev;
+        const units = reconcileTiers(
+          reconcileWargearAndEnhancementCosts(withDefaults, dsMap, d.detachments),
+          dsMap,
+        );
         return { ...prev, units };
       });
     });
@@ -98,9 +97,15 @@ export function Builder({
   function update(mut: (l: ArmyList) => ArmyList) {
     setList((prev) => {
       const mutated = mut(prev);
-      // Re-apply pick-order pricing (2nd+/3rd+) after every change so escalating
-      // unit costs stay correct as copies are added or removed.
-      const units = fd ? reconcileTiers(mutated.units, datasheetMap(fd)) : mutated.units;
+      // Re-apply pick-order pricing (2nd+/3rd+) and refresh every stored wargear/enhancement
+      // cost after every change, so costs stay correct as copies are added/removed and never
+      // drift from the currently-loaded data (see the load-time reconciliation above for why).
+      const units = fd
+        ? reconcileTiers(
+            reconcileWargearAndEnhancementCosts(mutated.units, datasheetMap(fd), fd.detachments),
+            datasheetMap(fd),
+          )
+        : mutated.units;
       return { ...mutated, units, updatedAt: Date.now() };
     });
   }

@@ -427,6 +427,43 @@ export function reconcileTiers(
   });
 }
 
+/**
+ * Re-derive every stored wargear/enhancement cost on a unit from the currently-loaded
+ * datasheet/detachment data, matched by name (qty and which options are chosen are left
+ * untouched — those are the player's picks, not derived data). Without this, a unit built
+ * before a points update keeps whatever cost was true the day it was added, forever: unlike
+ * the base price (reconciled live by reconcileTiers), nothing else ever refreshed these.
+ * Same call sites as reconcileTiers — run after any edit, and once on list load.
+ */
+export function reconcileWargearAndEnhancementCosts(
+  units: ListUnit[],
+  dsMap: Map<string, Datasheet>,
+  detachments: Detachment[],
+): ListUnit[] {
+  return units.map((u) => {
+    const ds = dsMap.get(u.datasheetId);
+    let wargearCosts = u.wargearCosts;
+    if (ds && u.wargearCosts?.length) {
+      const costOf = new Map<string, number>();
+      for (const d of ds.default_wargear ?? []) costOf.set(d.name, intOf(d.cost));
+      for (const o of ds.weapon_options ?? []) costOf.set(o.text, intOf(o.cost));
+      const next = u.wargearCosts.map((w) => {
+        const current = costOf.get(w.name);
+        return current != null && current !== w.cost ? { ...w, cost: current } : w;
+      });
+      if (next.some((w, i) => w.cost !== u.wargearCosts![i].cost)) wargearCosts = next;
+    }
+    let enhancementCost = u.enhancementCost;
+    if (u.enhancementName) {
+      const current = enhancementFor(detachments, u.enhancementName);
+      if (current && intOf(current.cost) !== enhancementCost) enhancementCost = intOf(current.cost);
+    }
+    return wargearCosts === u.wargearCosts && enhancementCost === u.enhancementCost
+      ? u
+      : { ...u, wargearCosts, enhancementCost };
+  });
+}
+
 export function emptyList(
   factionId: string,
   battleSizeId: string,
