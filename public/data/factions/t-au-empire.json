@@ -1150,7 +1150,7 @@
     },
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "240",
+     "cost": "255",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -1174,7 +1174,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "260",
+     "cost": "275",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -1624,7 +1624,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "80",
+     "cost": "70",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -5748,7 +5748,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "160",
+     "cost": "165",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -6202,7 +6202,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "140",
+     "cost": "150",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -6210,7 +6210,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "150",
+     "cost": "160",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -8904,10 +8904,18 @@
    ],
    "points": [
     {
-     "description": "10 models",
-     "cost": "80",
+     "description": "10 models (1st-2nd unit)",
+     "cost": "85",
      "variant": "10 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 10
+    },
+    {
+     "description": "10 models (3rd+ unit)",
+     "cost": "100",
+     "variant": "10 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 10
     }
@@ -8930,7 +8938,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 10,
    "model_max": 10,
    "countable": false,
@@ -9884,7 +9892,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "180",
+     "cost": "190",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -9892,7 +9900,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "210",
+     "cost": "220",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -10892,7 +10900,7 @@
    "points": [
     {
      "description": "1 model (1st unit)",
-     "cost": "360",
+     "cost": "375",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 1,
@@ -10900,7 +10908,7 @@
     },
     {
      "description": "1 model (2nd+ unit)",
-     "cost": "385",
+     "cost": "400",
      "variant": "1 model",
      "tier_min": 2,
      "tier_max": null,
@@ -12127,7 +12135,7 @@
    "points": [
     {
      "description": "2 models",
-     "cost": "205",
+     "cost": "220",
      "variant": "2 models",
      "tier_min": null,
      "tier_max": null,
@@ -12752,7 +12760,7 @@
    "points": [
     {
      "description": "1 model (1st unit)",
-     "cost": "325",
+     "cost": "375",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 1,
@@ -12760,7 +12768,7 @@
     },
     {
      "description": "1 model (2nd+ unit)",
-     "cost": "375",
+     "cost": "425",
      "variant": "1 model",
      "tier_min": 2,
      "tier_max": null,

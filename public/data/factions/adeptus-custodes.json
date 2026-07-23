@@ -295,7 +295,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "65",
+     "cost": "55",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -2447,7 +2447,7 @@
    "points": [
     {
      "description": "4 models (1st unit)",
-     "cost": "210",
+     "cost": "200",
      "variant": "4 models",
      "tier_min": 1,
      "tier_max": 1,
@@ -2455,7 +2455,7 @@
     },
     {
      "description": "5 models (1st unit)",
-     "cost": "260",
+     "cost": "250",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 1,
@@ -2463,7 +2463,7 @@
     },
     {
      "description": "4 models (2nd+ unit)",
-     "cost": "230",
+     "cost": "220",
      "variant": "4 models",
      "tier_min": 2,
      "tier_max": null,
@@ -2471,7 +2471,7 @@
     },
     {
      "description": "5 models (2nd+ unit)",
-     "cost": "280",
+     "cost": "270",
      "variant": "5 models",
      "tier_min": 2,
      "tier_max": null,
@@ -4575,18 +4575,34 @@
    ],
    "points": [
     {
-     "description": "3 models",
+     "description": "3 models (1st-2nd unit)",
+     "cost": "150",
+     "variant": "3 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 3
+    },
+    {
+     "description": "6 models (1st-2nd unit)",
+     "cost": "300",
+     "variant": "6 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 6
+    },
+    {
+     "description": "3 models (3rd+ unit)",
      "cost": "160",
      "variant": "3 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 3
     },
     {
-     "description": "6 models",
-     "cost": "320",
+     "description": "6 models (3rd+ unit)",
+     "cost": "310",
      "variant": "6 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 6
     }
@@ -4610,7 +4626,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 3,
    "model_max": 6,
    "countable": true,

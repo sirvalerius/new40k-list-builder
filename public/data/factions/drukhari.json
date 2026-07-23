@@ -6161,18 +6161,10 @@
    ],
    "points": [
     {
-     "description": "1 model (1st-2nd unit)",
-     "cost": "100",
-     "variant": "1 model",
-     "tier_min": 1,
-     "tier_max": 2,
-     "models": 1
-    },
-    {
-     "description": "1 model (3rd+ unit)",
+     "description": "1 model",
      "cost": "110",
      "variant": "1 model",
-     "tier_min": 3,
+     "tier_min": null,
      "tier_max": null,
      "models": 1
     }
@@ -6196,7 +6188,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": true,
+   "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
    "countable": false,
