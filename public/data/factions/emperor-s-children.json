@@ -20,6 +20,8 @@
      "**Fulgrim** (1 model): 350 → 340 pts.",
      "**Sorcerer** (1 model): 60 → 55 pts.",
      "**Shalaxi Helbane** (1 model): 340 → 315 pts.",
+     "**Defiler**, opzione **Heavy Reaper Autocannon**: nuovo prezzo, 15 pts (mancava del tutto nel dataset).",
+     "**Defiler**, opzione **Hades Lascannon**: nuovo prezzo, 15 pts (mancava del tutto nel dataset).",
      "**Carnival Of Excess**: Force Disposition Priority Assets → Disruption (DP: 2DP → 2DP).",
      "**Coterie Of The Conceited**: Force Disposition Purge The Foe → Priority Assets (DP: 3DP → 3DP).",
      "**Frenzied Host**: Force Disposition Disruption → Reconnaissance (DP: 1DP → 1DP).",
@@ -1540,7 +1542,7 @@
     },
     {
      "text": "Hades lascannon (instead of heavy baleflamer)",
-     "cost": 10,
+     "cost": 15,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -1555,7 +1557,7 @@
     },
     {
      "text": "Heavy reaper autocannon (instead of heavy baleflamer)",
-     "cost": 10,
+     "cost": 15,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -1585,7 +1587,7 @@
     },
     {
      "text": "Hades lascannon (instead of heavy missile launcher)",
-     "cost": 10,
+     "cost": 15,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -1600,7 +1602,7 @@
     },
     {
      "text": "Heavy reaper autocannon (instead of heavy missile launcher)",
-     "cost": 10,
+     "cost": 15,
      "type": "wargear",
      "limit": {
       "kind": "fixed",

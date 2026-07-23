@@ -10,6 +10,7 @@
    {
     "date": "2026-07-22",
     "items": [
+     "**Venatari Custodians**, opzione **Venatari Lance**: nuovo prezzo, 5 pts.",
      "**Aleya** (1 model): 65 → 55 pts (-10).",
      "**Venatari Custodians**: struttura punteggio riorganizzata (3 models = 160pts, 6 models = 320pts → 3 models (1st-2nd unit) = 150pts, 6 models (1st-2nd unit) = 300pts, 3 models (3rd+ unit) = 160pts, 6 models (3rd+ unit) = 310pts).",
      "**Custodian Wardens** (4 models (1st unit)): 210 → 200 pts.",
@@ -4624,13 +4625,19 @@
    "model_min": 3,
    "model_max": 6,
    "countable": true,
+   "default_wargear": [
+    {
+     "name": "Venatari lance",
+     "cost": 5
+    }
+   ],
    "stock_weapons": [
     "Venatari lance"
    ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their Venatari lance replaced with 1 kinetic destroyer and 1 tarsus buckler.",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "all"
