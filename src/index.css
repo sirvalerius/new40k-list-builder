@@ -564,6 +564,9 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 .disp { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; }
 .disp-name { font-size: 0.85em; letter-spacing: 0.02em; }
 
+.faction-icon { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; }
+.faction-icon-name { font-size: 0.85em; letter-spacing: 0.02em; }
+
 .field-label {
   display: block;
   font-size: 0.72rem;
@@ -740,15 +743,51 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 }
 
 /* --- Game Tracker: big/legible from across the room on a TV --- */
-.tracker-round {
+.tracker-topbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
-.tracker-roundbtn { font-size: 1.4rem; min-width: 48px; }
-.tracker-roundlabel { font-size: 1.3rem; }
-.tracker-roundlabel b { color: var(--accent-2); font-size: 1.6rem; }
+.tracker-rounds { display: flex; align-items: center; gap: 6px; }
+.tracker-roundchip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-elev2);
+  font-weight: 600;
+}
+.tracker-roundchip.active { background: var(--accent-2); color: var(--bg); border-color: var(--accent-2); }
+.tracker-clock { display: flex; align-items: center; gap: 10px; }
+.tracker-activebadge {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 0.95rem;
+}
+.tracker-nextturn { flex: 1; font-size: 1.2rem; }
+
+.tracker-log { display: flex; flex-direction: column; gap: 4px; max-height: 240px; overflow-y: auto; }
+.tracker-logrow { font-size: 0.9rem; }
+
+.tracker-setup-player { display: flex; flex-direction: column; gap: 10px; }
+.tracker-swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  padding: 0;
+  min-height: 0;
+}
+.tracker-swatch-sm { width: 16px; height: 16px; border-radius: 999px; flex: none; }
+.tracker-playername { font-family: var(--font-display); font-size: 1.2rem; }
 
 .tracker-players {
   display: grid;
@@ -759,7 +798,7 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
   .tracker-players { grid-template-columns: 1fr 1fr; }
 }
 
-.tracker-player { display: flex; flex-direction: column; gap: 14px; }
+.tracker-player { display: flex; flex-direction: column; gap: 14px; border-width: 2px; }
 
 .tracker-name {
   font-family: var(--font-display);
@@ -789,8 +828,8 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 .tracker-secondaries { display: flex; flex-direction: column; gap: 8px; }
 .tracker-card {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  flex-direction: column;
+  gap: 4px;
   background: var(--bg-elev2);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -802,7 +841,9 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
   background: transparent;
   border: none;
   font-size: 1.05rem;
+  color: var(--text);
 }
+select.tracker-card-name { border: 1px solid var(--border); border-radius: 6px; padding: 4px 6px; }
 .tracker-card-points {
   width: 3.5ch;
   flex: none;

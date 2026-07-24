@@ -38,6 +38,7 @@ export interface Rules {
   core_stratagems?: Stratagem[]; // rulebook stratagems available to every army
   disposition_matchups?: DispositionMatchup[]; // mission pairing per disposition matchup
   missions?: Mission[]; // full primary-mission card texts
+  secondaries?: SecondaryMission[]; // full secondary-mission (Defender deck) card texts
   attribution: string;
 }
 
@@ -157,6 +158,14 @@ export interface Mission {
   sections: MissionSection[];
   action?: MissionAction;
   note?: string; // rule box printed above the scoring sections (setup step or a persistent mechanic)
+}
+
+// Chapter Approved secondary-mission card (Defender deck — see tools/scrape_secondaries.py).
+export interface SecondaryMission {
+  name: string;
+  kindLabel: string; // e.g. "SECONDARY · FIXED / TACTICAL" or "SECONDARY · TACTICAL"
+  whenDrawn?: string | null;
+  sections: { when: string; chip: string; trigger: string; tiers: MissionTier[] }[];
 }
 
 export interface Detachment {

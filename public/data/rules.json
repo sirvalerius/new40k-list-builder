@@ -1713,5 +1713,422 @@
    ]
   }
  ],
- "attribution": "Powered by Wahapedia"
+ "attribution": "Powered by Wahapedia",
+ "secondaries": [
+  {
+   "name": "A Grievous Blow",
+   "kindLabel": "SECONDARY · FIXED / TACTICAL",
+   "whenDrawn": "**WHEN DRAWN:** If there are no enemy units with a **starting strength** of 13 or more on the battlefield, you can discard this card and draw one new **Secondary Mission** card.",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "FIXED",
+     "trigger": "End of a turn",
+     "tiers": [
+      {
+       "text": "For each enemy unit with a **starting strength** of 13 or more that is **destroyed** this turn.",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "TACTICAL",
+     "trigger": "End of a turn",
+     "tiers": [
+      {
+       "text": "One or more enemy units with a **starting strength** of 13 or more were **destroyed** this turn.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "A Tempting Target",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": "**WHEN DRAWN:** Your opponent selects one **objective** (excluding **home objectives**) within No Man's Land to be your **tempting target**.",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You control your **tempting target**.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Assassination",
+   "kindLabel": "SECONDARY · FIXED / TACTICAL",
+   "whenDrawn": null,
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "FIXED",
+     "trigger": "While this card is active",
+     "tiers": [
+      {
+       "text": "For each enemy **CHARACTER** model **destroyed** this turn.",
+       "vp": 3
+      },
+      {
+       "text": "For each of those models with a **W** of 4 or more.",
+       "vp": 1
+      }
+     ]
+    },
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "TACTICAL",
+     "trigger": "End of either player's turn",
+     "tiers": [
+      {
+       "text": "One or more enemy **CHARACTER** models were **destroyed** this turn.",
+       "vp": 5
+      },
+      {
+       "text": "All enemy **CHARACTER** models have been **destroyed** during the battle.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Beacon",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": "**WHEN DRAWN:** Select one friendly unit on the battlefield or embarked within a **TRANSPORT** on the battlefield to be your <span class=\"cB__mark\">beacon</span> unit.",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of your opponent's turn or the end of the fifth battle round (whichever comes first)",
+     "tiers": [
+      {
+       "text": "Your <span class=\"cB__mark\">beacon</span> unit is on the battlefield and not within your deployment zone.",
+       "vp": 3
+      },
+      {
+       "text": "Your <span class=\"cB__mark\">beacon</span> unit is on the battlefield and not within your territory.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Behind Enemy Lines",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": "**WHEN DRAWN:** If it is the first battle round, you can draw one new **Secondary Mission** card and shuffle this card back into your **Secondary** **Mission** deck.",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "For each friendly unit (excluding **AIRCRAFT** and **battle-shocked** units) wholly within your opponent's deployment zone.",
+       "vp": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Bring It Down",
+   "kindLabel": "SECONDARY · FIXED / TACTICAL",
+   "whenDrawn": "**WHEN DRAWN:** If there are no enemy models with a **Wounds** characteristic of 10 or more on the battlefield, you can discard this card and draw one new **Secondary Mission** card.",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "FIXED",
+     "trigger": "End of a turn",
+     "tiers": [
+      {
+       "text": "For each enemy model with a **Wounds** characteristic of 10 or more that is **destroyed** this turn.",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "TACTICAL",
+     "trigger": "End of a turn",
+     "tiers": [
+      {
+       "text": "One or more enemy models with a **Wounds** characteristic of 10 or more were **destroyed** this turn.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Burden of Trust",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": "**WHEN DRAWN/START OF YOUR TURN:** For each **objective**, you can select one friendly unit on the battlefield to **guard** that **objective**. Until the start of your next turn, while that unit is within range of that **objective** and while you control that **objective**, that **objective** is <span class=\"cB__mark\">guarded</span> by your army.",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of your opponent's turn or the end of the fifth battle round (whichever comes first)",
+     "tiers": [
+      {
+       "text": "For each **objective** <span class=\"cB__mark\">guarded</span> by your army.",
+       "vp": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Centre Ground",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": null,
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "One or more friendly units (excluding **AIRCRAFT** and **battle-shocked** units) are within 3\" of the centre of the battlefield, and no enemy units are within 3\" of the centre of the battlefield.",
+       "vp": 3
+      },
+      {
+       "text": "One or more friendly units (excluding **AIRCRAFT** and **battle-shocked** units) are within 3\" of the centre of the battlefield, and no enemy units are within 6\" of the centre of the battlefield.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Cleanse",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": "**WHEN DRAWN:** If the Plunder **Secondary Mission** is active for you, you can draw one new **Secondary Mission** card and shuffle this card back into your **Secondary Mission** deck.",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "One **objective** was <span class=\"cB__mark\">cleansed</span> by your army this turn.",
+       "vp": 2
+      },
+      {
+       "text": "Two or more **objectives** were <span class=\"cB__mark\">cleansed</span> by your army this turn.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Defend Stronghold",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": "**WHEN DRAWN:** If it is the first battle round, draw one new **Secondary Mission** card and shuffle this card back into your **Secondary Mission** deck.",
+   "sections": [
+    {
+     "when": "SECOND BATTLE ROUND ONWARDS",
+     "chip": "",
+     "trigger": "End of your opponent's turn or the end of the fifth battle round (whichever comes first)",
+     "tiers": [
+      {
+       "text": "You control your **home objective**.",
+       "vp": 3
+      },
+      {
+       "text": "No enemy units are within your deployment zone.",
+       "vp": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Display of Might",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": null,
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "There are more friendly units than enemy units (excluding **AIRCRAFT** and **battle-shocked** units) wholly within No Man's Land.",
+       "vp": 2
+      }
+     ]
+    },
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of your opponent's turn",
+     "tiers": [
+      {
+       "text": "There are more friendly units than enemy units (excluding **AIRCRAFT** and **battle-shocked** units) wholly within No Man's Land.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Engage on All Fronts",
+   "kindLabel": "SECONDARY · FIXED / TACTICAL",
+   "whenDrawn": "If one or more friendly units (excluding **AIRCRAFT** and **battle-shocked** units) are wholly within a table quarter, and those units are not within 6\" of the centre of the battlefield, you have a <span class=\"cB__mark\">presence</span> in that table quarter.",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "FIXED",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You have a <span class=\"cB__mark\">presence</span> in <span class=\"cB__wmWord\" data-n=\"3\">three</span> table quarters.",
+       "vp": 2
+      },
+      {
+       "text": "You have a <span class=\"cB__mark\">presence</span> in <span class=\"cB__wmWord\" data-n=\"4\">four</span> table quarters.",
+       "vp": 4
+      }
+     ]
+    },
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "TACTICAL",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You have a <span class=\"cB__mark\">presence</span> in <span class=\"cB__wmWord\" data-n=\"3\">three</span> table quarters.",
+       "vp": 3
+      },
+      {
+       "text": "You have a <span class=\"cB__mark\">presence</span> in <span class=\"cB__wmWord\" data-n=\"4\">four</span> table quarters.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Forward Position",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": "**WHEN DRAWN:** If it is the first battle round, you can draw one new **Secondary Mission** card and shuffle this card back into your **Secondary** **Mission** deck.",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You control your opponent's **home objective** and/or each **expansion objective**.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "No Prisoners",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": null,
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of a turn",
+     "tiers": [
+      {
+       "text": "For each enemy unit **destroyed** this turn.",
+       "vp": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Outflank",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": null,
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "One or more friendly units (excluding **AIRCRAFT** and **battle-shocked** units) are within 6\" of one or more battlefield edges and not within your territory.",
+       "vp": 3
+      },
+      {
+       "text": "Two or more friendly units (excluding **AIRCRAFT** and **battle-shocked** units) are within 6\" of opposite battlefield edges and one or more of those units is not within your territory.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Overwhelming Force",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": null,
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of a turn",
+     "tiers": [
+      {
+       "text": "For each enemy unit that started the turn within range of one or more **objectives** and is **destroyed**.",
+       "vp": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Plunder",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": "**WHEN DRAWN:** If the Cleanse **Secondary Mission** is active for you, you can draw one new **Secondary Mission** card and shuffle this card back into your **Secondary Mission** deck.",
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "A **terrain area** was <span class=\"cB__mark\">plundered</span> this turn.",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Secure No Man's Land",
+   "kindLabel": "SECONDARY · TACTICAL",
+   "whenDrawn": null,
+   "sections": [
+    {
+     "when": "ANY BATTLE ROUND",
+     "chip": "",
+     "trigger": "End of your turn",
+     "tiers": [
+      {
+       "text": "You control two or more **objectives** within No Man's Land (excluding your **home objective**).",
+       "vp": 5
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }

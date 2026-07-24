@@ -218,7 +218,7 @@ export default function App() {
           />
         )}
         {view.kind === 'missions' && <Missions rules={rules} initial={view.disposition} />}
-        {view.kind === 'tracker' && <GameTracker />}
+        {view.kind === 'tracker' && <GameTracker rules={rules} factions={factions} />}
         {view.kind === 'wizard' && (
           <NewListWizard
             rules={rules}
