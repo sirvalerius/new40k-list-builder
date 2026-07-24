@@ -16,6 +16,7 @@ export function Home({
   onDuplicate,
   onDispositions,
   onMissions,
+  onTracker,
 }: {
   rules: Rules;
   factionName: (id: string) => string;
@@ -24,6 +25,7 @@ export function Home({
   onDuplicate: (id: string) => void;
   onDispositions: () => void;
   onMissions: () => void;
+  onTracker: () => void;
 }) {
   const [lists, setLists] = useState<ArmyList[] | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
@@ -93,6 +95,9 @@ export function Home({
         </button>
         <button className="ghost small" onClick={onMissions}>
           🗺 Missions
+        </button>
+        <button className="ghost small" onClick={onTracker}>
+          📺 Game Tracker
         </button>
       </div>
 

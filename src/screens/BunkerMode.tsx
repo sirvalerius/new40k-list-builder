@@ -3,6 +3,7 @@ import type { ArmyList, FactionData, Rules } from '../lib/types';
 import { DatasheetCard } from '../components/DatasheetCard';
 import { Collapsible } from '../components/Collapsible';
 import { DISPOSITIONS, DispositionIcon } from '../components/DispositionIcon';
+import { LayoutPicker } from '../components/LayoutPicker';
 import { MissionCard } from '../components/MissionCard';
 import {
   armyRules,
@@ -12,6 +13,7 @@ import {
   enhancementCoreRules,
   enhancementFor,
   factionKeywordVocab,
+  layoutImages,
   mergedUnitGroups,
   missionMatchup,
   stratagemAppliesTo,
@@ -114,6 +116,14 @@ export function BunkerMode({
             <div className="muted small mt">No mission pairing found for this matchup.</div>
           )
         )}
+        {list.disposition && list.vsDisposition && (() => {
+          const images = layoutImages(rules, list.disposition!, list.vsDisposition!);
+          return images ? (
+            <Collapsible title="Battlefield layouts (Event Companion)">
+              <LayoutPicker images={images} />
+            </Collapsible>
+          ) : null;
+        })()}
       </div>
 
       {rulesOfArmy.length > 0 && (

@@ -738,3 +738,85 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
     background: #fff;
   }
 }
+
+/* --- Game Tracker: big/legible from across the room on a TV --- */
+.tracker-round {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.tracker-roundbtn { font-size: 1.4rem; min-width: 48px; }
+.tracker-roundlabel { font-size: 1.3rem; }
+.tracker-roundlabel b { color: var(--accent-2); font-size: 1.6rem; }
+
+.tracker-players {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 900px) {
+  .tracker-players { grid-template-columns: 1fr 1fr; }
+}
+
+.tracker-player { display: flex; flex-direction: column; gap: 14px; }
+
+.tracker-name {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 4px 0;
+  width: 100%;
+}
+
+.tracker-total { font-size: 3.2rem; font-weight: 700; color: var(--accent-2); line-height: 1; }
+.tracker-total-label { font-size: 1.2rem; color: var(--text-dim); font-weight: 400; }
+
+.tracker-stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.tracker-stat-label { font-size: 1.1rem; }
+
+.tracker-stepper { display: flex; align-items: center; gap: 10px; }
+.tracker-stepbtn { font-size: 1.5rem; min-width: 52px; min-height: 52px; }
+.tracker-stepval { font-size: 1.8rem; min-width: 2.5ch; text-align: center; }
+
+.tracker-secondaries { display: flex; flex-direction: column; gap: 8px; }
+.tracker-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-elev2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 6px 8px;
+}
+.tracker-card-name {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  font-size: 1.05rem;
+}
+.tracker-card-points {
+  width: 3.5ch;
+  flex: none;
+  background: transparent;
+  border: none;
+  border-left: 1px solid var(--border);
+  font-size: 1.05rem;
+  text-align: center;
+  padding-left: 8px;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.tracker-card-points::-webkit-outer-spin-button,
+.tracker-card-points::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

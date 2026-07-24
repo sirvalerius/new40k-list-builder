@@ -8,6 +8,7 @@ import { NewListWizard } from './screens/NewListWizard';
 import { Builder } from './screens/Builder';
 import { Dispositions } from './screens/Dispositions';
 import { Missions } from './screens/Missions';
+import { GameTracker } from './screens/GameTracker';
 import { FeedbackButton } from './components/FeedbackButton';
 
 // Injected at build time by CI (minor = commit count on main); 'dev' locally.
@@ -19,7 +20,8 @@ type View =
   | { kind: 'wizard' }
   | { kind: 'builder'; list: ArmyList }
   | { kind: 'dispositions' }
-  | { kind: 'missions'; disposition?: string };
+  | { kind: 'missions'; disposition?: string }
+  | { kind: 'tracker' };
 
 export default function App() {
   const [rules, setRules] = useState<Rules | null>(null);
@@ -152,6 +154,8 @@ export default function App() {
       ? 'Detachments & Dispositions'
       : view.kind === 'missions'
       ? 'Missions'
+      : view.kind === 'tracker'
+      ? 'Game Tracker'
       : 'New40k List Builder';
   const subtitle =
     view.kind === 'builder'
@@ -204,6 +208,7 @@ export default function App() {
             onDuplicate={duplicateListById}
             onDispositions={() => setView({ kind: 'dispositions' })}
             onMissions={() => setView({ kind: 'missions' })}
+            onTracker={() => setView({ kind: 'tracker' })}
           />
         )}
         {view.kind === 'dispositions' && (
@@ -213,6 +218,7 @@ export default function App() {
           />
         )}
         {view.kind === 'missions' && <Missions rules={rules} initial={view.disposition} />}
+        {view.kind === 'tracker' && <GameTracker />}
         {view.kind === 'wizard' && (
           <NewListWizard
             rules={rules}
@@ -231,7 +237,7 @@ export default function App() {
           />
         )}
 
-        {view.kind !== 'builder' && (
+        {view.kind !== 'builder' && view.kind !== 'tracker' && (
           <footer className="footer">
             <div className="credit">
               Designed &amp; built by{' '}

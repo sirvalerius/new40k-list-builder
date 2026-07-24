@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { reconcileTiers, reconcileWargearAndEnhancementCosts, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed, enhancementCoreRules, enhancementFor, armyRules, unitAbilities, duplicateList, isRecentChange } from './helpers';
-import type { ArmyList, ChosenWargear, Datasheet, Detachment, FactionData, ListUnit, PointsOption, Weapon } from './types';
+import { reconcileTiers, reconcileWargearAndEnhancementCosts, tierForPick, bracketForCount, buildListUnit, datasheetMap, unitTotal, optionMax, equippedWeapons, clampLoadout, unitGroup, eligibleBodyguards, attachedLeaders, stratagemAppliesTo, effectiveKeywords, enhancementAllowed, enhancementCoreRules, enhancementFor, armyRules, unitAbilities, duplicateList, isRecentChange, layoutImages } from './helpers';
+import type { ArmyList, ChosenWargear, Datasheet, Detachment, FactionData, ListUnit, PointsOption, Rules, Weapon } from './types';
 
 function ds(partial: Partial<Datasheet>): Datasheet {
   return {
@@ -606,5 +606,31 @@ describe('isRecentChange', () => {
     expect(isRecentChange(old)).toBe(false);
     expect(isRecentChange('')).toBe(false);
     expect(isRecentChange(undefined)).toBe(false);
+  });
+});
+
+describe('layoutImages', () => {
+  const rules = {
+    disposition_matchups: [
+      { a: 'TAKE AND HOLD', b: 'PURGE THE FOE', mission_a: 'X', mission_b: 'Y' },
+    ],
+  } as unknown as Rules;
+
+  it('builds the 3 layout image paths (A/B/C) from the canonical a/b slugs', () => {
+    expect(layoutImages(rules, 'TAKE AND HOLD', 'PURGE THE FOE')).toEqual([
+      '/data/layouts/take-and-hold_vs_purge-the-foe_A.jpg',
+      '/data/layouts/take-and-hold_vs_purge-the-foe_B.jpg',
+      '/data/layouts/take-and-hold_vs_purge-the-foe_C.jpg',
+    ]);
+  });
+
+  it('resolves the same paths when queried in the opposite (opponent-first) order', () => {
+    expect(layoutImages(rules, 'PURGE THE FOE', 'TAKE AND HOLD')).toEqual(
+      layoutImages(rules, 'TAKE AND HOLD', 'PURGE THE FOE'),
+    );
+  });
+
+  it('returns null for a matchup not present in the data', () => {
+    expect(layoutImages(rules, 'TAKE AND HOLD', 'DISRUPTION')).toBeNull();
   });
 });

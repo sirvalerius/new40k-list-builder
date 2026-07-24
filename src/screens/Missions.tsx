@@ -2,8 +2,9 @@ import { useState } from 'react';
 import type { Rules } from '../lib/types';
 import { Collapsible } from '../components/Collapsible';
 import { DISPOSITIONS, DispositionIcon } from '../components/DispositionIcon';
+import { LayoutPicker } from '../components/LayoutPicker';
 import { MissionCard } from '../components/MissionCard';
-import { missionMatchup } from '../lib/helpers';
+import { layoutImages, missionMatchup } from '../lib/helpers';
 
 // Mission viewer: pick YOUR Force Disposition and see, for every opponent disposition,
 // the mission you play next to the mission the opponent plays in that matchup.
@@ -47,15 +48,20 @@ export function Missions({ rules, initial }: { rules: Rules; initial?: string })
                 <Collapsible title={<>Opponent plays: <b>{r.their}</b></>}>
                   {byName(r.their) ? <MissionCard m={byName(r.their)!} /> : <span className="muted small">{r.their}</span>}
                 </Collapsible>
+                {(() => {
+                  const images = layoutImages(rules, mine, opp);
+                  return images ? (
+                    <Collapsible title="Battlefield layouts (Event Companion)">
+                      <LayoutPicker images={images} />
+                    </Collapsible>
+                  ) : null;
+                })()}
               </div>
             </div>
           );
         })}
       </div>
-      <div className="muted tiny mt">
-        Each matchup is played on battlefield layout A, B or C (Event Companion). Card
-        texts via gdmissions.app.
-      </div>
+      <div className="muted tiny mt">Card texts via gdmissions.app.</div>
     </div>
   );
 }

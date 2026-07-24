@@ -603,6 +603,19 @@ export function missionMatchup(
     : { my: m.mission_b, their: m.mission_a };
 }
 
+/** Battlefield layout images (A/B/C) for a Force Disposition matchup, straight from the
+ *  Event Companion PDF pages — rendered once by tooling, not reconstructed by hand, since the
+ *  diagrams are visual terrain placement that text extraction can't reliably capture. */
+export function layoutImages(rules: Rules, mine: string, opponent: string): string[] | null {
+  const m = (rules.disposition_matchups ?? []).find(
+    (x) => (x.a === mine && x.b === opponent) || (x.a === opponent && x.b === mine),
+  );
+  if (!m) return null;
+  const slug = (s: string) => s.trim().toLowerCase().replace(/\s+/g, '-');
+  const base = `${slug(m.a)}_vs_${slug(m.b)}`;
+  return ['A', 'B', 'C'].map((letter) => `/data/layouts/${base}_${letter}.jpg`);
+}
+
 // ----- Leader / Support attachment -----
 /** Units already in the list that this leader (Character) may attach to. */
 export function eligibleBodyguards(
