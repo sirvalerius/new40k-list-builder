@@ -4,19 +4,22 @@ import { FactionIcon } from '../components/FactionIcon';
 import { Collapsible } from '../components/Collapsible';
 import { uid } from '../lib/helpers';
 
-const STORAGE_KEY = 'new40k-tracker-v2';
+const STORAGE_KEY = 'new40k-tracker-v3';
 const SECONDARY_CAP = 40; // core rule: secondary VP total is capped at 40, regardless of edition
 const COLORS = ['#5b8fd9', '#d05050', '#57b45f', '#e0c23f', '#a05bd9', '#e05b8f', '#3fc1b0', '#d9853f'];
 
 type LogEntry = { id: string; ts: number; text: string };
-type SecondaryCard = { id: string; cardName: string; vp: number };
+type SecondaryStatus = 'hand' | 'completed' | 'discarded';
+type SecondaryCard = { id: string; cardName: string; status: SecondaryStatus; vp: number; drawnRound: number };
 type PlayerState = {
   name: string;
   factionId: string;
   color: string;
   cp: number;
   primaryVp: number;
-  secondaries: SecondaryCard[];
+  deck: string[]; // shuffled remaining draw pool for this player's secondary deck
+  secondaries: SecondaryCard[]; // every card ever drawn (hand / completed / discarded)
+  discardedForCpRound: number; // last battle round this player used the discard-for-CP bonus (0 = never)
 };
 type TrackerState = {
   phase: 'setup' | 'live';
@@ -28,7 +31,16 @@ type TrackerState = {
 };
 
 function emptyPlayer(name: string, color: string): PlayerState {
-  return { name, factionId: '', color, cp: 0, primaryVp: 0, secondaries: [] };
+  return {
+    name,
+    factionId: '',
+    color,
+    cp: 0,
+    primaryVp: 0,
+    deck: [],
+    secondaries: [],
+    discardedForCpRound: 0,
+  };
 }
 function emptyState(): TrackerState {
   return {
@@ -53,8 +65,39 @@ function loadState(): TrackerState {
   return emptyState();
 }
 
+function shuffled(names: string[]): string[] {
+  const a = [...names];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Draws back up to a 2-card hand from this player's own shuffled deck (no reshuffle of
+// completed/discarded cards — a deliberate simplification of the real reshuffle-on-discard
+// rule, fine for a casual tracker since 18 cards comfortably covers a 5-round game).
+function drawUpTo(p: PlayerState, round: number): { player: PlayerState; drawn: string[] } {
+  const handCount = p.secondaries.filter((c) => c.status === 'hand').length;
+  const need = Math.max(0, 2 - handCount);
+  const names = p.deck.slice(0, need);
+  const deck = p.deck.slice(need);
+  const newCards: SecondaryCard[] = names.map((cardName) => ({
+    id: uid(),
+    cardName,
+    status: 'hand',
+    vp: 0,
+    drawnRound: round,
+  }));
+  return { player: { ...p, deck, secondaries: [...p.secondaries, ...newCards] }, drawn: names };
+}
+
 function secondaryVp(p: PlayerState) {
-  return p.secondaries.reduce((s, c) => s + c.vp, 0);
+  return p.secondaries.filter((c) => c.status === 'completed').reduce((s, c) => s + c.vp, 0);
+}
+
+function stripMd(text: string) {
+  return text.replace(/\*\*/g, '');
 }
 
 function formatElapsed(ms: number) {
@@ -66,12 +109,16 @@ function formatElapsed(ms: number) {
 // faction/colour setup, then a live round-and-turn tracker with CP, Primary VP (uncapped —
 // there's no universal per-mission ceiling, unlike the old app's flat "/45") and Secondary
 // VP (capped at 40 total, the one number that actually is a fixed rule), plus a running
-// game log. Secondary "cards" are picked from the real Chapter Approved Defender deck
-// (rules.secondaries) when the data's loaded, so the name/VP tiers shown are genuine card text.
+// game log. Each player draws their own Secondary Mission hand from the real Chapter Approved
+// Defender deck (rules.secondaries, scraped from gdmissions.app) — 2 cards at game start, then
+// auto-topped-up to 2 at the start of that player's own turn. A hand card can be discarded for
+// +1 CP (Event Companion "Generating Command Points" rule — capped at once per battle round)
+// or marked completed by picking which scoring tier was satisfied, which credits that tier's VP.
 export function GameTracker({ rules, factions }: { rules: Rules; factions: FactionIndexEntry[] }) {
   const [state, setState] = useState<TrackerState>(loadState);
   const prevRef = useRef<TrackerState | null>(null);
   const [, forceTick] = useState(0);
+  const catalog = rules.secondaries ?? [];
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
@@ -99,10 +146,26 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
   }
 
   function startGame() {
-    commit(
-      (s) => ({ ...s, phase: 'live', round: 1, active: 0, startedAt: Date.now() }),
-      `Game started — Round 1, ${state.players[0].name}'s turn.`,
-    );
+    const names = catalog.map((c) => c.name);
+    setState((prev) => {
+      prevRef.current = prev;
+      const drawLogs: string[] = [];
+      const players = prev.players.map((p) => {
+        const { player, drawn } = drawUpTo({ ...p, deck: shuffled(names) }, 1);
+        if (drawn.length) drawLogs.push(`${player.name} draws: ${drawn.join(', ')}.`);
+        return player;
+      }) as [PlayerState, PlayerState];
+      const text = [`Game started — Round 1, ${players[0].name}'s turn.`, ...drawLogs].join(' ');
+      return {
+        ...prev,
+        phase: 'live',
+        round: 1,
+        active: 0,
+        startedAt: Date.now(),
+        players,
+        log: [...prev.log, { id: uid(), ts: Date.now(), text }],
+      };
+    });
   }
 
   function nextTurn() {
@@ -112,11 +175,25 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
       const round = wrapping ? Math.min(5, prev.round + 1) : prev.round;
       const active: 0 | 1 = wrapping ? 0 : 1;
       const players = [...prev.players] as [PlayerState, PlayerState];
-      players[active] = { ...players[active], cp: players[active].cp + 1 };
-      const text = wrapping
-        ? `Round ${round} — ${players[active].name}'s turn begins. ${players[active].name} gains +1 CP.`
-        : `${players[active].name}'s turn begins. ${players[active].name} gains +1 CP.`;
-      return { ...prev, round, active, players, log: [...prev.log, { id: uid(), ts: Date.now(), text }] };
+      const { player: drawnPlayer, drawn } = drawUpTo(
+        { ...players[active], cp: players[active].cp + 1 },
+        round,
+      );
+      players[active] = drawnPlayer;
+      const parts = [
+        wrapping
+          ? `Round ${round} — ${drawnPlayer.name}'s turn begins.`
+          : `${drawnPlayer.name}'s turn begins.`,
+        `${drawnPlayer.name} gains +1 CP.`,
+      ];
+      if (drawn.length) parts.push(`${drawnPlayer.name} draws: ${drawn.join(', ')}.`);
+      return {
+        ...prev,
+        round,
+        active,
+        players,
+        log: [...prev.log, { id: uid(), ts: Date.now(), text: parts.join(' ') }],
+      };
     });
   }
 
@@ -135,14 +212,7 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
   }
 
   if (state.phase === 'setup') {
-    return (
-      <SetupScreen
-        state={state}
-        factions={factions}
-        onChange={setState}
-        onStart={startGame}
-      />
-    );
+    return <SetupScreen state={state} factions={factions} onChange={setState} onStart={startGame} />;
   }
 
   return (
@@ -192,7 +262,8 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
           <PlayerPanel
             key={i}
             player={state.players[i]}
-            rules={rules}
+            round={state.round}
+            catalog={catalog}
             onChange={(mut, logText) => updatePlayer(i, mut, logText)}
           />
         ))}
@@ -272,33 +343,58 @@ function SetupScreen({
 
 function PlayerPanel({
   player,
-  rules,
+  round,
+  catalog,
   onChange,
 }: {
   player: PlayerState;
-  rules: Rules;
+  round: number;
+  catalog: NonNullable<Rules['secondaries']>;
   onChange: (mut: (p: PlayerState) => PlayerState, logText?: string) => void;
 }) {
-  const secVp = Math.min(SECONDARY_CAP, secondaryVp(player));
+  const [completingId, setCompletingId] = useState<string | null>(null);
   const rawSecVp = secondaryVp(player);
+  const secVp = Math.min(SECONDARY_CAP, rawSecVp);
   const total = player.primaryVp + secVp;
-  const secondaryCatalog = rules.secondaries ?? [];
+  const hand = player.secondaries.filter((c) => c.status === 'hand');
+  const history = [...player.secondaries.filter((c) => c.status !== 'hand')].reverse();
+  const canDiscardForCp = player.discardedForCpRound !== round;
 
-  function addSecondary() {
-    const first = secondaryCatalog[0]?.name ?? 'Secondary';
+  function drawExtra() {
+    const remaining = catalog.map((c) => c.name).filter((n) => !player.secondaries.some((c) => c.cardName === n));
+    const name = remaining[Math.floor(Math.random() * remaining.length)];
+    if (!name) return;
     onChange(
-      (p) => ({ ...p, secondaries: [...p.secondaries, { id: uid(), cardName: first, vp: 0 }] }),
-      `${player.name} draws a secondary: ${first}.`,
+      (p) => ({
+        ...p,
+        deck: p.deck.filter((n) => n !== name),
+        secondaries: [...p.secondaries, { id: uid(), cardName: name, status: 'hand', vp: 0, drawnRound: round }],
+      }),
+      `${player.name} draws an extra secondary: ${name}.`,
     );
   }
-  function updateSecondary(id: string, mut: (c: SecondaryCard) => SecondaryCard) {
-    onChange((p) => ({
-      ...p,
-      secondaries: p.secondaries.map((c) => (c.id === id ? mut(c) : c)),
-    }));
+
+  function discardForCp(card: SecondaryCard) {
+    onChange(
+      (p) => ({
+        ...p,
+        cp: p.cp + 1,
+        discardedForCpRound: round,
+        secondaries: p.secondaries.map((c) => (c.id === card.id ? { ...c, status: 'discarded' } : c)),
+      }),
+      `${player.name} discards ${card.cardName} for +1 CP.`,
+    );
   }
-  function removeSecondary(id: string) {
-    onChange((p) => ({ ...p, secondaries: p.secondaries.filter((c) => c.id !== id) }));
+
+  function completeCard(card: SecondaryCard, vp: number, tierText: string) {
+    onChange(
+      (p) => ({
+        ...p,
+        secondaries: p.secondaries.map((c) => (c.id === card.id ? { ...c, status: 'completed', vp } : c)),
+      }),
+      `${player.name} completes ${card.cardName}: +${vp} VP (${stripMd(tierText)}).`,
+    );
+    setCompletingId(null);
   }
 
   return (
@@ -338,51 +434,62 @@ function PlayerPanel({
             ({rawSecVp}{rawSecVp > SECONDARY_CAP ? ` → capped ${SECONDARY_CAP}` : ` / ${SECONDARY_CAP}`})
           </span>
         </div>
-        {player.secondaries.map((c) => {
-          const card = secondaryCatalog.find((sc) => sc.name === c.cardName);
+
+        {hand.map((c) => {
+          const card = catalog.find((sc) => sc.name === c.cardName);
+          const allTiers = card?.sections.flatMap((s) => s.tiers.map((t) => ({ ...t, section: s }))) ?? [];
           return (
             <div className="tracker-card" key={c.id}>
-              <div className="row" style={{ gap: 6, alignItems: 'center' }}>
-                {secondaryCatalog.length ? (
-                  <select
-                    className="tracker-card-name"
-                    value={c.cardName}
-                    onChange={(e) => updateSecondary(c.id, (card) => ({ ...card, cardName: e.target.value }))}
-                  >
-                    {secondaryCatalog.map((sc) => (
-                      <option key={sc.name} value={sc.name}>
-                        {sc.name}
-                      </option>
-                    ))}
-                  </select>
-                ) : (
-                  <input
-                    className="tracker-card-name"
-                    value={c.cardName}
-                    onChange={(e) => updateSecondary(c.id, (card) => ({ ...card, cardName: e.target.value }))}
-                  />
-                )}
-                <input
-                  className="tracker-card-points"
-                  type="number"
-                  inputMode="numeric"
-                  value={c.vp}
-                  onChange={(e) => updateSecondary(c.id, (card) => ({ ...card, vp: Number(e.target.value) || 0 }))}
-                />
-                <button className="ghost small danger iconbtn" aria-label="Remove" onClick={() => removeSecondary(c.id)}>
-                  🗑
-                </button>
+              <div className="tracker-card-head">
+                <span className="tracker-card-title">{c.cardName}</span>
+                <span className="tiny muted">{card?.kindLabel}</span>
               </div>
               {card && (
-                <Collapsible title={<span className="tiny muted">{card.kindLabel}</span>}>
+                <Collapsible title={<span className="tiny muted">View full text</span>}>
                   <SecondaryCardText card={card} />
                 </Collapsible>
+              )}
+              <div className="row wrap" style={{ gap: 6 }}>
+                <button className="ghost small" onClick={() => setCompletingId(completingId === c.id ? null : c.id)}>
+                  ✓ Mark completed
+                </button>
+                <button
+                  className="ghost small"
+                  disabled={!canDiscardForCp}
+                  title={canDiscardForCp ? 'Discard this card to gain 1 CP' : 'Already used this round'}
+                  onClick={() => discardForCp(c)}
+                >
+                  🗑 Discard (+1 CP)
+                </button>
+              </div>
+              {completingId === c.id && (
+                <div className="col tracker-tierpicker" style={{ gap: 4 }}>
+                  <span className="tiny muted">Which was satisfied?</span>
+                  {allTiers.map((t, i) => (
+                    <button key={i} className="ghost small tracker-tierbtn" onClick={() => completeCard(c, t.vp, t.text)}>
+                      <b>{t.vp} VP</b> — {stripMd(t.text)}
+                    </button>
+                  ))}
+                </div>
               )}
             </div>
           );
         })}
-        <button className="ghost small" onClick={addSecondary}>
-          + Add secondary
+
+        {!!history.length && (
+          <Collapsible title={<span className="tiny muted">History ({history.length})</span>}>
+            <div className="col" style={{ gap: 4 }}>
+              {history.map((c) => (
+                <div key={c.id} className="tiny muted">
+                  {c.status === 'completed' ? `✓ ${c.cardName} — +${c.vp} VP` : `🗑 ${c.cardName} — discarded`}
+                </div>
+              ))}
+            </div>
+          </Collapsible>
+        )}
+
+        <button className="ghost small" onClick={drawExtra}>
+          + Draw extra secondary
         </button>
       </div>
     </div>

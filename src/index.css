@@ -844,6 +844,15 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
   color: var(--text);
 }
 select.tracker-card-name { border: 1px solid var(--border); border-radius: 6px; padding: 4px 6px; }
+
+.tracker-card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.tracker-card-title { font-weight: 700; }
+.tracker-tierpicker {
+  border-top: 1px solid var(--border);
+  padding-top: 6px;
+  margin-top: 2px;
+}
+.tracker-tierbtn { text-align: left; white-space: normal; height: auto; padding: 6px 10px; }
 .tracker-card-points {
   width: 3.5ch;
   flex: none;
