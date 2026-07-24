@@ -613,7 +613,10 @@ export function layoutImages(rules: Rules, mine: string, opponent: string): stri
   if (!m) return null;
   const slug = (s: string) => s.trim().toLowerCase().replace(/\s+/g, '-');
   const base = `${slug(m.a)}_vs_${slug(m.b)}`;
-  return ['A', 'B', 'C'].map((letter) => `/data/layouts/${base}_${letter}.jpg`);
+  // GitHub Pages serves the app from a project sub-path (see vite.config.ts's `base`) —
+  // a hardcoded root-relative path here 404s there even though it works in local dev.
+  const root = import.meta.env.BASE_URL || '/';
+  return ['A', 'B', 'C'].map((letter) => `${root}data/layouts/${base}_${letter}.jpg`.replace(/\/{2,}/g, '/'));
 }
 
 // ----- Leader / Support attachment -----
