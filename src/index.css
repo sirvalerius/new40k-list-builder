@@ -765,6 +765,7 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 }
 .tracker-roundchip.active { background: var(--accent-2); color: var(--bg); border-color: var(--accent-2); }
 .tracker-clock { display: flex; align-items: center; gap: 10px; }
+.tracker-turnclock { font-size: 1.1rem; font-variant-numeric: tabular-nums; color: var(--accent-2); }
 .tracker-activebadge {
   padding: 4px 12px;
   border-radius: 999px;
@@ -772,6 +773,7 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
   color: #fff;
   font-size: 0.95rem;
 }
+.tracker-activebadge.tracker-deploy { background: var(--bg-elev2); color: var(--text-dim); border: 1px solid var(--border); }
 .tracker-nextturn { flex: 1; font-size: 1.2rem; }
 
 .tracker-log { display: flex; flex-direction: column; gap: 4px; max-height: 240px; overflow-y: auto; }
@@ -853,6 +855,16 @@ select.tracker-card-name { border: 1px solid var(--border); border-radius: 6px; 
   margin-top: 2px;
 }
 .tracker-tierbtn { text-align: left; white-space: normal; height: auto; padding: 6px 10px; }
+.tracker-section-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.tracker-section-picker:last-child { border-bottom: none; padding-bottom: 0; }
+.tracker-checkrow { cursor: pointer; }
+.tracker-checkrow input { width: 18px; height: 18px; flex: none; }
 .tracker-card-points {
   width: 3.5ch;
   flex: none;

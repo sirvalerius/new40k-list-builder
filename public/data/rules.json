@@ -1729,7 +1729,8 @@
        "text": "For each enemy unit with a **starting strength** of 13 or more that is **destroyed** this turn.",
        "vp": 4
       }
-     ]
+     ],
+     "perEvent": true
     },
     {
      "when": "ANY BATTLE ROUND",
@@ -1778,9 +1779,11 @@
       },
       {
        "text": "For each of those models with a **W** of 4 or more.",
-       "vp": 1
+       "vp": 1,
+       "cumulative": true
       }
-     ]
+     ],
+     "perEvent": true
     },
     {
      "when": "ANY BATTLE ROUND",
@@ -1793,7 +1796,8 @@
       },
       {
        "text": "All enemy **CHARACTER** models have been **destroyed** during the battle.",
-       "vp": 5
+       "vp": 5,
+       "or": true
       }
      ]
     }
@@ -1802,7 +1806,7 @@
   {
    "name": "Beacon",
    "kindLabel": "SECONDARY · TACTICAL",
-   "whenDrawn": "**WHEN DRAWN:** Select one friendly unit on the battlefield or embarked within a **TRANSPORT** on the battlefield to be your <span class=\"cB__mark\">beacon</span> unit.",
+   "whenDrawn": "**WHEN DRAWN:** Select one friendly unit on the battlefield or embarked within a **TRANSPORT** on the battlefield to be your beacon unit.",
    "sections": [
     {
      "when": "ANY BATTLE ROUND",
@@ -1810,12 +1814,13 @@
      "trigger": "End of your opponent's turn or the end of the fifth battle round (whichever comes first)",
      "tiers": [
       {
-       "text": "Your <span class=\"cB__mark\">beacon</span> unit is on the battlefield and not within your deployment zone.",
+       "text": "Your beacon unit is on the battlefield and not within your deployment zone.",
        "vp": 3
       },
       {
-       "text": "Your <span class=\"cB__mark\">beacon</span> unit is on the battlefield and not within your territory.",
-       "vp": 5
+       "text": "Your beacon unit is on the battlefield and not within your territory.",
+       "vp": 5,
+       "or": true
       }
      ]
     }
@@ -1835,7 +1840,8 @@
        "text": "For each friendly unit (excluding **AIRCRAFT** and **battle-shocked** units) wholly within your opponent's deployment zone.",
        "vp": 3
       }
-     ]
+     ],
+     "cap": 5
     }
    ]
   },
@@ -1853,7 +1859,8 @@
        "text": "For each enemy model with a **Wounds** characteristic of 10 or more that is **destroyed** this turn.",
        "vp": 4
       }
-     ]
+     ],
+     "perEvent": true
     },
     {
      "when": "ANY BATTLE ROUND",
@@ -1871,7 +1878,7 @@
   {
    "name": "Burden of Trust",
    "kindLabel": "SECONDARY · TACTICAL",
-   "whenDrawn": "**WHEN DRAWN/START OF YOUR TURN:** For each **objective**, you can select one friendly unit on the battlefield to **guard** that **objective**. Until the start of your next turn, while that unit is within range of that **objective** and while you control that **objective**, that **objective** is <span class=\"cB__mark\">guarded</span> by your army.",
+   "whenDrawn": "**WHEN DRAWN/START OF YOUR TURN:** For each **objective**, you can select one friendly unit on the battlefield to **guard** that **objective**. Until the start of your next turn, while that unit is within range of that **objective** and while you control that **objective**, that **objective** is guarded by your army.",
    "sections": [
     {
      "when": "ANY BATTLE ROUND",
@@ -1879,10 +1886,11 @@
      "trigger": "End of your opponent's turn or the end of the fifth battle round (whichever comes first)",
      "tiers": [
       {
-       "text": "For each **objective** <span class=\"cB__mark\">guarded</span> by your army.",
+       "text": "For each **objective** guarded by your army.",
        "vp": 2
       }
-     ]
+     ],
+     "cap": 5
     }
    ]
   },
@@ -1902,7 +1910,8 @@
       },
       {
        "text": "One or more friendly units (excluding **AIRCRAFT** and **battle-shocked** units) are within 3\" of the centre of the battlefield, and no enemy units are within 6\" of the centre of the battlefield.",
-       "vp": 5
+       "vp": 5,
+       "or": true
       }
      ]
     }
@@ -1919,12 +1928,13 @@
      "trigger": "End of your turn",
      "tiers": [
       {
-       "text": "One **objective** was <span class=\"cB__mark\">cleansed</span> by your army this turn.",
+       "text": "One **objective** was cleansed by your army this turn.",
        "vp": 2
       },
       {
-       "text": "Two or more **objectives** were <span class=\"cB__mark\">cleansed</span> by your army this turn.",
-       "vp": 5
+       "text": "Two or more **objectives** were cleansed by your army this turn.",
+       "vp": 5,
+       "or": true
       }
      ]
     }
@@ -1946,7 +1956,8 @@
       },
       {
        "text": "No enemy units are within your deployment zone.",
-       "vp": 2
+       "vp": 2,
+       "cumulative": true
       }
      ]
     }
@@ -1984,7 +1995,7 @@
   {
    "name": "Engage on All Fronts",
    "kindLabel": "SECONDARY · FIXED / TACTICAL",
-   "whenDrawn": "If one or more friendly units (excluding **AIRCRAFT** and **battle-shocked** units) are wholly within a table quarter, and those units are not within 6\" of the centre of the battlefield, you have a <span class=\"cB__mark\">presence</span> in that table quarter.",
+   "whenDrawn": "If one or more friendly units (excluding **AIRCRAFT** and **battle-shocked** units) are wholly within a table quarter, and those units are not within 6\" of the centre of the battlefield, you have a presence in that table quarter.",
    "sections": [
     {
      "when": "ANY BATTLE ROUND",
@@ -1992,12 +2003,13 @@
      "trigger": "End of your turn",
      "tiers": [
       {
-       "text": "You have a <span class=\"cB__mark\">presence</span> in <span class=\"cB__wmWord\" data-n=\"3\">three</span> table quarters.",
+       "text": "You have a presence in three table quarters.",
        "vp": 2
       },
       {
-       "text": "You have a <span class=\"cB__mark\">presence</span> in <span class=\"cB__wmWord\" data-n=\"4\">four</span> table quarters.",
-       "vp": 4
+       "text": "You have a presence in four table quarters.",
+       "vp": 4,
+       "or": true
       }
      ]
     },
@@ -2007,12 +2019,13 @@
      "trigger": "End of your turn",
      "tiers": [
       {
-       "text": "You have a <span class=\"cB__mark\">presence</span> in <span class=\"cB__wmWord\" data-n=\"3\">three</span> table quarters.",
+       "text": "You have a presence in three table quarters.",
        "vp": 3
       },
       {
-       "text": "You have a <span class=\"cB__mark\">presence</span> in <span class=\"cB__wmWord\" data-n=\"4\">four</span> table quarters.",
-       "vp": 5
+       "text": "You have a presence in four table quarters.",
+       "vp": 5,
+       "or": true
       }
      ]
     }
@@ -2050,7 +2063,8 @@
        "text": "For each enemy unit **destroyed** this turn.",
        "vp": 2
       }
-     ]
+     ],
+     "cap": 5
     }
    ]
   },
@@ -2070,7 +2084,8 @@
       },
       {
        "text": "Two or more friendly units (excluding **AIRCRAFT** and **battle-shocked** units) are within 6\" of opposite battlefield edges and one or more of those units is not within your territory.",
-       "vp": 5
+       "vp": 5,
+       "or": true
       }
      ]
     }
@@ -2090,7 +2105,8 @@
        "text": "For each enemy unit that started the turn within range of one or more **objectives** and is **destroyed**.",
        "vp": 3
       }
-     ]
+     ],
+     "cap": 5
     }
    ]
   },
@@ -2105,7 +2121,7 @@
      "trigger": "End of your turn",
      "tiers": [
       {
-       "text": "A **terrain area** was <span class=\"cB__mark\">plundered</span> this turn.",
+       "text": "A **terrain area** was plundered this turn.",
        "vp": 5
       }
      ]

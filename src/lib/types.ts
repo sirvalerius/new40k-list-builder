@@ -161,11 +161,27 @@ export interface Mission {
 }
 
 // Chapter Approved secondary-mission card (Defender deck — see tools/scrape_secondaries.py).
+// `or` marks a tier as an alternative to the others in its section (score at most one);
+// `cumulative` marks a tier that stacks on top of whichever other tier(s) in the section
+// were also satisfied. A section with neither flag on any tier, and exactly one tier, is
+// a plain per-unit tier — `cap` is its per-scoring-instance ceiling (e.g. "3VP per unit,
+// up to 5VP"). `perEvent` (Fixed-mode only) means the section can be scored every
+// qualifying turn rather than once — the app's Tactical-only deck never uses it.
+export interface SecondaryTier extends MissionTier {
+  or?: boolean;
+}
 export interface SecondaryMission {
   name: string;
   kindLabel: string; // e.g. "SECONDARY · FIXED / TACTICAL" or "SECONDARY · TACTICAL"
   whenDrawn?: string | null;
-  sections: { when: string; chip: string; trigger: string; tiers: MissionTier[] }[];
+  sections: {
+    when: string;
+    chip: string;
+    trigger: string;
+    tiers: SecondaryTier[];
+    cap?: number;
+    perEvent?: boolean;
+  }[];
 }
 
 export interface Detachment {

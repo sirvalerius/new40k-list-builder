@@ -1,59 +1,26 @@
 import { useEffect, useRef, useState } from 'react';
-import type { FactionIndexEntry, Rules } from '../lib/types';
+import type { FactionIndexEntry, Rules, SecondaryMission } from '../lib/types';
 import { FactionIcon } from '../components/FactionIcon';
 import { Collapsible } from '../components/Collapsible';
 import { uid } from '../lib/helpers';
+import {
+  ROUND_CAP,
+  GAME_CAP,
+  emptyState,
+  startGame as startGameState,
+  nextTurn as nextTurnState,
+  effectivePrimaryVp,
+  effectiveSecondaryVp,
+  rawSecondaryVp,
+  formatElapsed,
+  type PlayerState,
+  type SecondaryCard,
+  type TrackerState,
+} from '../lib/tracker';
 
-const STORAGE_KEY = 'new40k-tracker-v4';
-const SECONDARY_CAP = 40; // core rule: secondary VP total is capped at 40, regardless of edition
+const STORAGE_KEY = 'new40k-tracker-v5';
 const COLORS = ['#5b8fd9', '#d05050', '#57b45f', '#e0c23f', '#a05bd9', '#e05b8f', '#3fc1b0', '#d9853f'];
 
-type LogEntry = { id: string; ts: number; text: string };
-type SecondaryStatus = 'hand' | 'completed' | 'discarded';
-type SecondaryCard = { id: string; cardName: string; status: SecondaryStatus; vp: number; drawnRound: number };
-type PlayerState = {
-  name: string;
-  factionId: string;
-  color: string;
-  cp: number;
-  primaryVp: number;
-  manualSecondaryVp: number; // hand-entered VP, for players tracking secondaries on physical cards
-  deck: string[]; // shuffled remaining draw pool for this player's secondary deck
-  secondaries: SecondaryCard[]; // every card ever drawn (hand / completed / discarded)
-  discardedForCpRound: number; // last battle round this player used the discard-for-CP bonus (0 = never)
-};
-type TrackerState = {
-  phase: 'setup' | 'live';
-  round: number;
-  active: 0 | 1;
-  startedAt: number;
-  log: LogEntry[];
-  players: [PlayerState, PlayerState];
-};
-
-function emptyPlayer(name: string, color: string): PlayerState {
-  return {
-    name,
-    factionId: '',
-    color,
-    cp: 0,
-    primaryVp: 0,
-    manualSecondaryVp: 0,
-    deck: [],
-    secondaries: [],
-    discardedForCpRound: 0,
-  };
-}
-function emptyState(): TrackerState {
-  return {
-    phase: 'setup',
-    round: 1,
-    active: 0,
-    startedAt: Date.now(),
-    log: [],
-    players: [emptyPlayer('Player 1', COLORS[0]), emptyPlayer('Player 2', COLORS[1])],
-  };
-}
 function loadState(): TrackerState {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
@@ -64,71 +31,34 @@ function loadState(): TrackerState {
   } catch {
     /* ignore corrupt storage */
   }
-  return emptyState();
-}
-
-function shuffled(names: string[]): string[] {
-  const a = [...names];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-// Draws back up to a 2-card hand from this player's own shuffled deck (no reshuffle of
-// completed/discarded cards — a deliberate simplification of the real reshuffle-on-discard
-// rule, fine for a casual tracker since 18 cards comfortably covers a 5-round game).
-function drawUpTo(p: PlayerState, round: number): { player: PlayerState; drawn: string[] } {
-  const handCount = p.secondaries.filter((c) => c.status === 'hand').length;
-  const need = Math.max(0, 2 - handCount);
-  const names = p.deck.slice(0, need);
-  const deck = p.deck.slice(need);
-  const newCards: SecondaryCard[] = names.map((cardName) => ({
-    id: uid(),
-    cardName,
-    status: 'hand',
-    vp: 0,
-    drawnRound: round,
-  }));
-  return { player: { ...p, deck, secondaries: [...p.secondaries, ...newCards] }, drawn: names };
-}
-
-function secondaryVp(p: PlayerState) {
-  const cardVp = p.secondaries.filter((c) => c.status === 'completed').reduce((s, c) => s + c.vp, 0);
-  return cardVp + p.manualSecondaryVp;
+  return emptyState([COLORS[0], COLORS[1]]);
 }
 
 function stripMd(text: string) {
   return text.replace(/\*\*/g, '');
 }
 
-function formatElapsed(ms: number) {
-  const s = Math.floor(ms / 1000);
-  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
-}
-
 // TV-browser scoreboard, modeled on the user's old BattleForge Tracker: pregame player/
-// faction/colour setup, then a live round-and-turn tracker with CP, Primary VP (uncapped —
-// there's no universal per-mission ceiling, unlike the old app's flat "/45") and Secondary
-// VP (capped at 40 total, the one number that actually is a fixed rule), plus a running
-// game log.
+// faction/colour setup, a Round 0 for deployment/pre-battle actions (timed, but no CP or
+// secondary draws — those only start with Round 1), then a live round-and-turn tracker.
+// The CP/VP rules are implemented in ../lib/tracker.ts (and unit tested there); see that
+// file's comments for the exact source text each rule comes from. In short:
 //
-// CP, per the Core Rules (08.02 Gain Core CP): "In the Command phase, both players gain
-// Core CP" — every turn has its own Command phase, and it grants CP to BOTH players, not
-// just whoever's turn it is, so over a full battle round (2 turns) each player nets +2 Core
-// CP. On top of that, the Event Companion caps *bonus* CP (anything beyond Core CP, which
-// includes discarding a Secondary Mission) at a maximum of 1 per player per battle round —
-// modelled here by discardedForCpRound, and by that action only being offered to whichever
-// player's turn is currently active ("if it is your turn", per the Chapter Approved deck
-// rules on achieving/discarding Secondary Missions).
-//
-// Each player draws their own Secondary Mission hand from the real Chapter Approved Defender
-// deck (rules.secondaries, scraped from gdmissions.app) — 2 cards at game start, then
-// auto-topped-up to 2 at the start of that player's own turn. A hand card can be marked
-// completed by picking which scoring tier was satisfied, crediting that tier's VP, or (only
-// on your own turn) discarded for the +1 bonus CP above. A manual Secondary VP counter is
-// also available for players using physical cards instead of the digital deck.
+// - Core CP: both players gain it every turn (not just whoever's turn it is), per Core
+//   Rules 08.02. Bonus CP (anything else, including discarding a Secondary Mission) is
+//   capped at +1/player/battle round by the Event Companion, and discarding for it is only
+//   offered on that player's own turn ("if it is your turn", Chapter Approved deck rules).
+// - Primary and Secondary VP are each capped at 15/battle round and 45 for the whole game
+//   (Event Companion's VP source table) — shown as the effective/capped value next to the
+//   raw counter.
+// - Secondary Missions are drawn from the real Chapter Approved Defender deck
+//   (rules.secondaries) — 2 cards at the start of each player's own first turn, then
+//   auto-topped-up to 2 at the start of every later turn of theirs. Scoring a hand card
+//   walks through its actual card text: sections marked `or` are mutually exclusive (pick
+//   one), sections with a `cumulative` tier let you tick every condition that applies and
+//   sums them, and a lone tier with a `cap` is a per-unit count capped at that section's max.
+// - A manual Secondary VP counter is also available for players using physical cards
+//   instead of the digital deck.
 export function GameTracker({ rules, factions }: { rules: Rules; factions: FactionIndexEntry[] }) {
   const [state, setState] = useState<TrackerState>(loadState);
   const prevRef = useRef<TrackerState | null>(null);
@@ -145,14 +75,6 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
     return () => clearInterval(t);
   }, [state.phase]);
 
-  function commit(next: TrackerState | ((s: TrackerState) => TrackerState), logText?: string) {
-    setState((prev) => {
-      prevRef.current = prev;
-      const n = typeof next === 'function' ? next(prev) : next;
-      return logText ? { ...n, log: [...n.log, { id: uid(), ts: Date.now(), text: logText }] } : n;
-    });
-  }
-
   function undo() {
     if (prevRef.current) {
       setState(prevRef.current);
@@ -161,86 +83,42 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
   }
 
   function startGame() {
-    const names = catalog.map((c) => c.name);
-    setState((prev) => {
-      prevRef.current = prev;
-      const drawLogs: string[] = [];
-      let players = prev.players.map((p) => {
-        const { player, drawn } = drawUpTo({ ...p, deck: shuffled(names) }, 1);
-        if (drawn.length) drawLogs.push(`${player.name} draws: ${drawn.join(', ')}.`);
-        return player;
-      }) as [PlayerState, PlayerState];
-      // Round 1, Player 1's turn has its own Command phase — both players gain Core CP there too.
-      players = players.map((p) => ({ ...p, cp: p.cp + 1 })) as [PlayerState, PlayerState];
-      const text = [
-        `Game started — Round 1, ${players[0].name}'s turn.`,
-        'Command phase: both players gain +1 Core CP.',
-        ...drawLogs,
-      ].join(' ');
-      return {
-        ...prev,
-        phase: 'live',
-        round: 1,
-        active: 0,
-        startedAt: Date.now(),
-        players,
-        log: [...prev.log, { id: uid(), ts: Date.now(), text }],
-      };
-    });
+    prevRef.current = state;
+    setState(startGameState(state));
   }
 
   function nextTurn() {
-    setState((prev) => {
-      prevRef.current = prev;
-      const wrapping = prev.active === 1;
-      const round = wrapping ? Math.min(5, prev.round + 1) : prev.round;
-      const active: 0 | 1 = wrapping ? 0 : 1;
-      // Every turn has its own Command phase, and per the Core Rules (08.02) BOTH players
-      // gain Core CP there, not just whoever's turn it is.
-      let players = prev.players.map((p) => ({ ...p, cp: p.cp + 1 })) as [PlayerState, PlayerState];
-      const { player: drawnPlayer, drawn } = drawUpTo(players[active], round);
-      players = [...players] as [PlayerState, PlayerState];
-      players[active] = drawnPlayer;
-      const parts = [
-        wrapping
-          ? `Round ${round} — ${drawnPlayer.name}'s turn begins.`
-          : `${drawnPlayer.name}'s turn begins.`,
-        'Command phase: both players gain +1 Core CP.',
-      ];
-      if (drawn.length) parts.push(`${drawnPlayer.name} draws: ${drawn.join(', ')}.`);
-      return {
-        ...prev,
-        round,
-        active,
-        players,
-        log: [...prev.log, { id: uid(), ts: Date.now(), text: parts.join(' ') }],
-      };
-    });
+    prevRef.current = state;
+    setState((prev) => nextTurnState(prev, catalog.map((c) => c.name)));
   }
 
   function resetGame() {
     if (!confirm('Start a new game? This clears the board for both players.')) return;
-    setState(emptyState());
+    setState(emptyState([state.players[0].color, state.players[1].color]));
     prevRef.current = null;
   }
 
   function updatePlayer(i: 0 | 1, mut: (p: PlayerState) => PlayerState, logText?: string) {
-    commit((s) => {
-      const players = [...s.players] as [PlayerState, PlayerState];
+    prevRef.current = state;
+    setState((prev) => {
+      const players = [...prev.players] as [PlayerState, PlayerState];
       players[i] = mut(players[i]);
-      return { ...s, players };
-    }, logText);
+      const log = logText ? [...prev.log, { id: uid(), ts: Date.now(), text: logText }] : prev.log;
+      return { ...prev, players, log };
+    });
   }
 
   if (state.phase === 'setup') {
     return <SetupScreen state={state} factions={factions} onChange={setState} onStart={startGame} />;
   }
 
+  const deploying = state.round === 0;
+
   return (
     <div className="tracker">
       <div className="tracker-topbar">
         <div className="tracker-rounds">
-          {[1, 2, 3, 4, 5].map((r) => (
+          {[0, 1, 2, 3, 4, 5].map((r) => (
             <span key={r} className={`tracker-roundchip ${r === state.round ? 'active' : ''}`}>
               {r}
             </span>
@@ -248,10 +126,15 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
           <span className="muted tiny">RND</span>
         </div>
         <div className="tracker-clock">
-          <span className="muted small">{formatElapsed(Date.now() - state.startedAt)}</span>
-          <span className="tracker-activebadge" style={{ background: state.players[state.active].color }}>
-            {state.players[state.active].name}
-          </span>
+          <span className="muted tiny">{formatElapsed(Date.now() - state.startedAt)} total</span>
+          <span className="tracker-turnclock">{formatElapsed(Date.now() - state.turnStartedAt)}</span>
+          {deploying ? (
+            <span className="tracker-activebadge tracker-deploy">Deployment</span>
+          ) : (
+            <span className="tracker-activebadge" style={{ background: state.players[state.active].color }}>
+              {state.players[state.active].name}
+            </span>
+          )}
         </div>
       </div>
 
@@ -263,7 +146,7 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
           ↶
         </button>
         <button className="primary tracker-nextturn" onClick={nextTurn}>
-          Next Turn ›
+          {deploying ? 'Begin Battle ›' : 'Next Turn ›'}
         </button>
       </div>
 
@@ -284,7 +167,7 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
             key={i}
             player={state.players[i]}
             round={state.round}
-            isActive={state.active === i}
+            isActive={!deploying && state.active === i}
             catalog={catalog}
             onChange={(mut, logText) => updatePlayer(i, mut, logText)}
           />
@@ -377,9 +260,10 @@ function PlayerPanel({
   onChange: (mut: (p: PlayerState) => PlayerState, logText?: string) => void;
 }) {
   const [completingId, setCompletingId] = useState<string | null>(null);
-  const rawSecVp = secondaryVp(player);
-  const secVp = Math.min(SECONDARY_CAP, rawSecVp);
-  const total = player.primaryVp + secVp;
+  const rawSecVp = rawSecondaryVp(player);
+  const effPrimary = effectivePrimaryVp(player);
+  const effSecondary = effectiveSecondaryVp(player);
+  const total = effPrimary + effSecondary;
   const hand = player.secondaries.filter((c) => c.status === 'hand');
   const history = [...player.secondaries.filter((c) => c.status !== 'hand')].reverse();
   // Chapter Approved deck rules: you can only discard an active Secondary Mission for the
@@ -417,13 +301,13 @@ function PlayerPanel({
     );
   }
 
-  function completeCard(card: SecondaryCard, vp: number, tierText: string) {
+  function completeCard(card: SecondaryCard, vp: number, description: string) {
     onChange(
       (p) => ({
         ...p,
         secondaries: p.secondaries.map((c) => (c.id === card.id ? { ...c, status: 'completed', vp } : c)),
       }),
-      `${player.name} completes ${card.cardName}: +${vp} VP (${stripMd(tierText)}).`,
+      `${player.name} completes ${card.cardName}: +${vp} VP (${description}).`,
     );
     setCompletingId(null);
   }
@@ -449,7 +333,9 @@ function PlayerPanel({
       </div>
 
       <div className="tracker-stat">
-        <span className="tracker-stat-label">Primary VP</span>
+        <span className="tracker-stat-label">
+          Primary VP <VpCapNote raw={player.primaryVp} effective={effPrimary} />
+        </span>
         <Stepper
           value={player.primaryVp}
           onChange={(v, d) =>
@@ -460,10 +346,7 @@ function PlayerPanel({
 
       <div className="tracker-secondaries">
         <div className="tracker-stat-label">
-          Secondary missions{' '}
-          <span className="muted">
-            ({rawSecVp}{rawSecVp > SECONDARY_CAP ? ` → capped ${SECONDARY_CAP}` : ` / ${SECONDARY_CAP}`})
-          </span>
+          Secondary missions <VpCapNote raw={rawSecVp} effective={effSecondary} />
         </div>
 
         <div className="tracker-stat">
@@ -481,7 +364,6 @@ function PlayerPanel({
 
         {hand.map((c) => {
           const card = catalog.find((sc) => sc.name === c.cardName);
-          const allTiers = card?.sections.flatMap((s) => s.tiers.map((t) => ({ ...t, section: s }))) ?? [];
           return (
             <div className="tracker-card" key={c.id}>
               <div className="tracker-card-head">
@@ -506,15 +388,8 @@ function PlayerPanel({
                   🗑 Discard (+1 CP)
                 </button>
               </div>
-              {completingId === c.id && (
-                <div className="col tracker-tierpicker" style={{ gap: 4 }}>
-                  <span className="tiny muted">Which was satisfied?</span>
-                  {allTiers.map((t, i) => (
-                    <button key={i} className="ghost small tracker-tierbtn" onClick={() => completeCard(c, t.vp, t.text)}>
-                      <b>{t.vp} VP</b> — {stripMd(t.text)}
-                    </button>
-                  ))}
-                </div>
+              {completingId === c.id && card && (
+                <SecondaryScoringPicker card={card} onScore={(vp, desc) => completeCard(c, vp, desc)} />
               )}
             </div>
           );
@@ -540,11 +415,130 @@ function PlayerPanel({
   );
 }
 
+function VpCapNote({ raw, effective }: { raw: number; effective: number }) {
+  return (
+    <span className="muted tiny">
+      ({raw} raw{effective !== raw ? ` → ${effective} counted` : ''}, max {ROUND_CAP}/round · {GAME_CAP}/game)
+    </span>
+  );
+}
+
+// Renders the scoring options for a hand card's Tactical-relevant sections (FIXED-only
+// sections are skipped — the digital deck always plays Tactical). Each section renders
+// according to what its tiers are marked with in the source card data:
+//  - a lone tier with a `cap` is a per-unit count (e.g. "3VP per unit, up to 5VP")
+//  - any `cumulative` tier means the section's tiers are independent checkboxes that sum
+//  - otherwise tiers are mutually exclusive (`or`) — pick one to score immediately
+function SecondaryScoringPicker({
+  card,
+  onScore,
+}: {
+  card: SecondaryMission;
+  onScore: (vp: number, description: string) => void;
+}) {
+  const sections = card.sections.filter((s) => s.chip !== 'FIXED');
+  return (
+    <div className="col tracker-tierpicker" style={{ gap: 10 }}>
+      <span className="tiny muted">Which was satisfied?</span>
+      {sections.map((s, i) => (
+        <SectionPicker key={i} section={s} onScore={onScore} />
+      ))}
+    </div>
+  );
+}
+
+function SectionPicker({
+  section,
+  onScore,
+}: {
+  section: SecondaryMission['sections'][number];
+  onScore: (vp: number, description: string) => void;
+}) {
+  const [count, setCount] = useState(0);
+  const [checked, setChecked] = useState<boolean[]>(() => section.tiers.map(() => false));
+
+  const hasCumulative = section.tiers.some((t) => t.cumulative);
+  const isCountTier = section.tiers.length === 1 && section.cap != null;
+
+  const header = (
+    <div className="tiny muted">
+      {section.when} · {section.trigger}
+    </div>
+  );
+
+  if (isCountTier) {
+    const tier = section.tiers[0];
+    const vp = Math.min(count * tier.vp, section.cap!);
+    return (
+      <div className="tracker-section-picker">
+        {header}
+        <div className="small">{stripMd(tier.text)}</div>
+        <div className="row" style={{ gap: 8, alignItems: 'center' }}>
+          <Stepper value={count} onChange={(v) => setCount(Math.max(0, v))} />
+          <span className="tiny muted">
+            × {tier.vp} VP, capped at {section.cap}
+          </span>
+          <button className="ghost small" disabled={count === 0} onClick={() => onScore(vp, `${stripMd(tier.text)} × ${count}`)}>
+            Score {vp} VP
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (hasCumulative) {
+    const vp = section.tiers.reduce((s, t, i) => s + (checked[i] ? t.vp : 0), 0);
+    return (
+      <div className="tracker-section-picker">
+        {header}
+        {section.tiers.map((t, i) => (
+          <label key={i} className="row tracker-checkrow" style={{ gap: 6, alignItems: 'baseline' }}>
+            <input
+              type="checkbox"
+              checked={checked[i]}
+              onChange={(e) => setChecked((cs) => cs.map((c, j) => (j === i ? e.target.checked : c)))}
+            />
+            <span>
+              <b>{t.vp} VP</b> — {stripMd(t.text)}
+            </span>
+          </label>
+        ))}
+        <button
+          className="ghost small"
+          disabled={vp === 0}
+          onClick={() =>
+            onScore(
+              vp,
+              section.tiers
+                .filter((_, i) => checked[i])
+                .map((t) => stripMd(t.text))
+                .join(' + '),
+            )
+          }
+        >
+          Score {vp} VP
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="tracker-section-picker">
+      {header}
+      {section.tiers.map((t, i) => (
+        <button key={i} className="ghost small tracker-tierbtn" onClick={() => onScore(t.vp, stripMd(t.text))}>
+          <b>{t.vp} VP</b> — {stripMd(t.text)}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 function md(text: string) {
   return text.split(/\*\*/).map((part, i) => (i % 2 ? <b key={i}>{part}</b> : <span key={i}>{part}</span>));
 }
 
-function SecondaryCardText({ card }: { card: NonNullable<Rules['secondaries']>[number] }) {
+function SecondaryCardText({ card }: { card: SecondaryMission }) {
   return (
     <div className="col small" style={{ gap: 6 }}>
       {card.whenDrawn && <div className="muted">{md(card.whenDrawn)}</div>}
