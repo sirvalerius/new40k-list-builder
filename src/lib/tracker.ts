@@ -154,20 +154,22 @@ function drawOneRespectingMandatoryReshuffle(
   return null;
 }
 
-// Draws back up to a 2-card hand from this player's own shuffled deck (no reshuffle of
-// completed/discarded cards — a deliberate simplification of the real reshuffle-on-discard
-// rule, fine for a casual tracker since 18 cards comfortably covers a 5-round game).
-export function drawUpTo(
+// Draws 2 fresh cards from this player's own shuffled deck, ADDED to whatever's already
+// active for them — the rule text ("At the start of your Command phase, draw two Secondary
+// Missions... these Secondary Missions are active for you") never caps the hand at 2, so
+// unlike an earlier version of this tracker, a player's hand is allowed to grow past 2 (no
+// reshuffle of completed/discarded cards — a deliberate simplification of the real
+// reshuffle-on-discard rule, fine for a casual tracker since 18 cards comfortably covers a
+// 5-round game even without ever topping the hand back down).
+export function drawTwo(
   p: PlayerState,
   round: number,
 ): { player: PlayerState; drawn: string[]; reshuffled: string[] } {
-  const handCount = p.secondaries.filter((c) => c.status === 'hand').length;
-  const need = Math.max(0, 2 - handCount);
   let deck = p.deck;
   let secondaries = p.secondaries;
   const drawn: string[] = [];
   const reshuffled: string[] = [];
-  for (let i = 0; i < need; i++) {
+  for (let i = 0; i < 2; i++) {
     const result = drawOneRespectingMandatoryReshuffle(deck, round, secondaries);
     if (!result) break;
     deck = result.deck;
@@ -244,7 +246,8 @@ export function startGame(state: TrackerState, now = Date.now()): TrackerState {
 
 /** Advances to the next turn (or out of Round 0 into Round 1). Both players gain Core CP
  *  per turn (Core Rules 08.02 — the Command phase grants it to both, not just whoever's
- *  turn it is); only the newly-active player draws back up to a 2-card secondary hand. */
+ *  turn it is); only the newly-active player draws 2 fresh secondary cards (added to
+ *  whatever they already have active — the hand isn't capped at 2). */
 export function nextTurn(state: TrackerState, catalogNames: string[], now = Date.now()): TrackerState {
   const turnDuration = formatElapsed(now - state.turnStartedAt);
 
@@ -254,7 +257,7 @@ export function nextTurn(state: TrackerState, catalogNames: string[], now = Date
       PlayerState,
     ];
     players = players.map((p) => ({ ...p, cp: p.cp + 1 })) as [PlayerState, PlayerState];
-    const { player: drawnPlayer, drawn, reshuffled } = drawUpTo(players[0], 1);
+    const { player: drawnPlayer, drawn, reshuffled } = drawTwo(players[0], 1);
     players = [...players] as [PlayerState, PlayerState];
     players[0] = drawnPlayer;
     const parts = [
@@ -279,7 +282,7 @@ export function nextTurn(state: TrackerState, catalogNames: string[], now = Date
   const active: 0 | 1 = wrapping ? 0 : 1;
 
   const players = state.players.map((p) => ({ ...p, cp: p.cp + 1 })) as [PlayerState, PlayerState];
-  const { player: drawnPlayer, drawn, reshuffled } = drawUpTo(players[active], round);
+  const { player: drawnPlayer, drawn, reshuffled } = drawTwo(players[active], round);
   players[active] = drawnPlayer;
 
   const parts = [

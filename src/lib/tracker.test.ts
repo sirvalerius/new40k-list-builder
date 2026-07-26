@@ -5,7 +5,7 @@ import {
   nextTurn,
   addRoundVp,
   totalVp,
-  drawUpTo,
+  drawTwo,
   emptyPlayer,
   reshuffleEligible,
   reshuffleCard,
@@ -52,9 +52,9 @@ describe('nextTurn within/across rounds', () => {
     expect(s.players[1].cp).toBe(2);
   });
 
-  it('only the newly active player draws back up to a 2-card hand', () => {
+  it('only the newly active player draws — the other player is untouched', () => {
     let s = nextTurn(startGame(emptyState(['#111', '#222'])), CATALOG); // P1 draws 2
-    s = nextTurn(s, CATALOG); // P2's turn: P2 draws 2, P1 stays at 2
+    s = nextTurn(s, CATALOG); // P2's turn: P2 draws 2, P1 unaffected
     expect(s.players[0].secondaries).toHaveLength(2);
     expect(s.players[1].secondaries).toHaveLength(2);
   });
@@ -123,37 +123,44 @@ describe('totalVp — sum across rounds, capped at 45 for the whole game', () =>
   });
 });
 
-describe('drawUpTo', () => {
-  it('draws up to 2 cards from the deck into hand', () => {
+describe('drawTwo', () => {
+  it('draws 2 cards from the deck into hand', () => {
     const p = { ...emptyPlayer('P', '#111'), deck: [...CATALOG] };
-    const { player, drawn } = drawUpTo(p, 1);
+    const { player, drawn } = drawTwo(p, 1);
     expect(drawn).toHaveLength(2);
     expect(player.secondaries).toHaveLength(2);
     expect(player.deck).toHaveLength(CATALOG.length - 2);
   });
 
-  it('tops up only the missing slots when the hand already has 1 card', () => {
+  it('draws 2 more even if the hand already has cards — the hand is not capped at 2', () => {
     const base = { ...emptyPlayer('P', '#111'), deck: [...CATALOG] };
     const withOne = {
       ...base,
       secondaries: [{ id: 'x', cardName: 'Z', status: 'hand' as const, vp: 0, drawnRound: 1 }],
     };
-    const { player, drawn } = drawUpTo(withOne, 1);
-    expect(drawn).toHaveLength(1);
-    expect(player.secondaries).toHaveLength(2);
+    const { player, drawn } = drawTwo(withOne, 1);
+    expect(drawn).toHaveLength(2);
+    expect(player.secondaries).toHaveLength(3);
   });
 
-  it('draws nothing once the hand is already full', () => {
+  it('draws 2 more on top of an already-2-card hand (no cap)', () => {
     const base = { ...emptyPlayer('P', '#111'), deck: [...CATALOG] };
-    const full = {
+    const withTwo = {
       ...base,
       secondaries: [
         { id: 'x', cardName: 'Z', status: 'hand' as const, vp: 0, drawnRound: 1 },
         { id: 'y', cardName: 'W', status: 'hand' as const, vp: 0, drawnRound: 1 },
       ],
     };
-    const { drawn } = drawUpTo(full, 1);
-    expect(drawn).toHaveLength(0);
+    const { player, drawn } = drawTwo(withTwo, 1);
+    expect(drawn).toHaveLength(2);
+    expect(player.secondaries).toHaveLength(4);
+  });
+
+  it('draws whatever is left once the deck runs low, rather than erroring', () => {
+    const p = { ...emptyPlayer('P', '#111'), deck: ['Z'] };
+    const { drawn } = drawTwo(p, 1);
+    expect(drawn).toHaveLength(1);
   });
 });
 
@@ -190,10 +197,10 @@ describe('reshuffleEligible', () => {
   });
 });
 
-describe('drawUpTo — mandatory reshuffle', () => {
+describe('drawTwo — mandatory reshuffle', () => {
   it('never lets Defend Stronghold sit in hand on Round 1, drawing a replacement instead', () => {
     const p = { ...emptyPlayer('P', '#111'), deck: ['Defend Stronghold', 'A Tempting Target'] };
-    const { player, drawn, reshuffled } = drawUpTo(p, 1);
+    const { player, drawn, reshuffled } = drawTwo(p, 1);
     expect(drawn).not.toContain('Defend Stronghold');
     expect(reshuffled).toContain('Defend Stronghold');
     expect(player.secondaries.map((c) => c.cardName)).toContain('A Tempting Target');
@@ -203,7 +210,7 @@ describe('drawUpTo — mandatory reshuffle', () => {
 
   it('draws Defend Stronghold normally once past Round 1', () => {
     const p = { ...emptyPlayer('P', '#111'), deck: ['Defend Stronghold', 'A Tempting Target'] };
-    const { drawn, reshuffled } = drawUpTo(p, 2);
+    const { drawn, reshuffled } = drawTwo(p, 2);
     expect(drawn).toContain('Defend Stronghold');
     expect(reshuffled).toHaveLength(0);
   });

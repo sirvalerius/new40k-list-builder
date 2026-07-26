@@ -80,8 +80,9 @@ function stripMd(text: string) {
 //   always the actual legal value, and the whole-game total is just those (already-capped)
 //   per-round numbers summed and capped again at 45.
 // - Secondary Missions are drawn from the real Chapter Approved Defender deck
-//   (rules.secondaries) — 2 cards at the start of each player's own first turn, then
-//   auto-topped-up to 2 at the start of every later turn of theirs. Scoring a hand card
+//   (rules.secondaries) — 2 fresh cards at the start of every one of a player's own turns,
+//   added to whatever's already active for them (the rule never caps the hand at 2, so
+//   neither does this — it can grow past 2 over the course of a game). Scoring a hand card
 //   walks through its actual card text: sections marked `or` are mutually exclusive (pick
 //   one), sections with a `cumulative` tier let you tick every condition that applies and
 //   sums them, and a lone tier with a `cap` is a per-unit count capped at that section's max.
