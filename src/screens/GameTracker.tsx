@@ -19,15 +19,34 @@ import {
   type TrackerState,
 } from '../lib/tracker';
 
-const STORAGE_KEY = 'new40k-tracker-v5';
+// Bumped whenever PlayerState's shape changes — old-shaped saved data must be discarded
+// rather than loaded as-is, since the code no longer matches its fields (e.g. v5 stored a
+// flat primaryVp number; v6 replaced it with primaryVpByRound, so loading a v5 save here
+// would crash the first time something called .reduce() on the now-missing array).
+const STORAGE_KEY = 'new40k-tracker-v6';
 const COLORS = ['#5b8fd9', '#d05050', '#57b45f', '#e0c23f', '#a05bd9', '#e05b8f', '#3fc1b0', '#d9853f'];
+
+// Bumping STORAGE_KEY on every shape change is easy to forget (it was, once already) — this
+// checks the fields that actually matter so a stale/mismatched save falls back to a fresh
+// game instead of crashing the app the first time something reads a missing array.
+function isValidPlayer(p: unknown): p is PlayerState {
+  const player = p as Partial<PlayerState> | null;
+  return (
+    !!player &&
+    Array.isArray(player.primaryVpByRound) &&
+    Array.isArray(player.secondaryVpByRound) &&
+    Array.isArray(player.secondaries)
+  );
+}
 
 function loadState(): TrackerState {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (raw) {
       const parsed = JSON.parse(raw);
-      if (parsed?.players?.length === 2) return parsed as TrackerState;
+      if (parsed?.players?.length === 2 && parsed.players.every(isValidPlayer)) {
+        return parsed as TrackerState;
+      }
     }
   } catch {
     /* ignore corrupt storage */
