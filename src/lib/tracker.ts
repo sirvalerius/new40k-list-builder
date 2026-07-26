@@ -103,22 +103,122 @@ export function shuffled(names: string[]): string[] {
   return a;
 }
 
+// A handful of secondary cards let you shuffle them back into your deck and draw a
+// replacement, "WHEN DRAWN", if some condition holds — most say "you can" (optional, the
+// player chooses); Defend Stronghold doesn't say "can", so it's mandatory. Hand-curated
+// rather than parsed from the card text since there are only 5 of these across the whole
+// deck and just two condition shapes.
+type ReshuffleCondition =
+  | { type: 'first-round' }
+  | { type: 'other-card-active'; otherCard: string };
+export const RESHUFFLE_RULES: Record<string, { mandatory: boolean; condition: ReshuffleCondition }> = {
+  'Behind Enemy Lines': { mandatory: false, condition: { type: 'first-round' } },
+  'Forward Position': { mandatory: false, condition: { type: 'first-round' } },
+  'Defend Stronghold': { mandatory: true, condition: { type: 'first-round' } },
+  Cleanse: { mandatory: false, condition: { type: 'other-card-active', otherCard: 'Plunder' } },
+  Plunder: { mandatory: false, condition: { type: 'other-card-active', otherCard: 'Cleanse' } },
+};
+
+export function isMandatoryReshuffle(cardName: string): boolean {
+  return !!RESHUFFLE_RULES[cardName]?.mandatory;
+}
+
+/** Whether `cardName`'s "when drawn" reshuffle condition currently holds for this player. */
+export function reshuffleEligible(cardName: string, round: number, secondaries: SecondaryCard[]): boolean {
+  const rule = RESHUFFLE_RULES[cardName];
+  if (!rule) return false;
+  if (rule.condition.type === 'first-round') return round === 1;
+  return secondaries.some((c) => c.cardName === rule.condition.otherCard && c.status === 'hand');
+}
+
+/** Draws one card from `deck`, transparently shuffling it back and drawing again if it's a
+ *  mandatory-reshuffle card whose condition currently holds (e.g. Defend Stronghold on Round
+ *  1) — the player never sees a card they were never allowed to keep. Reports every name it
+ *  had to reshuffle along the way, for logging. */
+function drawOneRespectingMandatoryReshuffle(
+  deck: string[],
+  round: number,
+  secondariesSoFar: SecondaryCard[],
+): { name: string; deck: string[]; reshuffled: string[] } | null {
+  const d = [...deck];
+  const reshuffled: string[] = [];
+  for (let guard = 0; guard < 20 && d.length > 0; guard++) {
+    const name = d.shift()!;
+    if (isMandatoryReshuffle(name) && reshuffleEligible(name, round, secondariesSoFar)) {
+      d.splice(Math.floor(Math.random() * (d.length + 1)), 0, name);
+      reshuffled.push(name);
+      continue;
+    }
+    return { name, deck: d, reshuffled };
+  }
+  return null;
+}
+
 // Draws back up to a 2-card hand from this player's own shuffled deck (no reshuffle of
 // completed/discarded cards — a deliberate simplification of the real reshuffle-on-discard
 // rule, fine for a casual tracker since 18 cards comfortably covers a 5-round game).
-export function drawUpTo(p: PlayerState, round: number): { player: PlayerState; drawn: string[] } {
+export function drawUpTo(
+  p: PlayerState,
+  round: number,
+): { player: PlayerState; drawn: string[]; reshuffled: string[] } {
   const handCount = p.secondaries.filter((c) => c.status === 'hand').length;
   const need = Math.max(0, 2 - handCount);
-  const names = p.deck.slice(0, need);
-  const deck = p.deck.slice(need);
-  const newCards: SecondaryCard[] = names.map((cardName) => ({
-    id: uid(),
-    cardName,
-    status: 'hand',
-    vp: 0,
-    drawnRound: round,
-  }));
-  return { player: { ...p, deck, secondaries: [...p.secondaries, ...newCards] }, drawn: names };
+  let deck = p.deck;
+  let secondaries = p.secondaries;
+  const drawn: string[] = [];
+  const reshuffled: string[] = [];
+  for (let i = 0; i < need; i++) {
+    const result = drawOneRespectingMandatoryReshuffle(deck, round, secondaries);
+    if (!result) break;
+    deck = result.deck;
+    reshuffled.push(...result.reshuffled);
+    secondaries = [...secondaries, { id: uid(), cardName: result.name, status: 'hand', vp: 0, drawnRound: round }];
+    drawn.push(result.name);
+  }
+  return { player: { ...p, deck, secondaries }, drawn, reshuffled };
+}
+
+/** Player-triggered version of the optional ("you can") reshuffle: puts `cardId` back into
+ *  the deck and immediately draws one replacement (which itself respects mandatory reshuffle). */
+export function reshuffleCard(p: PlayerState, round: number, cardId: string): PlayerState {
+  const card = p.secondaries.find((c) => c.id === cardId && c.status === 'hand');
+  if (!card) return p;
+  const afterRemoval = p.secondaries.filter((c) => c.id !== cardId);
+  const deck = [...p.deck];
+  deck.splice(Math.floor(Math.random() * (deck.length + 1)), 0, card.cardName);
+  const result = drawOneRespectingMandatoryReshuffle(deck, round, afterRemoval);
+  if (!result) return { ...p, deck, secondaries: afterRemoval };
+  return {
+    ...p,
+    deck: result.deck,
+    secondaries: [
+      ...afterRemoval,
+      { id: uid(), cardName: result.name, status: 'hand', vp: 0, drawnRound: round },
+    ],
+  };
+}
+
+// Primary Mission sections are gated to specific battle rounds ("SECOND BATTLE ROUND
+// ONWARDS", "FIRST & SECOND BATTLE ROUND", "SECOND TO FOURTH BATTLE ROUND", etc.) — these
+// are the only 9 distinct phrasings used across all 25 cards (checked against the full
+// scraped set), so a small ordinal parser covers every real case. Unrecognised text fails
+// open (shown), since hiding a section that actually applies is worse than showing one that
+// doesn't come up until you check the real card.
+const ORDINALS: Record<string, number> = { FIRST: 1, SECOND: 2, THIRD: 3, FOURTH: 4, FIFTH: 5 };
+
+export function sectionAppliesAtRound(when: string, round: number): boolean {
+  const w = when.toUpperCase().trim();
+  if (w === 'ANY BATTLE ROUND') return true;
+  if (w === 'END OF BATTLE') return round === MAX_ROUND;
+  let m = w.match(/^(\w+) BATTLE ROUND ONWARDS$/);
+  if (m && ORDINALS[m[1]]) return round >= ORDINALS[m[1]];
+  m = w.match(/^(\w+) TO (\w+) BATTLE ROUND$/);
+  if (m && ORDINALS[m[1]] && ORDINALS[m[2]]) return round >= ORDINALS[m[1]] && round <= ORDINALS[m[2]];
+  m = w.match(/^(\w+) & (\w+) BATTLE ROUND$/);
+  if (m && ORDINALS[m[1]] && ORDINALS[m[2]]) return round === ORDINALS[m[1]] || round === ORDINALS[m[2]];
+  m = w.match(/^(\w+) BATTLE ROUND$/);
+  if (m && ORDINALS[m[1]]) return round === ORDINALS[m[1]];
+  return true;
 }
 
 export function formatElapsed(ms: number): string {
@@ -154,7 +254,7 @@ export function nextTurn(state: TrackerState, catalogNames: string[], now = Date
       PlayerState,
     ];
     players = players.map((p) => ({ ...p, cp: p.cp + 1 })) as [PlayerState, PlayerState];
-    const { player: drawnPlayer, drawn } = drawUpTo(players[0], 1);
+    const { player: drawnPlayer, drawn, reshuffled } = drawUpTo(players[0], 1);
     players = [...players] as [PlayerState, PlayerState];
     players[0] = drawnPlayer;
     const parts = [
@@ -162,6 +262,7 @@ export function nextTurn(state: TrackerState, catalogNames: string[], now = Date
       `Round 1 — ${drawnPlayer.name}'s turn begins.`,
       'Command phase: both players gain +1 Core CP.',
     ];
+    if (reshuffled.length) parts.push(`${drawnPlayer.name} shuffles back: ${reshuffled.join(', ')} (mandatory).`);
     if (drawn.length) parts.push(`${drawnPlayer.name} draws: ${drawn.join(', ')}.`);
     return {
       ...state,
@@ -178,7 +279,7 @@ export function nextTurn(state: TrackerState, catalogNames: string[], now = Date
   const active: 0 | 1 = wrapping ? 0 : 1;
 
   const players = state.players.map((p) => ({ ...p, cp: p.cp + 1 })) as [PlayerState, PlayerState];
-  const { player: drawnPlayer, drawn } = drawUpTo(players[active], round);
+  const { player: drawnPlayer, drawn, reshuffled } = drawUpTo(players[active], round);
   players[active] = drawnPlayer;
 
   const parts = [
@@ -188,6 +289,7 @@ export function nextTurn(state: TrackerState, catalogNames: string[], now = Date
       : `${drawnPlayer.name}'s turn begins.`,
     'Command phase: both players gain +1 Core CP.',
   ];
+  if (reshuffled.length) parts.push(`${drawnPlayer.name} shuffles back: ${reshuffled.join(', ')} (mandatory).`);
   if (drawn.length) parts.push(`${drawnPlayer.name} draws: ${drawn.join(', ')}.`);
   return {
     ...state,

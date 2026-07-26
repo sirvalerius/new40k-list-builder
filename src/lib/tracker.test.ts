@@ -7,9 +7,14 @@ import {
   totalVp,
   drawUpTo,
   emptyPlayer,
+  reshuffleEligible,
+  reshuffleCard,
+  isMandatoryReshuffle,
+  sectionAppliesAtRound,
   ROUND_CAP,
   GAME_CAP,
   MAX_ROUND,
+  type SecondaryCard,
 } from './tracker';
 
 const CATALOG = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -156,5 +161,94 @@ describe('constants', () => {
   it('ROUND_CAP is 15 and GAME_CAP is 45, per the Event Companion VP source table', () => {
     expect(ROUND_CAP).toBe(15);
     expect(GAME_CAP).toBe(45);
+  });
+});
+
+describe('reshuffleEligible', () => {
+  it('a first-round card is eligible only on round 1', () => {
+    expect(reshuffleEligible('Behind Enemy Lines', 1, [])).toBe(true);
+    expect(reshuffleEligible('Behind Enemy Lines', 2, [])).toBe(false);
+  });
+
+  it('a paired-card condition is eligible only while the other card is in hand', () => {
+    const hand: SecondaryCard[] = [{ id: 'x', cardName: 'Plunder', status: 'hand', vp: 0, drawnRound: 2 }];
+    expect(reshuffleEligible('Cleanse', 3, hand)).toBe(true);
+    expect(reshuffleEligible('Cleanse', 3, [])).toBe(false);
+    // discarded/completed doesn't count as "active"
+    const discarded: SecondaryCard[] = [{ id: 'x', cardName: 'Plunder', status: 'discarded', vp: 0, drawnRound: 2 }];
+    expect(reshuffleEligible('Cleanse', 3, discarded)).toBe(false);
+  });
+
+  it('cards with no reshuffle rule are never eligible', () => {
+    expect(reshuffleEligible('A Tempting Target', 1, [])).toBe(false);
+  });
+
+  it('only Defend Stronghold is mandatory', () => {
+    expect(isMandatoryReshuffle('Defend Stronghold')).toBe(true);
+    expect(isMandatoryReshuffle('Behind Enemy Lines')).toBe(false);
+    expect(isMandatoryReshuffle('Forward Position')).toBe(false);
+  });
+});
+
+describe('drawUpTo — mandatory reshuffle', () => {
+  it('never lets Defend Stronghold sit in hand on Round 1, drawing a replacement instead', () => {
+    const p = { ...emptyPlayer('P', '#111'), deck: ['Defend Stronghold', 'A Tempting Target'] };
+    const { player, drawn, reshuffled } = drawUpTo(p, 1);
+    expect(drawn).not.toContain('Defend Stronghold');
+    expect(reshuffled).toContain('Defend Stronghold');
+    expect(player.secondaries.map((c) => c.cardName)).toContain('A Tempting Target');
+    // shuffled back in, not lost
+    expect(player.deck).toContain('Defend Stronghold');
+  });
+
+  it('draws Defend Stronghold normally once past Round 1', () => {
+    const p = { ...emptyPlayer('P', '#111'), deck: ['Defend Stronghold', 'A Tempting Target'] };
+    const { drawn, reshuffled } = drawUpTo(p, 2);
+    expect(drawn).toContain('Defend Stronghold');
+    expect(reshuffled).toHaveLength(0);
+  });
+});
+
+describe('reshuffleCard — optional player-triggered reshuffle', () => {
+  it('removes the card from hand, returns it to the deck, and draws a replacement', () => {
+    // the reshuffled card goes back at a random deck position, so the replacement draw
+    // could legitimately come back out again — assert the invariants, not which one "wins".
+    let p = { ...emptyPlayer('P', '#111'), deck: ['A Tempting Target'] };
+    p = {
+      ...p,
+      secondaries: [{ id: 'x', cardName: 'Behind Enemy Lines', status: 'hand', vp: 0, drawnRound: 1 }],
+    };
+    const after = reshuffleCard(p, 1, 'x');
+    expect(after.secondaries.find((c) => c.id === 'x')).toBeUndefined();
+    expect(after.secondaries).toHaveLength(1);
+    const pool = [...after.deck, after.secondaries[0].cardName].sort();
+    expect(pool).toEqual(['A Tempting Target', 'Behind Enemy Lines'].sort());
+  });
+
+  it('is a no-op if the card is not actually in hand', () => {
+    const p = emptyPlayer('P', '#111');
+    expect(reshuffleCard(p, 1, 'missing')).toBe(p);
+  });
+});
+
+describe('sectionAppliesAtRound', () => {
+  it('handles every "when" phrasing that actually appears across the scraped mission data', () => {
+    expect([1, 2, 3, 4, 5].filter((r) => sectionAppliesAtRound('ANY BATTLE ROUND', r))).toEqual([1, 2, 3, 4, 5]);
+    expect([1, 2, 3, 4, 5].filter((r) => sectionAppliesAtRound('END OF BATTLE', r))).toEqual([5]);
+    expect([1, 2, 3, 4, 5].filter((r) => sectionAppliesAtRound('FIFTH BATTLE ROUND', r))).toEqual([5]);
+    expect([1, 2, 3, 4, 5].filter((r) => sectionAppliesAtRound('FIRST BATTLE ROUND', r))).toEqual([1]);
+    expect([1, 2, 3, 4, 5].filter((r) => sectionAppliesAtRound('FIRST & SECOND BATTLE ROUND', r))).toEqual([1, 2]);
+    expect([1, 2, 3, 4, 5].filter((r) => sectionAppliesAtRound('SECOND & THIRD BATTLE ROUND', r))).toEqual([2, 3]);
+    expect([1, 2, 3, 4, 5].filter((r) => sectionAppliesAtRound('SECOND BATTLE ROUND ONWARDS', r))).toEqual([
+      2, 3, 4, 5,
+    ]);
+    expect([1, 2, 3, 4, 5].filter((r) => sectionAppliesAtRound('FOURTH BATTLE ROUND ONWARDS', r))).toEqual([4, 5]);
+    expect([1, 2, 3, 4, 5].filter((r) => sectionAppliesAtRound('SECOND TO FOURTH BATTLE ROUND', r))).toEqual([
+      2, 3, 4,
+    ]);
+  });
+
+  it('fails open (shows the section) for unrecognised text rather than hiding it', () => {
+    expect(sectionAppliesAtRound('SOME UNEXPECTED PHRASING', 3)).toBe(true);
   });
 });

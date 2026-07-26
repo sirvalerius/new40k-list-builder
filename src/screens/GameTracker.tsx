@@ -14,6 +14,9 @@ import {
   addRoundVp,
   totalVp,
   formatElapsed,
+  reshuffleEligible,
+  reshuffleCard as reshuffleCardState,
+  sectionAppliesAtRound,
   type PlayerState,
   type SecondaryCard,
   type TrackerState,
@@ -358,6 +361,13 @@ function PlayerPanel({
     );
   }
 
+  function reshuffleHandCard(card: SecondaryCard) {
+    onChange(
+      (p) => reshuffleCardState(p, round, card.id),
+      `${player.name} shuffles ${card.cardName} back into the deck and draws a replacement.`,
+    );
+  }
+
   function discardForCp(card: SecondaryCard) {
     onChange(
       (p) => ({
@@ -435,6 +445,7 @@ function PlayerPanel({
                 <Collapsible title={<span className="tiny muted">Score this Primary Mission</span>}>
                   <PrimaryScoringPanel
                     mission={mission}
+                    round={round}
                     onScore={(vp, desc) => {
                       const { applied } = addRoundVp(player.primaryVpByRound, round, vp);
                       const cappedNote = applied < vp ? ` — only ${applied} counted, round cap` : '';
@@ -516,6 +527,15 @@ function PlayerPanel({
                 >
                   🗑 Discard (+1 CP)
                 </button>
+                {reshuffleEligible(c.cardName, round, player.secondaries) && (
+                  <button
+                    className="ghost small"
+                    title="This card's WHEN DRAWN condition is met — shuffle it back and draw a new one"
+                    onClick={() => reshuffleHandCard(c)}
+                  >
+                    🔀 Shuffle back
+                  </button>
+                )}
               </div>
               {completingId === c.id && card && (
                 <SecondaryScoringPicker card={card} onScore={(vp, desc) => completeCard(c, vp, desc)} />
@@ -700,11 +720,24 @@ function SectionPicker({
 // "add its VP" control rather than a one-shot pick. There's no `or` flag in this data (unlike
 // secondaries) since escalating tiers are normally self-evidently exclusive by their own
 // wording (e.g. "1 objective" vs "2 or more") — trusted to the player rather than enforced.
-function PrimaryScoringPanel({ mission, onScore }: { mission: Mission; onScore: (vp: number, description: string) => void }) {
+//
+// Sections are also gated to the battle rounds they're actually printed for ("SECOND BATTLE
+// ROUND ONWARDS", "FIRST & SECOND BATTLE ROUND", etc., via sectionAppliesAtRound) — a section
+// that doesn't apply yet (or anymore) this round is hidden rather than offered.
+function PrimaryScoringPanel({
+  mission,
+  round,
+  onScore,
+}: {
+  mission: Mission;
+  round: number;
+  onScore: (vp: number, description: string) => void;
+}) {
+  const sections = mission.sections.filter((s) => sectionAppliesAtRound(s.when, round));
   return (
     <div className="col tracker-tierpicker" style={{ gap: 10 }}>
-      <span className="tiny muted">Score this Primary Mission</span>
-      {mission.sections.map((s, i) => (
+      <span className="tiny muted">Score this Primary Mission — Round {round}</span>
+      {sections.map((s, i) => (
         <div key={i} className="tracker-section-picker">
           <div className="tiny muted">
             {s.when} · {s.trigger}
@@ -714,6 +747,9 @@ function PrimaryScoringPanel({ mission, onScore }: { mission: Mission; onScore: 
           ))}
         </div>
       ))}
+      {!sections.length && (
+        <div className="muted small">No scoring section applies this round for this mission.</div>
+      )}
     </div>
   );
 }
