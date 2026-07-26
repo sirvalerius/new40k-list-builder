@@ -808,9 +808,21 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 /* Each player's card queries its OWN rendered width (not the page's) to decide whether to
    split into side-by-side columns — a plain @media breakpoint would fire the same way
    whether there's one player or two sharing the viewport, squeezing/overlapping the two
-   halves whenever two players are shown (which is the normal case). */
-.tracker-player-slot { container-type: inline-size; }
-.tracker-player { display: flex; flex-direction: column; gap: 14px; border-width: 2px; }
+   halves whenever two players are shown (which is the normal case).
+   The container lives one level below the grid item (.tracker-player, not
+   .tracker-player-slot) — putting `container-type` directly on a CSS Grid item breaks that
+   item's participation in the grid's `1fr` track sizing (a contained box can't report its
+   intrinsic size upward), which was collapsing one column while its content kept rendering
+   at full width, overflowing off-screen with a gap left behind. The plain slot div keeps the
+   grid item contain-free; only its child establishes the container. */
+.tracker-player-slot { min-width: 0; }
+.tracker-player {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-width: 2px;
+  container-type: inline-size;
+}
 .tracker-player-main { display: flex; flex-direction: column; gap: 14px; }
 @container (min-width: 640px) {
   .tracker-player { flex-direction: row; align-items: flex-start; }
