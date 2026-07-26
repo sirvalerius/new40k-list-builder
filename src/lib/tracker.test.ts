@@ -5,6 +5,8 @@ import {
   nextTurn,
   addRoundVp,
   totalVp,
+  finalScore,
+  winner,
   drawTwo,
   emptyPlayer,
   reshuffleEligible,
@@ -71,6 +73,60 @@ describe('nextTurn within/across rounds', () => {
     let s = nextTurn(startGame(emptyState(['#111', '#222'])), CATALOG);
     for (let i = 0; i < 20; i++) s = nextTurn(s, CATALOG);
     expect(s.round).toBe(5);
+  });
+});
+
+describe('end of battle', () => {
+  it('ends the battle at the end of the second player\'s turn in Round 5, not before', () => {
+    // R1 P1 -> P2 -> R2 P1 -> P2 -> R3 P1 -> P2 -> R4 P1 -> P2 -> R5 P1 (8 more calls)
+    let s = nextTurn(startGame(emptyState(['#111', '#222'])), CATALOG); // R1 P1
+    for (let i = 0; i < 8; i++) {
+      expect(s.phase).toBe('live');
+      s = nextTurn(s, CATALOG);
+    }
+    expect(s.round).toBe(5);
+    expect(s.active).toBe(0); // R5 P1
+    s = nextTurn(s, CATALOG); // R5 P2
+    expect(s.phase).toBe('live');
+    expect(s.round).toBe(5);
+    expect(s.active).toBe(1);
+    s = nextTurn(s, CATALOG); // end of R5 P2's turn -> battle ends
+    expect(s.phase).toBe('ended');
+    expect(s.round).toBe(5);
+  });
+
+  it('is a no-op once ended (no further CP/draws/log growth)', () => {
+    let s = nextTurn(startGame(emptyState(['#111', '#222'])), CATALOG);
+    for (let i = 0; i < 20; i++) s = nextTurn(s, CATALOG);
+    expect(s.phase).toBe('ended');
+    const logLength = s.log.length;
+    const cpBefore = [s.players[0].cp, s.players[1].cp];
+    s = nextTurn(s, CATALOG);
+    expect(s.log).toHaveLength(logLength);
+    expect([s.players[0].cp, s.players[1].cp]).toEqual(cpBefore);
+  });
+});
+
+describe('finalScore / winner', () => {
+  it('sums Primary + Secondary totals', () => {
+    let p = emptyPlayer('P', '#111');
+    p = { ...p, primaryVpByRound: addRoundVp(p.primaryVpByRound, 1, 10).byRound };
+    p = { ...p, secondaryVpByRound: addRoundVp(p.secondaryVpByRound, 1, 5).byRound };
+    expect(finalScore(p)).toBe(15);
+  });
+
+  it('declares whoever has the higher final score the winner', () => {
+    let p1 = emptyPlayer('P1', '#111');
+    p1 = { ...p1, primaryVpByRound: addRoundVp(p1.primaryVpByRound, 1, 10).byRound };
+    const p2 = emptyPlayer('P2', '#222');
+    expect(winner([p1, p2])).toBe(0);
+    expect(winner([p2, p1])).toBe(1);
+  });
+
+  it('is a draw when scores are equal', () => {
+    const p1 = emptyPlayer('P1', '#111');
+    const p2 = emptyPlayer('P2', '#222');
+    expect(winner([p1, p2])).toBe('draw');
   });
 });
 

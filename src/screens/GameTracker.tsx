@@ -13,6 +13,8 @@ import {
   nextTurn as nextTurnState,
   addRoundVp,
   totalVp,
+  finalScore,
+  winner,
   formatElapsed,
   reshuffleEligible,
   reshuffleCard as reshuffleCardState,
@@ -152,6 +154,7 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
   }
 
   const deploying = state.round === 0;
+  const ended = state.phase === 'ended';
 
   return (
     <div className="tracker">
@@ -166,8 +169,10 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
         </div>
         <div className="tracker-clock">
           <span className="muted tiny">{formatElapsed(Date.now() - state.startedAt)} total</span>
-          <span className="tracker-turnclock">{formatElapsed(Date.now() - state.turnStartedAt)}</span>
-          {deploying ? (
+          {!ended && <span className="tracker-turnclock">{formatElapsed(Date.now() - state.turnStartedAt)}</span>}
+          {ended ? (
+            <span className="tracker-activebadge tracker-deploy">Battle Ended</span>
+          ) : deploying ? (
             <span className="tracker-activebadge tracker-deploy">Deployment</span>
           ) : (
             <span className="tracker-activebadge" style={{ background: state.players[state.active].color }}>
@@ -184,10 +189,14 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
         <button className="ghost" onClick={undo} disabled={!prevRef.current} title="Undo last action">
           ↶
         </button>
-        <button className="primary tracker-nextturn" onClick={nextTurn}>
-          {deploying ? 'Begin Battle ›' : 'Next Turn ›'}
-        </button>
+        {!ended && (
+          <button className="primary tracker-nextturn" onClick={nextTurn}>
+            {deploying ? 'Begin Battle ›' : 'Next Turn ›'}
+          </button>
+        )}
       </div>
+
+      {ended && <VictorBanner players={state.players} />}
 
       <Collapsible title={`Game Log (${state.log.length})`}>
         <div className="tracker-log">
@@ -226,6 +235,31 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
             </div>
           );
         })}
+      </div>
+    </div>
+  );
+}
+
+// "At the end of the battle, the player with the most VP is the victor. If the players are
+// tied, the battle is a draw" (Event Companion, DETERMINE VICTOR) — doesn't account for the
+// Battle Ready Army painted-force bonus, which isn't tracked here.
+function VictorBanner({ players }: { players: [PlayerState, PlayerState] }) {
+  const scores: [number, number] = [finalScore(players[0]), finalScore(players[1])];
+  const result = winner(players);
+  return (
+    <div className="card tracker-victor">
+      <div className="tracker-victor-title">
+        {result === 'draw' ? 'Draw' : `${players[result].name} wins!`}
+      </div>
+      <div className="row wrap" style={{ gap: 24 }}>
+        {([0, 1] as const).map((i) => (
+          <div key={i} className="row" style={{ gap: 6, alignItems: 'baseline' }}>
+            <span className="tracker-swatch-sm" style={{ background: players[i].color }} />
+            <span>{players[i].name}</span>
+            <b className="tracker-victor-score">{scores[i]}</b>
+            <span className="muted tiny">VP</span>
+          </div>
+        ))}
       </div>
     </div>
   );

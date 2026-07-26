@@ -38,7 +38,7 @@ export type PlayerState = {
   discardedForCpRound: number; // last battle round this player used the discard-for-CP bonus (0 = never)
 };
 export type TrackerState = {
-  phase: 'setup' | 'live';
+  phase: 'setup' | 'live' | 'ended'; // 'ended': the battle is over — no more turns
   round: number; // 0 = pregame/deployment (no CP, no draws); 1-5 = battle rounds
   active: 0 | 1;
   startedAt: number; // whole-game clock
@@ -65,6 +65,20 @@ export function addRoundVp(byRound: number[], round: number, delta: number): { b
 /** Whole-game total for one VP source, summed across rounds (each already ≤15) and capped at 45. */
 export function totalVp(byRound: number[]): number {
   return Math.min(GAME_CAP, byRound.reduce((s, v) => s + v, 0));
+}
+
+/** A player's final score: Primary + Secondary totals (each already capped at 45). */
+export function finalScore(p: PlayerState): number {
+  return totalVp(p.primaryVpByRound) + totalVp(p.secondaryVpByRound);
+}
+
+/** "the player with the most VP is the victor... If the players are tied, the battle is a
+ *  draw" (Event Companion, DETERMINE VICTOR) — doesn't account for the Battle Ready Army
+ *  bonus (10VP for a painted force), which isn't tracked here. */
+export function winner(players: [PlayerState, PlayerState]): 0 | 1 | 'draw' {
+  const [a, b] = [finalScore(players[0]), finalScore(players[1])];
+  if (a === b) return 'draw';
+  return a > b ? 0 : 1;
 }
 
 export function emptyPlayer(name: string, color: string): PlayerState {
@@ -249,6 +263,8 @@ export function startGame(state: TrackerState, now = Date.now()): TrackerState {
  *  turn it is); only the newly-active player draws 2 fresh secondary cards (added to
  *  whatever they already have active — the hand isn't capped at 2). */
 export function nextTurn(state: TrackerState, catalogNames: string[], now = Date.now()): TrackerState {
+  if (state.phase === 'ended') return state; // no-op past end of battle
+
   const turnDuration = formatElapsed(now - state.turnStartedAt);
 
   if (state.round === 0) {
@@ -278,6 +294,19 @@ export function nextTurn(state: TrackerState, catalogNames: string[], now = Date
   }
 
   const wrapping = state.active === 1;
+
+  // The battle ends after 5 battle rounds ("players continue to play out their turns until
+  // the battle ends" — end of battle is end of the second player's turn in Round 5). No
+  // further CP/draws/round-6 — the game is simply over.
+  if (wrapping && state.round === MAX_ROUND) {
+    return {
+      ...state,
+      phase: 'ended',
+      turnStartedAt: now,
+      log: [...state.log, { id: uid(), ts: now, text: `Turn duration: ${turnDuration}. Battle ends — Round 5 complete.` }],
+    };
+  }
+
   const round = wrapping ? Math.min(MAX_ROUND, state.round + 1) : state.round;
   const active: 0 | 1 = wrapping ? 0 : 1;
 

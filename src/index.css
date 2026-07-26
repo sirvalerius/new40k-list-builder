@@ -864,6 +864,10 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 .tracker-total { font-size: 3.2rem; font-weight: 700; color: var(--accent-2); line-height: 1; }
 .tracker-total-label { font-size: 1.2rem; color: var(--text-dim); font-weight: 400; }
 
+.tracker-victor { border-color: var(--border-gold); display: flex; flex-direction: column; gap: 10px; }
+.tracker-victor-title { font-family: var(--font-display); font-size: 1.6rem; color: var(--accent-2); }
+.tracker-victor-score { font-size: 1.4rem; }
+
 .tracker-stat {
   display: flex;
   align-items: center;
