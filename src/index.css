@@ -132,6 +132,11 @@ h3 { font-size: 0.98rem; }
   flex-direction: column;
 }
 
+/* The Game Tracker targets a TV/desktop browser, not mobile — the rest of the app's
+   680px cap (right for a phone-width list builder) would otherwise force it into the same
+   narrow column and waste the lateral space this screen is specifically laid out to use. */
+.app.app-wide { max-width: 1800px; }
+
 .topbar {
   position: sticky;
   top: 0;
@@ -800,11 +805,14 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
   .tracker-players { grid-template-columns: 1fr 1fr; }
 }
 
+/* Each player's card queries its OWN rendered width (not the page's) to decide whether to
+   split into side-by-side columns — a plain @media breakpoint would fire the same way
+   whether there's one player or two sharing the viewport, squeezing/overlapping the two
+   halves whenever two players are shown (which is the normal case). */
+.tracker-player-slot { container-type: inline-size; }
 .tracker-player { display: flex; flex-direction: column; gap: 14px; border-width: 2px; }
 .tracker-player-main { display: flex; flex-direction: column; gap: 14px; }
-/* TV/desktop-oriented: past a large-screen breakpoint, use the lateral space instead of
-   stacking everything tall — stats+primary on one side, secondary missions on the other. */
-@media (min-width: 1400px) {
+@container (min-width: 640px) {
   .tracker-player { flex-direction: row; align-items: flex-start; }
   .tracker-player-main, .tracker-secondaries { flex: 1 1 0; min-width: 0; }
 }
@@ -817,7 +825,19 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
   border: 1px solid var(--border-gold);
   border-radius: var(--radius);
   background: var(--bg-elev2);
+  min-width: 0;
 }
+
+.tracker-roundtable-wrap { overflow-x: auto; }
+.tracker-roundtable { border-collapse: collapse; font-size: 0.85rem; width: 100%; }
+.tracker-roundtable th, .tracker-roundtable td {
+  padding: 4px 8px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.tracker-roundtable th { color: var(--text-dim); font-weight: 500; }
+.tracker-roundtable td:first-child, .tracker-roundtable th:first-child { text-align: left; padding-left: 0; }
 
 .tracker-name {
   font-family: var(--font-display);

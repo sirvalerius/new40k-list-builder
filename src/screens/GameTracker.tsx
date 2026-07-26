@@ -6,14 +6,13 @@ import { Collapsible } from '../components/Collapsible';
 import { MissionCard } from '../components/MissionCard';
 import { missionMatchup, uid } from '../lib/helpers';
 import {
-  ROUND_CAP,
   GAME_CAP,
+  MAX_ROUND,
   emptyState,
   startGame as startGameState,
   nextTurn as nextTurnState,
-  effectivePrimaryVp,
-  effectiveSecondaryVp,
-  rawSecondaryVp,
+  addRoundVp,
+  totalVp,
   formatElapsed,
   type PlayerState,
   type SecondaryCard,
@@ -51,8 +50,13 @@ function stripMd(text: string) {
 //   capped at +1/player/battle round by the Event Companion, and discarding for it is only
 //   offered on that player's own turn ("if it is your turn", Chapter Approved deck rules).
 // - Primary and Secondary VP are each capped at 15/battle round and 45 for the whole game
-//   (Event Companion's VP source table) — shown as the effective/capped value next to the
-//   raw counter.
+//   (Event Companion's VP source table). Each player stores one VP number PER ROUND per
+//   source (PlayerState.primaryVpByRound / secondaryVpByRound) instead of one running total —
+//   every write (manual stepper, a scored secondary card, a Primary tier) goes through
+//   addRoundVp, which clamps that round's slot to [0,15] immediately. So the cap can't be
+//   quietly bypassed by not noticing a side note: the number on screen for "this round" is
+//   always the actual legal value, and the whole-game total is just those (already-capped)
+//   per-round numbers summed and capped again at 45.
 // - Secondary Missions are drawn from the real Chapter Approved Defender deck
 //   (rules.secondaries) — 2 cards at the start of each player's own first turn, then
 //   auto-topped-up to 2 at the start of every later turn of theirs. Scoring a hand card
@@ -182,15 +186,21 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
               : undefined;
           const mission = rules.missions?.find((m) => m.name === myMissionName);
           return (
-            <PlayerPanel
-              key={i}
-              player={state.players[i]}
-              round={state.round}
-              isActive={!deploying && state.active === i}
-              catalog={catalog}
-              mission={mission}
-              onChange={(mut, logText) => updatePlayer(i, mut, logText)}
-            />
+            // Container query wrapper: each player's card splits into a stats/secondaries
+            // side-by-side layout based on its OWN rendered width, not the page's — with two
+            // players sharing the viewport a plain width media query fires far too early
+            // (checking the whole page's width, not this card's half of it) and the two
+            // internal columns end up squeezed and overlapping.
+            <div className="tracker-player-slot" key={i}>
+              <PlayerPanel
+                player={state.players[i]}
+                round={state.round}
+                isActive={!deploying && state.active === i}
+                catalog={catalog}
+                mission={mission}
+                onChange={(mut, logText) => updatePlayer(i, mut, logText)}
+              />
+            </div>
           );
         })}
       </div>
@@ -300,10 +310,10 @@ function PlayerPanel({
   onChange: (mut: (p: PlayerState) => PlayerState, logText?: string) => void;
 }) {
   const [completingId, setCompletingId] = useState<string | null>(null);
-  const rawSecVp = rawSecondaryVp(player);
-  const effPrimary = effectivePrimaryVp(player);
-  const effSecondary = effectiveSecondaryVp(player);
-  const total = effPrimary + effSecondary;
+  const primaryTotal = totalVp(player.primaryVpByRound);
+  const secondaryTotal = totalVp(player.secondaryVpByRound);
+  const total = primaryTotal + secondaryTotal;
+  const scoring = round > 0; // Round 0 is deployment — nothing is scored yet
   const hand = player.secondaries.filter((c) => c.status === 'hand');
   const history = [...player.secondaries.filter((c) => c.status !== 'hand')].reverse();
   // Chapter Approved deck rules: you can only discard an active Secondary Mission for the
@@ -342,12 +352,20 @@ function PlayerPanel({
   }
 
   function completeCard(card: SecondaryCard, vp: number, description: string) {
+    const { applied } = addRoundVp(player.secondaryVpByRound, round, vp);
+    const cappedNote = applied < vp ? ` — only ${applied} counted, round cap` : '';
     onChange(
-      (p) => ({
-        ...p,
-        secondaries: p.secondaries.map((c) => (c.id === card.id ? { ...c, status: 'completed', vp } : c)),
-      }),
-      `${player.name} completes ${card.cardName}: +${vp} VP (${description}).`,
+      (p) => {
+        const { byRound } = addRoundVp(p.secondaryVpByRound, round, vp);
+        return {
+          ...p,
+          secondaryVpByRound: byRound,
+          secondaries: p.secondaries.map((c) =>
+            c.id === card.id ? { ...c, status: 'completed', vp: applied, scoredRound: round } : c,
+          ),
+        };
+      },
+      `${player.name} completes ${card.cardName}: +${applied} VP (${description})${cappedNote}.`,
     );
     setCompletingId(null);
   }
@@ -373,53 +391,86 @@ function PlayerPanel({
           />
         </div>
 
-        <div className="tracker-stat">
-          <span className="tracker-stat-label">
-            Primary VP <VpCapNote raw={player.primaryVp} effective={effPrimary} />
-          </span>
-          <Stepper
-            value={player.primaryVp}
-            onChange={(v, d) =>
-              onChange((p) => ({ ...p, primaryVp: Math.max(0, v) }), `${player.name}: Primary VP ${d > 0 ? '+' : ''}${d}.`)
-            }
-          />
-        </div>
+        {scoring ? (
+          <>
+            <div className="tracker-stat">
+              <span className="tracker-stat-label">
+                Primary VP <span className="tiny muted">R{round}</span>
+              </span>
+              <Stepper
+                value={player.primaryVpByRound[round]}
+                onChange={(_v, d) =>
+                  onChange((p) => {
+                    const { byRound } = addRoundVp(p.primaryVpByRound, round, d);
+                    return { ...p, primaryVpByRound: byRound };
+                  }, `${player.name}: Primary VP ${d > 0 ? '+' : ''}${d} (Round ${round}).`)
+                }
+              />
+            </div>
 
-        {mission && (
-          <div className="tracker-mission">
-            <Collapsible title={<span className="tiny muted">Primary: {mission.name} — view full text</span>}>
-              <MissionCard m={mission} />
-            </Collapsible>
-            <PrimaryScoringPanel
-              mission={mission}
-              onScore={(vp, desc) =>
-                onChange(
-                  (p) => ({ ...p, primaryVp: Math.max(0, p.primaryVp + vp) }),
-                  `${player.name}: Primary VP +${vp} (${desc}).`,
-                )
-              }
-            />
-          </div>
+            {mission && (
+              <div className="tracker-mission">
+                <Collapsible title={<span className="tiny muted">Primary: {mission.name}</span>}>
+                  <MissionCard m={mission} />
+                </Collapsible>
+                <Collapsible title={<span className="tiny muted">Score this Primary Mission</span>}>
+                  <PrimaryScoringPanel
+                    mission={mission}
+                    onScore={(vp, desc) => {
+                      const { applied } = addRoundVp(player.primaryVpByRound, round, vp);
+                      const cappedNote = applied < vp ? ` — only ${applied} counted, round cap` : '';
+                      onChange(
+                        (p) => ({ ...p, primaryVpByRound: addRoundVp(p.primaryVpByRound, round, vp).byRound }),
+                        `${player.name}: Primary VP +${applied} (${desc})${cappedNote}.`,
+                      );
+                    }}
+                  />
+                </Collapsible>
+              </div>
+            )}
+
+            <div className="tracker-stat">
+              <span className="tracker-stat-label tiny muted">
+                Manual Secondary VP <span className="tiny muted">R{round}</span>
+              </span>
+              <Stepper
+                value={player.secondaryVpByRound[round]}
+                onChange={(_v, d) =>
+                  onChange((p) => {
+                    const { byRound } = addRoundVp(p.secondaryVpByRound, round, d);
+                    return { ...p, secondaryVpByRound: byRound };
+                  }, `${player.name}: manual Secondary VP ${d > 0 ? '+' : ''}${d} (Round ${round}).`)
+                }
+              />
+            </div>
+          </>
+        ) : (
+          <>
+            {mission && (
+              <div className="tracker-mission">
+                <Collapsible title={<span className="tiny muted">Primary: {mission.name} — view full text</span>}>
+                  <MissionCard m={mission} />
+                </Collapsible>
+              </div>
+            )}
+            <div className="muted small">Scoring starts at Round 1.</div>
+          </>
         )}
 
-        <div className="tracker-stat">
-          <span className="tracker-stat-label tiny muted">Manual Secondary VP (physical cards)</span>
-          <Stepper
-            value={player.manualSecondaryVp}
-            onChange={(v, d) =>
-              onChange(
-                (p) => ({ ...p, manualSecondaryVp: Math.max(0, v) }),
-                `${player.name}: manual Secondary VP ${d > 0 ? '+' : ''}${d}.`,
-              )
-            }
-          />
-        </div>
+        <Collapsible title={<span className="tiny muted">VP by round</span>}>
+          <RoundTable primary={player.primaryVpByRound} secondary={player.secondaryVpByRound} />
+        </Collapsible>
       </div>
 
       <div className="tracker-secondaries">
-        <div className="tracker-stat-label">
-          Secondary missions <VpCapNote raw={rawSecVp} effective={effSecondary} />
-        </div>
+        <div className="tracker-stat-label">Secondary missions</div>
+
+        {scoring && !hand.length && (
+          <div className="muted small">
+            No active secondaries yet — drawn automatically at the start of this player's turn.
+          </div>
+        )}
+        {!scoring && <div className="muted small">Drawn once Round 1 begins.</div>}
 
         {hand.map((c) => {
           const card = catalog.find((sc) => sc.name === c.cardName);
@@ -466,7 +517,7 @@ function PlayerPanel({
           </Collapsible>
         )}
 
-        <button className="ghost small" onClick={drawExtra}>
+        <button className="ghost small" disabled={!scoring} title={scoring ? '' : 'Available from Round 1'} onClick={drawExtra}>
           + Draw extra secondary
         </button>
       </div>
@@ -474,11 +525,43 @@ function PlayerPanel({
   );
 }
 
-function VpCapNote({ raw, effective }: { raw: number; effective: number }) {
+const ROUNDS = Array.from({ length: MAX_ROUND }, (_, i) => i + 1);
+
+function RoundTable({ primary, secondary }: { primary: number[]; secondary: number[] }) {
   return (
-    <span className="muted tiny">
-      ({raw} raw{effective !== raw ? ` → ${effective} counted` : ''}, max {ROUND_CAP}/round · {GAME_CAP}/game)
-    </span>
+    <div className="tracker-roundtable-wrap">
+      <table className="tracker-roundtable">
+        <thead>
+          <tr>
+            <th></th>
+            {ROUNDS.map((r) => (
+              <th key={r}>R{r}</th>
+            ))}
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="muted tiny">Primary</td>
+            {ROUNDS.map((r) => (
+              <td key={r}>{primary[r]}</td>
+            ))}
+            <td>
+              <b>{totalVp(primary)}</b>/{GAME_CAP}
+            </td>
+          </tr>
+          <tr>
+            <td className="muted tiny">Secondary</td>
+            {ROUNDS.map((r) => (
+              <td key={r}>{secondary[r]}</td>
+            ))}
+            <td>
+              <b>{totalVp(secondary)}</b>/{GAME_CAP}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   );
 }
 
@@ -621,18 +704,21 @@ function PrimaryTierRow({ tier, onScore }: { tier: MissionTier; onScore: (vp: nu
   if (tier.perUnit) {
     const vp = count * tier.vp;
     return (
-      <div className="row" style={{ gap: 8, alignItems: 'center' }}>
-        <Stepper value={count} onChange={(v) => setCount(Math.max(0, v))} />
-        <span className="small">
-          × {tier.vp} VP{tier.cumulative ? ' (+)' : ''} — {stripMd(tier.text)}
-        </span>
-        <button
-          className="ghost small"
-          disabled={count === 0}
-          onClick={() => onScore(vp, `${stripMd(tier.text)} × ${count}`)}
-        >
-          Add {vp} VP
-        </button>
+      <div className="tracker-section-picker">
+        <div className="small">
+          {tier.cumulative ? '+' : ''}
+          {tier.vp} VP each — {stripMd(tier.text)}
+        </div>
+        <div className="row" style={{ gap: 8, alignItems: 'center' }}>
+          <Stepper value={count} onChange={(v) => setCount(Math.max(0, v))} />
+          <button
+            className="ghost small"
+            disabled={count === 0}
+            onClick={() => onScore(vp, `${stripMd(tier.text)} × ${count}`)}
+          >
+            Add {vp} VP
+          </button>
+        </div>
       </div>
     );
   }

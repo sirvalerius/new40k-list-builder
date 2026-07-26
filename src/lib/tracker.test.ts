@@ -3,15 +3,13 @@ import {
   emptyState,
   startGame,
   nextTurn,
-  bankRound,
-  effectiveVp,
-  effectivePrimaryVp,
-  effectiveSecondaryVp,
-  rawSecondaryVp,
+  addRoundVp,
+  totalVp,
   drawUpTo,
   emptyPlayer,
   ROUND_CAP,
   GAME_CAP,
+  MAX_ROUND,
 } from './tracker';
 
 const CATALOG = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -71,51 +69,58 @@ describe('nextTurn within/across rounds', () => {
   });
 });
 
-describe('effectiveVp (15/round, 45/game caps)', () => {
-  it('is the raw value when under both caps', () => {
-    expect(effectiveVp(10, 0, 0)).toBe(10);
+describe('addRoundVp — the 15/round cap is enforced at the point of storage', () => {
+  it('applies the full delta when under the cap', () => {
+    const { byRound, applied } = addRoundVp(emptyPlayer('P', '#111').primaryVpByRound, 1, 10);
+    expect(byRound[1]).toBe(10);
+    expect(applied).toBe(10);
   });
 
-  it('caps a single round at 15 even if more was scored', () => {
-    expect(effectiveVp(20, 0, 0)).toBe(15);
+  it('clamps a single round at 15 and reports only what was actually applied', () => {
+    const { byRound, applied } = addRoundVp(emptyPlayer('P', '#111').primaryVpByRound, 1, 20);
+    expect(byRound[1]).toBe(15);
+    expect(applied).toBe(15);
   });
 
-  it('caps the whole-game total at 45', () => {
-    expect(effectiveVp(10, 0, 40)).toBe(45); // 40 banked + 10 this round would be 50, capped to 45
+  it('cannot be bypassed by adding in several smaller increments within the same round', () => {
+    let byRound = emptyPlayer('P', '#111').primaryVpByRound;
+    byRound = addRoundVp(byRound, 1, 10).byRound;
+    const second = addRoundVp(byRound, 1, 10); // would be 20 total, capped to 15
+    expect(second.byRound[1]).toBe(15);
+    expect(second.applied).toBe(5); // only 5 of the second +10 actually counted
   });
 
-  it('does not let a round over 15 spill into the next round\'s allowance', () => {
-    // round 1: scored 20 (only 15 counts) -> banked 15. round 2: scores 10 more.
-    let p = emptyPlayer('P', '#111');
-    p = { ...p, primaryVp: 20 };
-    p = bankRound(p); // banks min(15, 20) = 15, resets roundStart to 20
-    p = { ...p, primaryVp: 30 }; // +10 this round
-    expect(effectivePrimaryVp(p)).toBe(25); // 15 banked + 10 this round, not 20+10=30
+  it('does not let one round\'s cap affect another round\'s allowance', () => {
+    let byRound = emptyPlayer('P', '#111').primaryVpByRound;
+    byRound = addRoundVp(byRound, 1, 20).byRound; // round 1 maxed at 15
+    byRound = addRoundVp(byRound, 2, 10).byRound; // round 2 independent
+    expect(byRound[1]).toBe(15);
+    expect(byRound[2]).toBe(10);
+  });
+
+  it('floors at 0 (never negative)', () => {
+    const { byRound } = addRoundVp(emptyPlayer('P', '#111').primaryVpByRound, 1, -5);
+    expect(byRound[1]).toBe(0);
   });
 });
 
-describe('bankRound', () => {
-  it('locks in the capped gain and resets the round-start snapshot', () => {
-    let p = emptyPlayer('P', '#111');
-    p = { ...p, primaryVp: 12 };
-    p = bankRound(p);
-    expect(p.primaryVpBanked).toBe(12);
-    expect(p.primaryVpRoundStart).toBe(12);
+describe('totalVp — sum across rounds, capped at 45 for the whole game', () => {
+  it('sums already-capped per-round values', () => {
+    const byRound = new Array(MAX_ROUND + 1).fill(0);
+    byRound[1] = 15;
+    byRound[2] = 15;
+    expect(totalVp(byRound)).toBe(30);
   });
 
-  it('banks secondary VP (completed cards + manual) the same way', () => {
-    let p = emptyPlayer('P', '#111');
-    p = { ...p, manualSecondaryVp: 25 };
-    expect(rawSecondaryVp(p)).toBe(25);
-    p = bankRound(p);
-    expect(p.secVpBanked).toBe(15); // capped at ROUND_CAP
-    expect(effectiveSecondaryVp(p)).toBe(15);
+  it('caps the whole-game total at 45 even if every round maxed out would exceed it', () => {
+    const byRound = new Array(MAX_ROUND + 1).fill(ROUND_CAP); // 6 * 15 = 90
+    expect(totalVp(byRound)).toBe(GAME_CAP);
   });
 });
 
 describe('drawUpTo', () => {
   it('draws up to 2 cards from the deck into hand', () => {
-    const p = { ...emptyPlayer('P', '#111'), deck: shuffleFree(CATALOG) };
+    const p = { ...emptyPlayer('P', '#111'), deck: [...CATALOG] };
     const { player, drawn } = drawUpTo(p, 1);
     expect(drawn).toHaveLength(2);
     expect(player.secondaries).toHaveLength(2);
@@ -147,12 +152,6 @@ describe('drawUpTo', () => {
   });
 });
 
-// deterministic stand-in for shuffled() in tests that don't care about order
-function shuffleFree(a: string[]) {
-  return [...a];
-}
-
-// sanity check the exported constants match the rules this file's tests assume
 describe('constants', () => {
   it('ROUND_CAP is 15 and GAME_CAP is 45, per the Event Companion VP source table', () => {
     expect(ROUND_CAP).toBe(15);

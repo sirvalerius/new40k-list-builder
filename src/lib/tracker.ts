@@ -6,6 +6,7 @@ import { uid } from './helpers';
 
 export const ROUND_CAP = 15; // max VP scoreable per source (Primary / Secondary) per battle round
 export const GAME_CAP = 45; // max VP scoreable per source across the whole battle
+export const MAX_ROUND = 5;
 
 export type LogEntry = { id: string; ts: number; text: string };
 export type SecondaryStatus = 'hand' | 'completed' | 'discarded';
@@ -13,8 +14,9 @@ export type SecondaryCard = {
   id: string;
   cardName: string;
   status: SecondaryStatus;
-  vp: number;
+  vp: number; // the VP actually credited (post round-cap) — see completeCardVp
   drawnRound: number;
+  scoredRound?: number; // battle round it was completed in
 };
 export type PlayerState = {
   name: string;
@@ -22,12 +24,15 @@ export type PlayerState = {
   disposition: string; // Force Disposition, '' = not chosen yet — drives the Primary Mission lookup
   color: string;
   cp: number;
-  primaryVp: number;
-  primaryVpRoundStart: number; // primaryVp snapshot at the start of the current round
-  primaryVpBanked: number; // capped VP already locked in from completed rounds
-  manualSecondaryVp: number; // hand-entered VP, for players tracking secondaries on physical cards
-  secVpRoundStart: number; // rawSecondaryVp snapshot at the start of the current round
-  secVpBanked: number;
+  // Index 0 (deployment) is always 0 — there's no scoring before Round 1. Index r holds
+  // this player's Primary/Secondary VP for battle round r, and is clamped to [0, ROUND_CAP]
+  // on every write (see addRoundVp), so the 15/round cap can't be bypassed by just not
+  // noticing a "raw vs effective" side note — the stored number itself is always legal.
+  // Primary and manual/physical-card Secondary contributions share the array with digital
+  // secondary-card completions; which source contributed how much doesn't matter once
+  // merged, since only the round's combined total is ever capped or displayed.
+  primaryVpByRound: number[];
+  secondaryVpByRound: number[];
   deck: string[]; // shuffled remaining draw pool for this player's secondary deck
   secondaries: SecondaryCard[]; // every card ever drawn (hand / completed / discarded)
   discardedForCpRound: number; // last battle round this player used the discard-for-CP bonus (0 = never)
@@ -42,6 +47,26 @@ export type TrackerState = {
   players: [PlayerState, PlayerState];
 };
 
+function emptyRoundArray(): number[] {
+  return new Array(MAX_ROUND + 1).fill(0);
+}
+
+/** Adds `delta` VP to round `round`'s bucket, clamped to [0, ROUND_CAP]. Returns the new
+ *  array plus how much of `delta` was actually applied (the rest is legitimately ignored,
+ *  per the rule that excess-of-cap VP doesn't count — not a bug to work around). */
+export function addRoundVp(byRound: number[], round: number, delta: number): { byRound: number[]; applied: number } {
+  const copy = [...byRound];
+  const before = copy[round] ?? 0;
+  const after = Math.max(0, Math.min(ROUND_CAP, before + delta));
+  copy[round] = after;
+  return { byRound: copy, applied: after - before };
+}
+
+/** Whole-game total for one VP source, summed across rounds (each already ≤15) and capped at 45. */
+export function totalVp(byRound: number[]): number {
+  return Math.min(GAME_CAP, byRound.reduce((s, v) => s + v, 0));
+}
+
 export function emptyPlayer(name: string, color: string): PlayerState {
   return {
     name,
@@ -49,12 +74,8 @@ export function emptyPlayer(name: string, color: string): PlayerState {
     disposition: '',
     color,
     cp: 0,
-    primaryVp: 0,
-    primaryVpRoundStart: 0,
-    primaryVpBanked: 0,
-    manualSecondaryVp: 0,
-    secVpRoundStart: 0,
-    secVpBanked: 0,
+    primaryVpByRound: emptyRoundArray(),
+    secondaryVpByRound: emptyRoundArray(),
     deck: [],
     secondaries: [],
     discardedForCpRound: 0,
@@ -98,39 +119,6 @@ export function drawUpTo(p: PlayerState, round: number): { player: PlayerState; 
     drawnRound: round,
   }));
   return { player: { ...p, deck, secondaries: [...p.secondaries, ...newCards] }, drawn: names };
-}
-
-/** Raw (uncapped) Secondary VP: completed digital cards + the manual counter. */
-export function rawSecondaryVp(p: PlayerState): number {
-  const cardVp = p.secondaries.filter((c) => c.status === 'completed').reduce((s, c) => s + c.vp, 0);
-  return cardVp + p.manualSecondaryVp;
-}
-
-/** VP actually counted toward the battle so far, after the 15/round and 45/game caps. */
-export function effectiveVp(raw: number, roundStart: number, banked: number): number {
-  const thisRound = Math.max(0, raw - roundStart);
-  return Math.min(GAME_CAP, banked + Math.min(ROUND_CAP, thisRound));
-}
-
-export function effectivePrimaryVp(p: PlayerState): number {
-  return effectiveVp(p.primaryVp, p.primaryVpRoundStart, p.primaryVpBanked);
-}
-export function effectiveSecondaryVp(p: PlayerState): number {
-  return effectiveVp(rawSecondaryVp(p), p.secVpRoundStart, p.secVpBanked);
-}
-
-/** Locks in this (ending) round's capped gain and resets the round snapshot for the next one. */
-export function bankRound(p: PlayerState): PlayerState {
-  const primaryGain = Math.max(0, p.primaryVp - p.primaryVpRoundStart);
-  const secRaw = rawSecondaryVp(p);
-  const secGain = Math.max(0, secRaw - p.secVpRoundStart);
-  return {
-    ...p,
-    primaryVpBanked: Math.min(GAME_CAP, p.primaryVpBanked + Math.min(ROUND_CAP, primaryGain)),
-    primaryVpRoundStart: p.primaryVp,
-    secVpBanked: Math.min(GAME_CAP, p.secVpBanked + Math.min(ROUND_CAP, secGain)),
-    secVpRoundStart: secRaw,
-  };
 }
 
 export function formatElapsed(ms: number): string {
@@ -186,14 +174,11 @@ export function nextTurn(state: TrackerState, catalogNames: string[], now = Date
   }
 
   const wrapping = state.active === 1;
-  const round = wrapping ? Math.min(5, state.round + 1) : state.round;
+  const round = wrapping ? Math.min(MAX_ROUND, state.round + 1) : state.round;
   const active: 0 | 1 = wrapping ? 0 : 1;
 
-  let players = state.players.map((p) => ({ ...p, cp: p.cp + 1 })) as [PlayerState, PlayerState];
-  if (wrapping) players = players.map(bankRound) as [PlayerState, PlayerState];
-
+  const players = state.players.map((p) => ({ ...p, cp: p.cp + 1 })) as [PlayerState, PlayerState];
   const { player: drawnPlayer, drawn } = drawUpTo(players[active], round);
-  players = [...players] as [PlayerState, PlayerState];
   players[active] = drawnPlayer;
 
   const parts = [

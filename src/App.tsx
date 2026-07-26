@@ -166,7 +166,7 @@ export default function App() {
       : '11th edition · #new40k';
 
   return (
-    <div className="app">
+    <div className={`app${view.kind === 'tracker' ? ' app-wide' : ''}`}>
       <header className="topbar no-print">
         {view.kind !== 'home' && (
           <button
