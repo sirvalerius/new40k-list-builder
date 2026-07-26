@@ -19,6 +19,7 @@ export type SecondaryCard = {
 export type PlayerState = {
   name: string;
   factionId: string;
+  disposition: string; // Force Disposition, '' = not chosen yet — drives the Primary Mission lookup
   color: string;
   cp: number;
   primaryVp: number;
@@ -45,6 +46,7 @@ export function emptyPlayer(name: string, color: string): PlayerState {
   return {
     name,
     factionId: '',
+    disposition: '',
     color,
     cp: 0,
     primaryVp: 0,

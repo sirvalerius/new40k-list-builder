@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
-import type { FactionIndexEntry, Rules, SecondaryMission } from '../lib/types';
+import type { FactionIndexEntry, Mission, MissionTier, Rules, SecondaryMission } from '../lib/types';
 import { FactionIcon } from '../components/FactionIcon';
+import { DISPOSITIONS, DispositionIcon } from '../components/DispositionIcon';
 import { Collapsible } from '../components/Collapsible';
-import { uid } from '../lib/helpers';
+import { MissionCard } from '../components/MissionCard';
+import { missionMatchup, uid } from '../lib/helpers';
 import {
   ROUND_CAP,
   GAME_CAP,
@@ -59,6 +61,16 @@ function stripMd(text: string) {
 //   sums them, and a lone tier with a `cap` is a per-unit count capped at that section's max.
 // - A manual Secondary VP counter is also available for players using physical cards
 //   instead of the digital deck.
+// - If both players pick a Force Disposition in setup, each one's Primary Mission is
+//   resolved the same way Missions.tsx/BunkerMode.tsx do (missionMatchup) and shown with
+//   the same kind of scoring helper as secondaries: every section's tiers are clickable
+//   (or, for `perUnit` tiers, a count input), adding straight into the Primary VP counter —
+//   unlike secondaries this is additive and repeatable, since a Primary Mission is never
+//   "completed", it scores again every qualifying round.
+//
+// Layout: this screen targets a TV/desktop browser, not mobile, so past a wide breakpoint
+// each player's card splits into a stats column and a secondaries column side by side
+// instead of stacking everything vertically (see .tracker-player in index.css).
 export function GameTracker({ rules, factions }: { rules: Rules; factions: FactionIndexEntry[] }) {
   const [state, setState] = useState<TrackerState>(loadState);
   const prevRef = useRef<TrackerState | null>(null);
@@ -162,16 +174,25 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
       </Collapsible>
 
       <div className="tracker-players">
-        {([0, 1] as const).map((i) => (
-          <PlayerPanel
-            key={i}
-            player={state.players[i]}
-            round={state.round}
-            isActive={!deploying && state.active === i}
-            catalog={catalog}
-            onChange={(mut, logText) => updatePlayer(i, mut, logText)}
-          />
-        ))}
+        {([0, 1] as const).map((i) => {
+          const opponent = state.players[i === 0 ? 1 : 0];
+          const myMissionName =
+            state.players[i].disposition && opponent.disposition
+              ? missionMatchup(rules, state.players[i].disposition, opponent.disposition)?.my
+              : undefined;
+          const mission = rules.missions?.find((m) => m.name === myMissionName);
+          return (
+            <PlayerPanel
+              key={i}
+              player={state.players[i]}
+              round={state.round}
+              isActive={!deploying && state.active === i}
+              catalog={catalog}
+              mission={mission}
+              onChange={(mut, logText) => updatePlayer(i, mut, logText)}
+            />
+          );
+        })}
       </div>
     </div>
   );
@@ -185,13 +206,18 @@ function SetupScreen({
 }: {
   state: TrackerState;
   factions: FactionIndexEntry[];
-  onChange: (s: TrackerState) => void;
+  // Takes an updater (not a plain value) so two updates fired in the same tick — e.g. both
+  // players' colour/faction/disposition clicks batched together — never clobber each other
+  // by reading a stale `state` snapshot from outside the update.
+  onChange: (mut: (s: TrackerState) => TrackerState) => void;
   onStart: () => void;
 }) {
   function updatePlayer(i: 0 | 1, mut: (p: PlayerState) => PlayerState) {
-    const players = [...state.players] as [PlayerState, PlayerState];
-    players[i] = mut(players[i]);
-    onChange({ ...state, players });
+    onChange((prev) => {
+      const players = [...prev.players] as [PlayerState, PlayerState];
+      players[i] = mut(players[i]);
+      return { ...prev, players };
+    });
   }
 
   return (
@@ -236,6 +262,18 @@ function SetupScreen({
                 name={factions.find((f) => f.id === state.players[i].factionId)?.name}
               />
             )}
+            <span className="tiny muted">Force Disposition (for your Primary Mission)</span>
+            <div className="row wrap" style={{ gap: 6 }}>
+              {Object.keys(DISPOSITIONS).map((d) => (
+                <button
+                  key={d}
+                  className={state.players[i].disposition === d ? 'primary small' : 'ghost small'}
+                  onClick={() => updatePlayer(i, (p) => ({ ...p, disposition: d }))}
+                >
+                  <DispositionIcon name={d} />
+                </button>
+              ))}
+            </div>
           </div>
         ))}
       </div>
@@ -251,12 +289,14 @@ function PlayerPanel({
   round,
   isActive,
   catalog,
+  mission,
   onChange,
 }: {
   player: PlayerState;
   round: number;
   isActive: boolean;
   catalog: NonNullable<Rules['secondaries']>;
+  mission?: Mission;
   onChange: (mut: (p: PlayerState) => PlayerState, logText?: string) => void;
 }) {
   const [completingId, setCompletingId] = useState<string | null>(null);
@@ -314,43 +354,56 @@ function PlayerPanel({
 
   return (
     <div className="card tracker-player" style={{ borderColor: player.color }}>
-      <div className="row" style={{ gap: 8, alignItems: 'center' }}>
-        <span className="tracker-swatch-sm" style={{ background: player.color }} />
-        <span className="tracker-playername">{player.name}</span>
-        {player.factionId && <FactionIcon id={player.factionId} iconOnly />}
-      </div>
+      <div className="tracker-player-main">
+        <div className="row" style={{ gap: 8, alignItems: 'center' }}>
+          <span className="tracker-swatch-sm" style={{ background: player.color }} />
+          <span className="tracker-playername">{player.name}</span>
+          {player.factionId && <FactionIcon id={player.factionId} iconOnly />}
+        </div>
 
-      <div className="tracker-total">
-        {total} <span className="tracker-total-label">VP</span>
-      </div>
-
-      <div className="tracker-stat">
-        <span className="tracker-stat-label">Command Points</span>
-        <Stepper
-          value={player.cp}
-          onChange={(v, d) => onChange((p) => ({ ...p, cp: Math.max(0, v) }), `${player.name}: CP ${d > 0 ? '+' : ''}${d}.`)}
-        />
-      </div>
-
-      <div className="tracker-stat">
-        <span className="tracker-stat-label">
-          Primary VP <VpCapNote raw={player.primaryVp} effective={effPrimary} />
-        </span>
-        <Stepper
-          value={player.primaryVp}
-          onChange={(v, d) =>
-            onChange((p) => ({ ...p, primaryVp: Math.max(0, v) }), `${player.name}: Primary VP ${d > 0 ? '+' : ''}${d}.`)
-          }
-        />
-      </div>
-
-      <div className="tracker-secondaries">
-        <div className="tracker-stat-label">
-          Secondary missions <VpCapNote raw={rawSecVp} effective={effSecondary} />
+        <div className="tracker-total">
+          {total} <span className="tracker-total-label">VP</span>
         </div>
 
         <div className="tracker-stat">
-          <span className="tracker-stat-label tiny muted">Manual VP (physical cards)</span>
+          <span className="tracker-stat-label">Command Points</span>
+          <Stepper
+            value={player.cp}
+            onChange={(v, d) => onChange((p) => ({ ...p, cp: Math.max(0, v) }), `${player.name}: CP ${d > 0 ? '+' : ''}${d}.`)}
+          />
+        </div>
+
+        <div className="tracker-stat">
+          <span className="tracker-stat-label">
+            Primary VP <VpCapNote raw={player.primaryVp} effective={effPrimary} />
+          </span>
+          <Stepper
+            value={player.primaryVp}
+            onChange={(v, d) =>
+              onChange((p) => ({ ...p, primaryVp: Math.max(0, v) }), `${player.name}: Primary VP ${d > 0 ? '+' : ''}${d}.`)
+            }
+          />
+        </div>
+
+        {mission && (
+          <div className="tracker-mission">
+            <Collapsible title={<span className="tiny muted">Primary: {mission.name} — view full text</span>}>
+              <MissionCard m={mission} />
+            </Collapsible>
+            <PrimaryScoringPanel
+              mission={mission}
+              onScore={(vp, desc) =>
+                onChange(
+                  (p) => ({ ...p, primaryVp: Math.max(0, p.primaryVp + vp) }),
+                  `${player.name}: Primary VP +${vp} (${desc}).`,
+                )
+              }
+            />
+          </div>
+        )}
+
+        <div className="tracker-stat">
+          <span className="tracker-stat-label tiny muted">Manual Secondary VP (physical cards)</span>
           <Stepper
             value={player.manualSecondaryVp}
             onChange={(v, d) =>
@@ -360,6 +413,12 @@ function PlayerPanel({
               )
             }
           />
+        </div>
+      </div>
+
+      <div className="tracker-secondaries">
+        <div className="tracker-stat-label">
+          Secondary missions <VpCapNote raw={rawSecVp} effective={effSecondary} />
         </div>
 
         {hand.map((c) => {
@@ -531,6 +590,60 @@ function SectionPicker({
         </button>
       ))}
     </div>
+  );
+}
+
+// A Primary Mission is never "completed" like a secondary — it scores again every
+// qualifying round, for the whole game — so every tier is just an independent, repeatable
+// "add its VP" control rather than a one-shot pick. There's no `or` flag in this data (unlike
+// secondaries) since escalating tiers are normally self-evidently exclusive by their own
+// wording (e.g. "1 objective" vs "2 or more") — trusted to the player rather than enforced.
+function PrimaryScoringPanel({ mission, onScore }: { mission: Mission; onScore: (vp: number, description: string) => void }) {
+  return (
+    <div className="col tracker-tierpicker" style={{ gap: 10 }}>
+      <span className="tiny muted">Score this Primary Mission</span>
+      {mission.sections.map((s, i) => (
+        <div key={i} className="tracker-section-picker">
+          <div className="tiny muted">
+            {s.when} · {s.trigger}
+          </div>
+          {s.tiers.map((t, j) => (
+            <PrimaryTierRow key={j} tier={t} onScore={onScore} />
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function PrimaryTierRow({ tier, onScore }: { tier: MissionTier; onScore: (vp: number, description: string) => void }) {
+  const [count, setCount] = useState(1);
+  if (tier.perUnit) {
+    const vp = count * tier.vp;
+    return (
+      <div className="row" style={{ gap: 8, alignItems: 'center' }}>
+        <Stepper value={count} onChange={(v) => setCount(Math.max(0, v))} />
+        <span className="small">
+          × {tier.vp} VP{tier.cumulative ? ' (+)' : ''} — {stripMd(tier.text)}
+        </span>
+        <button
+          className="ghost small"
+          disabled={count === 0}
+          onClick={() => onScore(vp, `${stripMd(tier.text)} × ${count}`)}
+        >
+          Add {vp} VP
+        </button>
+      </div>
+    );
+  }
+  return (
+    <button className="ghost small tracker-tierbtn" onClick={() => onScore(tier.vp, stripMd(tier.text))}>
+      <b>
+        {tier.cumulative ? '+' : ''}
+        {tier.vp} VP
+      </b>{' '}
+      — {stripMd(tier.text)}
+    </button>
   );
 }
 
