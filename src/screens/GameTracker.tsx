@@ -4,7 +4,7 @@ import { FactionIcon } from '../components/FactionIcon';
 import { Collapsible } from '../components/Collapsible';
 import { uid } from '../lib/helpers';
 
-const STORAGE_KEY = 'new40k-tracker-v3';
+const STORAGE_KEY = 'new40k-tracker-v4';
 const SECONDARY_CAP = 40; // core rule: secondary VP total is capped at 40, regardless of edition
 const COLORS = ['#5b8fd9', '#d05050', '#57b45f', '#e0c23f', '#a05bd9', '#e05b8f', '#3fc1b0', '#d9853f'];
 
@@ -17,6 +17,7 @@ type PlayerState = {
   color: string;
   cp: number;
   primaryVp: number;
+  manualSecondaryVp: number; // hand-entered VP, for players tracking secondaries on physical cards
   deck: string[]; // shuffled remaining draw pool for this player's secondary deck
   secondaries: SecondaryCard[]; // every card ever drawn (hand / completed / discarded)
   discardedForCpRound: number; // last battle round this player used the discard-for-CP bonus (0 = never)
@@ -37,6 +38,7 @@ function emptyPlayer(name: string, color: string): PlayerState {
     color,
     cp: 0,
     primaryVp: 0,
+    manualSecondaryVp: 0,
     deck: [],
     secondaries: [],
     discardedForCpRound: 0,
@@ -93,7 +95,8 @@ function drawUpTo(p: PlayerState, round: number): { player: PlayerState; drawn: 
 }
 
 function secondaryVp(p: PlayerState) {
-  return p.secondaries.filter((c) => c.status === 'completed').reduce((s, c) => s + c.vp, 0);
+  const cardVp = p.secondaries.filter((c) => c.status === 'completed').reduce((s, c) => s + c.vp, 0);
+  return cardVp + p.manualSecondaryVp;
 }
 
 function stripMd(text: string) {
@@ -109,11 +112,23 @@ function formatElapsed(ms: number) {
 // faction/colour setup, then a live round-and-turn tracker with CP, Primary VP (uncapped —
 // there's no universal per-mission ceiling, unlike the old app's flat "/45") and Secondary
 // VP (capped at 40 total, the one number that actually is a fixed rule), plus a running
-// game log. Each player draws their own Secondary Mission hand from the real Chapter Approved
-// Defender deck (rules.secondaries, scraped from gdmissions.app) — 2 cards at game start, then
-// auto-topped-up to 2 at the start of that player's own turn. A hand card can be discarded for
-// +1 CP (Event Companion "Generating Command Points" rule — capped at once per battle round)
-// or marked completed by picking which scoring tier was satisfied, which credits that tier's VP.
+// game log.
+//
+// CP, per the Core Rules (08.02 Gain Core CP): "In the Command phase, both players gain
+// Core CP" — every turn has its own Command phase, and it grants CP to BOTH players, not
+// just whoever's turn it is, so over a full battle round (2 turns) each player nets +2 Core
+// CP. On top of that, the Event Companion caps *bonus* CP (anything beyond Core CP, which
+// includes discarding a Secondary Mission) at a maximum of 1 per player per battle round —
+// modelled here by discardedForCpRound, and by that action only being offered to whichever
+// player's turn is currently active ("if it is your turn", per the Chapter Approved deck
+// rules on achieving/discarding Secondary Missions).
+//
+// Each player draws their own Secondary Mission hand from the real Chapter Approved Defender
+// deck (rules.secondaries, scraped from gdmissions.app) — 2 cards at game start, then
+// auto-topped-up to 2 at the start of that player's own turn. A hand card can be marked
+// completed by picking which scoring tier was satisfied, crediting that tier's VP, or (only
+// on your own turn) discarded for the +1 bonus CP above. A manual Secondary VP counter is
+// also available for players using physical cards instead of the digital deck.
 export function GameTracker({ rules, factions }: { rules: Rules; factions: FactionIndexEntry[] }) {
   const [state, setState] = useState<TrackerState>(loadState);
   const prevRef = useRef<TrackerState | null>(null);
@@ -150,12 +165,18 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
     setState((prev) => {
       prevRef.current = prev;
       const drawLogs: string[] = [];
-      const players = prev.players.map((p) => {
+      let players = prev.players.map((p) => {
         const { player, drawn } = drawUpTo({ ...p, deck: shuffled(names) }, 1);
         if (drawn.length) drawLogs.push(`${player.name} draws: ${drawn.join(', ')}.`);
         return player;
       }) as [PlayerState, PlayerState];
-      const text = [`Game started — Round 1, ${players[0].name}'s turn.`, ...drawLogs].join(' ');
+      // Round 1, Player 1's turn has its own Command phase — both players gain Core CP there too.
+      players = players.map((p) => ({ ...p, cp: p.cp + 1 })) as [PlayerState, PlayerState];
+      const text = [
+        `Game started — Round 1, ${players[0].name}'s turn.`,
+        'Command phase: both players gain +1 Core CP.',
+        ...drawLogs,
+      ].join(' ');
       return {
         ...prev,
         phase: 'live',
@@ -174,17 +195,17 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
       const wrapping = prev.active === 1;
       const round = wrapping ? Math.min(5, prev.round + 1) : prev.round;
       const active: 0 | 1 = wrapping ? 0 : 1;
-      const players = [...prev.players] as [PlayerState, PlayerState];
-      const { player: drawnPlayer, drawn } = drawUpTo(
-        { ...players[active], cp: players[active].cp + 1 },
-        round,
-      );
+      // Every turn has its own Command phase, and per the Core Rules (08.02) BOTH players
+      // gain Core CP there, not just whoever's turn it is.
+      let players = prev.players.map((p) => ({ ...p, cp: p.cp + 1 })) as [PlayerState, PlayerState];
+      const { player: drawnPlayer, drawn } = drawUpTo(players[active], round);
+      players = [...players] as [PlayerState, PlayerState];
       players[active] = drawnPlayer;
       const parts = [
         wrapping
           ? `Round ${round} — ${drawnPlayer.name}'s turn begins.`
           : `${drawnPlayer.name}'s turn begins.`,
-        `${drawnPlayer.name} gains +1 CP.`,
+        'Command phase: both players gain +1 Core CP.',
       ];
       if (drawn.length) parts.push(`${drawnPlayer.name} draws: ${drawn.join(', ')}.`);
       return {
@@ -263,6 +284,7 @@ export function GameTracker({ rules, factions }: { rules: Rules; factions: Facti
             key={i}
             player={state.players[i]}
             round={state.round}
+            isActive={state.active === i}
             catalog={catalog}
             onChange={(mut, logText) => updatePlayer(i, mut, logText)}
           />
@@ -344,11 +366,13 @@ function SetupScreen({
 function PlayerPanel({
   player,
   round,
+  isActive,
   catalog,
   onChange,
 }: {
   player: PlayerState;
   round: number;
+  isActive: boolean;
   catalog: NonNullable<Rules['secondaries']>;
   onChange: (mut: (p: PlayerState) => PlayerState, logText?: string) => void;
 }) {
@@ -358,7 +382,14 @@ function PlayerPanel({
   const total = player.primaryVp + secVp;
   const hand = player.secondaries.filter((c) => c.status === 'hand');
   const history = [...player.secondaries.filter((c) => c.status !== 'hand')].reverse();
-  const canDiscardForCp = player.discardedForCpRound !== round;
+  // Chapter Approved deck rules: you can only discard an active Secondary Mission for the
+  // bonus CP "if it is your turn" — and the Event Companion caps that bonus at 1/round.
+  const canDiscardForCp = isActive && player.discardedForCpRound !== round;
+  const discardTitle = !isActive
+    ? "Only on this player's own turn"
+    : player.discardedForCpRound === round
+    ? 'Already used this round'
+    : 'Discard this card to gain 1 CP';
 
   function drawExtra() {
     const remaining = catalog.map((c) => c.name).filter((n) => !player.secondaries.some((c) => c.cardName === n));
@@ -435,6 +466,19 @@ function PlayerPanel({
           </span>
         </div>
 
+        <div className="tracker-stat">
+          <span className="tracker-stat-label tiny muted">Manual VP (physical cards)</span>
+          <Stepper
+            value={player.manualSecondaryVp}
+            onChange={(v, d) =>
+              onChange(
+                (p) => ({ ...p, manualSecondaryVp: Math.max(0, v) }),
+                `${player.name}: manual Secondary VP ${d > 0 ? '+' : ''}${d}.`,
+              )
+            }
+          />
+        </div>
+
         {hand.map((c) => {
           const card = catalog.find((sc) => sc.name === c.cardName);
           const allTiers = card?.sections.flatMap((s) => s.tiers.map((t) => ({ ...t, section: s }))) ?? [];
@@ -456,7 +500,7 @@ function PlayerPanel({
                 <button
                   className="ghost small"
                   disabled={!canDiscardForCp}
-                  title={canDiscardForCp ? 'Discard this card to gain 1 CP' : 'Already used this round'}
+                  title={discardTitle}
                   onClick={() => discardForCp(c)}
                 >
                   🗑 Discard (+1 CP)
