@@ -141,8 +141,9 @@ export function isMandatoryReshuffle(cardName: string): boolean {
 export function reshuffleEligible(cardName: string, round: number, secondaries: SecondaryCard[]): boolean {
   const rule = RESHUFFLE_RULES[cardName];
   if (!rule) return false;
-  if (rule.condition.type === 'first-round') return round === 1;
-  return secondaries.some((c) => c.cardName === rule.condition.otherCard && c.status === 'hand');
+  const cond = rule.condition;
+  if (cond.type === 'first-round') return round === 1;
+  return secondaries.some((c) => c.cardName === cond.otherCard && c.status === 'hand');
 }
 
 /** Draws one card from `deck`, transparently shuffling it back and drawing again if it's a
