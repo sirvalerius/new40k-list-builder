@@ -8,6 +8,40 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-08-05",
+    "items": [
+     "Aggiunti i distaccamenti **Armoured Warhost**, **Fateful Performance**, **Path of the Outcast**, **Twilight Flickers**, **Serpent's Brood**, **Eldritch Raiders**, **Corsair Coterie**.",
+     "Aggiunte le datasheet **Dragon Knights**, **Leystalker**, **Stonesinger**, **Clanblade**, **Prince Yriel**, **Kharseth**, **Vyper**, **Starfang**, **Corsair Skyreavers**.",
+     "**Agile Manoeuvres, Star Engines** (army rule): trigger/effect riscritti (ora si applica quando un'unità VEHICLE avanza, invece che sulla base della vecchia formulazione).",
+     "**Aspect Host** — Skyborne Sanctuary: target/effect riscritti (imbarco entro 6\" dal transport invece della vecchia condizione).",
+     "**Devoted of Ynnead** — Strength from Death: Lethal Intent e Lethal Surge riscritte.",
+     "**Ghosts of the Webway** — Tricksters' Retort: range target 9\" → 8\".",
+     "**Guardian Battlehost** — Breath of Vaul (enhancement): riscritta (ora copre flamer e fusion gun in unità Storm Guardians).",
+     "**Seer Council** — Unshrouded Truth: target/effect riscritti (riserve strategiche + Deep Strike + ingress obbligatorio, invece del vecchio movimento).",
+     "**Spirit Conclave** — Higher Duty (enhancement): riscritta.",
+     "**Warhost** — Fire and Fade: niente più imbarco in transport dopo il movimento; Skyborne Sanctuary riscritta come per Aspect Host.",
+     "**Windrider Host** — Overflight: range 6\" → 7\"; Daring Riders: range 9\" → 8\"; Rangers (Path of the Outcast): condizione riscritta (movimento fino a D6\" se fuori Engagement Range).",
+     "Keyword **FRAME** aggiunta a D-cannon Platform, Falcon, Fire Prism, Night Spinner, Shadow Weaver Platform, Starweaver, Vibro Cannon Platform, Voidweaver, Wave Serpent, Ynnari Raider, Ynnari Venom.",
+     "Aspect Shrine Token (Dark Reapers, Dire Avengers, Fire Dragons, Howling Banshees, Striking Scorpions, Swooping Hawks, Warp Spiders): ora esclude i modelli CHARACTER.",
+     "Asurmen (Hand of Asuryan), Baharroth (Cloudstrider), Yvraine (Herald of Ynnead), The Yncarne (Inevitable Death): abilità riscritte.",
+     "Corsair Voidreavers: aggiunta Battle Focus alle Faction Abilities; wargear option shuriken rifle ora senza limite di modelli.",
+     "Crimson Hunter / Hemlock Wraithfighter: M e OC nel profilo diventano `-`.",
+     "Eldrad Ulthran, Farseer: possono unirsi anche a Warlock Conclave.",
+     "Falcon, Wave Serpent: capacità transport riscritta (12 vs 6 modelli ASURYANI INFANTRY, esclusioni WRAITH CONSTRUCT/JUMP PACK/YNNARI invariate).",
+     "Shadowseer: shuriken pistol sostituibile con neuro disruptor (era diverso).",
+     "Skyweavers (Acrobatic Grace): ora dà Stealth invece del vecchio effetto.",
+     "Starweaver, Ynnari Venom: possono essere reimbarcate nello stesso turno di sbarco.",
+     "Warlock Conclave, Warlock Skyrunners: perdono la keyword CHARACTER; possono unirsi a Guardian Defenders/Storm Guardians (Conclave) o Windriders (Skyrunners) come Bodyguard.",
+     "Warlock: perde Leader, guadagna Support.",
+     "Ynnari Incubi (Demiklaives, singola lama): AP -1 → -2.",
+     "Ynnari Venom: split unit ora selezionabile in Declare Battle Formations invece che a schieramento.",
+     "The Yncarne può usare Inevitable Death anche nel primo turno dell'avversario: sì.",
+     "Torc of Morai-Heg: se l'avversario non ha i CP per la Stratagem selezionata, nessun CP viene speso e l'effetto non si risolve, ma la Stratagem conta comunque come usata quel turno.",
+     "Ethereal Form (The Yncarne): non si può scegliere di recuperare meno ferite del tiro su D3.",
+     "Torc of Morai-Heg: l'avversario deve comunque usare la Stratagem selezionata al costo aumentato se ha i CP necessari."
+    ]
+   },
+   {
     "date": "2026-07-22",
     "items": [
      "**Autarch** (1 model): 85 → 75 pts (-10).",
@@ -47,7 +81,7 @@
   ]
  },
  "last_update": "2026-06-13 12:02:41",
- "unit_count": 97,
+ "unit_count": 101,
  "datasheets": [
   {
    "id": "000001598",
@@ -1592,6 +1626,145 @@
      "grants": []
     }
    ],
+   "chapter": "",
+   "requires_detachment": ""
+  },
+  {
+   "id": "000004232",
+   "name": "Clanblade",
+   "role": "Characters",
+   "legend": "",
+   "loadout": "<b>This model is equipped with:</b> 1 Drakesteed Fangs and Talons; 1 Moonblades; 1 Solar Carbine.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Clanblade",
+     "M": "10\"",
+     "T": "5",
+     "Sv": "4+",
+     "inv_sv": "",
+     "inv_sv_descr": "",
+     "W": "4",
+     "Ld": "6+",
+     "OC": "2",
+     "base_size": "75x42mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Solar Carbine",
+     "type": "Ranged",
+     "range": "18",
+     "A": "2",
+     "BS_WS": "3",
+     "S": "4",
+     "AP": "0",
+     "D": "1",
+     "description": "rapid fire 2"
+    },
+    {
+     "name": "Drakesteed Fangs and Talons",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "3",
+     "BS_WS": "3",
+     "S": "5",
+     "AP": "-1",
+     "D": "1",
+     "description": "extra attacks"
+    },
+    {
+     "name": "Moonblades",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "5",
+     "BS_WS": "2",
+     "S": "4",
+     "AP": "-2",
+     "D": "2",
+     "description": "lethal hits, twin-linked"
+    }
+   ],
+   "abilities": [
+    {
+     "name": "Leader",
+     "type": "Core",
+     "parameter": "",
+     "description": "Some <span class=\"kwb\">CHARACTER</span> units have ‘Leader’ listed on their datasheets. Such <span class=\"kwb\">CHARACTER</span> units are known as Leaders, and the units they can lead – known as their Bodyguard units – are listed on their datasheet.<br><br>During the Declare Battle Formations step, for each Leader in your army, if your army also includes one or more of that Leader’s Bodyguard units, you can select one of those Bodyguard units. That Leader will then attach to that Bodyguard unit for the duration of the battle and is said to be leading that unit. Each Bodyguard unit can only have one Leader attached to it.<br><br>While a Bodyguard unit contains a Leader, it is known as an Attached unit and, with the exception of rules that are triggered when units are <span class=\"tooltip00006\" data-tooltip-content=\"#tooltip_content00006\"><span class=\"tt kwbu\">destroyed</span></span>, it is treated as a single unit for all rules purposes. Each time an attack targets an Attached unit, until the attacking unit has resolved all of its attacks, you must use the Toughness characteristic of the Bodyguard models in that unit, even if a Leader in that unit has a different Toughness characteristic. Each time an attack sucessfully wounds an Attached unit, that attack cannot be allocated to a <span class=\"kwb\">CHARACTER</span> model in that unit, even if that <span class=\"kwb\">CHARACTER</span> model has lost one or more wounds or has already had attacks allocated to it this phase. As soon as the last Bodyguard model in an Attached unit has been destroyed, any attacks made against that unit that have yet to be allocated can then be allocated to <span class=\"kwb\">CHARACTER</span> models in that unit.<br><br>Each time the last model in a Bodyguard unit is destroyed, each <span class=\"kwb\">CHARACTER</span> unit that is part of that Attached unit is no longer part of an Attached unit. It becomes a separate unit, with its original Starting Strength. If this happens as the result of an attack, they become separate units after the attacking unit has resolved all of its attacks.<br><br>Each time the last model in a <span class=\"kwb\">CHARACTER</span> unit that is attached to a Bodyguard unit is destroyed and there is not another <span class=\"kwb\">CHARACTER</span> unit attached, that Attached unit’s Bodyguard unit is no longer part of an Attached unit. It becomes a separate unit, with its original Starting Strength. If this happens as the result of an attack, they become separate units after the attacking unit has resolved all of its attacks. <br><br>Each time a unit that is part of an Attached unit is destroyed, it does not have the keywords of any other units that make up that Attached unit (unless it has those keywords on its own datasheet) for the purposes of any rules that would be triggered when that unit is destroyed.<br><br><div class=\"redExample\"><b>Example:</b> <i>If you only destroy the Bodyguard unit that is part of an Attached unit, you have not destroyed a <span class=\"kwb\">CHARACTER</span> unit. If you only destroy the <span class=\"kwb\">CHARACTER</span> unit that is part of an Attached unit, or if you destroy the whole Attached unit, you have destroyed one <span class=\"kwb\">CHARACTER</span> unit.</i></div><br><div class=\"BreakInsideAvoid frameLight Corner14\" style=\"\"><ul class=\"redSquare\"><li>Before the battle, <span class=\"kwb\">CHARACTER</span> units with the Leader ability can be attached to one of their Bodyguard units to form an Attached unit.</li><li>Attached units can only contain one Leader.</li><li>Attacks cannot be allocated to <span class=\"kwb\">CHARACTER</span> models in Attached units.</li></ul></div>"
+    },
+    {
+     "name": "Battle Focus",
+     "type": "Faction",
+     "parameter": "",
+     "description": "<div class=\"Columns2\"><div class=\"BreakInsideAvoid\">If your Army Faction is Asuryani, at the start of the battle round, you receive a number of Battle Focus tokens based on the battle size, as shown in the table below.<br><br><div class=\"BreakInsideAvoid\"  style=\"\"\"><table width=\"0\" border=\"0\" bordercolor=\"#888\" cellpadding=\"4\" cellspacing=\"0\" style=\"border-collapse:collapse;border-width:0px\"><tbody><tr><td><table class=\" customTable tablefont\" border=\"1\" bordercolor=\"#888\" cellpadding=\"4\" style=\"border-collapse:collapse;border-color:#888888;border-width:0px\"><tbody><tr><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;background-color:rgb(22,105,114);color:rgb(255,255,255);text-align:left;vertical-align:middle;font-size:22px;width:240px;height:0px;\"><b>BATTLE SIZE</b></td><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;background-color:rgb(22,105,114);color:rgb(255,255,255);text-align:center;vertical-align:middle;font-size:22px;width:240px;height:0px;\"><b>BATTLE FOCUS TOKENS</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;text-align:left;vertical-align:middle;font-size:18px;width:240px;height:0px;\">Incursion</td><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;text-align:center;vertical-align:middle;font-size:18px;width:240px;height:0px;\"><b>2</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;text-align:left;vertical-align:middle;font-size:18px;width:240px;height:0px;\">Strike Force</td><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;text-align:center;vertical-align:middle;font-size:18px;width:240px;height:0px;\"><b>4</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:none none dotted none;text-align:left;vertical-align:middle;font-size:18px;width:240px;height:0px;\">Onslaught</td><td style=\"border-width:1px 1px 1px 1px;border-style:none none dotted none;text-align:center;vertical-align:middle;font-size:18px;width:240px;height:0px;\"><b>6</b></td></tr></tbody></table></td></tr></tbody></table></div><br></div>Each time one of the triggers shown in the Agile Manoeuvres section below occurs, you can spend one Battle Focus token to enable the relevant eligible unit to perform that Agile Manoeuvre. A unit is eligible to perform an Agile Manoeuvre if it has this ability and has not already performed an Agile Manoeuvre in the same phase. Unless otherwise stated, you cannot trigger the same Agile Manoeuvre more than once per phase. At the end of the battle round, all unspent Battle Focus tokens are lost.</div><br><div style=\"text-align:center; font-family: 'ConduitITC', arial; font-size: 2em;\">AGILE MANOEUVRES</div><div class=\"Columns2\"><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">SWIFT AS THE WIND</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible unit from your army is selected to make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span></span>, <span class=\"tooltip00010\" data-tooltip-content=\"#tooltip_content00010\"><span class=\"tt kwbu\">Advance</span></span> or <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">Fall</span> <span class=\"tt kwbu\">Back</span> <span class=\"tt kwbu\">move</span></span>. You can trigger this Agile Manoeuvre more than once per phase (provided a different unit performs it each time).<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the phase, add 2\" to the Move characteristic of models in that unit.</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">FLITTING SHADOWS</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeCharge\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible unit from your army is selected to make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span></span>, <span class=\"tooltip00010\" data-tooltip-content=\"#tooltip_content00010\"><span class=\"tt kwbu\">Advance</span></span> or <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">Fall</span> <span class=\"tt kwbu\">Back</span> <span class=\"tt kwbu\">move</span></span>, is set up on the battlefield, or <span class=\"tooltip00041\" data-tooltip-content=\"#tooltip_content00041\"><span class=\"tt kwbu\">declares</span> <span class=\"tt kwbu\">a</span> <span class=\"tt kwbu\">charge</span></span>.<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the turn, enemy units cannot use the <span class=\"tooltip00053\" data-tooltip-content=\"#tooltip_content00053\"><span class=\"tt kwbu\">Fire</span> <span class=\"tt kwbu\">Overwatch</span></span> Stratagem to shoot at that unit.</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">STAR ENGINES</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible <span class=\"tooltip00054\" data-tooltip-content=\"#tooltip_content00054\" data-tooltip-anchor=\"#tooltip_content00054\"><span class=\"kwb kwbu\">VEHICLE</span></span> unit from your army is selected to make an <span class=\"tooltip00010\" data-tooltip-content=\"#tooltip_content00010\"><span class=\"tt kwbu\">Advance</span> <span class=\"tt kwbu\">move</span></span>.<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the turn, Ranged weapons equipped by this unit have the <span class=\"kwb2 bluefont\"><span class=\"tooltip00033\" data-tooltip-content=\"#tooltip_content00033\"><span class=\"tt kwbu\">[ASSAULT]</span></span></span> ability.</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">SUDDEN STRIKE</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeFight\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible unit from your army is selected to fight.<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the phase, each time a model in that unit makes a <span class=\"tooltip00042\" data-tooltip-content=\"#tooltip_content00042\"><span class=\"tt kwbu\">Pile-in</span></span> or <span class=\"tooltip00043\" data-tooltip-content=\"#tooltip_content00043\"><span class=\"tt kwbu\">Consolidation</span> <span class=\"tt kwbu\">move</span></span>, it can move up to 6\" instead of up to 3\".</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">OPPORTUNITY SEIZED</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an enemy unit ends a <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">Fall</span> <span class=\"tt kwbu\">Back</span> <span class=\"tt kwbu\">move</span></span>.<br><br><span class=\"aeText\">EFFECT:</span> One eligible unit from your army (excluding <span class=\"tooltip00055\" data-tooltip-content=\"#tooltip_content00055\" data-tooltip-anchor=\"#tooltip_content00055\"><span class=\"kwb kwbu\">TITANIC</span></span> units) that started the phase within <span class=\"tooltip00038\" data-tooltip-content=\"#tooltip_content00038\"><span class=\"tt kwbu\">Engagement</span> <span class=\"tt kwbu\">Range</span></span> of that enemy unit can make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span> <span class=\"tt kwbu\">move</span></span> of up to D6+1\".</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">FADE BACK</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeShooting\"></div></div></div><span class=\"aeText\">TRIGGER:</span> In your opponent’s <a href=\"/wh40k10ed/the-rules/core-rules/#SHOOTING-PHASE\">Shooting phase</a>, just after an enemy unit has shot.<br><br><span class=\"aeText\">EFFECT:</span> One eligible unit from your army (excluding <span class=\"tooltip00055\" data-tooltip-content=\"#tooltip_content00055\" data-tooltip-anchor=\"#tooltip_content00055\"><span class=\"kwb kwbu\">TITANIC</span></span> units) that was hit by one or more of those attacks can make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span> <span class=\"tt kwbu\">move</span></span> of up to D6+1\".</p></td></tr></tbody></tbody></table></div></div>"
+    },
+    {
+     "name": "Blade of the Clans",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "This unit's melee attacks have [SUSTAINED HITS 1]."
+    },
+    {
+     "name": "Cornered Prey",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "When an enemy unit engaged with this unit is selected to make a fall-back move, that enemy unit must use the desperate escape mode. If that enemy unit is battle-shocked, -1 from those hazard rolls."
+    }
+   ],
+   "composition": [
+    "1 Clanblade model"
+   ],
+   "options": [],
+   "points": [
+    {
+     "description": "1 model",
+     "cost": "70",
+     "variant": "1 model",
+     "tier_min": null,
+     "tier_max": null,
+     "models": 1
+    }
+   ],
+   "keywords": [
+    "Mounted",
+    "Aeldari",
+    "Character",
+    "Exodite",
+    "Mobile"
+   ],
+   "faction_keywords": [
+    "Asuryani"
+   ],
+   "can_lead": [
+    "000004229"
+   ],
+   "is_character": true,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false,
+   "is_leader": true,
+   "can_lead_entries": [
+    {
+     "name": "Dragon Knights",
+     "chapter": ""
+    }
+   ],
+   "attach_type": "leader",
+   "is_legends": false,
+   "has_order_tiers": false,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false,
+   "stock_weapons": [
+    "Drakesteed Fangs and Talons",
+    "Moonblades",
+    "Solar Carbine"
+   ],
+   "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
   },
@@ -5192,6 +5365,172 @@
    "requires_detachment": ""
   },
   {
+   "id": "000004229",
+   "name": "Dragon Knights",
+   "role": "Other",
+   "legend": "",
+   "loadout": "<b>Every model is equipped with:</b> 1 Drakesteed Fangs and Talons; 1 Laser Lance; 1 Solar Carbine.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Dragon Knights",
+     "M": "10\"",
+     "T": "5",
+     "Sv": "4+",
+     "inv_sv": "",
+     "inv_sv_descr": "",
+     "W": "4",
+     "Ld": "7+",
+     "OC": "2",
+     "base_size": "75x42mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Laser Lance",
+     "type": "Ranged",
+     "range": "6",
+     "A": "1",
+     "BS_WS": "3",
+     "S": "6",
+     "AP": "-2",
+     "D": "3",
+     "description": "assault"
+    },
+    {
+     "name": "Solar Carbine",
+     "type": "Ranged",
+     "range": "18",
+     "A": "2",
+     "BS_WS": "3",
+     "S": "4",
+     "AP": "0",
+     "D": "1",
+     "description": "rapid fire 2"
+    },
+    {
+     "name": "Drakesteed Fangs and Talons",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "3",
+     "BS_WS": "3",
+     "S": "5",
+     "AP": "-1",
+     "D": "1",
+     "description": "extra attacks"
+    },
+    {
+     "name": "Laser Lance",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "3",
+     "BS_WS": "3",
+     "S": "6",
+     "AP": "-2",
+     "D": "3",
+     "description": "lance"
+    }
+   ],
+   "abilities": [
+    {
+     "name": "Battle Focus",
+     "type": "Faction",
+     "parameter": "",
+     "description": "<div class=\"Columns2\"><div class=\"BreakInsideAvoid\">If your Army Faction is Asuryani, at the start of the battle round, you receive a number of Battle Focus tokens based on the battle size, as shown in the table below.<br><br><div class=\"BreakInsideAvoid\"  style=\"\"\"><table width=\"0\" border=\"0\" bordercolor=\"#888\" cellpadding=\"4\" cellspacing=\"0\" style=\"border-collapse:collapse;border-width:0px\"><tbody><tr><td><table class=\" customTable tablefont\" border=\"1\" bordercolor=\"#888\" cellpadding=\"4\" style=\"border-collapse:collapse;border-color:#888888;border-width:0px\"><tbody><tr><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;background-color:rgb(22,105,114);color:rgb(255,255,255);text-align:left;vertical-align:middle;font-size:22px;width:240px;height:0px;\"><b>BATTLE SIZE</b></td><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;background-color:rgb(22,105,114);color:rgb(255,255,255);text-align:center;vertical-align:middle;font-size:22px;width:240px;height:0px;\"><b>BATTLE FOCUS TOKENS</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;text-align:left;vertical-align:middle;font-size:18px;width:240px;height:0px;\">Incursion</td><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;text-align:center;vertical-align:middle;font-size:18px;width:240px;height:0px;\"><b>2</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;text-align:left;vertical-align:middle;font-size:18px;width:240px;height:0px;\">Strike Force</td><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;text-align:center;vertical-align:middle;font-size:18px;width:240px;height:0px;\"><b>4</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:none none dotted none;text-align:left;vertical-align:middle;font-size:18px;width:240px;height:0px;\">Onslaught</td><td style=\"border-width:1px 1px 1px 1px;border-style:none none dotted none;text-align:center;vertical-align:middle;font-size:18px;width:240px;height:0px;\"><b>6</b></td></tr></tbody></table></td></tr></tbody></table></div><br></div>Each time one of the triggers shown in the Agile Manoeuvres section below occurs, you can spend one Battle Focus token to enable the relevant eligible unit to perform that Agile Manoeuvre. A unit is eligible to perform an Agile Manoeuvre if it has this ability and has not already performed an Agile Manoeuvre in the same phase. Unless otherwise stated, you cannot trigger the same Agile Manoeuvre more than once per phase. At the end of the battle round, all unspent Battle Focus tokens are lost.</div><br><div style=\"text-align:center; font-family: 'ConduitITC', arial; font-size: 2em;\">AGILE MANOEUVRES</div><div class=\"Columns2\"><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">SWIFT AS THE WIND</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible unit from your army is selected to make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span></span>, <span class=\"tooltip00010\" data-tooltip-content=\"#tooltip_content00010\"><span class=\"tt kwbu\">Advance</span></span> or <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">Fall</span> <span class=\"tt kwbu\">Back</span> <span class=\"tt kwbu\">move</span></span>. You can trigger this Agile Manoeuvre more than once per phase (provided a different unit performs it each time).<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the phase, add 2\" to the Move characteristic of models in that unit.</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">FLITTING SHADOWS</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeCharge\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible unit from your army is selected to make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span></span>, <span class=\"tooltip00010\" data-tooltip-content=\"#tooltip_content00010\"><span class=\"tt kwbu\">Advance</span></span> or <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">Fall</span> <span class=\"tt kwbu\">Back</span> <span class=\"tt kwbu\">move</span></span>, is set up on the battlefield, or <span class=\"tooltip00041\" data-tooltip-content=\"#tooltip_content00041\"><span class=\"tt kwbu\">declares</span> <span class=\"tt kwbu\">a</span> <span class=\"tt kwbu\">charge</span></span>.<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the turn, enemy units cannot use the <span class=\"tooltip00053\" data-tooltip-content=\"#tooltip_content00053\"><span class=\"tt kwbu\">Fire</span> <span class=\"tt kwbu\">Overwatch</span></span> Stratagem to shoot at that unit.</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">STAR ENGINES</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible <span class=\"tooltip00054\" data-tooltip-content=\"#tooltip_content00054\" data-tooltip-anchor=\"#tooltip_content00054\"><span class=\"kwb kwbu\">VEHICLE</span></span> unit from your army is selected to make an <span class=\"tooltip00010\" data-tooltip-content=\"#tooltip_content00010\"><span class=\"tt kwbu\">Advance</span> <span class=\"tt kwbu\">move</span></span>.<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the turn, Ranged weapons equipped by this unit have the <span class=\"kwb2 bluefont\"><span class=\"tooltip00033\" data-tooltip-content=\"#tooltip_content00033\"><span class=\"tt kwbu\">[ASSAULT]</span></span></span> ability.</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">SUDDEN STRIKE</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeFight\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible unit from your army is selected to fight.<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the phase, each time a model in that unit makes a <span class=\"tooltip00042\" data-tooltip-content=\"#tooltip_content00042\"><span class=\"tt kwbu\">Pile-in</span></span> or <span class=\"tooltip00043\" data-tooltip-content=\"#tooltip_content00043\"><span class=\"tt kwbu\">Consolidation</span> <span class=\"tt kwbu\">move</span></span>, it can move up to 6\" instead of up to 3\".</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">OPPORTUNITY SEIZED</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an enemy unit ends a <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">Fall</span> <span class=\"tt kwbu\">Back</span> <span class=\"tt kwbu\">move</span></span>.<br><br><span class=\"aeText\">EFFECT:</span> One eligible unit from your army (excluding <span class=\"tooltip00055\" data-tooltip-content=\"#tooltip_content00055\" data-tooltip-anchor=\"#tooltip_content00055\"><span class=\"kwb kwbu\">TITANIC</span></span> units) that started the phase within <span class=\"tooltip00038\" data-tooltip-content=\"#tooltip_content00038\"><span class=\"tt kwbu\">Engagement</span> <span class=\"tt kwbu\">Range</span></span> of that enemy unit can make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span> <span class=\"tt kwbu\">move</span></span> of up to D6+1\".</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">FADE BACK</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeShooting\"></div></div></div><span class=\"aeText\">TRIGGER:</span> In your opponent’s <a href=\"/wh40k10ed/the-rules/core-rules/#SHOOTING-PHASE\">Shooting phase</a>, just after an enemy unit has shot.<br><br><span class=\"aeText\">EFFECT:</span> One eligible unit from your army (excluding <span class=\"tooltip00055\" data-tooltip-content=\"#tooltip_content00055\" data-tooltip-anchor=\"#tooltip_content00055\"><span class=\"kwb kwbu\">TITANIC</span></span> units) that was hit by one or more of those attacks can make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span> <span class=\"tt kwbu\">move</span></span> of up to D6+1\".</p></td></tr></tbody></tbody></table></div></div>"
+    },
+    {
+     "name": "On the Hunt",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "When this unit is selected to make a fall-back move, that fall-back move does not prevent this unit from being eligible to shoot and eligible to declare a charge."
+    },
+    {
+     "name": "Agile Reach",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "When this unit is selected to fight, melee weapons equipped by unengaged models in this unit that are within 3\" of an enemy unit that is engaged with this unit can target that enemy unit."
+    },
+    {
+     "name": "Drakolithe",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, per token. When an enemy unit ends a move within 8\" of this unit, if this unit is unengaged or if that enemy unit ended that move engaged with this unit, you can use this ability. If you do, roll one D6: on a 3+, that enemy unit suffers 1 mortal wound. Place one Drakolithe token next to the unit for each Drakolithe the unit is equipped with, removing one each time this ability is used."
+    }
+   ],
+   "composition": [
+    "1 Dragon Knight Leader model",
+    "2-5 Dragon Knight models"
+   ],
+   "options": [
+    "For every 3 models in this unit, this unit can be equipped with 2 Drakolithe."
+   ],
+   "points": [
+    {
+     "description": "3 models",
+     "cost": "90",
+     "variant": "3 models",
+     "tier_min": null,
+     "tier_max": null,
+     "models": 3
+    },
+    {
+     "description": "6 models",
+     "cost": "180",
+     "variant": "6 models",
+     "tier_min": null,
+     "tier_max": null,
+     "models": 6
+    }
+   ],
+   "keywords": [
+    "Mounted",
+    "Aeldari",
+    "Exodite",
+    "Mobile"
+   ],
+   "faction_keywords": [
+    "Asuryani"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false,
+   "is_leader": false,
+   "can_lead_entries": [],
+   "attach_type": "",
+   "is_legends": false,
+   "has_order_tiers": false,
+   "model_min": 3,
+   "model_max": 6,
+   "countable": true,
+   "stock_weapons": [
+    "Drakesteed Fangs and Talons",
+    "Laser Lance",
+    "Solar Carbine"
+   ],
+   "weapon_options": [
+    {
+     "text": "For every 3 models in this unit, this unit can be equipped with 2 Drakolithe.",
+     "cost": 0,
+     "type": "wargear",
+     "limit": {
+      "kind": "fixed",
+      "max": 2
+     },
+     "base": "",
+     "model": "",
+     "grants": []
+    }
+   ],
+   "chapter": "",
+   "requires_detachment": ""
+  },
+  {
    "id": "000000568",
    "name": "Eldrad Ulthran",
    "role": "Characters",
@@ -8374,6 +8713,150 @@
      "grants": []
     }
    ],
+   "chapter": "",
+   "requires_detachment": ""
+  },
+  {
+   "id": "000004230",
+   "name": "Leystalker",
+   "role": "Characters",
+   "legend": "",
+   "loadout": "<b>This model is equipped with:</b> 2 Drakolithe; 1 Drakesteed Fangs and Talons; 1 Long Rifle; 1 Hunting Blades.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Leystalker",
+     "M": "10\"",
+     "T": "5",
+     "Sv": "4+",
+     "inv_sv": "",
+     "inv_sv_descr": "",
+     "W": "4",
+     "Ld": "7+",
+     "OC": "2",
+     "base_size": "75x42mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Long Rifle",
+     "type": "Ranged",
+     "range": "36",
+     "A": "2",
+     "BS_WS": "2",
+     "S": "6",
+     "AP": "-2",
+     "D": "3",
+     "description": "devastating wounds: non-monster/vehicle, precision"
+    },
+    {
+     "name": "Drakesteed Fangs and Talons",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "3",
+     "BS_WS": "3",
+     "S": "5",
+     "AP": "-1",
+     "D": "1",
+     "description": "extra attacks"
+    },
+    {
+     "name": "Hunting Blades",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "2",
+     "BS_WS": "3",
+     "S": "3",
+     "AP": "-1",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "Lone Operative",
+     "type": "Core",
+     "parameter": "",
+     "description": "Unless part of an Attached unit (see <span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">Leader</span></span>), this unit can only be selected as the target of a ranged attack if the attacking model is within 12\"."
+    },
+    {
+     "name": "Scouts",
+     "type": "Core",
+     "parameter": "9\"",
+     "description": "Some units have ‘Scouts x\"’ listed in their abilities. If every model in a unit has this ability, then at the start of the first battle round, before the first turn begins, it can make a Normal move of up to x\", with the exception that, while making that move, the distance moved by each model in that unit can be greater than that model's Move characteristic, as long as it is not greater than x\".<br><br><span class=\"kwb\">DEDICATED</span> <span class=\"kwb\">TRANSPORT</span> models can make use of any Scouts x\" ability listed in their abilities, or a Scouts x\" ability that a unit that starts the battle embarked within that <span class=\"kwb\">DEDICATED</span> <span class=\"kwb\">TRANSPORT</span> model has (provided only models with this ability are embarked within that <span class=\"kwb\">DEDICATED</span> <span class=\"kwb\">TRANSPORT</span> model), regardless of how that embarked unit gained this ability (e.g. listed in their abilities, conferred by an Enhancement or by an <span class=\"tooltip00015\" data-tooltip-content=\"#tooltip_content00015\"><span class=\"tt kwbu\">attached</span></span> <span class=\"kwb\">CHARACTER</span>, etc.).<br><br>A unit that moves using this ability must end that move more than 9\" horizontally away from all enemy models. If both players have units that can do this, the player who is taking the first turn moves their units first.<br><br><div class=\"redExample\"><b>Example:</b> A unit has the Scouts 6\" ability. At the start of the first battle round, the controlling player can make a Normal move with that unit of up to 6\".</div><br><div class=\"BreakInsideAvoid frameLight Corner14\" style=\"\"><ul class=\"redSquare\"><li><b>Scouts x\":</b> Unit can make a Normal move of up to x\" before the first turn begins.</li><li>If embarked in a <span class=\"kwb\">DEDICATED</span> <span class=\"kwb\">TRANSPORT</span>, that <span class=\"kwb\">DEDICATED</span> <span class=\"kwb\">TRANSPORT</span> can make this move instead.</li><li>Must end this move more than 9\" horizontally away from all enemy models.</li></ul></div>"
+    },
+    {
+     "name": "Stealth",
+     "type": "Core",
+     "parameter": "",
+     "description": "If every model in a unit has this ability, then each time a ranged attack is made against it, subtract 1 from that attack’s <span class=\"tooltip00017\" data-tooltip-content=\"#tooltip_content00017\"><span class=\"tt kwbu\">Hit</span> <span class=\"tt kwbu\">roll</span></span>."
+    },
+    {
+     "name": "Battle Focus",
+     "type": "Faction",
+     "parameter": "",
+     "description": "<div class=\"Columns2\"><div class=\"BreakInsideAvoid\">If your Army Faction is Asuryani, at the start of the battle round, you receive a number of Battle Focus tokens based on the battle size, as shown in the table below.<br><br><div class=\"BreakInsideAvoid\"  style=\"\"\"><table width=\"0\" border=\"0\" bordercolor=\"#888\" cellpadding=\"4\" cellspacing=\"0\" style=\"border-collapse:collapse;border-width:0px\"><tbody><tr><td><table class=\" customTable tablefont\" border=\"1\" bordercolor=\"#888\" cellpadding=\"4\" style=\"border-collapse:collapse;border-color:#888888;border-width:0px\"><tbody><tr><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;background-color:rgb(22,105,114);color:rgb(255,255,255);text-align:left;vertical-align:middle;font-size:22px;width:240px;height:0px;\"><b>BATTLE SIZE</b></td><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;background-color:rgb(22,105,114);color:rgb(255,255,255);text-align:center;vertical-align:middle;font-size:22px;width:240px;height:0px;\"><b>BATTLE FOCUS TOKENS</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;text-align:left;vertical-align:middle;font-size:18px;width:240px;height:0px;\">Incursion</td><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;text-align:center;vertical-align:middle;font-size:18px;width:240px;height:0px;\"><b>2</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;text-align:left;vertical-align:middle;font-size:18px;width:240px;height:0px;\">Strike Force</td><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;text-align:center;vertical-align:middle;font-size:18px;width:240px;height:0px;\"><b>4</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:none none dotted none;text-align:left;vertical-align:middle;font-size:18px;width:240px;height:0px;\">Onslaught</td><td style=\"border-width:1px 1px 1px 1px;border-style:none none dotted none;text-align:center;vertical-align:middle;font-size:18px;width:240px;height:0px;\"><b>6</b></td></tr></tbody></table></td></tr></tbody></table></div><br></div>Each time one of the triggers shown in the Agile Manoeuvres section below occurs, you can spend one Battle Focus token to enable the relevant eligible unit to perform that Agile Manoeuvre. A unit is eligible to perform an Agile Manoeuvre if it has this ability and has not already performed an Agile Manoeuvre in the same phase. Unless otherwise stated, you cannot trigger the same Agile Manoeuvre more than once per phase. At the end of the battle round, all unspent Battle Focus tokens are lost.</div><br><div style=\"text-align:center; font-family: 'ConduitITC', arial; font-size: 2em;\">AGILE MANOEUVRES</div><div class=\"Columns2\"><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">SWIFT AS THE WIND</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible unit from your army is selected to make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span></span>, <span class=\"tooltip00010\" data-tooltip-content=\"#tooltip_content00010\"><span class=\"tt kwbu\">Advance</span></span> or <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">Fall</span> <span class=\"tt kwbu\">Back</span> <span class=\"tt kwbu\">move</span></span>. You can trigger this Agile Manoeuvre more than once per phase (provided a different unit performs it each time).<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the phase, add 2\" to the Move characteristic of models in that unit.</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">FLITTING SHADOWS</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeCharge\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible unit from your army is selected to make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span></span>, <span class=\"tooltip00010\" data-tooltip-content=\"#tooltip_content00010\"><span class=\"tt kwbu\">Advance</span></span> or <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">Fall</span> <span class=\"tt kwbu\">Back</span> <span class=\"tt kwbu\">move</span></span>, is set up on the battlefield, or <span class=\"tooltip00041\" data-tooltip-content=\"#tooltip_content00041\"><span class=\"tt kwbu\">declares</span> <span class=\"tt kwbu\">a</span> <span class=\"tt kwbu\">charge</span></span>.<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the turn, enemy units cannot use the <span class=\"tooltip00053\" data-tooltip-content=\"#tooltip_content00053\"><span class=\"tt kwbu\">Fire</span> <span class=\"tt kwbu\">Overwatch</span></span> Stratagem to shoot at that unit.</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">STAR ENGINES</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible <span class=\"tooltip00054\" data-tooltip-content=\"#tooltip_content00054\" data-tooltip-anchor=\"#tooltip_content00054\"><span class=\"kwb kwbu\">VEHICLE</span></span> unit from your army is selected to make an <span class=\"tooltip00010\" data-tooltip-content=\"#tooltip_content00010\"><span class=\"tt kwbu\">Advance</span> <span class=\"tt kwbu\">move</span></span>.<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the turn, Ranged weapons equipped by this unit have the <span class=\"kwb2 bluefont\"><span class=\"tooltip00033\" data-tooltip-content=\"#tooltip_content00033\"><span class=\"tt kwbu\">[ASSAULT]</span></span></span> ability.</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">SUDDEN STRIKE</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeFight\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible unit from your army is selected to fight.<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the phase, each time a model in that unit makes a <span class=\"tooltip00042\" data-tooltip-content=\"#tooltip_content00042\"><span class=\"tt kwbu\">Pile-in</span></span> or <span class=\"tooltip00043\" data-tooltip-content=\"#tooltip_content00043\"><span class=\"tt kwbu\">Consolidation</span> <span class=\"tt kwbu\">move</span></span>, it can move up to 6\" instead of up to 3\".</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">OPPORTUNITY SEIZED</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an enemy unit ends a <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">Fall</span> <span class=\"tt kwbu\">Back</span> <span class=\"tt kwbu\">move</span></span>.<br><br><span class=\"aeText\">EFFECT:</span> One eligible unit from your army (excluding <span class=\"tooltip00055\" data-tooltip-content=\"#tooltip_content00055\" data-tooltip-anchor=\"#tooltip_content00055\"><span class=\"kwb kwbu\">TITANIC</span></span> units) that started the phase within <span class=\"tooltip00038\" data-tooltip-content=\"#tooltip_content00038\"><span class=\"tt kwbu\">Engagement</span> <span class=\"tt kwbu\">Range</span></span> of that enemy unit can make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span> <span class=\"tt kwbu\">move</span></span> of up to D6+1\".</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">FADE BACK</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeShooting\"></div></div></div><span class=\"aeText\">TRIGGER:</span> In your opponent’s <a href=\"/wh40k10ed/the-rules/core-rules/#SHOOTING-PHASE\">Shooting phase</a>, just after an enemy unit has shot.<br><br><span class=\"aeText\">EFFECT:</span> One eligible unit from your army (excluding <span class=\"tooltip00055\" data-tooltip-content=\"#tooltip_content00055\" data-tooltip-anchor=\"#tooltip_content00055\"><span class=\"kwb kwbu\">TITANIC</span></span> units) that was hit by one or more of those attacks can make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span> <span class=\"tt kwbu\">move</span></span> of up to D6+1\".</p></td></tr></tbody></tbody></table></div></div>"
+    },
+    {
+     "name": "Panicked Quarry",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "In your Shooting phase, when this unit has shot, select one enemy unit (excluding MONSTER/VEHICLE units) hit by those attacks. That enemy unit makes a battle-shock roll, with -1 to that battle-shock roll."
+    },
+    {
+     "name": "Drakolithe",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "Once per battle, per token. When an enemy unit ends a move within 8\" of this unit, if this unit is unengaged or if that enemy unit ended that move engaged with this unit, you can use this ability. If you do, roll one D6: on a 3+, that enemy unit suffers 1 mortal wound. Place one Drakolithe token next to the unit for each Drakolithe the unit is equipped with, removing one each time this ability is used."
+    }
+   ],
+   "composition": [
+    "1 Leystalker model"
+   ],
+   "options": [],
+   "points": [
+    {
+     "description": "1 model",
+     "cost": "80",
+     "variant": "1 model",
+     "tier_min": null,
+     "tier_max": null,
+     "models": 1
+    }
+   ],
+   "keywords": [
+    "Mounted",
+    "Aeldari",
+    "Character",
+    "Exodite",
+    "Mobile"
+   ],
+   "faction_keywords": [
+    "Asuryani"
+   ],
+   "can_lead": [],
+   "is_character": true,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false,
+   "is_leader": false,
+   "can_lead_entries": [],
+   "attach_type": "",
+   "is_legends": false,
+   "has_order_tiers": false,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false,
+   "stock_weapons": [
+    "Drakesteed Fangs and Talons",
+    "Hunting Blades",
+    "Long Rifle"
+   ],
+   "weapon_options": [],
    "chapter": "",
    "requires_detachment": ""
   },
@@ -12519,6 +13002,164 @@
    "requires_detachment": ""
   },
   {
+   "id": "000004231",
+   "name": "Stonesinger",
+   "role": "Characters",
+   "legend": "",
+   "loadout": "<b>This model is equipped with:</b> 1 Drakesteed Fangs and Talons; 1 Song of Waning; 1 Solar Carbine; 1 Stone Stave; 1 Venomcrest Spit.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Stonesinger",
+     "M": "10\"",
+     "T": "5",
+     "Sv": "4+",
+     "inv_sv": "",
+     "inv_sv_descr": "",
+     "W": "4",
+     "Ld": "7+",
+     "OC": "2",
+     "base_size": "75x42mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Song of Waning",
+     "type": "Ranged",
+     "range": "24",
+     "A": "3",
+     "BS_WS": "3",
+     "S": "4",
+     "AP": "-2",
+     "D": "3",
+     "description": "anti-monster/vehicle 3+, psychic"
+    },
+    {
+     "name": "Solar Carbine",
+     "type": "Ranged",
+     "range": "18",
+     "A": "2",
+     "BS_WS": "3",
+     "S": "4",
+     "AP": "0",
+     "D": "1",
+     "description": "rapid fire 2"
+    },
+    {
+     "name": "Venomcrest Spit",
+     "type": "Ranged",
+     "range": "12",
+     "A": "3",
+     "BS_WS": "6",
+     "S": "3",
+     "AP": "-2",
+     "D": "2",
+     "description": "anti-non-monster/vehicle 3+, blast 1, torrent"
+    },
+    {
+     "name": "Drakesteed Fangs and Talons",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "3",
+     "BS_WS": "3",
+     "S": "5",
+     "AP": "-1",
+     "D": "1",
+     "description": "extra attacks"
+    },
+    {
+     "name": "Stone Stave",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "3",
+     "BS_WS": "3",
+     "S": "3",
+     "AP": "-1",
+     "D": "2",
+     "description": "anti-non-monster/vehicle 2+, psychic"
+    }
+   ],
+   "abilities": [
+    {
+     "name": "Support",
+     "type": "Core",
+     "parameter": "",
+     "description": "This unit cannot be included in your army as a unit in its own right — it must be attached to a Bodyguard unit as part of an Attached unit during the Muster Armies step."
+    },
+    {
+     "name": "Battle Focus",
+     "type": "Faction",
+     "parameter": "",
+     "description": "<div class=\"Columns2\"><div class=\"BreakInsideAvoid\">If your Army Faction is Asuryani, at the start of the battle round, you receive a number of Battle Focus tokens based on the battle size, as shown in the table below.<br><br><div class=\"BreakInsideAvoid\"  style=\"\"\"><table width=\"0\" border=\"0\" bordercolor=\"#888\" cellpadding=\"4\" cellspacing=\"0\" style=\"border-collapse:collapse;border-width:0px\"><tbody><tr><td><table class=\" customTable tablefont\" border=\"1\" bordercolor=\"#888\" cellpadding=\"4\" style=\"border-collapse:collapse;border-color:#888888;border-width:0px\"><tbody><tr><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;background-color:rgb(22,105,114);color:rgb(255,255,255);text-align:left;vertical-align:middle;font-size:22px;width:240px;height:0px;\"><b>BATTLE SIZE</b></td><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;background-color:rgb(22,105,114);color:rgb(255,255,255);text-align:center;vertical-align:middle;font-size:22px;width:240px;height:0px;\"><b>BATTLE FOCUS TOKENS</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;text-align:left;vertical-align:middle;font-size:18px;width:240px;height:0px;\">Incursion</td><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;text-align:center;vertical-align:middle;font-size:18px;width:240px;height:0px;\"><b>2</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;text-align:left;vertical-align:middle;font-size:18px;width:240px;height:0px;\">Strike Force</td><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;text-align:center;vertical-align:middle;font-size:18px;width:240px;height:0px;\"><b>4</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:none none dotted none;text-align:left;vertical-align:middle;font-size:18px;width:240px;height:0px;\">Onslaught</td><td style=\"border-width:1px 1px 1px 1px;border-style:none none dotted none;text-align:center;vertical-align:middle;font-size:18px;width:240px;height:0px;\"><b>6</b></td></tr></tbody></table></td></tr></tbody></table></div><br></div>Each time one of the triggers shown in the Agile Manoeuvres section below occurs, you can spend one Battle Focus token to enable the relevant eligible unit to perform that Agile Manoeuvre. A unit is eligible to perform an Agile Manoeuvre if it has this ability and has not already performed an Agile Manoeuvre in the same phase. Unless otherwise stated, you cannot trigger the same Agile Manoeuvre more than once per phase. At the end of the battle round, all unspent Battle Focus tokens are lost.</div><br><div style=\"text-align:center; font-family: 'ConduitITC', arial; font-size: 2em;\">AGILE MANOEUVRES</div><div class=\"Columns2\"><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">SWIFT AS THE WIND</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible unit from your army is selected to make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span></span>, <span class=\"tooltip00010\" data-tooltip-content=\"#tooltip_content00010\"><span class=\"tt kwbu\">Advance</span></span> or <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">Fall</span> <span class=\"tt kwbu\">Back</span> <span class=\"tt kwbu\">move</span></span>. You can trigger this Agile Manoeuvre more than once per phase (provided a different unit performs it each time).<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the phase, add 2\" to the Move characteristic of models in that unit.</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">FLITTING SHADOWS</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeCharge\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible unit from your army is selected to make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span></span>, <span class=\"tooltip00010\" data-tooltip-content=\"#tooltip_content00010\"><span class=\"tt kwbu\">Advance</span></span> or <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">Fall</span> <span class=\"tt kwbu\">Back</span> <span class=\"tt kwbu\">move</span></span>, is set up on the battlefield, or <span class=\"tooltip00041\" data-tooltip-content=\"#tooltip_content00041\"><span class=\"tt kwbu\">declares</span> <span class=\"tt kwbu\">a</span> <span class=\"tt kwbu\">charge</span></span>.<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the turn, enemy units cannot use the <span class=\"tooltip00053\" data-tooltip-content=\"#tooltip_content00053\"><span class=\"tt kwbu\">Fire</span> <span class=\"tt kwbu\">Overwatch</span></span> Stratagem to shoot at that unit.</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">STAR ENGINES</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible <span class=\"tooltip00054\" data-tooltip-content=\"#tooltip_content00054\" data-tooltip-anchor=\"#tooltip_content00054\"><span class=\"kwb kwbu\">VEHICLE</span></span> unit from your army is selected to make an <span class=\"tooltip00010\" data-tooltip-content=\"#tooltip_content00010\"><span class=\"tt kwbu\">Advance</span> <span class=\"tt kwbu\">move</span></span>.<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the turn, Ranged weapons equipped by this unit have the <span class=\"kwb2 bluefont\"><span class=\"tooltip00033\" data-tooltip-content=\"#tooltip_content00033\"><span class=\"tt kwbu\">[ASSAULT]</span></span></span> ability.</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">SUDDEN STRIKE</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeFight\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an eligible unit from your army is selected to fight.<br><br><span class=\"aeText\">EFFECT:</span> Until the end of the phase, each time a model in that unit makes a <span class=\"tooltip00042\" data-tooltip-content=\"#tooltip_content00042\"><span class=\"tt kwbu\">Pile-in</span></span> or <span class=\"tooltip00043\" data-tooltip-content=\"#tooltip_content00043\"><span class=\"tt kwbu\">Consolidation</span> <span class=\"tt kwbu\">move</span></span>, it can move up to 6\" instead of up to 3\".</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">OPPORTUNITY SEIZED</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeMovement\"></div></div></div><span class=\"aeText\">TRIGGER:</span> When an enemy unit ends a <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">Fall</span> <span class=\"tt kwbu\">Back</span> <span class=\"tt kwbu\">move</span></span>.<br><br><span class=\"aeText\">EFFECT:</span> One eligible unit from your army (excluding <span class=\"tooltip00055\" data-tooltip-content=\"#tooltip_content00055\" data-tooltip-anchor=\"#tooltip_content00055\"><span class=\"kwb kwbu\">TITANIC</span></span> units) that started the phase within <span class=\"tooltip00038\" data-tooltip-content=\"#tooltip_content00038\"><span class=\"tt kwbu\">Engagement</span> <span class=\"tt kwbu\">Range</span></span> of that enemy unit can make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span> <span class=\"tt kwbu\">move</span></span> of up to D6+1\".</p></td></tr></tbody></tbody></table></div><div class=\"BreakInsideAvoid\"><table max-width=\"480px\" border=\"0\" cellpadding=\"3\" style=\"border-width:0px\"><tbody><tbody><tr><td class=\"td_w\"><p style=\"display:block\" class=\"impact18\">FADE BACK</p><p><div class=\"redDiamondLeft\"><div class=\"bluCircle2\"><div class=\"aeShooting\"></div></div></div><span class=\"aeText\">TRIGGER:</span> In your opponent’s <a href=\"/wh40k10ed/the-rules/core-rules/#SHOOTING-PHASE\">Shooting phase</a>, just after an enemy unit has shot.<br><br><span class=\"aeText\">EFFECT:</span> One eligible unit from your army (excluding <span class=\"tooltip00055\" data-tooltip-content=\"#tooltip_content00055\" data-tooltip-anchor=\"#tooltip_content00055\"><span class=\"kwb kwbu\">TITANIC</span></span> units) that was hit by one or more of those attacks can make a <span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Normal</span> <span class=\"tt kwbu\">move</span></span> of up to D6+1\".</p></td></tr></tbody></tbody></table></div></div>"
+    },
+    {
+     "name": "Elemental Ensnarement",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "At the end of your Fight phase, if this unit is not battle-shocked, you can use this ability. If you do, roll one D6: on a 1, this unit is battle-shocked. Select one visible enemy MONSTER/VEHICLE unit (excluding TITANIC units) within 18\" of this unit. That enemy unit is ensnared until the start of your next turn: while a unit is ensnared, that unit has -2\" M and cannot be pinned."
+    }
+   ],
+   "composition": [
+    "1 Stonesinger model"
+   ],
+   "options": [],
+   "points": [
+    {
+     "description": "1 model",
+     "cost": "60",
+     "variant": "1 model",
+     "tier_min": null,
+     "tier_max": null,
+     "models": 1
+    }
+   ],
+   "keywords": [
+    "Mounted",
+    "Aeldari",
+    "Character",
+    "Exodite",
+    "Mobile",
+    "Psyker"
+   ],
+   "faction_keywords": [
+    "Asuryani"
+   ],
+   "can_lead": [
+    "000004229"
+   ],
+   "is_character": true,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false,
+   "is_leader": true,
+   "can_lead_entries": [
+    {
+     "name": "Dragon Knights",
+     "chapter": ""
+    }
+   ],
+   "attach_type": "support",
+   "is_legends": false,
+   "has_order_tiers": false,
+   "model_min": 1,
+   "model_max": 1,
+   "countable": false,
+   "stock_weapons": [
+    "Drakesteed Fangs and Talons",
+    "Solar Carbine",
+    "Song of Waning",
+    "Stone Stave",
+    "Venomcrest Spit"
+   ],
+   "weapon_options": [],
+   "chapter": "",
+   "requires_detachment": ""
+  },
+  {
    "id": "000000590",
    "name": "Storm Guardians",
    "role": "Battleline",
@@ -15217,10 +15858,10 @@
    ],
    "abilities": [
     {
-     "name": "Leader",
+     "name": "Support",
      "type": "Core",
      "parameter": "",
-     "description": "Some <span class=\"kwb\">CHARACTER</span> units have ‘Leader’ listed on their datasheets. Such <span class=\"kwb\">CHARACTER</span> units are known as Leaders, and the units they can lead – known as their Bodyguard units – are listed on their datasheet.<br><br>During the Declare Battle Formations step, for each Leader in your army, if your army also includes one or more of that Leader’s Bodyguard units, you can select one of those Bodyguard units. That Leader will then attach to that Bodyguard unit for the duration of the battle and is said to be leading that unit. Each Bodyguard unit can only have one Leader attached to it.<br><br>While a Bodyguard unit contains a Leader, it is known as an Attached unit and, with the exception of rules that are triggered when units are <span class=\"tooltip00006\" data-tooltip-content=\"#tooltip_content00006\"><span class=\"tt kwbu\">destroyed</span></span>, it is treated as a single unit for all rules purposes. Each time an attack targets an Attached unit, until the attacking unit has resolved all of its attacks, you must use the Toughness characteristic of the Bodyguard models in that unit, even if a Leader in that unit has a different Toughness characteristic. Each time an attack sucessfully wounds an Attached unit, that attack cannot be allocated to a <span class=\"kwb\">CHARACTER</span> model in that unit, even if that <span class=\"kwb\">CHARACTER</span> model has lost one or more wounds or has already had attacks allocated to it this phase. As soon as the last Bodyguard model in an Attached unit has been destroyed, any attacks made against that unit that have yet to be allocated can then be allocated to <span class=\"kwb\">CHARACTER</span> models in that unit.<br><br>Each time the last model in a Bodyguard unit is destroyed, each <span class=\"kwb\">CHARACTER</span> unit that is part of that Attached unit is no longer part of an Attached unit. It becomes a separate unit, with its original Starting Strength. If this happens as the result of an attack, they become separate units after the attacking unit has resolved all of its attacks.<br><br>Each time the last model in a <span class=\"kwb\">CHARACTER</span> unit that is attached to a Bodyguard unit is destroyed and there is not another <span class=\"kwb\">CHARACTER</span> unit attached, that Attached unit’s Bodyguard unit is no longer part of an Attached unit. It becomes a separate unit, with its original Starting Strength. If this happens as the result of an attack, they become separate units after the attacking unit has resolved all of its attacks. <br><br>Each time a unit that is part of an Attached unit is destroyed, it does not have the keywords of any other units that make up that Attached unit (unless it has those keywords on its own datasheet) for the purposes of any rules that would be triggered when that unit is destroyed.<br><br><div class=\"redExample\"><b>Example:</b> <i>If you only destroy the Bodyguard unit that is part of an Attached unit, you have not destroyed a <span class=\"kwb\">CHARACTER</span> unit. If you only destroy the <span class=\"kwb\">CHARACTER</span> unit that is part of an Attached unit, or if you destroy the whole Attached unit, you have destroyed one <span class=\"kwb\">CHARACTER</span> unit.</i></div><br><div class=\"BreakInsideAvoid frameLight Corner14\" style=\"\"><ul class=\"redSquare\"><li>Before the battle, <span class=\"kwb\">CHARACTER</span> units with the Leader ability can be attached to one of their Bodyguard units to form an Attached unit.</li><li>Attached units can only contain one Leader.</li><li>Attacks cannot be allocated to <span class=\"kwb\">CHARACTER</span> models in Attached units.</li></ul></div>"
+     "description": "This unit cannot be included in your army as a unit in its own right — it must be attached to a Bodyguard unit as part of an Attached unit during the Muster Armies step."
     },
     {
      "name": "Battle Focus",
