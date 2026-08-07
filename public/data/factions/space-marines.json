@@ -22,6 +22,15 @@
   ],
   "changelog": [
    {
+    "date": "2026-08-08",
+    "items": [
+     "Aggiunto per intero il distaccamento **Vengeful Hosts** (era già annotato \"aggiunto\" in una sessione precedente, ma senza dati strutturati: regola detachment Imperator Unleashed, enhancement Avenging Angel (20pt) e Orksbane (20pt), 3 stratagemmi — DP/Force Disposition già presenti in waha_build, presi da lì).",
+     "Rimossa la datasheet duplicata **Eradicator Squad with Heavy Bolters** (variante di loadout ormai consolidata nella sola Eradicator Squad base, confermato dall'export CSV ufficiale Wahapedia aggiornato). Documento gratuito trovato cercando aggiornamenti codex — quasi tutte le correzioni elencate erano già applicate nei nostri dati da una sessione precedente (Forged in Battle, Storm of Fire, Ancient Fury, Uriel Ventris, Master of Deceit, Lieutenant leader footer, Lieutenant in Reiver Armour AP, Company Heroes keywords, Desolation Squad, bullet Black Templars/Space Wolves). Trovate e corrette le uniche due voci effettivamente disallineate:",
+     "**Kor'sarro Khan**, lista \"can lead\": ridotta dalle 18 unità presenti (troppo ampia, probabile residuo di un elenco più generico) alle 6 corrette da FAQ: Assault Intercessor Squad, Bladeguard Veteran Squad, Company Heroes, Intercessor Squad, Sternguard Veteran Squad, Tactical Squad.",
+     "**Space Marine Chapters** (regola d'esercito, voce dati non ancora collegata a nessuna datasheet): rimosso il bullet Deathwatch obsoleto (limite corto e superato) rimasto duplicato accanto alla voce Deathwatch dedicata già corretta e più completa. Non applicate: le ~15 FAQ (domanda/risposta) del documento — non esiste ancora una struttura dati per le FAQ in questo progetto, restano solo nel PDF sorgente per consultazione manuale."
+    ]
+   },
+   {
     "date": "2026-07-22",
     "items": [
      "**Suppressor Squad** (3 models): 75 → 85 pts (+10).",
@@ -404,7 +413,7 @@
      "name": "Lone Operative",
      "type": "Core",
      "parameter": "",
-     "description": "Unless part of an Attached unit (see <span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">Leader</span></span>), this unit can only be selected as the target of a ranged attack if the attacking model is within 12\"."
+     "description": "Unless part of an Attached unit (see <span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">Leader</span></span>), this unit can only be selected as the target of a ranged attack if the attacking model is within 18\"."
     },
     {
      "name": "Stealth",
@@ -14162,7 +14171,7 @@
      "name": "Lone Operative",
      "type": "Core",
      "parameter": "",
-     "description": "Unless part of an Attached unit (see <span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">Leader</span></span>), this unit can only be selected as the target of a ranged attack if the attacking model is within 12\"."
+     "description": "Unless part of an Attached unit (see <span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">Leader</span></span>), this unit can only be selected as the target of a ranged attack if the attacking model is within 18\"."
     },
     {
      "name": "Oath of Moment",
@@ -25850,7 +25859,7 @@
      "name": "Lone Operative",
      "type": "Core",
      "parameter": "",
-     "description": "Unless part of an Attached unit (see <span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">Leader</span></span>), this unit can only be selected as the target of a ranged attack if the attacking model is within 12\"."
+     "description": "Unless part of an Attached unit (see <span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">Leader</span></span>), this unit can only be selected as the target of a ranged attack if the attacking model is within 18\"."
     },
     {
      "name": "Templar Vows",
@@ -35985,7 +35994,7 @@
      "name": "Lone Operative",
      "type": "Core",
      "parameter": "",
-     "description": "Unless part of an Attached unit (see <span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">Leader</span></span>), this unit can only be selected as the target of a ranged attack if the attacking model is within 12\"."
+     "description": "Unless part of an Attached unit (see <span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">Leader</span></span>), this unit can only be selected as the target of a ranged attack if the attacking model is within 18\"."
     },
     {
      "name": "Stealth",
@@ -36003,7 +36012,7 @@
      "name": "Shadowmaster",
      "type": "Datasheet",
      "parameter": "",
-     "description": "While this model is leading a unit, models in this unit cannot be targeted by ranged attacks unless the attacking model is within 12\"."
+     "description": "While this model is leading a unit, models in this unit cannot be targeted by ranged attacks unless the attacking model is within 18\"."
     },
     {
      "name": "Echo of the Ravenspire",
@@ -41767,7 +41776,7 @@
      "name": "Shrouding (Psychic)",
      "type": "Datasheet",
      "parameter": "",
-     "description": "While this model is leading a unit, models in that unit have the Stealth ability and that unit cannot be targeted by ranged attacks unless the attacking model is within 12\"."
+     "description": "While this model is leading a unit, models in that unit have the Stealth ability and that unit cannot be targeted by ranged attacks unless the attacking model is within 18\"."
     }
    ],
    "composition": [
@@ -43587,7 +43596,7 @@
      "name": "Lone Operative",
      "type": "Core",
      "parameter": "",
-     "description": "Unless part of an Attached unit (see <span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">Leader</span></span>), this unit can only be selected as the target of a ranged attack if the attacking model is within 12\"."
+     "description": "Unless part of an Attached unit (see <span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">Leader</span></span>), this unit can only be selected as the target of a ranged attack if the attacking model is within 18\"."
     },
     {
      "name": "Stealth",
@@ -54006,7 +54015,7 @@
      "name": "Concealed Positions",
      "type": "Datasheet",
      "parameter": "",
-     "description": "This unit can only be selected as the target of a ranged attack if the attacking model is within 12\"."
+     "description": "This unit can only be selected as the target of a ranged attack if the attacking model is within 18\"."
     }
    ],
    "composition": [
@@ -63665,7 +63674,7 @@
      "name": "Lone Operative",
      "type": "Core",
      "parameter": "",
-     "description": "Unless part of an Attached unit (see <span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">Leader</span></span>), this unit can only be selected as the target of a ranged attack if the attacking model is within 12\"."
+     "description": "Unless part of an Attached unit (see <span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">Leader</span></span>), this unit can only be selected as the target of a ranged attack if the attacking model is within 18\"."
     },
     {
      "name": "Oath of Moment",
