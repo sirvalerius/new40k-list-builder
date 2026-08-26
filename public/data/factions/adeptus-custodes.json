@@ -8,6 +8,15 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-08-26",
+    "items": [
+     "**Allarus Custodians**: struttura punteggio riorganizzata (2 models = 110pts, 3 models = 165pts, 5 models = 275pts, 6 models = 330pts → 2 models (1st-2nd unit) = 110pts, 3 models (1st-2nd unit) = 165pts, 5 models (1st-2nd unit) = 280pts, 6 models (1st-2nd unit) = 340pts, 2 models (3rd+ unit) = 140pts, 3 models (3rd+ unit) = 195pts, 5 models (3rd+ unit) = 310pts, 6 models (3rd+ unit) = 370pts).",
+     "**Vertus Praetors**: struttura punteggio riorganizzata (2 models = 145pts, 3 models = 215pts → 2 models (1st-2nd unit) = 145pts, 3 models (1st-2nd unit) = 215pts, 2 models (3rd+ unit) = 170pts, 3 models (3rd+ unit) = 240pts).",
+     "**Lions Of The Emperor**: Force Disposition Disruption → Take And Hold (DP: 2DP → 3DP).",
+     "**Tharanatoi Hammerblow**: Force Disposition Priority Assets → Disruption (DP: 1DP → 1DP)."
+    ]
+   },
+   {
     "date": "2026-07-22",
     "items": [
      "**Venatari Custodians**, opzione **Venatari Lance**: nuovo prezzo, 5 pts.",
@@ -479,34 +488,66 @@
    ],
    "points": [
     {
-     "description": "2 models",
+     "description": "2 models (1st-2nd unit)",
      "cost": "110",
      "variant": "2 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 2
+    },
+    {
+     "description": "3 models (1st-2nd unit)",
+     "cost": "165",
+     "variant": "3 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 3
+    },
+    {
+     "description": "5 models (1st-2nd unit)",
+     "cost": "280",
+     "variant": "5 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 5
+    },
+    {
+     "description": "6 models (1st-2nd unit)",
+     "cost": "340",
+     "variant": "6 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 6
+    },
+    {
+     "description": "2 models (3rd+ unit)",
+     "cost": "140",
+     "variant": "2 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 2
     },
     {
-     "description": "3 models",
-     "cost": "165",
+     "description": "3 models (3rd+ unit)",
+     "cost": "195",
      "variant": "3 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 3
     },
     {
-     "description": "5 models",
-     "cost": "275",
+     "description": "5 models (3rd+ unit)",
+     "cost": "310",
      "variant": "5 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 5
     },
     {
-     "description": "6 models",
-     "cost": "330",
+     "description": "6 models (3rd+ unit)",
+     "cost": "370",
      "variant": "6 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 6
     }
@@ -529,7 +570,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 2,
    "model_max": 6,
    "countable": true,
@@ -5095,18 +5136,34 @@
    ],
    "points": [
     {
-     "description": "2 models",
+     "description": "2 models (1st-2nd unit)",
      "cost": "145",
      "variant": "2 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 2
+    },
+    {
+     "description": "3 models (1st-2nd unit)",
+     "cost": "215",
+     "variant": "3 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 3
+    },
+    {
+     "description": "2 models (3rd+ unit)",
+     "cost": "170",
+     "variant": "2 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 2
     },
     {
-     "description": "3 models",
-     "cost": "215",
+     "description": "3 models (3rd+ unit)",
+     "cost": "240",
      "variant": "3 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 3
     }
@@ -5129,7 +5186,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 2,
    "model_max": 3,
    "countable": true,
@@ -5585,8 +5642,8 @@
      "description": "<b>WHEN:</b> Your Movement phase, just after an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army Falls Back.<br><br><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br><br><b>EFFECT:</b> Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
     }
    ],
-   "dp_cost": 2,
-   "force_disposition": "DISRUPTION",
+   "dp_cost": 3,
+   "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -6070,7 +6127,7 @@
     }
    ],
    "dp_cost": 1,
-   "force_disposition": "PRIORITY ASSETS",
+   "force_disposition": "DISRUPTION",
    "exclusive_tag": "LIONS",
    "restriction": "",
    "keyword_grants": [],

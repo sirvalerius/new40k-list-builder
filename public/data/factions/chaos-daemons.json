@@ -9,6 +9,27 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-08-26",
+    "items": [
+     "**Beasts Of Nurgle** (1 model): 75 → 80 pts.",
+     "**Beasts Of Nurgle** (2 models): 140 → 150 pts.",
+     "**Bloodcrushers** (6 models (1st-2nd unit)): 190 → 200 pts.",
+     "**Bloodcrushers** (3 models (3rd+ unit)): 115 → 135 pts.",
+     "**Bloodcrushers** (6 models (3rd+ unit)): 210 → 240 pts.",
+     "**Contorted Epitome**: struttura punteggio riorganizzata (1 model = 100pts → 1 model (1st-2nd unit) = 115pts, 1 model (3rd+ unit) = 125pts).",
+     "**Daemonettes** (10 models): 90 → 100 pts.",
+     "**Fiends**: struttura punteggio riorganizzata (3 models = 90pts, 6 models = 180pts → 3 models (1st-2nd unit) = 90pts, 6 models (1st-2nd unit) = 190pts, 3 models (3rd+ unit) = 105pts, 6 models (3rd+ unit) = 205pts).",
+     "**Keeper Of Secrets** (1 model (1st-2nd unit)): 255 → 265 pts.",
+     "**Keeper Of Secrets** (1 model (3rd+ unit)): 270 → 280 pts.",
+     "**Poxbringer**: struttura punteggio riorganizzata (1 model = 55pts → 1 model (1st-2nd unit) = 60pts, 1 model (3rd+ unit) = 70pts).",
+     "**Rendmaster On Blood Throne** (1 model (1st-2nd unit)): 150 → 160 pts.",
+     "**Rendmaster On Blood Throne** (1 model (3rd+ unit)): 170 → 180 pts.",
+     "**Seekers** (5 models): 80 → 85 pts.",
+     "**Skull Cannon** (1 model): 90 → 100 pts.",
+     "**Daemonic Incursion**: Force Disposition Disruption → Take And Hold (DP: 3DP → 3DP)."
+    ]
+   },
+   {
     "date": "2026-07-22",
     "items": [
      "**Beasts Of Nurgle** (1 model): 70 → 75 pts (+5).",
@@ -597,7 +618,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "75",
+     "cost": "80",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -605,7 +626,7 @@
     },
     {
      "description": "2 models",
-     "cost": "140",
+     "cost": "150",
      "variant": "2 models",
      "tier_min": null,
      "tier_max": null,
@@ -953,7 +974,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "190",
+     "cost": "200",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -961,7 +982,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "115",
+     "cost": "135",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -969,7 +990,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "210",
+     "cost": "240",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -5329,10 +5350,18 @@
    ],
    "points": [
     {
-     "description": "1 model",
-     "cost": "100",
+     "description": "1 model (1st-2nd unit)",
+     "cost": "115",
      "variant": "1 model",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 1
+    },
+    {
+     "description": "1 model (3rd+ unit)",
+     "cost": "125",
+     "variant": "1 model",
+     "tier_min": 3,
      "tier_max": null,
      "models": 1
     }
@@ -5365,7 +5394,7 @@
    ],
    "attach_type": "leader",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
    "countable": false,
@@ -6530,7 +6559,7 @@
    "points": [
     {
      "description": "10 models",
-     "cost": "90",
+     "cost": "100",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -8158,18 +8187,34 @@
    ],
    "points": [
     {
-     "description": "3 models",
+     "description": "3 models (1st-2nd unit)",
      "cost": "90",
      "variant": "3 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 3
+    },
+    {
+     "description": "6 models (1st-2nd unit)",
+     "cost": "190",
+     "variant": "6 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 6
+    },
+    {
+     "description": "3 models (3rd+ unit)",
+     "cost": "105",
+     "variant": "3 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 3
     },
     {
-     "description": "6 models",
-     "cost": "180",
+     "description": "6 models (3rd+ unit)",
+     "cost": "205",
      "variant": "6 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 6
     }
@@ -8194,7 +8239,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 3,
    "model_max": 6,
    "countable": true,
@@ -11248,7 +11293,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "255",
+     "cost": "265",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -11256,7 +11301,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "270",
+     "cost": "280",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -13929,10 +13974,18 @@
    ],
    "points": [
     {
-     "description": "1 model",
-     "cost": "55",
+     "description": "1 model (1st-2nd unit)",
+     "cost": "60",
      "variant": "1 model",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 1
+    },
+    {
+     "description": "1 model (3rd+ unit)",
+     "cost": "70",
+     "variant": "1 model",
+     "tier_min": 3,
      "tier_max": null,
      "models": 1
     }
@@ -13966,7 +14019,7 @@
    ],
    "attach_type": "leader",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
    "countable": false,
@@ -14555,7 +14608,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "150",
+     "cost": "160",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -14563,7 +14616,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "170",
+     "cost": "180",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -16608,7 +16661,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "80",
+     "cost": "85",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -17241,7 +17294,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "90",
+     "cost": "100",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -22143,7 +22196,7 @@
     }
    ],
    "dp_cost": 3,
-   "force_disposition": "DISRUPTION",
+   "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],

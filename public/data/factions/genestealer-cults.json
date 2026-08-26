@@ -15905,6 +15905,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "default_wargear": [
+    {
+     "name": "Lascannon",
+     "cost": 5
+    }
+   ],
    "stock_weapons": [
     "Armoured tracks",
     "Lascannon",
@@ -15913,7 +15919,7 @@
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -15928,7 +15934,7 @@
     },
     {
      "text": "Heavy flamer (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -15973,7 +15979,7 @@
     },
     {
      "text": "Multi-meltas",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -15988,7 +15994,7 @@
     },
     {
      "text": "Plasma cannons",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -16408,6 +16414,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "default_wargear": [
+    {
+     "name": "Lascannon",
+     "cost": 5
+    }
+   ],
    "stock_weapons": [
     "Armoured tracks",
     "Lascannon",
@@ -16446,7 +16458,7 @@
     },
     {
      "text": "Executioner plasma cannon (instead of leman russ battle cannon)",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -16507,7 +16519,7 @@
     },
     {
      "text": "Heavy bolter (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -16522,7 +16534,7 @@
     },
     {
      "text": "Heavy flamer (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -16567,7 +16579,7 @@
     },
     {
      "text": "Multi-meltas",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -16582,7 +16594,7 @@
     },
     {
      "text": "Plasma cannons",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -16852,6 +16864,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "default_wargear": [
+    {
+     "name": "Lascannon",
+     "cost": 5
+    }
+   ],
    "stock_weapons": [
     "Armoured tracks",
     "Demolisher battle cannon",
@@ -16860,7 +16878,7 @@
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -16875,7 +16893,7 @@
     },
     {
      "text": "Heavy flamer (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -16920,7 +16938,7 @@
     },
     {
      "text": "Multi-meltas",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -16935,7 +16953,7 @@
     },
     {
      "text": "Plasma cannons",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -17208,6 +17226,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "default_wargear": [
+    {
+     "name": "Lascannon",
+     "cost": 5
+    }
+   ],
    "stock_weapons": [
     "Armoured tracks",
     "Eradicator nova cannon",
@@ -17216,7 +17240,7 @@
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -17231,7 +17255,7 @@
     },
     {
      "text": "Heavy flamer (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -17276,7 +17300,7 @@
     },
     {
      "text": "Multi-meltas",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -17291,7 +17315,7 @@
     },
     {
      "text": "Plasma cannons",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -17575,6 +17599,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "default_wargear": [
+    {
+     "name": "Lascannon",
+     "cost": 5
+    }
+   ],
    "stock_weapons": [
     "Armoured tracks",
     "Executioner plasma cannon – standard",
@@ -17586,7 +17616,7 @@
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -17601,7 +17631,7 @@
     },
     {
      "text": "Heavy flamer (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -17646,7 +17676,7 @@
     },
     {
      "text": "Multi-meltas",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -17661,7 +17691,7 @@
     },
     {
      "text": "Plasma cannons",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -17934,6 +17964,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "default_wargear": [
+    {
+     "name": "Lascannon",
+     "cost": 5
+    }
+   ],
    "stock_weapons": [
     "Armoured tracks",
     "Exterminator autocannon",
@@ -17942,7 +17978,7 @@
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -17957,7 +17993,7 @@
     },
     {
      "text": "Heavy flamer (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -18002,7 +18038,7 @@
     },
     {
      "text": "Multi-meltas",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -18017,7 +18053,7 @@
     },
     {
      "text": "Plasma cannons",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -18290,6 +18326,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "default_wargear": [
+    {
+     "name": "Lascannon",
+     "cost": 5
+    }
+   ],
    "stock_weapons": [
     "Armoured tracks",
     "Lascannon",
@@ -18298,7 +18340,7 @@
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -18313,7 +18355,7 @@
     },
     {
      "text": "Heavy flamer (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -18358,7 +18400,7 @@
     },
     {
      "text": "Multi-meltas",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -18373,7 +18415,7 @@
     },
     {
      "text": "Plasma cannons",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -18646,6 +18688,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "default_wargear": [
+    {
+     "name": "Lascannon",
+     "cost": 5
+    }
+   ],
    "stock_weapons": [
     "Armoured tracks",
     "Lascannon",
@@ -18654,7 +18702,7 @@
    "weapon_options": [
     {
      "text": "Heavy bolter (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -18669,7 +18717,7 @@
     },
     {
      "text": "Heavy flamer (instead of lascannon)",
-     "cost": 0,
+     "cost": -5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -18714,7 +18762,7 @@
     },
     {
      "text": "Multi-meltas",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -18729,7 +18777,7 @@
     },
     {
      "text": "Plasma cannons",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",

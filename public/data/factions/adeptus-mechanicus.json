@@ -8,6 +8,22 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-08-26",
+    "items": [
+     "**Kastelan Robots** (2 models (1st unit)): 160 → 150 pts.",
+     "**Kastelan Robots** (4 models (1st unit)): 320 → 300 pts.",
+     "**Kastelan Robots** (4 models (2nd+ unit)): 340 → 330 pts.",
+     "**Pteraxii Skystalkers** (5 models (1st-2nd unit)): 80 → 75 pts.",
+     "**Pteraxii Skystalkers** (5 models (3rd+ unit)): 90 → 85 pts.",
+     "**Pteraxii Sterylizors** (5 models (1st-2nd unit)): 80 → 75 pts.",
+     "**Pteraxii Sterylizors** (10 models (1st-2nd unit)): 160 → 150 pts.",
+     "**Pteraxii Sterylizors** (5 models (3rd+ unit)): 90 → 85 pts.",
+     "**Pteraxii Sterylizors** (10 models (3rd+ unit)): 170 → 160 pts.",
+     "**Servitor Battleclade**: struttura punteggio riorganizzata (9 models = 65pts → 9 models (1st-2nd unit) = 65pts, 9 models (3rd+ unit) = 75pts).",
+     "**Tech-priest Dominus** (1 model): 65 → 60 pts."
+    ]
+   },
+   {
     "date": "2026-07-22",
     "items": [
      "**Kataphron Breachers** (6 models): 320 → 310 pts (-10).",
@@ -1689,7 +1705,7 @@
    "points": [
     {
      "description": "2 models (1st unit)",
-     "cost": "160",
+     "cost": "150",
      "variant": "2 models",
      "tier_min": 1,
      "tier_max": 1,
@@ -1697,7 +1713,7 @@
     },
     {
      "description": "4 models (1st unit)",
-     "cost": "320",
+     "cost": "300",
      "variant": "4 models",
      "tier_min": 1,
      "tier_max": 1,
@@ -1713,7 +1729,7 @@
     },
     {
      "description": "4 models (2nd+ unit)",
-     "cost": "340",
+     "cost": "330",
      "variant": "4 models",
      "tier_min": 2,
      "tier_max": null,
@@ -2527,7 +2543,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "80",
+     "cost": "75",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -2543,7 +2559,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "90",
+     "cost": "85",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -2693,7 +2709,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "80",
+     "cost": "75",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -2701,7 +2717,7 @@
     },
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "160",
+     "cost": "150",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -2709,7 +2725,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "90",
+     "cost": "85",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -2717,7 +2733,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "170",
+     "cost": "160",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -3694,10 +3710,18 @@
    ],
    "points": [
     {
-     "description": "9 models",
+     "description": "9 models (1st-2nd unit)",
      "cost": "65",
      "variant": "9 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 9
+    },
+    {
+     "description": "9 models (3rd+ unit)",
+     "cost": "75",
+     "variant": "9 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 9
     }
@@ -3721,7 +3745,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 9,
    "model_max": 9,
    "countable": false,
@@ -6003,7 +6027,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "65",
+     "cost": "60",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,

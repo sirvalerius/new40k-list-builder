@@ -6,6 +6,24 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-08-26",
+    "items": [
+     "**Brôkhyr Thunderkyn** (6 models (1st-2nd unit)): 160 → 170 pts.",
+     "**Brôkhyr Thunderkyn** (6 models (3rd+ unit)): 170 → 180 pts.",
+     "**Cthonian Beserks** (5 models): 100 → 95 pts.",
+     "**Cthonian Beserks** (10 models): 200 → 190 pts.",
+     "**Cthonian Earthshakers** (2 models): 110 → 100 pts.",
+     "**Hearthkyn Warriors** (10 models): 100 → 90 pts.",
+     "**Ironkin Steeljacks With Heavy Volkanite Disintegrators** (6 models (1st-2nd unit)): 160 → 170 pts.",
+     "**Ironkin Steeljacks With Heavy Volkanite Disintegrators** (6 models (3rd+ unit)): 170 → 180 pts.",
+     "**Ironkin Steeljacks With Melee Weapons** (3 models (1st-2nd unit)): 80 → 75 pts.",
+     "**Ironkin Steeljacks With Melee Weapons** (6 models (1st-2nd unit)): 160 → 150 pts.",
+     "**Ironkin Steeljacks With Melee Weapons** (3 models (3rd+ unit)): 90 → 85 pts.",
+     "**Ironkin Steeljacks With Melee Weapons** (6 models (3rd+ unit)): 170 → 160 pts.",
+     "**Kapricus Defenders**: struttura punteggio riorganizzata (1 model = 65pts, 2 models = 130pts → 1 model (1st-2nd unit) = 70pts, 2 models (1st-2nd unit) = 140pts, 1 model (3rd+ unit) = 80pts, 2 models (3rd+ unit) = 150pts)."
+    ]
+   },
+   {
     "date": "2026-07-22",
     "items": [
      "**Berehk Stornbröw** (1 model): 95 → 85 pts (-10).",
@@ -658,7 +676,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "160",
+     "cost": "170",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -674,7 +692,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "170",
+     "cost": "180",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -984,7 +1002,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "100",
+     "cost": "95",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -992,7 +1010,7 @@
     },
     {
      "description": "10 models",
-     "cost": "200",
+     "cost": "190",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -1182,7 +1200,7 @@
    "points": [
     {
      "description": "2 models",
-     "cost": "110",
+     "cost": "100",
      "variant": "2 models",
      "tier_min": null,
      "tier_max": null,
@@ -2050,7 +2068,7 @@
    "points": [
     {
      "description": "10 models",
-     "cost": "100",
+     "cost": "90",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -3130,7 +3148,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "160",
+     "cost": "170",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -3146,7 +3164,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "170",
+     "cost": "180",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -3288,7 +3306,7 @@
    "points": [
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "80",
+     "cost": "75",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -3296,7 +3314,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "160",
+     "cost": "150",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -3304,7 +3322,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "90",
+     "cost": "85",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -3312,7 +3330,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "170",
+     "cost": "160",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -3635,18 +3653,34 @@
    ],
    "points": [
     {
-     "description": "1 model",
-     "cost": "65",
+     "description": "1 model (1st-2nd unit)",
+     "cost": "70",
      "variant": "1 model",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 1
+    },
+    {
+     "description": "2 models (1st-2nd unit)",
+     "cost": "140",
+     "variant": "2 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 2
+    },
+    {
+     "description": "1 model (3rd+ unit)",
+     "cost": "80",
+     "variant": "1 model",
+     "tier_min": 3,
      "tier_max": null,
      "models": 1
     },
     {
-     "description": "2 models",
-     "cost": "130",
+     "description": "2 models (3rd+ unit)",
+     "cost": "150",
      "variant": "2 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 2
     }
@@ -3670,7 +3704,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 1,
    "model_max": 2,
    "countable": true,

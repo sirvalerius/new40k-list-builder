@@ -6,6 +6,17 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-08-26",
+    "items": [
+     "**Crisis Starscythe Battlesuits** (3 models (1st-2nd unit)): 90 → 100 pts.",
+     "**Crisis Starscythe Battlesuits** (3 models (3rd+ unit)): 100 → 110 pts.",
+     "**The Twin Lance** (2 models): 220 → 230 pts.",
+     "**Tiger Shark** (1 model (1st unit)): 375 → 395 pts.",
+     "**Tiger Shark** (1 model (2nd+ unit)): 425 → 445 pts.",
+     "**Crisis Starscythe Battlesuits**, opzione **T&#x27;au Flamer**: nuovo prezzo, 5 pts."
+    ]
+   },
+   {
     "date": "2026-07-22",
     "items": [
      "**Ghostkeel Battlesuit**, opzione **Cyclic Ion Raker**: 10 → 15 pts.",
@@ -4456,7 +4467,7 @@
    "points": [
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "90",
+     "cost": "100",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -4464,7 +4475,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "100",
+     "cost": "110",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -4569,6 +4580,17 @@
      },
      "base": "",
      "group": "000003701-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Equip T&#x27;au flamer",
+     "cost": 5,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
      "model": "",
      "grants": []
     }
@@ -12132,7 +12154,7 @@
    "points": [
     {
      "description": "2 models",
-     "cost": "220",
+     "cost": "230",
      "variant": "2 models",
      "tier_min": null,
      "tier_max": null,
@@ -12757,7 +12779,7 @@
    "points": [
     {
      "description": "1 model (1st unit)",
-     "cost": "375",
+     "cost": "395",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 1,
@@ -12765,7 +12787,7 @@
     },
     {
      "description": "1 model (2nd+ unit)",
-     "cost": "425",
+     "cost": "445",
      "variant": "1 model",
      "tier_min": 2,
      "tier_max": null,
