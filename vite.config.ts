@@ -6,6 +6,11 @@ import { VitePWA } from 'vite-plugin-pwa';
 // VITE_BASE to that path; locally it stays at the root so `npm run dev` is unaffected.
 const base = process.env.VITE_BASE || '/';
 
+// Versions the PWA's runtime data cache so each deploy gets a fresh cache name instead of
+// StaleWhileRevalidate serving last deploy's index.json/faction data on the first load after
+// an update (registerType: 'autoUpdate' refreshes the app shell, not this runtime cache).
+const dataCacheVersion = process.env.VITE_APP_VERSION || 'dev';
+
 // https://vite.dev/config/
 export default defineConfig({
   base,
@@ -51,7 +56,7 @@ export default defineConfig({
             urlPattern: ({ url }) => url.pathname.includes('/data/'),
             handler: 'StaleWhileRevalidate',
             options: {
-              cacheName: 'new40k-data',
+              cacheName: `new40k-data-${dataCacheVersion}`,
               expiration: { maxEntries: 60, maxAgeSeconds: 60 * 60 * 24 * 30 },
             },
           },
