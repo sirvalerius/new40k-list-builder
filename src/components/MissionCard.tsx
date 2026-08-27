@@ -1,10 +1,5 @@
-import { Fragment } from 'react';
 import type { Mission } from '../lib/types';
-
-// **bold** spans in card text → <b>
-function md(text: string) {
-  return text.split(/\*\*/).map((part, i) => (i % 2 ? <b key={i}>{part}</b> : <Fragment key={i}>{part}</Fragment>));
-}
+import { md } from '../lib/md';
 
 /** Full primary-mission card: scoring sections + the reverse-side Objective Action, if any. */
 export function MissionCard({ m }: { m: Mission }) {

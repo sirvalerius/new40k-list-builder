@@ -1,14 +1,10 @@
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 import type { ChangelogEntry, FactionIndexEntry, Rules } from '../lib/types';
 import { closestBattleSize, intOf, isRecentChange } from '../lib/helpers';
+import { md } from '../lib/md';
 import { BattleSizeFields } from '../components/BattleSizeFields';
 import { Modal } from '../components/Modal';
 import { loadFaction } from '../lib/data';
-
-// **bold** spans in changelog text → <b> (same convention as MissionCard's `md`).
-function md(text: string) {
-  return text.split(/\*\*/).map((part, i) => (i % 2 ? <b key={i}>{part}</b> : <Fragment key={i}>{part}</Fragment>));
-}
 
 export function NewListWizard({
   rules,

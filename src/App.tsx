@@ -202,6 +202,7 @@ export default function App() {
         {view.kind === 'home' && (
           <Home
             rules={rules}
+            factions={factions}
             factionName={factionName}
             onNew={() => setView({ kind: 'wizard' })}
             onOpen={openList}

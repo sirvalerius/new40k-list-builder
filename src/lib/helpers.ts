@@ -2,6 +2,7 @@
 import type {
   Ability,
   ArmyList,
+  ChangelogEntry,
   ChosenWargear,
   Datasheet,
   Detachment,
@@ -819,6 +820,51 @@ export function isRecentChange(dateIso: string | undefined, days = 30): boolean 
   const then = new Date(dateIso).getTime();
   if (Number.isNaN(then)) return false;
   return Date.now() - then <= days * 24 * 60 * 60 * 1000;
+}
+
+/** The datasheet name a changelog item is about, e.g. "**Necron Warriors** (10 models): 80 →
+ *  85 pts." → "Necron Warriors". Undefined for faction-wide/prose notes with no leading bold
+ *  name (stratagem rewrites, FRAME removals, "no other changes" notes, etc.). */
+export function changelogItemUnitName(item: string): string | undefined {
+  return /^\*\*(.+?)\*\*/.exec(item)?.[1];
+}
+
+/** Recent (last `days`) changelog items, keyed by the datasheet name they mention — a unit can
+ *  have several items (one per cost bracket). Used to flag list units affected by a recent
+ *  points/rules update, see NewListWizard's per-faction "🆕 recent changes" for the same
+ *  `isRecentChange` convention applied faction-wide instead of per-unit. */
+export function recentChangesByUnitName(
+  changelog: ChangelogEntry[] | undefined,
+  days = 30,
+): Map<string, string[]> {
+  const byName = new Map<string, string[]>();
+  for (const entry of changelog ?? []) {
+    if (!isRecentChange(entry.date, days)) continue;
+    for (const item of entry.items) {
+      const name = changelogItemUnitName(item);
+      if (!name) continue;
+      const items = byName.get(name) ?? [];
+      items.push(item);
+      byName.set(name, items);
+    }
+  }
+  return byName;
+}
+
+/** Units in `list` mentioned by a recent changelog item, paired with those items. */
+export function recentlyChangedUnits(
+  list: ArmyList,
+  changelog: ChangelogEntry[] | undefined,
+  days = 30,
+): { unit: ListUnit; items: string[] }[] {
+  const byName = recentChangesByUnitName(changelog, days);
+  if (byName.size === 0) return [];
+  const out: { unit: ListUnit; items: string[] }[] = [];
+  for (const unit of list.units) {
+    const items = byName.get(unit.name);
+    if (items) out.push({ unit, items });
+  }
+  return out;
 }
 
 /** Battle size whose preset points are closest to `points` — auto-picks a battle size when

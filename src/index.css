@@ -326,6 +326,7 @@ h3.muted { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 }
 .banner.ok { background: #11251a; border: 1px solid #1f5c34; color: #b9f6c8; }
 .banner.bad { background: #2a1416; border: 1px solid #5a2a2a; }
+.banner.info { background: #241c0c; border: 1px solid #4a3d12; color: #ffe2a8; }
 .viol { display: flex; gap: 8px; padding: 3px 0; }
 .viol .dot { flex: 0 0 auto; margin-top: 6px; width: 7px; height: 7px; border-radius: 50%; }
 .viol.error .dot { background: var(--err); }

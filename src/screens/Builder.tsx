@@ -20,11 +20,13 @@ import {
   intOf,
   reconcileTiers,
   reconcileWargearAndEnhancementCosts,
+  recentlyChangedUnits,
   uid as uid_,
 } from '../lib/helpers';
 import { loadFactionById } from '../lib/data';
 import { SummaryBar } from '../components/SummaryBar';
 import { ValidationBanner } from '../components/ValidationBanner';
+import { RecentChangesBanner } from '../components/RecentChangesBanner';
 import { Modal } from '../components/Modal';
 import { BattleSizeFields } from '../components/BattleSizeFields';
 import { DetachmentPicker } from './DetachmentPicker';
@@ -120,6 +122,10 @@ export function Builder({
   const result = useMemo(
     () => validateList(list, rules, detachments, fd ? datasheetMap(fd) : undefined),
     [list, rules, detachments, fd],
+  );
+  const recentChanges = useMemo(
+    () => recentlyChangedUnits(list, fd?.faction.changelog),
+    [list, fd],
   );
 
   if (!fd || !battleSize) {
@@ -344,6 +350,7 @@ export function Builder({
     <div>
       <div className="no-print">
         <ValidationBanner result={result} />
+        <RecentChangesBanner changes={recentChanges} />
 
         <div className="row mb" style={{ gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
           {(fd.faction.sub_factions?.length ?? 0) > 0 && (
