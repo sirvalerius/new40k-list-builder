@@ -8,6 +8,21 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-09-30",
+    "items": [
+     "**Basilisk**: struttura punteggio riorganizzata (1 model (1st unit) = 115pts, 1 model (2nd+ unit) = 135pts → 1 model (1st-2nd unit) = 115pts, 1 model (3rd+ unit) = 145pts).",
+     "**Bullgryn Squad**: struttura punteggio riorganizzata (3 models (1st unit) = 90pts, 6 models (1st unit) = 200pts, 3 models (2nd+ unit) = 105pts, 6 models (2nd+ unit) = 215pts → 3 models (1st-2nd unit) = 90pts, 6 models (1st-2nd unit) = 200pts, 3 models (3rd+ unit) = 120pts, 6 models (3rd+ unit) = 230pts).",
+     "**Commissar Yarrick** (1 model): 120 → 110 pts.",
+     "**Deathstrike**: struttura punteggio riorganizzata (1 model (1st unit) = 125pts, 1 model (2nd+ unit) = 135pts → 1 model (1st-2nd unit) = 125pts, 1 model (3rd+ unit) = 145pts).",
+     "**Hellhound** (1 model (1st-2nd unit)): 125 → 115 pts.",
+     "**Hellhound** (1 model (3rd+ unit)): 135 → 125 pts.",
+     "**Lord Marshal Dreir** (1 model): 75 → 70 pts.",
+     "**Lord Solar Leontus** (1 model): 130 → 120 pts.",
+     "**Manticore**: struttura punteggio riorganizzata (1 model (1st unit) = 150pts, 1 model (2nd+ unit) = 170pts → 1 model (1st-2nd unit) = 150pts, 1 model (3rd+ unit) = 180pts).",
+     "**Wyvern**: struttura punteggio riorganizzata (1 model (1st unit) = 95pts, 1 model (2nd+ unit) = 115pts → 1 model (1st-2nd unit) = 95pts, 1 model (3rd+ unit) = 125pts)."
+    ]
+   },
+   {
     "date": "2026-08-26",
     "items": [
      "**Cadian Shock Troops** (10 models): 75 → 70 pts.",
@@ -2890,18 +2905,18 @@
    ],
    "points": [
     {
-     "description": "1 model (1st unit)",
+     "description": "1 model (1st-2nd unit)",
      "cost": "115",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 1
     },
     {
-     "description": "1 model (2nd+ unit)",
-     "cost": "135",
+     "description": "1 model (3rd+ unit)",
+     "cost": "145",
      "variant": "1 model",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 1
     }
@@ -3064,34 +3079,34 @@
    ],
    "points": [
     {
-     "description": "3 models (1st unit)",
+     "description": "3 models (1st-2nd unit)",
      "cost": "90",
      "variant": "3 models",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 3
     },
     {
-     "description": "6 models (1st unit)",
+     "description": "6 models (1st-2nd unit)",
      "cost": "200",
      "variant": "6 models",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 6
     },
     {
-     "description": "3 models (2nd+ unit)",
-     "cost": "105",
+     "description": "3 models (3rd+ unit)",
+     "cost": "120",
      "variant": "3 models",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 3
     },
     {
-     "description": "6 models (2nd+ unit)",
-     "cost": "215",
+     "description": "6 models (3rd+ unit)",
+     "cost": "230",
      "variant": "6 models",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 6
     }
@@ -7785,7 +7800,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "120",
+     "cost": "110",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -9401,18 +9416,18 @@
    ],
    "points": [
     {
-     "description": "1 model (1st unit)",
+     "description": "1 model (1st-2nd unit)",
      "cost": "125",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 1
     },
     {
-     "description": "1 model (2nd+ unit)",
-     "cost": "135",
+     "description": "1 model (3rd+ unit)",
+     "cost": "145",
      "variant": "1 model",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 1
     }
@@ -12165,7 +12180,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "125",
+     "cost": "115",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -12173,7 +12188,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "135",
+     "cost": "125",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -17820,7 +17835,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "75",
+     "cost": "70",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -17973,7 +17988,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "130",
+     "cost": "120",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -20356,18 +20371,18 @@
    ],
    "points": [
     {
-     "description": "1 model (1st unit)",
+     "description": "1 model (1st-2nd unit)",
      "cost": "150",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 1
     },
     {
-     "description": "1 model (2nd+ unit)",
-     "cost": "170",
+     "description": "1 model (3rd+ unit)",
+     "cost": "180",
      "variant": "1 model",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 1
     }
@@ -30952,18 +30967,18 @@
    ],
    "points": [
     {
-     "description": "1 model (1st unit)",
+     "description": "1 model (1st-2nd unit)",
      "cost": "95",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 1
     },
     {
-     "description": "1 model (2nd+ unit)",
-     "cost": "115",
+     "description": "1 model (3rd+ unit)",
+     "cost": "125",
      "variant": "1 model",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 1
     }

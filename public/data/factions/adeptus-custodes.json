@@ -8,6 +8,33 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-09-30",
+    "items": [
+     "**Allarus Custodians** (2 models (1st-2nd unit)): 110 → 120 pts.",
+     "**Allarus Custodians** (3 models (1st-2nd unit)): 165 → 180 pts.",
+     "**Allarus Custodians** (5 models (1st-2nd unit)): 280 → 300 pts.",
+     "**Allarus Custodians** (6 models (1st-2nd unit)): 340 → 360 pts.",
+     "**Allarus Custodians** (2 models (3rd+ unit)): 140 → 160 pts.",
+     "**Allarus Custodians** (3 models (3rd+ unit)): 195 → 220 pts.",
+     "**Allarus Custodians** (5 models (3rd+ unit)): 310 → 340 pts.",
+     "**Allarus Custodians** (6 models (3rd+ unit)): 370 → 400 pts.",
+     "**Custodian Wardens** (4 models (1st unit)): 200 → 210 pts.",
+     "**Custodian Wardens** (5 models (1st unit)): 250 → 260 pts.",
+     "**Custodian Wardens** (4 models (2nd+ unit)): 220 → 230 pts.",
+     "**Custodian Wardens** (5 models (2nd+ unit)): 270 → 280 pts.",
+     "**Prosecutors** (4 models): 45 → 50 pts.",
+     "**Prosecutors** (5 models): 50 → 55 pts.",
+     "**Prosecutors** (9 models): 75 → 80 pts.",
+     "**Prosecutors** (10 models): 85 → 90 pts.",
+     "**Shield-captain On Dawneagle Jetbike** (1 model): 140 → 150 pts.",
+     "**Valerian** (1 model): 110 → 120 pts.",
+     "**Vertus Praetors** (2 models (1st-2nd unit)): 145 → 155 pts.",
+     "**Vertus Praetors** (3 models (1st-2nd unit)): 215 → 230 pts.",
+     "**Vertus Praetors** (2 models (3rd+ unit)): 170 → 180 pts.",
+     "**Vertus Praetors** (3 models (3rd+ unit)): 240 → 255 pts."
+    ]
+   },
+   {
     "date": "2026-08-26",
     "items": [
      "**Allarus Custodians**: struttura punteggio riorganizzata (2 models = 110pts, 3 models = 165pts, 5 models = 275pts, 6 models = 330pts → 2 models (1st-2nd unit) = 110pts, 3 models (1st-2nd unit) = 165pts, 5 models (1st-2nd unit) = 280pts, 6 models (1st-2nd unit) = 340pts, 2 models (3rd+ unit) = 140pts, 3 models (3rd+ unit) = 195pts, 5 models (3rd+ unit) = 310pts, 6 models (3rd+ unit) = 370pts).",
@@ -489,7 +516,7 @@
    "points": [
     {
      "description": "2 models (1st-2nd unit)",
-     "cost": "110",
+     "cost": "120",
      "variant": "2 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -497,7 +524,7 @@
     },
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "165",
+     "cost": "180",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -505,7 +532,7 @@
     },
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "280",
+     "cost": "300",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -513,7 +540,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "340",
+     "cost": "360",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -521,7 +548,7 @@
     },
     {
      "description": "2 models (3rd+ unit)",
-     "cost": "140",
+     "cost": "160",
      "variant": "2 models",
      "tier_min": 3,
      "tier_max": null,
@@ -529,7 +556,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "195",
+     "cost": "220",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -537,7 +564,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "310",
+     "cost": "340",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -545,7 +572,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "370",
+     "cost": "400",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -2483,7 +2510,7 @@
    "points": [
     {
      "description": "4 models (1st unit)",
-     "cost": "200",
+     "cost": "210",
      "variant": "4 models",
      "tier_min": 1,
      "tier_max": 1,
@@ -2491,7 +2518,7 @@
     },
     {
      "description": "5 models (1st unit)",
-     "cost": "250",
+     "cost": "260",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 1,
@@ -2499,7 +2526,7 @@
     },
     {
      "description": "4 models (2nd+ unit)",
-     "cost": "220",
+     "cost": "230",
      "variant": "4 models",
      "tier_min": 2,
      "tier_max": null,
@@ -2507,7 +2534,7 @@
     },
     {
      "description": "5 models (2nd+ unit)",
-     "cost": "270",
+     "cost": "280",
      "variant": "5 models",
      "tier_min": 2,
      "tier_max": null,
@@ -3133,7 +3160,7 @@
    "points": [
     {
      "description": "4 models",
-     "cost": "45",
+     "cost": "50",
      "variant": "4 models",
      "tier_min": null,
      "tier_max": null,
@@ -3141,7 +3168,7 @@
     },
     {
      "description": "5 models",
-     "cost": "50",
+     "cost": "55",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -3149,7 +3176,7 @@
     },
     {
      "description": "9 models",
-     "cost": "75",
+     "cost": "80",
      "variant": "9 models",
      "tier_min": null,
      "tier_max": null,
@@ -3157,7 +3184,7 @@
     },
     {
      "description": "10 models",
-     "cost": "85",
+     "cost": "90",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -3886,7 +3913,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "140",
+     "cost": "150",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -4444,7 +4471,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "110",
+     "cost": "120",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -5137,7 +5164,7 @@
    "points": [
     {
      "description": "2 models (1st-2nd unit)",
-     "cost": "145",
+     "cost": "155",
      "variant": "2 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -5145,7 +5172,7 @@
     },
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "215",
+     "cost": "230",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -5153,7 +5180,7 @@
     },
     {
      "description": "2 models (3rd+ unit)",
-     "cost": "170",
+     "cost": "180",
      "variant": "2 models",
      "tier_min": 3,
      "tier_max": null,
@@ -5161,7 +5188,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "240",
+     "cost": "255",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,

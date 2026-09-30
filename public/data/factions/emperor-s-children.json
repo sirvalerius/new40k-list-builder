@@ -10,6 +10,26 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-09-30",
+    "items": [
+     "**Chaos Land Raider** (1 model (1st-2nd unit)): 220 → 210 pts.",
+     "**Chaos Land Raider** (1 model (3rd+ unit)): 240 → 230 pts.",
+     "**Chaos Terminators** (5 models): 145 → 155 pts.",
+     "**Daemon Prince Of Slaanesh With Wings** (1 model (2nd+ unit)): 235 → 225 pts.",
+     "**Infractors** (5 models): 85 → 95 pts.",
+     "**Infractors** (10 models): 160 → 175 pts.",
+     "**Lord Exultant** (1 model (1st-2nd unit)): 90 → 95 pts.",
+     "**Lord Exultant** (1 model (3rd+ unit)): 100 → 105 pts.",
+     "**Lucius The Eternal** (1 model): 120 → 130 pts.",
+     "**Noise Marines** (6 models (1st-2nd unit)): 145 → 160 pts.",
+     "**Noise Marines** (6 models (3rd+ unit)): 160 → 175 pts.",
+     "**Tormentors** (5 models): 80 → 85 pts.",
+     "**Tormentors** (10 models): 160 → 170 pts.",
+     "**Carnival Of Excess**: Force Disposition Disruption → Disruption (DP: 2DP → 3DP).",
+     "**Slaanesh’s Chosen**: Force Disposition Purge The Foe → Purge The Foe (DP: 2DP → 1DP)."
+    ]
+   },
+   {
     "date": "2026-08-26",
     "items": [
      "**Defiler** (1 model (2nd+ unit)): 340 → 350 pts.",
@@ -172,7 +192,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "220",
+     "cost": "210",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -180,7 +200,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "240",
+     "cost": "230",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -710,7 +730,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "145",
+     "cost": "155",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -1088,7 +1108,7 @@
     },
     {
      "description": "1 model (2nd+ unit)",
-     "cost": "235",
+     "cost": "225",
      "variant": "1 model",
      "tier_min": 2,
      "tier_max": null,
@@ -2340,7 +2360,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "85",
+     "cost": "95",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -2348,7 +2368,7 @@
     },
     {
      "description": "10 models",
-     "cost": "160",
+     "cost": "175",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -2833,7 +2853,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "90",
+     "cost": "95",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -2841,7 +2861,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "100",
+     "cost": "105",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -3212,7 +3232,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "120",
+     "cost": "130",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -3527,7 +3547,7 @@
    "points": [
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "145",
+     "cost": "160",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -3535,7 +3555,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "160",
+     "cost": "175",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -4280,7 +4300,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "80",
+     "cost": "85",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -4288,7 +4308,7 @@
     },
     {
      "description": "10 models",
-     "cost": "160",
+     "cost": "170",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -4476,7 +4496,7 @@
      "description": "<b>WHEN:</b> Fight phase.<br><br><b>TARGET:</b> One Slaanesh Beasts, Slaanesh Infantry or SLAANESH Mounted unit from your army that has not been selected to fight this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit makes a Pile-in or Consolidation move, it can move up to 6\" instead of up to 3\". When doing so, it does not need to end that move closer to the closest enemy model, provided it ends that move as close as possible to the closest enemy unit."
     }
    ],
-   "dp_cost": 2,
+   "dp_cost": 3,
    "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
    "restriction": "",
@@ -5076,7 +5096,7 @@
      "description": "<b>WHEN:</b> Your opponent’s Shooting phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Emperor’s Children Character unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> After the attacking unit has shot, your unit can make a Surge move. To do so, roll one D6: each model in your unit can move a distance in inches up to the result, but your unit must end that move as close as possible to the closest enemy unit. When doing so, those models can be moved within Engagement Range of that enemy unit. If your unit is not your army’s Favoured Champions, you can re-roll the dice to determine the distance of its Surge move."
     }
    ],
-   "dp_cost": 2,
+   "dp_cost": 1,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",

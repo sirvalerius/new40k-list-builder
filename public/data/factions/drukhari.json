@@ -8,6 +8,19 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-09-30",
+    "items": [
+     "**Talos** (1 model (1st-2nd unit)): 75 → 70 pts.",
+     "**Talos** (2 models (1st-2nd unit)): 150 → 140 pts.",
+     "**Talos** (1 model (3rd+ unit)): 85 → 80 pts.",
+     "**Talos** (2 models (3rd+ unit)): 160 → 150 pts.",
+     "**Wracks** (5 models): 60 → 55 pts.",
+     "**Wracks** (8 models): 100 → 90 pts.",
+     "**Wracks** (10 models): 120 → 110 pts.",
+     "**Reaper’s Wager**: Force Disposition Purge The Foe → Priority Assets (DP: 3DP → 3DP)."
+    ]
+   },
+   {
     "date": "2026-08-26",
     "items": [
      "FRAME rimossa dalle datasheet Legends: Raven Strike Fighter, Reaper, Tantalus.",
@@ -8693,7 +8706,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "75",
+     "cost": "70",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -8701,7 +8714,7 @@
     },
     {
      "description": "2 models (1st-2nd unit)",
-     "cost": "150",
+     "cost": "140",
      "variant": "2 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -8709,7 +8722,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "85",
+     "cost": "80",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -8717,7 +8730,7 @@
     },
     {
      "description": "2 models (3rd+ unit)",
-     "cost": "160",
+     "cost": "150",
      "variant": "2 models",
      "tier_min": 3,
      "tier_max": null,
@@ -10314,7 +10327,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "60",
+     "cost": "55",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -10322,7 +10335,7 @@
     },
     {
      "description": "8 models",
-     "cost": "100",
+     "cost": "90",
      "variant": "8 models",
      "tier_min": null,
      "tier_max": null,
@@ -10330,7 +10343,7 @@
     },
     {
      "description": "10 models",
-     "cost": "120",
+     "cost": "110",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -11036,7 +11049,7 @@
     }
    ],
    "dp_cost": 3,
-   "force_disposition": "PURGE THE FOE",
+   "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],

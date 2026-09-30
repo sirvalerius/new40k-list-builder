@@ -22,6 +22,266 @@
   ],
   "changelog": [
    {
+    "date": "2026-09-30",
+    "items": [
+     "**Aggressor Squad**: struttura punteggio riorganizzata (3 models (1st-2nd unit) = 80pts, 6 models (1st-2nd unit) = 165pts, 3 models (3rd+ unit) = 90pts, 6 models (3rd+ unit) = 175pts → 3 models = 90pts, 6 models = 180pts).",
+     "**Ancient** (1 model): 40 → 45 pts.",
+     "**Ancient In Terminator Armour** (1 model): 65 → 75 pts.",
+     "**Apothecary** (1 model): 40 → 45 pts.",
+     "**Apothecary Biologis** (1 model): 70 → 60 pts.",
+     "**Assault Intercessor Squad** (5 models): 75 → 90 pts.",
+     "**Assault Intercessor Squad** (10 models): 150 → 175 pts.",
+     "**Assault Intercessors With Jump Packs** (5 models (1st-2nd unit)): 85 → 100 pts.",
+     "**Assault Intercessors With Jump Packs** (10 models (1st-2nd unit)): 160 → 190 pts.",
+     "**Assault Intercessors With Jump Packs** (5 models (3rd+ unit)): 95 → 110 pts.",
+     "**Assault Intercessors With Jump Packs** (10 models (3rd+ unit)): 170 → 200 pts.",
+     "**Astraeus** (1 model (1st unit)): 525 → 550 pts.",
+     "**Astraeus** (1 model (2nd+ unit)): 575 → 650 pts.",
+     "**Bladeguard Ancient** (1 model): 40 → 60 pts.",
+     "**Bladeguard Veteran Squad** (3 models (1st-2nd unit)): 80 → 85 pts.",
+     "**Bladeguard Veteran Squad** (6 models (1st-2nd unit)): 160 → 170 pts.",
+     "**Bladeguard Veteran Squad** (3 models (3rd+ unit)): 90 → 95 pts.",
+     "**Bladeguard Veteran Squad** (6 models (3rd+ unit)): 170 → 180 pts.",
+     "**Brutalis Dreadnought** (1 model (1st-2nd unit)): 150 → 160 pts.",
+     "**Brutalis Dreadnought** (1 model (3rd+ unit)): 160 → 170 pts.",
+     "**Captain** (1 model): 80 → 90 pts.",
+     "**Captain In Gravis Armour** (1 model): 80 → 90 pts.",
+     "**Captain In Phobos Armour** (1 model): 70 → 75 pts.",
+     "**Captain In Terminator Armour** (1 model): 85 → 100 pts.",
+     "**Captain With Jump Pack** (1 model): 75 → 90 pts.",
+     "**Chaplain** (1 model): 60 → 70 pts.",
+     "**Chaplain In Terminator Armour** (1 model): 75 → 85 pts.",
+     "**Chaplain On Bike** (1 model): 70 → 80 pts.",
+     "**Chaplain With Jump Pack** (1 model): 75 → 80 pts.",
+     "**Company Heroes**: struttura punteggio riorganizzata (4 models = 105pts → 4 models (1st-2nd unit) = 135pts, 4 models (3rd+ unit) = 150pts).",
+     "**Desolation Squad**: struttura punteggio riorganizzata (5 models (1st unit) = 180pts, 5 models (2nd+ unit) = 210pts → 5 models (1st-2nd unit) = 135pts, 5 models (3rd+ unit) = 145pts).",
+     "**Eliminator Squad** (3 models): 75 → 85 pts.",
+     "**Firestrike Servo-turrets** (1 model): 75 → 80 pts.",
+     "**Firestrike Servo-turrets** (2 models): 150 → 160 pts.",
+     "**Gladiator Lancer** (1 model (1st-2nd unit)): 160 → 165 pts.",
+     "**Gladiator Lancer** (1 model (3rd+ unit)): 170 → 175 pts.",
+     "**Gladiator Reaper** (1 model (1st-2nd unit)): 160 → 165 pts.",
+     "**Gladiator Reaper** (1 model (3rd+ unit)): 170 → 175 pts.",
+     "**Gladiator Valiant** (1 model (1st-2nd unit)): 150 → 165 pts.",
+     "**Gladiator Valiant** (1 model (3rd+ unit)): 160 → 175 pts.",
+     "**Heavy Intercessor Squad** (5 models): 100 → 110 pts.",
+     "**Heavy Intercessor Squad** (10 models): 200 → 220 pts.",
+     "**Hellblaster Squad**: struttura punteggio riorganizzata (5 models = 110pts, 10 models = 220pts → 5 models (1st-2nd unit) = 110pts, 10 models (1st-2nd unit) = 220pts, 5 models (3rd+ unit) = 125pts, 10 models (3rd+ unit) = 235pts).",
+     "**Incursor Squad** (5 models (1st-2nd unit)): 85 → 95 pts.",
+     "**Incursor Squad** (10 models (1st-2nd unit)): 150 → 160 pts.",
+     "**Incursor Squad** (5 models (3rd+ unit)): 95 → 105 pts.",
+     "**Incursor Squad** (10 models (3rd+ unit)): 160 → 170 pts.",
+     "**Infernus Squad**: struttura punteggio riorganizzata (5 models = 85pts, 10 models = 180pts → 5 models (1st-2nd unit) = 100pts, 10 models (1st-2nd unit) = 200pts, 5 models (3rd+ unit) = 110pts, 10 models (3rd+ unit) = 210pts).",
+     "**Infiltrator Squad**: struttura punteggio riorganizzata (5 models (1st-2nd unit) = 110pts, 10 models (1st-2nd unit) = 180pts, 5 models (3rd+ unit) = 120pts, 10 models (3rd+ unit) = 190pts → 5 models = 80pts, 10 models = 150pts).",
+     "**Intercessor Squad** (5 models): 80 → 95 pts.",
+     "**Intercessor Squad** (10 models): 150 → 175 pts.",
+     "**Invader Atvs**: struttura punteggio riorganizzata (1 model = 60pts → 1 model (1st-2nd unit) = 65pts, 2 models (1st-2nd unit) = 130pts, 1 model (3rd+ unit) = 75pts, 2 models (3rd+ unit) = 140pts).",
+     "**Invictor Tactical Warsuit** (1 model): 125 → 140 pts.",
+     "**Judiciar** (1 model): 55 → 50 pts.",
+     "**Land Raider** (1 model (1st-2nd unit)): 220 → 245 pts.",
+     "**Land Raider** (1 model (3rd+ unit)): 240 → 265 pts.",
+     "**Land Raider Crusader** (1 model (1st-2nd unit)): 220 → 245 pts.",
+     "**Land Raider Crusader** (1 model (3rd+ unit)): 240 → 265 pts.",
+     "**Land Raider Redeemer** (1 model (1st-2nd unit)): 260 → 245 pts.",
+     "**Land Raider Redeemer** (1 model (3rd+ unit)): 280 → 265 pts.",
+     "**Land Speeder** (1 model): 105 → 110 pts.",
+     "**Librarian**: struttura punteggio riorganizzata (1 model (1st-2nd unit) = 70pts, 1 model (3rd+ unit) = 80pts → 1 model = 75pts).",
+     "**Librarian In Phobos Armour** (1 model): 70 → 75 pts.",
+     "**Lieutenant** (1 model): 45 → 50 pts.",
+     "**Lieutenant In Phobos Armour** (1 model): 45 → 40 pts.",
+     "**Lieutenant With Combi-weapon** (1 model): 95 → 80 pts.",
+     "**Outrider Squad** (3 models): 70 → 85 pts.",
+     "**Outrider Squad** (6 models): 140 → 160 pts.",
+     "**Redemptor Dreadnought** (1 model (1st-2nd unit)): 195 → 180 pts.",
+     "**Redemptor Dreadnought** (1 model (3rd+ unit)): 210 → 195 pts.",
+     "**Reiver Squad** (5 models): 75 → 85 pts.",
+     "**Reiver Squad** (10 models): 150 → 165 pts.",
+     "**Repulsor** (1 model (1st-2nd unit)): 170 → 190 pts.",
+     "**Repulsor** (1 model (3rd+ unit)): 190 → 210 pts.",
+     "**Repulsor Executioner** (1 model (1st-2nd unit)): 255 → 275 pts.",
+     "**Repulsor Executioner** (1 model (3rd+ unit)): 275 → 295 pts.",
+     "**Sternguard Veteran Squad**: struttura punteggio riorganizzata (5 models = 100pts, 10 models = 200pts → 5 models (1st-2nd unit) = 105pts, 10 models (1st-2nd unit) = 210pts, 5 models (3rd+ unit) = 115pts, 10 models (3rd+ unit) = 220pts).",
+     "**Storm Speeder Hailstrike** (1 model (1st-2nd unit)): 105 → 110 pts.",
+     "**Storm Speeder Hailstrike** (1 model (3rd+ unit)): 115 → 120 pts.",
+     "**Storm Speeder Thunderstrike** (1 model (1st-2nd unit)): 135 → 155 pts.",
+     "**Storm Speeder Thunderstrike** (1 model (3rd+ unit)): 145 → 165 pts.",
+     "**Techmarine** (1 model): 55 → 65 pts.",
+     "**Terminator Assault Squad**: struttura punteggio riorganizzata (5 models = 155pts, 10 models = 310pts → 5 models (1st-2nd unit) = 175pts, 10 models (1st-2nd unit) = 350pts, 5 models (3rd+ unit) = 215pts, 10 models (3rd+ unit) = 390pts).",
+     "**Terminator Squad**: struttura punteggio riorganizzata (5 models = 160pts, 10 models = 320pts → 5 models (1st-2nd unit) = 195pts, 10 models (1st-2nd unit) = 390pts, 5 models (3rd+ unit) = 235pts, 10 models (3rd+ unit) = 430pts).",
+     "**Thunderhawk Gunship**: struttura punteggio riorganizzata (1 model = 840pts → 1 model (1st unit) = 850pts, 1 model (2nd+ unit) = 950pts).",
+     "**Vanguard Veteran Squad With Jump Packs** (5 models (1st-2nd unit)): 105 → 120 pts.",
+     "**Vanguard Veteran Squad With Jump Packs** (10 models (1st-2nd unit)): 210 → 240 pts.",
+     "**Vanguard Veteran Squad With Jump Packs** (5 models (3rd+ unit)): 115 → 130 pts.",
+     "**Vanguard Veteran Squad With Jump Packs** (10 models (3rd+ unit)): 220 → 250 pts.",
+     "**Darnath Lysander** (1 model): 100 → 160 pts.",
+     "**Tor Garadon** (1 model): 80 → 90 pts.",
+     "**Caanok Var** (1 model): 90 → 100 pts.",
+     "**Adrax Agatone** (1 model): 80 → 90 pts.",
+     "**Vulkan He’stan** (1 model): 95 → 105 pts.",
+     "**Aethon Shaan** (1 model): 100 → 105 pts.",
+     "**Kayvaan Shrike** (1 model): 100 → 95 pts.",
+     "**Captain Titus** (1 model): 100 → 115 pts.",
+     "**Cato Sicarius** (1 model): 105 → 115 pts.",
+     "**Chief Librarian Tigurius** (1 model): 85 → 115 pts.",
+     "**Kor’sarro Khan** (1 model): 55 → 80 pts.",
+     "**Suboden Khan** (1 model): 90 → 105 pts.",
+     "**Roboute Guilliman** (1 model): 355 → 415 pts.",
+     "**Victrix Honour Guard**: struttura punteggio riorganizzata (3 models (1st unit) = 110pts, 6 models (1st unit) = 230pts, 3 models (2nd+ unit) = 130pts, 6 models (2nd+ unit) = 250pts → 3 models (1st-2nd unit) = 120pts, 6 models (1st-2nd unit) = 250pts, 3 models (3rd+ unit) = 150pts, 6 models (3rd+ unit) = 280pts).",
+     "**Wardens Of Ultramar** (6 models): 120 → 115 pts.",
+     "**Desolation Squad**, opzione **Vengor Launcher**: nuovo prezzo, 5 pts.",
+     "**Invader Atvs**, opzione **Multi-melta**: nuovo prezzo, 5 pts.",
+     "**Terminator Assault Squad**, opzione **Storm Shield**: nuovo prezzo, 5 pts.",
+     "**Terminator Squad**, opzione **Cyclone Missile Launcher**: nuovo prezzo, 10 pts.",
+     "**Assault Brethren**: Force Disposition ? → Take And Hold (DP: ? → 1DP).",
+     "**Blade Of Ultramar**: Force Disposition Priority Assets → Take And Hold (DP: 3DP → 3DP).",
+     "**Ceramite Sentinels**: Force Disposition Take And Hold → Take And Hold (DP: 3DP → 2DP).",
+     "**Deathwatch Support**: Force Disposition ? → Disruption (DP: ? → 1DP).",
+     "**Devastator Brethren**: Force Disposition ? → Purge The Foe (DP: ? → 1DP).",
+     "**Gauntlet Task Force**: Force Disposition ? → Reconnaissance (DP: ? → 1DP).",
+     "**Gladius Task Force**: Force Disposition Priority Assets → Take And Hold (DP: 3DP → 3DP).",
+     "**Gravis Linebreaker Force**: Force Disposition ? → Take And Hold (DP: ? → 1DP).",
+     "**Gravis Siege Force**: Force Disposition ? → Take And Hold (DP: ? → 1DP).",
+     "**Ironclad Champions**: Force Disposition ? → Priority Assets (DP: ? → 1DP).",
+     "**Ironstorm Spearhead**: Force Disposition Take And Hold → Purge The Foe (DP: 2DP → 1DP).",
+     "**Medusa's Wrath**: Force Disposition ? → Purge The Foe (DP: ? → 2DP).",
+     "**Phobos Shadow Force**: Force Disposition ? → Disruption (DP: ? → 1DP).",
+     "**Phobos Shock Force**: Force Disposition ? → Disruption (DP: ? → 1DP).",
+     "**Spearpoint Task Force**: Force Disposition Disruption → Reconnaissance (DP: 2DP → 2DP).",
+     "**Stormlance Task Force**: Force Disposition Disruption → Reconnaissance (DP: 3DP → 1DP).",
+     "**Tactical Brethren**: Force Disposition ? → Priority Assets (DP: ? → 1DP).",
+     "**Tacticus Attack Force**: Force Disposition ? → Take And Hold (DP: ? → 1DP).",
+     "**Tacticus Firestorm Force**: Force Disposition ? → Priority Assets (DP: ? → 1DP).",
+     "**Terminator Storm Force**: Force Disposition ? → Priority Assets (DP: ? → 1DP).",
+     "**Marneus Calgar in Armour of Antilochus**: 155 → 180 pts (il tool MFM la elenca come \"Marneus Calgar\", nome abbreviato — stesso datasheet, risolto a mano).",
+     "**Eradicator Squad**: rinominata **Eradicator Squad With Melta Rifles** (per distinguerla dalla sorella sotto) e ripunteggiata: 3 models (1st-2nd unit) 90pts (invariato), 6 models (1st-2nd unit) 180 → 190pts, 3 models (3rd+ unit) 100 → 105pts, 6 models (3rd+ unit) 190 → 205pts.",
+     "Aggiunta la datasheet **Eradicator Squad With Heavy Bolters** (95/200/110/215 pts per 3/6 modelli 1st-2nd/3rd+ unit), presente nel faction pack Space Marines dal 26/08/2026 ma mai inserita nel database — ricostruita dal testo ufficiale del PDF (nessuna voce su Wahapedia).",
+     "**Castellan** (1 model): 70 → 75 pts.",
+     "**Chaplain Grimaldus** (4 models): 100 → 120 pts.",
+     "**Crusade Ancient** (1 model): 40 → 45 pts.",
+     "**Emperor’s Champion** (1 model): 90 → 100 pts.",
+     "**Execrator** (1 model): 50 → 65 pts.",
+     "**High Marshal Helbrecht** (1 model): 110 → 125 pts.",
+     "**Sword Brethren Squad** (4 models (1st-2nd unit)): 100 → 115 pts.",
+     "**Sword Brethren Squad** (5 models (1st-2nd unit)): 125 → 140 pts.",
+     "**Sword Brethren Squad** (9 models (1st-2nd unit)): 225 → 250 pts.",
+     "**Sword Brethren Squad** (10 models (1st-2nd unit)): 250 → 275 pts.",
+     "**Sword Brethren Squad** (4 models (3rd+ unit)): 120 → 135 pts.",
+     "**Sword Brethren Squad** (5 models (3rd+ unit)): 145 → 160 pts.",
+     "**Sword Brethren Squad** (9 models (3rd+ unit)): 245 → 270 pts.",
+     "**Sword Brethren Squad** (10 models (3rd+ unit)): 270 → 295 pts.",
+     "**Repulsor Executioner**, opzione **Multi-melta**: nuovo prezzo, 10 pts.",
+     "**Gladiator Lancer**, opzione **Multi-melta**: nuovo prezzo, 10 pts.",
+     "**Gladiator Reaper**, opzione **Multi-melta**: nuovo prezzo, 10 pts.",
+     "**Gladiator Valiant**, opzione **Multi-melta**: nuovo prezzo, 10 pts.",
+     "**Impulsor**, opzione **Multi-melta**: nuovo prezzo, 10 pts.",
+     "**Impulsor**, opzione **Orbital Comms Array**: nuovo prezzo, 10 pts.",
+     "**Repulsor**, opzione **Multi-melta**: nuovo prezzo, 10 pts.",
+     "**Fist Of The God-emperor**: Force Disposition ? → Take And Hold (DP: ? → 1DP).",
+     "**Vow-sworn Crusaders**: Force Disposition ? → Purge The Foe (DP: ? → 2DP).",
+     "**Astorath** (1 model): 85 → 90 pts.",
+     "**Baal Predator** (1 model (1st-2nd unit)): 125 → 135 pts.",
+     "**Baal Predator** (1 model (3rd+ unit)): 135 → 150 pts.",
+     "**Blood Angels Captain** (1 model): 80 → 90 pts.",
+     "**Commander Dante** (1 model): 125 → 140 pts.",
+     "**Death Company Captain** (1 model): 70 → 80 pts.",
+     "**Death Company Captain With Jump Pack** (1 model): 75 → 85 pts.",
+     "**Death Company Dreadnought** (1 model (1st-2nd unit)): 150 → 165 pts.",
+     "**Death Company Dreadnought** (1 model (3rd+ unit)): 160 → 185 pts.",
+     "**Death Company Marines** (5 models (1st-2nd unit)): 85 → 90 pts.",
+     "**Death Company Marines** (10 models (1st-2nd unit)): 160 → 170 pts.",
+     "**Death Company Marines** (5 models (3rd+ unit)): 95 → 105 pts.",
+     "**Death Company Marines** (10 models (3rd+ unit)): 170 → 185 pts.",
+     "**Death Company Marines With Jump Packs** (5 models (1st-2nd unit)): 115 → 130 pts.",
+     "**Death Company Marines With Jump Packs** (10 models (1st-2nd unit)): 230 → 260 pts.",
+     "**Death Company Marines With Jump Packs** (5 models (3rd+ unit)): 130 → 160 pts.",
+     "**Death Company Marines With Jump Packs** (10 models (3rd+ unit)): 245 → 290 pts.",
+     "**Lemartes** (1 model): 100 → 110 pts.",
+     "**Sanguinary Guard** (3 models (1st-2nd unit)): 120 → 135 pts.",
+     "**Sanguinary Guard** (6 models (1st-2nd unit)): 260 → 275 pts.",
+     "**Sanguinary Guard** (3 models (3rd+ unit)): 140 → 150 pts.",
+     "**Sanguinary Guard** (6 models (3rd+ unit)): 280 → 290 pts.",
+     "**Sanguinary Priest**: struttura punteggio riorganizzata (1 model (1st-2nd unit) = 75pts, 1 model (3rd+ unit) = 85pts → 1 model = 60pts).",
+     "**Asmodai** (1 model): 70 → 80 pts.",
+     "**Azrael** (1 model): 140 → 150 pts.",
+     "**Belial** (1 model): 75 → 100 pts.",
+     "**Deathwing Knights**: struttura punteggio riorganizzata (5 models (1st unit) = 240pts, 5 models (2nd+ unit) = 260pts → 5 models (1st-2nd unit) = 255pts, 5 models (3rd+ unit) = 275pts).",
+     "**Deathwing Terminator Squad**: struttura punteggio riorganizzata (5 models = 165pts, 10 models = 330pts → 5 models (1st-2nd unit) = 190pts, 10 models (1st-2nd unit) = 380pts, 5 models (3rd+ unit) = 230pts, 10 models (3rd+ unit) = 420pts).",
+     "**Ezekiel** (1 model): 75 → 110 pts.",
+     "**Inner Circle Companions** (3 models (1st-2nd unit)): 80 → 90 pts.",
+     "**Inner Circle Companions** (6 models (1st-2nd unit)): 160 → 180 pts.",
+     "**Inner Circle Companions** (3 models (3rd+ unit)): 90 → 105 pts.",
+     "**Inner Circle Companions** (6 models (3rd+ unit)): 170 → 195 pts.",
+     "**Land Speeder Vengeance** (1 model (1st-2nd unit)): 130 → 150 pts.",
+     "**Land Speeder Vengeance** (1 model (3rd+ unit)): 140 → 160 pts.",
+     "**Lazarus** (1 model): 70 → 80 pts.",
+     "**Lion El’jonson** (1 model): 265 → 415 pts.",
+     "**Nephilim Jetfighter** (1 model): 180 → 200 pts.",
+     "**Ravenwing Black Knights** (3 models (1st-2nd unit)): 75 → 85 pts.",
+     "**Ravenwing Black Knights** (6 models (1st-2nd unit)): 150 → 170 pts.",
+     "**Ravenwing Black Knights** (3 models (3rd+ unit)): 85 → 95 pts.",
+     "**Ravenwing Black Knights** (6 models (3rd+ unit)): 160 → 180 pts.",
+     "**Ravenwing Command Squad** (3 models (1st-2nd unit)): 105 → 115 pts.",
+     "**Ravenwing Command Squad** (3 models (3rd+ unit)): 115 → 135 pts.",
+     "**Ravenwing Darkshroud** (1 model): 70 → 80 pts.",
+     "**Ravenwing Dark Talon** (1 model): 200 → 190 pts.",
+     "**Sammael** (1 model): 105 → 120 pts.",
+     "**Deathwing Terminator Squad**, opzione **Cyclone Missile Launcher**: nuovo prezzo, 10 pts.",
+     "**Inner Circle Task Force**: Force Disposition Priority Assets → Priority Assets (DP: 2DP → 1DP).",
+     "**Wrath Of The Rock**: Force Disposition Priority Assets → Take And Hold (DP: 3DP → 2DP).",
+     "**Deathwatch Terminator Squad**: struttura punteggio riorganizzata (5 models = 180pts, 10 models = 330pts → 5 models (1st-2nd unit) = 190pts, 10 models (1st-2nd unit) = 380pts, 5 models (3rd+ unit) = 230pts, 10 models (3rd+ unit) = 420pts).",
+     "**Deathwatch Veterans** (5 models): 100 → 115 pts.",
+     "**Deathwatch Veterans** (10 models): 190 → 220 pts.",
+     "**Fortis Kill Team** (10 models (1st-2nd unit)): 195 → 210 pts.",
+     "**Fortis Kill Team** (10 models (3rd+ unit)): 210 → 225 pts.",
+     "**Indomitor Kill Team** (10 models (1st-2nd unit)): 275 → 280 pts.",
+     "**Indomitor Kill Team** (10 models (3rd+ unit)): 290 → 300 pts.",
+     "**Spectrus Kill Team** (10 models (1st-2nd unit)): 170 → 185 pts.",
+     "**Spectrus Kill Team** (10 models (3rd+ unit)): 180 → 195 pts.",
+     "**Talonstrike Kill Team** (10 models (1st-2nd unit)): 265 → 280 pts.",
+     "**Talonstrike Kill Team** (10 models (3rd+ unit)): 280 → 300 pts.",
+     "**Watch Captain Artemis** (1 model): 65 → 75 pts.",
+     "**Watch Master** (1 model): 95 → 105 pts.",
+     "**Deathwatch Terminator Squad**, opzione **Storm Shield**: nuovo prezzo, 5 pts.",
+     "**Deathwatch Terminator Squad**, opzione **Cyclone Missile Launcher**: nuovo prezzo, 10 pts.",
+     "**Black Spear Task Force**: Force Disposition Purge The Foe → Priority Assets (DP: 3DP → 3DP).",
+     "**Arjac Rockfist** (1 model): 95 → 105 pts.",
+     "**Blood Claws** (10 models): 135 → 150 pts.",
+     "**Blood Claws** (20 models): 270 → 290 pts.",
+     "**Grey Hunters** (10 models): 165 → 180 pts.",
+     "**Iron Priest** (1 model): 50 → 60 pts.",
+     "**Logan Grimnar** (1 model): 100 → 150 pts.",
+     "**Njal Stormcaller** (1 model): 75 → 100 pts.",
+     "**Ragnar Blackmane** (1 model): 90 → 100 pts.",
+     "**Thunderwolf Cavalry** (3 models (1st-2nd unit)): 100 → 115 pts.",
+     "**Thunderwolf Cavalry** (6 models (1st-2nd unit)): 200 → 230 pts.",
+     "**Thunderwolf Cavalry** (3 models (3rd+ unit)): 130 → 145 pts.",
+     "**Thunderwolf Cavalry** (6 models (3rd+ unit)): 230 → 260 pts.",
+     "**Ulrik The Slayer** (1 model): 70 → 90 pts.",
+     "**Wolf Guard Battle Leader** (1 model): 65 → 80 pts.",
+     "**Wolf Guard Headtakers** (3 Wolf Guard Headtakers (1st-2nd unit)): 85 → 115 pts.",
+     "**Wolf Guard Headtakers** (3 Wolf Guard Headtakers, 3 Hunting Wolves (1st-2nd unit)): 115 → 170 pts.",
+     "**Wolf Guard Headtakers** (3 Wolf Guard Headtakers (3rd+ unit)): 95 → 125 pts.",
+     "**Wolf Guard Headtakers** (3 Wolf Guard Headtakers, 3 Hunting Wolves (3rd+ unit)): 125 → 180 pts.",
+     "**Wolf Guard Terminators** (5 models (1st-2nd unit)): 155 → 180 pts.",
+     "**Wolf Guard Terminators** (10 models (1st-2nd unit)): 310 → 365 pts.",
+     "**Wolf Guard Terminators** (5 models (3rd+ unit)): 195 → 220 pts.",
+     "**Wolf Guard Terminators** (10 models (3rd+ unit)): 350 → 405 pts.",
+     "**Wolf Priest** (1 model): 70 → 75 pts.",
+     "**Wolf Scouts**: struttura punteggio riorganizzata (6 models = 90pts, 12 models = 180pts → 6 models (1st-2nd unit) = 95pts, 12 models (1st-2nd unit) = 190pts, 6 models (3rd+ unit) = 105pts, 12 models (3rd+ unit) = 200pts).",
+     "**Wulfen** (5 models (1st-2nd unit)): 85 → 90 pts.",
+     "**Wulfen** (10 models (1st-2nd unit)): 170 → 180 pts.",
+     "**Wulfen** (5 models (3rd+ unit)): 95 → 105 pts.",
+     "**Wulfen** (10 models (3rd+ unit)): 180 → 195 pts.",
+     "**Wulfen Dreadnought** (1 model (1st-2nd unit)): 135 → 140 pts.",
+     "**Wulfen Dreadnought** (1 model (3rd+ unit)): 145 → 150 pts.",
+     "**Wulfen With Storm Shields** (5 models (1st-2nd unit)): 100 → 125 pts.",
+     "**Wulfen With Storm Shields** (10 models (1st-2nd unit)): 200 → 250 pts.",
+     "**Wulfen With Storm Shields** (5 models (3rd+ unit)): 110 → 155 pts.",
+     "**Wulfen With Storm Shields** (10 models (3rd+ unit)): 210 → 280 pts.",
+     "**Saga Of The Beastslayer**: Force Disposition Purge The Foe → Purge The Foe (DP: 2DP → 1DP)."
+    ]
+   },
+   {
     "date": "2026-08-26",
     "items": [
      "**Centurion Devastator Squad** (6 models): 350 → 365 pts.",
@@ -166,7 +426,7 @@
   ]
  },
  "last_update": "2026-06-13 12:02:41",
- "unit_count": 298,
+ "unit_count": 299,
  "datasheets": [
   {
    "id": "000002100",
@@ -250,7 +510,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "80",
+     "cost": "90",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -493,7 +753,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "100",
+     "cost": "105",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -630,34 +890,18 @@
    ],
    "points": [
     {
-     "description": "3 models (1st-2nd unit)",
-     "cost": "80",
-     "variant": "3 models",
-     "tier_min": 1,
-     "tier_max": 2,
-     "models": 3
-    },
-    {
-     "description": "6 models (1st-2nd unit)",
-     "cost": "165",
-     "variant": "6 models",
-     "tier_min": 1,
-     "tier_max": 2,
-     "models": 6
-    },
-    {
-     "description": "3 models (3rd+ unit)",
+     "description": "3 models",
      "cost": "90",
      "variant": "3 models",
-     "tier_min": 3,
+     "tier_min": null,
      "tier_max": null,
      "models": 3
     },
     {
-     "description": "6 models (3rd+ unit)",
-     "cost": "175",
+     "description": "6 models",
+     "cost": "180",
      "variant": "6 models",
-     "tier_min": 3,
+     "tier_min": null,
      "tier_max": null,
      "models": 6
     }
@@ -680,7 +924,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": true,
+   "has_order_tiers": false,
    "model_min": 3,
    "model_max": 6,
    "countable": true,
@@ -813,7 +1057,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "40",
+     "cost": "45",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -1122,7 +1366,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "65",
+     "cost": "75",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -1766,7 +2010,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "40",
+     "cost": "45",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -1990,7 +2234,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "70",
+     "cost": "60",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -2025,7 +2269,7 @@
      "chapter": ""
     },
     {
-     "name": "Eradicator Squad",
+     "name": "Eradicator Squad With Melta Rifles",
      "chapter": ""
     },
     {
@@ -2308,7 +2552,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "95",
+     "cost": "105",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -2447,7 +2691,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "70",
+     "cost": "80",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -2738,7 +2982,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "75",
+     "cost": "90",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -2746,7 +2990,7 @@
     },
     {
      "description": "10 models",
-     "cost": "150",
+     "cost": "175",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -2998,7 +3242,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "85",
+     "cost": "100",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -3006,7 +3250,7 @@
     },
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "160",
+     "cost": "190",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -3014,7 +3258,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "95",
+     "cost": "110",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -3022,7 +3266,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "170",
+     "cost": "200",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -4457,7 +4701,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "85",
+     "cost": "90",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -4668,7 +4912,7 @@
    "points": [
     {
      "description": "1 model (1st unit)",
-     "cost": "525",
+     "cost": "550",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 1,
@@ -4676,7 +4920,7 @@
     },
     {
      "description": "1 model (2nd+ unit)",
-     "cost": "575",
+     "cost": "650",
      "variant": "1 model",
      "tier_min": 2,
      "tier_max": null,
@@ -5024,7 +5268,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "140",
+     "cost": "150",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -5301,7 +5545,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "125",
+     "cost": "135",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -5309,7 +5553,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "135",
+     "cost": "150",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -5667,7 +5911,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "75",
+     "cost": "100",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -6698,7 +6942,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "40",
+     "cost": "60",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -6852,7 +7096,7 @@
    "points": [
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "80",
+     "cost": "85",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -6860,7 +7104,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "160",
+     "cost": "170",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -6868,7 +7112,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "90",
+     "cost": "95",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -6876,7 +7120,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "170",
+     "cost": "180",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -7065,7 +7309,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "80",
+     "cost": "90",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -7354,7 +7598,7 @@
    "points": [
     {
      "description": "10 models",
-     "cost": "135",
+     "cost": "150",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -7362,7 +7606,7 @@
     },
     {
      "description": "20 models",
-     "cost": "270",
+     "cost": "290",
      "variant": "20 models",
      "tier_min": null,
      "tier_max": null,
@@ -7810,7 +8054,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "150",
+     "cost": "160",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -7818,7 +8062,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "160",
+     "cost": "170",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -7994,7 +8238,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "90",
+     "cost": "100",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -8552,7 +8796,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "80",
+     "cost": "90",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -8983,7 +9227,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "80",
+     "cost": "90",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -9018,7 +9262,7 @@
      "chapter": ""
     },
     {
-     "name": "Eradicator Squad",
+     "name": "Eradicator Squad With Melta Rifles",
      "chapter": ""
     },
     {
@@ -9168,7 +9412,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "70",
+     "cost": "75",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -9363,7 +9607,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "85",
+     "cost": "100",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -9578,7 +9822,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "100",
+     "cost": "115",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -10155,7 +10399,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "75",
+     "cost": "90",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -11136,7 +11380,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "70",
+     "cost": "75",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -11387,7 +11631,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "105",
+     "cost": "115",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -12161,7 +12405,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "60",
+     "cost": "70",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -12651,7 +12895,7 @@
    "points": [
     {
      "description": "4 models",
-     "cost": "100",
+     "cost": "120",
      "variant": "4 models",
      "tier_min": null,
      "tier_max": null,
@@ -12842,7 +13086,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "75",
+     "cost": "85",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -13266,7 +13510,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "70",
+     "cost": "80",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -13909,7 +14153,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "75",
+     "cost": "80",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -14388,7 +14632,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "85",
+     "cost": "115",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -15434,7 +15678,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "125",
+     "cost": "140",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -15815,10 +16059,18 @@
    "options": [],
    "points": [
     {
-     "description": "4 models",
-     "cost": "105",
+     "description": "4 models (1st-2nd unit)",
+     "cost": "135",
      "variant": "4 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 4
+    },
+    {
+     "description": "4 models (3rd+ unit)",
+     "cost": "150",
+     "variant": "4 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 4
     }
@@ -15843,7 +16095,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 4,
    "model_max": 4,
    "countable": false,
@@ -16852,7 +17104,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "40",
+     "cost": "45",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -18212,7 +18464,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "100",
+     "cost": "160",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -18424,7 +18676,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "70",
+     "cost": "80",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -18680,7 +18932,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "75",
+     "cost": "85",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -18938,7 +19190,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "150",
+     "cost": "165",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -18946,7 +19198,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "160",
+     "cost": "185",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -19431,7 +19683,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "85",
+     "cost": "90",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -19439,7 +19691,7 @@
     },
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "160",
+     "cost": "170",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -19447,7 +19699,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "95",
+     "cost": "105",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -19455,7 +19707,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "170",
+     "cost": "185",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -19777,7 +20029,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "115",
+     "cost": "130",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -19785,7 +20037,7 @@
     },
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "230",
+     "cost": "260",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -19793,7 +20045,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "130",
+     "cost": "160",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -19801,7 +20053,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "245",
+     "cost": "290",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -21552,18 +21804,34 @@
    ],
    "points": [
     {
-     "description": "5 models",
-     "cost": "180",
+     "description": "5 models (1st-2nd unit)",
+     "cost": "190",
      "variant": "5 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 5
+    },
+    {
+     "description": "10 models (1st-2nd unit)",
+     "cost": "380",
+     "variant": "10 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 10
+    },
+    {
+     "description": "5 models (3rd+ unit)",
+     "cost": "230",
+     "variant": "5 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 5
     },
     {
-     "description": "10 models",
-     "cost": "330",
+     "description": "10 models (3rd+ unit)",
+     "cost": "420",
      "variant": "10 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 10
     }
@@ -21588,7 +21856,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 5,
    "model_max": 10,
    "countable": true,
@@ -21645,7 +21913,7 @@
     },
     {
      "text": "Cyclone missile launcher and 1 storm bolter (this model’s storm bolter cannot be replaced) (instead of storm bolter)",
-     "cost": 0,
+     "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -21714,6 +21982,17 @@
      "grants": [
       "Twin lightning claws"
      ]
+    },
+    {
+     "text": "Equip Storm Shield",
+     "cost": 5,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "Deathwatch",
@@ -21928,7 +22207,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "100",
+     "cost": "115",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -21936,7 +22215,7 @@
     },
     {
      "description": "10 models",
-     "cost": "190",
+     "cost": "220",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -22677,18 +22956,18 @@
    ],
    "points": [
     {
-     "description": "5 models (1st unit)",
-     "cost": "240",
+     "description": "5 models (1st-2nd unit)",
+     "cost": "255",
      "variant": "5 models",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 5
     },
     {
-     "description": "5 models (2nd+ unit)",
-     "cost": "260",
+     "description": "5 models (3rd+ unit)",
+     "cost": "275",
      "variant": "5 models",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 5
     }
@@ -23204,18 +23483,34 @@
    ],
    "points": [
     {
-     "description": "5 models",
-     "cost": "165",
+     "description": "5 models (1st-2nd unit)",
+     "cost": "190",
      "variant": "5 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 5
+    },
+    {
+     "description": "10 models (1st-2nd unit)",
+     "cost": "380",
+     "variant": "10 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 10
+    },
+    {
+     "description": "5 models (3rd+ unit)",
+     "cost": "230",
+     "variant": "5 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 5
     },
     {
-     "description": "10 models",
-     "cost": "330",
+     "description": "10 models (3rd+ unit)",
+     "cost": "420",
      "variant": "10 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 10
     }
@@ -23240,7 +23535,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 5,
    "model_max": 10,
    "countable": true,
@@ -23319,7 +23614,7 @@
     },
     {
      "text": "Storm bolter and 1 cyclone missile launcher (this model’s storm bolter cannot be replaced) (instead of storm bolter with one of the following:  1 assault cannon  1 heavy flamer  1 plasma cannon  1 storm bolter and 1 cyclone missile launcher (this model’s storm bolter cannot be)",
-     "cost": 0,
+     "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "per_n",
@@ -24548,18 +24843,18 @@
    ],
    "points": [
     {
-     "description": "5 models (1st unit)",
-     "cost": "180",
+     "description": "5 models (1st-2nd unit)",
+     "cost": "135",
      "variant": "5 models",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 5
     },
     {
-     "description": "5 models (2nd+ unit)",
-     "cost": "210",
+     "description": "5 models (3rd+ unit)",
+     "cost": "145",
      "variant": "5 models",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 5
     }
@@ -24609,7 +24904,7 @@
     },
     {
      "text": "The Desolation Sergeant’s superfrag rocket launcher or superkrak rocket launcher can be replaced with 1 vengor launcher.",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -25745,7 +26040,7 @@
    "points": [
     {
      "description": "3 models",
-     "cost": "75",
+     "cost": "85",
      "variant": "3 models",
      "tier_min": null,
      "tier_max": null,
@@ -25933,7 +26228,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "90",
+     "cost": "100",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -26047,8 +26342,154 @@
    "requires_detachment": ""
   },
   {
+   "id": "000004235",
+   "name": "Eradicator Squad With Heavy Bolters",
+   "role": "Other",
+   "legend": "Before the molten ire of an Eradicator Squad, heavy armour and defended positions stand little chance. Eradicators wear the heavier Gravis-pattern of Mk X power armour, allowing them to stride unharmed through waves of incoming fire before bringing their own destructive weaponry to bear at close range.",
+   "loadout": "<b>Every model is equipped with:</b> bolt pistol; heavy bolter; close combat weapon.",
+   "transport": "",
+   "damaged": {
+    "w": "",
+    "description": ""
+   },
+   "stats": [
+    {
+     "name": "Eradicator Squad With Heavy Bolters",
+     "M": "5\"",
+     "T": "6",
+     "Sv": "3+",
+     "inv_sv": "-",
+     "inv_sv_descr": "",
+     "W": "3",
+     "Ld": "6+",
+     "OC": "1",
+     "base_size": "40mm"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "Bolt pistol",
+     "type": "Ranged",
+     "range": "12",
+     "A": "1",
+     "BS_WS": "3",
+     "S": "4",
+     "AP": "0",
+     "D": "1",
+     "description": "closequarters"
+    },
+    {
+     "name": "Heavy bolter",
+     "type": "Ranged",
+     "range": "36",
+     "A": "3",
+     "BS_WS": "3",
+     "S": "5",
+     "AP": "-1",
+     "D": "2",
+     "description": "heavy, sustained hits 1"
+    },
+    {
+     "name": "Close combat weapon",
+     "type": "Melee",
+     "range": "Melee",
+     "A": "3",
+     "BS_WS": "3",
+     "S": "4",
+     "AP": "0",
+     "D": "1",
+     "description": ""
+    }
+   ],
+   "abilities": [
+    {
+     "name": "Oath of Moment",
+     "type": "Faction",
+     "parameter": "",
+     "description": "If your Army Faction is <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">ASTARTES</span>, at the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, that enemy unit is your Oath of Moment target. Each time a model with this ability makes an attack that targets your Oath of Moment target:<br><ul><li>You can re-roll the Hit roll.</li><li>If you are using a <i>Codex: Space Marines</i> Detachment and your army does not include one or more units with the Black Templars, Blood Angels, Dark Angels, Deathwatch or Space Wolves keywords, add 1 to the Wound roll as well.</li></ul>"
+    },
+    {
+     "name": "Overlapping Detonations",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "In your Shooting phase, when this unit is selected to shoot you can select one non-MONSTER/VEHICLE enemy unit visible to it. While making attacks, this unit's heavy bolters that targeted that selected unit have [BLAST 1]."
+    }
+   ],
+   "composition": [
+    "1 Eradicator Sergeant",
+    "2 Eradicators"
+   ],
+   "options": [],
+   "points": [
+    {
+     "description": "3 models (1st-2nd unit)",
+     "cost": "95",
+     "variant": "3 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 3
+    },
+    {
+     "description": "6 models (1st-2nd unit)",
+     "cost": "200",
+     "variant": "6 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 6
+    },
+    {
+     "description": "3 models (3rd+ unit)",
+     "cost": "110",
+     "variant": "3 models",
+     "tier_min": 3,
+     "tier_max": null,
+     "models": 3
+    },
+    {
+     "description": "6 models (3rd+ unit)",
+     "cost": "215",
+     "variant": "6 models",
+     "tier_min": 3,
+     "tier_max": null,
+     "models": 6
+    }
+   ],
+   "keywords": [
+    "Infantry",
+    "Gravis",
+    "Eradicator Squad",
+    "Eradicator Squad With Heavy Bolters",
+    "Imperium",
+    "Grenades"
+   ],
+   "faction_keywords": [
+    "Adeptus Astartes"
+   ],
+   "can_lead": [],
+   "is_character": false,
+   "is_battleline": false,
+   "is_epic_hero": false,
+   "is_dedicated_transport": false,
+   "is_leader": false,
+   "can_lead_entries": [],
+   "attach_type": "",
+   "is_legends": false,
+   "has_order_tiers": true,
+   "model_min": 3,
+   "model_max": 6,
+   "countable": true,
+   "stock_weapons": [
+    "Bolt pistol",
+    "Close combat weapon",
+    "Heavy bolter"
+   ],
+   "weapon_options": [],
+   "chapter": "",
+   "requires_detachment": ""
+  },
+  {
    "id": "000000103",
-   "name": "Eradicator Squad",
+   "name": "Eradicator Squad With Melta Rifles",
    "role": "Other",
    "legend": "Before the molten ire of an Eradicator Squad, heavy armour and defended positions stand little chance. Eradicators wear the heavier Gravis-pattern of Mk X power armour, allowing them to stride unharmed through waves of incoming fire before bringing their own destructive weaponry to bear at close range.",
    "loadout": "<b>Every model is equipped with:</b> bolt pistol; melta rifle; close combat weapon.",
@@ -26059,7 +26500,7 @@
    },
    "stats": [
     {
-     "name": "Eradicator Squad",
+     "name": "Eradicator Squad With Melta Rifles",
      "M": "5\"",
      "T": "6",
      "Sv": "3+",
@@ -26149,7 +26590,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "180",
+     "cost": "190",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -26157,7 +26598,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "100",
+     "cost": "105",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -26165,7 +26606,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "190",
+     "cost": "205",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -26176,6 +26617,7 @@
     "Infantry",
     "Gravis",
     "Eradicator Squad",
+    "Eradicator Squad With Melta Rifles",
     "Imperium",
     "Grenades"
    ],
@@ -26326,7 +26768,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "50",
+     "cost": "65",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -26523,7 +26965,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "75",
+     "cost": "110",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -27999,7 +28441,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "75",
+     "cost": "80",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -28007,7 +28449,7 @@
     },
     {
      "description": "2 models",
-     "cost": "150",
+     "cost": "160",
      "variant": "2 models",
      "tier_min": null,
      "tier_max": null,
@@ -28351,7 +28793,7 @@
    "points": [
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "195",
+     "cost": "210",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -28359,7 +28801,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "210",
+     "cost": "225",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -29286,7 +29728,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "160",
+     "cost": "165",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -29294,7 +29736,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "170",
+     "cost": "175",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -29370,6 +29812,17 @@
      "grants": [
       "Icarus rocket pod"
      ]
+    },
+    {
+     "text": "Equip Multi-melta",
+     "cost": 10,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -29510,7 +29963,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "160",
+     "cost": "165",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -29518,7 +29971,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "170",
+     "cost": "175",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -29585,7 +30038,7 @@
     },
     {
      "text": "Multi-melta",
-     "cost": 0,
+     "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -29728,7 +30181,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "160",
+     "cost": "165",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -29736,7 +30189,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "170",
+     "cost": "175",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -29798,6 +30251,17 @@
      "grants": [
       "Icarus rocket pod"
      ]
+    },
+    {
+     "text": "Equip Multi-melta",
+     "cost": 10,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -29926,7 +30390,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "160",
+     "cost": "165",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -29934,7 +30398,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "170",
+     "cost": "175",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -29987,7 +30451,7 @@
     },
     {
      "text": "Multi-melta",
-     "cost": 0,
+     "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -30130,7 +30594,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "150",
+     "cost": "165",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -30138,7 +30602,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "160",
+     "cost": "175",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -30167,6 +30631,12 @@
    "model_min": 1,
    "model_max": 1,
    "countable": false,
+   "default_wargear": [
+    {
+     "name": "Multi-melta",
+     "cost": 10
+    }
+   ],
    "stock_weapons": [
     "Armoured hull",
     "Multi-melta",
@@ -30317,7 +30787,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "150",
+     "cost": "165",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -30325,7 +30795,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "160",
+     "cost": "175",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -30378,7 +30848,7 @@
     },
     {
      "text": "Multi-melta",
-     "cost": 0,
+     "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -30538,7 +31008,7 @@
    "points": [
     {
      "description": "10 models",
-     "cost": "165",
+     "cost": "180",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -31041,7 +31511,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "100",
+     "cost": "110",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -31049,7 +31519,7 @@
     },
     {
      "description": "10 models",
-     "cost": "200",
+     "cost": "220",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -31226,18 +31696,34 @@
    ],
    "points": [
     {
-     "description": "5 models",
+     "description": "5 models (1st-2nd unit)",
      "cost": "110",
      "variant": "5 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 5
+    },
+    {
+     "description": "10 models (1st-2nd unit)",
+     "cost": "220",
+     "variant": "10 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 10
+    },
+    {
+     "description": "5 models (3rd+ unit)",
+     "cost": "125",
+     "variant": "5 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 5
     },
     {
-     "description": "10 models",
-     "cost": "220",
+     "description": "10 models (3rd+ unit)",
+     "cost": "235",
      "variant": "10 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 10
     }
@@ -31261,7 +31747,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 5,
    "model_max": 10,
    "countable": true,
@@ -31386,7 +31872,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "110",
+     "cost": "125",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -32260,7 +32746,7 @@
     },
     {
      "text": "Orbital comms array",
-     "cost": 0,
+     "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -32281,6 +32767,17 @@
      },
      "base": "",
      "group": "000002568-2",
+     "model": "",
+     "grants": []
+    },
+    {
+     "text": "Equip Multi-melta",
+     "cost": 10,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
      "model": "",
      "grants": []
     }
@@ -32516,7 +33013,7 @@
     },
     {
      "text": "Multi-melta",
-     "cost": 0,
+     "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -32577,7 +33074,7 @@
     },
     {
      "text": "Orbital comms array",
-     "cost": 0,
+     "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -32880,7 +33377,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "85",
+     "cost": "95",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -32888,7 +33385,7 @@
     },
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "150",
+     "cost": "160",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -32896,7 +33393,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "95",
+     "cost": "105",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -32904,7 +33401,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "160",
+     "cost": "170",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -33134,7 +33631,7 @@
    "points": [
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "275",
+     "cost": "280",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -33142,7 +33639,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "290",
+     "cost": "300",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -33344,18 +33841,34 @@
    "options": [],
    "points": [
     {
-     "description": "5 models",
-     "cost": "85",
+     "description": "5 models (1st-2nd unit)",
+     "cost": "100",
      "variant": "5 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 5
+    },
+    {
+     "description": "10 models (1st-2nd unit)",
+     "cost": "200",
+     "variant": "10 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 10
+    },
+    {
+     "description": "5 models (3rd+ unit)",
+     "cost": "110",
+     "variant": "5 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 5
     },
     {
-     "description": "10 models",
-     "cost": "180",
+     "description": "10 models (3rd+ unit)",
+     "cost": "210",
      "variant": "10 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 10
     }
@@ -33379,7 +33892,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 5,
    "model_max": 10,
    "countable": true,
@@ -33495,34 +34008,18 @@
    ],
    "points": [
     {
-     "description": "5 models (1st-2nd unit)",
-     "cost": "110",
+     "description": "5 models",
+     "cost": "80",
      "variant": "5 models",
-     "tier_min": 1,
-     "tier_max": 2,
-     "models": 5
-    },
-    {
-     "description": "10 models (1st-2nd unit)",
-     "cost": "180",
-     "variant": "10 models",
-     "tier_min": 1,
-     "tier_max": 2,
-     "models": 10
-    },
-    {
-     "description": "5 models (3rd+ unit)",
-     "cost": "120",
-     "variant": "5 models",
-     "tier_min": 3,
+     "tier_min": null,
      "tier_max": null,
      "models": 5
     },
     {
-     "description": "10 models (3rd+ unit)",
-     "cost": "190",
+     "description": "10 models",
+     "cost": "150",
      "variant": "10 models",
-     "tier_min": 3,
+     "tier_min": null,
      "tier_max": null,
      "models": 10
     }
@@ -33547,7 +34044,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": true,
+   "has_order_tiers": false,
    "model_min": 5,
    "model_max": 10,
    "countable": true,
@@ -33689,7 +34186,7 @@
    "points": [
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "80",
+     "cost": "90",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -33697,7 +34194,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "160",
+     "cost": "180",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -33705,7 +34202,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "90",
+     "cost": "105",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -33713,7 +34210,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "170",
+     "cost": "195",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -33944,7 +34441,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "80",
+     "cost": "95",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -33952,7 +34449,7 @@
     },
     {
      "description": "10 models",
-     "cost": "150",
+     "cost": "175",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -34234,12 +34731,36 @@
    ],
    "points": [
     {
-     "description": "1 model",
-     "cost": "60",
+     "description": "1 model (1st-2nd unit)",
+     "cost": "65",
      "variant": "1 model",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 1
+    },
+    {
+     "description": "2 models (1st-2nd unit)",
+     "cost": "130",
+     "variant": "2 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 2
+    },
+    {
+     "description": "1 model (3rd+ unit)",
+     "cost": "75",
+     "variant": "1 model",
+     "tier_min": 3,
      "tier_max": null,
      "models": 1
+    },
+    {
+     "description": "2 models (3rd+ unit)",
+     "cost": "140",
+     "variant": "2 models",
+     "tier_min": 3,
+     "tier_max": null,
+     "models": 2
     }
    ],
    "keywords": [
@@ -34261,10 +34782,10 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 1,
-   "model_max": 1,
-   "countable": false,
+   "model_max": 2,
+   "countable": true,
    "stock_weapons": [
     "Bolt pistol",
     "Close combat weapon",
@@ -34274,7 +34795,7 @@
    "weapon_options": [
     {
      "text": "This model’s onslaught gatling cannon can be replaced with 1 multi-melta.",
-     "cost": 0,
+     "cost": 5,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -34418,7 +34939,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "125",
+     "cost": "140",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -34626,7 +35147,7 @@
      "chapter": ""
     },
     {
-     "name": "Eradicator Squad",
+     "name": "Eradicator Squad With Melta Rifles",
      "chapter": ""
     },
     {
@@ -34753,7 +35274,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "50",
+     "cost": "60",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -35633,7 +36154,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "55",
+     "cost": "50",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -36074,7 +36595,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "100",
+     "cost": "95",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -36778,7 +37299,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "55",
+     "cost": "80",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -37657,7 +38178,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "220",
+     "cost": "245",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -37665,7 +38186,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "240",
+     "cost": "265",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -38102,7 +38623,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "220",
+     "cost": "245",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -38110,7 +38631,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "240",
+     "cost": "265",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -38331,7 +38852,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "220",
+     "cost": "245",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -38339,7 +38860,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "240",
+     "cost": "265",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -39483,7 +40004,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "260",
+     "cost": "245",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -39491,7 +40012,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "280",
+     "cost": "265",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -39687,7 +40208,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "105",
+     "cost": "110",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -40514,7 +41035,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "130",
+     "cost": "150",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -40522,7 +41043,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "140",
+     "cost": "160",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -40660,7 +41181,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "70",
+     "cost": "80",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -40884,7 +41405,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "100",
+     "cost": "110",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -41349,18 +41870,10 @@
    "options": [],
    "points": [
     {
-     "description": "1 model (1st-2nd unit)",
-     "cost": "70",
+     "description": "1 model",
+     "cost": "75",
      "variant": "1 model",
-     "tier_min": 1,
-     "tier_max": 2,
-     "models": 1
-    },
-    {
-     "description": "1 model (3rd+ unit)",
-     "cost": "80",
-     "variant": "1 model",
-     "tier_min": 3,
+     "tier_min": null,
      "tier_max": null,
      "models": 1
     }
@@ -41488,7 +42001,7 @@
    ],
    "attach_type": "leader",
    "is_legends": false,
-   "has_order_tiers": true,
+   "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
    "countable": false,
@@ -41826,7 +42339,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "70",
+     "cost": "75",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -43003,7 +43516,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "45",
+     "cost": "50",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -43362,7 +43875,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "45",
+     "cost": "40",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -43676,7 +44189,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "95",
+     "cost": "80",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -43858,7 +44371,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "265",
+     "cost": "415",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -44028,7 +44541,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "100",
+     "cost": "150",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -45082,7 +45595,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "155",
+     "cost": "180",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -45199,7 +45712,7 @@
      "chapter": "Deathwatch"
     },
     {
-     "name": "Eradicator Squad",
+     "name": "Eradicator Squad With Melta Rifles",
      "chapter": ""
     },
     {
@@ -46394,7 +46907,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "180",
+     "cost": "200",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -46555,7 +47068,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "75",
+     "cost": "100",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -46756,7 +47269,7 @@
    "points": [
     {
      "description": "3 models",
-     "cost": "70",
+     "cost": "85",
      "variant": "3 models",
      "tier_min": null,
      "tier_max": null,
@@ -46764,7 +47277,7 @@
     },
     {
      "description": "6 models",
-     "cost": "140",
+     "cost": "160",
      "variant": "6 models",
      "tier_min": null,
      "tier_max": null,
@@ -47790,7 +48303,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "90",
+     "cost": "100",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -48179,7 +48692,7 @@
    "points": [
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "75",
+     "cost": "85",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -48187,7 +48700,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "150",
+     "cost": "170",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -48195,7 +48708,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "85",
+     "cost": "95",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -48203,7 +48716,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "160",
+     "cost": "180",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -48409,7 +48922,7 @@
    "points": [
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "105",
+     "cost": "115",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -48417,7 +48930,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "115",
+     "cost": "135",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -48591,7 +49104,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "200",
+     "cost": "190",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -48721,7 +49234,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "70",
+     "cost": "80",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -49288,7 +49801,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "195",
+     "cost": "180",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -49296,7 +49809,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "210",
+     "cost": "195",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -49518,7 +50031,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "75",
+     "cost": "85",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -49526,7 +50039,7 @@
     },
     {
      "description": "10 models",
-     "cost": "150",
+     "cost": "165",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -50866,7 +51379,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "170",
+     "cost": "190",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -50874,7 +51387,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "190",
+     "cost": "210",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -50940,6 +51453,17 @@
      "grants": [
       "Las-talon"
      ]
+    },
+    {
+     "text": "Equip Multi-melta",
+     "cost": 10,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -51097,7 +51621,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "170",
+     "cost": "190",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -51105,7 +51629,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "190",
+     "cost": "210",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -51174,7 +51698,7 @@
     },
     {
      "text": "This model can be equipped with 1 multi-melta.",
-     "cost": 0,
+     "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -51358,7 +51882,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "255",
+     "cost": "275",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -51366,7 +51890,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "275",
+     "cost": "295",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -51449,6 +51973,17 @@
      "grants": [
       "Icarus rocket pod"
      ]
+    },
+    {
+     "text": "Equip Multi-melta",
+     "cost": 10,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -51633,7 +52168,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "255",
+     "cost": "275",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -51641,7 +52176,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "275",
+     "cost": "295",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -51714,7 +52249,7 @@
     },
     {
      "text": "Multi-melta",
-     "cost": 0,
+     "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -52183,7 +52718,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "355",
+     "cost": "415",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -52327,7 +52862,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "105",
+     "cost": "120",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -52514,7 +53049,7 @@
    "points": [
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "120",
+     "cost": "135",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -52522,7 +53057,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "260",
+     "cost": "275",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -52530,7 +53065,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "140",
+     "cost": "150",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -52538,7 +53073,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "280",
+     "cost": "290",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -52700,18 +53235,10 @@
    "options": [],
    "points": [
     {
-     "description": "1 model (1st-2nd unit)",
-     "cost": "75",
+     "description": "1 model",
+     "cost": "60",
      "variant": "1 model",
-     "tier_min": 1,
-     "tier_max": 2,
-     "models": 1
-    },
-    {
-     "description": "1 model (3rd+ unit)",
-     "cost": "85",
-     "variant": "1 model",
-     "tier_min": 3,
+     "tier_min": null,
      "tier_max": null,
      "models": 1
     }
@@ -52844,7 +53371,7 @@
    ],
    "attach_type": "support",
    "is_legends": false,
-   "has_order_tiers": true,
+   "has_order_tiers": false,
    "model_min": 1,
    "model_max": 1,
    "countable": false,
@@ -56969,7 +57496,7 @@
    "points": [
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "170",
+     "cost": "185",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -56977,7 +57504,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "180",
+     "cost": "195",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -57456,18 +57983,34 @@
    ],
    "points": [
     {
-     "description": "5 models",
-     "cost": "100",
+     "description": "5 models (1st-2nd unit)",
+     "cost": "105",
      "variant": "5 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 5
+    },
+    {
+     "description": "10 models (1st-2nd unit)",
+     "cost": "210",
+     "variant": "10 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 10
+    },
+    {
+     "description": "5 models (3rd+ unit)",
+     "cost": "115",
+     "variant": "5 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 5
     },
     {
-     "description": "10 models",
-     "cost": "200",
+     "description": "10 models (3rd+ unit)",
+     "cost": "220",
      "variant": "10 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 10
     }
@@ -57492,7 +58035,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 5,
    "model_max": 10,
    "countable": true,
@@ -57817,18 +58360,34 @@
    ],
    "points": [
     {
-     "description": "5 models",
-     "cost": "100",
+     "description": "5 models (1st-2nd unit)",
+     "cost": "105",
      "variant": "5 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 5
+    },
+    {
+     "description": "10 models (1st-2nd unit)",
+     "cost": "210",
+     "variant": "10 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 10
+    },
+    {
+     "description": "5 models (3rd+ unit)",
+     "cost": "115",
+     "variant": "5 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 5
     },
     {
-     "description": "10 models",
-     "cost": "200",
+     "description": "10 models (3rd+ unit)",
+     "cost": "220",
      "variant": "10 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 10
     }
@@ -57853,7 +58412,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 5,
    "model_max": 10,
    "countable": true,
@@ -58369,7 +58928,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "105",
+     "cost": "110",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -58377,7 +58936,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "115",
+     "cost": "120",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -58673,7 +59232,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "135",
+     "cost": "155",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -58681,7 +59240,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "145",
+     "cost": "165",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -60048,7 +60607,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "90",
+     "cost": "105",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -60390,7 +60949,7 @@
    "points": [
     {
      "description": "4 models (1st-2nd unit)",
-     "cost": "100",
+     "cost": "115",
      "variant": "4 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -60398,7 +60957,7 @@
     },
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "125",
+     "cost": "140",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -60406,7 +60965,7 @@
     },
     {
      "description": "9 models (1st-2nd unit)",
-     "cost": "225",
+     "cost": "250",
      "variant": "9 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -60414,7 +60973,7 @@
     },
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "250",
+     "cost": "275",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -60422,7 +60981,7 @@
     },
     {
      "description": "4 models (3rd+ unit)",
-     "cost": "120",
+     "cost": "135",
      "variant": "4 models",
      "tier_min": 3,
      "tier_max": null,
@@ -60430,7 +60989,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "145",
+     "cost": "160",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -60438,7 +60997,7 @@
     },
     {
      "description": "9 models (3rd+ unit)",
-     "cost": "245",
+     "cost": "270",
      "variant": "9 models",
      "tier_min": 3,
      "tier_max": null,
@@ -60446,7 +61005,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "270",
+     "cost": "295",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -61392,7 +61951,7 @@
    "points": [
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "265",
+     "cost": "280",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -61400,7 +61959,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "280",
+     "cost": "300",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -61930,7 +62489,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "55",
+     "cost": "65",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -62612,18 +63171,34 @@
    ],
    "points": [
     {
-     "description": "5 models",
-     "cost": "155",
+     "description": "5 models (1st-2nd unit)",
+     "cost": "175",
      "variant": "5 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 5
+    },
+    {
+     "description": "10 models (1st-2nd unit)",
+     "cost": "350",
+     "variant": "10 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 10
+    },
+    {
+     "description": "5 models (3rd+ unit)",
+     "cost": "215",
+     "variant": "5 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 5
     },
     {
-     "description": "10 models",
-     "cost": "310",
+     "description": "10 models (3rd+ unit)",
+     "cost": "390",
      "variant": "10 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 10
     }
@@ -62647,7 +63222,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 5,
    "model_max": 10,
    "countable": true,
@@ -62673,6 +63248,17 @@
      "grants": [
       "Twin lightning claws"
      ]
+    },
+    {
+     "text": "Equip Storm Shield",
+     "cost": 5,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -62831,18 +63417,34 @@
    ],
    "points": [
     {
-     "description": "5 models",
-     "cost": "160",
+     "description": "5 models (1st-2nd unit)",
+     "cost": "195",
      "variant": "5 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 5
+    },
+    {
+     "description": "10 models (1st-2nd unit)",
+     "cost": "390",
+     "variant": "10 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 10
+    },
+    {
+     "description": "5 models (3rd+ unit)",
+     "cost": "235",
+     "variant": "5 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 5
     },
     {
-     "description": "10 models",
-     "cost": "320",
+     "description": "10 models (3rd+ unit)",
+     "cost": "430",
      "variant": "10 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 10
     }
@@ -62866,7 +63468,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 5,
    "model_max": 10,
    "countable": true,
@@ -62907,7 +63509,7 @@
     },
     {
      "text": "Cyclone missile launcher and 1 storm bolter.* (instead of storm bolter)",
-     "cost": 0,
+     "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "per_n",
@@ -63116,18 +63718,34 @@
    ],
    "points": [
     {
-     "description": "5 models",
-     "cost": "160",
+     "description": "5 models (1st-2nd unit)",
+     "cost": "195",
      "variant": "5 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 5
+    },
+    {
+     "description": "10 models (1st-2nd unit)",
+     "cost": "390",
+     "variant": "10 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 10
+    },
+    {
+     "description": "5 models (3rd+ unit)",
+     "cost": "235",
+     "variant": "5 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 5
     },
     {
-     "description": "10 models",
-     "cost": "320",
+     "description": "10 models (3rd+ unit)",
+     "cost": "430",
      "variant": "10 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 10
     }
@@ -63151,7 +63769,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 5,
    "model_max": 10,
    "countable": true,
@@ -63192,7 +63810,7 @@
     },
     {
      "text": "Cyclone missile launcher and 1 storm bolter.* (instead of storm bolter)",
-     "cost": 0,
+     "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "per_n",
@@ -64093,10 +64711,18 @@
    ],
    "points": [
     {
-     "description": "1 model",
-     "cost": "840",
+     "description": "1 model (1st unit)",
+     "cost": "850",
      "variant": "1 model",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 1,
+     "models": 1
+    },
+    {
+     "description": "1 model (2nd+ unit)",
+     "cost": "950",
+     "variant": "1 model",
+     "tier_min": 2,
      "tier_max": null,
      "models": 1
     }
@@ -64123,7 +64749,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
    "countable": false,
@@ -64439,7 +65065,7 @@
    "points": [
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "100",
+     "cost": "115",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -64447,7 +65073,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "200",
+     "cost": "230",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -64455,7 +65081,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "130",
+     "cost": "145",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -64463,7 +65089,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "230",
+     "cost": "260",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -64626,7 +65252,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "80",
+     "cost": "90",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -64663,7 +65289,7 @@
      "chapter": ""
     },
     {
-     "name": "Eradicator Squad",
+     "name": "Eradicator Squad With Melta Rifles",
      "chapter": ""
     },
     {
@@ -65369,7 +65995,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "70",
+     "cost": "90",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -66215,7 +66841,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "105",
+     "cost": "120",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -66223,7 +66849,7 @@
     },
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "210",
+     "cost": "240",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -66231,7 +66857,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "115",
+     "cost": "130",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -66239,7 +66865,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "220",
+     "cost": "250",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -67159,34 +67785,34 @@
    "options": [],
    "points": [
     {
-     "description": "3 models (1st unit)",
-     "cost": "110",
+     "description": "3 models (1st-2nd unit)",
+     "cost": "120",
      "variant": "3 models",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 3
     },
     {
-     "description": "6 models (1st unit)",
-     "cost": "230",
+     "description": "6 models (1st-2nd unit)",
+     "cost": "250",
      "variant": "6 models",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 6
     },
     {
-     "description": "3 models (2nd+ unit)",
-     "cost": "130",
+     "description": "3 models (3rd+ unit)",
+     "cost": "150",
      "variant": "3 models",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 3
     },
     {
-     "description": "6 models (2nd+ unit)",
-     "cost": "250",
+     "description": "6 models (3rd+ unit)",
+     "cost": "280",
      "variant": "6 models",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 6
     }
@@ -67702,7 +68328,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "95",
+     "cost": "105",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -67969,7 +68595,7 @@
    "points": [
     {
      "description": "6 models",
-     "cost": "120",
+     "cost": "115",
      "variant": "6 models",
      "tier_min": null,
      "tier_max": null,
@@ -68112,7 +68738,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "65",
+     "cost": "75",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -68267,7 +68893,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "95",
+     "cost": "105",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -69075,7 +69701,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "65",
+     "cost": "80",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -70148,7 +70774,7 @@
    "points": [
     {
      "description": "3 Wolf Guard Headtakers (1st-2nd unit)",
-     "cost": "85",
+     "cost": "115",
      "variant": "3 Wolf Guard Headtakers",
      "tier_min": 1,
      "tier_max": 2,
@@ -70156,7 +70782,7 @@
     },
     {
      "description": "3 Wolf Guard Headtakers, 3 Hunting Wolves (1st-2nd unit)",
-     "cost": "115",
+     "cost": "170",
      "variant": "3 Wolf Guard Headtakers, 3 Hunting Wolves",
      "tier_min": 1,
      "tier_max": 2,
@@ -70180,7 +70806,7 @@
     },
     {
      "description": "3 Wolf Guard Headtakers (3rd+ unit)",
-     "cost": "95",
+     "cost": "125",
      "variant": "3 Wolf Guard Headtakers",
      "tier_min": 3,
      "tier_max": null,
@@ -70188,7 +70814,7 @@
     },
     {
      "description": "3 Wolf Guard Headtakers, 3 Hunting Wolves (3rd+ unit)",
-     "cost": "125",
+     "cost": "180",
      "variant": "3 Wolf Guard Headtakers, 3 Hunting Wolves",
      "tier_min": 3,
      "tier_max": null,
@@ -71296,7 +71922,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "155",
+     "cost": "180",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -71304,7 +71930,7 @@
     },
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "310",
+     "cost": "365",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -71312,7 +71938,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "195",
+     "cost": "220",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -71320,7 +71946,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "350",
+     "cost": "405",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -71931,7 +72557,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "70",
+     "cost": "75",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -72202,18 +72828,34 @@
    ],
    "points": [
     {
-     "description": "6 models",
-     "cost": "90",
+     "description": "6 models (1st-2nd unit)",
+     "cost": "95",
      "variant": "6 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 6
+    },
+    {
+     "description": "12 models (1st-2nd unit)",
+     "cost": "190",
+     "variant": "12 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 12
+    },
+    {
+     "description": "6 models (3rd+ unit)",
+     "cost": "105",
+     "variant": "6 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 6
     },
     {
-     "description": "12 models",
-     "cost": "180",
+     "description": "12 models (3rd+ unit)",
+     "cost": "200",
      "variant": "12 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 12
     }
@@ -72239,7 +72881,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 6,
    "model_max": 12,
    "countable": true,
@@ -72980,7 +73622,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "85",
+     "cost": "90",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -72988,7 +73630,7 @@
     },
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "170",
+     "cost": "180",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -72996,7 +73638,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "95",
+     "cost": "105",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -73004,7 +73646,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "180",
+     "cost": "195",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -73190,7 +73832,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "135",
+     "cost": "140",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -73198,7 +73840,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "145",
+     "cost": "150",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -73354,7 +73996,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "100",
+     "cost": "125",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -73362,7 +74004,7 @@
     },
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "200",
+     "cost": "250",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -73370,7 +74012,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "110",
+     "cost": "155",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -73378,7 +74020,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "210",
+     "cost": "280",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -74051,7 +74693,7 @@
     }
    ],
    "dp_cost": 3,
-   "force_disposition": "PURGE THE FOE",
+   "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -74133,7 +74775,7 @@
     }
    ],
    "dp_cost": 3,
-   "force_disposition": "PRIORITY ASSETS",
+   "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -74214,7 +74856,7 @@
      "description": "<b>WHEN:</b> Your opponent’s Shooting phase, just after an enemy unit has shot.<br><br><b>TARGET:</b> One Adeptus Astartes Infantry or Adeptus Astartes Mounted unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Your unit can make a Normal move of up to D6\". If your unit is <span class=\"kwb\">ENTRENCHED</span>, you can re-roll the D6 to determine how far your unit can move."
     }
    ],
-   "dp_cost": 3,
+   "dp_cost": 2,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
@@ -75007,7 +75649,7 @@
     }
    ],
    "dp_cost": 3,
-   "force_disposition": "PRIORITY ASSETS",
+   "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -75342,7 +75984,7 @@
      "description": "<b>WHEN:</b> Your Movement phase.<br><br><b>TARGET:</b> One Deathwing unit from your army that is arriving using the Deep Strike ability this phase. <br><br><b>EFFECT:</b> Your unit can be set up anywhere on the battlefield that is more than 6\" horizontally away from all enemy models.<br><br><b>RESTRICTIONS:</b> Until the end of the turn, your unit is not eligible to declare a charge."
     }
    ],
-   "dp_cost": 2,
+   "dp_cost": 1,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
    "restriction": "",
@@ -75476,8 +76118,8 @@
      "description": "<b>WHEN:</b> Your opponent’s Shooting phase, just after an enemy unit has resolved its attacks.<br><br><b>TARGET:</b> One ADEPTUS ASTARTES VEHICLE unit from your army that was reduced to Below Half-strength as a result of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Your unit can shoot as if it were your Shooting phase, but must target only that enemy unit when doing so, and can only do so if that enemy unit is an eligible target."
     }
    ],
-   "dp_cost": 2,
-   "force_disposition": "TAKE AND HOLD",
+   "dp_cost": 1,
+   "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -76212,7 +76854,7 @@
      "description": "<b>WHEN:</b> Your opponent’s Movement phase, just after an enemy unit ends a Normal, Advance or Fall Back move.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">ASTARTES</span> unit from your army that is within 9\" of that enemy unit and not within Engagement Range of one or more enemy units.<br><br><b>EFFECT:</b> Your unit can make a Normal move of up to D6\". If your unit has the Space Wolves Infantry or Thunderwolf Cavalry keywords, it can make a Normal move of up to 6\" instead."
     }
    ],
-   "dp_cost": 2,
+   "dp_cost": 1,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
@@ -76647,7 +77289,7 @@
     }
    ],
    "dp_cost": 2,
-   "force_disposition": "DISRUPTION",
+   "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -76728,8 +77370,8 @@
      "description": "<b>WHEN:</b> Your Movement phase.<br><br><b>TARGET:</b> One ADEPTUS ASTARTES MOUNTED or ADEPTUS ASTARTES VEHICLE unit (excluding WALKERS) from your army.<br><br><b>EFFECT:</b> Until the end of the phase, if your unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in your unit, or 9\" instead if your unit is <span class=\"kwb\">MOUNTED</span>."
     }
    ],
-   "dp_cost": 3,
-   "force_disposition": "DISRUPTION",
+   "dp_cost": 1,
+   "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -77455,8 +78097,8 @@
      "description": "<b>WHEN:</b> End of your opponent’s Charge phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">ASTARTES</span> unit from your army within 3\" of one or more enemy units, or one Deathwing unit from your army within 6\" of one or more enemy units.<br><br><b>EFFECT:</b> Your unit now declares a charge that only targets one or more of those enemy units, and you resolve that charge.<br><br><b>RESTRICTIONS:</b> Note that even if this charge is successful, your unit does not receive any Charge bonus this turn."
     }
    ],
-   "dp_cost": 3,
-   "force_disposition": "PRIORITY ASSETS",
+   "dp_cost": 2,
+   "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],

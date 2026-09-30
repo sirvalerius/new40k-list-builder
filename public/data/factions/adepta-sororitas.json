@@ -8,6 +8,19 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-09-30",
+    "items": [
+     "**Castigator** (1 model (3rd+ unit)): 175 → 185 pts.",
+     "**Celestian Insidiants** (10 models): 120 → 115 pts.",
+     "**Exorcist**: struttura punteggio riorganizzata (1 model (1st unit) = 180pts, 1 model (2nd+ unit) = 220pts → 1 model (1st-2nd unit) = 180pts, 1 model (3rd+ unit) = 220pts).",
+     "**Morvenn Vahl** (1 model): 200 → 215 pts.",
+     "**Paragon Warsuits** (3 models (1st-2nd unit)): 180 → 165 pts.",
+     "**Paragon Warsuits** (3 models (3rd+ unit)): 190 → 175 pts.",
+     "**Saint Celestine** (3 models): 150 → 135 pts.",
+     "**Hallowed Martyrs**: Force Disposition Priority Assets → Take And Hold (DP: 3DP → 3DP)."
+    ]
+   },
+   {
     "date": "2026-08-26",
     "items": [
      "Celestian Insidiants: aggiunta keyword CELESTIAN.",
@@ -1725,7 +1738,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "175",
+     "cost": "185",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -1952,7 +1965,7 @@
    "points": [
     {
      "description": "10 models",
-     "cost": "120",
+     "cost": "115",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -3783,18 +3796,18 @@
    ],
    "points": [
     {
-     "description": "1 model (1st unit)",
+     "description": "1 model (1st-2nd unit)",
      "cost": "180",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 1
     },
     {
-     "description": "1 model (2nd+ unit)",
+     "description": "1 model (3rd+ unit)",
      "cost": "220",
      "variant": "1 model",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 1
     }
@@ -5334,7 +5347,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "200",
+     "cost": "215",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -5721,7 +5734,7 @@
    "points": [
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "180",
+     "cost": "165",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -5729,7 +5742,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "190",
+     "cost": "175",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -6914,7 +6927,7 @@
    "points": [
     {
      "description": "3 models",
-     "cost": "150",
+     "cost": "135",
      "variant": "3 models",
      "tier_min": null,
      "tier_max": null,
@@ -8814,7 +8827,7 @@
     }
    ],
    "dp_cost": 3,
-   "force_disposition": "PRIORITY ASSETS",
+   "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],

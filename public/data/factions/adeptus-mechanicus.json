@@ -8,6 +8,34 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-09-30",
+    "items": [
+     "**Corpuscarii Electro-priests** (5 models): 65 → 60 pts.",
+     "**Corpuscarii Electro-priests** (10 models): 130 → 120 pts.",
+     "**Cybernetica Datasmith** (1 model): 25 → 20 pts.",
+     "**Fulgurite Electro-priests** (5 models): 70 → 65 pts.",
+     "**Fulgurite Electro-priests** (10 models): 140 → 130 pts.",
+     "**Hastarii Exterminators** (5 models (1st-2nd unit)): 105 → 100 pts.",
+     "**Hastarii Exterminators** (5 models (3rd+ unit)): 120 → 115 pts.",
+     "**Hastarii Fusiliers** (5 models (1st-2nd unit)): 115 → 105 pts.",
+     "**Hastarii Fusiliers** (5 models (3rd+ unit)): 130 → 120 pts.",
+     "**Kastelan Robots**: struttura punteggio riorganizzata (2 models (1st unit) = 150pts, 4 models (1st unit) = 300pts, 2 models (2nd+ unit) = 180pts, 4 models (2nd+ unit) = 330pts → 2 models (1st-2nd unit) = 150pts, 4 models (1st-2nd unit) = 300pts, 2 models (3rd+ unit) = 180pts, 4 models (3rd+ unit) = 330pts).",
+     "**Kataphron Breachers** (3 models): 150 → 140 pts.",
+     "**Kataphron Breachers** (6 models): 310 → 290 pts.",
+     "**Onager Dunecrawler** (1 model): 155 → 150 pts.",
+     "**Serberys Raiders** (6 models): 110 → 105 pts.",
+     "**Serberys Sulphurhounds** (6 models): 100 → 95 pts.",
+     "**Servitor Battleclade** (9 models (1st-2nd unit)): 65 → 75 pts.",
+     "**Servitor Battleclade** (9 models (3rd+ unit)): 75 → 85 pts.",
+     "**Sydonian Dragoons With Radium Jezzails** (2 models): 100 → 95 pts.",
+     "**Sydonian Dragoons With Radium Jezzails** (3 models): 150 → 140 pts.",
+     "**Sydonian Skatros** (1 model): 50 → 45 pts.",
+     "**Cohort Cybernetica**: Force Disposition Take And Hold → Take And Hold (DP: 2DP → 1DP).",
+     "**Eradication Cohort**: Force Disposition Purge The Foe → Purge The Foe (DP: 3DP → 2DP).",
+     "**Lords Of The Forge**: Force Disposition Priority Assets → Priority Assets (DP: 1DP → 2DP)."
+    ]
+   },
+   {
     "date": "2026-08-26",
     "items": [
      "**Kastelan Robots** (2 models (1st unit)): 160 → 150 pts.",
@@ -767,7 +795,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "65",
+     "cost": "60",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -775,7 +803,7 @@
     },
     {
      "description": "10 models",
-     "cost": "130",
+     "cost": "120",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -888,7 +916,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "25",
+     "cost": "20",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -999,7 +1027,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "70",
+     "cost": "65",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -1007,7 +1035,7 @@
     },
     {
      "description": "10 models",
-     "cost": "140",
+     "cost": "130",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -1156,7 +1184,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "105",
+     "cost": "100",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -1164,7 +1192,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "120",
+     "cost": "115",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -1318,7 +1346,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "115",
+     "cost": "105",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -1326,7 +1354,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "130",
+     "cost": "120",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -1705,34 +1733,34 @@
    ],
    "points": [
     {
-     "description": "2 models (1st unit)",
+     "description": "2 models (1st-2nd unit)",
      "cost": "150",
      "variant": "2 models",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 2
     },
     {
-     "description": "4 models (1st unit)",
+     "description": "4 models (1st-2nd unit)",
      "cost": "300",
      "variant": "4 models",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 4
     },
     {
-     "description": "2 models (2nd+ unit)",
+     "description": "2 models (3rd+ unit)",
      "cost": "180",
      "variant": "2 models",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 2
     },
     {
-     "description": "4 models (2nd+ unit)",
+     "description": "4 models (3rd+ unit)",
      "cost": "330",
      "variant": "4 models",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 4
     }
@@ -1908,7 +1936,7 @@
    "points": [
     {
      "description": "3 models",
-     "cost": "150",
+     "cost": "140",
      "variant": "3 models",
      "tier_min": null,
      "tier_max": null,
@@ -1916,7 +1944,7 @@
     },
     {
      "description": "6 models",
-     "cost": "310",
+     "cost": "290",
      "variant": "6 models",
      "tier_min": null,
      "tier_max": null,
@@ -2331,7 +2359,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "155",
+     "cost": "150",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -3322,7 +3350,7 @@
     },
     {
      "description": "6 models",
-     "cost": "110",
+     "cost": "105",
      "variant": "6 models",
      "tier_min": null,
      "tier_max": null,
@@ -3498,7 +3526,7 @@
     },
     {
      "description": "6 models",
-     "cost": "100",
+     "cost": "95",
      "variant": "6 models",
      "tier_min": null,
      "tier_max": null,
@@ -3712,7 +3740,7 @@
    "points": [
     {
      "description": "9 models (1st-2nd unit)",
-     "cost": "65",
+     "cost": "75",
      "variant": "9 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -3720,7 +3748,7 @@
     },
     {
      "description": "9 models (3rd+ unit)",
-     "cost": "75",
+     "cost": "85",
      "variant": "9 models",
      "tier_min": 3,
      "tier_max": null,
@@ -5533,7 +5561,7 @@
     },
     {
      "description": "2 models",
-     "cost": "100",
+     "cost": "95",
      "variant": "2 models",
      "tier_min": null,
      "tier_max": null,
@@ -5541,7 +5569,7 @@
     },
     {
      "description": "3 models",
-     "cost": "150",
+     "cost": "140",
      "variant": "3 models",
      "tier_min": null,
      "tier_max": null,
@@ -5844,7 +5872,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "50",
+     "cost": "45",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -7332,7 +7360,7 @@
      "description": "<b>WHEN:</b> Your Command phase.<br><br><b>TARGET:</b> One LEGIO CYBERNETICA or ADEPTUS MECHANICUS VEHICLE unit from your army.<br><br><b>EFFECT:</b> Until the start of your next Command phase, the Conqueror Imperative and Protector Imperative are both active for your unit."
     }
    ],
-   "dp_cost": 2,
+   "dp_cost": 1,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
@@ -7490,7 +7518,7 @@
      "description": "<b>WHEN:</b> Fight phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">MECHANICUS</span> unit from your army that has not been selected to fight this phase.<br><br><b>EFFECT:</b> Until the end of the phase, melee weapons equipped by models in your unit have the [LANCE] ability."
     }
    ],
-   "dp_cost": 3,
+   "dp_cost": 2,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
@@ -7706,7 +7734,7 @@
      "description": "WHEN: Your Shooting phase, when a friendly TECH-PRIEST unit starts an action. TARGET: That unit. EFFECT: That action does not prevent your unit from being eligible to shoot."
     }
    ],
-   "dp_cost": 1,
+   "dp_cost": 2,
    "force_disposition": "PRIORITY ASSETS",
    "exclusive_tag": "",
    "restriction": "",

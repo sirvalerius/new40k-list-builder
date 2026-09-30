@@ -6,6 +6,24 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-09-30",
+    "items": [
+     "**Annihilation Barge** (1 model): 95 → 100 pts.",
+     "**Canoptek Doomstalker** (1 model): 140 → 130 pts.",
+     "**Canoptek Tomb Crawlers** (2 models): 50 → 60 pts.",
+     "**Doomsday Ark** (1 model (1st-2nd unit)): 210 → 200 pts.",
+     "**Immortals** (5 models): 70 → 65 pts.",
+     "**Immortals** (10 models): 140 → 130 pts.",
+     "**Lokhust Destroyers** (6 models (1st-2nd unit)): 175 → 190 pts.",
+     "**Lokhust Destroyers** (6 models (3rd+ unit)): 205 → 220 pts.",
+     "**Nekrosor Ammentar** (1 model): 185 → 195 pts.",
+     "**Psychomancer** (1 model): 55 → 65 pts.",
+     "**Tesseract Vault** (1 model (2nd+ unit)): 485 → 505 pts.",
+     "**Trazyn The Infinite** (1 model): 65 → 60 pts.",
+     "**Canoptek Court**: Force Disposition Take And Hold → Take And Hold (DP: 3DP → 2DP)."
+    ]
+   },
+   {
     "date": "2026-08-26",
     "items": [
      "**Lokhust Destroyers** (6 models (1st-2nd unit)): 170 → 175 pts.",
@@ -154,7 +172,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "95",
+     "cost": "100",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -575,7 +593,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "140",
+     "cost": "130",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -1287,7 +1305,7 @@
    "points": [
     {
      "description": "2 models",
-     "cost": "50",
+     "cost": "60",
      "variant": "2 models",
      "tier_min": null,
      "tier_max": null,
@@ -3200,7 +3218,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "210",
+     "cost": "200",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -4097,7 +4115,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "70",
+     "cost": "65",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -4105,7 +4123,7 @@
     },
     {
      "description": "10 models",
-     "cost": "140",
+     "cost": "130",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -4397,7 +4415,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "175",
+     "cost": "190",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -4429,7 +4447,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "205",
+     "cost": "220",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -5574,7 +5592,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "185",
+     "cost": "195",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -6955,7 +6973,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "55",
+     "cost": "65",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -8217,7 +8235,7 @@
     },
     {
      "description": "1 model (2nd+ unit)",
-     "cost": "485",
+     "cost": "505",
      "variant": "1 model",
      "tier_min": 2,
      "tier_max": null,
@@ -9088,7 +9106,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "65",
+     "cost": "60",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -9859,7 +9877,7 @@
      "description": "<b>WHEN:</b> Your opponent’s Movement phase, just after an enemy unit ends a Normal, Advance or Fall Back move.<br><br><b>TARGET:</b> One CANOPTEK unit from your army that is within 9\" of that enemy unit.<br><br><b>EFFECT:</b> Your unit can make a Normal move of up to 6\"."
     }
    ],
-   "dp_cost": 3,
+   "dp_cost": 2,
    "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",

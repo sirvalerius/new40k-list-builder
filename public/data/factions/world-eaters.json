@@ -9,6 +9,27 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-09-30",
+    "items": [
+     "**Chaos Land Raider** (1 model (1st-2nd unit)): 220 → 200 pts.",
+     "**Chaos Land Raider** (1 model (3rd+ unit)): 240 → 220 pts.",
+     "**Chaos Terminators** (5 models (1st-2nd unit)): 165 → 175 pts.",
+     "**Chaos Terminators** (10 models (1st-2nd unit)): 330 → 350 pts.",
+     "**Chaos Terminators** (5 models (3rd+ unit)): 175 → 185 pts.",
+     "**Chaos Terminators** (10 models (3rd+ unit)): 340 → 360 pts.",
+     "**Eightbound** (6 models (1st-2nd unit)): 255 → 250 pts.",
+     "**Eightbound** (6 models (3rd+ unit)): 270 → 265 pts.",
+     "**Exalted Eightbound** (6 models (1st-2nd unit)): 265 → 260 pts.",
+     "**Exalted Eightbound** (6 models (3rd+ unit)): 280 → 275 pts.",
+     "**Goremongers** (8 models): 75 → 70 pts.",
+     "**Jakhals** (20 models): 130 → 120 pts.",
+     "**Khorne Berzerkers** (10 models): 160 → 170 pts.",
+     "**Khorne Berzerkers** (20 models): 320 → 330 pts.",
+     "**Slaughterbound** (1 model): 100 → 90 pts.",
+     "**Berzerker Warband**: Force Disposition Purge The Foe → Purge The Foe (DP: 3DP → 2DP)."
+    ]
+   },
+   {
     "date": "2026-08-26",
     "items": [
      "**Khorne Berzerkers** (10 models): 170 → 160 pts.",
@@ -1322,7 +1343,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "220",
+     "cost": "200",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -1330,7 +1351,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "240",
+     "cost": "220",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -2377,7 +2398,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "165",
+     "cost": "175",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -2385,7 +2406,7 @@
     },
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "330",
+     "cost": "350",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -2393,7 +2414,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "175",
+     "cost": "185",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -2401,7 +2422,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "340",
+     "cost": "360",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -3792,7 +3813,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "255",
+     "cost": "250",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -3808,7 +3829,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "270",
+     "cost": "265",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -3920,7 +3941,7 @@
     },
     {
      "description": "6 models (1st-2nd unit)",
-     "cost": "265",
+     "cost": "260",
      "variant": "6 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -3936,7 +3957,7 @@
     },
     {
      "description": "6 models (3rd+ unit)",
-     "cost": "280",
+     "cost": "275",
      "variant": "6 models",
      "tier_min": 3,
      "tier_max": null,
@@ -5390,7 +5411,7 @@
    "points": [
     {
      "description": "8 models",
-     "cost": "75",
+     "cost": "70",
      "variant": "8 models",
      "tier_min": null,
      "tier_max": null,
@@ -6647,7 +6668,7 @@
     },
     {
      "description": "20 models",
-     "cost": "130",
+     "cost": "120",
      "variant": "20 models",
      "tier_min": null,
      "tier_max": null,
@@ -6841,7 +6862,7 @@
    "points": [
     {
      "description": "10 models",
-     "cost": "160",
+     "cost": "170",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -6849,7 +6870,7 @@
     },
     {
      "description": "20 models",
-     "cost": "320",
+     "cost": "330",
      "variant": "20 models",
      "tier_min": null,
      "tier_max": null,
@@ -11552,7 +11573,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "100",
+     "cost": "90",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -13339,7 +13360,7 @@
      "description": "<b>WHEN:</b> Your opponent’s Shooting phase, just after an enemy unit has shot.<br><br><b>TARGET:</b> One Khorne Berzerkers unit from your army that can make a Blood Surge move as a result of those attacks.<br><br><b>EFFECT:</b> Do not roll a D6 to determine how far models in your unit can move when they make their Blood Surge move. Instead, when making their Blood Surge move, these models can move up to 8\"."
     }
    ],
-   "dp_cost": 3,
+   "dp_cost": 2,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",

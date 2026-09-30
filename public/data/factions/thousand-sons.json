@@ -10,6 +10,24 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-09-30",
+    "items": [
+     "**Ahriman** (1 model): 100 → 105 pts.",
+     "**Exalted Sorcerer** (1 model): 95 → 100 pts.",
+     "**Exalted Sorcerer On Disc Of Tzeentch** (1 model): 90 → 95 pts.",
+     "**Infernal Master** (1 model): 100 → 105 pts.",
+     "**Scarab Occult Terminators** (5 models (1st-2nd unit)): 180 → 200 pts.",
+     "**Scarab Occult Terminators** (10 models (1st-2nd unit)): 385 → 425 pts.",
+     "**Scarab Occult Terminators** (5 models (3rd+ unit)): 195 → 240 pts.",
+     "**Scarab Occult Terminators** (10 models (3rd+ unit)): 400 → 465 pts.",
+     "**Sorcerer** (1 model (1st-2nd unit)): 95 → 100 pts.",
+     "**Sorcerer** (1 model (3rd+ unit)): 105 → 110 pts.",
+     "**Sorcerer In Terminator Armour** (1 model (1st-2nd unit)): 100 → 110 pts.",
+     "**Sorcerer In Terminator Armour** (1 model (3rd+ unit)): 110 → 120 pts.",
+     "**Grand Coven**: Force Disposition Priority Assets → Disruption (DP: 3DP → 3DP)."
+    ]
+   },
+   {
     "date": "2026-08-26",
     "items": [
      "**Defiler** (1 model (2nd+ unit)): 340 → 350 pts.",
@@ -144,7 +162,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "100",
+     "cost": "105",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -3519,7 +3537,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "95",
+     "cost": "100",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -3688,7 +3706,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "90",
+     "cost": "95",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -6008,7 +6026,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "100",
+     "cost": "105",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -10022,7 +10040,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "180",
+     "cost": "200",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -10030,7 +10048,7 @@
     },
     {
      "description": "10 models (1st-2nd unit)",
-     "cost": "385",
+     "cost": "425",
      "variant": "10 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -10038,7 +10056,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "195",
+     "cost": "240",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -10046,7 +10064,7 @@
     },
     {
      "description": "10 models (3rd+ unit)",
-     "cost": "400",
+     "cost": "465",
      "variant": "10 models",
      "tier_min": 3,
      "tier_max": null,
@@ -11488,7 +11506,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "95",
+     "cost": "100",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -11496,7 +11514,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "105",
+     "cost": "110",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -11671,7 +11689,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "100",
+     "cost": "110",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -11679,7 +11697,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "110",
+     "cost": "120",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -13883,7 +13901,7 @@
     }
    ],
    "dp_cost": 3,
-   "force_disposition": "PRIORITY ASSETS",
+   "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],

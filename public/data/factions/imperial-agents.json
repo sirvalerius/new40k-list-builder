@@ -9,6 +9,17 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-09-30",
+    "items": [
+     "**Aquila Kill Team** (5 models): 100 → 110 pts.",
+     "**Aquila Kill Team** (10 models): 200 → 210 pts.",
+     "**Deathwatch Kill Team** (5 models): 100 → 115 pts.",
+     "**Deathwatch Kill Team** (10 models): 190 → 220 pts.",
+     "**Watch Captain Artemis** (1 model): 65 → 75 pts.",
+     "**Watch Master** (1 model): 95 → 105 pts."
+    ]
+   },
+   {
     "date": "2026-07-22",
     "items": [
      "**Deathwatch Kill Team** (10 models): 200 → 190 pts (-10).",
@@ -325,7 +336,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "100",
+     "cost": "110",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -333,7 +344,7 @@
     },
     {
      "description": "10 models",
-     "cost": "200",
+     "cost": "210",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -1758,7 +1769,7 @@
    "points": [
     {
      "description": "5 models",
-     "cost": "100",
+     "cost": "115",
      "variant": "5 models",
      "tier_min": null,
      "tier_max": null,
@@ -1766,7 +1777,7 @@
     },
     {
      "description": "10 models",
-     "cost": "190",
+     "cost": "220",
      "variant": "10 models",
      "tier_min": null,
      "tier_max": null,
@@ -2256,7 +2267,7 @@
     },
     {
      "text": "Cyclone missile launcher and 1 storm bolter (this model’s storm bolter cannot be replaced) (instead of storm bolter)",
-     "cost": 0,
+     "cost": 10,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -2325,6 +2336,17 @@
      "grants": [
       "Thunder hammer"
      ]
+    },
+    {
+     "text": "Equip Storm Shield",
+     "cost": 5,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -12076,7 +12098,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "65",
+     "cost": "75",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -12241,7 +12263,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "95",
+     "cost": "105",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,

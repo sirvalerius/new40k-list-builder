@@ -8,6 +8,30 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-09-30",
+    "items": [
+     "**Autarch** (1 model): 75 → 70 pts.",
+     "**D-cannon Platform**: struttura punteggio riorganizzata (1 model (1st unit) = 110pts, 1 model (2nd+ unit) = 125pts → 1 model (1st-2nd unit) = 110pts, 1 model (3rd+ unit) = 130pts).",
+     "**Dragon Knights**: struttura punteggio riorganizzata (3 models = 90pts, 6 models = 180pts → 3 models (1st-2nd unit) = 85pts, 6 models (1st-2nd unit) = 180pts, 3 models (3rd+ unit) = 95pts, 6 models (3rd+ unit) = 190pts).",
+     "**Farseer** (1 model): 65 → 60 pts.",
+     "**Fire Dragons** (5 models (1st-2nd unit)): 120 → 110 pts.",
+     "**Fire Dragons** (5 models (3rd+ unit)): 130 → 120 pts.",
+     "**Kharseth** (1 model): 85 → 80 pts.",
+     "**Leystalker** (1 model): 80 → 75 pts.",
+     "**Night Spinner**: struttura punteggio riorganizzata (1 model (1st unit) = 170pts, 1 model (2nd+ unit) = 190pts → 1 model (1st-2nd unit) = 165pts, 1 model (3rd+ unit) = 195pts).",
+     "**Shroud Runners** (6 models): 175 → 165 pts.",
+     "**Stonesinger** (1 model): 60 → 55 pts.",
+     "**Warlock Conclave** (4 models): 120 → 110 pts.",
+     "**Death Jester** (1 model): 70 → 65 pts.",
+     "**Skyweavers** (2 models): 95 → 90 pts.",
+     "**Skyweavers** (4 models): 190 → 180 pts.",
+     "**Solitaire** (1 model): 115 → 105 pts.",
+     "**The Yncarne** (1 model): 245 → 230 pts.",
+     "**Yvraine** (1 model): 100 → 90 pts.",
+     "**Warhost**: Force Disposition Reconnaissance → Reconnaissance (DP: 3DP → 2DP)."
+    ]
+   },
+   {
     "date": "2026-08-26",
     "items": [
      "**Dark Reapers** (5 models): 100 → 95 pts.",
@@ -549,7 +573,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "75",
+     "cost": "70",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -4701,18 +4725,18 @@
    "options": [],
    "points": [
     {
-     "description": "1 model (1st unit)",
+     "description": "1 model (1st-2nd unit)",
      "cost": "110",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 1
     },
     {
-     "description": "1 model (2nd+ unit)",
-     "cost": "125",
+     "description": "1 model (3rd+ unit)",
+     "cost": "130",
      "variant": "1 model",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 1
     }
@@ -5100,7 +5124,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "70",
+     "cost": "65",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -5491,18 +5515,34 @@
    ],
    "points": [
     {
-     "description": "3 models",
-     "cost": "90",
+     "description": "3 models (1st-2nd unit)",
+     "cost": "85",
      "variant": "3 models",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 3
+    },
+    {
+     "description": "6 models (1st-2nd unit)",
+     "cost": "180",
+     "variant": "6 models",
+     "tier_min": 1,
+     "tier_max": 2,
+     "models": 6
+    },
+    {
+     "description": "3 models (3rd+ unit)",
+     "cost": "95",
+     "variant": "3 models",
+     "tier_min": 3,
      "tier_max": null,
      "models": 3
     },
     {
-     "description": "6 models",
-     "cost": "180",
+     "description": "6 models (3rd+ unit)",
+     "cost": "190",
      "variant": "6 models",
-     "tier_min": null,
+     "tier_min": 3,
      "tier_max": null,
      "models": 6
     }
@@ -5525,7 +5565,7 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 3,
    "model_max": 6,
    "countable": true,
@@ -6097,7 +6137,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "65",
+     "cost": "60",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -6509,7 +6549,7 @@
    "points": [
     {
      "description": "5 models (1st-2nd unit)",
-     "cost": "120",
+     "cost": "110",
      "variant": "5 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -6525,7 +6565,7 @@
     },
     {
      "description": "5 models (3rd+ unit)",
-     "cost": "130",
+     "cost": "120",
      "variant": "5 models",
      "tier_min": 3,
      "tier_max": null,
@@ -8673,7 +8713,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "85",
+     "cost": "80",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -8842,7 +8882,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "80",
+     "cost": "75",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -9501,18 +9541,18 @@
    ],
    "points": [
     {
-     "description": "1 model (1st unit)",
-     "cost": "170",
+     "description": "1 model (1st-2nd unit)",
+     "cost": "165",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 1
     },
     {
-     "description": "1 model (2nd+ unit)",
-     "cost": "190",
+     "description": "1 model (3rd+ unit)",
+     "cost": "195",
      "variant": "1 model",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 1
     }
@@ -11964,7 +12004,7 @@
     },
     {
      "description": "6 models",
-     "cost": "175",
+     "cost": "165",
      "variant": "6 models",
      "tier_min": null,
      "tier_max": null,
@@ -12400,7 +12440,7 @@
    "points": [
     {
      "description": "2 models",
-     "cost": "95",
+     "cost": "90",
      "variant": "2 models",
      "tier_min": null,
      "tier_max": null,
@@ -12408,7 +12448,7 @@
     },
     {
      "description": "4 models",
-     "cost": "190",
+     "cost": "180",
      "variant": "4 models",
      "tier_min": null,
      "tier_max": null,
@@ -12575,7 +12615,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "115",
+     "cost": "105",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -13131,7 +13171,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "60",
+     "cost": "55",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -14208,7 +14248,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "245",
+     "cost": "230",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -16104,7 +16144,7 @@
     },
     {
      "description": "4 models",
-     "cost": "120",
+     "cost": "110",
      "variant": "4 models",
      "tier_min": null,
      "tier_max": null,
@@ -20690,7 +20730,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "100",
+     "cost": "90",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -21826,7 +21866,7 @@
      "description": "<b>WHEN:</b> End of your opponent’s Fight phase.<br><br><b>TARGET:</b> One Asuryani Infantry unit from your army that is wholly within 9\" of one or more battlefield edges.<br><br><b>EFFECT:</b> If your unit is not within Engagement Range of one or more enemy units, remove it from the battlefield and place it into Strategic Reserves."
     }
    ],
-   "dp_cost": 3,
+   "dp_cost": 2,
    "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
    "restriction": "",
