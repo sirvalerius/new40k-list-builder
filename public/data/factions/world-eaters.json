@@ -27,7 +27,10 @@
      "**Khorne Berzerkers** (20 models): 320 → 330 pts.",
      "**Slaughterbound** (1 model): 100 → 90 pts.",
      "**Berzerker Warband**: Force Disposition Purge The Foe → Purge The Foe (DP: 3DP → 2DP).",
-     "Solo \"Changes to Rules Updates\" generico in copertina — nessun dettaglio specifico elencato, nessuna nuova FAQ."
+     "Solo \"Changes to Rules Updates\" generico in copertina — nessuna nuova FAQ. 12/10/2026 rileggendo a fondo il documento, non segnalata nel box \"What's New\")",
+     "**Toughness**: T6 per Chaos Terminators (prima T5). T5 per Khârn the Betrayer, Khorne Berzerkers, Master of Executions (prima T4).",
+     "**Strength/AP delle armi** (solo sulle datasheet World Eaters, faction_id WE): Bolt Pistol S4→S5/AP0→-1 su Khorne Berzerkers, Lord Invocatus, Master of Executions; Chainblade S4→S5 su Khorne Berzerkers; Combi-bolter e Combi-weapon S4→S5/AP-1 su Chaos Land Raider, Chaos Predator Annihilator, Chaos Predator Destructor, Chaos Rhino, Chaos Terminators (+ Combi-bolter anche su Helbrute).",
+     "Stesso buff coordinato trovato nei faction pack di Chaos Space Marines, Death Guard, Emperor's Children, Thousand Sons — mai applicato al database prima di oggi, il box \"What's New\" di copertina non lo segnalava."
     ]
    },
    {
@@ -1253,8 +1256,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 4"
     },
@@ -1264,8 +1267,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -1469,8 +1472,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 4"
     },
@@ -1480,8 +1483,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -1726,8 +1729,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 4"
     },
@@ -1737,8 +1740,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -1982,8 +1985,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 4"
     },
@@ -1993,8 +1996,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -2265,7 +2268,7 @@
     {
      "name": "Chaos Terminators",
      "M": "7\"",
-     "T": "5",
+     "T": "6",
      "Sv": "2+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -2282,8 +2285,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 4"
     },
@@ -2293,8 +2296,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -5684,8 +5687,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 4"
     },
@@ -6763,7 +6766,7 @@
     {
      "name": "Khorne Berzerkers",
      "M": "8\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -6780,8 +6783,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -6813,7 +6816,7 @@
      "range": "Melee",
      "A": "4",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-1",
      "D": "1",
      "description": ""
@@ -7217,7 +7220,7 @@
     {
      "name": "Khârn The Betrayer",
      "M": "8\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -8973,8 +8976,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -9279,7 +9282,7 @@
     {
      "name": "Master of Executions",
      "M": "8\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -9296,8 +9299,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },

@@ -28,7 +28,11 @@
      "**Carnival Of Excess**: Force Disposition Disruption → Disruption (DP: 2DP → 3DP).",
      "**Slaanesh’s Chosen**: Force Disposition Purge The Foe → Purge The Foe (DP: 2DP → 1DP).",
      "**Frenzied Host** — Frantic Focus (detachment rule): riscritta — quando un'unità BATTLELINE Emperor's Children fa una advance/fallback move, gli attacchi dei modelli BATTLELINE dell'unità hanno Sustained Hits 1 fino a fine turno.",
-     "Nessun'altra modifica in Rules Updates/FAQ."
+     "Nessun'altra modifica in Rules Updates/FAQ. 12/10/2026 rileggendo a fondo il documento, non segnalata nel box \"What's New\")",
+     "**Toughness**: T6 per Chaos Terminators, Lord Kakophonist, Lucius the Eternal (prima T5). T5 per Infractors, Lord Exultant, Sorcerer, Tormentors (prima T4).",
+     "**Wounds**: Noise Marines W2 → W3.",
+     "**Strength/AP delle armi** (solo sulle datasheet Emperor's Children, faction_id EC): Bolt Pistol S4→S5 e AP 0→-1 su Flawless Blades, Infractors, Lord Exultant, Sorcerer, Tormentors; Boltgun S4→S5/AP-1 su Tormentors; Combi-bolter e Combi-weapon S4→S5/AP-1 su Chaos Land Raider, Chaos Rhino, Chaos Terminators; Close Combat Weapon S4→S5 su Lord Exultant, Lord Kakophonist, Noise Marines, Tormentors; Duelling Sabre S4→S5 su Infractors.",
+     "Stesso buff coordinato trovato nei faction pack di Chaos Space Marines, Death Guard, Thousand Sons, World Eaters — mai applicato al database prima di oggi, il box \"What's New\" di copertina non lo segnalava."
     ]
    },
    {
@@ -103,8 +107,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -114,8 +118,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -320,8 +324,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -331,8 +335,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -598,7 +602,7 @@
     {
      "name": "Terminator Squad",
      "M": "6\"",
-     "T": "5",
+     "T": "6",
      "Sv": "2+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -615,8 +619,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -626,8 +630,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -1814,8 +1818,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -2246,7 +2250,7 @@
     {
      "name": "Infractors",
      "M": "7\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -2263,8 +2267,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -2296,7 +2300,7 @@
      "range": "Melee",
      "A": "4",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-1",
      "D": "1",
      "description": "precision"
@@ -2702,7 +2706,7 @@
     {
      "name": "Lord Exultant",
      "M": "7\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -2719,8 +2723,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "2",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -2763,7 +2767,7 @@
      "range": "Melee",
      "A": "6",
      "BS_WS": "2",
-     "S": "4",
+     "S": "5",
      "AP": "0",
      "D": "1",
      "description": ""
@@ -2993,7 +2997,7 @@
     {
      "name": "Lord Kakophonist",
      "M": "6\"",
-     "T": "5",
+     "T": "6",
      "Sv": "2+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -3021,7 +3025,7 @@
      "range": "Melee",
      "A": "6",
      "BS_WS": "2",
-     "S": "4",
+     "S": "5",
      "AP": "0",
      "D": "1",
      "description": ""
@@ -3155,7 +3159,7 @@
     {
      "name": "Lucius the Eternal",
      "M": "8\"",
-     "T": "5",
+     "T": "6",
      "Sv": "2+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -3450,7 +3454,7 @@
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
-     "W": "2",
+     "W": "3",
      "Ld": "6+",
      "OC": "1",
      "base_size": "40mm"
@@ -3507,7 +3511,7 @@
      "range": "Melee",
      "A": "3",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "0",
      "D": "1",
      "description": ""
@@ -3977,7 +3981,7 @@
     {
      "name": "Sorcerer",
      "M": "7\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -4016,8 +4020,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -4140,7 +4144,7 @@
     {
      "name": "Tormentors",
      "M": "7\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -4157,8 +4161,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol, precision"
     },
@@ -4168,8 +4172,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "precision"
     },
@@ -4234,7 +4238,7 @@
      "range": "Melee",
      "A": "3",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "0",
      "D": "1",
      "description": ""

@@ -25,7 +25,10 @@
      "**Sorcerer In Terminator Armour** (1 model (1st-2nd unit)): 100 → 110 pts.",
      "**Sorcerer In Terminator Armour** (1 model (3rd+ unit)): 110 → 120 pts.",
      "**Grand Coven**: Force Disposition Priority Assets → Disruption (DP: 3DP → 3DP).",
-     "Solo \"Changes to Rules Updates\" generico in copertina — nessun dettaglio specifico elencato, nessuna nuova FAQ."
+     "Solo \"Changes to Rules Updates\" generico in copertina — nessuna nuova FAQ. 12/10/2026 rileggendo a fondo il documento, non segnalata nel box \"What's New\")",
+     "**Toughness**: T6 per Scarab Occult Terminators (unità intera, inclusa la Scarab Occult Sorcerer agganciata), Sorcerer in Terminator Armour (prima T5). T5 per Ahriman, Exalted Sorcerer, Exalted Sorcerer on Disc of Tzeentch, Infernal Master, Rubric Marines (unità intera, incluso l'Aspiring Sorcerer), Sorcerer (prima T4).",
+     "**Strength/AP delle armi** (solo sulle datasheet Thousand Sons, faction_id TS): Close Combat Weapon S4→S5 su Rubric Marines; Inferno Bolt Pistol S4→S5 e AP -1→-2 su Ahriman, Exalted Sorcerer, Exalted Sorcerer on Disc of Tzeentch, Infernal Master, Rubric Marines, Sorcerer; Inferno Boltgun S4→S5 su Rubric Marines; Inferno Combi-bolter S4→S5 su Chaos Land Raider, Chaos Predator Annihilator, Chaos Predator Destructor, Chaos Rhino, Chaos Vindicator, Helbrute, Scarab Occult Terminators, Sorcerer in Terminator Armour; Inferno Combi-weapon S4→S5 sugli stessi tranne Helbrute.",
+     "Stesso buff coordinato trovato nei faction pack di Chaos Space Marines, Death Guard, Emperor's Children, World Eaters — mai applicato al database prima di oggi, il box \"What's New\" di copertina non lo segnalava."
     ]
    },
    {
@@ -85,7 +88,7 @@
     {
      "name": "Ahriman",
      "M": "10\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -102,8 +105,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "2",
-     "S": "4",
-     "AP": "-1",
+     "S": "5",
+     "AP": "-2",
      "D": "1",
      "description": "pistol"
     },
@@ -698,7 +701,7 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "rapid fire 2"
@@ -709,7 +712,7 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
@@ -1284,7 +1287,7 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "rapid fire 2"
@@ -1295,7 +1298,7 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
@@ -1535,7 +1538,7 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "rapid fire 2"
@@ -1546,7 +1549,7 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
@@ -1785,7 +1788,7 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "rapid fire 2"
@@ -1796,7 +1799,7 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
@@ -2279,7 +2282,7 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "rapid fire 2"
@@ -2290,7 +2293,7 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
@@ -3447,7 +3450,7 @@
     {
      "name": "Exalted Sorcerer",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -3475,8 +3478,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "2",
-     "S": "4",
-     "AP": "-1",
+     "S": "5",
+     "AP": "-2",
      "D": "1",
      "description": "pistol"
     },
@@ -3616,7 +3619,7 @@
     {
      "name": "Exalted Sorcerer on Disc of Tzeentch",
      "M": "10\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -3644,8 +3647,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "2",
-     "S": "4",
-     "AP": "-1",
+     "S": "5",
+     "AP": "-2",
      "D": "1",
      "description": "pistol"
     },
@@ -5107,7 +5110,7 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "rapid fire 2"
@@ -5938,7 +5941,7 @@
     {
      "name": "Infernal Master",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "5",
      "inv_sv_descr": "",
@@ -5955,8 +5958,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "2",
-     "S": "4",
-     "AP": "-1",
+     "S": "5",
+     "AP": "-2",
      "D": "1",
      "description": "pistol"
     },
@@ -9627,7 +9630,7 @@
     {
      "name": "Rubric Marine",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "5",
      "inv_sv_descr": "",
@@ -9639,7 +9642,7 @@
     {
      "name": "Aspiring Sorcerer",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "5",
      "inv_sv_descr": "",
@@ -9656,8 +9659,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "-1",
+     "S": "5",
+     "AP": "-2",
      "D": "1",
      "description": "pistol"
     },
@@ -9667,7 +9670,7 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": ""
@@ -9722,7 +9725,7 @@
      "range": "Melee",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "0",
      "D": "1",
      "description": ""
@@ -9908,7 +9911,7 @@
     {
      "name": "Scarab Occult Terminator",
      "M": "5\"",
-     "T": "5",
+     "T": "6",
      "Sv": "2+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -9920,7 +9923,7 @@
     {
      "name": "Scarab Occult Sorcerer",
      "M": "5\"",
-     "T": "5",
+     "T": "6",
      "Sv": "2+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -9959,7 +9962,7 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "rapid fire 2"
@@ -11416,7 +11419,7 @@
     {
      "name": "Sorcerer",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "5",
      "inv_sv_descr": "",
@@ -11433,8 +11436,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "-1",
+     "S": "5",
+     "AP": "-2",
      "D": "1",
      "description": "pistol"
     },
@@ -11593,7 +11596,7 @@
     {
      "name": "Sorcerer In Terminator Armour",
      "M": "5\"",
-     "T": "5",
+     "T": "6",
      "Sv": "2+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -11621,7 +11624,7 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "rapid fire 2"
@@ -11632,7 +11635,7 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
+     "S": "5",
      "AP": "-2",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"

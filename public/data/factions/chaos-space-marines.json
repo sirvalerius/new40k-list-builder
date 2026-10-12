@@ -79,7 +79,11 @@
      "**Pactbound Zealots**: Force Disposition Priority Assets → Disruption (DP: 3DP → 3DP).",
      "**Renegade Raiders**: Force Disposition Reconnaissance → Priority Assets (DP: 3DP → 3DP).",
      "Solo \"Changes to Rules Updates\" generico in copertina — nessun dettaglio specifico elencato.",
-     "FAQ: il numero di domande è sceso da 12 a 2 rispetto alla v1.1 (10 rimosse, probabilmente assorbite/superate dalle riscritture di regole nel frattempo; non trascritte perché rimozioni, non nuovo contenuto)."
+     "FAQ: il numero di domande è sceso da 12 a 2 rispetto alla v1.1 (10 rimosse, probabilmente assorbite/superate dalle riscritture di regole nel frattempo; non trascritte perché rimozioni, non nuovo contenuto). 12/10/2026 rileggendo a fondo il documento, non segnalata nel box \"What's New\")",
+     "**Toughness**: T6 per Abaddon the Despoiler, Chaos Bikers, Chaos Lord in Terminator Armour, Chaos Terminator Squad, Huron Blackheart, Kravek Morne, Sorcerer in Terminator Armour (prima T5). T5 per Chaos Lord, Chaos Lord with Jump Pack, Chosen, Cypher, Dark Apostle, Fabius Bile, Haarken Worldclaimer, Legionaries, Master of Executions, Master of Possession, Masters of the Maelstrom (Garreon the Corpsemaster/Garlon Souleater/Katar Garrix — non il Captain Sargotta/Enforcer nella stessa unità, non nominato nell'errata), Nemesis Claw, Raptors, Red Corsairs Raiders, Red Corsairs Reave-Captain, Sorcerer, Warpsmith, Warp Talons (prima T4).",
+     "**Wounds**: Havocs W2 → W3.",
+     "**Strength/AP delle armi** (solo sulle istanze di queste unità specifiche, faction_id CSM — non le copie di Death Guard/Emperor's Children/Thousand Sons/World Eaters, che hanno le loro proprie datasheet e vanno controllate a parte): Astartes Chainsword, Close Combat Weapon, Nostraman Chainblade S4→S5; Bolt Pistol, Boltgun, Combi-bolter, Combi-weapon S4→S5 e AP 0→-1; Cypher's Bolt Pistol (versione a distanza e in mischia) S4→S5; Hideous Mutations (Possessed) S5→S6. Applicato a tutte le unità nominate nell'errata che possiedono effettivamente quell'arma — **non** applicato al Chaos Lord \"a piedi\" (929), che ha \"Astartes chainblade\" e non \"Astartes chainsword\" nel suo loadout (nome diverso, nessuna corrispondenza), né agli Havocs per il Bolt Pistol (hanno solo Plasma pistol, non Bolt pistol).",
+     "Questi cambi non erano mai stati applicati al database prima di oggi, nonostante risalissero almeno alla v1.1/v1.2 del faction pack — il box \"What's New\" di copertina non li segnalava (diceva solo \"Changes to Rules Updates\" generico), e la ricerca automatica precedente cercava solo la frase \"Change [T/W/S] characteristic to\" — questa tabella usa invece un formato a colonne (CHANGES | UNITS) senza quella frase, quindi non veniva trovata."
     ]
    },
    {
@@ -146,7 +150,7 @@
     {
      "name": "Abaddon The Despoiler",
      "M": "5\"",
-     "T": "5",
+     "T": "6",
      "Sv": "2+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -900,7 +904,7 @@
     {
      "name": "Chaos Bikers",
      "M": "12\"",
-     "T": "5",
+     "T": "6",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -917,8 +921,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -928,8 +932,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -1016,7 +1020,7 @@
      "range": "Melee",
      "A": "3",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "0",
      "D": "1",
      "description": ""
@@ -1038,7 +1042,7 @@
      "range": "Melee",
      "A": "4",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-1",
      "D": "1",
      "description": ""
@@ -1648,8 +1652,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -1659,8 +1663,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -1846,7 +1850,7 @@
     {
      "name": "Chaos Lord",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -2079,7 +2083,7 @@
     {
      "name": "Chaos Lord In Terminator Armour",
      "M": "5\"",
-     "T": "5",
+     "T": "6",
      "Sv": "2+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -2096,8 +2100,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "2",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -2107,8 +2111,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -4261,7 +4265,7 @@
     {
      "name": "Chaos Lord",
      "M": "12\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -4278,8 +4282,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "2",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -4505,8 +4509,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -4516,8 +4520,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -4761,8 +4765,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -4772,8 +4776,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -5016,8 +5020,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -5027,8 +5031,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -5305,7 +5309,7 @@
     {
      "name": "Chaos Terminator Squad",
      "M": "5\"",
-     "T": "5",
+     "T": "6",
      "Sv": "2+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -5322,8 +5326,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -5333,8 +5337,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -5825,8 +5829,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -5836,8 +5840,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -6010,7 +6014,7 @@
     {
      "name": "Chosen",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -6027,8 +6031,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -6038,8 +6042,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": ""
     },
@@ -6049,8 +6053,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -6850,7 +6854,7 @@
     {
      "name": "Cypher",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -6867,7 +6871,7 @@
      "range": "12",
      "A": "6",
      "BS_WS": "2",
-     "S": "4",
+     "S": "5",
      "AP": "-1",
      "D": "1",
      "description": "assault, pistol, sustained hits 1"
@@ -6889,7 +6893,7 @@
      "range": "Melee",
      "A": "6",
      "BS_WS": "2",
-     "S": "4",
+     "S": "5",
      "AP": "-1",
      "D": "1",
      "description": "sustained hits 1"
@@ -6993,7 +6997,7 @@
     {
      "name": "DARK APOSTLE",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -7022,8 +7026,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -8644,7 +8648,7 @@
     {
      "name": "FABIUS BILE",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -10703,7 +10707,7 @@
     {
      "name": "Haarken Worldclaimer",
      "M": "12\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -10854,7 +10858,7 @@
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
-     "W": "2",
+     "W": "3",
      "Ld": "6+",
      "OC": "1",
      "base_size": "40mm"
@@ -10867,8 +10871,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": ""
     },
@@ -11021,7 +11025,7 @@
      "range": "Melee",
      "A": "5",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-1",
      "D": "1",
      "description": ""
@@ -11032,7 +11036,7 @@
      "range": "Melee",
      "A": "3",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "0",
      "D": "1",
      "description": ""
@@ -11344,8 +11348,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -12506,7 +12510,7 @@
     {
      "name": "Huron Blackheart",
      "M": "6\"",
-     "T": "5",
+     "T": "6",
      "Sv": "3+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -13807,7 +13811,7 @@
     {
      "name": "",
      "M": "5\"",
-     "T": "5",
+     "T": "6",
      "Sv": "2+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -13835,8 +13839,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "2",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -14706,7 +14710,7 @@
     {
      "name": "Legionaries",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -14734,8 +14738,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -14745,8 +14749,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": ""
     },
@@ -14899,7 +14903,7 @@
      "range": "Melee",
      "A": "4",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-1",
      "D": "1",
      "description": ""
@@ -14910,7 +14914,7 @@
      "range": "Melee",
      "A": "3",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "0",
      "D": "1",
      "description": ""
@@ -15721,8 +15725,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "2",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -15897,7 +15901,7 @@
     {
      "name": "Master Of Executions",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -15914,8 +15918,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -16039,7 +16043,7 @@
     {
      "name": "Master Of Possession",
      "M": "8\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "5",
      "inv_sv_descr": "",
@@ -16056,8 +16060,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -16210,7 +16214,7 @@
     {
      "name": "GARLON SOULEATER, GARREON THE CORPSEMASTER, KATAR GARRIX",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -16250,7 +16254,7 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-1",
      "D": "1",
      "description": "pistol"
@@ -17406,7 +17410,7 @@
     {
      "name": "Legionaries",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -17423,8 +17427,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -17434,8 +17438,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": ""
     },
@@ -17555,7 +17559,7 @@
      "range": "Melee",
      "A": "4",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-1",
      "D": "1",
      "description": ""
@@ -17577,7 +17581,7 @@
      "range": "Melee",
      "A": "5",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-1",
      "D": "1",
      "description": "sustained hits 1"
@@ -18850,7 +18854,7 @@
      "range": "Melee",
      "A": "4",
      "BS_WS": "3",
-     "S": "5",
+     "S": "6",
      "AP": "-1",
      "D": "2",
      "description": ""
@@ -19198,7 +19202,7 @@
     {
      "name": "Raptors",
      "M": "12\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -19215,8 +19219,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -19303,7 +19307,7 @@
      "range": "Melee",
      "A": "4",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "-1",
      "D": "1",
      "description": ""
@@ -19314,7 +19318,7 @@
      "range": "Melee",
      "A": "3",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "0",
      "D": "1",
      "description": ""
@@ -19653,7 +19657,7 @@
     {
      "name": "",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -19670,8 +19674,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -19681,8 +19685,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": ""
     },
@@ -19876,7 +19880,7 @@
     {
      "name": "",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -19893,8 +19897,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "2",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -22919,7 +22923,7 @@
     {
      "name": "Sorcerer",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "-",
      "inv_sv_descr": "",
@@ -22936,8 +22940,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "pistol"
     },
@@ -23086,7 +23090,7 @@
     {
      "name": "Sorcerer In Terminator Armour",
      "M": "5\"",
-     "T": "5",
+     "T": "6",
      "Sv": "2+",
      "inv_sv": "4",
      "inv_sv_descr": "",
@@ -23103,8 +23107,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "rapid fire 2"
     },
@@ -23114,8 +23118,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -26508,7 +26512,7 @@
     {
      "name": "Warp Talons",
      "M": "12\"",
-     "T": "4",
+     "T": "5",
      "Sv": "3+",
      "inv_sv": "5",
      "inv_sv_descr": "",
@@ -26651,7 +26655,7 @@
     {
      "name": "Warpsmith",
      "M": "6\"",
-     "T": "4",
+     "T": "5",
      "Sv": "2+",
      "inv_sv": "-",
      "inv_sv_descr": "",

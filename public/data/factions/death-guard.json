@@ -26,7 +26,10 @@
      "**Plague Marines** (10 models): 180 → 175 pts.",
      "**Typhus** (1 model): 100 → 90 pts.",
      "Solo \"Changes to Rules Updates\" generico in copertina — nessun dettaglio specifico elencato.",
-     "Nuova FAQ: lo Spore-laced Shock Waves del Plagueburst Crawler infligge mortal wound ogni turno alle unità colpite dall'abilità? No."
+     "Nuova FAQ: lo Spore-laced Shock Waves del Plagueburst Crawler infligge mortal wound ogni turno alle unità colpite dall'abilità? No. 12/10/2026 rileggendo a fondo il documento, non segnalata nel box \"What's New\")",
+     "Nessun cambio di Toughness/Wounds per Death Guard (niente tabella \"unit characteristics\" in questo pack, solo quella armi).",
+     "**Strength/AP delle armi** (solo sulle datasheet Death Guard, faction_id DG): Bolt Pistol S4→S5/AP0→-1 su Plague Marines, Plague Surgeon, Malignant Plaguecaster; Boltgun S4→S5/AP-1 su Icon Bearer, Plague Marines; Combi-bolter e Combi-weapon S4→S5/AP-1 su Blightlord Terminators, Chaos Land Raider, Chaos Predator Annihilator, Chaos Predator Destructor, Chaos Rhino (+ Combi-bolter anche su Helbrute); Close Combat Weapon S4→S5 su Blightlord Terminators, Foul Blightspawn, Tallyman; Plague Knife/Plague Knives S4→S5/AP-1 su Icon Bearer, Biologus Putrifier, Plague Marines.",
+     "Stesso buff coordinato trovato nei faction pack di Chaos Space Marines, Emperor's Children, Thousand Sons, World Eaters — mai applicato al database prima di oggi, il box \"What's New\" di copertina non lo segnalava."
     ]
    },
    {
@@ -240,8 +243,8 @@
      "range": "Melee",
      "A": "4",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits"
     }
@@ -375,8 +378,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits, rapid fire 2"
     },
@@ -386,8 +389,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -430,7 +433,7 @@
      "range": "Melee",
      "A": "3",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "0",
      "D": "1",
      "description": ""
@@ -956,8 +959,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits, rapid fire 2"
     },
@@ -967,8 +970,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -1559,8 +1562,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits, rapid fire 2"
     },
@@ -1570,8 +1573,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -1816,8 +1819,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits, rapid fire 2"
     },
@@ -1827,8 +1830,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -2072,8 +2075,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits, rapid fire 2"
     },
@@ -2083,8 +2086,8 @@
      "range": "24",
      "A": "1",
      "BS_WS": "4",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "anti-infantry 4+, devastating wounds, rapid fire 1"
     },
@@ -6270,7 +6273,7 @@
      "range": "Melee",
      "A": "4",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "0",
      "D": "1",
      "description": ""
@@ -6914,8 +6917,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits, rapid fire 2"
     },
@@ -7670,8 +7673,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits"
     },
@@ -7681,8 +7684,8 @@
      "range": "Melee",
      "A": "4",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits"
     }
@@ -9661,8 +9664,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits, pistol"
     },
@@ -11150,8 +11153,8 @@
      "range": "24",
      "A": "2",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits"
     },
@@ -11161,8 +11164,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits, pistol"
     },
@@ -11271,8 +11274,8 @@
      "range": "Melee",
      "A": "3",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits"
     },
@@ -11605,8 +11608,8 @@
      "range": "12",
      "A": "1",
      "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
+     "S": "5",
+     "AP": "-1",
      "D": "1",
      "description": "lethal hits, pistol"
     },
@@ -15008,7 +15011,7 @@
      "range": "Melee",
      "A": "4",
      "BS_WS": "3",
-     "S": "4",
+     "S": "5",
      "AP": "0",
      "D": "1",
      "description": ""
