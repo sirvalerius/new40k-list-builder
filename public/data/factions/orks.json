@@ -17390,6 +17390,63 @@
    "restricted_chapter": ""
   },
   {
+   "id": "000900067",
+   "name": "Brute Bosses",
+   "legend": "Belligerent generals and living embodiments of Orkdom lead the rampage.",
+   "rules": [
+    {
+     "name": "’Ard as Nails",
+     "description": "When a friendly <span class=\"tooltipWarboss\" data-tooltip-anchor=\"#tooltip_contentWarboss\" data-tooltip-content=\"#tooltip_contentWarboss\"><span class=\"kwb kwbu\">WARBOSS</span></span> model is <b><span class=\"tooltip00006\" data-tooltip-content=\"#tooltip_content00006\"><span class=\"tt kwbu\">destroyed</span></span></b>, if this unit has not been <b><a href=\"/wh40k11ed/the-rules/core-rules/#When-a-Unit-is-Selected-to-Fight\">selected to fight</a></b> this phase, roll one D6, with +1 to the roll if your unit is <b><span class=\"tooltip00022\" data-tooltip-content=\"#tooltip_content00022\"><span class=\"tt kwbu\">riled</span> <span class=\"tt kwbu\">up</span></span></b>:<br/><ul><li>On a 3+, do not remove this <span class=\"kwb\">WARBOSS</span> model from the battlefield. When this unit has fought, or at the end of the phase (whichever comes first), this <span class=\"kwb\">WARBOSS</span> model is removed from the battlefield.</li></ul>"
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Surly as a Squiggoth",
+     "cost": "25",
+     "description": "<p><span class=\"tooltip00045\" data-tooltip-anchor=\"#tooltip_content00045\" data-tooltip-content=\"#tooltip_content00045\"><span class=\"kwb kwbu\">INFANTRY</span> <span class=\"kwb kwbu\">WARBOSS</span></span> model only. (Once per battle, per army) At the end of a phase in which this model is <b><span class=\"tooltip00006\" data-tooltip-content=\"#tooltip_content00006\"><span class=\"tt kwbu\">destroyed</span></span></b>, roll one D6:<br/><ul><li>On a 2+, set this model back up on the battlefield <span class=\"tooltip00054\" data-tooltip-content=\"#tooltip_content00054\"><span class=\"tt kwbu\">as</span> <span class=\"tt kwbu\">close</span> <span class=\"tt kwbu\">as</span> <span class=\"tt kwbu\">possible</span></span> to where it was <b>destroyed</b>, <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">unengaged</span></span></b>, with 3 wounds remaining.</li></ul></p>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Brutal But Kunnin'",
+     "cost": "30",
+     "description": "<p><span class=\"tooltipWarboss\" data-tooltip-anchor=\"#tooltip_contentWarboss\" data-tooltip-content=\"#tooltip_contentWarboss\"><span class=\"kwb kwbu\">WARBOSS</span></span> model only. This model’s melee attacks have +1 <b>D</b>.</p>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Blitzboss",
+     "cost": "20",
+     "description": "<p><span class=\"tooltipWarboss\" data-tooltip-anchor=\"#tooltip_contentWarboss\" data-tooltip-content=\"#tooltip_contentWarboss\"><span class=\"kwb kwbu\">WARBOSS</span></span> model only. A <span class=\"tooltipTransport\" data-tooltip-anchor=\"#tooltip_contentTransport\" data-tooltip-content=\"#tooltip_contentTransport\"><span class=\"kwb kwbu\">TRANSPORT</span></span> unit (excluding <span class=\"tooltipWalker\" data-tooltip-anchor=\"#tooltip_contentWalker\" data-tooltip-content=\"#tooltip_contentWalker\"><span class=\"kwb kwbu\">WALKER</span></span> units) this unit is embarked within has:<br/><ul><li>+2\" <b>M</b>.</li><li>5+ <b><span class=\"tooltip00007\" data-tooltip-content=\"#tooltip_content00007\"><span class=\"tt kwbu\">InSv</span></span></b>.</li></ul></p>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Proper Killy",
+     "cost": "15",
+     "description": "<p><span class=\"tooltipWarboss\" data-tooltip-anchor=\"#tooltip_contentWarboss\" data-tooltip-content=\"#tooltip_contentWarboss\"><span class=\"kwb kwbu\">WARBOSS</span></span> model only. This model can re-roll <b><span class=\"tooltip00015\" data-tooltip-content=\"#tooltip_content00015\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">rolls</span></span></b> of 1.</p>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Morgog's Finkin' Cap",
+     "cost": "50",
+     "description": "<p><span class=\"tooltipWarboss\" data-tooltip-anchor=\"#tooltip_contentWarboss\" data-tooltip-content=\"#tooltip_contentWarboss\"><span class=\"kwb kwbu\">WARBOSS</span></span> model only. (Once per battle, per army) At the end of your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, if this unit is <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">unengaged</span></span></b>, this unit can make a <b><span class=\"tooltip00042\" data-tooltip-content=\"#tooltip_content00042\"><span class=\"tt kwbu\">normal</span> <span class=\"tt kwbu\">move</span></span></b> of:<br/><ul><li>Up to D6\".</li><li>If this unit is <b><span class=\"tooltip00022\" data-tooltip-content=\"#tooltip_content00022\"><span class=\"tt kwbu\">riled</span> <span class=\"tt kwbu\">up</span></span></b>, you can re-roll that D6.</li></ul></p>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Da Gobshot Thunderbuss",
+     "cost": "20",
+     "description": "<p><span class=\"tooltipWarboss\" data-tooltip-anchor=\"#tooltip_contentWarboss\" data-tooltip-content=\"#tooltip_contentWarboss\"><span class=\"kwb kwbu\">WARBOSS</span></span> model only. This model has the following weapon:</p><div style=\"height:8px\"></div><div class=\"itc\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"wTable\" width=\"100%\"><tbody><tr><td class=\"wTable_WEAPON\"><div class=\"dsHeader dsColorBgORK\">RANGED WEAPONS</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">RANGE</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">A</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">BS</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">S</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">AP</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">D</div></td><tbody class=\"bkg bkg_reset\"></tbody></tr></tbody><tbody class=\"bkg\"><tr class=\"wTable2_long\"><td class=\"pad2626\" colspan=\"6\"><span><b class=\"dsWeaponName\">Da Gobshot Thunderbuss</b> <span class=\"kwbw dsColorORK\"><span class=\"kwb\"><span class=\"tooltip00012\" data-tooltip-content=\"#tooltip_content00012\"><span class=\"ttw kwbu\">LETHAL</span> <span class=\"ttw kwbu\">HITS:</span> <span class=\"ttw kwbu\"><span class=\"kwnon\">non-</span>MONSTER/VEHICLE</span></span></span></span> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00027\" data-tooltip-content=\"#tooltip_content00027\"><span class=\"ttw kwbu\">RAPID</span> <span class=\"ttw kwbu\">FIRE</span> <span class=\"ttw kwbu\">6</span></span></span></span></td></tr><tr class=\"dsWeaponRow\"><td class=\"wTable2_short pad2626\"><span><b class=\"dsWeaponName\">Da Gobshot Thunderbuss</b> <span class=\"kwbw dsColorORK\"><span class=\"kwb\"><span class=\"tooltip00012\" data-tooltip-content=\"#tooltip_content00012\"><span class=\"ttw kwbu\">LETHAL</span> <span class=\"ttw kwbu\">HITS:</span> <span class=\"ttw kwbu\"><span class=\"kwnon\">non-</span>MONSTER/VEHICLE</span></span></span></span> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00027\" data-tooltip-content=\"#tooltip_content00027\"><span class=\"ttw kwbu\">RAPID</span> <span class=\"ttw kwbu\">FIRE</span> <span class=\"ttw kwbu\">6</span></span></span></span></td><td><div class=\"ct pad2626\">24\"</div></td><td><div class=\"ct pad2626\">6</div></td><td><div class=\"ct pad2626\">4+</div></td><td><div class=\"ct pad2626\">7</div></td><td><div class=\"ct pad2626\">-2</div></td><td><div class=\"ct pad2626\">2</div></td></tr></tbody></table></div>",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [],
+   "dp_cost": 1,
+   "force_disposition": "PURGE THE FOE",
+   "exclusive_tag": "",
+   "restriction": "",
+   "keyword_grants": [],
+   "boarding_actions": false,
+   "restricted_chapter": ""
+  },
+  {
    "id": "000000857",
    "name": "Bully Boyz",
    "legend": "",
@@ -17640,81 +17697,51 @@
    "restricted_chapter": ""
   },
   {
-   "id": "000001138",
-   "name": "Freebooter Krew",
-   "legend": "<p class=\"ShowFluff legend\">Ork Freebooterz are the most selfish, acquisitive and merciless of their kind. Kicked out of their tribes for failing to respect even the brutal structures of Orkoid society, they find their way into the company of equally shifty gits and form Freebooter krewz. Freebooterz typically sail the void aboard kroozers bristling with guns and boarding craft, and take every opportunity to pillage and destroy everything in their path. When Freebooter Krewz gather under the banner of an especially ambitious and cunning Kaptin, they form pirate fleets that can endanger even fortified worlds and full-fledged battle stations. Any manner of Ork can become a Freebooter – though the most iconic of their kind are the gunned-up show-offs known as Flash Gitz – and so their krewz may include mobs of Boyz and Grots, hurtling packs of bad Ork Bikerboyz, piratical Beast Snaggas, fleets of trophy-festooned Battlewagons and more besides. The only unifying features are the Freebooterz’ greed for loot of every kind, and their willingness to do just about anything to get their talons on it.</p>",
+   "id": "000900068",
+   "name": "Flyboyz",
+   "legend": "Trigger-happy Ork pilots attack from the skies in blitzing aerial assaults.",
    "rules": [
     {
-     "name": "Here Be Loot",
-     "description": "At the start of your Command phase, select one objective marker. Until the start of your next Command phase, that objective marker is your loot objective.<br><br>Each time a model in an Orks Infantry, Orks Mounted or Orks Walker unit from your army makes an attack, that attack has the [SUSTAINED HITS 1] ability if either or both of the following are true:<br><ul><li>That model’s unit is within range of your loot objective.</li><li>That attack targets a unit within range of your loot objective.</li></ul>"
+     "name": "Skyborne Loons",
+     "description": "<ul><li>Friendly <span class=\"tooltip00063\" data-tooltip-anchor=\"#tooltip_content00063\" data-tooltip-content=\"#tooltip_content00063\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">AIRCRAFT</span></span> units do not count towards the combined points value of your <b><a href=\"/wh40k11ed/the-rules/core-rules/#Strategic-Reserves\">strategic reserves</a></b> units.</li><li>While a friendly <span class=\"tooltip00063\" data-tooltip-anchor=\"#tooltip_content00063\" data-tooltip-content=\"#tooltip_content00063\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">AIRCRAFT</span></span>/<a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Deffkoptas\"><span class=\"kwb kwbo\">DEFFKOPTAS</span></a> unit is <b><span class=\"tooltip00022\" data-tooltip-content=\"#tooltip_content00022\"><span class=\"tt kwbu\">riled</span> <span class=\"tt kwbu\">up</span></span></b>, this unit’s ranged attacks have +1 to <b><span class=\"tooltip00015\" data-tooltip-content=\"#tooltip_content00015\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">rolls</span></span></b>.</li></ul>"
     }
    ],
    "enhancements": [
     {
-     "name": "Da Kaptin",
-     "cost": "10",
-     "description": "Warboss model only. Once per battle round, at the start of any phase, you can select one friendly <span class=\"kwb\">ORKS</span> unit that is Battle-shocked and within 12\" of the bearer. That unit suffers D3 mortal wounds and it is no longer Battle-shocked.",
+     "name": "FlybossUPGRADE",
+     "cost": "UPGRADE",
+     "description": "<p><span class=\"tooltip00063\" data-tooltip-anchor=\"#tooltip_content00063\" data-tooltip-content=\"#tooltip_content00063\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">AIRCRAFT</span></span> unit only.<br/><ul><li>This unit has <span class=\"kwb\">CHARACTER</span>.</li><li>When this unit ends an <b><span class=\"tooltip00032\" data-tooltip-content=\"#tooltip_content00032\"><span class=\"tt kwbu\">ingress</span> <span class=\"tt kwbu\">move</span></span></b>, each friendly <span class=\"tooltip00063\" data-tooltip-anchor=\"#tooltip_content00063\" data-tooltip-content=\"#tooltip_content00063\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">AIRCRAFT</span></span>/<a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Deffkoptas\"><span class=\"kwb kwbo\">DEFFKOPTAS</span></a> unit within 6\" of this unit is <b><span class=\"tooltip00022\" data-tooltip-content=\"#tooltip_content00022\"><span class=\"tt kwbu\">riled</span> <span class=\"tt kwbu\">up</span></span></b> until the start of your next turn.</li></ul></p>",
      "is_upgrade": false
     },
     {
-     "name": "Git-spotter Squig",
-     "cost": "20",
-     "description": "<span class=\"kwb\">ORKS</span> model only. Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Bionik Workshop",
-     "cost": "15",
-     "description": "Big Mek or Painboy model only. At the start of the battle, roll one D3 and compare the result to the list below. Until the end of the battle, models in the bearer’s unit have that bioniks ability.<br><ol><li><b>Bionik Legs:</b> Add 2\" to the Move characteristic of this model.</li><li><b>Bionik Arms:</b> Add 1 to the Strength characteristic of melee weapons equipped by this model.</li><li><b>Bionik Bonce:</b> Improve the Weapon Skill characteristic of melee weapons equipped by this model by 1.</li></ol>",
-     "is_upgrade": false
-    },
-    {
-     "name": "Razgit’s Magik Map",
-     "cost": "25",
-     "description": "<span class=\"kwb\">ORKS</span> model only. After both players have deployed their armies, select up to three Orks Infantry units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+     "name": "Impulsive ReconUPGRADE",
+     "cost": "UPGRADE",
+     "description": "<p><span class=\"tooltip00063\" data-tooltip-anchor=\"#tooltip_content00063\" data-tooltip-content=\"#tooltip_content00063\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">AIRCRAFT</span></span> unit only. In your first <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, this unit can make an <b><span class=\"tooltip00032\" data-tooltip-content=\"#tooltip_content00032\"><span class=\"tt kwbu\">ingress</span> <span class=\"tt kwbu\">move</span></span></b>.</p>",
      "is_upgrade": false
     }
    ],
    "stratagems": [
     {
-     "name": "BOARDIN’ RUSH",
+     "name": "FLYIN' HEADBUTT",
      "cp_cost": "1",
-     "type": "Freebooter Krew – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your Movement phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ORKS</span> unit from your army that has not been selected to move this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time your unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6\" to the Move characteristic of models in your unit."
+     "type": "Flyboyz Stratagem",
+     "description": "<b>WHEN:</b> Any phase, when a friendly <span class=\"tooltip00063\" data-tooltip-anchor=\"#tooltip_content00063\" data-tooltip-content=\"#tooltip_content00063\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">AIRCRAFT</span></span> unit is <b><span class=\"tooltip00006\" data-tooltip-content=\"#tooltip_content00006\"><span class=\"tt kwbu\">destroyed</span></span></b>, before rolling for any <b><span class=\"tooltip00065\" data-tooltip-content=\"#tooltip_content00065\"><span class=\"tt kwbu\">Deadly</span> <span class=\"tt kwbu\">Demise</span></span></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ORKS</span> unit.<br/><br/><b>EFFECT:</b> Your unit does not have the <b>Deadly Demise</b> ability. Select one enemy unit within 12\" of your unit and roll eight D6:<br/><ul><li>For each 4+, that enemy unit suffers 1 <b><span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">mortal</span> <span class=\"tt kwbu\">wound</span></span></b>.</li></ul>Then remove your unit from the battlefield."
     },
     {
-     "name": "BASH AND GRAB",
+     "name": "LONG, UNCONTROLLED BURSTS",
      "cp_cost": "1",
-     "type": "Freebooter Krew – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> The Fight phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ORKS</span> unit from your army that has not been selected to fight this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit makes an attack that targets an enemy unit within range of the loot objective, you can re-roll the Wound roll."
+     "type": "Flyboyz Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when a friendly <span class=\"tooltip00063\" data-tooltip-anchor=\"#tooltip_content00063\" data-tooltip-content=\"#tooltip_content00063\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">AIRCRAFT</span></span>/<a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Deffkoptas\"><span class=\"kwb kwbo\">DEFFKOPTAS</span></a> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">selected to shoot</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ORKS</span> <span class=\"kwb\">AIRCRAFT</span>/<span class=\"kwb\">DEFFKOPTAS</span> unit.<br/><br/><b>EFFECT:</b> When your unit’s ranged attacks target a <a href=\"/wh40k11ed/the-rules/core-rules/#Flying-Models\"><span class=\"kwb kwbu\">FLY</span></a> unit, those attacks can re-roll <b><span class=\"tooltip00015\" data-tooltip-content=\"#tooltip_content00015\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">rolls</span></span></b>."
     },
     {
-     "name": "ROLLING LOOT-HEAP",
+     "name": "WHIRLIGIG EVASION",
      "cp_cost": "1",
-     "type": "Freebooter Krew – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One Flash Gitz unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Until the end of the phase, ranged weapons equipped by models in your unit have the [ANTI-VEHICLE 4+] ability."
-    },
-    {
-     "name": "GRAB AND BASH",
-     "cp_cost": "1",
-     "type": "Freebooter Krew – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Command phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ORKS</span> unit from your army (excluding Gretchin units) that is within range of the loot objective.<br><br><b>EFFECT:</b> Until the start of your next Command phase, the Waaagh! is active for your unit, even if you have already called a Waaagh! this battle.<br><br><b>Designer’s Note:</b> <i>This means that any abilities that are in effect while the Waaagh! is active for your army will be in effect for your unit.</i>"
-    },
-    {
-     "name": "DECK FRAGGERS",
-     "cp_cost": "1",
-     "type": "Freebooter Krew – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ORKS</span> unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit targets an <span class=\"kwb\">INFANTRY</span> unit with a ranged weapon, that weapon has the [BLAST] ability."
-    },
-    {
-     "name": "KRUMP AND RUN",
-     "cp_cost": "1",
-     "type": "Freebooter Krew – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your opponent’s Movement phase, just after an enemy unit falls back.<br><br><b>TARGET:</b> One <span class=\"kwb\">ORKS</span> unit from your army that was within engagement range of that enemy unit at the start of the phase and is not within range of one or more enemy units.<br><br><b>EFFECT:</b> Your unit can make a Normal move of up to 6\"."
+     "type": "Flyboyz Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, when an enemy unit ends a move.<br/><br/><b>TARGET:</b> One friendly <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">unengaged</span></span></b> <a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Deffkoptas\"><span class=\"kwb kwbo\">DEFFKOPTAS</span></a> unit within 8\" of that enemy unit.<br/><br/><b>EFFECT:</b> Your unit can make a <b><span class=\"tooltip00042\" data-tooltip-content=\"#tooltip_content00042\"><span class=\"tt kwbu\">normal</span> <span class=\"tt kwbu\">move</span></span></b> of:<br/><ul><li>Up to D6\".</li><li><u>Or:</u> If your unit is <b><span class=\"tooltip00022\" data-tooltip-content=\"#tooltip_content00022\"><span class=\"tt kwbu\">riled</span> <span class=\"tt kwbu\">up</span></span></b>, up to 6\".</li></ul>"
     }
    ],
-   "dp_cost": 2,
-   "force_disposition": "TAKE AND HOLD",
+   "dp_cost": 1,
+   "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -17886,77 +17913,41 @@
    "restricted_chapter": ""
   },
   {
-   "id": "000001030",
-   "name": "More Dakka!",
-   "legend": "<p class=\"ShowFluff legend\">Of all the Ork manias, few are as widespread as the love of heavy firepower. Temporarily united by a shared love of loud and destructive dakka, hordes of similarly obsessed Orks can produce storms of killing fire capable of felling even the most heavily armoured of enemies.</p>",
+   "id": "000900069",
+   "name": "Madcap Meks",
+   "legend": "Tech-savvy tinkerers unleash insane contraptions and anarchic gubbinz.",
    "rules": [
     {
-     "name": "Dakka! Dakka! Dakka!",
-     "description": "Ranged weapons equipped by Orks Infantry and Orks Walker models from your army have the [ASSAULT] ability.<br><br>While the Waaagh! is active for your army, during your Shooting phase, ranged weapons equipped by <span class=\"kwb\">ORKS</span> <span class=\"kwb\">INFANTRY</span> and <span class=\"kwb\">ORKS</span> <span class=\"kwb\">WALKER</span> models from your army have the [SUSTAINED HITS 1] ability"
+     "name": "Unpredictable Genius",
+     "description": "In your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when all of a friendly <span class=\"tooltipBigMek\" data-tooltip-anchor=\"#tooltip_contentBigMek\" data-tooltip-content=\"#tooltip_contentBigMek\"><span class=\"kwb kwbu\">BIG</span> <span class=\"kwb kwbu\">MEK</span></span>/<a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Mek-Gunz\"><span class=\"kwb kwbo\">MEK</span> <span class=\"kwb kwbo\">GUNZ</span></a>/<a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Morkanaut\"><span class=\"kwb kwbo\">MORKANAUT</span></a>/<a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Wazbom-Blastajet\"><span class=\"kwb kwbo\">WAZBOM</span> <span class=\"kwb kwbo\">BLASTAJET</span></a> unit’s ranged attacks target a single enemy unit, roll one D6:<br/><br/><div \"=\"\" class=\"BreakInsideAvoid\" style=\"\"><table border=\"0\" bordercolor=\"#888\" cellpadding=\"4\" cellspacing=\"0\" style=\"border-collapse:collapse;border-width:0px\"><tbody><tr><td><table border=\"1\" bordercolor=\"#888\" cellpadding=\"4\" class=\"customTable\" style=\"border-collapse:collapse;border-color:#888888;border-width:0px\"><tbody><tr><td colspan=\"2\" style=\"border-width:0 0 3px 0;border-style:none none solid none;background-color:rgb(0,0,0);color:rgb(254,254,254);border-color:rgb(0,0,0);vertical-align:bottom;font-size:20px;width:0px;height:0px;\"><b><span class=\"kwb\">UNPREDICTABLE</span> <span class=\"kwb\">GENIUS</span></b></td><td style=\"border-width:0 0 3px 0;border-style:none none solid none;border-color:rgb(1,1,1);vertical-align:bottom;width:226px;height:0px;\"></td></tr><tr><td style=\"border-width:0 0 0 0;border-style:none none none none;vertical-align:bottom;width:60px;height:0px;\"><span class=\"kwb\">D6</span></td><td style=\"border-width:0 0 0 0;border-style:none none none none;vertical-align:bottom;width:216px;height:0px;\"><span class=\"kwb\">RESULT</span></td><td style=\"border-width:0 0 0 0;border-style:none none none none;vertical-align:bottom;width:226px;height:0px;\"></td></tr><tr><td style=\"border-width:0 0 0 0;border-style:none none none none;text-align:center;vertical-align:middle;width:60px;height:0px;\"><b>1</b></td><td colspan=\"2\" style=\"border-width:0 0 0 0;border-style:none none none none;vertical-align:bottom;width:0px;height:0px;\"><b>Dat’s Weird:</b> The target unit has 4+ <b><span class=\"tooltip00007\" data-tooltip-content=\"#tooltip_content00007\"><span class=\"tt kwbu\">InSv</span></span></b> until your unit has shot.</td></tr><tr><td style=\"border-width:0 0 0 0;border-style:none none none none;text-align:center;vertical-align:middle;width:60px;height:0px;\"><b>2-3</b></td><td colspan=\"2\" style=\"border-width:0 0 0 0;border-style:none none none none;vertical-align:bottom;width:0px;height:0px;\"><b>Hop Splat:</b> Select one other enemy unit within 3\" of the target. That unit suffers D3 <b><span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">mortal</span> <span class=\"tt kwbu\">wounds</span></span></b>.</td></tr><tr><td style=\"border-width:0 0 0 0;border-style:none none none none;text-align:center;vertical-align:middle;width:60px;height:0px;\"><b>4</b></td><td colspan=\"2\" style=\"border-width:0 0 0 0;border-style:none none none none;vertical-align:bottom;width:0px;height:0px;\"><b>Seekerz:</b> Those attacks have +1 to <b><span class=\"tooltip00015\" data-tooltip-content=\"#tooltip_content00015\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">rolls</span></span></b>.</td></tr><tr><td style=\"border-width:0 0 0 0;border-style:none none none none;text-align:center;vertical-align:middle;width:60px;height:0px;\"><b>5</b></td><td colspan=\"2\" style=\"border-width:0 0 0 0;border-style:none none none none;vertical-align:bottom;width:0px;height:0px;\"><b>Lifted:</b> The target unit has <a href=\"/wh40k11ed/the-rules/core-rules/#Flying-Models\"><span class=\"kwb kwbu\">FLY</span></a>, and cannot have the <b><span class=\"tooltip00047\" data-tooltip-content=\"#tooltip_content00047\"><span class=\"tt kwbu\">benefit</span> <span class=\"tt kwbu\">of</span> <span class=\"tt kwbu\">cover</span></span></b>, until your unit has shot.</td></tr><tr><td style=\"border-width:0 0 0 0;border-style:none none none none;text-align:center;vertical-align:middle;width:60px;height:0px;\"><b>6</b></td><td colspan=\"2\" style=\"border-width:0 0 0 0;border-style:none none none none;vertical-align:bottom;width:0px;height:0px;\"><b>Runtified:</b> The target unit has -1 <b>T</b> until your unit has shot.</td></tr></tbody></table></td></tr></tbody></table></div>"
     }
    ],
    "enhancements": [
     {
-     "name": "Da Gobshot Thunderbuss",
-     "cost": "15",
-     "description": "<span class=\"kwb\">ORKS</span> model only. Ranged weapons equipped by the bearer have the [DEVASTATING WOUNDS] and [HAZARDOUS] abilities.",
+     "name": "Mekwaaagh! Mastermind",
+     "cost": "30",
+     "description": "<p><span class=\"tooltipBigMek\" data-tooltip-anchor=\"#tooltip_contentBigMek\" data-tooltip-content=\"#tooltip_contentBigMek\"><span class=\"kwb kwbu\">BIG</span> <span class=\"kwb kwbu\">MEK</span></span> model only. This unit is <b><span class=\"tooltip00022\" data-tooltip-content=\"#tooltip_content00022\"><span class=\"tt kwbu\">riled</span> <span class=\"tt kwbu\">up</span></span></b>.</p>",
      "is_upgrade": false
     },
     {
-     "name": "Dead Shiny Shootas",
-     "cost": "15",
-     "description": "<span class=\"kwb\">ORKS</span> model only. Ranged weapons equipped by models in the bearer’s unit have the [RAPID FIRE 1] ability.",
+     "name": "Temperamental ShokkaUPGRADE",
+     "cost": "UPGRADE",
+     "description": "<p><a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Big-Mek-With-Shokk-Attack-Gun\"><span class=\"kwb kwbo\">BIG</span> <span class=\"kwb kwbo\">MEK</span> <span class=\"kwb kwbo\">WITH</span> <span class=\"kwb kwbo\">SHOKK</span> <span class=\"kwb kwbo\">ATTACK</span> <span class=\"kwb kwbo\">GUN</span></a> model only. In your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when this unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">selected to shoot</a></b>, you can roll one D6:<br/><ul><li>On a 1, this model’s Shokk Attack Gun weapon has <span class=\"kwb\"><span class=\"tooltip00044\" data-tooltip-content=\"#tooltip_content00044\"><span class=\"tt kwbu\">[Torrent]</span></span></span>, and when this unit has shot, this model is <b><span class=\"tooltip00006\" data-tooltip-content=\"#tooltip_content00006\"><span class=\"tt kwbu\">destroyed</span></span></b>.</li><li>On a 2-5, this model’s Shokk Attack Gun weapon has +1 <b>A</b>.</li><li>On a 6, this model’s Shokk Attack Gun weapon has <span class=\"kwb\"><span class=\"tooltip00021\" data-tooltip-content=\"#tooltip_content00021\"><span class=\"tt kwbu\">[Sustained</span> <span class=\"tt kwbu\">Hits</span> <span class=\"tt kwbu\">2]</span></span></span>.</li></ul></p>",
      "is_upgrade": false
     },
     {
-     "name": "Targetin’ Squigs",
-     "cost": "15",
-     "description": "<span class=\"kwb\">ORKS</span> model only. Each time a model in the bearer’s unit makes a ranged attack, add 1 to the Hit roll.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Zog Off and Eat Dakka!",
-     "cost": "10",
-     "description": "<span class=\"kwb\">ORKS</span> model only. The bearer’s unit is eligible to shoot in a turn in which it Fell Back.",
+     "name": "Enhanced Runt-mawUPGRADE",
+     "cost": "UPGRADE",
+     "description": "<p><a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Big-Mek-With-Shokk-Attack-Gun\"><span class=\"kwb kwbo\">BIG</span> <span class=\"kwb kwbo\">MEK</span> <span class=\"kwb kwbo\">WITH</span> <span class=\"kwb kwbo\">SHOKK</span> <span class=\"kwb kwbo\">ATTACK</span> <span class=\"kwb kwbo\">GUN</span></a> model only. When this unit has shot, select one enemy unit hit by those attacks. That unit is <b>infested with Snotlings</b> until the start of your next turn.<br/><ul><li>While an enemy unit is <b>infested with Snotlings</b>, that unit has -1 to <b><span class=\"tooltip00057\" data-tooltip-content=\"#tooltip_content00057\"><span class=\"tt kwbu\">leadership</span> <span class=\"tt kwbu\">rolls</span></span></b>.</li></ul></p>",
      "is_upgrade": false
     }
    ],
    "stratagems": [
     {
-     "name": "LONG, UNCONTROLLED BURSTS",
+     "name": "VINDICTIVE ARTILLERISTS",
      "cp_cost": "1",
-     "type": "More Dakka! – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ORKS</span> unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Until the end of the phase, ranged weapons equipped by models in your unit have the [IGNORES COVER] ability."
-    },
-    {
-     "name": "ORKS IS STILL ORKS",
-     "cp_cost": "1",
-     "type": "More Dakka! – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Fight phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ORKS</span> unit from your army that has not been selected to fight this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit makes an attack that targets an enemy unit, re-roll a Wound roll of 1. If that enemy unit is within range of an objective marker, you can re-roll the Wound roll instead."
-    },
-    {
-     "name": "GET STUCK IN, LADZ!",
-     "cp_cost": "2",
-     "type": "More Dakka! – Epic Deed Stratagem",
-     "description": "<b>WHEN:</b> Your Command phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ORKS</span> unit from your army (excluding Gretchin units).<br><br><b>EFFECT:</b> Until the start of your next Command phase, the Waaagh! is active for your unit, even if you have already called a Waaagh! this battle.<br><br><b>Designer’s Note:</b> <i>This means that any abilities that are in effect while the Waaagh! is active for your army will be in effect for your unit.</i>"
-    },
-    {
-     "name": "HUGE SHOW-OFFS",
-     "cp_cost": "1",
-     "type": "More Dakka! – Epic Deed Stratagem",
-     "description": "<b>WHEN:</b> Your Command phase.<br><br><b>TARGET:</b> One Orks Walker unit (excluding Killa Kans) from your army.<br><br><b>EFFECT:</b> Until the start of your next Command phase, improve your unit’s Move, Leadership and Objective Control characteristics by 1, and each time a model in your unit makes an attack, add 1 to the Hit roll."
-    },
-    {
-     "name": "CALL DAT DAKKA?",
-     "cp_cost": "1",
-     "type": "More Dakka! – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your opponent’s Shooting phase, just after an enemy unit has shot.<br><br><b>TARGET:</b> One <span class=\"kwb\">ORKS</span> unit from your army that had one or more of its models destroyed as a result of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Your unit can shoot as if it were your Shooting phase, but must target only that enemy unit when doing so, and can only do so if that enemy unit is an eligible target."
-    },
-    {
-     "name": "SPESHUL SHELLS",
-     "cp_cost": "1",
-     "type": "More Dakka! – Wargear Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ORKS</span> unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit makes a ranged attack that targets the closest eligible target within 18\", improve the Armour Penetration characteristic of ranged weapons equipped by models in your unit by 1."
+     "type": "Madcap Meks Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when a friendly <a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Mek-Gunz\"><span class=\"kwb kwbo\">MEK</span> <span class=\"kwb kwbo\">GUNZ</span></a> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">selected to shoot</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">MEK</span> <span class=\"kwb\">GUNZ</span> unit.<br/><br/><b>EFFECT:</b> Your unit’s ranged attacks have:<br/><ul><li><span class=\"kwb\"><span class=\"tooltip00012\" data-tooltip-content=\"#tooltip_content00012\"><span class=\"tt kwbu\">[Lethal</span> <span class=\"tt kwbu\">Hits]</span></span></span>.</li><li><u>Or:</u> <span class=\"kwb\"><span class=\"tooltip00021\" data-tooltip-content=\"#tooltip_content00021\"><span class=\"tt kwbu\">[Sustained</span> <span class=\"tt kwbu\">Hits</span> <span class=\"tt kwbu\">1]</span></span></span>.</li><li><u>Or:</u> <span class=\"kwb\"><span class=\"tooltip00056\" data-tooltip-content=\"#tooltip_content00056\"><span class=\"tt kwbu\">[Hazardous]</span></span></span>, <span class=\"kwb\"><span class=\"tooltip00012\" data-tooltip-content=\"#tooltip_content00012\"><span class=\"tt kwbu\">[Lethal</span> <span class=\"tt kwbu\">Hits]</span></span></span>, <span class=\"kwb\"><span class=\"tooltip00021\" data-tooltip-content=\"#tooltip_content00021\"><span class=\"tt kwbu\">[Sustained</span> <span class=\"tt kwbu\">Hits</span> <span class=\"tt kwbu\">1]</span></span></span>.</li></ul>"
     }
    ],
    "dp_cost": 1,
@@ -17968,142 +17959,103 @@
    "restricted_chapter": ""
   },
   {
-   "id": "000900026",
-   "name": "Rollin' Deff",
-   "legend": "Like an avalanche of riveted metal, heavily armed tanks and rigs plough towards the foe.",
+   "id": "000900070",
+   "name": "Runt Swarm",
+   "legend": "Sneaky and gittish Gretchin are surprisingly effective in large numbers.",
    "rules": [
     {
-     "name": "Thundering Wagons",
-     "description": "Friendly BATTLEWAGON/HUNTA RIG/KILL RIG units have the WAGON keyword. Friendly WAGON units can re-roll Charge rolls. When a friendly WAGON unit is selected to make an Advance move, that unit can change Advance rolls to a 6. This detachment has the WAGONS tag and cannot be taken with another WAGONS detachment."
+     "name": "Sneaky Little Gitz",
+     "description": "<ul><li>Friendly <a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Gretchin\"><span class=\"kwb kwbo\">GRETCHIN</span></a> units have <span class=\"kwb\">BATTLELINE</span>.</li><li>When a friendly <span class=\"kwb\">GRETCHIN</span> unit is selected to make an <b><span class=\"tooltip00005\" data-tooltip-content=\"#tooltip_content00005\"><span class=\"tt kwbu\">advance</span></span></b>/<b><span class=\"tooltip00020\" data-tooltip-content=\"#tooltip_content00020\"><span class=\"tt kwbu\">fall-back</span> <span class=\"tt kwbu\">move</span></span></b>, that move does not prevent this unit from being <b><a href=\"/wh40k11ed/the-rules/core-rules/#Starting-an-Action\">eligible to start an action</a></b>.</li></ul>"
     }
    ],
    "enhancements": [
     {
-     "name": "Boarding Ramps (Upgrade)",
-     "cost": "10",
-     "description": "WAGON unit only. When a unit embarked within this unit is selected to make a disembark move, that unit has +1 to Charge rolls until the end of the turn.",
-     "is_upgrade": true
+     "name": "Extra SneakyUPGRADE",
+     "cost": "UPGRADE",
+     "description": "<p><a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Gretchin\"><span class=\"kwb kwbo\">GRETCHIN</span></a> unit only. This unit has -3\" <b><span class=\"tooltip00038\" data-tooltip-content=\"#tooltip_content00038\"><span class=\"tt kwbu\">detection</span> <span class=\"tt kwbu\">range</span></span></b>.</p>",
+     "is_upgrade": false
     },
     {
-     "name": "Targetin' Gizmos (Upgrade)",
-     "cost": "15",
-     "description": "WAGON unit only. While a BIG MEK model is embarked within this unit: this unit's ranged attacks have [IGNORES COVER]; and if the Waaagh! is active for this unit, its ranged attacks have [SUSTAINED HITS 1].",
-     "is_upgrade": true
+     "name": "Minefield DetailUPGRADE",
+     "cost": "UPGRADE",
+     "description": "<p><a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Gretchin\"><span class=\"kwb kwbo\">GRETCHIN</span></a> unit only. While this unit is not embarked, this unit has <b><span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">Scouts</span> <span class=\"tt kwbu\">6\"</span></span></b>.</p>",
+     "is_upgrade": false
     }
    ],
    "stratagems": [
     {
-     "name": "Brutal Broadside",
-     "cp_cost": "1",
-     "type": "",
-     "description": "WHEN: Your Shooting phase, when a friendly BATTLEWAGON unit is selected to shoot. TARGET: That BATTLEWAGON unit. EFFECT: Your unit's ranged attacks (excluding attacks made by weapons selected with Firing Deck) have [RAPID FIRE X], where X is that attack's A."
+     "name": "INFESTED WAR ZONE",
+     "cp_cost": "2",
+     "type": "Runt Swarm Stratagem",
+     "description": "<b>WHEN:</b> Any phase, when an enemy unit has attacked.<br/><br/><b>TARGET:</b> One friendly <a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Gretchin\"><span class=\"kwb kwbo\">GRETCHIN</span></a> unit that was just <b><span class=\"tooltip00006\" data-tooltip-content=\"#tooltip_content00006\"><span class=\"tt kwbu\">destroyed</span></span></b>. You can target that unit with this <b>stratagem</b> even though that unit was just <b>destroyed</b>.<br/><br/><b>EFFECT:</b> Add a new <span class=\"kwb\">GRETCHIN</span> unit to your army identical to your <b>destroyed</b> unit, in <b><a href=\"/wh40k11ed/the-rules/core-rules/#Strategic-Reserves\">strategic reserves</a></b>, at its <b><span class=\"tooltip00040\" data-tooltip-content=\"#tooltip_content00040\"><span class=\"tt kwbu\">starting</span> <span class=\"tt kwbu\">strength</span></span></b>, with its <span class=\"tooltip00041\" data-tooltip-content=\"#tooltip_content00041\"><span class=\"tt kwbu\">full</span> <span class=\"tt kwbu\">wounds</span> <span class=\"tt kwbu\">remaining</span></span>."
     },
     {
-     "name": "Impending Crunch",
+     "name": "SCARPER!",
      "cp_cost": "1",
-     "type": "",
-     "description": "WHEN: Your Charge phase, when a friendly WAGON unit ends a charge move. TARGET: That WAGON unit. EFFECT: Each enemy unit engaged with your unit makes a Battle-shock test, with -1 to that roll."
+     "type": "Runt Swarm Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, when an enemy unit ends a move within 8\" of a friendly <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">unengaged</span></span></b> <a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Gretchin\"><span class=\"kwb kwbo\">GRETCHIN</span></a> unit.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">GRETCHIN</span> unit.<br/><br/><b>EFFECT:</b> Your unit can make a <b><span class=\"tooltip00042\" data-tooltip-content=\"#tooltip_content00042\"><span class=\"tt kwbu\">normal</span> <span class=\"tt kwbu\">move</span></span></b> of:<br/><ul><li>Up to D6\".</li><li><u>Or:</u> Up to 6\" instead if your unit is an <b><a href=\"/wh40k11ed/the-rules/core-rules/#Attached-Units\">attached</a></b> unit.</li></ul>"
     },
     {
-     "name": "Devastating Drift",
+     "name": "GROT SHIELDS",
      "cp_cost": "1",
-     "type": "",
-     "description": "WHEN: Your Fight phase, when a friendly WAGON unit that made a charge move this turn is selected to fight. TARGET: That WAGON unit. EFFECT: Your unit's melee attacks have [CLEAVE 1]."
+     "type": "Runt Swarm Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when an enemy unit targets a friendly <span class=\"tooltip00023\" data-tooltip-anchor=\"#tooltip_content00023\" data-tooltip-content=\"#tooltip_content00023\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">INFANTRY</span></span> unit (excluding <a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Gretchin\"><span class=\"kwb kwbo\">GRETCHIN</span></a> units).<br/><br/><b>TARGET:</b> One friendly <a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Gretchin\"><span class=\"kwb kwbo\">GRETCHIN</span></a> unit within 3\" of that <span class=\"kwb\">ORKS</span> <span class=\"kwb\">INFANTRY</span> unit.<br/><br/><b>EFFECT:</b> When a <b><span class=\"tooltip00015\" data-tooltip-content=\"#tooltip_content00015\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">roll</span></span></b> for that enemy unit’s ranged attacks that target that <span class=\"kwb\">ORKS</span> unit results in a hit, if a model in your <span class=\"kwb\">GRETCHIN</span> unit is on the battlefield, end the <a href=\"/wh40k11ed/the-rules/core-rules/#Making-Attacks\">attack sequence</a> for that attack and your <span class=\"kwb\">GRETCHIN</span> unit suffers 1 <b><span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">mortal</span> <span class=\"tt kwbu\">wound</span></span></b>."
     }
    ],
    "dp_cost": 1,
    "force_disposition": "PRIORITY ASSETS",
-   "exclusive_tag": "WAGONS",
+   "exclusive_tag": "",
    "restriction": "",
-   "keyword_grants": [
-    {
-     "when": [
-      "BATTLEWAGON",
-      "HUNTA RIG",
-      "KILL RIG"
-     ],
-     "grant": "WAGON"
-    }
-   ],
+   "keyword_grants": [],
    "boarding_actions": false,
    "restricted_chapter": ""
   },
   {
-   "id": "000001151",
-   "name": "Speedwaaagh!",
-   "legend": "<p class=\"ShowFluff legend\">When a Speedwaaagh! is unleashed, entire planets become Ork speedways. The aliens tear across battlefields and weave through no man’s land at breakneck pace, blazing away at anything in their path. So fast-moving are these Orkoid formations that they often punch clean through the enemy lines before their foes truly realise they are in battle. The Orks then haul their jostling vehicles and turbo-boosted Trukks around, charging back for another pass and then another. As they roar, they fill the air with deafening hails of firepower and choking clouds of dust and fume. Half-blinded, deafened by engines and bellowing, the enemy reels as swarms of light vehicles hit them from every direction. Ordered battle descends into high-octane anarchy as the Orks compete in contests of speed and violence in which their enemies are an unwilling audience and participants. Soon enough, the once-proud ranks of the foe are reduced to mangled ruin and the Orks race onward towards the next battle.</p>",
+   "id": "000900071",
+   "name": "Shoota Boyz",
+   "legend": "Dakka-addicts gleefully unleash ear-splitting fusilades of firepower.",
    "rules": [
     {
-     "name": "Turbo Boostas",
-     "description": "Each time a Speed Freeks or Trukk unit (excluding Aircraft) from your army Advances, it can use its turbo. If it does, do not make an Advance roll for it; instead, until the end of the phase, models in that unit have a Move characteristic of 24\" but can only move in one straight line, and until the end of the turn, ranged weapons equipped by those models have the [ASSAULT] ability and that unit cannot declare a charge.<br><br><b>Designer’s Note:</b> <i>When a unit uses its turbo, the models in that unit cannot pivot, and they cannot make a move of two or more straight lines (e.g. to navigate around obstacles). That unit also cannot declare a charge, even if another rule would let it declare a charge in a turn in which it Advanced.</i>"
+     "name": "Dakka! Dakka! Dakka!",
+     "description": "Friendly <span class=\"tooltip00023\" data-tooltip-anchor=\"#tooltip_content00023\" data-tooltip-content=\"#tooltip_content00023\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">INFANTRY</span></span> units’ ranged attacks have:<br/><ul><li><span class=\"kwb\"><span class=\"tooltip00009\" data-tooltip-content=\"#tooltip_content00009\"><span class=\"tt kwbu\">[Assault]</span></span></span>.</li><li>While this unit is <b><span class=\"tooltip00022\" data-tooltip-content=\"#tooltip_content00022\"><span class=\"tt kwbu\">riled</span> <span class=\"tt kwbu\">up</span></span></b>, +3\" <b>R</b>.</li></ul>"
     }
    ],
    "enhancements": [
     {
-     "name": "Kustom Shokk Box",
-     "cost": "10",
-     "description": "Deffkilla Wartrike model only. Each time the bearer uses its turbo, its unit can move horizontally through terrain features.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Dakkamek",
+     "name": "Supa-glowy Fing",
      "cost": "25",
-     "description": "Mek model only. Each time the bearer uses its Mekaniak ability, until the start of your next Command phase, ranged weapons equipped by the selected Vehicle model have the [RAPID FIRE 1] ability.",
+     "description": "<p><span class=\"tooltip00023\" data-tooltip-anchor=\"#tooltip_content00023\" data-tooltip-content=\"#tooltip_content00023\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">INFANTRY</span></span> model only (excluding <a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Weirdboy\"><span class=\"kwb kwbo\">WEIRDBOY</span></a> models). This model’s ranged attacks have:<br/><ul><li><span class=\"kwb\"><span class=\"tooltip00043\" data-tooltip-content=\"#tooltip_content00043\"><span class=\"tt kwbu\">[Anti-Infantry</span> <span class=\"tt kwbu\">4+]</span></span></span>.</li><li><span class=\"kwb\"><span class=\"tooltip00035\" data-tooltip-content=\"#tooltip_content00035\"><span class=\"tt kwbu\">[Devastating</span> <span class=\"tt kwbu\">Wounds]</span></span></span>.</li><li><span class=\"kwb\">[SUPA-HAZARDOUS]</span>.</li></ul><br/><span class=\"kwb\">[SUPA-HAZARDOUS]</span>: Each time a unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">selected to shoot</a></b>, after that unit has resolved all of its attacks, make two <b><span class=\"tooltip00019\" data-tooltip-content=\"#tooltip_content00019\"><span class=\"tt kwbu\">hazard</span> <span class=\"tt kwbu\">rolls</span></span></b> for that unit for each <span class=\"kwb\">[SUPA-HAZARDOUS]</span> weapon you selected in the <a href=\"/wh40k11ed/the-rules/core-rules/#1.-Select-Weapons\">Select Weapons step</a>.</p>",
      "is_upgrade": false
     },
     {
-     "name": "Supa-burny Fuel",
-     "cost": "15",
-     "description": "Deffkilla Wartrike model only. Change the Attacks characteristic of the bearer’s killa jet – burna weapon to 3D6, and change the Attacks characteristic of the bearer’s killa jet – cutta weapon to 3.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Master Meknologist",
+     "name": "Targetin' Squigs",
      "cost": "20",
-     "description": "Big Mek model only. Improve the Ballistic Skill characteristic of the bearer’s ranged weapons by 1.",
+     "description": "<p><span class=\"tooltipBigMek\" data-tooltip-anchor=\"#tooltip_contentBigMek\" data-tooltip-content=\"#tooltip_contentBigMek\"><span class=\"kwb kwbu\">BIG</span> <span class=\"kwb kwbu\">MEK</span></span>/<a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Bigboss\"><span class=\"kwb kwbo\">BIGBOSS</span></a>/<span class=\"tooltipWarboss\" data-tooltip-anchor=\"#tooltip_contentWarboss\" data-tooltip-content=\"#tooltip_contentWarboss\"><span class=\"kwb kwbu\">WARBOSS</span></span> model only. This unit’s ranged attacks (excluding <span class=\"kwb\"><span class=\"tooltip00044\" data-tooltip-content=\"#tooltip_content00044\"><span class=\"tt kwbu\">[Torrent]</span></span></span> attacks) have +3\" <b>R</b>.</p>",
      "is_upgrade": false
     }
    ],
    "stratagems": [
     {
-     "name": "ON DA MOVE",
+     "name": "KUSTOM DAKKA",
      "cp_cost": "1",
-     "type": "Speedwaaagh! – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Movement phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ORKS</span> unit from your army that has not been selected to move this phase.<br><br><b>EFFECT:</b> Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back or Advanced (unless it used its turbo this turn)."
+     "type": "Shoota Boyz Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when a friendly <span class=\"tooltip00023\" data-tooltip-anchor=\"#tooltip_content00023\" data-tooltip-content=\"#tooltip_content00023\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">INFANTRY</span></span> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">selected to shoot</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ORKS</span> <span class=\"kwb\">INFANTRY</span> unit.<br/><br/><b>EFFECT:</b> Your unit’s ranged attacks that target a unit (excluding <span class=\"kwb\">MONSTER</span>/<span class=\"kwb\">VEHICLE</span> units) have +1 to <b><span class=\"tooltip00037\" data-tooltip-content=\"#tooltip_content00037\"><span class=\"tt kwbu\">wound</span> <span class=\"tt kwbu\">rolls</span></span></b>."
     },
     {
-     "name": "EVASIVE MANOOVA",
+     "name": "GLOWIN' DAKKA",
      "cp_cost": "1",
-     "type": "Speedwaaagh! – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> End of your opponent’s Fight phase.<br><br><b>TARGET:</b> One Speed Freeks or Trukk unit from your army that is not within Engagement Range of one or more enemy units.<br><br><b>EFFECT:</b> Remove your unit from the battlefield and place it into Strategic Reserves."
+     "type": "Shoota Boyz Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when a friendly <span class=\"tooltip00023\" data-tooltip-anchor=\"#tooltip_content00023\" data-tooltip-content=\"#tooltip_content00023\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">INFANTRY</span></span> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">selected to shoot</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ORKS</span> <span class=\"kwb\">INFANTRY</span> unit.<br/><br/><b>EFFECT:</b> Your unit’s ranged attacks that target a unit within 9\" have +1 <b>AP</b>."
     },
     {
-     "name": "DUST TRAILS",
+     "name": "NEVER ENOUGH DAKKA",
      "cp_cost": "1",
-     "type": "Speedwaaagh! – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your opponent’s Shooting phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One <span class=\"kwb\">ORKS</span> unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, your unit has the Benefit of Cover."
-    },
-    {
-     "name": "DED KILLY CONSTRUCTION",
-     "cp_cost": "1",
-     "type": "Speedwaaagh! – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Fight phase.<br><br><b>TARGET:</b> One Speed Freeks or Trukk unit from your army that has not been selected to fight this phase.<br><br><b>EFFECT:</b> Until the end of the phase, melee weapons equipped by models in your unit have the [LANCE] ability and, if your unit made a Charge move this turn, until the end of the phase, add 1 to the Damage characteristic of those weapons."
-    },
-    {
-     "name": "MOBILE DAKKASTORM",
-     "cp_cost": "1",
-     "type": "Speedwaaagh! – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase, just after a Speed Freeks or Trukk unit from your army has shot.<br><br><b>TARGET:</b> That <span class=\"kwb\">SPEED</span> <span class=\"kwb\">FREEKS</span> or <span class=\"kwb\">TRUKK</span> unit.<br><br><b>EFFECT:</b> Select one enemy unit hit by one or more of those attacks (excluding attacks made with Indirect Fire weapons). Until the end of the phase, each time a model in a <span class=\"kwb\">SPEED</span> <span class=\"kwb\">FREEKS</span> or <span class=\"kwb\">TRUKK</span> unit from your army makes an attack that targets that unit, improve the Strength characteristic of that attack by 2."
-    },
-    {
-     "name": "SPESHUL AMMO",
-     "cp_cost": "1",
-     "type": "Speedwaaagh! – Wargear Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ORKS</span> unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Until the end of the phase, ranged weapons equipped by models in your unit (excluding Torrent weapons) have the [ANTI-MONSTER 4+] and [ANTI-VEHICLE 4+] abilities."
+     "type": "Shoota Boyz Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when a friendly <span class=\"tooltip00023\" data-tooltip-anchor=\"#tooltip_content00023\" data-tooltip-content=\"#tooltip_content00023\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">INFANTRY</span></span> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">selected to shoot</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ORKS</span> <span class=\"kwb\">INFANTRY</span> unit.<br/><br/><b>EFFECT:</b> Your unit’s ranged attacks have <span class=\"kwb\"><span class=\"tooltip00021\" data-tooltip-content=\"#tooltip_content00021\"><span class=\"tt kwbu\">[Sustained</span> <span class=\"tt kwbu\">Hits</span> <span class=\"tt kwbu\">1]</span></span></span>."
     }
    ],
-   "dp_cost": 2,
-   "force_disposition": "RECONNAISSANCE",
+   "dp_cost": 1,
+   "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -18268,6 +18220,97 @@
    ],
    "dp_cost": 3,
    "force_disposition": "TAKE AND HOLD",
+   "exclusive_tag": "",
+   "restriction": "",
+   "keyword_grants": [],
+   "boarding_actions": false,
+   "restricted_chapter": ""
+  },
+  {
+   "id": "000900072",
+   "name": "Wreckas",
+   "legend": "Destructive loot-grabbas descend on prized targets with vicious grins.",
+   "rules": [
+    {
+     "name": "Wreckin’ and Lootin’",
+     "description": "In your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when a friendly <a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Breaka-Boyz\"><span class=\"kwb kwbo\">BREAKA</span> <span class=\"kwb kwbo\">BOYZ</span></a>/<a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Flash-Gitz\"><span class=\"kwb kwbo\">FLASH</span> <span class=\"kwb kwbo\">GITZ</span></a>/<a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Tankbustas\"><span class=\"kwb kwbo\">TANKBUSTAS</span></a> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">selected to shoot</a></b>, if any of the following apply, that unit’s attacks can re-roll <b><span class=\"tooltip00015\" data-tooltip-content=\"#tooltip_content00015\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">rolls</span></span></b> of 1:<br/><ul><li>That unit is within range of an <b><a href=\"/wh40k11ed/the-rules/core-rules/#Objectives\">objective</a></b>.</li><li>The target of that attack is within range of an <b>objective</b>.</li></ul>"
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Kaptin's Hat",
+     "cost": "25",
+     "description": "<div style=\"padding-bottom:8px\"><span class=\"kwb\">LEADER:</span> <a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Flash-Gitz\"><span class=\"kwb kwbo\">FLASH</span> <span class=\"kwb kwbo\">GITZ</span></a></div><p><span class=\"tooltipBigMek\" data-tooltip-anchor=\"#tooltip_contentBigMek\" data-tooltip-content=\"#tooltip_contentBigMek\"><span class=\"kwb kwbu\">BIG</span> <span class=\"kwb kwbu\">MEK</span></span>/<span class=\"tooltip00045\" data-tooltip-anchor=\"#tooltip_content00045\" data-tooltip-content=\"#tooltip_content00045\"><span class=\"kwb kwbu\">WARBOSS</span> <span class=\"kwb kwbu\">INFANTRY</span></span> model only. When both players have deployed their armies, you can redeploy up to three friendly <span class=\"tooltip00023\" data-tooltip-anchor=\"#tooltip_content00023\" data-tooltip-content=\"#tooltip_content00023\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">INFANTRY</span></span> units. When doing so, you can set those units up in <b><a href=\"/wh40k11ed/the-rules/core-rules/#Strategic-Reserves\">strategic reserves</a></b>, regardless of how many units are already in strategic reserves.</p>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Supa-snazz DakkaUPGRADE",
+     "cost": "UPGRADE",
+     "description": "<p><a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Flash-Gitz\"><span class=\"kwb kwbo\">FLASH</span> <span class=\"kwb kwbo\">GITZ</span></a> unit only. This unit’s Snazzgun weapons have <span class=\"kwb\"><span class=\"tooltip00027\" data-tooltip-content=\"#tooltip_content00027\"><span class=\"tt kwbu\">[Rapid</span> <span class=\"tt kwbu\">Fire</span> <span class=\"tt kwbu\">1]</span></span></span>.</p>",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "DRIVE-BY BUSTIN'",
+     "cp_cost": "1",
+     "type": "Wreckas Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when a friendly <span class=\"tooltip00050\" data-tooltip-anchor=\"#tooltip_content00050\" data-tooltip-content=\"#tooltip_content00050\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">TRANSPORT</span></span> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">selected to shoot</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ORKS</span> <span class=\"kwb\">TRANSPORT</span> unit.<br/><br/><b>EFFECT:</b> Your unit’s ranged attacks with weapons selected for the <b><span class=\"tooltip00052\" data-tooltip-content=\"#tooltip_content00052\"><span class=\"tt kwbu\">Firing</span> <span class=\"tt kwbu\">Deck</span></span></b> ability have +1 to <b><span class=\"tooltip00015\" data-tooltip-content=\"#tooltip_content00015\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">rolls</span></span></b>."
+    },
+    {
+     "name": "GRAB IT",
+     "cp_cost": "1",
+     "type": "Wreckas Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when a friendly <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">unengaged</span></span></b> <a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Breaka-Boyz\"><span class=\"kwb kwbo\">BREAKA</span> <span class=\"kwb kwbo\">BOYZ</span></a>/<a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Flash-Gitz\"><span class=\"kwb kwbo\">FLASH</span> <span class=\"kwb kwbo\">GITZ</span></a>/<a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Tankbustas\"><span class=\"kwb kwbo\">TANKBUSTAS</span></a> unit has shot.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">BREAKA</span> <span class=\"kwb\">BOYZ</span>/<span class=\"kwb\">FLASH</span> <span class=\"kwb\">GITZ</span>/<span class=\"kwb\">TANKBUSTAS</span> unit.<br/><br/><b>EFFECT:</b> <br/><ul><li>Your unit can make a <b><span class=\"tooltip00042\" data-tooltip-content=\"#tooltip_content00042\"><span class=\"tt kwbu\">normal</span> <span class=\"tt kwbu\">move</span></span></b> of up to 6\", and must end that move within range of an <b><a href=\"/wh40k11ed/the-rules/core-rules/#Objectives\">objective</a></b>.</li><li>Your unit is <u>not</u> <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">eligible to declare a charge</a></b> until the end of the turn.</li></ul>"
+    },
+    {
+     "name": "GUN-CRAZY SHOW-OFFS",
+     "cp_cost": "1",
+     "type": "Wreckas Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when an enemy unit has shot.<br/><br/><b>TARGET:</b> One friendly <a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Flash-Gitz\"><span class=\"kwb kwbo\">FLASH</span> <span class=\"kwb kwbo\">GITZ</span></a>/<a class=\"kwbOne\" href=\"/wh40k11ed/factions/orks/Tankbustas\"><span class=\"kwb kwbo\">TANKBUSTAS</span></a> unit hit by those attacks.<br/><br/><b>EFFECT:</b> Your unit shoots using <b><span class=\"tooltip00053\" data-tooltip-content=\"#tooltip_content00053\"><span class=\"tt kwbu\">normal</span> <span class=\"tt kwbu\">shooting</span></span></b>, but while doing so your unit can only target that enemy unit."
+    }
+   ],
+   "dp_cost": 1,
+   "force_disposition": "PRIORITY ASSETS",
+   "exclusive_tag": "",
+   "restriction": "",
+   "keyword_grants": [],
+   "boarding_actions": false,
+   "restricted_chapter": ""
+  },
+  {
+   "id": "000900073",
+   "name": "Wurrband",
+   "legend": "Weirdboyz vent supernatural energies in a storm of primitive Waaagh! power.",
+   "rules": [
+    {
+     "name": "Powers of da Waaagh!",
+     "description": "Friendly <span class=\"tooltipPsyker\" data-tooltip-anchor=\"#tooltip_contentPsyker\" data-tooltip-content=\"#tooltip_contentPsyker\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">PSYKER</span></span> models’ <span class=\"kwb\"><span class=\"tooltip00066\" data-tooltip-content=\"#tooltip_content00066\"><span class=\"tt kwbu\">[Psychic]</span></span></span> attacks have: <br/><ul><li>+1 <b>S</b>.</li><li>+1 <b>S</b> for every 5 models in this unit (or embarked within this model).</li></ul><br/>Friendly <span class=\"kwb\">ORKS</span> <span class=\"kwb\">PSYKER</span> models have the following <b><span class=\"tooltip00011\" data-tooltip-content=\"#tooltip_content00011\"><span class=\"tt kwbu\">psychic</span> <span class=\"tt kwbu\">abilities</span></span></b>:<br/><br/><div class=\"blueAbility\"><b>Roar of Mork (psychic level 1):</b> In your <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, if this unit is not <b><a href=\"/wh40k11ed/the-rules/core-rules/#3.-Battle-shock-Step\">battle-shocked</a></b>, you can make a <b>psychic roll</b> for this unit by rolling one D6. If you do: <br/><ul><li>On a 1, this unit is <b>battle-shocked</b>.</li><li>Select one enemy unit (excluding <span class=\"kwb\">MONSTER</span>/<span class=\"kwb\">VEHICLE</span> units) within 12\" of this unit. That enemy unit makes a <b><span class=\"tooltip00030\" data-tooltip-content=\"#tooltip_content00030\"><span class=\"tt kwbu\">battle-shock</span> <span class=\"tt kwbu\">roll</span></span></b>, with -1 from that <b>battle-shock roll</b> for every 10 models in this unit.</li></ul></div><br/><div class=\"blueAbility\"><b>Visions of Violence (psychic level 1):</b> At the start of the <a href=\"/wh40k11ed/the-rules/core-rules/#Fight-Phase\">Fight phase</a>, if this unit is not <b><a href=\"/wh40k11ed/the-rules/core-rules/#3.-Battle-shock-Step\">battle-shocked</a></b>, you can make a <b>psychic roll</b> for this unit by rolling one D6. If you do:<br/><ul><li>On a 1, this unit is <b>battle-shocked</b>.</li><li>This unit has <b><span class=\"tooltip00067\" data-tooltip-content=\"#tooltip_content00067\"><span class=\"tt kwbu\">Fights</span> <span class=\"tt kwbu\">First</span></span></b>.</li></ul></div>"
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Da Krunch",
+     "cost": "10",
+     "description": "<p><span class=\"tooltipPsyker\" data-tooltip-anchor=\"#tooltip_contentPsyker\" data-tooltip-content=\"#tooltip_contentPsyker\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">PSYKER</span></span> model only. This model has the following weapon.</p><div style=\"height:8px\"></div><div class=\"itc\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"wTable\" width=\"100%\"><tbody><tr><td class=\"wTable_WEAPON\"><div class=\"dsHeader dsColorBgORK\">RANGED WEAPONS</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">RANGE</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">A</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">BS</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">S</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">AP</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">D</div></td><tbody class=\"bkg bkg_reset\"></tbody></tr></tbody><tbody class=\"bkg\"><tr class=\"wTable2_long\"><td class=\"pad2626\" colspan=\"6\"><span><b class=\"dsWeaponName\">Da Krunch</b> <span class=\"kwbw dsColorORK\"><span class=\"kwb\"><span class=\"tooltip00068\" data-tooltip-content=\"#tooltip_content00068\"><span class=\"ttw kwbu\">BLAST</span> <span class=\"ttw kwbu\">3</span></span></span></span> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00056\" data-tooltip-content=\"#tooltip_content00056\"><span class=\"ttw kwbu\">HAZARDOUS</span></span></span> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00012\" data-tooltip-content=\"#tooltip_content00012\"><span class=\"ttw kwbu\">LETHAL</span> <span class=\"ttw kwbu\">HITS</span></span></span> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00066\" data-tooltip-content=\"#tooltip_content00066\"><span class=\"ttw kwbu\">PSYCHIC</span></span></span></span></td></tr><tr class=\"dsWeaponRow\"><td class=\"wTable2_short pad2626\"><span><b class=\"dsWeaponName\">Da Krunch</b> <span class=\"kwbw dsColorORK\"><span class=\"kwb\"><span class=\"tooltip00068\" data-tooltip-content=\"#tooltip_content00068\"><span class=\"ttw kwbu\">BLAST</span> <span class=\"ttw kwbu\">3</span></span></span></span> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00056\" data-tooltip-content=\"#tooltip_content00056\"><span class=\"ttw kwbu\">HAZARDOUS</span></span></span> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00012\" data-tooltip-content=\"#tooltip_content00012\"><span class=\"ttw kwbu\">LETHAL</span> <span class=\"ttw kwbu\">HITS</span></span></span> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00066\" data-tooltip-content=\"#tooltip_content00066\"><span class=\"ttw kwbu\">PSYCHIC</span></span></span></span></td><td><div class=\"ct pad2626\">24\"</div></td><td><div class=\"ct pad2626\">3</div></td><td><div class=\"ct pad2626\">4+</div></td><td><div class=\"ct pad2626\">5</div></td><td><div class=\"ct pad2626\">-1</div></td><td><div class=\"ct pad2626\">1</div></td></tr></tbody></table></div>",
+     "is_upgrade": false
+    },
+    {
+     "name": "'Eadbanger",
+     "cost": "15",
+     "description": "<p><span class=\"tooltipPsyker\" data-tooltip-anchor=\"#tooltip_contentPsyker\" data-tooltip-content=\"#tooltip_contentPsyker\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">PSYKER</span></span> model only. This model has the following weapon.</p><div style=\"height:8px\"></div><div class=\"itc\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"wTable\" width=\"100%\"><tbody><tr><td class=\"wTable_WEAPON\"><div class=\"dsHeader dsColorBgORK\">RANGED WEAPONS</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">RANGE</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">A</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">BS</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">S</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">AP</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgORK\">D</div></td><tbody class=\"bkg bkg_reset\"></tbody></tr></tbody><tbody class=\"bkg\"><tr class=\"wTable2_long\"><td class=\"pad2626\" colspan=\"6\"><span><b class=\"dsWeaponName\">'Eadbanger</b> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00056\" data-tooltip-content=\"#tooltip_content00056\"><span class=\"ttw kwbu\">HAZARDOUS</span></span></span> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00070\" data-tooltip-content=\"#tooltip_content00070\"><span class=\"ttw kwbu\">PRECISION</span></span></span> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00066\" data-tooltip-content=\"#tooltip_content00066\"><span class=\"ttw kwbu\">PSYCHIC</span></span></span></span></td></tr><tr class=\"dsWeaponRow\"><td class=\"wTable2_short pad2626\"><span><b class=\"dsWeaponName\">'Eadbanger</b> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00056\" data-tooltip-content=\"#tooltip_content00056\"><span class=\"ttw kwbu\">HAZARDOUS</span></span></span> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00070\" data-tooltip-content=\"#tooltip_content00070\"><span class=\"ttw kwbu\">PRECISION</span></span></span> <span class=\"kwbw dsColorORK\"><span class=\"tooltip00066\" data-tooltip-content=\"#tooltip_content00066\"><span class=\"ttw kwbu\">PSYCHIC</span></span></span></span></td><td><div class=\"ct pad2626\">24\"</div></td><td><div class=\"ct pad2626\">2</div></td><td><div class=\"ct pad2626\">4+</div></td><td><div class=\"ct pad2626\">6</div></td><td><div class=\"ct pad2626\">-3</div></td><td><div class=\"ct pad2626\">3</div></td></tr></tbody></table></div>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Warphead",
+     "cost": "25",
+     "description": "<p><span class=\"tooltipPsyker\" data-tooltip-anchor=\"#tooltip_contentPsyker\" data-tooltip-content=\"#tooltip_contentPsyker\"><span class=\"kwb kwbu\">ORKS</span> <span class=\"kwb kwbu\">PSYKER</span></span> model only. This model:<br/><ul><li>Has <b>psyker level 2</b>.</li><li>Has <b><span class=\"tooltip00065\" data-tooltip-content=\"#tooltip_content00065\"><span class=\"tt kwbu\">Deadly</span> <span class=\"tt kwbu\">Demise</span> <span class=\"tt kwbu\">D6</span></span></b>.</li><li>Can re-roll <b>psychic rolls</b>.</li></ul></p>",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [],
+   "dp_cost": 1,
+   "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
