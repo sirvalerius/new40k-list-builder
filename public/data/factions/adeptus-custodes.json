@@ -8,6 +8,45 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-10-14",
+    "items": [
+     "**Allarus Custodians** (2 models (1st-2nd unit)): 120 → 180 pts.",
+     "**Allarus Custodians** (3 models (1st-2nd unit)): 180 → 270 pts.",
+     "**Allarus Custodians** (2 models (3rd+ unit)): 160 → 210 pts.",
+     "**Allarus Custodians** (3 models (3rd+ unit)): 220 → 300 pts.",
+     "**Blade Champion**: struttura punteggio riorganizzata (1 model (1st unit) = 110pts, 1 model (2nd+ unit) = 125pts → 1 model (1st-2nd unit) = 175pts, 1 model (3rd+ unit) = 195pts).",
+     "**Caladius Grav-tank** (1 model (1st-2nd unit)): 210 → 230 pts.",
+     "**Caladius Grav-tank** (1 model (3rd+ unit)): 225 → 260 pts.",
+     "**Contemptor-achillus Dreadnought** (1 model (1st-2nd unit)): 155 → 230 pts.",
+     "**Contemptor-achillus Dreadnought** (1 model (3rd+ unit)): 170 → 260 pts.",
+     "**Contemptor-galatus Dreadnought** (1 model (1st-2nd unit)): 165 → 220 pts.",
+     "**Contemptor-galatus Dreadnought** (1 model (3rd+ unit)): 180 → 250 pts.",
+     "**Coronus Grav-carrier** (1 model (1st-2nd unit)): 180 → 225 pts.",
+     "**Coronus Grav-carrier** (1 model (3rd+ unit)): 200 → 245 pts.",
+     "**Pallas Grav-attack** (1 model): 100 → 135 pts.",
+     "**Shield-captain**: struttura punteggio riorganizzata (1 model = 110pts → 1 model (1st unit) = 180pts, 1 model (2nd+ unit) = 200pts).",
+     "**Shield-captain In Allarus Terminator Armour**: struttura punteggio riorganizzata (1 model = 130pts → 1 model (1st unit) = 185pts, 1 model (2nd+ unit) = 205pts).",
+     "**Shield-captain On Dawneagle Jetbike**: struttura punteggio riorganizzata (1 model = 150pts → 1 model (1st unit) = 205pts, 1 model (2nd+ unit) = 225pts).",
+     "**Telemon Heavy Dreadnought** (1 model (1st unit)): 225 → 280 pts.",
+     "**Telemon Heavy Dreadnought** (1 model (2nd+ unit)): 245 → 310 pts.",
+     "**Trajann Valoris** (1 model): 135 → 265 pts.",
+     "**Vertus Praetors**: struttura punteggio riorganizzata (2 models (1st-2nd unit) = 155pts, 3 models (1st-2nd unit) = 230pts, 2 models (3rd+ unit) = 180pts, 3 models (3rd+ unit) = 255pts → 2 models (1st unit) = 220pts, 3 models (1st unit) = 330pts, 2 models (2nd+ unit) = 240pts, 3 models (2nd+ unit) = 350pts).",
+     "**Shield-captain**, opzione **Praesidium Shield**: nuovo prezzo, 25 pts.",
+     "**Aquilan Shield**: Force Disposition ? → Take And Hold (DP: ? → 1DP).",
+     "**Auric Champions**: Force Disposition Priority Assets → Purge The Foe (DP: 2DP → 1DP).",
+     "**Dread Host**: Force Disposition ? → Purge The Foe (DP: ? → 1DP).",
+     "**Emissaries Imperatus**: Force Disposition ? → Priority Assets (DP: ? → 1DP).",
+     "**Emperor’s Chosen**: Force Disposition ? → Priority Assets (DP: ? → 1DP).",
+     "**Grav‑assault Force**: Force Disposition ? → Reconnaissance (DP: ? → 1DP).",
+     "**Guardians Of The Throne**: Force Disposition ? → Priority Assets (DP: ? → 3DP).",
+     "**Honoured Companions**: Force Disposition ? → Take And Hold (DP: ? → 1DP).",
+     "**Lions Of The Emperor**: Force Disposition Take And Hold → Disruption (DP: 3DP → 1DP).",
+     "**Null Maiden Vigil**: Force Disposition Reconnaissance → Disruption (DP: 2DP → 1DP).",
+     "**Shadowkeepers**: Force Disposition ? → Purge The Foe (DP: ? → 1DP).",
+     "**Solar Watch**: Force Disposition ? → Reconnaissance (DP: ? → 1DP)."
+    ]
+   },
+   {
     "date": "2026-09-30",
     "items": [
      "**Allarus Custodians** (2 models (1st-2nd unit)): 110 → 120 pts.",
@@ -518,7 +557,7 @@
    "points": [
     {
      "description": "2 models (1st-2nd unit)",
-     "cost": "120",
+     "cost": "180",
      "variant": "2 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -526,7 +565,7 @@
     },
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "180",
+     "cost": "270",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
@@ -550,7 +589,7 @@
     },
     {
      "description": "2 models (3rd+ unit)",
-     "cost": "160",
+     "cost": "210",
      "variant": "2 models",
      "tier_min": 3,
      "tier_max": null,
@@ -558,7 +597,7 @@
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "220",
+     "cost": "300",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
@@ -798,10 +837,10 @@
   },
   {
    "id": "000001558",
-   "name": "Aquilon Custodians",
+   "name": "Aquilon Terminators",
    "role": "Other",
-   "legend": "Aquilon Custodians are the heavy assault infantry of the Custodian Guard, each warrior imbued with armour and wargear of ancient provenance and impeccable craftsmanship. Encased within flexible but highly durable Aquilon-pattern Terminator armour, they stride through the most perilous war zones to mete out death.",
-   "loadout": "<b>Every model is equipped with:</b> lastrum storm bolter; solerite power gauntlet.",
+   "legend": "Aquilon Terminators are the heavy assault infantry of the Custodian Guard, each warrior imbued with armour and wargear of ancient provenance and impeccable craftsmanship. Encased within flexible but highly durable Aquilon-pattern Terminator armour, they stride through the most perilous war zones to mete out death.",
+   "loadout": "<b>Every model is equipped with:</b> lastrum storm bolter; solarite power gauntlet.",
    "transport": "",
    "damaged": {
     "w": "",
@@ -856,7 +895,7 @@
      "description": "twin-linked"
     },
     {
-     "name": "Solerite power gauntlet",
+     "name": "Solarite power gauntlet",
      "type": "Melee",
      "range": "Melee",
      "A": "5",
@@ -867,7 +906,7 @@
      "description": ""
     },
     {
-     "name": "Solerite power talon",
+     "name": "Solarite power talon",
      "type": "Melee",
      "range": "Melee",
      "A": "7",
@@ -919,20 +958,20 @@
    ],
    "points": [
     {
-     "description": "3 models",
-     "cost": "195",
+     "description": "3 models (1st-2nd unit)",
+     "cost": "285",
      "variant": "3 models",
-     "tier_min": null,
-     "tier_max": null,
+     "tier_min": 1,
+     "tier_max": 2,
      "models": 3
     },
     {
-     "description": "6 models",
-     "cost": "390",
-     "variant": "6 models",
-     "tier_min": null,
+     "description": "3 models (3rd+ unit)",
+     "cost": "315",
+     "variant": "3 models",
+     "tier_min": 3,
      "tier_max": null,
-     "models": 6
+     "models": 3
     }
    ],
    "keywords": [
@@ -953,13 +992,13 @@
    "can_lead_entries": [],
    "attach_type": "",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 3,
-   "model_max": 6,
-   "countable": true,
+   "model_max": 3,
+   "countable": false,
    "stock_weapons": [
     "Lastrum storm bolter",
-    "Solerite power gauntlet"
+    "Solarite power gauntlet"
    ],
    "weapon_options": [
     {
@@ -999,9 +1038,7 @@
      },
      "base": "solerite power gauntlet",
      "model": "",
-     "grants": [
-      "Solerite power talon"
-     ]
+     "grants": []
     }
    ],
    "chapter": "",
@@ -1259,18 +1296,18 @@
    "options": [],
    "points": [
     {
-     "description": "1 model (1st unit)",
-     "cost": "110",
+     "description": "1 model (1st-2nd unit)",
+     "cost": "175",
      "variant": "1 model",
      "tier_min": 1,
-     "tier_max": 1,
+     "tier_max": 2,
      "models": 1
     },
     {
-     "description": "1 model (2nd+ unit)",
-     "cost": "125",
+     "description": "1 model (3rd+ unit)",
+     "cost": "195",
      "variant": "1 model",
-     "tier_min": 2,
+     "tier_min": 3,
      "tier_max": null,
      "models": 1
     }
@@ -1418,7 +1455,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "210",
+     "cost": "230",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -1426,7 +1463,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "225",
+     "cost": "260",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -1590,7 +1627,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "155",
+     "cost": "230",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -1598,7 +1635,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "170",
+     "cost": "260",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -1790,7 +1827,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "165",
+     "cost": "220",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -1798,7 +1835,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "180",
+     "cost": "250",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -1935,7 +1972,7 @@
    "points": [
     {
      "description": "1 model (1st-2nd unit)",
-     "cost": "180",
+     "cost": "225",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 2,
@@ -1943,7 +1980,7 @@
     },
     {
      "description": "1 model (3rd+ unit)",
-     "cost": "200",
+     "cost": "245",
      "variant": "1 model",
      "tier_min": 3,
      "tier_max": null,
@@ -3042,7 +3079,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "100",
+     "cost": "135",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -3522,10 +3559,18 @@
    ],
    "points": [
     {
-     "description": "1 model",
-     "cost": "110",
+     "description": "1 model (1st unit)",
+     "cost": "180",
      "variant": "1 model",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 1,
+     "models": 1
+    },
+    {
+     "description": "1 model (2nd+ unit)",
+     "cost": "200",
+     "variant": "1 model",
+     "tier_min": 2,
      "tier_max": null,
      "models": 1
     }
@@ -3560,7 +3605,7 @@
    ],
    "attach_type": "leader",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
    "countable": false,
@@ -3602,7 +3647,7 @@
     },
     {
      "text": "Sentinel blade and 1 praesidium shield (instead of guardian spear)",
-     "cost": 0,
+     "cost": 25,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -3618,7 +3663,7 @@
     },
     {
      "text": "Pyrithite spear and 1 praesidium shield (instead of guardian spear)",
-     "cost": 0,
+     "cost": 25,
      "type": "wargear",
      "limit": {
       "kind": "fixed",
@@ -3758,10 +3803,18 @@
    ],
    "points": [
     {
-     "description": "1 model",
-     "cost": "130",
+     "description": "1 model (1st unit)",
+     "cost": "185",
      "variant": "1 model",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 1,
+     "models": 1
+    },
+    {
+     "description": "1 model (2nd+ unit)",
+     "cost": "205",
+     "variant": "1 model",
+     "tier_min": 2,
      "tier_max": null,
      "models": 1
     }
@@ -3792,7 +3845,7 @@
    ],
    "attach_type": "leader",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
    "countable": false,
@@ -3914,10 +3967,18 @@
    ],
    "points": [
     {
-     "description": "1 model",
-     "cost": "150",
+     "description": "1 model (1st unit)",
+     "cost": "205",
      "variant": "1 model",
-     "tier_min": null,
+     "tier_min": 1,
+     "tier_max": 1,
+     "models": 1
+    },
+    {
+     "description": "1 model (2nd+ unit)",
+     "cost": "225",
+     "variant": "1 model",
+     "tier_min": 2,
      "tier_max": null,
      "models": 1
     }
@@ -3949,7 +4010,7 @@
    ],
    "attach_type": "leader",
    "is_legends": false,
-   "has_order_tiers": false,
+   "has_order_tiers": true,
    "model_min": 1,
    "model_max": 1,
    "countable": false,
@@ -4104,7 +4165,7 @@
    "points": [
     {
      "description": "1 model (1st unit)",
-     "cost": "225",
+     "cost": "280",
      "variant": "1 model",
      "tier_min": 1,
      "tier_max": 1,
@@ -4112,7 +4173,7 @@
     },
     {
      "description": "1 model (2nd+ unit)",
-     "cost": "245",
+     "cost": "310",
      "variant": "1 model",
      "tier_min": 2,
      "tier_max": null,
@@ -4330,7 +4391,7 @@
    "points": [
     {
      "description": "1 model",
-     "cost": "135",
+     "cost": "265",
      "variant": "1 model",
      "tier_min": null,
      "tier_max": null,
@@ -4525,10 +4586,10 @@
   },
   {
    "id": "000001561",
-   "name": "Venatari Custodians",
+   "name": "Venatari",
    "role": "Other",
-   "legend": "The role of Venatari Custodian is vaunted as a high honour within the Adeptus Custodes, bestowed upon those with the most aquiline combat senses. These airborne hunting squads make masterful use of their archeotech jump packs to strike from the skies, swooping into the enemy’s midst to deliver swift ruin with their pistols and polearms.",
-   "loadout": "<b>Every model is equipped with:</b> Venatari lance.",
+   "legend": "The role of Venatari is vaunted as a high honour within the Adeptus Custodes, bestowed upon those with the most aquiline combat senses. These airborne hunting squads make masterful use of their archeotech jump packs to strike from the skies, swooping into the enemy’s midst to deliver swift ruin with their pistols and polearms.",
+   "loadout": "<b>Every model is equipped with:</b> Verutum lance.",
    "transport": "",
    "damaged": {
     "w": "",
@@ -4561,7 +4622,7 @@
      "description": "pistol, sustained hits 1"
     },
     {
-     "name": "Venatari lance",
+     "name": "Verutum lance",
      "type": "Ranged",
      "range": "24",
      "A": "2",
@@ -4583,7 +4644,7 @@
      "description": ""
     },
     {
-     "name": "Venatari lance",
+     "name": "Verutum lance",
      "type": "Melee",
      "range": "Melee",
      "A": "5",
@@ -4641,35 +4702,19 @@
    "points": [
     {
      "description": "3 models (1st-2nd unit)",
-     "cost": "150",
+     "cost": "270",
      "variant": "3 models",
      "tier_min": 1,
      "tier_max": 2,
      "models": 3
-    },
-    {
-     "description": "6 models (1st-2nd unit)",
-     "cost": "300",
-     "variant": "6 models",
-     "tier_min": 1,
-     "tier_max": 2,
-     "models": 6
     },
     {
      "description": "3 models (3rd+ unit)",
-     "cost": "160",
+     "cost": "300",
      "variant": "3 models",
      "tier_min": 3,
      "tier_max": null,
      "models": 3
-    },
-    {
-     "description": "6 models (3rd+ unit)",
-     "cost": "310",
-     "variant": "6 models",
-     "tier_min": 3,
-     "tier_max": null,
-     "models": 6
     }
    ],
    "keywords": [
@@ -4693,21 +4738,15 @@
    "is_legends": false,
    "has_order_tiers": true,
    "model_min": 3,
-   "model_max": 6,
-   "countable": true,
-   "default_wargear": [
-    {
-     "name": "Venatari lance",
-     "cost": 5
-    }
-   ],
+   "model_max": 3,
+   "countable": false,
    "stock_weapons": [
-    "Venatari lance"
+    "Verutum lance"
    ],
    "weapon_options": [
     {
      "text": "Any number of models can each have their Venatari lance replaced with 1 kinetic destroyer and 1 tarsus buckler.",
-     "cost": -5,
+     "cost": 0,
      "type": "wargear",
      "limit": {
       "kind": "all"
@@ -4717,6 +4756,17 @@
      "grants": [
       "Kinetic destroyer"
      ]
+    },
+    {
+     "text": "Equip Venatari lance",
+     "cost": 5,
+     "type": "wargear",
+     "limit": {
+      "kind": "all"
+     },
+     "base": "",
+     "model": "",
+     "grants": []
     }
    ],
    "chapter": "",
@@ -5165,34 +5215,34 @@
    ],
    "points": [
     {
-     "description": "2 models (1st-2nd unit)",
-     "cost": "155",
+     "description": "2 models (1st unit)",
+     "cost": "220",
      "variant": "2 models",
      "tier_min": 1,
-     "tier_max": 2,
+     "tier_max": 1,
      "models": 2
     },
     {
-     "description": "3 models (1st-2nd unit)",
-     "cost": "230",
+     "description": "3 models (1st unit)",
+     "cost": "330",
      "variant": "3 models",
      "tier_min": 1,
-     "tier_max": 2,
+     "tier_max": 1,
      "models": 3
     },
     {
-     "description": "2 models (3rd+ unit)",
-     "cost": "180",
+     "description": "2 models (2nd+ unit)",
+     "cost": "240",
      "variant": "2 models",
-     "tier_min": 3,
+     "tier_min": 2,
      "tier_max": null,
      "models": 2
     },
     {
-     "description": "3 models (3rd+ unit)",
-     "cost": "255",
+     "description": "3 models (2nd+ unit)",
+     "cost": "350",
      "variant": "3 models",
-     "tier_min": 3,
+     "tier_min": 2,
      "tier_max": null,
      "models": 3
     }
@@ -5516,6 +5566,58 @@
  ],
  "detachments": [
   {
+   "id": "000900091",
+   "name": "Aquilan Shield",
+   "legend": "The Aquilan Shield are an unbreakable fortress of auramite.",
+   "rules": [
+    {
+     "name": "Gilded Guardians",
+     "description": "While a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit (excluding <span class=\"tooltip\" title=\"Keyword does not appear in that faction.\"><s class=\"kwbs\">MONSTER</s></span>/<span class=\"tooltipVehicle\" data-tooltip-anchor=\"#tooltip_contentVehicle\" data-tooltip-content=\"#tooltip_contentVehicle\"><span class=\"kwb kwbu\">VEHICLE</span></span> units) is within range of an <b><a href=\"/wh40k11ed/the-rules/core-rules/#Objectives\">objective</a></b>, ranged attacks that target that unit with a <b>S</b> greater than that unit’s <b>T</b> have -1 to <b><span class=\"tooltip00020\" data-tooltip-content=\"#tooltip_content00020\"><span class=\"tt kwbu\">wound</span> <span class=\"tt kwbu\">rolls</span></span></b>.<br/><br/><b>Favoured ka’tah:</b> <span class=\"tooltip00029\" data-tooltip-content=\"#tooltip_content00029\"><span class=\"kwb kwbu\">SALVUS</span></span><br/><b>Additional Effect:</b> Your unit’s ranged attacks have +6\" <b>R</b>."
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Not a Shell Wasted",
+     "cost": "10",
+     "description": "<p><span class=\"tooltip00028\" data-tooltip-anchor=\"#tooltip_content00028\" data-tooltip-content=\"#tooltip_content00028\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span> <span class=\"kwb kwbu\">INFANTRY</span></span> model only. This unit’s ranged attacks have +1 <b>A</b>.</p>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Pareldor's Caducatrix",
+     "cost": "30",
+     "description": "<p><span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only. (Once per battle, per army) At the start of any phase, this model <b><span class=\"tooltip00033\" data-tooltip-content=\"#tooltip_content00033\"><span class=\"tt kwbu\">heals</span></span></b> D3+3 wounds.</p>",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "MANOEUVRE AND FIRE",
+     "cp_cost": "1",
+     "type": "Aquilan Shield Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, when a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit is selected to make a <b><span class=\"tooltip00011\" data-tooltip-content=\"#tooltip_content00011\"><span class=\"tt kwbu\">fall-back</span> <span class=\"tt kwbu\">move</span></span></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br/><br/><b>EFFECT:</b> That move does not prevent your unit from being <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">eligible to shoot</a></b>/<b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">declare a charge</a></b>."
+    },
+    {
+     "name": "TIP OF THE TALON",
+     "cp_cost": "1",
+     "type": "Aquilan Shield Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">selected to shoot</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br/><br/><b>EFFECT:</b> Your unit’s ranged attacks that target an enemy unit within 9\" of your unit have +1 <b>S</b>."
+    },
+    {
+     "name": "RAPID REACTIONS",
+     "cp_cost": "1",
+     "type": "Aquilan Shield Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, when an enemy unit ends a <b><span class=\"tooltip00011\" data-tooltip-content=\"#tooltip_content00011\"><span class=\"tt kwbu\">fall-back</span> <span class=\"tt kwbu\">move</span></span></b>.<br/><br/><b>TARGET:</b> One friendly <span class=\"tooltip00028\" data-tooltip-anchor=\"#tooltip_content00028\" data-tooltip-content=\"#tooltip_content00028\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span> <span class=\"kwb kwbu\">INFANTRY</span></span> unit that was <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">engaged</span></span></b> with that enemy unit at the start of the phase.<br/><br/><b>EFFECT:</b> Your unit shoots using <b><span class=\"tooltip00034\" data-tooltip-content=\"#tooltip_content00034\"><span class=\"tt kwbu\">normal</span> <span class=\"tt kwbu\">shooting</span></span></b>, but while doing so your unit can only target that enemy unit."
+    }
+   ],
+   "dp_cost": 1,
+   "force_disposition": "TAKE AND HOLD",
+   "exclusive_tag": "",
+   "restriction": "",
+   "keyword_grants": [],
+   "boarding_actions": false,
+   "restricted_chapter": ""
+  },
+  {
    "id": "000000863",
    "name": "Auric Champions",
    "legend": "",
@@ -5526,6 +5628,12 @@
     }
    ],
    "enhancements": [
+    {
+     "name": "Superior Creation",
+     "cost": "25",
+     "description": "ADEPTUS CUSTODES INFANTRY model only. (Once per battle, per army) At the end of a phase in which this model is destroyed, roll one D6: On a 2+, set this model back up on the battlefield as close as possible to where it was destroyed, unengaged, with 3 wounds remaining.",
+     "is_upgrade": false
+    },
     {
      "name": "Blade Imperator",
      "cost": "25",
@@ -5589,8 +5697,350 @@
      "description": "<b>WHEN:</b> Fight phase.<br><br><b>TARGET:</b> One Adeptus Custodes Character model from your army that was just destroyed and has not fought this phase. You can use this Stratagem on that unit even though it was just destroyed.<br><br><b>EFFECT:</b> Do not remove your destroyed model from play. The destroyed model can fight after the attacking unit has finished making attacks, and is then removed from play."
     }
    ],
-   "dp_cost": 2,
+   "dp_cost": 1,
+   "force_disposition": "PURGE THE FOE",
+   "exclusive_tag": "",
+   "restriction": "",
+   "keyword_grants": [],
+   "boarding_actions": false,
+   "restricted_chapter": ""
+  },
+  {
+   "id": "000900092",
+   "name": "Dread Host",
+   "legend": "The Dread Host unleashes the Emperor’s wrath upon the foe.",
+   "rules": [
+    {
+     "name": "Instruments of the Emperor’s Wrath",
+     "description": "Friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> units can re-roll <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">charge rolls</a></b>.<br/><br/><b>Favoured ka’tah:</b> <span class=\"tooltip00029\" data-tooltip-content=\"#tooltip_content00029\"><span class=\"kwb kwbu\">DACATARAI</span></span><br/><b>Additional Effect:</b> When an enemy unit <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">engaged</span></span></b> with your unit makes a <b><span class=\"tooltip00036\" data-tooltip-content=\"#tooltip_content00036\"><span class=\"tt kwbu\">pile-in</span></span></b>/<b><span class=\"tooltip00037\" data-tooltip-content=\"#tooltip_content00037\"><span class=\"tt kwbu\">consolidation</span> <span class=\"tt kwbu\">move</span></span></b>, -2\" from that <b>pile-in</b>/<b>consolidation move</b>."
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Flawless Bladework",
+     "cost": "15",
+     "description": "<p><span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only. This model’s melee attacks have <span class=\"kwb\"><span class=\"tooltip00024\" data-tooltip-content=\"#tooltip_content00024\"><span class=\"tt kwbu\">[Sustained</span> <span class=\"tt kwbu\">Hits</span> <span class=\"tt kwbu\">1]</span></span></span>.</p>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Auric Exemplar",
+     "cost": "15",
+     "description": "<p><span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only. This model’s melee attacks have <span class=\"kwb\"><span class=\"tooltip00038\" data-tooltip-content=\"#tooltip_content00038\"><span class=\"tt kwbu\">[Cleave</span> <span class=\"tt kwbu\">1]</span></span></span>.</p>",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "LIGHTNING WRATH",
+     "cp_cost": "1",
+     "type": "Dread Host Stratagem",
+     "description": "<b>WHEN:</b> <a href=\"/wh40k11ed/the-rules/core-rules/#Fight-Phase\">Fight phase</a>, when a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit is selected to make a <b><span class=\"tooltip00036\" data-tooltip-content=\"#tooltip_content00036\"><span class=\"tt kwbu\">pile-in</span> <span class=\"tt kwbu\">move</span></span></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br/><br/><b>EFFECT:</b> When making that <b>pile-in move</b>, your unit can move up to D3+3\"."
+    },
+    {
+     "name": "GOLDEN LIGHT OF THE MOIRAIDES",
+     "cp_cost": "2",
+     "type": "Dread Host Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, when a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit is selected to make an <b><span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">ingress</span> <span class=\"tt kwbu\">move</span></span></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> Unit.<br/><br/><b>EFFECT:</b> Until the start of your next turn:<br/><ul><li>Attacks that target your unit have -1 to <b><span class=\"tooltip00017\" data-tooltip-content=\"#tooltip_content00017\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">rolls</span></span></b>.</li><li>Enemy units cannot target your unit with <b><span class=\"tooltip00040\" data-tooltip-content=\"#tooltip_content00040\"><span class=\"tt kwbu\">snap</span> <span class=\"tt kwbu\">shooting</span></span></b> attacks.</li></ul>"
+    },
+    {
+     "name": "PRETERNATURAL RAPIDITY",
+     "cp_cost": "1",
+     "type": "Dread Host Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, when a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit ends an <b><span class=\"tooltip00006\" data-tooltip-content=\"#tooltip_content00006\"><span class=\"tt kwbu\">advance</span> <span class=\"tt kwbu\">move</span></span></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br/><br/><b>EFFECT:</b> That <b>advance move</b> does not prevent your unit from being <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">eligible to declare a charge</a></b>."
+    }
+   ],
+   "dp_cost": 1,
+   "force_disposition": "PURGE THE FOE",
+   "exclusive_tag": "",
+   "restriction": "",
+   "keyword_grants": [],
+   "boarding_actions": false,
+   "restricted_chapter": ""
+  },
+  {
+   "id": "000900094",
+   "name": "Emissaries Imperatus",
+   "legend": "The Emissaries Imperatus will go to any lengths to deliver the Emperor’s word.",
+   "rules": [
+    {
+     "name": "Heralds of the Throne",
+     "description": "Friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> units have <b><span class=\"tooltip00043\" data-tooltip-content=\"#tooltip_content00043\"><span class=\"tt kwbu\">Fights</span> <span class=\"tt kwbu\">First</span></span></b>.<br/><br/><b>Favoured Ka’tah:</b> <span class=\"tooltip00029\" data-tooltip-content=\"#tooltip_content00029\"><span class=\"kwb kwbu\">CONSERVAI</span></span><br/><b>Additional Effect:</b> Until the end of the turn, being selected to make an <b><span class=\"tooltip00006\" data-tooltip-content=\"#tooltip_content00006\"><span class=\"tt kwbu\">advance</span></span></b>/<b><span class=\"tooltip00011\" data-tooltip-content=\"#tooltip_content00011\"><span class=\"tt kwbu\">fall-back</span> <span class=\"tt kwbu\">move</span></span></b> does not prevent your unit from being <b><a href=\"/wh40k11ed/the-rules/core-rules/#Starting-an-Action\">eligible to start an action</a></b>."
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Edge of the Blade",
+     "cost": "15",
+     "description": "<p>Adeptus Custodes model only. If this unit made a <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">charge move</a></b> this turn, this model’s attacks can:<br/><ul><li>Re-roll <b><span class=\"tooltip00017\" data-tooltip-content=\"#tooltip_content00017\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">rolls</span></span></b> of 1.</li><li>Re-roll <b><span class=\"tooltip00020\" data-tooltip-content=\"#tooltip_content00020\"><span class=\"tt kwbu\">wound</span> <span class=\"tt kwbu\">rolls</span></span></b> of 1.</li></ul></p>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Auriferous Orb",
+     "cost": "20",
+     "description": "<p><span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only. This model has the following weapon:</p><div class=\"itc\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"wTable\" width=\"100%\"><tbody><tr><td class=\"wTable_WEAPON\"><div class=\"dsHeader dsColorBgAC\">RANGED WEAPONS</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgAC\">RANGE</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgAC\">A</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgAC\">BS</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgAC\">S</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgAC\">AP</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgAC\">D</div></td><tbody class=\"bkg bkg_reset\"></tbody></tr></tbody><tbody class=\"bkg\"><tr class=\"wTable2_long\"><td class=\"pad2626\" colspan=\"6\"><span><b class=\"dsWeaponName\">Auriferous Orb</b> <span class=\"kwbw dsColorAC\"><span class=\"kwb\"><span class=\"tooltip00044\" data-tooltip-content=\"#tooltip_content00044\"><span class=\"ttw kwbu\">ANTI-<span class=\"kwnon\">non-</span>MONSTER/VEHICLE</span> <span class=\"ttw kwbu\">2+</span></span></span></span> <span class=\"kwbw dsColorAC\">BLINDING LIGHT</span> <span class=\"kwbw dsColorAC\"><span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"ttw kwbu\">DEVASTATING</span> <span class=\"ttw kwbu\">WOUNDS</span></span></span></span></td></tr><tr class=\"dsWeaponRow\"><td class=\"wTable2_short pad2626\"><span><b class=\"dsWeaponName\">Auriferous Orb</b> <span class=\"kwbw dsColorAC\"><span class=\"kwb\"><span class=\"tooltip00044\" data-tooltip-content=\"#tooltip_content00044\"><span class=\"ttw kwbu\">ANTI-<span class=\"kwnon\">non-</span>MONSTER/VEHICLE</span> <span class=\"ttw kwbu\">2+</span></span></span></span> <span class=\"kwbw dsColorAC\">BLINDING LIGHT</span> <span class=\"kwbw dsColorAC\"><span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"ttw kwbu\">DEVASTATING</span> <span class=\"ttw kwbu\">WOUNDS</span></span></span></span></td><td><div class=\"ct pad2626\">12\"</div></td><td><div class=\"ct pad2626\">3</div></td><td><div class=\"ct pad2626\">2+</div></td><td><div class=\"ct pad2626\">1</div></td><td><div class=\"ct pad2626\">0</div></td><td><div class=\"ct pad2626\">1</div></td></tr></tbody></table></div>",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "BEARERS OF HIS LIGHT",
+     "cp_cost": "1",
+     "type": "Emissaries Imperatus Stratagem",
+     "description": "<b>WHEN:</b> <a href=\"/wh40k11ed/the-rules/core-rules/#Fight-Phase\">Fight phase</a>, when a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#When-a-Unit-is-Selected-to-Fight\">selected to fight</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br/><br/><b>EFFECT:</b> Your unit’s melee attacks can <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">ignore</span> <span class=\"tt kwbu\">modifiers</span></span> to <b><span class=\"tooltip00017\" data-tooltip-content=\"#tooltip_content00017\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">rolls</span></span></b> and <b><span class=\"tooltip00020\" data-tooltip-content=\"#tooltip_content00020\"><span class=\"tt kwbu\">wound</span> <span class=\"tt kwbu\">rolls</span></span></b>."
+    },
+    {
+     "name": "SLAYERS OF NIGHTMARES",
+     "cp_cost": "1",
+     "type": "Emissaries Imperatus Stratagem",
+     "description": "<b>WHEN:</b> <a href=\"/wh40k11ed/the-rules/core-rules/#Fight-Phase\">Fight phase</a>, when a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#When-a-Unit-is-Selected-to-Fight\">selected to fight</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br/><br/><b>EFFECT:</b> Your unit’s melee attacks that target a unit with a <b>T</b> greater than this unit’s <b>T</b> have +1 to <b><span class=\"tooltip00020\" data-tooltip-content=\"#tooltip_content00020\"><span class=\"tt kwbu\">wound</span> <span class=\"tt kwbu\">rolls</span></span></b>."
+    },
+    {
+     "name": "SELFLESS SERVICE",
+     "cp_cost": "1",
+     "type": "Emissaries Imperatus Stratagem",
+     "description": "<b>WHEN:</b> End of your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Charge-Phase\">Charge phase</a>.<br/><br/><b>TARGET:</b> One friendly <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">unengaged</span></span></b> <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit within 6\" of an enemy unit. You can only select a <span class=\"kwb\">VEHICLE</span> unit if it is a <span class=\"kwb\">CHARACTER</span>/<span class=\"kwb\">WALKER</span> unit.<br/><br/><b>EFFECT:</b> <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">Declare a charge</a></b> with your unit:<br/><ul><li>When making the <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">charge roll</a></b>, if the result is greater than 6 (after <a href=\"/wh40k11ed/the-rules/rules-appendix/#Modifiers\">modifiers</a>), change it to 6.</li><li>When selecting <b><span class=\"tooltip00045\" data-tooltip-content=\"#tooltip_content00045\"><span class=\"tt kwbu\">charge</span> <span class=\"tt kwbu\">targets</span></span></b>, you can select <u>any</u> enemy units that are within 6\" of your unit and within the <b>maximum distance</b>.</li></ul>"
+    }
+   ],
+   "dp_cost": 1,
    "force_disposition": "PRIORITY ASSETS",
+   "exclusive_tag": "",
+   "restriction": "",
+   "keyword_grants": [],
+   "boarding_actions": false,
+   "restricted_chapter": ""
+  },
+  {
+   "id": "000900093",
+   "name": "Emperor's Chosen",
+   "legend": "Most Shield Hosts are temporary, but all play a vital role in the Emperor’s service.",
+   "rules": [
+    {
+     "name": "Magna Imperator",
+     "description": "When a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit is <b><span class=\"tooltip00041\" data-tooltip-content=\"#tooltip_content00041\"><span class=\"tt kwbu\">selected</span> <span class=\"tt kwbu\">to</span> <span class=\"tt kwbu\">attack</span></span></b>, that unit’s attacks can:<br/><ul><li>Re-roll <u>one</u> <b><span class=\"tooltip00017\" data-tooltip-content=\"#tooltip_content00017\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">roll</span></span></b>.</li><li>Re-roll <u>one</u> <b><span class=\"tooltip00020\" data-tooltip-content=\"#tooltip_content00020\"><span class=\"tt kwbu\">wound</span> <span class=\"tt kwbu\">roll</span></span></b>.</li></ul><br/><b>Favoured ka’tah:</b> <span class=\"tooltip00029\" data-tooltip-content=\"#tooltip_content00029\"><span class=\"kwb kwbu\">RENDAX</span></span><br/><b>Additional Effect:</b> You can select one enemy <span class=\"kwb\">MONSTER</span>/<span class=\"kwb\">VEHICLE</span> unit <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">engaged</span></span></b> with your unit and roll one D6:<br/><ul><li>On a 1-2, that enemy unit suffers 1 <b><span class=\"tooltip00009\" data-tooltip-content=\"#tooltip_content00009\"><span class=\"tt kwbu\">mortal</span> <span class=\"tt kwbu\">wound</span></span></b>.</li><li>On a 3-5, that enemy unit suffers D3 <b>mortal wounds</b>.</li><li>On a 6, that enemy unit suffers 3 <b>mortal wounds</b>.</li></ul>"
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "From the Hall of Armouries",
+     "cost": "15",
+     "description": "<p><span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only. This model’s melee attacks have <span class=\"kwb\"><span class=\"tooltip00018\" data-tooltip-content=\"#tooltip_content00018\"><span class=\"tt kwbu\">[Devastating</span> <span class=\"tt kwbu\">Wounds]</span></span></span>.</p>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Radiant Mantle",
+     "cost": "40",
+     "description": "<p><span class=\"tooltip00028\" data-tooltip-anchor=\"#tooltip_content00028\" data-tooltip-content=\"#tooltip_content00028\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span> <span class=\"kwb kwbu\">INFANTRY</span></span> model only. Attacks that target this unit have -1 to <b><span class=\"tooltip00017\" data-tooltip-content=\"#tooltip_content00017\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">rolls</span></span></b>.</p>",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "IN AURAMITE CLAD",
+     "cp_cost": "1",
+     "type": "Emperor's Chosen Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a> or the <a href=\"/wh40k11ed/the-rules/core-rules/#Fight-Phase\">Fight phase</a>, when an enemy unit targets a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit (excluding <a class=\"kwbOne\" href=\"/wh40k11ed/factions/adeptus-custodes/Custodian-Wardens\"><span class=\"kwb kwbo\">CUSTODIAN</span> <span class=\"kwb kwbo\">WARDENS</span></a> units).<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br/><br/><b>EFFECT:</b> Attacks that target your unit have -1 <b>AP</b> until that enemy unit has attacked."
+    },
+    {
+     "name": "SUPERHUMAN FOCUS",
+     "cp_cost": "1",
+     "type": "Emperor's Chosen Stratagem",
+     "description": "<b>WHEN:</b> End of any phase.<br/><br/><b>TARGET:</b> One friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit that is not <b><span class=\"tooltip00029\" data-tooltip-content=\"#tooltip_content00029\"><span class=\"tt kwbu\">readied</span></span></b>.<br/><br/><b>EFFECT:</b> Your unit is <b>readied</b>.<br/><br/><b>RESTRICTIONS:</b> You cannot select the same unit as the target of this <b>stratagem</b> more than once per <a href=\"/wh40k11ed/the-rules/core-rules/#The-Battle-Round-1\">battle round</a>."
+    },
+    {
+     "name": "IMPENETRABLE BASTION",
+     "cp_cost": "1",
+     "type": "Emperor's Chosen Stratagem",
+     "description": "<b>WHEN:</b> End of your <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>.<br/><br/><b>TARGET:</b> One friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit (excluding <span class=\"tooltip\" title=\"Keyword does not appear in that faction.\"><s class=\"kwbs\">MONSTER</s></span>/<span class=\"tooltipVehicle\" data-tooltip-anchor=\"#tooltip_contentVehicle\" data-tooltip-content=\"#tooltip_contentVehicle\"><span class=\"kwb kwbu\">VEHICLE</span></span> units).<br/><br/><b>EFFECT:</b> Select one <b><a href=\"/wh40k11ed/the-rules/core-rules/#Objectives\">objective</a></b> your unit is <a href=\"/wh40k11ed/the-rules/core-rules/#Level-of-Control\">controlling</a>. That <b>objective</b> is <b><span class=\"tooltip00042\" data-tooltip-content=\"#tooltip_content00042\"><span class=\"tt kwbu\">secured</span></span></b>."
+    }
+   ],
+   "dp_cost": 1,
+   "force_disposition": "PRIORITY ASSETS",
+   "exclusive_tag": "",
+   "restriction": "",
+   "keyword_grants": [],
+   "boarding_actions": false,
+   "restricted_chapter": ""
+  },
+  {
+   "id": "000900098",
+   "name": "Grav-Assault Force",
+   "legend": "Swift and agile, Adeptus Custodes grav-vehicles can inflict untold destruction.",
+   "rules": [
+    {
+     "name": "Flare Shields",
+     "description": "Friendly <span class=\"tooltipGrav-assault\" data-tooltip-anchor=\"#tooltip_contentGrav-assault\" data-tooltip-content=\"#tooltip_contentGrav-assault\"><span class=\"kwb kwbu\">GRAV-ASSAULT</span></span> units have 4+ <b><span class=\"tooltip00027\" data-tooltip-content=\"#tooltip_content00027\"><span class=\"tt kwbu\">InSv</span></span></b> against ranged attacks."
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Anti-gravitic Mobility (Upgrade)",
+     "cost": "15",
+     "description": "<p><span class=\"tooltipGrav-assault\" data-tooltip-anchor=\"#tooltip_contentGrav-assault\" data-tooltip-content=\"#tooltip_contentGrav-assault\"><span class=\"kwb kwbu\">GRAV-ASSAULT</span></span> unit only. When this unit makes a <b><span class=\"tooltip00011\" data-tooltip-content=\"#tooltip_content00011\"><span class=\"tt kwbu\">fall-back</span> <span class=\"tt kwbu\">move</span></span></b>, that <b>fall-back move</b> does not prevent this unit from being <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">eligible to shoot</a></b>.</p>",
+     "is_upgrade": true
+    },
+    {
+     "name": "Combat Deployment (Upgrade)",
+     "cost": "20",
+     "description": "<p><a class=\"kwbOne\" href=\"/wh40k11ed/factions/adeptus-custodes/Coronus-Grav-Carrier\"><span class=\"kwb kwbo\">GRAV-ASSAULT</span> <span class=\"kwb kwbo\">TRANSPORT</span></a> model only. When a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit is selected to make a <b><span class=\"tooltip00065\" data-tooltip-content=\"#tooltip_content00065\"><span class=\"tt kwbu\">disembark</span> <span class=\"tt kwbu\">move</span></span></b> from this unit, until the end of the turn:<br/><ul><li>That unit can re-roll <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">charge rolls</a></b>.</li><li>Enemy units cannot target that unit with <b><span class=\"tooltip00040\" data-tooltip-content=\"#tooltip_content00040\"><span class=\"tt kwbu\">snap</span> <span class=\"tt kwbu\">shooting</span></span></b> attacks.</li></ul></p>",
+     "is_upgrade": true
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "VICTORY BEFORE DEATH",
+     "cp_cost": "1",
+     "type": "Grav-Assault Force Stratagem",
+     "description": "<b>WHEN:</b> Any phase, when a friendly <span class=\"tooltipGrav-assault\" data-tooltip-anchor=\"#tooltip_contentGrav-assault\" data-tooltip-content=\"#tooltip_contentGrav-assault\"><span class=\"kwb kwbu\">GRAV-ASSAULT</span></span> unit within range of an <b><a href=\"/wh40k11ed/the-rules/core-rules/#Objectives\">objective</a></b> is <b><span class=\"tooltip00026\" data-tooltip-content=\"#tooltip_content00026\"><span class=\"tt kwbu\">destroyed</span></span></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">GRAV-ASSAULT</span> unit. You can target that unit with this <b>stratagem</b> even though it is <b>destroyed</b>.<br/><br/><b>EFFECT:</b> Select one <b>objective</b> that:<br/><ul><li>Your unit was <a href=\"/wh40k11ed/the-rules/core-rules/#Level-of-Control\">controlling</a> when it was <b>destroyed</b>.</li><li>Has no enemy units (excluding <span class=\"kwb\">AIRCRAFT</span> units) within range of it.</li></ul>That <b>objective</b> is <b><span class=\"tooltip00042\" data-tooltip-content=\"#tooltip_content00042\"><span class=\"tt kwbu\">secured</span></span></b>."
+    },
+    {
+     "name": "ADVANCED STABILISERS",
+     "cp_cost": "1",
+     "type": "Grav-Assault Force Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when a friendly <span class=\"tooltipGrav-assault\" data-tooltip-anchor=\"#tooltip_contentGrav-assault\" data-tooltip-content=\"#tooltip_contentGrav-assault\"><span class=\"kwb kwbu\">GRAV-ASSAULT</span></span> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">selected to shoot</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">GRAV-ASSAULT</span> unit.<br/><br/><b>EFFECT:</b> Your unit’s ranged attacks have <span class=\"kwb\"><span class=\"tooltip00032\" data-tooltip-content=\"#tooltip_content00032\"><span class=\"tt kwbu\">[Assault]</span></span></span>."
+    },
+    {
+     "name": "INEVITABLE ANNIHILATION",
+     "cp_cost": "1",
+     "type": "Grav-Assault Force Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when a friendly <span class=\"tooltipGrav-assault\" data-tooltip-anchor=\"#tooltip_contentGrav-assault\" data-tooltip-content=\"#tooltip_contentGrav-assault\"><span class=\"kwb kwbu\">GRAV-ASSAULT</span></span> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">selected to shoot</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">GRAV-ASSAULT</span> unit.<br/><br/><b>EFFECT:</b> Your unit can <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">ignore</span> <span class=\"tt kwbu\">modifiers</span></span> to your unit’s:<br/><ul><li><b>BS</b>.</li><li><b><span class=\"tooltip00017\" data-tooltip-content=\"#tooltip_content00017\"><span class=\"tt kwbu\">Hit</span> <span class=\"tt kwbu\">rolls</span></span></b>.</li></ul>"
+    }
+   ],
+   "dp_cost": 1,
+   "force_disposition": "RECONNAISSANCE",
+   "exclusive_tag": "",
+   "restriction": "",
+   "keyword_grants": [],
+   "boarding_actions": false,
+   "restricted_chapter": ""
+  },
+  {
+   "id": "000900090",
+   "name": "Guardians of the Throne",
+   "legend": "Few foes can stand against a combined-arms force of Custodians.",
+   "rules": [
+    {
+     "name": "Martial Mastery",
+     "description": "In the <a href=\"/wh40k11ed/the-rules/core-rules/#Fight-Phase\">Fight phase</a>, when a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#When-a-Unit-is-Selected-to-Fight\">selected to fight</a></b>, that unit’s melee attacks have:<br/><ul><li><span class=\"kwb\"><span class=\"tooltip00024\" data-tooltip-content=\"#tooltip_content00024\"><span class=\"tt kwbu\">[Sustained</span> <span class=\"tt kwbu\">Hits</span> <span class=\"tt kwbu\">1]</span></span></span>.</li><li><u>Or:</u> <span class=\"kwb\"><span class=\"tooltip00014\" data-tooltip-content=\"#tooltip_content00014\"><span class=\"tt kwbu\">[Lethal</span> <span class=\"tt kwbu\">Hits]</span></span></span>.</li></ul>"
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Bane of Abominations",
+     "cost": "20",
+     "description": "<p><span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only. This model’s attacks that target an enemy <span class=\"kwb\">CHARACTER</span>/<span class=\"kwb\">MONSTER</span>/<span class=\"kwb\">VEHICLE</span> unit have +1 to <b><span class=\"tooltip00020\" data-tooltip-content=\"#tooltip_content00020\"><span class=\"tt kwbu\">wound</span> <span class=\"tt kwbu\">rolls</span></span></b>.</p>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Emperor's Light",
+     "cost": "15",
+     "description": "<p><span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only. This model has the following weapon:</p><div style=\"height:8px\"></div><div class=\"itc\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"wTable\" width=\"100%\"><tbody><tr><td class=\"wTable_WEAPON\"><div class=\"dsHeader dsColorBgAC\">MELEE WEAPONS</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgAC\">RANGE</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgAC\">A</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgAC\">WS</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgAC\">S</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgAC\">AP</div></td><td style=\"width:42px;\"><div class=\"ct dsHeader dsColorBgAC\">D</div></td><tbody class=\"bkg bkg_reset\"></tbody></tr></tbody><tbody class=\"bkg\"><tr class=\"wTable2_long\"><td class=\"pad2626\" colspan=\"6\"><span><b class=\"dsWeaponName\">Emperor's Light</b> <span class=\"kwbw dsColorAC\"><span class=\"tooltip00025\" data-tooltip-content=\"#tooltip_content00025\"><span class=\"ttw kwbu\">EXTRA</span> <span class=\"ttw kwbu\">ATTACKS</span></span></span></span></td></tr><tr class=\"dsWeaponRow\"><td class=\"wTable2_short pad2626\"><span><b class=\"dsWeaponName\">Emperor's Light</b> <span class=\"kwbw dsColorAC\"><span class=\"tooltip00025\" data-tooltip-content=\"#tooltip_content00025\"><span class=\"ttw kwbu\">EXTRA</span> <span class=\"ttw kwbu\">ATTACKS</span></span></span></span></td><td><div class=\"ct pad2626\">Melee</div></td><td><div class=\"ct pad2626\">3</div></td><td><div class=\"ct pad2626\">2+</div></td><td><div class=\"ct pad2626\">5</div></td><td><div class=\"ct pad2626\">-2</div></td><td><div class=\"ct pad2626\">2</div></td></tr></tbody></table></div>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Castellan's Mark",
+     "cost": "25",
+     "description": "<p><span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only. When both players have deployed their armies, you can redeploy up to three friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> units. When doing so, you can set those units up in <b><a href=\"/wh40k11ed/the-rules/core-rules/#Strategic-Reserves\">strategic reserves</a></b>, regardless of how many units are already in <b>strategic reserves</b>.</p>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Eagle's Eye",
+     "cost": "30",
+     "description": "<p><span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only.<br/><ul><li>This model has +1 <b>W</b>.</li><li>(Once per battle, per army) When attacks are allocated to this model, you can use this ability. If you do, this model has 3+ <b><span class=\"tooltip00027\" data-tooltip-content=\"#tooltip_content00027\"><span class=\"tt kwbu\">InSv</span></span></b>.</li></ul></p>",
+     "is_upgrade": false
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "SHIELD OF HONOUR",
+     "cp_cost": "1",
+     "type": "Guardians of the Throne Stratagem",
+     "description": "<b>WHEN:</b> Start of the <a href=\"/wh40k11ed/the-rules/core-rules/#Fight-Phase\">Fight phase</a>.<br/><br/><b>TARGET:</b> One friendly <span class=\"tooltip00028\" data-tooltip-anchor=\"#tooltip_content00028\" data-tooltip-content=\"#tooltip_content00028\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span> <span class=\"kwb kwbu\">INFANTRY</span></span>/<span class=\"tooltipMounted\" data-tooltip-anchor=\"#tooltip_contentMounted\" data-tooltip-content=\"#tooltip_contentMounted\"><span class=\"kwb kwbu\">MOUNTED</span></span> unit.<br/><br/><b>EFFECT:</b> When an enemy model <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">engaged</span></span></b> with your unit selects targets, if that enemy model does <u>not</u> select your unit as the target of <u>all</u> of its attacks, that enemy model’s attacks have:<br/><ul><li>-1 to <b><span class=\"tooltip00017\" data-tooltip-content=\"#tooltip_content00017\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">rolls</span></span></b>.</li><li>-1 to <b><span class=\"tooltip00020\" data-tooltip-content=\"#tooltip_content00020\"><span class=\"tt kwbu\">wound</span> <span class=\"tt kwbu\">rolls</span></span></b>.</li></ul>"
+    },
+    {
+     "name": "SUPERHUMAN FOCUS",
+     "cp_cost": "1",
+     "type": "Guardians of the Throne Stratagem",
+     "description": "<b>WHEN:</b> End of any phase.<br/><br/><b>TARGET:</b> One friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit that is not <b><span class=\"tooltip00029\" data-tooltip-content=\"#tooltip_content00029\"><span class=\"tt kwbu\">readied</span></span></b>.<br/><br/><b>EFFECT:</b> Your unit is <b>readied</b>.<br/><br/><b>RESTRICTIONS:</b> You cannot select the same unit as the target of this Stratagem more than once per <a href=\"/wh40k11ed/the-rules/core-rules/#The-Battle-Round-1\">battle round</a>."
+    },
+    {
+     "name": "IN AURAMITE CLAD",
+     "cp_cost": "1",
+     "type": "Guardians of the Throne Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a> or the <a href=\"/wh40k11ed/the-rules/core-rules/#Fight-Phase\">Fight phase</a>, when an enemy unit targets a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit (excluding <a class=\"kwbOne\" href=\"/wh40k11ed/factions/adeptus-custodes/Custodian-Wardens\"><span class=\"kwb kwbo\">CUSTODIAN</span> <span class=\"kwb kwbo\">WARDENS</span></a> units).<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br/><br/><b>EFFECT:</b> Attacks that target your unit have -1 <b>AP</b> until that enemy unit has attacked."
+    },
+    {
+     "name": "PRIME TARGET",
+     "cp_cost": "1",
+     "type": "Guardians of the Throne Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Shooting-Phase\">Shooting phase</a>, when a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">selected to shoot</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br/><br/><b>EFFECT:</b> Your unit’s ranged attacks can:<br/><ul><li>Re-roll <u>one</u> <b><span class=\"tooltip00017\" data-tooltip-content=\"#tooltip_content00017\"><span class=\"tt kwbu\">hit</span> <span class=\"tt kwbu\">roll</span></span></b>.</li><li>Re-roll <u>one</u> <b><span class=\"tooltip00020\" data-tooltip-content=\"#tooltip_content00020\"><span class=\"tt kwbu\">wound</span> <span class=\"tt kwbu\">roll</span></span></b>.</li><li>Re-roll <u>one</u> <b><span class=\"tooltip00030\" data-tooltip-content=\"#tooltip_content00030\"><span class=\"tt kwbu\">damage</span> <span class=\"tt kwbu\">roll</span></span></b>.</li></ul>"
+    },
+    {
+     "name": "UNLIMITED ENDURANCE",
+     "cp_cost": "1",
+     "type": "Guardians of the Throne Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, when a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit ends an <b><span class=\"tooltip00006\" data-tooltip-content=\"#tooltip_content00006\"><span class=\"tt kwbu\">advance</span> <span class=\"tt kwbu\">move</span></span></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br/><br/><b>EFFECT:</b> Until the end of the turn:<br/><ul><li>Your unit’s ranged attacks have <span class=\"kwb\"><span class=\"tooltip00032\" data-tooltip-content=\"#tooltip_content00032\"><span class=\"tt kwbu\">[Assault]</span></span></span>.</li><li>That <b>advance move</b> does not prevent your unit from being <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">eligible to declare a charge</a></b>.</li></ul>"
+    },
+    {
+     "name": "SWIFT AS THE EAGLE",
+     "cp_cost": "1",
+     "type": "Guardians of the Throne Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, when an enemy unit ends a move within 8\" of a friendly <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">unengaged</span></span></b> <span class=\"tooltipTrustedSentinel\" data-tooltip-anchor=\"#tooltip_contentTrustedSentinel\" data-tooltip-content=\"#tooltip_contentTrustedSentinel\"><span class=\"kwb kwbu\">TRUSTED</span> <span class=\"kwb kwbu\">SENTINEL</span></span> unit.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">TRUSTED</span> <span class=\"kwb\">SENTINEL</span> unit.<br/><br/><b>EFFECT:</b> Your unit can make a <b><span class=\"tooltip00005\" data-tooltip-content=\"#tooltip_content00005\"><span class=\"tt kwbu\">normal</span> <span class=\"tt kwbu\">move</span></span></b> of up to D3+3\"."
+    }
+   ],
+   "dp_cost": 3,
+   "force_disposition": "PRIORITY ASSETS",
+   "exclusive_tag": "",
+   "restriction": "",
+   "keyword_grants": [],
+   "boarding_actions": false,
+   "restricted_chapter": ""
+  },
+  {
+   "id": "000900097",
+   "name": "Honoured Companions",
+   "legend": "",
+   "rules": [
+    {
+     "name": "Companion’s Watch",
+     "description": "While a friendly <span class=\"tooltipTrustedSentinel\" data-tooltip-anchor=\"#tooltip_contentTrustedSentinel\" data-tooltip-content=\"#tooltip_contentTrustedSentinel\"><span class=\"kwb kwbu\">TRUSTED</span> <span class=\"kwb kwbu\">SENTINEL</span></span> unit is within range of an <b><a href=\"/wh40k11ed/the-rules/core-rules/#Objectives\">objective</a></b>, that unit’s attacks can re-roll <b><span class=\"tooltip00020\" data-tooltip-content=\"#tooltip_content00020\"><span class=\"tt kwbu\">wound</span> <span class=\"tt kwbu\">rolls</span></span></b> of 1."
+    }
+   ],
+   "enhancements": [
+    {
+     "name": "Arae-Shrike",
+     "cost": "20",
+     "description": "<p><span class=\"tooltip00028\" data-tooltip-anchor=\"#tooltip_content00028\" data-tooltip-content=\"#tooltip_content00028\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span> <span class=\"kwb kwbu\">INFANTRY</span></span> model only. Enemy units that are selected to make an <b><span class=\"tooltip00039\" data-tooltip-content=\"#tooltip_content00039\"><span class=\"tt kwbu\">ingress</span> <span class=\"tt kwbu\">move</span></span></b> cannot be set up within 12\" of this unit.</p>",
+     "is_upgrade": false
+    },
+    {
+     "name": "Celeritous Sentries (Upgrade)",
+     "cost": "15",
+     "description": "<p><span class=\"tooltipTrustedSentinel\" data-tooltip-anchor=\"#tooltip_contentTrustedSentinel\" data-tooltip-content=\"#tooltip_contentTrustedSentinel\"><span class=\"kwb kwbu\">TRUSTED</span> <span class=\"kwb kwbu\">SENTINEL</span></span> unit only. (Once per phase, per unit) You can target this unit with the <b><span class=\"tooltip00050\" data-tooltip-content=\"#tooltip_content00050\"><span class=\"tt kwbu\">Heroic</span> <span class=\"tt kwbu\">Intervention</span></span></b> <b>stratagem</b>, regardless of any other uses of that <b>stratagem</b> this phase. If you do:<br/><ul><li>That use is -1 CP.</li><li>That use does <u>not</u> prevent any uses of that <b>stratagem</b> on other units this phase.</li></ul></p>",
+     "is_upgrade": true
+    }
+   ],
+   "stratagems": [
+    {
+     "name": "EMPEROR'S DOMAIN",
+     "cp_cost": "1",
+     "type": "Honoured Companions Stratagem",
+     "description": "<b>WHEN:</b> <a href=\"/wh40k11ed/the-rules/core-rules/#Fight-Phase\">Fight phase</a>, when a friendly <span class=\"tooltipTrustedSentinel\" data-tooltip-anchor=\"#tooltip_contentTrustedSentinel\" data-tooltip-content=\"#tooltip_contentTrustedSentinel\"><span class=\"kwb kwbu\">TRUSTED</span> <span class=\"kwb kwbu\">SENTINEL</span></span> unit is selected to make a <b><span class=\"tooltip00037\" data-tooltip-content=\"#tooltip_content00037\"><span class=\"tt kwbu\">consolidation</span> <span class=\"tt kwbu\">move</span></span></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">TRUSTED</span> <span class=\"kwb\">SENTINEL</span> unit.<br/><br/><b>EFFECT:</b> You can select the <b><a href=\"/wh40k11ed/the-rules/core-rules/#Objectives\">objective</a></b> <b>consolidation mode</b> for that <b>consolidation move</b>, regardless of that <b>consolidation move</b>’s Before Moving restrictions.<br/><br/><i>This means your unit can move out of <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">engagement</span> <span class=\"tt kwbu\">range</span></span></b> with enemy units, provided it meets the conditions of the <b>objective consolidation mode</b>.</i>"
+    },
+    {
+     "name": "AVENGE THE FALLEN",
+     "cp_cost": "1",
+     "type": "Honoured Companions Stratagem",
+     "description": "<b>WHEN:</b> <a href=\"/wh40k11ed/the-rules/core-rules/#Fight-Phase\">Fight phase</a>, when a friendly <span class=\"tooltipTrustedSentinel\" data-tooltip-anchor=\"#tooltip_contentTrustedSentinel\" data-tooltip-content=\"#tooltip_contentTrustedSentinel\"><span class=\"kwb kwbu\">TRUSTED</span> <span class=\"kwb kwbu\">SENTINEL</span></span> unit that is <b><span class=\"tooltip00051\" data-tooltip-content=\"#tooltip_content00051\"><span class=\"tt kwbu\">below</span> <span class=\"tt kwbu\">starting</span> <span class=\"tt kwbu\">strength</span></span></b> is <b><a href=\"/wh40k11ed/the-rules/core-rules/#When-a-Unit-is-Selected-to-Fight\">selected to fight</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">TRUSTED</span> <span class=\"kwb\">SENTINEL</span> unit.<br/><br/><b>EFFECT:</b> Your unit’s melee attacks (excluding those made by <span class=\"tooltipCharacter\" data-tooltip-anchor=\"#tooltip_contentCharacter\" data-tooltip-content=\"#tooltip_contentCharacter\"><span class=\"kwb kwbu\">CHARACTER</span></span> models) have +2 <b>A</b>."
+    },
+    {
+     "name": "SWIFT AS THE EAGLE",
+     "cp_cost": "1",
+     "type": "Honoured Companions Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, when an enemy unit ends a move within 8\" of a friendly <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">unengaged</span></span></b> <span class=\"tooltipTrustedSentinel\" data-tooltip-anchor=\"#tooltip_contentTrustedSentinel\" data-tooltip-content=\"#tooltip_contentTrustedSentinel\"><span class=\"kwb kwbu\">TRUSTED</span> <span class=\"kwb kwbu\">SENTINEL</span></span> unit.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">TRUSTED</span> <span class=\"kwb\">SENTINEL</span> unit.<br/><br/><b>EFFECT:</b> Your unit can make a <b><span class=\"tooltip00005\" data-tooltip-content=\"#tooltip_content00005\"><span class=\"tt kwbu\">normal</span> <span class=\"tt kwbu\">move</span></span></b> of up to D3+3\"."
+    }
+   ],
+   "dp_cost": 1,
+   "force_disposition": "TAKE AND HOLD",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -5608,12 +6058,6 @@
     }
    ],
    "enhancements": [
-    {
-     "name": "Superior Creation",
-     "cost": "25",
-     "description": "Adeptus Custodes Infantry model only. The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with its full wounds remaining.",
-     "is_upgrade": false
-    },
     {
      "name": "Praesidius",
      "cost": "25",
@@ -5671,8 +6115,8 @@
      "description": "<b>WHEN:</b> Your Movement phase, just after an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army Falls Back.<br><br><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br><br><b>EFFECT:</b> Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
     }
    ],
-   "dp_cost": 3,
-   "force_disposition": "TAKE AND HOLD",
+   "dp_cost": 1,
+   "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -5805,8 +6249,8 @@
      "description": "<b>WHEN:</b> Your opponent’s Shooting phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Anathema Psykana Infantry unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, your unit has the Stealth ability, and Battle-shocked and <span class=\"kwb\">PSYKER</span> models can only select your unit as a target of a ranged attack if they are within 12\"."
     }
    ],
-   "dp_cost": 2,
-   "force_disposition": "RECONNAISSANCE",
+   "dp_cost": 1,
+   "force_disposition": "DISRUPTION",
    "exclusive_tag": "",
    "restriction": "",
    "keyword_grants": [],
@@ -5814,80 +6258,50 @@
    "restricted_chapter": ""
   },
   {
-   "id": "000000765",
-   "name": "Shield Host",
-   "legend": "",
+   "id": "000900095",
+   "name": "Shadowkeepers",
+   "legend": "The Shadowkeepers seek to destroy or contain that which should not be.",
    "rules": [
     {
-     "name": "Martial Mastery",
-     "description": "At the start of the battle round, you can select one of the bullet points below. If you do, until the start of the next battle round, that bullet point’s effects apply.<br><ul><li>Each time an Adeptus Custodes model from your army with the Martial Ka’tah ability makes a melee attack, a successful unmodified Hit roll of 5+ scores a Critical Hit.</li><li>Improve the Armour Penetration characteristic of melee weapons equipped by <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> models from your army with the Martial Ka’tah ability by 1.</li></ul>"
+     "name": "Wardens of the Dark Cells",
+     "description": "While a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit (excluding <span class=\"tooltip\" title=\"Keyword does not appear in that faction.\"><s class=\"kwbs\">MONSTER</s></span>/<span class=\"tooltipVehicle\" data-tooltip-anchor=\"#tooltip_contentVehicle\" data-tooltip-content=\"#tooltip_contentVehicle\"><span class=\"kwb kwbu\">VEHICLE</span></span> units) is within range of an <b><a href=\"/wh40k11ed/the-rules/core-rules/#Objectives\">objective</a></b>, melee attacks that target that unit with a S greater than that unit’s <b>T</b> have -1 to <b><span class=\"tooltip00020\" data-tooltip-content=\"#tooltip_content00020\"><span class=\"tt kwbu\">wound</span> <span class=\"tt kwbu\">rolls</span></span></b>.<br/><br/><b>Favoured ka’tah:</b> <span class=\"tooltip00029\" data-tooltip-content=\"#tooltip_content00029\"><span class=\"kwb kwbu\">KAPTARIS</span></span><br/><b>Additional Effect:</b> You can select one enemy unit <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">engaged</span></span></b> with your unit. That enemy unit must make a <b><span class=\"tooltip00048\" data-tooltip-content=\"#tooltip_content00048\"><span class=\"tt kwbu\">battle-shock</span> <span class=\"tt kwbu\">roll</span></span></b>, with -1 to that <b>battle-shock roll</b>. You cannot select the same enemy unit for this effect more than once per phase."
     }
    ],
    "enhancements": [
     {
-     "name": "Auric Mantle",
-     "cost": "15",
-     "description": "Shield-Captain or Blade Champion model only. Add 2 to the bearer’s Wounds characteristic.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Castellan’s Mark",
-     "cost": "20",
-     "description": "Shield-Captain model only. After both players have deployed their armies, you can select up to two Adeptus Custodes units from your army (excluding Anathema Psykana units) and redeploy all of those units. When doing so, any of those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
-     "is_upgrade": false
-    },
-    {
-     "name": "From the Hall of Armouries",
+     "name": "Unstoppable Destroyer",
      "cost": "25",
-     "description": "Shield-Captain model only. Add 1 to the Strength and Damage characteristics of the bearer’s melee weapons.",
+     "description": "<p><span class=\"tooltip00028\" data-tooltip-anchor=\"#tooltip_content00028\" data-tooltip-content=\"#tooltip_content00028\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span> <span class=\"kwb kwbu\">INFANTRY</span></span> model only. When this unit is selected to make a <b><span class=\"tooltip00036\" data-tooltip-content=\"#tooltip_content00036\"><span class=\"tt kwbu\">pile-in</span></span></b>/<b><span class=\"tooltip00037\" data-tooltip-content=\"#tooltip_content00037\"><span class=\"tt kwbu\">consolidation</span> <span class=\"tt kwbu\">move</span></span></b>:<br/><ul><li>This unit can move up to 4\".</li><li>You can select any <b>consolidation mode</b> for that <b>consolidation move</b>, regardless of that <b>consolidation move</b>’s Before Moving <b>restrictions</b>.</li></ul></p>",
      "is_upgrade": false
     },
     {
-     "name": "Panoptispex",
-     "cost": "5",
-     "description": "Shield-Captain or Blade Champion model only. While the bearer is leading a unit, ranged weapons equipped by models in that unit have the [IGNORES cover] ability.",
+     "name": "Genalchemic Warding",
+     "cost": "30",
+     "description": "<p><span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only. This model has <b><span class=\"tooltip00021\" data-tooltip-content=\"#tooltip_content00021\"><span class=\"tt kwbu\">Feel</span> <span class=\"tt kwbu\">No</span> <span class=\"tt kwbu\">Pain</span> <span class=\"tt kwbu\">5+</span></span></b>.</p>",
      "is_upgrade": false
     }
    ],
    "stratagems": [
     {
-     "name": "ARCHEOTECH MUNITIONS",
+     "name": "GRIM RESPONSIBILITY",
      "cp_cost": "1",
-     "type": "Shield Host  – Wargear Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army (excluding Anathema Psykana units) that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Select either the [LETHAL HITS] or [SUSTAINED HITS 1] ability. Until the end of the phase ranged weapons equipped by models in your unit have the selected ability."
+     "type": "Shadowkeepers Stratagem",
+     "description": "<b>WHEN:</b> <a href=\"/wh40k11ed/the-rules/core-rules/#Fight-Phase\">Fight phase</a>, when a friendly <span class=\"tooltip00028\" data-tooltip-anchor=\"#tooltip_content00028\" data-tooltip-content=\"#tooltip_content00028\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span> <span class=\"kwb kwbu\">INFANTRY</span></span> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#When-a-Unit-is-Selected-to-Fight\">selected to fight</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br/><br/><b>EFFECT:</b> Your unit’s melee attacks have <span class=\"kwb\"><span class=\"tooltip00014\" data-tooltip-content=\"#tooltip_content00014\"><span class=\"tt kwbu\">[Lethal</span> <span class=\"tt kwbu\">Hits:</span> <span class=\"tt kwbu\">Character/Monster]</span></span></span>."
     },
     {
-     "name": "ARCANE GENETIC ALCHEMY",
-     "cp_cost": "1",
-     "type": "Shield Host – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Any phase, just after a mortal wound has been allocated to an Adeptus Custodes model from your army(excluding Anathema Psykana models).<br><br><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model’s unit.<br><br><b>EFFECT:</b> Until the end of the phase, models in your unit have the Feel No Pain 4+ ability against mortal wounds."
+     "name": "NO ESCAPE",
+     "cp_cost": "2",
+     "type": "Shadowkeepers Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, when an enemy unit ends a <b><span class=\"tooltip00011\" data-tooltip-content=\"#tooltip_content00011\"><span class=\"tt kwbu\">fall-back</span> <span class=\"tt kwbu\">move</span></span></b>.<br/><br/><b>TARGET:</b> One friendly <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">unengaged</span></span></b> <span class=\"tooltip00028\" data-tooltip-anchor=\"#tooltip_content00028\" data-tooltip-content=\"#tooltip_content00028\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span> <span class=\"kwb kwbu\">INFANTRY</span></span> unit that is within 6\" of that enemy unit.<br/><br/><b>EFFECT:</b> <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">Declare a charge</a></b> with your unit. When selecting <b><span class=\"tooltip00045\" data-tooltip-content=\"#tooltip_content00045\"><span class=\"tt kwbu\">charge</span> <span class=\"tt kwbu\">targets</span></span></b>, you can only select enemy units that made a <b>fall-back move</b> this phase and are within the <b>maximum distance</b>."
     },
     {
-     "name": "VIGILANCE ETERNAL",
+     "name": "INDOMITABLE GUARDIANS",
      "cp_cost": "1",
-     "type": "Shield Host – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Movement phase.<br><br><b>TARGET:</b> One Adeptus Custodes Battleline unit from your army (excluding Anathema Psykana units) within range of an objective marker you control.<br><br><b>EFFECT:</b> That objective marker remains under your control even if you have no models within range of it, until your opponent controls it at the start or end of any turn."
-    },
-    {
-     "name": "MULTIPOTENTIALITY",
-     "cp_cost": "1",
-     "type": "Shield Host – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Movement phase.<br><br><b>TARGET:</b> One Adeptus Custodes unit from your army that Fell Back this phase.<br><br><b>EFFECT:</b> Until the end of your turn, that unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
-    },
-    {
-     "name": "UNWAVERING SENTINELS",
-     "cp_cost": "1",
-     "type": "Shield Host – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Adeptus Custodes Infantry unit from your army (excluding Anathema Psykana units) that is within range of an objective marker you control and that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, each time a melee attack targets your unit, subtract 1 from the Hit roll."
-    },
-    {
-     "name": "AVENGE THE FALLEN",
-     "cp_cost": "1",
-     "type": "Shield Host – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Start of the Fight phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army (excluding Anathema Psykana units) that is below its Starting Strength.<br><br><b>EFFECT:</b> Until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit. If your unit is Below Half-strength, until the end of the phase, add 2 to the Attacks characteristic of those melee weapons instead."
+     "type": "Shadowkeepers Stratagem",
+     "description": "<b>WHEN:</b> Your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Fight-Phase\">Fight phase</a>, when an enemy unit has fought.<br/><br/><b>TARGET:</b> One friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit that is within range of an <b><a href=\"/wh40k11ed/the-rules/core-rules/#Objectives\">objective</a></b> and is <b><a href=\"/wh40k11ed/the-rules/core-rules/#3.-Fight-Step\">eligible to fight</a></b>.<br/><br/><b>EFFECT:</b> Your unit has <b><span class=\"tooltip00043\" data-tooltip-content=\"#tooltip_content00043\"><span class=\"tt kwbu\">Fights</span> <span class=\"tt kwbu\">First</span></span></b> and <u>must</u> be the next unit you <b><a href=\"/wh40k11ed/the-rules/core-rules/#When-a-Unit-is-Selected-to-Fight\">select to fight</a></b>."
     }
    ],
-   "dp_cost": 2,
+   "dp_cost": 1,
    "force_disposition": "PURGE THE FOE",
    "exclusive_tag": "",
    "restriction": "",
@@ -5896,268 +6310,52 @@
    "restricted_chapter": ""
   },
   {
-   "id": "000900046",
-   "name": "Silent Hunters",
-   "legend": "Prey recoil from the skin-crawling presence of the Sisterhood's hunters.",
+   "id": "000900096",
+   "name": "Solar Watch",
+   "legend": "Guardians of the Sol System, the Solar Watch favour rapid warfare.",
    "rules": [
     {
-     "name": "Skin-crawling Disorientation",
-     "description": "When a friendly ANATHEMA PSYKANA unit is selected to make an Advance move, that move does not prevent that unit from being eligible to start an action. Friendly ANATHEMA PSYKANA units have the following ability. Ceaseless Vigilance: In your Shooting phase, this unit can select one visible enemy unit within 12\". That enemy unit is nulled. While a unit is nulled, that unit has +3\" detection range."
+     "name": "Talon Sortie",
+     "description": "When a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit makes a <b><span class=\"tooltip00011\" data-tooltip-content=\"#tooltip_content00011\"><span class=\"tt kwbu\">fall-back</span> <span class=\"tt kwbu\">move</span></span></b>, that <b>fall-back move</b> does not prevent that unit from being <a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">eligible to charge</a>.<br/><br/><b>Favoured ka’tah:</b> <span class=\"tooltip00029\" data-tooltip-content=\"#tooltip_content00029\"><span class=\"kwb kwbu\">CALISTUS</span></span><br/><b>Additional Effect:</b> Your unit has +2\" <b>M</b>."
     }
    ],
    "enhancements": [
     {
-     "name": "Encircling Hunter",
-     "cost": "15",
-     "description": "ANATHEMA PSYKANA model only. When both players have deployed, you can redeploy up to three friendly ANATHEMA PSYKANA INFANTRY units, and may set them up in Strategic Reserves regardless of how many units are already there.",
+     "name": "Sally Forth",
+     "cost": "30",
+     "description": "<p><span class=\"tooltip00049\" data-tooltip-anchor=\"#tooltip_content00049\" data-tooltip-content=\"#tooltip_content00049\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span> <span class=\"kwb kwbu\">SHIELD-CAPTAIN</span></span> model only. At the start of your <a href=\"/wh40k11ed/the-rules/core-rules/#Charge-Phase\">Charge phase</a>, select one friendly <span class=\"tooltip00028\" data-tooltip-anchor=\"#tooltip_content00028\" data-tooltip-content=\"#tooltip_content00028\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span> <span class=\"kwb kwbu\">INFANTRY</span></span> unit within 6\" of this model. If that unit made an <b><span class=\"tooltip00006\" data-tooltip-content=\"#tooltip_content00006\"><span class=\"tt kwbu\">advance</span> <span class=\"tt kwbu\">move</span></span></b> this turn, that <b>advance move</b> does not prevent that unit from being <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">eligible to declare a charge</a></b>.</p>",
      "is_upgrade": false
     },
     {
-     "name": "Psyk-out Grenades (Upgrade)",
-     "cost": "10",
-     "description": "ANATHEMA PSYKANA unit only. This unit has EXPLOSIVES. When you target this unit with the Explosives stratagem, if you select an enemy PSYKER unit, you can re-roll rolls to determine whether that enemy unit suffers a mortal wound.",
+     "name": "Auric Eagle (Upgrade)",
+     "cost": "15",
+     "description": "<p><span class=\"tooltip00028\" data-tooltip-anchor=\"#tooltip_content00028\" data-tooltip-content=\"#tooltip_content00028\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span> <span class=\"kwb kwbu\">INFANTRY</span></span>/<span class=\"tooltipMounted\" data-tooltip-anchor=\"#tooltip_contentMounted\" data-tooltip-content=\"#tooltip_contentMounted\"><span class=\"kwb kwbu\">MOUNTED</span></span> unit only (excluding <span class=\"tooltipTerminator\" data-tooltip-anchor=\"#tooltip_contentTerminator\" data-tooltip-content=\"#tooltip_contentTerminator\"><span class=\"kwb kwbu\">TERMINATOR</span></span> units). This unit has +1 to <b><span class=\"tooltip00006\" data-tooltip-content=\"#tooltip_content00006\"><span class=\"tt kwbu\">advance</span> <span class=\"tt kwbu\">rolls</span></span></b> and <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">charge rolls</a></b>.</p>",
      "is_upgrade": true
     }
    ],
    "stratagems": [
     {
-     "name": "Deathsong Scythes",
+     "name": "INEXORABLE",
      "cp_cost": "1",
-     "type": "",
-     "description": "WHEN: Fight phase, when a friendly VIGILATORS unit is selected to fight. TARGET: That unit. EFFECT: Your unit's melee attacks have [LANCE], and melee attacks that target a PSYKER unit have +1 A."
+     "type": "Solar Watch Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, when a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit is <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Move-Units-Step\">selected to move</a></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br/><br/><b>EFFECT:</b> Until the end of the turn, your unit can <span class=\"tooltip00013\" data-tooltip-content=\"#tooltip_content00013\"><span class=\"tt kwbu\">ignore</span> <span class=\"tt kwbu\">modifiers</span></span> to your unit’s:<br/><ul><li><b>M</b>.</li><li><b><span class=\"tooltip00006\" data-tooltip-content=\"#tooltip_content00006\"><span class=\"tt kwbu\">Advance</span> <span class=\"tt kwbu\">rolls</span></span></b> and <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">charge rolls</a></b>.</li></ul>"
     },
     {
-     "name": "Umbral Prosecution",
+     "name": "AT SPEAR'S LENGTH",
      "cp_cost": "1",
-     "type": "",
-     "description": "WHEN: Your Shooting phase, when a friendly PROSECUTORS unit is selected to shoot. TARGET: That unit. EFFECT: Your unit's Boltgun weapons have [RAPID FIRE 2] and +1 AP."
+     "type": "Solar Watch Stratagem",
+     "description": "<b>WHEN:</b> Your <a href=\"/wh40k11ed/the-rules/core-rules/#Movement-Phase\">Movement phase</a>, when a friendly <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit is selected to make a <b><span class=\"tooltip00011\" data-tooltip-content=\"#tooltip_content00011\"><span class=\"tt kwbu\">fall-back</span> <span class=\"tt kwbu\">move</span></span></b>.<br/><br/><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br/><br/><b>EFFECT:</b> That <b>fall-back move</b> does not prevent your unit from being <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Shoot\">eligible to shoot</a></b>."
     },
     {
-     "name": "Synchronised Inferno",
+     "name": "GRAVIMETRIC GRENADE",
      "cp_cost": "1",
-     "type": "",
-     "description": "WHEN: Your Shooting phase, when a friendly WITCHSEEKERS unit is selected to shoot. TARGET: That unit. EFFECT: Your unit's [TORRENT] ranged attacks have [BLAST 1]."
+     "type": "Solar Watch Stratagem",
+     "description": "<b>WHEN:</b> Start of your opponent’s <a href=\"/wh40k11ed/the-rules/core-rules/#Charge-Phase\">Charge phase</a>.<br/><br/><b>TARGET:</b> One friendly <b><span class=\"tooltip00004\" data-tooltip-content=\"#tooltip_content00004\"><span class=\"tt kwbu\">unengaged</span></span></b> <span class=\"tooltipAdeptusCustodes\" data-tooltip-anchor=\"#tooltip_contentAdeptusCustodes\" data-tooltip-content=\"#tooltip_contentAdeptusCustodes\"><span class=\"kwb kwbu\">ADEPTUS</span> <span class=\"kwb kwbu\">CUSTODES</span></span> unit.<br/><br/><b>EFFECT:</b> Select one <b><span class=\"tooltip00015\" data-tooltip-content=\"#tooltip_content00015\"><span class=\"tt kwbu\">visible</span></span></b> enemy unit within 12\" of your unit. When that enemy unit <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">declares a charge</a></b>, that enemy unit has -1 to <b><a href=\"/wh40k11ed/the-rules/core-rules/#2.-Charge-Step\">charge rolls</a></b>."
     }
    ],
    "dp_cost": 1,
    "force_disposition": "RECONNAISSANCE",
    "exclusive_tag": "",
-   "restriction": "",
-   "keyword_grants": [],
-   "boarding_actions": false,
-   "restricted_chapter": ""
-  },
-  {
-   "id": "000000986",
-   "name": "Solar Spearhead",
-   "legend": "<p class=\"ShowFluff legend\">Within the deepest engine vaults of the Imperial Palace, the ancient and mighty vehicles of the Custodians reside. Auramite-clad combat walkers bristling with arcane weapons are roused from stasis, ready to be unleashed upon the galaxy’s battlefields. Venerable Land Raiders as old as the Imperium are awoken by complex rituals and prepared for war. When battle dawns, these dread engines of destruction stride or rumble towards the cowering foe, their guns emitting furious torrents of destruction. Those brave or foolish enough to stand before this armoured spearhead are crushed beneath the tread of auric battle tanks or smashed to a bloody pulp by wrathful interred champions.</p>",
-   "rules": [
-    {
-     "name": "Auric Armour",
-     "description": "<ul><li>While an Adeptus Custodes Vehicle unit from your army is at Starting Strength, unless that unit is an Aircraft or it is Battle-shocked, add 2 to the Objective Control characteristic of models in that unit.</li><li>While an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">VEHICLE</span> unit from your army is below Starting Strength, each time a model in that unit makes an attack, re-roll a Hit roll of 1.</li><li>While an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">VEHICLE</span> unit from your army is Below Half-strength, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.</li></ul><br><span class=\"hi_custom\">MORITOI ANCIENTS</span><br><p class=\"ShowFluff legend2\">The Adeptus Custodes’ honoured fallen are ever eager for battle.</p>Add 2\" to the Move characteristic of models in <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">WALKER</span> units from your army and add 1 to Advance and Charge rolls made for such units.<br><br><span class=\"hi_custom\">KEYWORDS</span><br>In the Muster Armies step, you can select up to 2 <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">WALKER</span> models from your army. The selected units gain the <span class=\"kwb\">CHARACTER</span> keyword.<br><br><b>Designer’s Note:</b> <i>This means that the selected models can be given Enhancements and one of them can be selected as your <span class=\"kwb\">WARLORD</span>.</i>"
-    }
-   ],
-   "enhancements": [
-    {
-     "name": "Adamantine Talisman",
-     "cost": "25",
-     "description": "<span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only. Improve the Attacks, Strength and Damage characteristics of melee weapons equipped by the bearer by 1.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Augury Uplink",
-     "cost": "35",
-     "description": "<span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> model only. The bearer has the Feel No Pain 5+ ability.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Honoured Fallen (Aura)",
-     "cost": "15",
-     "description": "Adeptus Custodes Vehicle model only. While a friendly Adeptus Custodes Infantry or Adeptus Custodes Mounted unit is within 6\" of the bearer, each time a model in that unit makes an attack, re-roll a Hit roll of 1.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Veteran of the Kataphraktoi",
-     "cost": "10",
-     "description": "Adeptus Custodes Infantry or Adeptus Custodes Mounted model only. In your Command phase, select one Adeptus Custodes Vehicle or <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">MOUNTED</span> unit within 6\" of the bearer. Until the start of your next Command phase, that unit is eligible to shoot in a turn in which it Fell Back.",
-     "is_upgrade": false
-    }
-   ],
-   "stratagems": [
-    {
-     "name": "FLAWLESS CONSTRUCTION",
-     "cp_cost": "1",
-     "type": "Solar Spearhead – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Adeptus Custodes Vehicle unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, each time an attack targets a model in your unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of your unit, subtract 1 from the Wound roll."
-    },
-    {
-     "name": "EMPEROR’S VENGEANCE",
-     "cp_cost": "1",
-     "type": "Solar Spearhead – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army that was selected as the target of one or more of the attacking unit’s attacks.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6, adding 1 to the result if your unit has the Walker keyword. On a 4+, do not remove it from play; The destroyed model can fight after the attacking unit has finished making its attacks (when doing so, it is assumed to have 1 wound remaining), and is then removed from play."
-    },
-    {
-     "name": "WRATHFUL ADVANCE",
-     "cp_cost": "1",
-     "type": "Solar Spearhead – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Fight phase, just before an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army Piles In.<br><br><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit makes a Pile-in move, it can move up to D3+3\" instead of up to 3\"."
-    },
-    {
-     "name": "UNSTOPPABLE",
-     "cp_cost": "1",
-     "type": "Solar Spearhead – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Movement phase or your Charge phase.<br><br><b>TARGET:</b> One Adeptus Custodes Vehicle or Adeptus Custodes Mounted unit from your army.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in your unit makes a move, it can move through terrain features."
-    },
-    {
-     "name": "PUNISHMENT INESCAPABLE",
-     "cp_cost": "1",
-     "type": "Solar Spearhead – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> One <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit from your army that has not been selected to shoot this phase.<br><br><b>EFFECT:</b> Until the end of the phase, ranged weapons equipped by models in your unit have the [IGNORES COVER] ability, and until the end of the phase, each time a model in your unit makes an attack, you can ignore any or all modifiers to that attack’s Ballistic Skill characteristic and/or any or all modifiers to the Hit roll."
-    },
-    {
-     "name": "RELENTLESS PERSECUTION",
-     "cp_cost": "1",
-     "type": "Solar Spearhead – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Movement phase, just after an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> <span class=\"kwb\">VEHICLE</span> unit from your army Advances.<br><br><b>TARGET:</b> That Adeptus Custodes Vehicle unit.<br><br><b>EFFECT:</b> Until the end of the turn, your unit is eligible to shoot in a turn in which it Advanced. If your unit has the Walker keyword, until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Advanced instead."
-    }
-   ],
-   "dp_cost": 2,
-   "force_disposition": "TAKE AND HOLD",
-   "exclusive_tag": "",
-   "restriction": "",
-   "keyword_grants": [],
-   "boarding_actions": false,
-   "restricted_chapter": ""
-  },
-  {
-   "id": "000000861",
-   "name": "Talons Of The Emperor",
-   "legend": "",
-   "rules": [
-    {
-     "name": "Revered Companions",
-     "description": "Anathema Psykana units from your army gain the following the ability:<br><br><b>Null Aegis (Aura):</b> While an Adeptus Custodes unit is within 6\" of this unit, models in that unit have the Feel No Pain 5+ ability against Psychic Attacks and mortal wounds.<br><br>All other <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> units from your army gain the following ability:<br><br><b>Deadly Unity (Aura):</b> While an <span class=\"kwb\">ANATHEMA</span> <span class=\"kwb\">PSYKANA</span> unit is within 6\" of this unit, each time a model in that <span class=\"kwb\">ANATHEMA</span> <span class=\"kwb\">PSYKANA</span> unit makes an attack, add 1 to the Hit roll."
-    }
-   ],
-   "enhancements": [
-    {
-     "name": "Aegis Projector",
-     "cost": "20",
-     "description": "ADEPTUS Custodes model only. Once per turn, the first time a saving throw is failed for the bearer’s unit, change the Damage characteristic of that attack to 0.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Champion of the Imperium",
-     "cost": "25",
-     "description": "ADEPTUS CUSTODES model only. The range of the bearer’s Null Aegis or Deadly Unity ability is increased to 9\".",
-     "is_upgrade": false
-    },
-    {
-     "name": "Gift of Terran Artifice",
-     "cost": "15",
-     "description": "ADEPTUS CUSTODES model only. Each time the bearer makes a melee attack, add 1 to the Wound roll.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Radiant Mantle",
-     "cost": "30",
-     "description": "ADEPTUS CUSTODES model only. Each time an attack targets the bearer’s unit, if the attacking model is within 12\", subtract 1 from the Hit roll.",
-     "is_upgrade": false
-    }
-   ],
-   "stratagems": [
-    {
-     "name": "TALONS INTERLOCKED",
-     "cp_cost": "1",
-     "type": "Talons Of The Emperor – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your Shooting phase.<br><br><b>TARGET:</b> Up to two ADEPTUS CUSTODES INFANTRY units from your army, and one enemy unit that is an eligible target for all of those units.<br><br><b>EFFECT:</b> Until the end of the phase, your units can only target that enemy unit, but each time a model in one of your units makes a ranged attack, improve the Strength and Armour Penetration characteristics of that attack by 1.<br><br><b>RESTRICTIONS:</b> You can only select two units if one (and only one) of them is an ANATHEMA PSYKANA unit and both are within 6\" of each other."
-    },
-    {
-     "name": "EMPYRIC SEVERANCE",
-     "cp_cost": "1",
-     "type": "Talons Of The Emperor – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One ADEPTUS CusTODES unit from your army that was selected as the target of one or more of the attacking unit’s attacks, and one friendly ANATHEMA PSYKANA unit within 6\" of that <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit.<br><br><b>EFFECT:</b> Until the end of the phase, your unit has the Feel No Pain 4+ ability against Psychic attacks and mortal wounds."
-    },
-    {
-     "name": "EMPEROR’S EXECUTIONERS",
-     "cp_cost": "2",
-     "type": "Talons Of The Emperor – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Start of the Fight phase.<br><br><b>TARGET:</b> Up to two Adeptus Custodes units from your army.<br><br><b>EFFECT:</b> Until the end of the phase, each time a model in one of your units targets an enemy unit that is below its Starting Strength, add 1 to the Wound roll.<br><br><b>RESTRICTIONS:</b> You can only select two units if one (and only one) of them is an Anathema Psykana unit and both are within 6\" of each other."
-    },
-    {
-     "name": "TALONED PINCER",
-     "cp_cost": "1",
-     "type": "Talons Of The Emperor – Battle Tactic Stratagem",
-     "description": "<b>WHEN:</b> Your opponent’s Movement phase, just after an enemy unit ends a Normal, Advance or Fall Back move.<br><br><b>TARGET:</b> Up to two Adeptus Custodes units from your army that are within 9\" of that enemy unit.<br><br><b>EFFECT:</b> Your units can make a Normal move of up to 6\".<br><br><b>RESTRICTIONS:</b> You cannot select units that are within Engagement Range of one or more enemy units. You can only select two units if one (and only one) of them is an Anathema Psykana unit and both are within 6\" of each other."
-    },
-    {
-     "name": "SHIELD OF HONOUR",
-     "cp_cost": "1",
-     "type": "Talons Of The Emperor – Epic Deed Stratagem",
-     "description": "<b>WHEN:</b> Your opponent’s Shooting phase, just after an enemy unit has selected its targets.<br><br><b>TARGET:</b> One Anathema Psykana Infantry unit from your army that was selected as the target of one or more of the attacking unit’s attacks, and one other friendly Adeptus Custodes Infantry unit (excluding <span class=\"kwb\">ANATHEMA</span> <span class=\"kwb\">PSYKANA</span> units) within 6\" of that <span class=\"kwb\">ANATHEMA</span> <span class=\"kwb\">PSYKANA</span> <span class=\"kwb\">INFANTRY</span> unit.<br><br><b>EFFECT:</b> Until the end of the phase, any attack that targets your <span class=\"kwb\">ANATHEMA</span> <span class=\"kwb\">PSYKANA</span> unit must instead target your other <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">CUSTODES</span> unit (unless it is not an eligible target)."
-    },
-    {
-     "name": "HUNT AS ONE",
-     "cp_cost": "1",
-     "type": "Talons Of The Emperor – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Start of your Movement phase.<br><br><b>TARGET:</b> Up to two ADEPTUS CUSTODES units from your army.<br><br><b>EFFECT:</b> Until the end of the turn, your units are eilgible to shoot and/or declare a charge in a turn in which they Fell Back.<br><br><b>RESTRICTIONS:</b> You can only select two units if one (and only one) of them is an ANATHEMA PSYKANA unit and both are within 6\" of each other."
-    }
-   ],
-   "dp_cost": 3,
-   "force_disposition": "TAKE AND HOLD",
-   "exclusive_tag": "",
-   "restriction": "",
-   "keyword_grants": [],
-   "boarding_actions": false,
-   "restricted_chapter": ""
-  },
-  {
-   "id": "000900047",
-   "name": "Tharanatoi Hammerblow",
-   "legend": "Terminator-armoured warriors crush the enemies of the Throne in swift assaults.",
-   "rules": [
-    {
-     "name": "The Hammer Falls",
-     "description": "If a friendly ADEPTUS CUSTODES TERMINATOR unit made an ingress move this turn, that unit can re-roll Charge rolls. This detachment has the LIONS tag and cannot be taken with another LIONS detachment."
-    }
-   ],
-   "enhancements": [
-    {
-     "name": "Mnemo-locked Shrine Cipher",
-     "cost": "25",
-     "description": "ADEPTUS CUSTODES TERMINATOR model only. In your first Movement phase, this unit can make an ingress move.",
-     "is_upgrade": false
-    },
-    {
-     "name": "Efficient Aggression",
-     "cost": "25",
-     "description": "ADEPTUS CUSTODES TERMINATOR model only. (Once per turn, per army) In your opponent's Shooting phase, when an enemy unit has shot, if this unit lost a wound as a result of those attacks, this unit can make a surge move of up to D6+1\".",
-     "is_upgrade": false
-    }
-   ],
-   "stratagems": [
-    {
-     "name": "Hardened Resolve",
-     "cp_cost": "1",
-     "type": "",
-     "description": "WHEN: Your opponent's Shooting phase or the Fight phase, when an enemy unit targets a friendly ADEPTUS CUSTODES TERMINATOR unit. TARGET: That unit. EFFECT: Your unit has +1 T."
-    },
-    {
-     "name": "Unleash the Lions",
-     "cp_cost": "1",
-     "type": "",
-     "description": "WHEN: Your Command phase. TARGET: One friendly ALLARUS CUSTODIANS/AQUILON CUSTODIANS unit on the battlefield. EFFECT: Your unit is split into separate units, each containing one model, each with a Starting Strength of 1."
-    },
-    {
-     "name": "Electroexorcist Saturation",
-     "cp_cost": "1",
-     "type": "",
-     "description": "WHEN: Your Shooting phase, when a friendly ADEPTUS CUSTODES TERMINATOR unit is selected to shoot. TARGET: That unit. EFFECT: Your unit's Ballistus Grenade Launcher weapons have D3+3 A."
-    }
-   ],
-   "dp_cost": 1,
-   "force_disposition": "DISRUPTION",
-   "exclusive_tag": "LIONS",
    "restriction": "",
    "keyword_grants": [],
    "boarding_actions": false,

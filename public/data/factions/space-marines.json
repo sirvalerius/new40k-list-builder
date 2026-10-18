@@ -9893,6 +9893,12 @@
      "description": "If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. This model can fight after the attacking unit has finished making its attacks. If one or more enemy models are destroyed as a result of those attacks, this model regains D3 lost wounds and is not destroyed; otherwise, it is removed from play."
     },
     {
+     "name": "Righteous Fury",
+     "type": "Datasheet",
+     "parameter": "",
+     "description": "In the Fight phase, you can use this ability. If you do, this unit’s melee attacks have +1 S, and when this unit has fought:<br><ul><li>This model heals D3 wounds.</li><li>Or: If this model destroyed an enemy model this phase, this model heals 2D3 wounds.</li></ul>"
+    },
+    {
      "name": "DEMETRIAN TITUS",
      "type": "Fortification (левая колонка)",
      "parameter": "",
@@ -35181,7 +35187,7 @@
      "name": "Iron Father",
      "type": "Datasheet",
      "parameter": "",
-     "description": "While this model is within 3\" of one or more friendly Adeptus Astartes Vehicle units, it has the Lone Operative ability."
+     "description": "While this model is within 3\" of a friendly ADEPTUS ASTARTES VEHICLE unit, this model has Lone Operative."
     },
     {
      "name": "Master of the Forge",
@@ -62559,7 +62565,7 @@
      "name": "Techmarine",
      "type": "Datasheet",
      "parameter": "",
-     "description": "While this model is within 3\" of one or more friendly Adeptus Astartes Vehicle units, this model has the Lone Operative ability."
+     "description": "While this model is within 3\" of a friendly ADEPTUS ASTARTES VEHICLE unit, this model has Lone Operative."
     },
     {
      "name": "Blessing of the Omnissiah",
