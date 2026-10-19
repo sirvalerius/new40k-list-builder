@@ -8,6 +8,14 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-10-14",
+    "items": [
+     "**Luminen Auto-choir**, Chant of Electrotraction Stratagem: la clausola WHEN ora dice \"an advance move\" (minuscolo) invece di \"an Advance move\" — correzione puramente tipografica, nessun impatto sul testo modellato.",
+     "**Haloscreed Battle Clade**, Guided Retreat Stratagem: riscritta. Trigger cambiato da \"subito dopo\" a \"quando selezionata per fare\" una mossa di ritirata; l'effetto non concede più il reroll dei test di Desperate Escape ma permette invece il reroll dei tiri hazard per le unità HALO OVERRIDE, e garantisce sempre eleggibilità a sparare/caricare dopo il ritiro. Applicato a `Stratagems.csv`.",
+     "Nuova FAQ: la scelta di una delle abilità Icon of War di Thulia Ghuld va fatta nel momento in cui si decide di usare quell'abilità (nessun impatto sui CSV, solo testo di chiarimento)."
+    ]
+   },
+   {
     "date": "2026-09-30",
     "items": [
      "**Corpuscarii Electro-priests** (5 models): 65 → 60 pts.",
@@ -7663,7 +7671,7 @@
      "name": "GUIDED RETREAT",
      "cp_cost": "1",
      "type": "Haloscreed Battle Clade – Strategic Ploy Stratagem",
-     "description": "<b>WHEN:</b> Your Movement phase, just after an <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">MECHANICUS</span> unit from your army makes a Fall Back move.<br><br><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">MECHANICUS</span> unit.<br><br><b>EFFECT:</b> Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back, and, if it is a <span class=\"kwb\">HALO</span> <span class=\"kwb\">OVERRIDE</span> unit, you can re-roll Desperate Escape tests taken for it."
+     "description": "<b>WHEN:</b> Your Movement phase, when a friendly <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">MECHANICUS</span> unit is selected to make a Fall Back move.<br><br><b>TARGET:</b> That <span class=\"kwb\">ADEPTUS</span> <span class=\"kwb\">MECHANICUS</span> unit.<br><br><b>EFFECT:</b> If your unit is a <span class=\"kwb\">HALO</span> <span class=\"kwb\">OVERRIDE</span> unit, your unit can re-roll hazard rolls.<br><br>That Fall Back move does not prevent your unit from:<br><ul><li>Being eligible to shoot.</li><li>Being eligible to declare a charge.</li></ul>"
     },
     {
      "name": "ANALYTICAL DIVINATION",

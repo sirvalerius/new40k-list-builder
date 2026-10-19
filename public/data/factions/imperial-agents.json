@@ -9,6 +9,13 @@
   "sub_factions": [],
   "changelog": [
    {
+    "date": "2026-10-14",
+    "items": [
+     "**Aquila Kill Team**: datasheet rimossa dal faction pack. Applicato: rimossa la datasheet (id `000004174`) e tutte le righe collegate da `Datasheets.csv`, `Datasheets_abilities.csv`, `Datasheets_wargear.csv`, `Datasheets_keywords.csv`, `Datasheets_models_cost.csv`, `Datasheets_unit_composition.csv`, `Datasheets_options.csv` (le tabelle ponte `Datasheets_detachment_abilities.csv`/`Datasheets_stratagems.csv` non sono state toccate: non sono lette dalla pipeline, vedi `CLAUDE.md`).",
+     "Resto del contenuto (Rules Updates, FAQ, altre datasheet) confermato identico alla v1.2 via confronto testo pieno."
+    ]
+   },
+   {
     "date": "2026-09-30",
     "items": [
      "**Aquila Kill Team** (5 models): 100 → 110 pts.",
@@ -38,443 +45,8 @@
   ]
  },
  "last_update": "2026-06-13 12:02:41",
- "unit_count": 46,
+ "unit_count": 45,
  "datasheets": [
-  {
-   "id": "000004174",
-   "name": "Aquila Kill Team",
-   "role": "Battleline",
-   "legend": "Aquila Kill Teams are equipped to handle varied or unknown horrors with a measured and strategically versatile response. ",
-   "loadout": "<b>The Kill Team Sergeant is equipped with:</b> plasma pistol; power weapon.<br><br><b>Each Gravis Veteran is equipped with:</b> infernus heavy bolter; bolt pistol; close combat weapon.<br><br><b>For every 5 models in the unit, 1 Deathwatch Veteran is equipped with:</b> stalker bolt rifle; bolt pistol; close combat weapon.<br><br><b>For every 5 models in the unit, 1 Deathwatch Veteran is equipped with:</b> bolt pistol; heavy thunder hammer.<br><br><b>For every 5 models in the unit, 1 Deathwatch Veteran is equipped with:</b> Deathwatch marksman bolt carbine; special-issue bolt pistol; close combat weapon.<br><br><b>If the unit contains 10 models, 1 Deathwatch Veteran is equipped with:</b> special-issue bolt pistol; xenophase blade.",
-   "transport": "",
-   "damaged": {
-    "w": "",
-    "description": ""
-   },
-   "stats": [
-    {
-     "name": "KILL TEAM SERGEANT, DEATHWATCH VETERAN",
-     "M": "6\"",
-     "T": "4",
-     "Sv": "3+",
-     "inv_sv": "-",
-     "inv_sv_descr": "",
-     "W": "2",
-     "Ld": "6+",
-     "OC": "2",
-     "base_size": "32mm"
-    },
-    {
-     "name": "GRAVIS VETERAN",
-     "M": "5\"",
-     "T": "6",
-     "Sv": "3+",
-     "inv_sv": "-",
-     "inv_sv_descr": "",
-     "W": "3",
-     "Ld": "6+",
-     "OC": "2",
-     "base_size": "40mm"
-    }
-   ],
-   "weapons": [
-    {
-     "name": "Astartes grenade launcher – frag",
-     "type": "Ranged",
-     "range": "24",
-     "A": "D3",
-     "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
-     "D": "1",
-     "description": "blast"
-    },
-    {
-     "name": "Astartes grenade launcher – krak",
-     "type": "Ranged",
-     "range": "24",
-     "A": "1",
-     "BS_WS": "3",
-     "S": "9",
-     "AP": "-2",
-     "D": "D3",
-     "description": ""
-    },
-    {
-     "name": "Bolt pistol",
-     "type": "Ranged",
-     "range": "12",
-     "A": "1",
-     "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
-     "D": "1",
-     "description": "pistol, lethal hits"
-    },
-    {
-     "name": "Deathwatch marksman bolt carbine",
-     "type": "Ranged",
-     "range": "24",
-     "A": "2",
-     "BS_WS": "3",
-     "S": "5",
-     "AP": "-1",
-     "D": "1",
-     "description": "heavy, lethal hits"
-    },
-    {
-     "name": "Frag cannon",
-     "type": "Ranged",
-     "range": "18",
-     "A": "D3",
-     "BS_WS": "3",
-     "S": "7",
-     "AP": "-2",
-     "D": "2",
-     "description": "blast, heavy, lethal hits, rapid fire d3"
-    },
-    {
-     "name": "Hellstorm bolt rifle",
-     "type": "Ranged",
-     "range": "30",
-     "A": "2",
-     "BS_WS": "3",
-     "S": "5",
-     "AP": "-2",
-     "D": "2",
-     "description": "assault, heavy, lethal hits"
-    },
-    {
-     "name": "Infernus heavy bolter – heavy bolter",
-     "type": "Ranged",
-     "range": "36",
-     "A": "3",
-     "BS_WS": "3",
-     "S": "5",
-     "AP": "-1",
-     "D": "2",
-     "description": "SUSTAINED HITS 1"
-    },
-    {
-     "name": "Infernus heavy bolter – heavy flamer",
-     "type": "Ranged",
-     "range": "12",
-     "A": "D6",
-     "BS_WS": "N/A",
-     "S": "5",
-     "AP": "-1",
-     "D": "1",
-     "description": "IGNORES COVER, TORRENT"
-    },
-    {
-     "name": "Plasma incinerator – standard",
-     "type": "Ranged",
-     "range": "24",
-     "A": "2",
-     "BS_WS": "3",
-     "S": "7",
-     "AP": "-2",
-     "D": "1",
-     "description": "assault, heavy"
-    },
-    {
-     "name": "Plasma incinerator – supercharge",
-     "type": "Ranged",
-     "range": "24",
-     "A": "2",
-     "BS_WS": "3",
-     "S": "8",
-     "AP": "-3",
-     "D": "2",
-     "description": "assault, hazardous, heavy"
-    },
-    {
-     "name": "Plasma pistol – standard",
-     "type": "Ranged",
-     "range": "12",
-     "A": "1",
-     "BS_WS": "3",
-     "S": "7",
-     "AP": "-2",
-     "D": "1",
-     "description": "PISTOL"
-    },
-    {
-     "name": "Plasma pistol – supercharge",
-     "type": "Ranged",
-     "range": "12",
-     "A": "1",
-     "BS_WS": "3",
-     "S": "8",
-     "AP": "-3",
-     "D": "2",
-     "description": "HAZARDOUS, PISTOL"
-    },
-    {
-     "name": "Special-issue bolt pistol",
-     "type": "Ranged",
-     "range": "18",
-     "A": "1",
-     "BS_WS": "3",
-     "S": "4",
-     "AP": "-1",
-     "D": "1",
-     "description": "pistol, precision, lethal hits"
-    },
-    {
-     "name": "Stalker bolt rifle",
-     "type": "Ranged",
-     "range": "30",
-     "A": "2",
-     "BS_WS": "3",
-     "S": "5",
-     "AP": "-2",
-     "D": "2",
-     "description": "heavy, lethal hits, precision"
-    },
-    {
-     "name": "Close combat weapon",
-     "type": "Melee",
-     "range": "Melee",
-     "A": "3",
-     "BS_WS": "3",
-     "S": "4",
-     "AP": "0",
-     "D": "1",
-     "description": ""
-    },
-    {
-     "name": "Combat knife",
-     "type": "Melee",
-     "range": "Melee",
-     "A": "4",
-     "BS_WS": "3",
-     "S": "4",
-     "AP": "-1",
-     "D": "1",
-     "description": "precision"
-    },
-    {
-     "name": "Heavy thunder hammer",
-     "type": "Melee",
-     "range": "Melee",
-     "A": "3",
-     "BS_WS": "4",
-     "S": "10",
-     "AP": "-2",
-     "D": "3",
-     "description": "devastating wounds"
-    },
-    {
-     "name": "Power weapon",
-     "type": "Melee",
-     "range": "Melee",
-     "A": "4",
-     "BS_WS": "3",
-     "S": "5",
-     "AP": "-2",
-     "D": "2",
-     "description": "sustained hits 1"
-    },
-    {
-     "name": "Xenophase blade",
-     "type": "Melee",
-     "range": "Melee",
-     "A": "4",
-     "BS_WS": "3",
-     "S": "5",
-     "AP": "-2",
-     "D": "1",
-     "description": "devastating wounds"
-    }
-   ],
-   "abilities": [
-    {
-     "name": "Assigned Agents",
-     "type": "Faction",
-     "parameter": "",
-     "description": "If your Army Faction is <span class=\"kwb\">AGENTS</span> <span class=\"kwb2\">OF</span> <span class=\"kwb2\">THE</span> <span class=\"kwb\">IMPERIUM</span>, then in the Select Detachment Rules step, you can select one of the available Detachments from this book as normal.<br><br>If your Army Faction is not <span class=\"kwb\">AGENTS</span> <span class=\"kwb2\">OF</span> <span class=\"kwb2\">THE</span> <span class=\"kwb\">IMPERIUM</span>, but every model in your army has the <span class=\"kwb\">IMPERIUM</span> keyword, you can include <span class=\"kwb\">AGENTS</span> <span class=\"kwb2\">OF</span> <span class=\"kwb2\">THE</span> <span class=\"kwb\">IMPERIUM</span> units in your army even if they do not have the Faction keyword you selected in the Select Army Faction step. In this case, the maximum number of <span class=\"kwb\">AGENTS</span> <span class=\"kwb2\">OF</span> <span class=\"kwb2\">THE</span> <span class=\"kwb\">IMPERIUM</span> units you can include in your army depends on the battle size, as shown below.<br><br><div class=\"BreakInsideAvoid\"  style=\"\"\"><table width=\"0\" border=\"0\" bordercolor=\"#888\" cellpadding=\"4\" cellspacing=\"0\" style=\"border-collapse:collapse;border-width:0px\"><tbody><tr><td><table class=\" customTable tablefont\" border=\"1\" bordercolor=\"#888\" cellpadding=\"4\" style=\"border-collapse:collapse;border-color:#888888;border-width:0px\"><tbody><tr><td style=\"border-width:0 0 0 0;border-style:none none none none;vertical-align:bottom;width:160px;height:2px;\"></td><td style=\"border-width:0 0 0 0;border-style:none none none none;vertical-align:bottom;width:160px;height:2px;\"></td><td style=\"border-width:0 0 0 0;border-style:none none none none;vertical-align:bottom;width:169px;height:2px;\"></td><td style=\"border-width:0 0 0 0;border-style:none none none none;vertical-align:bottom;width:218px;height:2px;\"></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;background-color:rgb(89,35,35);color:rgb(254,254,254);border-color:rgb(36,75,106);text-align:left;vertical-align:middle;font-size:20px;width:160px;height:0px;\">BATTLE SIZE</td><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;background-color:rgb(89,35,35);color:rgb(254,254,254);border-color:rgb(36,75,106);text-align:left;vertical-align:middle;font-size:20px;width:160px;height:0px;\"><b><span class=\"tooltip00045\" data-tooltip-content=\"#tooltip_content00045\" data-tooltip-anchor=\"#tooltip_content00045\"><span class=\"kwb kwbu\">RETINUE</span></span> UNITS</b></td><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;background-color:rgb(89,35,35);color:rgb(254,254,254);border-color:rgb(36,75,106);text-align:left;vertical-align:middle;font-size:20px;width:169px;height:0px;\"><b><span class=\"tooltip00046\" data-tooltip-content=\"#tooltip_content00046\" data-tooltip-anchor=\"#tooltip_content00046\"><span class=\"kwb kwbu\">CHARACTER</span></span> UNITS</b></td><td style=\"border-width:1px 1px 1px 1px;border-style:none none none none;background-color:rgb(89,35,35);color:rgb(254,254,254);border-color:rgb(36,75,106);text-align:left;vertical-align:middle;font-size:20px;width:218px;height:0px;\"><b><span class=\"tooltip00047\" data-tooltip-content=\"#tooltip_content00047\" data-tooltip-anchor=\"#tooltip_content00047\"><span class=\"kwb kwbu\">REQUISITIONED</span></span> UNITS</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;border-color:rgb(36,75,106);text-align:left;vertical-align:middle;font-size:20px;width:160px;height:0px;\">Incursion</td><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;border-color:rgb(36,75,106);text-align:center;vertical-align:middle;font-size:20px;width:160px;height:0px;\"><b>1</b></td><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;border-color:rgb(36,75,106);text-align:center;vertical-align:middle;font-size:20px;width:169px;height:0px;\"><b>1</b></td><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;border-color:rgb(36,75,106);text-align:center;vertical-align:middle;font-size:20px;width:218px;height:0px;\"><b>1</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;border-color:rgb(36,75,106);text-align:left;vertical-align:middle;font-size:20px;width:160px;height:0px;\">Strike Force</td><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;border-color:rgb(36,75,106);text-align:center;vertical-align:middle;font-size:20px;width:160px;height:0px;\"><b>2</b></td><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;border-color:rgb(36,75,106);text-align:center;vertical-align:middle;font-size:20px;width:169px;height:0px;\"><b>2</b></td><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;border-color:rgb(36,75,106);text-align:center;vertical-align:middle;font-size:20px;width:218px;height:0px;\"><b>1</b></td></tr><tr><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;border-color:rgb(36,75,106);text-align:left;vertical-align:middle;font-size:20px;width:160px;height:0px;\">Onslaught</td><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;border-color:rgb(36,75,106);text-align:center;vertical-align:middle;font-size:20px;width:160px;height:0px;\"><b>3</b></td><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;border-color:rgb(36,75,106);text-align:center;vertical-align:middle;font-size:20px;width:169px;height:0px;\"><b>3</b></td><td style=\"border-width:1px 1px 1px 1px;border-style:dotted none dotted none;border-color:rgb(36,75,106);text-align:center;vertical-align:middle;font-size:20px;width:218px;height:0px;\"><b>2</b></td></tr></tbody></table></td></tr></tbody></table></div><br>Note that you can include AGENTS OF THE IMPERIUM DEDICATED TRANSPORT units in such an army as normal, but each unit must start the battle with one or more units embarked within it, or it cannot be deployed for that battle and will count as having been destroyed during the first battle round."
-    },
-    {
-     "name": "Death to the Alien",
-     "type": "Datasheet",
-     "parameter": "",
-     "description": "Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack does not have the <span class=\"kwb\">IMPERIUM</span> or <span class=\"kwb\">CHAOS</span> keywords, you can re-roll the Hit roll instead."
-    },
-    {
-     "name": "Kill Team",
-     "type": "Datasheet",
-     "parameter": "",
-     "description": "Each time an attack targets this unit, if it contains models with different Toughness characteristics, until the attacking unit has finished making its attacks, use the Toughness characteristic of the majority of the models in that unit when determining what roll is required for that attack to successfully wound. If two or more Toughness characteristics are tied for majority, use the highest value.<br><br>For the purposes of determining which models in this unit can embark within a Transport, Gravis Veteran models take up the space of 2 models, but can otherwise embark within any <span class=\"kwb\">TRANSPORT</span> their unit can embark within, even though similar models in other units have the <span class=\"kwb\">GRAVIS</span> keyword.<br><br><b>Designer’s Note:</b> <i>While the abstractions in the above rule cause some models to behave differently to similar models in other units, they are designed to minimise complicated Transport rules.</i>"
-    },
-    {
-     "name": "Astartes Shield",
-     "type": "Wargear",
-     "parameter": "",
-     "description": "The bearer has a 4+ invulnerable save."
-    },
-    {
-     "name": "ATTACHED UNIT",
-     "type": "Fortification (левая колонка)",
-     "parameter": "",
-     "description": "If a Character unit from your army can be attached to a Deathwatch Kill Team unit, it can be attached to this unit instead."
-    }
-   ],
-   "composition": [
-    "1 Kill Team Sergeant",
-    "1 Gravis Veteran",
-    "3 Deathwatch Veterans",
-    "OR",
-    "1 Kill Team Sergeant",
-    "2 Gravis Veterans",
-    "7 Deathwatch Veterans"
-   ],
-   "options": [
-    "For every 5 models in the unit, up to 1 model’s infernus heavy bolter can be replaced with one of the following:<ul style=\"list-style-type:circle\"><li>1 frag cannon.</li><li>1 hellstorm bolt rifle and 1 Astartes grenade launcher.</li></ul>",
-    "For every 5 models in the unit, up to 1 model’s heavy thunder hammer can be replaced with 1 power weapon and 1 Astartes shield.",
-    "For every 5 models in the unit, up to 1 model’s stalker bolt rifle can be replaced with 1 plasma incinerator.",
-    "For every 5 models in the unit, up to 1 model’s Deathwatch marksman bolt carbine can be replaced with 1 combat knife."
-   ],
-   "points": [
-    {
-     "description": "5 models",
-     "cost": "110",
-     "variant": "5 models",
-     "tier_min": null,
-     "tier_max": null,
-     "models": 5
-    },
-    {
-     "description": "10 models",
-     "cost": "210",
-     "variant": "10 models",
-     "tier_min": null,
-     "tier_max": null,
-     "models": 10
-    }
-   ],
-   "keywords": [
-    "Infantry",
-    "Battleline",
-    "Ordo Xenos",
-    "Grenades",
-    "Imperium",
-    "Gravis",
-    "Tacticus",
-    "Aquila Kill Team",
-    "Deathwatch",
-    "Retinue"
-   ],
-   "faction_keywords": [
-    "Agents of the Imperium"
-   ],
-   "can_lead": [],
-   "is_character": false,
-   "is_battleline": true,
-   "is_epic_hero": false,
-   "is_dedicated_transport": false,
-   "is_leader": false,
-   "can_lead_entries": [],
-   "attach_type": "",
-   "is_legends": false,
-   "has_order_tiers": false,
-   "model_min": 5,
-   "model_max": 10,
-   "countable": true,
-   "stock_weapons": [
-    "Bolt pistol",
-    "Close combat weapon",
-    "Deathwatch marksman bolt carbine",
-    "Heavy thunder hammer",
-    "Infernus heavy bolter – heavy bolter",
-    "Infernus heavy bolter – heavy flamer",
-    "Plasma pistol – standard",
-    "Plasma pistol – supercharge",
-    "Power weapon",
-    "Special-issue bolt pistol",
-    "Stalker bolt rifle",
-    "Xenophase blade"
-   ],
-   "weapon_options": [
-    {
-     "text": "Frag cannon (instead of infernus heavy bolter)",
-     "cost": 0,
-     "type": "wargear",
-     "limit": {
-      "kind": "per_n",
-      "n": 5
-     },
-     "base": "Infernus heavy bolter",
-     "group": "000004174-0",
-     "model": "",
-     "grants": [
-      "Frag cannon"
-     ]
-    },
-    {
-     "text": "Hellstorm bolt rifle and 1 Astartes grenade launcher (instead of infernus heavy bolter)",
-     "cost": 0,
-     "type": "wargear",
-     "limit": {
-      "kind": "per_n",
-      "n": 5
-     },
-     "base": "Infernus heavy bolter",
-     "group": "000004174-0",
-     "model": "",
-     "grants": [
-      "Astartes grenade launcher – frag",
-      "Astartes grenade launcher – krak",
-      "Hellstorm bolt rifle"
-     ]
-    },
-    {
-     "text": "For every 5 models in the unit, up to 1 model’s heavy thunder hammer can be replaced with 1 power weapon and 1 Astartes shield.",
-     "cost": 0,
-     "type": "wargear",
-     "limit": {
-      "kind": "per_n",
-      "n": 5
-     },
-     "base": "heavy thunder hammer",
-     "model": "",
-     "grants": [
-      "Power weapon"
-     ]
-    },
-    {
-     "text": "For every 5 models in the unit, up to 1 model’s stalker bolt rifle can be replaced with 1 plasma incinerator.",
-     "cost": 0,
-     "type": "wargear",
-     "limit": {
-      "kind": "per_n",
-      "n": 5
-     },
-     "base": "stalker bolt rifle",
-     "model": "",
-     "grants": [
-      "Plasma incinerator – standard",
-      "Plasma incinerator – supercharge"
-     ]
-    },
-    {
-     "text": "For every 5 models in the unit, up to 1 model’s Deathwatch marksman bolt carbine can be replaced with 1 combat knife.",
-     "cost": 0,
-     "type": "wargear",
-     "limit": {
-      "kind": "per_n",
-      "n": 5
-     },
-     "base": "deathwatch marksman bolt carbine",
-     "model": "",
-     "grants": [
-      "Combat knife"
-     ]
-    }
-   ],
-   "chapter": "",
-   "requires_detachment": ""
-  },
   {
    "id": "000000871",
    "name": "Callidus Assassin",
@@ -4649,10 +4221,6 @@
    "is_leader": true,
    "can_lead_entries": [
     {
-     "name": "Aquila Kill Team",
-     "chapter": ""
-    },
-    {
      "name": "Deathwatch Kill Team",
      "chapter": ""
     },
@@ -4932,10 +4500,6 @@
    "is_leader": true,
    "can_lead_entries": [
     {
-     "name": "Aquila Kill Team",
-     "chapter": ""
-    },
-    {
      "name": "Deathwatch Kill Team",
      "chapter": ""
     },
@@ -5158,10 +4722,6 @@
    "is_dedicated_transport": false,
    "is_leader": true,
    "can_lead_entries": [
-    {
-     "name": "Aquila Kill Team",
-     "chapter": ""
-    },
     {
      "name": "Deathwatch Kill Team",
      "chapter": ""
@@ -5392,10 +4952,6 @@
    "is_dedicated_transport": false,
    "is_leader": true,
    "can_lead_entries": [
-    {
-     "name": "Aquila Kill Team",
-     "chapter": ""
-    },
     {
      "name": "Daemonhost",
      "chapter": ""
@@ -5641,10 +5197,6 @@
    "is_dedicated_transport": false,
    "is_leader": true,
    "can_lead_entries": [
-    {
-     "name": "Aquila Kill Team",
-     "chapter": ""
-    },
     {
      "name": "Deathwatch Kill Team",
      "chapter": ""
@@ -5923,10 +5475,6 @@
    "is_dedicated_transport": false,
    "is_leader": true,
    "can_lead_entries": [
-    {
-     "name": "Aquila Kill Team",
-     "chapter": ""
-    },
     {
      "name": "Deathwatch Kill Team",
      "chapter": ""
@@ -6551,10 +6099,6 @@
    "is_dedicated_transport": false,
    "is_leader": true,
    "can_lead_entries": [
-    {
-     "name": "Aquila Kill Team",
-     "chapter": ""
-    },
     {
      "name": "Deathwatch Kill Team",
      "chapter": ""
@@ -12137,10 +11681,6 @@
    "is_leader": true,
    "can_lead_entries": [
     {
-     "name": "Aquila Kill Team",
-     "chapter": ""
-    },
-    {
      "name": "Deathwatch Kill Team",
      "chapter": ""
     },
@@ -12300,10 +11840,6 @@
    "is_dedicated_transport": false,
    "is_leader": true,
    "can_lead_entries": [
-    {
-     "name": "Aquila Kill Team",
-     "chapter": ""
-    },
     {
      "name": "Deathwatch Kill Team",
      "chapter": ""
